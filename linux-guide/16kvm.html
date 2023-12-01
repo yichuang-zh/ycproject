@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>虚拟机virt-manager</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="虚拟机virt-manager-2：host与guest文件共享" href="16kvm2.html" />
+    <link rel="prev" title="系统与应用程序的更新和升级" href="15upgrade.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="0linux-guide.html">Linux入门指南</a></li>
+      <li class="breadcrumb-item active">虚拟机virt-manager</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="15upgrade.html" class="btn btn-neutral float-left" title="系统与应用程序的更新和升级" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="16kvm2.html" class="btn btn-neutral float-right" title="虚拟机virt-manager-2：host与guest文件共享" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="virt-manager">
+<span id="kvm"></span><h1>虚拟机virt-manager<a class="headerlink" href="#virt-manager" title="永久链接至标题"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<ol class="arabic simple">
+<li><p>虚拟机是啥？</p></li>
+<li><p>虚拟机有啥用？(比如安装QQ、网上银行客户端、炒股软件等Linux中不存在的应用，以及一些体验/测试)</p></li>
+<li><p>虚拟机有哪几类？</p></li>
+<li><p>为啥选择virt-manager(不推荐使用wine来安装Windows应用的原因/不推荐使用VirtualBox的原因)</p></li>
+<li><p>安装/配置virt-manager</p></li>
+<li><p>virt-manager安装Linux</p></li>
+<li><p>virt-manager安装Windows</p></li>
+<li><p>备份虚拟机</p></li>
+<li><p>主机与虚拟机交换数据</p></li>
+<li><p>精简客户机的体积，节约硬盘空间(附录)</p></li>
+<li><p>在内存里运行虚拟机</p></li>
+<li><p>极限安全(虚拟机与防火墙的配合)：关闭53出以外的所有端口，提升本机安全等级。(本机浏览器无法上网，只能通过虚拟机上网)</p></li>
+<li><p>极限安全的问题</p></li>
+</ol>
+<p>虚拟机的一个好处是可以隔离主机与网络，为主机增加安全机制，这种情况下，可以避免浏览器的漏洞，而浏览器的漏洞是目前大家电脑上最大的系统安全威胁来源。第二个好处是可以随意测试任意软件，无所谓是否安全，因为虚拟机有瞬时恢复功能，随时可以恢复到之前设定的系统状态，任何病毒都会瞬间被清空，回复到中病毒以前的安全状态，非常干净。</p>
+<p>另外，虚拟机的瞬时恢复功能(快照)，可以让系统保持<span class="dash6">纯净</span>，装再多各种软件，恢复一下就又回复到初始状态，这样可以让系统体积很小，减轻硬件资源的消耗。这样，您其实每天使用的，都是自己最满意的系统状态：纯净，精简。如果需要什么内容，添加就是了。</p>
+<p>关于在虚拟机中进行软件测试，我们举个例子。
+您想找一个好用的截图软件，没用过的话，通常很难下结论，那么装上试一试是最有效的方法。这个装上试一试的过程可以放在虚拟机里进行，对主机没有任何影响。这就是软件测试的主要含义，不仅仅是截图软件，绝大多数应用软件都可以这样进行测试。</p>
+<p>另一个软件测试的例子，就是测试和体验不同的操作系统和桌面环境。Linux有很多发行版，又有不同的桌面环境，如果想尝试一下，虚拟机是最佳选择。长时间测试后想用在主机上，这时再装在主机上也来得及。</p>
+<p>延伸一下，您可以定制一个自己的专用系统，比如专门的股票交易虚拟机，里面没有浏览器，没有中文输入法，就只有一个股票交易软件，其它软件连装都没装，安全程度就更高。另外也可以定制一个系统装QQ、微信等社交工具，这样即使社交软件有漏洞，也不会影响主机系统。</p>
+<p>如果内存足够大，可以把虚拟机放在内存里运行，这样还可以减少对硬盘的读写，延长硬盘的使用寿命，尤其现在固态硬盘的广泛使用，而在内存中运行虚拟机则可以很有效地减少硬盘读写。并且，主机关机后虚拟机自然消失，再开机又是全新的状态。这种情况要注意一点，就是虚拟机中的数据要及时保存到主机中，因为主机一关机，虚拟机中的数据就全部丢失。</p>
+<p>另外，如果您对虚拟机了解深入的话，可以安装macOS系统，也可以使用显卡直通技术在虚拟机的windows里安装大型windows游戏，甚至用虚拟机给自己增加一个防火墙系统。</p>
+<div class="section" id="id1">
+<h2>极限安全(虚拟机与防火墙的配合)<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<p>防火墙仅开放53出，关闭53入，其它所有端口全部关闭出/入。</p>
+<p>现在对于一台电脑来说，最大的安全问题是浏览器安全，因为浏览器要连接各种网站，并保存各种与安全有关的cookie数据，比如网站登录密码。黑客程序只需要攻破浏览器，那么本机就无任何安全可言。所以，把浏览器与本机安全隔离是一个非常有效的方法。</p>
+<dl class="simple">
+<dt>下面是一些重点要了解的知识：</dt><dd><ol class="arabic simple">
+<li><p>尽量不要让浏览器保存重要网站的登录密码，不重要的网站还好一些；</p></li>
+<li><p>打开邮件时如果有链接，在完全弄清楚安全问题之前，请不要点击链接；</p></li>
+<li><p>浏览器放在虚拟机中最安全</p></li>
+<li><p>专门网站，可以设置浏览器专用，即某一个浏览器进程只用于某一个特定网站；</p></li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="kvm-safe-super-problem">
+<span id="id2"></span><h2>极限安全策略的问题<a class="headerlink" href="#kvm-safe-super-problem" title="永久链接至标题"></a></h2>
+<p>如果应用了极限的安全策略，那么会有以下情况需要适应：</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>本机不能上网，想上网就必须启动虚拟机。解决方案是尽量精简虚拟机，让速度提升到最快。</p></li>
+<li><p>本机无法使用ssh连接本地的虚拟机。</p></li>
+<li><p>上网过程中如果有数据需要保存，需要熟悉主机与客户机的数据交换方法，以实现把虚拟机中的数据保存到主机中。解决方案是至少要掌握一种虚拟机与主机共享数据的方法，具体方法可以参考<a class="reference internal" href="16kvm2.html#kvm2"><span class="std std-ref">虚拟机virt-manager-2：host与guest文件共享</span></a>  。</p></li>
+<li><p>多虚拟机同时运行时，可能需要更多线程的cpu以及更多的内存容量。</p></li>
+</ol>
+</div></blockquote>
+<dl class="simple">
+<dt>扩展资料：</dt><dd><p>专业的开源虚拟化平台工具PVE(Proxmox Virtual Environment)</p>
+</dd>
+</dl>
+<p><em>未完稿</em></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="15upgrade.html" class="btn btn-neutral float-left" title="系统与应用程序的更新和升级" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="16kvm2.html" class="btn btn-neutral float-right" title="虚拟机virt-manager-2：host与guest文件共享" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

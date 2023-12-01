@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>剪刀选择工具(智能剪刀)</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="前景选择工具" href="7foreground-select.html" />
+    <link rel="prev" title="自由选区工具(套索)" href="5tools-free.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+      <li class="breadcrumb-item active">剪刀选择工具(智能剪刀)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="5tools-free.html" class="btn btn-neutral float-left" title="自由选区工具(套索)" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="7foreground-select.html" class="btn btn-neutral float-right" title="前景选择工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="gimp-tool-iscissors">
+<span id="id1"></span><h1>剪刀选择工具(智能剪刀)<a class="headerlink" href="#gimp-tool-iscissors" title="永久链接至标题"></a></h1>
+<p>快捷键：I</p>
+<div class="figure align-center" id="id4">
+<img alt="../../_images/6iscissors.png" src="../../_images/6iscissors.png" />
+<p class="caption"><span class="caption-text">剪刀选择工具 (智能剪刀 )及其工具选项</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
+</div>
+<p>剪刀选择工具( <a class="reference internal" href="../../_images/gimp-tool-iscissors.svg"><img alt="gimp-tool-iscissors" class="align-middle" height="20" src="../../_images/gimp-tool-iscissors.svg" width="20" /></a> )与自由选区工具(套索)很像，可以用鼠标在图像中<strong>粗略地</strong>绘制一个选区(不适合创建精确选区)。区别是，剪刀选择工具不能点击后不松开鼠标一直拖动，只能一下一下点击来创建选区，最后按Enter键完成选区创建。在按Enter键之前，可以使用Backspace键进行修改。</p>
+<p>创建选区的方法：</p>
+<ol class="arabic simple">
+<li><p>选中 剪刀选择工具 后，用鼠标在图像上点击一下，然后移动鼠标指针的位置，再点击一下鼠标，如此反复，最后点击起始点，再按Enter键就可以创建选区。(点击过程中，如果有点击失误，可以马上按Backspace键修改)</p></li>
+<li><p>最后点击起始点后，选区已经封闭，然后再按Enter键之前，可以点击线条添加新的点，这样可以修改选区轮廓。</p></li>
+<li><p>最后点击起始点后，选区已经封闭，然后再按Enter键之前，如果点击选区内部，等同于Enter键，会马上创建选区。</p></li>
+<li><p>最后点击起始点后，选区已经封闭，然后再按Enter键之前，如果切换其它工具，等同于Enter键，会马上创建选区。</p></li>
+<li><p>用剪刀选择工具创建的选区没有控制框和控制手柄，不能像矩形选区那样调整尺寸和边界位置。</p></li>
+<li><p>用剪刀选择工具创建的选区，无法像矩形选择工具那样使用Ctrl和Shift键来创建并集和差集。(可以使用工具选项中的 模式 选项)</p></li>
+</ol>
+<div class="section" id="id2">
+<h2>辅助快捷键<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>剪刀选择工具创建选区时，用Backspace键可以删除最后一个点，用Esc键可以删除所有的点。</p>
+<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱→矩形选择工具→保存选区提示</span></a>)</p>
+</div>
+<div class="section" id="id3">
+<h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p>这里提供了更多的细节控制。</p>
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
+<ul class="simple">
+<li><p>模式：模式会决定新创建的选区与已经存在的选区如何组合，有四个选项：</p>
+<ol class="arabic simple">
+<li><p>替换：已经存在的选区会被删除，只保留新创建的选区。</p></li>
+<li><p>合并：新创建的选区和已经存在的选区相加，相当于<strong>并集</strong>。</p></li>
+<li><p>减去：从已经存在的选区减去新创建的选区，相当于<strong>差集</strong>。</p></li>
+<li><p>相交：保留新创建的选区和已经存在的选区的重合部分，未重合部分全部删除，相当于<strong>交集</strong>。</p></li>
+</ol>
+</li>
+<li><p>抗锯齿：使选区的边缘更平滑(通常对弧线或斜线有效)。</p></li>
+<li><p>羽化边缘：可以融合边缘，使选区与背景过度更平滑。默认半径为10像素。</p></li>
+<li><p>互动边界：勾选此项后，在点击下一个节点时，会显示此工具将使用的路径；并且，点击下一个节点时拖动节点，显示的路径会动态变化，直到松开鼠标。</p></li>
+</ul>
+<p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
+<ul class="simple">
+<li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
+<li><p>恢复工具预设：调用以前保存的参数。</p></li>
+<li><p>删除工具预设：删除以前保存的参数。</p></li>
+<li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="5tools-free.html" class="btn btn-neutral float-left" title="自由选区工具(套索)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="7foreground-select.html" class="btn btn-neutral float-right" title="前景选择工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

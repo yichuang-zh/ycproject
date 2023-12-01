@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安装Debian系统</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="安装过程中提示缺失固件文件" href="06no-firmware.html" />
+    <link rel="prev" title="安装Linux系统之前需要做哪些准备工作" href="04before-ins.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="0linux-guide.html">Linux入门指南</a></li>
+      <li class="breadcrumb-item active">安装Debian系统</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="04before-ins.html" class="btn btn-neutral float-left" title="安装Linux系统之前需要做哪些准备工作" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="06no-firmware.html" class="btn btn-neutral float-right" title="安装过程中提示缺失固件文件" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="debian">
+<span id="install"></span><h1>安装Debian系统<a class="headerlink" href="#debian" title="永久链接至标题"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>不要马上开始安装系统</strong></p>
+<p>如果您是第一次安装Linux系统，那么建议您完全读完本书前面七个章节，再开始安装系统。即，从第一章<a class="reference internal" href="01iso_xp.html#iso-xp"><span class="std std-ref">用live-iso体验Linux系统</span></a>到第七章<a class="reference internal" href="08emergency.html#emergency"><span class="std std-ref">系统急救</span></a>全部读完。</p>
+<p>读完后，您会了解安装系统可能会遇到哪些问题及如何解决。</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>本节内容有视频版本</strong></p>
+<p>本节内容的视频版本在<a class="reference external" href="https://www.bilibili.com/video/BV1Wv411p7rs">B站《Linux入门指南》P5. 安装Debian</a> 。</p>
+</div>
+<dl class="simple">
+<dt>如果您希望完全由自己来安装Debian系统，那么驿窗推荐您做两件事：</dt><dd><ol class="arabic simple">
+<li><p>看安装视频：到网上找Debian安装视频，多看几遍；有精力的话，多找几个不同作者的视频来看，这样可以比较全面的了解安装过程；如果您能完全看懂视频中的所有操作，那么基本上安装就没有大问题了；</p></li>
+<li><p>通过虚拟机来练习Debian安装过程：实际操作总是最有效的；(注意虚拟机安装过程与真机安装过程并不100%一致，比如硬件检测或双系统共存检测)</p></li>
+</ol>
+</dd>
+<dt>安装过程：</dt><dd><ol class="arabic simple">
+<li><p>安装的准备：备份数据，了解双系统共存，了解设备驱动</p></li>
+<li><p>制作安装用的USB引导U盘</p></li>
+<li><p>用引导U盘启动电脑</p></li>
+<li><p>安装</p></li>
+</ol>
+</dd>
+</dl>
+<p><em>未完稿</em></p>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="04before-ins.html" class="btn btn-neutral float-left" title="安装Linux系统之前需要做哪些准备工作" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="06no-firmware.html" class="btn btn-neutral float-right" title="安装过程中提示缺失固件文件" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

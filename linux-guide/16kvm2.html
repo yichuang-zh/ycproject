@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>虚拟机virt-manager-2：host与guest文件共享</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Debian相关知识：版本/仓库/镜像站" href="17debian-related.html" />
+    <link rel="prev" title="虚拟机virt-manager" href="16kvm.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="0linux-guide.html">Linux入门指南</a></li>
+      <li class="breadcrumb-item active">虚拟机virt-manager-2：host与guest文件共享</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="16kvm.html" class="btn btn-neutral float-left" title="虚拟机virt-manager" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="17debian-related.html" class="btn btn-neutral float-right" title="Debian相关知识：版本/仓库/镜像站" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="virt-manager-2-hostguest">
+<span id="kvm2"></span><h1>虚拟机virt-manager-2：host与guest文件共享<a class="headerlink" href="#virt-manager-2-hostguest" title="永久链接至标题"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>由于虚拟机的客户机在理论上与主机是完全隔离的，所以，虽然安全性很高，但客户机与主机之间如果需要交换或者共享文件，就需要一些额外的设置和操作才能实现。您可以参考下面介绍的三个方案来解决。</p>
+<dl class="simple">
+<dt>约定：</dt><dd><p>下面的阐述中，主机=host，虚拟机=客户机=guest，不再另行说明。</p>
+</dd>
+</dl>
+<div class="section" id="id1">
+<h2>方案一、命令行操作<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<p>如果从极限安全的角度考虑，可以使用virt-copy-in和virt-copy-out这两个命令，无论guest是Linux还是windows，都可以使用。并且，命令运行时，guest是关机的状态，相对安全性更好一些。</p>
+<p>想使用virt-copy-in/out命令，需要host上安装一个工具libguestfs-tools，在主机的命令行终端中运行下面的命令：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install libguestfs-tools
+</pre></div>
+</div>
+</div></blockquote>
+<p>此工具安装好以后，假设virt-manager虚拟机文件(.qcow2)保存在主机的某个目录，文件名为debian12.qcow2；且该目录中有一个video.mp4需要拷贝到虚拟机中，那么打开主机命令行终端，把目录切换到debian12.qcow2文件所在的pool目录，再执行下面的命令:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>virt-copy-in -a ./debian12.qcow2 ./video.mp4 /home/
+</pre></div>
+</div>
+</div></blockquote>
+<p>上面的命令中，<code class="docutils literal notranslate"><span class="pre">-a</span></code>表示通过虚拟机的文件名来指定虚拟机，本例文件名是debian12.qcow2；<code class="docutils literal notranslate"><span class="pre">./</span></code>表示当前目录；<code class="docutils literal notranslate"><span class="pre">video.mp4</span></code>表示要被拷贝的文件，<code class="docutils literal notranslate"><span class="pre">/home/</span></code>表示要拷贝到的目标目录是虚拟机的/home/目录。命令的意思就是把当前目录中的video.mp4文件拷贝到当前目录中debian12.qcow2这个虚拟机里面去。</p>
+<p>如果把上面的命令写成下面的样子，则表示把虚拟机(debian12.qcow2)里面位于/home/目录中的video.mp4文件拷贝到主机的当前目录：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>virt-copy-out -a ./debian12.qcow2 /home/video.mp4 .
+</pre></div>
+</div>
+</div></blockquote>
+<p>该命令的意思是把虚拟机中的文件拷贝出来到主机中。</p>
+<p>下面命令会把win10虚拟机中C:\001\目录中的video.mp4拷贝到主机当前目录：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>virt-copy-out -a ./win10.qcow2 /001/video.mp4 .
+</pre></div>
+</div>
+</div></blockquote>
+<p>上面命令中，<code class="docutils literal notranslate"><span class="pre">./</span></code>表示主机当前目录；<code class="docutils literal notranslate"><span class="pre">/001/</span></code>表示win10虚拟机中C:\001\目录；</p>
+<p>virt-copy-in和virt-copy-out这两个命令不仅可以对文件进行操作，也可以对目录进行操作。例如下面的命令表示把虚拟机中的/home目录整体拷贝到主机的当前目录：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>virt-copy-out -a ./debian12.qcow2 /home .
+</pre></div>
+</div>
+</div></blockquote>
+<p>上面命令中，<code class="docutils literal notranslate"><span class="pre">./</span></code>表示主机当前目录；<code class="docutils literal notranslate"><span class="pre">/home</span></code>表示虚拟机里面的/home目录；命令最后面的那个<code class="docutils literal notranslate"><span class="pre">.</span></code>表示主机当前目录。</p>
+<p>virt-copy-in和virt-copy-out命令方式不需要网络支持，所以不受防火墙影响。</p>
+</div>
+<div class="section" id="ftp">
+<h2>方案二、FTP操作<a class="headerlink" href="#ftp" title="永久链接至标题"></a></h2>
+<p>如果不想使用命令行，可以借助SSH来使用FTP操作。FTP软件可以使用FileZilla，协议可以使用加密的SFTP。特点是操作时guest必须为开机运行的状态；并且，guest和host分别需要配置好SSH相关的参数设置 。</p>
+<blockquote>
+<div><div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：</p>
+<p>由于FTP方式与前面的命令行方式分别要求guest处于开机和关机的状态，所以两种方式正好互补，建议都进行了解并保存记录，以备不时之需。</p>
+</div>
+</div></blockquote>
+<p>此方案对于虚拟机是Linux guest和虚拟机是windows guest两种情况来说，操作基本没有差异，且都需要在guest中配置和启用SSHD服务。</p>
+<p>此方案安全性不如前面介绍的命令行方式，但可以避免每一次都输入命令，适合懒得输入命令且对安全性没有极限要求的人群。</p>
+<p>这个方案需要做下面几件事：</p>
+<ol class="arabic simple">
+<li><p>guest安装ssh-server，并配置sshd以备ssh密钥连接</p></li>
+<li><p>host通过ssh-keygen生成公钥和私钥</p></li>
+<li><p>host通过ssh-copy-id把公钥上传到guest</p></li>
+<li><p>host安装FileZilla</p></li>
+<li><p>host运行FileZilla，配置好后连接guest，与guest互传文件</p></li>
+</ol>
+<p>相关设置与操作方法，请参考附录中<span class="dash2">SSH</span>相关章节。</p>
+<p>此方式因使用了网络，所以会受防火墙影响。防火墙设置很简单，后面会提供。</p>
+</div>
+<div class="section" id="id2">
+<h2>方案三、共享文件夹<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>除了上面两种方式，您还可以通过共享文件夹的方式来实现guest与host的文件交换，此方式同样需要在guest和host中做一些配置，但安全性相对不如前面的方式。</p>
+<p>共享文件夹方式主要是使用virtio-fs。</p>
+<p>具体配置如下：</p>
+<div class="section" id="linux">
+<h3>1. 客户机为Linux:<a class="headerlink" href="#linux" title="永久链接至标题"></a></h3>
+<p>这里是针对虚拟机为Linux系统的情况。</p>
+<p>关闭guest电源，打开virt-manager虚拟机的界面，切换到 详情&gt;内存，勾选<code class="docutils literal notranslate"><span class="pre">Enable</span> <span class="pre">shared</span> <span class="pre">memory</span></code>。点击 应用 按钮。</p>
+<p>详情页左侧底部点击 添加硬件&gt;文件系统，<span class="dash2">驱动程序</span>选择<code class="docutils literal notranslate"><span class="pre">virtiofs</span></code>，<span class="dash2">源路径</span>选择host上准备共享的目录；<span class="dash2">目标路径</span>用来指定共享名称，比如可以填写<code class="docutils literal notranslate"><span class="pre">hostshare</span></code>。点击 完成 按钮。</p>
+<p>运行此虚拟机，在虚拟机中创建一个用于挂载主机上共享文件夹的目录，比如</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir /home/peter/host
+</pre></div>
+</div>
+</div></blockquote>
+<p>这表示在虚拟机的/home/peter/目录中创建了一个host目录。</p>
+<p>接下来，把主机上的共享目录持载到虚拟机上这个host目录即可：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo mount -t virtiofs hostshare /home/peter/host
+</pre></div>
+</div>
+</div></blockquote>
+<p>好了，您已经可以在host和guest之间通过共享目录来交换文件了。</p>
+</div>
+<div class="section" id="windows">
+<h3>2. 客户机为Windows:<a class="headerlink" href="#windows" title="永久链接至标题"></a></h3>
+<p>这里是针对虚拟机为Windows系统的情况。</p>
+<p>关闭guest电源，打开virt-manager虚拟机的界面，切换到 详情&gt;内存，勾选<code class="docutils literal notranslate"><span class="pre">Enable</span> <span class="pre">shared</span> <span class="pre">memory</span></code>。点击 应用 按钮。</p>
+<p>详情页左侧底部点击 添加硬件&gt;文件系统，<span class="dash2">驱动程序</span>选择<code class="docutils literal notranslate"><span class="pre">virtiofs</span></code>，<span class="dash2">源路径</span>选择host上准备共享的目录；<span class="dash2">目标路径</span>用来指定共享名称，比如可以填写<code class="docutils literal notranslate"><span class="pre">hostshare</span></code>。点击 完成 按钮。</p>
+<p>下载两个文件，这两个文件需要在windows虚拟机里安装：</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><a class="reference external" href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win-guest-tools.exe">virtio-win-guest-tools.exe</a></p></li>
+<li><p><a class="reference external" href="https://github.com/winfsp/winfsp/releases">winfsp.msi</a></p></li>
+</ol>
+</div></blockquote>
+<p>运行windows虚拟机，在虚拟机中安装上面两个文件。安装好以后，重启虚拟机，找到服务&gt;VirtioFsSvc服务，启动此服务，并设置为开机自动启动。(我的电脑 右键&gt;管理&gt;服务与应用)</p>
+<p>接下来，你可以打开 我的电脑，其中有C盘，也有我们刚才设置的共享目录(默认通常是Z盘)</p>
+<blockquote>
+<div><div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p><a class="reference external" href="https://forums.debiancn.org/t/topic/3848">https://forums.debiancn.org/t/topic/3848</a></p>
+</div>
+</div></blockquote>
+<p>好了，您已经可以在host和guest之间通过共享目录来交换文件了。</p>
+<p>此方式与防火墙设置无关。</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>总结<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p>上面介绍了三种host与guest文件共享的方案，驿窗推荐方案一结合方案二使用。方案二要使用到SSH相关的技术，与SSH相关的说明，请参考附录中SSH相关内容。</p>
+<p>从通用性角度看，使用filezilla通过FTP方式互传文件的方案二，更具有普遍性。它除了可以在电脑上的host与guest之间互传文件，也可以在电脑与安卓手机与平板之间互传文件，还可以在不同的电脑之间互传文件，有点一招鲜吃遍天的意思。</p>
+</div>
+<div class="section" id="ssh">
+<h2>SSH<a class="headerlink" href="#ssh" title="永久链接至标题"></a></h2>
+<p>下面介绍关于SSH的内容。</p>
+<p>SSH的主要用途是在不同电脑之间进行加密通信，比如<span class="dash2">远程登录服务器</span>。SSH的全称是Secure Shell，是一种远程加密通信协议。</p>
+<p>现在的Linux发行版，基本上都是使用OpenSSH(OpenBSD Secure Shell)。OpenSSH使用SSH协议来实现不同计算机之间的远程加密通信。使用SSH协议的远程通信程序很多，本文只涉及OpenSSH(Debian环境)。</p>
+<p>OpenSSH分为两个部分，一个是客户端，叫openssh-client；另一个是服务端，叫openssh-server。</p>
+<p>通常，两台计算机远程通信时，主动发起通信的一端，就是客户端，使用的配置文件是/etc/ssh/ssh_config；接收通信的另一端，就是服务端，使用的配置文件是/etc/ssh/sshd_config。</p>
+<p>我们仍以<span class="dash6">远程登录服务器</span>为例，那个被远程登录的服务器，就是服务端，需要运行<span class="dash6">sshd</span>这个服务，通过安装openssh-server并配置sshd_config来实现；而远程操作时直接使用的电脑，就是客户端，需要运行<span class="dash6">ssh-agent</span>这个服务，通过安装openssh-client并配置ssh_config来实现。</p>
+<p>默认情况下，Debian系统会自带客户端，不带服务端。不过没关系，二者都可以随时手动安装：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install openssh-client
+sudo apt install openssh-server
+</pre></div>
+</div>
+</div></blockquote>
+<p>在安装之前，我们也可以用下面的命令检查系统上是否已经启用客户端/服务端：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ps -e <span class="p">|</span> grep ssh
+</pre></div>
+</div>
+</div></blockquote>
+<p>上面命令回车后的输出结果可能是下面这样的：</p>
+<blockquote>
+<div><div class="figure align-default" id="id4">
+<img alt="../_images/16kvm2-ssh-ps.png" src="../_images/16kvm2-ssh-ps.png" />
+<p class="caption"><span class="caption-text">终端中执行命令：ps -e | grep ssh</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
+</div>
+<p>上面截图中：</p>
+<ul class="simple">
+<li><p>607 ?那一行右面的<span class="dash6">sshd</span>表示服务端已经启用；</p></li>
+<li><p>828 ?那一行右面的<span class="dash6">ssh-agent</span>表示客户端已经启用。</p></li>
+</ul>
+</div></blockquote>
+<p><em>未完稿</em></p>
+<p><em>最近一次更新：2023年11月23日</em></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="16kvm.html" class="btn btn-neutral float-left" title="虚拟机virt-manager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="17debian-related.html" class="btn btn-neutral float-right" title="Debian相关知识：版本/仓库/镜像站" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

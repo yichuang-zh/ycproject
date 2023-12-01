@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. 色彩管理</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="4. 专色" href="4spec_color.html" />
+    <link rel="prev" title="2. 位图 vs. 矢量图" href="2bitmap-vs-vector.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../ycp_base.html">驿窗平面基础</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3. </span>色彩管理</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="2bitmap-vs-vector.html" class="btn btn-neutral float-left" title="2. 位图 vs. 矢量图" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="4spec_color.html" class="btn btn-neutral float-right" title="4. 专色" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="color-manager">
+<span id="id1"></span><h1><span class="section-number">3. </span>色彩管理<a class="headerlink" href="#color-manager" title="永久链接至标题"></a></h1>
+<p>色彩管理用简单的话来说，就是在传递色彩时，确保被传递的色彩是一致的，或者感觉一致。</p>
+<p>这里的传递，是指显示色彩的介质变化，比如，在电脑上显示的一张照片，打印到杂志上。这个过程，其实就是把色彩从电脑上传递到纸质的杂志上；一致性就表现为在电脑屏幕上看到的颜色，应该与纸质杂志上看到的颜色相同。</p>
+<p>从电脑上传递到纸质的杂志上，其实就是用印刷机把电脑中的图片印刷到纸张上的过程。由于印刷过程使用了油墨和纸张，导致传递结果(杂志纸张)与最初(电脑屏幕)，在色彩显示原理上有本质的不同。这个传递导致的显示差异，如果不使用颜色管理，很可能会让色彩感觉发生极大的变化。通俗说，电脑上显示的颜色，印刷在纸上后再对比电脑看，二者完全不是一个颜色。有些情况下，这个差异是无法接受的。</p>
+<p>再举个例子，用某个品牌手机照的一张照片，被放到网站上展示，那么浏览网站的人，使用的可能是电脑，可能是手机，也可能是平板。这个时候，传递就变成从初始手机传递到电脑，或者从初始手机传递到其它其它手机，或者从初始手机传递到平板；一致性就再现为初始手机与其它手机、电脑、平板，看到的照片的颜色，应该是一致的。</p>
+<p>上面的解释是通俗的解释，事实是，无论怎么操作，传递后的颜色，与传递前的颜色，永远不可能达到100%一致。原因在于，色彩被传递到最终的设备或者介质上时，最终的设备或者介质，与初始的设备或者介质有本质上的不同，或者细微的不同。</p>
+<p>本质上的不同很简单，比如电脑显示器显示的红色(R)，与杂志上印刷出来的红色，二者显示的原理已经完全不同。在电脑显示器上，颜色使用RGB三原色原理，红色是RGB三原色之一，用户看到的是电脑显示器发射出来的红色的光。而在纸质的杂志上印刷的红色则不同，纸不能发光，需要靠反射阳光或者反射灯光来体现红色，所以，印刷不使用RGB三原色，而是使用CMYK四种印刷油墨。</p>
+<p>在理论上，RGB光和CMYK油墨是可以转换的，比如M+Y=R。但这只是理论，实际应用时，因为种种原因，导致纸张上M+Y所得到的R，与显示器上显示的R差异很大。而色彩管理就是为了让这个差异尽可能小，甚至小到人们无法察觉的地步，这就是色彩的意义所在。</p>
+<p>同理，在一张白纸上印刷红色，和在一张灰色的纸上印刷红色，如果不对印刷过程进行色彩管理，那么由于介质本身颜色的差异(白纸和灰纸)，最终得到的红色相差会很大。而应用了色彩管理以后，针对不同的纸张，所使用的油墨配比会发生变化，以使最终达到不同纸张上红色一致或尽量一致的结果。</p>
+<p>色彩管理的应用，最直接的一个体现就是公司logo。很多大企业注重企业自身的形象和文化，所以在使用有颜色的logo时，希望在任何地方都保持一致的感觉，即用户无论是在电视上、杂志上、报纸上、名片上、户外广告上，logo的颜色应该都是一致的。</p>
+<p>这种一致，除了考虑使用的材料以外，还要考虑环境以及人的主观感觉，而综合这些要素，想要达到一致的目的，通常就需要使用色彩管理系统来实现，或者大概上实现。</p>
+<p>为了保证看起来一样，色彩管理系统做了很多工作，其中一项很重要的工作，就是把RGB与CMYK的具体数值所代表的颜色感觉进行明确定义，然后在传递的过程中进行一致性调整。</p>
+<p>结论：色彩管理其实就是让一个颜色在不同的地方看起来感觉一样。</p>
+<p>最后，有一点需要提一下，就是色彩管理可能是有损的，或者说，如果使用了色彩管理，可能会导致最初的颜色被改变，即，你手机拍摄的照片，如果使用了专业的有特别目的的色彩管理，可能会导致照片看起来不如色彩管理之前那么舒服。</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="2bitmap-vs-vector.html" class="btn btn-neutral float-left" title="2. 位图 vs. 矢量图" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="4spec_color.html" class="btn btn-neutral float-right" title="4. 专色" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

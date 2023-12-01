@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>(可停靠对话框→动态绘图编辑器)</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="可停靠对话框→MyPaint笔刷" href="17mypaint-brush.html" />
+    <link rel="prev" title="可停靠对话框→绘画动态" href="16paint-dynamics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_dockable.html">GIMP可停靠对话框</a></li>
+      <li class="breadcrumb-item active">(可停靠对话框→动态绘图编辑器)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="16paint-dynamics.html" class="btn btn-neutral float-left" title="可停靠对话框→绘画动态" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="17mypaint-brush.html" class="btn btn-neutral float-right" title="可停靠对话框→MyPaint笔刷" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="menu-window-dockable-16paint-dynamics-editor">
+<span id="id1"></span><h1>(可停靠对话框→动态绘图编辑器)<a class="headerlink" href="#menu-window-dockable-16paint-dynamics-editor" title="永久链接至标题"></a></h1>
+<p>没有快捷键。</p>
+<div class="figure align-center" id="id6">
+<img alt="../../_images/16paint-dynamics-editor.png" src="../../_images/16paint-dynamics-editor.png" />
+<p class="caption"><span class="caption-text">可停靠对话框→动态绘图编辑器</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+</div>
+<p>动态绘图编辑器中( <a class="reference internal" href="../../_images/gimp-dynamics.svg"><img alt="gimp-dynamics-icon" class="align-middle" height="20" src="../../_images/gimp-dynamics.svg" width="20" /></a> )可以自定义动态的参数，创建自定义动态。</p>
+<p>GIMP自带的预设动态不允许修改，所以，最快捷的方法是在 动态绘图对话框 中复制一个已有的动态，然后对这个副本进行修改，最后保存为新的自定义动态。</p>
+<p>(动态绘图功能主要是为了使用绘图板而创建的，但有一些动态绘图功能也可以用在鼠标上)</p>
+<p>“映射矩阵”上方是动态的名称，可以修改。</p>
+<div class="section" id="id2">
+<h2>映射矩阵<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>映射矩阵设定笔刷的哪些参数可以被手写笔的哪些行为影响。GIMP官方的建议是，您可以启用任意数量的参数和参数组合，但越少越好。阵列中：</p>
+<ol class="arabic simple">
+<li><p>横向第一行7个条目是手写笔的行为方式：压力、速率、方向、倾斜、滚轮/旋转、随机、淡出；</p></li>
+<li><p>纵向第一列11个条目是笔刷的参数：不透明度、大小、角度、颜色、硬度、力度、宽高比、间距、速率、流量、抖动；</p></li>
+</ol>
+<p>例如，压力与不透明度的交叉处<strong>被打叉</strong>，表示手写笔的压力<strong>会影响</strong>笔刷的不透明度：绘画时，手写笔压力越大，画出的线条越不透明；压力越小，线条越透明。</p>
+<p>而压力右侧的“速率”与不透明度的交叉处<strong>没被打叉</strong>，表示手写笔的移动速度<strong>不会影响</strong>笔刷的不透明度：绘画时，手写笔移动速度变快或变慢，不透明度均保持不变。</p>
+<div class="section" id="id3">
+<h3>手写笔的7个行为方式<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+<ol class="arabic simple">
+<li><p>压力：手写笔压在绘图板上的力量大小。此行为对鼠标无效。</p></li>
+<li><p>速率：手写笔移动的速度。此行为对鼠标有效。</p></li>
+<li><p>方向：手写笔移动的方向。此行为对鼠标有效。</p></li>
+<li><p>倾斜：手写笔压在绘图板上时倾斜的角度。此行为对鼠标无效。</p></li>
+<li><p>滚轮/旋转：手写笔的旋转设置。此行为对鼠标无效。</p></li>
+<li><p>随机：相应的参数会产生随机变化。此行为对鼠标有效。</p></li>
+<li><p>淡出：通过工具选项中的“动态选项”的设置来影响淡入淡出效果。此行为对鼠标有效。</p></li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h3>笔刷的11个参数<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
+<ol class="arabic simple">
+<li><p>不透明度：手写笔画出的笔迹的不透明度：</p></li>
+</ol>
+<blockquote>
+<div><div class="line-block">
+<div class="line">1.1. 压力：手写笔按压力度越大，笔迹越不透明。对鼠标无效</div>
+<div class="line">1.2. 速率：手写笔移动速度越快，笔迹越透明。对鼠标有效。</div>
+<div class="line">1.3. 方向：手写笔移动的方向会对不透明度产生影响，有一定随机性。对鼠标有效。</div>
+<div class="line">1.4. 倾斜：手写笔倾斜的角度会对不透明度产生影响。对鼠标无效</div>
+<div class="line">1.5. 滚轮/旋转：(待GIMP官方更新)</div>
+<div class="line">1.6. 随机：笔迹的不透明度会在工具选项中的“不透明度”滑块设置的范围内随机变化。对鼠标有效。</div>
+<div class="line">1.7. 淡出：手写笔的笔迹从完全透明开始，以工具选项中的“不透明度”滑块设置的不透明度结束。对鼠标有效。</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>大小：手写笔画出的笔迹的宽度：</p></li>
+</ol>
+<blockquote>
+<div><div class="line-block">
+<div class="line">2.1. 压力：手写笔按压力度越大，笔迹的宽度越宽。对鼠标无效</div>
+<div class="line">2.2. 速率：手写笔移动速度越快，笔迹的宽度越窄。对鼠标有效。</div>
+<div class="line">2.3. 方向：手写笔移动的方向会对笔迹的宽度产生影响，有一定随机性。对鼠标有效。</div>
+<div class="line">2.4. 倾斜：手写笔倾斜的角度会对笔迹的宽度产生影响。对鼠标无效</div>
+<div class="line">2.5. 滚轮/旋转：(待GIMP官方更新)</div>
+<div class="line">2.6. 随机：笔迹的宽度会在工具选项中的“大小”滑块设置的范围内随机变化。对鼠标有效。</div>
+<div class="line">2.7. 淡出：笔迹的宽度会从较窄尺寸淡出到工具选项中的“大小”滑块设置的尺寸。对鼠标有效。</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>角度：(待GIMP官方更新)</p></li>
+<li><p>颜色：此条目未激活时，笔迹的颜色会使用工具箱中的前景色；激活后，笔迹会从当前活动渐变中提取颜色：</p></li>
+</ol>
+<blockquote>
+<div><div class="line-block">
+<div class="line">4.1. 压力：(待GIMP官方更新)</div>
+<div class="line">4.2. 速率：手写笔移动速度比较慢时，笔迹的颜色会从活动渐变的右侧提取；速度变快时，颜色的提取位置会向渐变的左侧移动。对鼠标有效。</div>
+<div class="line">4.3. 方向：手写笔移动的方向会对笔迹的颜色产生影响，有一定随机性。对鼠标有效。</div>
+<div class="line">4.4. 倾斜：(待GIMP官方更新)</div>
+<div class="line">4.5. 滚轮/旋转：(待GIMP官方更新)</div>
+<div class="line">4.6. 随机：笔迹的颜色从活动渐变上随机提取。对鼠标有效。</div>
+<div class="line">4.7. 淡出：</div>
+</div>
+<blockquote>
+<div><p>工具选项中，“动态选区”中的“淡出长度”为0时，笔迹的颜色会从活动渐变的右侧提取，之后固定不再变化；</p>
+<p>工具选项中，“动态选区”中的“淡出长度”不为0时，笔迹的颜色会从活动渐变的左侧开始提取，之后按长度比例，提取位置向渐变的右侧移动；</p>
+<p>对鼠标有效。</p>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>硬度：笔迹边缘的模糊程度，仅对模糊笔刷有效：</p></li>
+</ol>
+<blockquote>
+<div><div class="line-block">
+<div class="line">5.1. 压力：(待GIMP官方更新)</div>
+<div class="line">5.2. 速率：手写笔移动速度越快，笔迹越模糊。对鼠标有效。</div>
+<div class="line">5.3. 方向：(待GIMP官方更新)</div>
+<div class="line">5.4. 倾斜：(待GIMP官方更新)</div>
+<div class="line">5.5. 滚轮/旋转：(待GIMP官方更新)</div>
+<div class="line">5.6. 随机：笔迹的模糊程度随机变化。对鼠标有效。</div>
+<div class="line">5.7. 淡出：</div>
+</div>
+<blockquote>
+<div><p>工具选项中，“动态选区”中的“淡出长度”为0时，笔迹的模糊程度不发生变化；</p>
+<p>工具选项中，“动态选区”中的“淡出长度”不为0时，笔迹的模糊程度从比较模糊变得不太模糊；</p>
+<p>对鼠标有效。</p>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>力度：(待GIMP官方更新)</p></li>
+<li><p>宽高比：工具选项中的 宽高比 不为0时生效。宽高比&lt;0时，仅宽度会发生变化，高度不会变化；宽高比&gt;0时，仅高度会发生变化，宽度不会变化：</p></li>
+</ol>
+<blockquote>
+<div><div class="line-block">
+<div class="line">7.1. 压力：(待GIMP官方更新)</div>
+<div class="line">7.2. 速率：手写笔移动速度会对宽度比产生影响。对鼠标有效。</div>
+<div class="line">7.3. 方向：手写笔移动方向会对笔迹的宽高比产生影响，有一定随机性。对鼠标有效。</div>
+<div class="line">7.4. 倾斜：(待GIMP官方更新)</div>
+<div class="line">7.5. 滚轮/旋转：(待GIMP官方更新)</div>
+<div class="line">7.6. 随机：笔迹的宽高比随机变化。对鼠标有效。</div>
+<div class="line">7.7. 淡出：</div>
+</div>
+<blockquote>
+<div><p>工具选项中，宽高比&gt;0时，笔迹的高度从全高淡出到宽高比设置的高度；</p>
+<p>工具选项中，宽高比&lt;0时，笔迹的宽度从全宽淡出到宽高比设置的宽度；</p>
+<p>对鼠标有效。</p>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p>间距：绘制连续线时，相邻笔刷之间的距离：</p></li>
+</ol>
+<blockquote>
+<div><div class="line-block">
+<div class="line">8.1. 压力：(待GIMP官方更新)</div>
+<div class="line">8.2. 速率：手写笔移动速度会越快，间距越大。对鼠标有效。</div>
+<div class="line">8.3. 方向：手写笔移动方向会对间距产生影响，有一定随机性。对鼠标有效。</div>
+<div class="line">8.4. 倾斜：(待GIMP官方更新)</div>
+<div class="line">8.5. 滚轮/旋转：(待GIMP官方更新)</div>
+<div class="line">8.6. 随机：间距随机变化。对鼠标有效。</div>
+<div class="line">8.7. 淡出：间距从较大的值开始，之后间距逐渐变小。对鼠标有效。</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p>速率：基于时间的效果变化(例如，绘画工具在一个位置按住不松手，按住的时间长短会导致效果不同)，适用于喷枪工具、模糊/锐化工具、涂抹工具，具体变化取决于工具选项底部“速率”的设置。</p></li>
+<li><p>流量：适用于喷枪工具和涂抹工具，决定单位时间内输送的涂料的数量，具体取决于工具选项底部“流量”的设置。</p></li>
+<li><p>抖动：笔刷偏离手写笔移动轨迹的距离。绘画过程中，笔刷连接在一起成为一条“线条”，抖动会导致笔刷在手写笔移动轨迹上垂直于轨迹来回跳动。跳动的幅度由“计数”决定。</p></li>
+</ol>
+<blockquote>
+<div><div class="line-block">
+<div class="line">11.1. 压力：起始值由“计数”决定，压力越大，跳动的幅度越小。对鼠标无效。</div>
+<div class="line">11.2. 速率：起始值由“计数”决定，速度越快，跳动的幅度越小。对鼠标有效。</div>
+<div class="line">11.3. 方向：手写笔移动方向会跳动的幅度产生影响，有一定随机性。对鼠标有效。</div>
+<div class="line">11.4. 倾斜：(待GIMP官方更新)</div>
+<div class="line">11.5. 滚轮/旋转：(待GIMP官方更新)</div>
+<div class="line">11.6. 随机：跳动的幅度随机变化。对鼠标有效。</div>
+<div class="line">11.7. 淡出：跳动的幅度从0开始，到达“计数”值后结束。对鼠标有效。</div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>笔刷参数曲线调整<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+<p>对话框中，点击“映射矩阵”右侧的( <a class="reference internal" href="../../_images/go-down.svg"><img alt="go-down-icon" class="align-middle" height="20" src="../../_images/go-down.svg" width="20" /></a> )按钮，会打开一个下拉列表，列表内是11个笔刷参数。选中其中一个参数，可以对其曲线进行调整。下面的示例主要用来帮助理解曲线的功能(笔刷选择 2.Hardness 075)：</p>
+<ol class="arabic simple">
+<li><p>11个笔刷参数中，我们以硬度参数为例，看一下手写笔移动速率对笔迹硬度的影响，先看一下原始状态：</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-center" id="id7">
+<img alt="../../_images/16paint-dynamics-editor-sample-1.png" src="../../_images/16paint-dynamics-editor-sample-1.png" />
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 原始状态</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
+</div>
+<div class="line-block">
+<div class="line">1.1. 截图中坐标系上方“硬度”表示当前显示的曲线是硬度曲线；</div>
+<div class="line">1.2. 截图纵坐标代表硬度，横坐标代表手写笔移动速率；</div>
+<div class="line">1.3. 截图中坐标系下方的“重置曲线”按钮可以把被修改的曲线重置为初始状态；</div>
+<div class="line">1.4. 截图中坐标系下方的压力、速率、方向、倾斜、滚轮/旋转、随机、淡出表示手写笔的7个行为方式；</div>
+<div class="line">1.5. 截图中手写笔的7个行为方式的最左侧使用了不同的颜色方块，表示坐标系中相应曲线的颜色，用来相互区分；</div>
+<div class="line">1.6. 截图中手写笔的7个行为方式的颜色方块与行为名称之间的打叉复选框是“速率”，表示当前显示的硬度曲线与手写笔移动速率相关，与其它6个行为相关的曲线被隐藏；所以，<strong>当前曲线是手写笔移动速率对笔迹硬度的影响</strong>；</div>
+<div class="line">1.7. 截图左边显示的纵向笔迹，是初始状态下手写笔移动速率对笔迹硬度的影响效果；此时曲线未做调整，请参考坐标系中那条绿色斜向直线；</div>
+<div class="line">1.8. 截图左边显示的纵向笔迹，从上到下，手写笔移动速率越快，笔迹越模糊；</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>曲线调整示例一：绿色曲线中间位置点击并向左上拖动到截图位置：</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-center" id="id8">
+<img alt="../../_images/16paint-dynamics-editor-sample-2.png" src="../../_images/16paint-dynamics-editor-sample-2.png" />
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例一</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
+</div>
+<p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从不模糊到模糊的变化比较慢且突然，不如 <em>原始状态</em> 那么平滑；</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>曲线调整示例二：绿色曲线中间位置点击并向右下拖动到截图位置：</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-center" id="id9">
+<img alt="../../_images/16paint-dynamics-editor-sample-3.png" src="../../_images/16paint-dynamics-editor-sample-3.png" />
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例二</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
+</div>
+<p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从上到下，从不模糊到模糊的变化比较快(看不出突然)；</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>曲线调整示例三：绿色曲线调整为波峰形状：</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-center" id="id10">
+<img alt="../../_images/16paint-dynamics-editor-sample-4.png" src="../../_images/16paint-dynamics-editor-sample-4.png" />
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例三</span><a class="headerlink" href="#id10" title="永久链接至图片"></a></p>
+</div>
+<p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从上到下，模糊变化为：先是模糊，然后到不模糊，再到模糊；</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>曲线调整示例四：绿色曲线调整为波谷形状：</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-center" id="id11">
+<img alt="../../_images/16paint-dynamics-editor-sample-5.png" src="../../_images/16paint-dynamics-editor-sample-5.png" />
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例四</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
+</div>
+<p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从上到下，模糊变化为：先是不模糊，然后到模糊，再到不模糊；</p>
+</div></blockquote>
+<p>上面的示例是硬度参数曲线的调整，另外10个笔刷参数同理。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="16paint-dynamics.html" class="btn btn-neutral float-left" title="可停靠对话框→绘画动态" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="17mypaint-brush.html" class="btn btn-neutral float-right" title="可停靠对话框→MyPaint笔刷" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

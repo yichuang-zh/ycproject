@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安装独立显卡官方驱动</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Linux硬件购买建议" href="30f03-hardware-advise.html" />
+    <link rel="prev" title="从Windows转到Linux会有哪些不习惯" href="30f6-habit.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="0linux-guide.html">Linux入门指南</a></li>
+      <li class="breadcrumb-item active">安装独立显卡官方驱动</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="30f6-habit.html" class="btn btn-neutral float-left" title="从Windows转到Linux会有哪些不习惯" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="30f03-hardware-advise.html" class="btn btn-neutral float-right" title="Linux硬件购买建议" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="f02-nvidia">
+<span id="id1"></span><h1>安装独立显卡官方驱动<a class="headerlink" href="#f02-nvidia" title="永久链接至标题"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>目前独立显卡主要是指Nvidia和AMD两种，我们分别说明。不过，在安装之前，有些问题需要事先了解。</p>
+<div class="section" id="id2">
+<h2>已知问题<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>因为Nvidia对于Linux支持的力度问题，Nvidia官方驱动虽然可以释放显卡的性能，但可能在某些小的方面不如开源驱动。所以，如果安装了官方驱动后想换回开源驱动，那么仅仅是按说明卸载的话，可能无法恢复到之前的开源驱动的效果。</p>
+<p>所以，请做好系统备份，甚至做好重装系统的准备工作，以防万一。</p>
+</div>
+<div class="section" id="nvidia">
+<h2>一、Nvidia显卡驱动安装过程<a class="headerlink" href="#nvidia" title="永久链接至标题"></a></h2>
+<p>关于Nvidia显卡驱动的安装，Debian官方已经提供详细的步骤，地址在这里：</p>
+<blockquote>
+<div><p><a class="reference external" href="https://wiki.debian.org/NvidiaGraphicsDrivers">https://wiki.debian.org/NvidiaGraphicsDrivers</a></p>
+</div></blockquote>
+<p>(或者打开bing.com搜索nvidia即可找到)</p>
+<p>下面是此链接内容的中文整理版本：</p>
+<div class="section" id="id3">
+<h3>第一步，确认自己的显卡型号是否有驱动支持<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+</div>
+<div class="section" id="kernel-headers">
+<h3>第二步，如果支持，那么无论是哪个驱动，都需要安装Kernel headers包<a class="headerlink" href="#kernel-headers" title="永久链接至标题"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install linux-headers-amd64
+</pre></div>
+</div>
+<p>这里有一点需要注意，就是之前已经安装的linux-image-amd64版本是从backports安装的，那么Kernel headers包也需要从backports安装；即linux-image-amd64与linux-headers-amd64必须是匹配的。</p>
+<p>假设我之前的linux-image-amd64安装是使用下面的命令：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install -t bullseye-backports linux-image-amd64
+</pre></div>
+</div>
+</div></blockquote>
+<p>那么，linux-headers-amd64也需要使用相同的命令来安装：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install -t bullseye-backports linux-headers-amd64
+</pre></div>
+</div>
+</div></blockquote>
+<p>(上面说的<strong>相同的命令</strong>主要是指 <strong>-t bullseye-backports</strong>)</p>
+</div>
+<div class="section" id="id4">
+<h3>第三步，安装对应的驱动<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install nvidia-driver firmware-misc-nonfree
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>第四步，重启系统<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>二、Nvidia显卡驱动卸载过程<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt purge &quot;*nvidia*&quot;
+</pre></div>
+</div>
+<p>然后重新启动系统即可。如果有问题，可以尝试重装开源驱动：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install --reinstall xserver-xorg-core xserver-xorg-video-nouveau
+</pre></div>
+</div>
+<p>然后再重启系统。</p>
+</div>
+<div class="section" id="amd">
+<h2>三、AMD显卡驱动<a class="headerlink" href="#amd" title="永久链接至标题"></a></h2>
+<p>目前，AMD官方只提供RHEL、CentOS、Ubuntu、SLED/SLES这四种发行版的驱动，不提供Debian驱动。不建议您尝试在Debian系统上安装Ubuntu版本的驱动，可能安装失败或产生其它问题。</p>
+<p><em>未完稿</em></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="30f6-habit.html" class="btn btn-neutral float-left" title="从Windows转到Linux会有哪些不习惯" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="30f03-hardware-advise.html" class="btn btn-neutral float-right" title="Linux硬件购买建议" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

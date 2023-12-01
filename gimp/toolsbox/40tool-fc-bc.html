@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>前景色/背景色</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="GEGL操作" href="41gegl-operation.html" />
+    <link rel="prev" title="缩放工具(视图)" href="39tool-zoom.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+      <li class="breadcrumb-item active">前景色/背景色</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="39tool-zoom.html" class="btn btn-neutral float-left" title="缩放工具(视图)" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="41gegl-operation.html" class="btn btn-neutral float-right" title="GEGL操作" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="gimp-tool-fc-bc">
+<span id="id1"></span><h1>前景色/背景色<a class="headerlink" href="#gimp-tool-fc-bc" title="永久链接至标题"></a></h1>
+<div class="figure align-center" id="id3">
+<img alt="../../_images/fb-toolbox2.png" src="../../_images/fb-toolbox2.png" />
+<p class="caption"><span class="caption-text">前景色和背景色工具</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
+</div>
+<p>前景色和背景色工具( <a class="reference internal" href="../../_images/gimp-default-colors.svg"><img alt="gimp-tool-default-colors-icon" class="align-middle" height="20" src="../../_images/gimp-default-colors.svg" width="20" /></a> )可以设置前景色和背景色。</p>
+<p>此工具是用来设置颜色的主要入口，在图像中填充颜色时，通常会在这里进行颜色设置。</p>
+<blockquote>
+<div><div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>此工具不是用来调整图像的颜色，而是用来创建一个颜色；您可以把创建的颜色填充到图像中。</p>
+</div>
+</div></blockquote>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>概述说明请参考<a class="reference internal" href="../gimp_toolbox.html#toolsbox-fc-bc-overview"><span class="std std-ref">GIMP工具箱⇒前景色和背景色</span></a>。</p>
+<p>点击大的黑色方块，会弹出前景色设置设置对话框(同理，点击大的白色方块，会弹出背景色设置对话框，内容与前景色设置对话框相同)：</p>
+<div class="figure align-center" id="id4">
+<img alt="../../_images/40tool-fc-bc-wilber.png" src="../../_images/40tool-fc-bc-wilber.png" />
+<p class="caption"><span class="caption-text">前景色设置</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
+</div>
+<p>对话框左上角有五个图标：</p>
+<ol class="arabic">
+<li><p>( <a class="reference internal" href="../../_images/gimp-wilber1.svg"><img alt="gimp-wilber-icon" class="align-middle" height="20" src="../../_images/gimp-wilber1.svg" width="20" /></a> ) GIMP调色板：这个是GIMP默认的调色板，您可以在这里设置颜色。(这个调色板是HSV调色板)</p>
+<blockquote>
+<div><div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>Hue、Saturation、Value(HSV)的说明，请参考<a class="reference internal" href="../../ycp_gd_base/ycp_base.html#gimp-graphic-base"><span class="std std-ref">驿窗平面基础</span></a></p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>对话框中，左侧的大色块是某一确定色相{Hue}的饱和度和明度的二维图，横坐标代表饱和度{Saturation}变化，纵坐标代表明度{Value}变化。</p></li>
+<li><p>对话框中，左侧大色块的色相由该大色块右侧的纵向的细 色相条 决定。此色相条相当于一个展开的色相环，从上到下表示沿色相环顺时针变化。红色相为色相环的原点(0°/360°)。</p></li>
+<li><p>对话框中，左侧大色块下面的“当前”和“旧的”分别表示当前设置的颜色和之前设置的颜色，二者放在一起方便您进行对比。</p></li>
+<li><p>对话框中，中间的上方“0..100”和“0..255”分别代表10进制和2进制，“0..100”的范围是0-100，“0..255”的范围是0-255，即下方色值的计量方法。</p></li>
+<li><p>对话框中，右上方的“LCh”和“HSV”分别代表LCh色彩空间和HSV色彩空间。</p></li>
+<li><p>对话框中，中间的六个横向色条及其右侧的数值，表示对应的 通道值：上面三个是RGB值，下面三个是HSV值(色相/饱和度/明度)。其中，第四个H值与左侧纵向的细 色相条 等同，区别是一个是横向，另一个是纵向。(移动其中一个，另一个会联动)</p></li>
+<li><p>我们常用的是RGB值，HSV值通常是高级用户使用。</p></li>
+<li><p>对话框中，中间六个横向色条的下方，是HTML标记，表示当前所选择颜色的16进制值，可以直接用于HTML/CSS。也可以在数值框中输入某个16进制值并回车来找到对应的颜色。(回车后，在“当前”处会显示对应16进制值的颜色)</p></li>
+<li><p>框中的16进制数值支持复制/粘贴，您可以把16进制数值复制其它软件中，也可以从其它软件中复制16进制数值到框中，方法是在框中选中全部16进制数值，然后点击鼠标右键用弹出菜单操作。</p></li>
+<li><p>16进制数值框右侧是 滴管 工具，点击后，鼠标会切换为 滴管，理论上您可以拾取屏幕上任何位置的颜色，包括多屏幕。</p></li>
+<li><p>16进制数值框下方的色块是以前曾经用过的颜色，有12个。您可以把当前选择的颜色加入到这里，方法是设置好“当前”颜色后，点击中间的( <a class="reference internal" href="../../_images/go-right.svg"><img alt="go-right-icon" class="align-middle" height="20" src="../../_images/go-right.svg" width="20" /></a> )按钮。</p></li>
+<li><p>重置按钮可以把所有内容恢复到此对话框刚打开时的状态。</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>( <a class="reference internal" href="../../_images/gimp-color-water1.svg"><img alt="gimp-color-water-icon" class="align-middle" height="20" src="../../_images/gimp-color-water1.svg" width="20" /></a> ) 水彩调色板：这个调色板是模拟水彩颜料的调色方法(小学时学习水彩画，会买水彩颜色，一盒24色或36色，里面是一管一管的各种颜色，可以挤在画板上调色)。</p></li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p>在左侧大方块上点击左键一次，相当于挤了一点水彩颜料到画板上，颜料的色相即鼠标点击位置的色相。点击次数越多，挤的颜料量越多，“当前”处显示的颜色变化越多。</p>
+<p>一次点击所挤出的颜料量，由大方块右侧的纵向滑块决定。滑块越高，一次点击所挤出的颜料量越多；滑块越低，一次点击所挤出的颜料量越少；</p>
+</li>
+<li><p>在左侧大方块上点击右键一次，相当于从画板上减少一点水彩颜料，颜料的色相即鼠标点击位置的色相。点击次数越多，减少的颜料量越多，“当前”处显示的颜色变化越多。</p>
+<p>一次点击所减少的颜料量，由大方块右侧的纵向滑块决定。滑块越高，一次点击所减少的颜料量越多；滑块越低，一次点击所减少的颜料量越少；</p>
+</li>
+<li><p>其它选项与GIMP调色板( <a class="reference internal" href="../../_images/gimp-wilber1.svg"><img alt="gimp-wilber-icon" class="align-middle" height="20" src="../../_images/gimp-wilber1.svg" width="20" /></a> )相同。</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>( <a class="reference internal" href="../../_images/gimp-color-cmyk1.svg"><img alt="gimp-color-cmyk-icon" class="align-middle" height="20" src="../../_images/gimp-color-cmyk1.svg" width="20" /></a> ) CMYK调色板：此调色板使用CMYK值来设置颜色。因为GIMP暂时还不支持CMYK模式，所以这里的值只能用于参考，实际填充颜色时，无法填充CMYK色值。</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>配置：ICC文件。</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>( <a class="reference internal" href="../../_images/gimp-color-triangle1.svg"><img alt="gimp-color-triangle-icon" class="align-middle" height="20" src="../../_images/gimp-color-triangle1.svg" width="20" /></a> ) 轮：即色相环，使用HSV颜色模型。此调色板与第一项 GIMP调色板 类似，外围的圆环为色相，R=255 &amp; B=0 &amp; G=0的位置为原点(0°/360°)；此圆环相当于 GIMP调色板 的纵向细 色相条。中间的三角表示圆环上选定色相的二维平面图，用鼠标在三角上面点击就可以设置该色相的饱和度{Saturation}和明度{Value}。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/gtk-select-color1.svg"><img alt="gtk-select-color-icon" class="align-middle" height="20" src="../../_images/gtk-select-color1.svg" width="20" /></a> ) 色板：即索引调色板。这里可以从选中的索引调色板中查找颜色，并将其设置为“当前”颜色。</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="39tool-zoom.html" class="btn btn-neutral float-left" title="缩放工具(视图)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="41gegl-operation.html" class="btn btn-neutral float-right" title="GEGL操作" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

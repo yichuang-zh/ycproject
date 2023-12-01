@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>颜色→信息→导出直方图{Export histogram}</title><link rel="stylesheet" href="../../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../../../search.html" />
+    <link rel="next" title="颜色→阈值" href="../20threshold.html" />
+    <link rel="prev" title="颜色→信息→色系分析" href="4colorcube-analysis.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../gimp.html">GIMP操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../../../gimp_menu.html">GIMP菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../7color.html">颜色</a></li>
+          <li class="breadcrumb-item"><a href="../19info.html">颜色→信息</a></li>
+      <li class="breadcrumb-item active">颜色→信息→导出直方图{Export histogram}</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="4colorcube-analysis.html" class="btn btn-neutral float-left" title="颜色→信息→色系分析" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../20threshold.html" class="btn btn-neutral float-right" title="颜色→阈值" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="export-histogram">
+<h1>颜色→信息→导出直方图{Export histogram}<a class="headerlink" href="#export-histogram" title="永久链接至标题"></a></h1>
+<div class="figure align-center" id="id1">
+<img alt="../../../../_images/5export-histogram.png" src="../../../../_images/5export-histogram.png" />
+<p class="caption"><span class="caption-text">颜色→信息→导出直方图{Export histogram}</span><a class="headerlink" href="#id1" title="永久链接至图片"></a></p>
+</div>
+<p>此命令可以把图像的直方图导出为文本文件，之后可以被其他程序使用或加载到电子表格中。</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>此工具会占用比较多的CPU和一定的内存资源，如果您只是想测试一下这个命令，建议您使用小尺寸的图像(区域)来进行测试，比如200x200像素的图像。</p>
+</div>
+<p>直方图是针对选定的图像区域生成的，完全透明的像素不会被计算在内。</p>
+<p>生成的文件是一个CSV文件(逗号分隔值)，可以直接导入到大多数电子表格程序中。CSV文件的第一行是标题行。每一个 “油漆桶”都会生成一个数据行。每个像素值可以在0到255的范围内，并根据油漆桶的范围被包含在其中一个油漆桶中。</p>
+<p>第一列标题为“Range Start”，油漆桶的起始值，范围从0-255。之后的列包含不同通道的值。具体会有哪些通道，取决于图像的模式。每个通道列中的值的含义取决于输出格式{Output Format} 选项。</p>
+<p>Range Start 也表示像素的色值。通常第二行这个值为3，第三行为4，那么这里的3表示<strong>大于3且小于等于4</strong>的像素色值。</p>
+<p>参数：</p>
+<ul class="simple">
+<li><p>直方图文件{Histogram File}：输出的直方图文件，您可以指定目录和文件名。</p></li>
+<li><p>油漆桶大小{Bucket Size}：控制被认为是相似的值的数量，并计算在同一个“油漆桶”中。较高的油漆桶大小会产生较少数量的桶，因此导出的文件中的行数也较少。例如，桶大小为1将产生256个桶(即256行)，而桶大小为2566将产生1个桶(即1行)。</p></li>
+<li><p>位样平均{Sample Average}：如果选择“是”，则所有可见图层会合并后生成直方图。否则，直方图会只计算当前图层。</p></li>
+<li><p>输出格式{Output Format}：如果选择像素计数{Pixel count}选项，生成的文件中的数值会表示每个桶中的像素数量。如果选择了归一化{Normalized}选项，则数值会表示桶中的像素数量除以像素总数。百分比{Percent}选项与归一化选项类似，但数值的格式为百分数。</p></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="4colorcube-analysis.html" class="btn btn-neutral float-left" title="颜色→信息→色系分析" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../20threshold.html" class="btn btn-neutral float-right" title="颜色→阈值" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

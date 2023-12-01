@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>前景选择工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="模糊选择工具(魔术棒)" href="8fuzzy-select.html" />
+    <link rel="prev" title="剪刀选择工具(智能剪刀)" href="6tools-iscissors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+      <li class="breadcrumb-item active">前景选择工具</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="6tools-iscissors.html" class="btn btn-neutral float-left" title="剪刀选择工具(智能剪刀)" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="8fuzzy-select.html" class="btn btn-neutral float-right" title="模糊选择工具(魔术棒)" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="gimp-tool-foreground-select">
+<span id="id1"></span><h1>前景选择工具<a class="headerlink" href="#gimp-tool-foreground-select" title="永久链接至标题"></a></h1>
+<p>此工具没有快捷键。</p>
+<div class="figure align-center" id="id5">
+<img alt="../../_images/7foreground-select.png" src="../../_images/7foreground-select.png" />
+<p class="caption"><span class="caption-text">前景选择工具及其工具选项</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+</div>
+<p>前景选择工具( <a class="reference internal" href="../../_images/gimp-tool-foreground-select.svg"><img alt="gimp-tool-foreground-select" class="align-middle" height="20" src="../../_images/gimp-tool-foreground-select.svg" width="20" /></a> )可以提取活动图层或选区的前景(驿窗注：注意是前景不是前景色)。选区创建完成后，如果反转选区，相当于选取了背景。此工具是通过蒙版来操作的。</p>
+<p>创建选区的方法：(此工具部分类似自由选择工具)</p>
+<ol class="arabic simple">
+<li><p>选中 前景选择工具 后，可以像自由选择工具那样在图像上创建一个粗略的选区，然后按Enter键创建蒙版。</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>此工具点击第一个点开始，窗口右上角会显示 前景选择 框；</p></li>
+<li><p>按Enter键之前，可以按Backspace键修改选区；</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>按Enter键后，会显示蓝色蒙版。此时我们在前景区域中画一条连续的线条，线条经过的地方会被重点提取并保留。</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>深蓝色被定义为背景，浅蓝色被定义为前景，前景即我们要选择的区域；</p></li>
+<li><p>不要切换工具，操作过程中一直使用 前景选择工具；</p></li>
+<li><p>画连续线条的时候，线条的颜色无所谓；</p></li>
+<li><p>画连续线条的时候，不要画到背景区域；</p></li>
+<li><p>GIMP会根据连续线条自动计算您最终需要的前景区域；</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>在前景区域中画完一条连续的线条后，点击 前景选择 框中的 “预览蒙版”。</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>点击“预览蒙版”后，生成的其实是一个蓝色蒙版，您可以按操作蒙版的方式，用绘画工具对蒙版区域进行编辑，以修改选区范围；</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>修改完成后，点击 前景选择 框中的“选择”按钮，即可完成选区创建，蚂蚁线出现。</p></li>
+</ol>
+<div class="section" id="id2">
+<h2>辅助快捷键<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>前景选择工具创建选区的过程中，按Backspace键可以删除最后一个点，按Esc键可以删除所有的点，按Ctrl键可以限制角度为15°的整数倍。</p>
+<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱→矩形选择工具→保存选区提示</span></a>)</p>
+</div>
+<div class="section" id="id3">
+<h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p>这里提供了更多的细节控制。</p>
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
+<ul>
+<li><p>模式：模式会决定新创建的选区与已经存在的选区如何组合，有四个选项：</p>
+<ol class="arabic simple">
+<li><p>替换：已经存在的选区会被删除，只保留新创建的选区。</p></li>
+<li><p>合并：新创建的选区和已经存在的选区相加，相当于<strong>并集</strong>。</p></li>
+<li><p>减去：从已经存在的选区减去新创建的选区，相当于<strong>差集</strong>。</p></li>
+<li><p>相交：保留新创建的选区和已经存在的选区的重合部分，未重合部分全部删除，相当于<strong>交集</strong>。</p></li>
+</ol>
+</li>
+<li><p>羽化边缘：可以融合边缘，使选区与背景过度更平滑。默认半径为10像素。</p></li>
+<li><p>绘画模式：</p>
+<ul class="simple">
+<li><p>绘制前景：绘制部分会成为前景内容。</p></li>
+<li><p>绘制背景：绘制部分会成为背景内容。</p></li>
+<li><p>绘制未知：将背景中的像素添加到你的选区中。</p></li>
+</ul>
+</li>
+<li><p>笔廓宽度：画线条时笔刷的尺寸。</p>
+<ul class="simple">
+<li><p>重置按钮：可以把笔刷尺寸重置为默认值10；</p></li>
+</ul>
+</li>
+<li><p>预览模式：</p>
+<ul class="simple">
+<li><p>颜色：您可以根据图像的色调来调整蒙版颜色，防止颜色相近导致的操作困难，点击下方的色板即可选择颜色。</p></li>
+<li><p>灰度：以黑白的方式预览蒙版结果。这种预览类似于图层蒙版，在前景色和背景色相差不大的图像中比较有效。</p></li>
+</ul>
+</li>
+<li><p>引擎：您可以使用全局抠图工作，然后使用莱文抠图改进结果。</p>
+<ul>
+<li><p>迭代次数：如果选择全局抠图，那么会显示此选项，提高数值可能会改善结果。</p></li>
+<li><p>色阶/激活级别：如果选择莱文抠图，那么会显示这两个选项。</p>
+<blockquote>
+<div><div class="admonition-todo admonition" id="id4">
+<p class="admonition-title">待处理</p>
+<p>这两个选项的说明等待GIMP官方更新。</p>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
+<ul class="simple">
+<li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
+<li><p>恢复工具预设：调用以前保存的参数。</p></li>
+<li><p>删除工具预设：删除以前保存的参数。</p></li>
+<li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="6tools-iscissors.html" class="btn btn-neutral float-left" title="剪刀选择工具(智能剪刀)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="8fuzzy-select.html" class="btn btn-neutral float-right" title="模糊选择工具(魔术棒)" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

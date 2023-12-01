@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux大型游戏方案&amp;&amp;显卡直通</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Rime开源输入法" href="../rime/rime.html" />
+    <link rel="prev" title="了解一下那些发行版" href="f18distribution.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="0linux-guide.html">Linux入门指南</a></li>
+      <li class="breadcrumb-item active">Linux大型游戏方案&amp;&amp;显卡直通</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="f18distribution.html" class="btn btn-neutral float-left" title="了解一下那些发行版" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../rime/rime.html" class="btn btn-neutral float-right" title="Rime开源输入法" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="linux">
+<span id="f04-passthrough"></span><h1>Linux大型游戏方案&amp;&amp;显卡直通<a class="headerlink" href="#linux" title="永久链接至标题"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>在网络上能够搜索到的资料，对于Linux大型3D游戏的建议，多数都是显卡直通方案，即在Linux中安装Winodws虚拟机，通过一系统操作设置把机箱里的显卡给虚拟机使用。显卡直通时，Windows虚拟机的显卡功能与Windows主机直接运行时很接近。</p>
+<p>显卡直通方案是可行的，但仅仅是技术上可行，应用上其实有一些问题。下面我们来论述一下，大型游戏方案，显卡直通的优劣，以及还有哪些其它方案可用。</p>
+<p>论述之前，我们先把几种可能的方案列举如下：</p>
+<ol class="arabic simple">
+<li><p>双系统并存 (推荐)。</p></li>
+<li><p>双显卡直通 (不推荐)。</p></li>
+<li><p>单显卡直通 (不推荐)。</p></li>
+<li><p>另外搞一台专门的Windows电脑 (任性方案)。</p></li>
+<li><p>Win To Go (不推荐)。</p></li>
+<li><p>Linux系统中安装Steam (不推荐)。</p></li>
+</ol>
+<dl class="simple">
+<dt>先说结论：</dt><dd><p>如果是玩游戏，比如Steam游戏，建议安装Linux+Windows双系统，简单省事没隐患。在Linux系统中直接安装Steam玩游戏的问题和隐患，请参考后面说明。</p>
+</dd>
+</dl>
+<div class="section" id="id1">
+<h2>一、显卡直通<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<p>接下来我们先说说显卡直通。</p>
+<p>有两种直通方法，一是单显卡直通，二是双显卡直通。</p>
+<p>相对容易一点的，是双显卡直通，即电脑上有两个显卡，其中一个直通给Windows虚拟机使用，另一个主机使用。这种情况下，Windows虚拟机启动后，Linux主机仍然可以操作和使用。这种方式需要电脑上有两个显卡，相对费钱。</p>
+<p>其次是单显卡直通，即电脑上只有一个显卡，把这个显卡直通给Windows虚拟机。这个方案中，Windows虚拟机启动后，Linux主机无法继续操作，因为没有显卡。Windows虚拟机关闭后，Linux才可以操作使用，不需要重启Linux。这种方式只需要电脑上有一个显卡，相对省钱。</p>
+<p>无论双显卡直通还是单显卡直通，对于一般水平的Linux用户，第一次配置时，没有个三五天或更长时间，可能成功的概率不高。而熟练了以后，可能30分钟时间就完成了。主要问题在于，显卡直通涉及到一些平时办公家用很少用到的Linux操作，而用户在没有完全理解这些操作原理的情况下，只能照抄教程；而教程适用的环境与用户自己的系统环境有可能会存在差异，这些差异导致用户初次配置显卡直通时需要反复多次尝试。</p>
+<p>研究下那些显卡直通的教程就会发现，显卡直通所涉及的操作其实不是特别复杂，技术相对比较简单，但真正理解的话，就需要一些知识背景，否则就只能照抄，很难达到<span class="dash6">自行维护</span>的水平。</p>
+<p>理论上，对于开发者来说，完全可以把显卡直通这个功能做成一个在linux系统中随时可以一键安装或删除的功能，结果就像apt install命令一样，安装一个显卡直通包就行了。之所以还没有实现，驿窗推测大概率是因为，显卡直通应用还是属于小众，有点发烧的性质，缺少特别具体或者不可或缺的应用场景，所以没人开发。好消息是，已经有人注意到这个问题，并开始计划处理，但什么时候能够实现则很难确定。</p>
+</div>
+<div class="section" id="id2">
+<h2>二、非显卡直通<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>接下来我们看一下显卡直通以外的方案，一个是双系统，另一个是Win To Go。</p>
+<p>二者在本质上其实是一回事，都是重启电脑，从当前的Linux系统切换到Windows系统。区别在于，一个是引导电脑里的Windows系统，另一个是引导U盘里的Windows系统。无论哪种，Windows运行期间，Linux系统都必须关机，无法做任何操作。</p>
+<p>双系统相对容易理解，就是在电脑上同时安装Linux和Windows，在电脑启动时选择进入哪一个系统。</p>
+<p>Win To Go是把Windows系统装到移动U盘或者移动硬盘中，使用时插入USB口，然后重启Linux系统，在bios中选择从USB启动，就会启动到U盘中的Windows系统。</p>
+<p>早期的时候，受USB传输速度限制，这种方式很难应用，因为USB传输速度太慢。现在电脑USB口传输速度已经达到10Gbps(USB3.1Gen2和USB3.2Gen2)，U盘本身的读写速度也能超过400MB/秒。这就让电脑从U盘运行Windows系统有了实际应用的可能性。<span class="dash6">注意只是可能性，结果不一定可行。</span></p>
+<p>并且，Win To Go制作的U盘Windows10系统，除了可以当作win10系统来使用，还可以当作普通的移动U盘使用，完全不影响(使用rufus工具即可实现)。对于那些<span class="dash6">必须</span>要有一个移动U盘或者移动硬盘的用户来说，可以考虑体验一下。Win To Go的具体制作方法会在下面提供。</p>
+<p>Win To Go方式比较适合那些偶尔使用Windows系统的用户。这里的偶尔，是指需要Windows硬件环境，尤其是显卡环境。一般的使用，尤其不需要显卡的使用，直接在Linux系统中安装Windows虚拟机就行了，不需要Win To Go，也不需要关闭Linux系统，很方便。所以，Win To Go的使用机会比较少。</p>
+<p>如果要频繁使用带独立显卡的Windows环境，那么双系统才是更好的选择。Win To Go虽然可以运行，但实际使用中仍然存在一些麻烦的小问题，体验不好。</p>
+<dl class="simple">
+<dt>Win To Go启动U盘创建提示：</dt><dd><p>制作Win To Go移动硬盘或U盘不需要额外的Windows电脑，只需要在Linux主机中安装一个Win10的虚拟机，把U盘插到主机上，然后在Win10虚拟机中即可制作Win To Go启动U盘。</p>
+</dd>
+</dl>
+<p>接下来，我们说一下双系统(包括Win To Go)相比显卡直通，有哪些优点。</p>
+<p>最主要的一点是，我们前面提到的，显卡直通的技术不太容易被一般用户吃透，这导致用户要花费大量时间和精力去 研究显卡直通技术并实现。而相对于显卡直通技术，双系统的实现就非常简单明了：在UEFI启动条件下，无论先安装Linux，还是先安装Windows，都没所谓，主要是在重启系统时，在bios中改一下启动顺序，选择接下来是启动Linux还是Windows即可；之后，可以设置为在Linux的启动菜单中选择，不需要再进入bios。</p>
+<p>临时使用一下Windows系统，可以考虑在U盘里装一个Win To Go，既能当系统使用，又能当移动U盘使用，且制作过程可以在debian中使用Windows虚拟机完成。(不推荐长期使用Win To Go)</p>
+<p>Linux系统中制作Win To Go启动U盘的方法如下：</p>
+<ol class="arabic">
+<li><p>debian主机中用virt-manager安装win10虚拟机。</p></li>
+<li><p>准备好rufus和win10.iso，放到win10虚拟机里。</p></li>
+<li><p>debian主机插上U盘(不挂载)，在win10虚拟机界面点击菜单<span class="dash6">虚拟&gt;重定向USB设备</span>，勾选插入的U盘，再点击<span class="dash6">关闭</span>。</p></li>
+<li><p>在win10虚拟机里，按常规方法用rufus制作启动U盘:</p>
+<div class="line-block">
+<div class="line">4.1. win10虚拟机里启动rufus。</div>
+<div class="line">4.2. 设备：选择插入的U盘。</div>
+<div class="line">4.3. 引导类型选择：点击右侧的<span class="dash6">选择</span>按钮来选择win10.iso。</div>
+<div class="line">4.4. 镜像选项：选择<span class="dash6">Windows To Go</span>。</div>
+<div class="line">4.5. 分区类型：选择<span class="dash6">GPT</span>。</div>
+<div class="line">4.6. 目标系统类型：选择<span class="dash6">UEFI(非CSM)</span>。</div>
+<div class="line">4.7. 文件系统：选择<span class="dash6">NTFS</span>。</div>
+</div>
+</li>
+</ol>
+<p>其它选项默认就行，点击下方的<span class="dash6">开始</span>按钮：</p>
+<ul class="simple">
+<li><p>版本选择：可以选择<span class="dash6">Windows10专业版</span>，然后点击<span class="dash6">OK</span>按钮。</p></li>
+<li><p><span class="dash6">阻止Windows To Go访问内部磁盘</span>：不勾选就可以访问主机上的系统，建议不勾选。</p></li>
+<li><p><span class="dash6">创建一个使用此用户名的本地账号</span>：不要勾选，等系统启动时再创建。</p></li>
+<li><p>剩下的两项保持默认即可。</p></li>
+<li><p>点击<span class="dash6">OK</span>按钮。会显示警告：删除U盘上所有数据，点击<span class="dash6">确定</span>按钮。</p></li>
+<li><p>等待完成，然后重启系统并进入bios设置从此U盘启动即可。</p></li>
+<li><p>Windows To Go的第一次启动，因为需要对全新系统进行一些设置，所以可能会自动重启一到两次，并且进行一些提问和设置，过程与新买的笔记本电脑完全相同，请按提示操作即可。</p></li>
+<li><p>结束。</p></li>
+</ul>
+<p>下面是Win To Go启动U盘制作过程的视频：</p>
+<blockquote>
+<div><video width=100% height=100% controls src="../_static/win_to_go.mp4"></video><p>通过win10虚拟机制作win_to_go启动U盘</p>
+</div></blockquote>
+<p>Windows To Go系统可以安装应用程序，比如输入法或者Steam游戏等。
+选择一个靠谱的U盘，除了容量、质量和速度方面的考虑，还要耐高温，因为Windows To Go运行时，U盘的温度会比较高。所以，买U盘时选择知名大厂很重要，OEM建议就不要考虑了。</p>
+<dl>
+<dt>Windows To Go实际测试：</dt><dd><p>读速400MB/s的U盘，工作温度范围为零下25℃到零上85℃，制作成Windows To Go后插到电脑的USB3.2Gen2口上引导Windows系统，安装Steam，运行csgo大概两个小时。系统操作比较卡，但进入游戏后游戏运行非常顺畅，没有一丝卡顿。U盘摸着感觉烫手。结论是只适合偶尔使用，仍然建议Linux+Windows双系统的方式。</p>
+<p><strong>测试环境：</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>主机系统：debian12.1 &amp; kde</p></li>
+<li><p>虚拟机工具：virt-manager4.1.0</p></li>
+<li><p>虚拟机系统：win10guest64位(20H2，19042.631)</p></li>
+<li><p>Windows To Go制作工具：rufus4.2</p></li>
+<li><p>Windows To Go用到的iso：win1022H2.iso</p></li>
+<li><p>Windows To Go安装U盘：samsung USB3.1 128G</p></li>
+<li><p>主板：ASUS ROG STRIX B550A-GAMING(USB3.2Gen2)</p></li>
+<li><p>CPU：AMD R7 5800X</p></li>
+<li><p>内存：KINSTON FURY DDR4-3200 16Gx2</p></li>
+<li><p>显卡：GIGABYTE NVIDIA RTX 3060 GAMING OC 12G</p></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</div>
+<div class="section" id="linuxsteam">
+<h2>三、Linux系统中安装Steam<a class="headerlink" href="#linuxsteam" title="永久链接至标题"></a></h2>
+<p>在Linux系统中可以直接安装Steam，然后通过Steam运行游戏，比如csgo。</p>
+<p>这种方法，仅仅是可能，不是可行，不可行的原因如下：</p>
+<ol class="arabic">
+<li><p>很多游戏不支持Linux系统。</p>
+<p>Steam上的游戏，都会标注适用的操作系统，有的只能在Windows系统上运行；有的除了Windows，还能在macOS上运行；有的还能在Linux系统上运行。</p>
+<p>这个差异，导致在Linux系统中安装Steam后，只能运行那些支持Linux系统的游戏，不能运行不支持Linux系统的游戏。</p>
+<p>比如，csgo可以在Linux中玩，但使命召唤在Linux中就玩不了，因为使命召唤不支持Linux，只支持Windows。</p>
+<p>这种情况导致，很多你感兴趣的游戏，在Linux上都无法尝试，而换成windows则完全没问题。</p>
+</li>
+<li><p>支持Linux的游戏，可能存在额外隐患甚至bug。</p>
+<p>多数支持Linux的游戏，通常原生的适配目标都是Windows系统，然后通过wine方式把游戏从Winodws系统<span class="dash6">移植</span>到Linux系统。这个移植，由于一些原因，可能存在隐患或者bug，导致游戏运行不流畅或者有严重bug。即，游戏公司通常优先支持Winows，然后考虑是否支持macOS，再有资源的话，才会考虑是否支持Linux。移植需要成本，移植后维护更需要资源，但在Winows上则没有这些问题。</p>
+<p>这个问题的根源，主要还是因为Winodws系统的市场占有率太高了，而Linux系统的市场占有率太低，低到绝大多数游戏厂商认为，没必要支持Linux系统。少部分支持Linux的，也可能会摇摆不定。</p>
+<p>以csgo为例，csgo第一代版本，在Linux中，只是偶尔会闪退，整体体验基本没有问题。但之后csgo升级为csgo2以后，Linux中虽然频繁升级，但运行时各种问题仍然层出不穷，最严重的时候，鼠标按键会间歇性失灵，无法射击。这种按键失灵的情况，刚开始升级到csgo2时并不存在，而是后续游戏多次升级后运行相对稳定后，再次升级才出现的。(驿窗推测，类似的情况，在游戏平台发展史上可能会持续很长时间。<span class="dash6">此推测仅限于猜测，未经第三方证实，请自行验证</span>。)</p>
+<p>从厂商的角度，其实也可以理解，毕竟，Windows才是游戏运行的首选平台。</p>
+</li>
+<li><p>结论：当前Linux中安装Steam的方式，可以体验；综合考虑是不推荐，建议双系统：无后顾之忧啊。</p></li>
+</ol>
+<p><em>最近一次更新：2023-11-21</em></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="f18distribution.html" class="btn btn-neutral float-left" title="了解一下那些发行版" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../rime/rime.html" class="btn btn-neutral float-right" title="Rime开源输入法" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。所有内容仅供参考，不提供任何担保。
+<br>有疑问请联系：classenu@163.com
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
