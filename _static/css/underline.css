@@ -16,6 +16,10 @@
     color: #cc0000;
 }
 
+.darkred700 {
+    color: #770000;
+}
+
 .darkred900 {
     color: #990000;
 }
@@ -36,12 +40,11 @@ span.dash2 {
 }
 
 span.dash2y {
-    color: #ffff00;
+    color: #aabb00;
     text-decoration: underline;
     text-decoration-style: dashed;
     text-underline-position: under;
-    text-decoration-thickness: 1px;
-    text-decoration-color: blue;
+    text-decoration-thickness: 1px; 
     /*    text-decoration-color: yellow; */
 }
 
@@ -66,6 +69,14 @@ span.dash2r {
     color: #aabb00;
     border-bottom: underline;
     border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: green;
+}
+
+.dash6y2 {
+    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dashed;
     border-bottom-width: 1px;
     border-bottom-color: green;
 }
