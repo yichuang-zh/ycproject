@@ -146,7 +146,7 @@
 </dl>
 <p>正常情况下，ffmpeg命令应该长下面这样：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -flag action new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -flag action new.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -164,13 +164,13 @@
 <li><p>裁切视频的画面尺寸/修改分辨率(<span class="dash6">Nvidia显卡</span>转码)：</p></li>
 </ol>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf crop=&#39;576:324:72:428&#39; -c:v h264_nvenc newGPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;576:324:72:428&#39;</span> -c:v h264_nvenc newGPU.mp4
 </pre></div>
 </div>
 <p>生成的新视频的尺寸为576x324，从原视频的X=72，Y=428位置为原点开始裁切。</p>
 <p><span class="dash6">-c:v h264_nvenc</span>表示使用Nvidia显卡h.264编码；如果想使用Nvidia显卡h.265编码，把h264_nvenc改为hevc_nvenc即可。</p>
 <p>上面的命令是使用Nvidia显卡转码，下面改为使用<span class="dash6">CPU转码</span>：</p>
-<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf crop=&#39;576:324:72:428&#39; -c:v libx264 newCPU.mp4
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;576:324:72:428&#39;</span> -c:v libx264 newCPU.mp4
 </pre></div>
 </div>
 <p><span class="dash6">-c:v libx264</span>表示使用CPU转码，编码器为h.264。</p>
@@ -182,13 +182,13 @@
 </div>
 <p>下面命令指定了码率为1M；减小码率，可以有效减小视频体积，但画面质量有可能变差：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf crop=&#39;1048:587:0:70&#39; -c:v h264_nvenc -b:v 1M newGPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;1048:587:0:70&#39;</span> -c:v h264_nvenc -b:v 1M newGPU.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>不指定码率：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf crop=&#39;1048:587:0:70&#39; -c:v h264_nvenc newGPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;1048:587:0:70&#39;</span> -c:v h264_nvenc newGPU.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -197,9 +197,9 @@
 <ol class="arabic" start="2">
 <li><p>分割视频：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old1.mp4 -ss 00:00:08 -to 01:50 -c copy new1.mp4
-ffmpeg -i old2.mp4 -ss 00:00:03 -c copy -t 00:02:48 new2.mp4
-ffmpeg -i old3.mp4 -ss 00:00:03 -t 00:02:48 -c:v h264_nvenc new3.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old1.mp4 -ss <span class="m">00</span>:00:08 -to <span class="m">01</span>:50 -c copy new1.mp4
+ffmpeg -i old2.mp4 -ss <span class="m">00</span>:00:03 -c copy -t <span class="m">00</span>:02:48 new2.mp4
+ffmpeg -i old3.mp4 -ss <span class="m">00</span>:00:03 -t <span class="m">00</span>:02:48 -c:v h264_nvenc new3.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -214,7 +214,7 @@ ffmpeg -i old3.mp4 -ss 00:00:03 -t 00:02:48 -c:v h264_nvenc new3.mp4
 <ol class="arabic" start="3">
 <li><p>把从同一视频截取出来的两个mp4片段合并成一个新的mp4:</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -f concat -i v.txt -c copy new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -f concat -i v.txt -c copy new.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -223,8 +223,8 @@ ffmpeg -i old3.mp4 -ss 00:00:03 -t 00:02:48 -c:v h264_nvenc new3.mp4
 <blockquote>
 <div><p>v.txt文件内容如下：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>file &#39;z1.mp4&#39;
-file &#39;z2.mp4&#39;
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>file <span class="s1">&#39;z1.mp4&#39;</span>
+file <span class="s1">&#39;z2.mp4&#39;</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -239,7 +239,7 @@ file &#39;z2.mp4&#39;
 <ol class="arabic" start="4">
 <li><p>调整画面尺寸/分辨率：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf scale=1920:1080 -c:v h264_nvenc new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">scale</span><span class="o">=</span><span class="m">1920</span>:1080 -c:v h264_nvenc new.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -258,7 +258,7 @@ file &#39;z2.mp4&#39;
 <ol class="arabic" start="5">
 <li><p>手机录制的mp4文件太大，在电脑上重新编码，让文件体积变小：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v hevc_nvenc newGPUh265.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v hevc_nvenc newGPUh265.mp4
 ffmpeg -i old.mp4 -c:v h264_nvenc newGPUh264.mp4
 ffmpeg -i old.mp4 -c:v libx265 newCPUh265.mp4
 ffmpeg -i old.mp4 -c:v libx264 newCPUh264.mp4
@@ -289,7 +289,7 @@ ffmpeg -i old.mp4 -c:v libx264 newCPUh264.mp4
 <p>(显卡支持h.265<span class="dash2">解码</span>，不一定支持h.265<span class="dash2">编码</span>，即二者不一定成对支持。)</p>
 <p>如果上面四条命令效果不明显，还可以通过码率参数来调节视频文件的体积，比如上面四条命令可以按下面的方式添加码率参数：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v hevc_nvenc -b:v 1M newGPUh265.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v hevc_nvenc -b:v 1M newGPUh265.mp4
 ffmpeg -i old.mp4 -c:v h264_nvenc -b:v 1M newGPUh264.mp4
 ffmpeg -i old.mp4 -c:v libx265 -b:v 1M newCPUh265.mp4
 ffmpeg -i old.mp4 -c:v libx264 -b:v 1M newCPUh264.mp4
@@ -300,7 +300,7 @@ ffmpeg -i old.mp4 -c:v libx264 -b:v 1M newCPUh264.mp4
 <blockquote>
 <div><div class="admonition-y-ffmpeg admonition">
 <p class="admonition-title"><a class="reference internal" href="../_images/avatarp1.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp1.svg" width="22" /></a> 驿窗提示：FFmpeg查看当前视频码率</p>
-<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4
 </pre></div>
 </div>
 <p>在输出的信息中，<span class="dash6">Duration:</span> 表示视频时长，<span class="dash6">bitrate:</span> 表示码率。</p>
@@ -308,7 +308,7 @@ ffmpeg -i old.mp4 -c:v libx264 -b:v 1M newCPUh264.mp4
 </div></blockquote>
 <p>在本地视频文件中使用，建议考虑crf参数，实现动态码率。</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v libx264 -crf 23 newCPUcrf23.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v libx264 -crf <span class="m">23</span> newCPUcrf23.mp4
 </pre></div>
 </div>
 <div class="admonition-y-teal-crf-23-gpu admonition">
@@ -317,9 +317,9 @@ ffmpeg -i old.mp4 -c:v libx264 -b:v 1M newCPUh264.mp4
 <p>对于<span class="teal">-crf 23</span>这个参数，如果想用GPU硬编码，需要额外的参数；直接把上面命令中的<span class="teal">libx264</span>替换为<span class="teal">h264_nvenc</span>是无效的。</p>
 <p>无效是指，使用GPU硬编码时改变<span class="teal">-crf 23</span>的数值，对视频没有任何影响。比如下面的三条命令，生成的视频有可能完全相同：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v h264_nvenc -crf 23 newGPUcrf23.mp4
-ffmpeg -i old.mp4 -c:v h264_nvenc -crf 48 newGPUcrf48.mp4
-ffmpeg -i old.mp4 -c:v h264_nvenc -crf 1 newGPUcrf1.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v h264_nvenc -crf <span class="m">23</span> newGPUcrf23.mp4
+ffmpeg -i old.mp4 -c:v h264_nvenc -crf <span class="m">48</span> newGPUcrf48.mp4
+ffmpeg -i old.mp4 -c:v h264_nvenc -crf <span class="m">1</span> newGPUcrf1.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -329,9 +329,9 @@ ffmpeg -i old.mp4 -c:v h264_nvenc -crf 1 newGPUcrf1.mp4
 <ol class="arabic" start="6">
 <li><p>给视频添加logo(水印):</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=x=10:y=20&quot; -c:v libx264 new.mp4
-ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=10:20&quot; -c:v libx264 new.mp4
-ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=10:20&quot; -c:v h264_nvenc new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=x=10:y=20&quot;</span> -c:v libx264 new.mp4
+ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=10:20&quot;</span> -c:v libx264 new.mp4
+ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=10:20&quot;</span> -c:v h264_nvenc new.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -350,25 +350,25 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=10:20&quot; -c:v h26
 </ul>
 <p>6.1 接下来尝试把logo放在视频画面的其它位置，比如正中心的位置：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i 00.png -filter_complex &quot;overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2&quot; -c:v libx264 new_zhongxin.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2&quot;</span> -c:v libx264 new_zhongxin.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>6.2 logo放在画面的<span class="dash6">右</span>上角，距离<span class="dash6">右</span>边缘20像素，<span class="dash6">上</span>边缘10像素：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i 00.png -filter_complex &quot;overlay=(main_w-overlay_w)-20:10&quot; -c:v libx264 new_youshang.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=(main_w-overlay_w)-20:10&quot;</span> -c:v libx264 new_youshang.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>6.3 logo放在画面的<span class="dash6">左</span>下角，距离<span class="dash6">左</span>边缘20像素，<span class="dash6">下</span>边缘10像素：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i 00.png -filter_complex &quot;overlay=20:(main_h-overlay_h)-10&quot; -c:v libx264 new_zuoxia.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=20:(main_h-overlay_h)-10&quot;</span> -c:v libx264 new_zuoxia.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>6.4 logo放在画面的<span class="dash6">右</span>下角，距离<span class="dash6">右</span>边缘20像素，<span class="dash6">下</span>边缘10像素：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i 00.png -filter_complex &quot;overlay=(main_w-overlay_w)-20:(main_h-overlay_h)-10&quot; -c:v libx264 new_youxia.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=(main_w-overlay_w)-20:(main_h-overlay_h)-10&quot;</span> -c:v libx264 new_youxia.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -416,14 +416,15 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=10:20&quot; -c:v h26
 </div></blockquote>
 <p>根据上面的说明，您可以随意把logo放到视频画面的四个角，只需要在公式中输入logo距离视频边缘的空隙值即可。</p>
 </li>
-<li><p>ffplay播放功能</p></li>
-</ol>
-<blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffplay -f lavfi &quot;movie=z93a.mp4[a];movie=z93b.mp4[b];[a][b]blend=all_mode=difference&quot;
+<li><p>ffplay播放功能</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffplay -f lavfi <span class="s2">&quot;movie=z93a.mp4[a];movie=z93b.mp4[b];[a][b]blend=all_mode=difference&quot;</span>
 </pre></div>
 </div>
-<p>上面这条命令在播放窗口中只播放两个视频不同的部分，其它相同的则隐藏不显示。</p>
-<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffplay -f lavfi -i &quot;movie=old.mp4[v0];movie=new.mp4[v1];[v0][v1]hstack&quot;
+</li>
+</ol>
+<blockquote>
+<div><p>上面这条命令在播放窗口中只播放两个视频不同的部分，其它相同的则隐藏不显示。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffplay -f lavfi -i <span class="s2">&quot;movie=old.mp4[v0];movie=new.mp4[v1];[v0][v1]hstack&quot;</span>
 </pre></div>
 </div>
 <p>上面这条命令是同屏播放两个视频，方便看一下区别。</p>
@@ -432,8 +433,7 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=10:20&quot; -c:v h26
 <li><p>从视频指定位置截图：</p></li>
 </ol>
 <blockquote>
-<div><blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -ss 00:26:30 -i old.mp4 -frames:v 1 -q:v 1 oldimg.jpg
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -ss <span class="m">00</span>:26:30 -i old.mp4 -frames:v <span class="m">1</span> -q:v <span class="m">1</span> oldimg.jpg
 </pre></div>
 </div>
 <p>其中：</p>
@@ -443,13 +443,11 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=10:20&quot; -c:v h26
 <li><p><span class="teal">-q:v 1</span>表示指定jpg的质量为1，1表示质量最好，此值范围是1-31。</p></li>
 </ul>
 <p>下面相对简单，截图是PNG格式：</p>
-<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -ss 00:00:30 -i old.mp4 -vframes 1 oldimg.png
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -ss <span class="m">00</span>:00:30 -i old.mp4 -vframes <span class="m">1</span> oldimg.png
 </pre></div>
 </div>
-</div></blockquote>
 <p>下面则是按帧编号截图：</p>
-<blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i k0.mp4 -vf &quot;select=eq(n\,720)&quot; -vframes 1 frame-720.png
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i k0.mp4 -vf <span class="s2">&quot;select=eq(n\,720)&quot;</span> -vframes <span class="m">1</span> frame-720.png
 </pre></div>
 </div>
 <p>其中：</p>
@@ -461,24 +459,24 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex &quot;overlay=10:20&quot; -c:v h26
 <div><p>截图时间为30秒，帧率为24fps，30*24=720。(上面两个命令截取的图片是完全一样的，比如，用sha256验证，sha256码完全一样)</p>
 </div></blockquote>
 </div></blockquote>
-</div></blockquote>
-<ol class="arabic simple" start="9">
-<li><p>mp4转gif:</p></li>
-</ol>
-<blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf palettegen palette.png
+<ol class="arabic" start="9">
+<li><p>mp4转gif:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf palettegen palette.png
 ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 </pre></div>
 </div>
-<p>这两条命令可以合成一条：</p>
+</li>
+</ol>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf &quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot; new.gif
+<div><p>这两条命令可以合成一条：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot;</span> new.gif
 </pre></div>
 </div>
 </div></blockquote>
 <p>或者再精细一点：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf &quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot; -s 480*320 -r 10 new.gif
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot;</span> -s <span class="m">480</span>*320 -r <span class="m">10</span> new.gif
 </pre></div>
 </div>
 </div></blockquote>
@@ -501,7 +499,7 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 </ol>
 <blockquote>
 <div><blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v copy -an new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v copy -an new.mp4
 </pre></div>
 </div>
 </div></blockquote>
@@ -512,25 +510,24 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 </ol>
 <blockquote>
 <div><blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf &quot;hflip&quot; -c:v libx264 new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;hflip&quot;</span> -c:v libx264 new.mp4
 </pre></div>
 </div>
 </div></blockquote>
-<dl>
-<dt>垂直翻转视频：</dt><dd><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf &quot;vflip&quot; -c:v libx264 new.mp4
-</pre></div>
-</div>
-</dd>
-</dl>
-</div></blockquote>
-<ol class="arabic simple" start="13">
-<li><p>把多张图片拼成视频：</p></li>
-</ol>
+<p>垂直翻转视频：</p>
 <blockquote>
-<div><div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>ffmpeg -r 0.5 -f image2 -i aaa%d.jpg -b:v 4M new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;vflip&quot;</span> -c:v libx264 new.mp4
 </pre></div>
 </div>
 </div></blockquote>
+</div></blockquote>
+<ol class="arabic" start="13">
+<li><p>把多张图片拼成视频：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -r <span class="m">0</span>.5 -f image2 -i aaa%d.jpg -b:v 4M new.mp4
+</pre></div>
+</div>
+</li>
+</ol>
 <div class="line-block">
 <div class="line"><em>未完稿</em></div>
 <div class="line"><em>最近一次更新：2023-11-30</em></div>
@@ -552,8 +549,8 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
   </div>
 
   
-<p>除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com
+<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
  
 
 
