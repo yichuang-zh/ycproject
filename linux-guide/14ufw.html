@@ -111,10 +111,9 @@
 </dl>
 <p>基于上述原因，驿窗推荐使用虚拟机，并把平时的网页浏览放到虚拟机中进行，最大限度的防范浏览器漏洞风险。</p>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>虚拟机逃逸</strong></p>
-<p>虚拟机逃逸是能够做到从虚拟机中对主机系统进行攻击的。不过，虚拟机逃逸的难度级别非常高，对于家用和办公来说，可以忽略不计。</p>
+<div><div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>虚拟机逃逸</strong></p>
+<p>虚拟机逃逸是能够做到从虚拟机中对主机系统进行攻击的。不过，虚拟机逃逸的难度级别非常高，对于常规的家用和办公目的来说，可以忽略不计。</p>
 </div>
 </div></blockquote>
 <p>关于虚拟机与防火墙的配合，请参考<a class="reference internal" href="16kvm.html#kvm"><span class="std std-ref">虚拟机virt-manager</span></a>。</p>
@@ -130,9 +129,9 @@
 <li><p>ufw</p></li>
 <li><p>gufw</p>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：可以在终端中输入下面这条命令来快速安装ufw和gufw：</p>
+<div><div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：</p>
+<p>可以在终端中输入下面这条命令来快速安装ufw和gufw：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install ufw gufw
 </pre></div>
 </div>
@@ -298,10 +297,10 @@
 <p>实际上，按clamav的说法，clamav的病毒库95%是用于查杀windows病毒的，这说明Linux系统病毒种类是远少于windows的。事实是，使用windows系统的时候，大家对杀毒软件/防火墙通常都比较熟悉，也会安装和配置使用；而一旦使用了Linux系统以后，慢慢地就变成不太会使用杀毒软件和防火墙了，因为基本用不到，也就不熟悉。这与Linux系统的特性有关。</p>
 <p>驿窗测试了一段时间clamav，Debian系统从来没杀出过病毒，倒是很久以前使用windows时的一个数据备份目录，杀出一种病毒。再之后，就基本没怎么用过了。</p>
 <p>另外，目前杀病毒软件用处并不是特别大，因为当前安全威胁主要是来自于系统漏洞和网页浏览器，所以，把精力放到漏洞和浏览器上，设计相关的方案，比杀毒软件更让人放心。</p>
-<p>驿窗提供的方案是封住本机所有端口，仅开放53的出权限，然后本机使用virt-manager虚拟机上网，比如上网看网页、看网络视频、发邮件等等。这个方案的特点就是把平时上网的操作全部放在虚拟机中，主机从来不上网，仅更新系统和安装软件。这个方案安全性极高，且漏洞也基本上不需要担心。虚拟机里中毒或者被攻入没关系，因为想从虚拟机进入主机，不是一般的难，普通用户可以理解为做不到，因为很多病毒测试都是在虚拟机里进行的，可见虚拟机是可以在极大程度上隔离主机与网络之间的安全问题的。</p>
-<p><em>未完稿</em></p>
+<p>驿窗提供的方案是封住本机所有端口，仅开放53的出权限，然后本机使用virt-manager虚拟机上网，比如上网看网页、看网络视频、发邮件等等。这个方案的特点就是把平时上网的操作全部放在虚拟机中，主机从来不上网，仅更新系统和安装软件。这个方案安全性极高，且漏洞也基本上不需要担心。虚拟机里中毒或者被攻入没关系，因为想从虚拟机进入主机，不是一般的难，普通用户可以理解为做不到，因为很多病毒测试都是在虚拟机里进行的，可见虚拟机是可以在极大程度上隔离主机与网络之间的安全问题的。结合virt-manager虚拟机的快照功能，随时可以一秒钟内就把系统重置到指定的状态。</p>
+<p><em>未完稿……</em></p>
+<p><em>最近一次更新：2024-01-19</em></p>
 <hr class="docutils" />
-<p><em>最近一次更新：</em> 2023-12-07 01:34</p>
 </div>
 </div>
 

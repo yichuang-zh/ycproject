@@ -160,8 +160,25 @@
 </ol>
 </div></blockquote>
 <p><strong>应用示例：</strong></p>
-<ol class="arabic simple">
-<li><p>裁切视频的画面尺寸/修改分辨率(<span class="dash6">Nvidia显卡</span>转码)：</p></li>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><a class="reference internal" href="#ffmpeg01-resize"><span class="std std-ref">裁切视频的画面尺寸(Nvidia显卡转码)</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg02-cut"><span class="std std-ref">分割视频</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg03-combine"><span class="std std-ref">把从同一视频截取出来的两个mp4片段合并成一个新的mp4</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg04-resolution"><span class="std std-ref">调整画面分辨率</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg05-phone-large"><span class="std std-ref">手机录制的mp4文件太大，在电脑上重新编码，让文件体积变小</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg06-logo"><span class="std std-ref">给视频添加logo(水印)</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg07-ffplay"><span class="std std-ref">ffplay播放功能</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg08-capture"><span class="std std-ref">从视频指定位置截图</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg09-gif"><span class="std std-ref">mp4转gif</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg10-smaller"><span class="std std-ref">录制视频时减小视频文件的体积</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg11-delaudio"><span class="std std-ref">删除音频，只要视频</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg12-flip"><span class="std std-ref">水平翻转视频</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg13-motion-jpg"><span class="std std-ref">把多张图片拼成视频</span></a></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" id="ffmpeg01-resize">
+<li><p>裁切视频的画面尺寸(<span class="dash6">Nvidia显卡</span>转码)：</p></li>
 </ol>
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;576:324:72:428&#39;</span> -c:v h264_nvenc newGPU.mp4
@@ -194,7 +211,7 @@
 </div></blockquote>
 <p>视频的码率、比特率，表示视频压缩的等级。这有点像JPEG图像，压缩得越小，图片质量就越差。对于视频，码率即单位时间传输的数据量。这个数据量越小，画面质量越差，分辨率固定。</p>
 </div></blockquote>
-<ol class="arabic" start="2">
+<ol class="arabic" id="ffmpeg02-cut" start="2">
 <li><p>分割视频：</p>
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old1.mp4 -ss <span class="m">00</span>:00:08 -to <span class="m">01</span>:50 -c copy new1.mp4
@@ -210,8 +227,9 @@ ffmpeg -i old3.mp4 -ss <span class="m">00</span>:00:03 -t <span class="m">00</sp
 <p>第二条命令是将视频old2.mp4从00:00:03处开始提取出2分48秒，提取出的新视频文件名称是new2.mp4。不转码，几乎是瞬间完成。</p>
 <p>第三条命令是将视频old3.mp4从00:00:03处开始提取出02:48的长度，提取出的视频名字是new3.mp4。没有瞬间完成(-c:v h264_nvenc表示转码)。</p>
 <p>在执行速度上，第一条命令和第二条命令都比第三条命令要快上几十倍，基本是瞬间完成：因为只是copy，不转码(<span class="teal">-c copy</span>)。第三条命令因为有转码过程(<span class="teal">-c:v h264_nvenc</span>)，所以相对慢很多。</p>
+<p><span class="dash6">不过，有些情况下，可能必须转码，不能copy</span>。因为在copy的时候，严重依赖原视频，有可能会出现copy出来的片段播放异常的情况，这时候，用<span class="teal">-c:v h264_nvenc</span>转码可以解决异常。</p>
 </div></blockquote>
-<ol class="arabic" start="3">
+<ol class="arabic" id="ffmpeg03-combine" start="3">
 <li><p>把从同一视频截取出来的两个mp4片段合并成一个新的mp4:</p>
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -f concat -i v.txt -c copy new.mp4
@@ -236,8 +254,8 @@ file <span class="s1">&#39;z2.mp4&#39;</span>
 <li><p><span class="teal">new.mp4</span>：指定输出文件名为new.mp4。</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic" start="4">
-<li><p>调整画面尺寸/分辨率：</p>
+<ol class="arabic" id="ffmpeg04-resolution" start="4">
+<li><p>调整画面分辨率：</p>
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">scale</span><span class="o">=</span><span class="m">1920</span>:1080 -c:v h264_nvenc new.mp4
 </pre></div>
@@ -255,7 +273,7 @@ file <span class="s1">&#39;z2.mp4&#39;</span>
 <li><p><span class="teal">new.mp4</span>：指定输出文件名为new.mp4。</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic" start="5">
+<ol class="arabic" id="ffmpeg05-phone-large" start="5">
 <li><p>手机录制的mp4文件太大，在电脑上重新编码，让文件体积变小：</p>
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v hevc_nvenc newGPUh265.mp4
@@ -326,7 +344,7 @@ ffmpeg -i old.mp4 -c:v h264_nvenc -crf <span class="m">1</span> newGPUcrf1.mp4
 </div>
 </div></blockquote>
 </div></blockquote>
-<ol class="arabic" start="6">
+<ol class="arabic" id="ffmpeg06-logo" start="6">
 <li><p>给视频添加logo(水印):</p>
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=x=10:y=20&quot;</span> -c:v libx264 new.mp4
@@ -416,6 +434,8 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=10:
 </div></blockquote>
 <p>根据上面的说明，您可以随意把logo放到视频画面的四个角，只需要在公式中输入logo距离视频边缘的空隙值即可。</p>
 </li>
+</ol>
+<ol class="arabic" id="ffmpeg07-ffplay" start="7">
 <li><p>ffplay播放功能</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffplay -f lavfi <span class="s2">&quot;movie=z93a.mp4[a];movie=z93b.mp4[b];[a][b]blend=all_mode=difference&quot;</span>
 </pre></div>
@@ -429,7 +449,7 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=10:
 </div>
 <p>上面这条命令是同屏播放两个视频，方便看一下区别。</p>
 </div></blockquote>
-<ol class="arabic simple" start="8">
+<ol class="arabic simple" id="ffmpeg08-capture" start="8">
 <li><p>从视频指定位置截图：</p></li>
 </ol>
 <blockquote>
@@ -459,7 +479,7 @@ ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=10:
 <div><p>截图时间为30秒，帧率为24fps，30*24=720。(上面两个命令截取的图片是完全一样的，比如，用sha256验证，sha256码完全一样)</p>
 </div></blockquote>
 </div></blockquote>
-<ol class="arabic" start="9">
+<ol class="arabic" id="ffmpeg09-gif" start="9">
 <li><p>mp4转gif:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf palettegen palette.png
 ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
@@ -487,14 +507,14 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 <li><p><span class="teal">-vf</span>表示生成色板palettegen和使用色板paletteuse。</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="10">
+<ol class="arabic simple" id="ffmpeg10-smaller" start="10">
 <li><p>录制视频时减小视频文件的体积</p></li>
 </ol>
 <blockquote>
 <div><p>对于软件教学类的视频，由于视频内容主要是软件操作，所以可以在录制视频时降低帧率。</p>
 <p>一般视频的常用帧率为24fps或者30fps，软件教学视频在录制时可以降低为12fps，或者更低，看起来有可能会像gif，但完全不影响教学演示效果。</p>
 </div></blockquote>
-<ol class="arabic simple" start="11">
+<ol class="arabic simple" id="ffmpeg11-delaudio" start="11">
 <li><p>删除音频，只要视频：</p></li>
 </ol>
 <blockquote>
@@ -505,7 +525,7 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 </div></blockquote>
 <p>其中，<span class="teal">-an</span>是指不复制音频。此命令仅适用于单音轨视频。</p>
 </div></blockquote>
-<ol class="arabic simple" start="12">
+<ol class="arabic simple" id="ffmpeg12-flip" start="12">
 <li><p>水平翻转视频：</p></li>
 </ol>
 <blockquote>
@@ -521,7 +541,7 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 </div>
 </div></blockquote>
 </div></blockquote>
-<ol class="arabic" start="13">
+<ol class="arabic" id="ffmpeg13-motion-jpg" start="13">
 <li><p>把多张图片拼成视频：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -r <span class="m">0</span>.5 -f image2 -i aaa%d.jpg -b:v 4M new.mp4
 </pre></div>
@@ -530,7 +550,7 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 </ol>
 <div class="line-block">
 <div class="line"><em>未完稿</em></div>
-<div class="line"><em>最近一次更新：2023-11-30</em></div>
+<div class="line"><em>最近一次更新：2024-01-04</em></div>
 </div>
 </div>
 

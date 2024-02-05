@@ -140,6 +140,8 @@
 <div class="section" id="ftp">
 <h2>方案二、FTP操作<a class="headerlink" href="#ftp" title="永久链接至标题"></a></h2>
 <p>如果不想使用命令行，可以借助SSH来使用FTP操作。FTP软件可以使用FileZilla，协议可以使用加密的SFTP。特点是操作时guest必须为开机运行的状态；并且，guest和host分别需要配置好SSH相关的参数设置 。</p>
+<p>FileZilla支持断点续传，所以，如果在数据传输过程中需要重启电脑，可以在FileZilla中暂停传输过程，等电脑重启后继续之前的传输过程。编辑&gt;设置&gt;传输&gt;对已存在文件的操作，下载和上传都选择 继续文件传输。
+列队的文件 框中，右键点击服务器，取消勾选 处理队列 即可暂停。</p>
 <blockquote>
 <div><div class="admonition-y admonition">
 <p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：</p>

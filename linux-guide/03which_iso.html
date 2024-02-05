@@ -96,7 +96,7 @@
 <p>对于系统安装，Debian官网提供了很多个版本的映像(iso)。那么，我们在安装时应该选择哪个iso？(这里的映像是指iso)</p>
 <div class="admonition-y-202377 admonition" id="dvd-link-01">
 <p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 2023年7月7更新：</p>
-<p>如果是debian11或更早的版本，最好下载带有固件的映像文件，因为它带有无线网卡驱动；但从debian12之后，debian官方修改了规则，不再提供不包含固件的版本，即完整的iso都会包含固件，不用再担心缺少无线网卡驱动。</p>
+<p>如果是debian11或更早的版本，最好下载带有non-free固件的映像文件，因为它带有无线网卡驱动；但从debian12之后，debian官方修改了规则，iso已经包含需要的non-free固件，不再有不包含固件的版本，所以不用再担心缺少无线网卡驱动。</p>
 <dl class="simple">
 <dt>所以，安装版本iso直接从这个链接下载就可以：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/">https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/</a></p>
 </dd>
@@ -104,101 +104,73 @@
 </dd>
 </dl>
 </div>
-<p>驿窗推荐到下面的<strong>链接1</strong>下载带固件的映像文件(DVD-1.iso)：</p>
-<dl class="simple">
-<dt>链接1：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-dvd/">https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-dvd/</a></p>
-</dd>
-</dl>
-<p>这个映像有以下特点：</p>
-<ol class="arabic simple">
-<li><p>适用于普通个人电脑；</p></li>
-<li><p>可以离线安装，即安装时可以不连接网络；</p></li>
-<li><p>内含无线网卡固件，系统装好后无线网卡直接可用；</p></li>
-</ol>
 <p>Debian官网提供的iso种类比较多，下面我们做一下相对全面的介绍，了解之后您就清楚应该如何选择iso 。</p>
 <div class="section" id="id1">
 <h2>Iso中都包括什么内容<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<p>Windows提供的iso中，只包括windows系统，不包括应用软件；Debian不同，Debian提供的完整iso中，除了包括系统以外，还包括应用程序，比如办公软件LibreOffice等。</p>
-<p>理论上，Debian官方仓库提供的软件包超过58000个，它们共同组成了 系统+应用。您可以随时通过网络来安装这些软件包，也可以把软件包下载到自己的本地再安装。甚至，如果愿意，您可以把整个官方仓库”搬”到本地。</p>
-<p>另外，除了Debian官方仓库提供的软件包，您也可以安装从其它渠道获得的符合debian系统要求的软件包，这增加了Debian系统可安装应用的种类和版本范围。</p>
+<p>Windows提供的iso中，只包括windows系统，不包括应用软件；Debian不同，Debian提供的完整iso中，除了包括系统以外，还包括一些应用程序，比如办公软件LibreOffice等。</p>
+<p>理论上，Debian官方仓库提供的软件包超过58000个，它们共同组成了<span class="dash6">操作系统+应用程序</span>。您可以随时通过网络来安装这些软件包，也可以把软件包下载到自己的本地再安装。甚至，如果愿意，您可以把整个官方仓库<span class="dash6">搬</span>到本地。</p>
+<p>另外，除了Debian官方仓库提供的软件包，您也可以安装从其它渠道获得的符合debian系统要求的软件包，这增加了Debian系统可安装应用的种类和版本范围。(完全新手不推荐)</p>
 </div>
 <div class="section" id="free-non-free-official-unofficial">
 <h2>Free/non-free/official/unofficial<a class="headerlink" href="#free-non-free-official-unofficial" title="永久链接至标题"></a></h2>
 <p>Debian仓库提供的软件包分两大类，一类是自由的(free)，另一类是非自由的(non-free)。</p>
 <p>Debian对于free和non-free有明确的定义，具体请参考Debian关于<a class="reference external" href="https://www.debian.org/intro/free">自由</a>的说明以及<a class="reference external" href="https://www.debian.org/social_contract#guidelines">DFSG</a> 。简单来说，那些不开放源代码，或者虽然开放了源代码，但却不提供自由使用授权的软件，就是non-free的。而non-free的典型的就是无线网卡驱动，因为无线网卡驱动通常都是不开放源代码的。</p>
-<p>Debian “official”提供的软件包，一定是自由的(free)。而那些non-free的软件包，Debian则以unofficial(非正式)方式提供。</p>
+<p>Debian <span class="dash6">official</span>类的软件包，一定是自由的(free)。而那些<span class="dash6">non-free</span>类的软件包，Debian则以<span class="dash6">unofficial</span>(非正式)方式提供。</p>
+<p>在Debian12以前，Debian官方提供Free/non-free/official/unofficial多种版本的iso供下载。从Debian12开始，不再区分。</p>
+<p>不过，Debian官方仍然提供不同的iso类型供用户选择，下面的链接是各种类型的下载页面：</p>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>unofficial的两种解释：非正式、非官方</strong></p>
-<p>第一种，比如Debian CD Team制作的含有firmware的iso，称为unofficial iso；虽然归类为unofficial，但iso是由Debian开发人员制作，这种情况下我们把unofficial称为<strong>非正式</strong>。(非正式的iso)</p>
-<p>第二种，非Debian开发人员制作制作的iso，也归类为unofficial，这种情况下我们把unofficial称为<strong>非官方</strong>。(非官方的iso)</p>
-<p>(关于unofficial非正式、非官方的讨论请参考<a class="reference external" href="https://forums.debiancn.org/t/topic/2686/5">这个链接</a>  )</p>
-</div>
+<div><dl class="simple">
+<dt>Debian下载页面：</dt><dd><p><a class="reference external" href="https://www.debian.org/distrib/index.zh-cn.html">https://www.debian.org/distrib/index.zh-cn.html</a></p>
+</dd>
+</dl>
 </div></blockquote>
-<p>所以，如果用户希望下载带有无线网卡驱动的iso，或者直接下载无线网卡驱动，那么一定要选择unofficial加上non-free。比如下面的<strong>链接2</strong>是无线网卡驱动目录，链接中带有unofficial/non-free字样：</p>
-<dl class="simple">
-<dt>链接2：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bullseye/current/">https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bullseye/current/</a></p>
+<p>上面的链接只提供全套映像的第一个iso下载，另外还有十几个iso，需要的话可以从下面的链接下载：</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Debian全套iso下载页面：</dt><dd><p><a class="reference external" href="https://www.debian.org/CD/jigdo-cd/index.zh-cn.html">https://www.debian.org/CD/jigdo-cd/index.zh-cn.html</a></p>
 </dd>
 </dl>
-<p>从上面的解释可以看出，如果想下载带无线网卡驱动的安装映像，必须到unofficial/non-free目录下载。</p>
-<p>当然，如果您对unofficial/non-free这样的字眼比较在意，希望使用official方式的iso，则可以到下面的<strong>链接3</strong>(official/free目录)下载安装映像，只不过需要额外处理一下无线网卡驱动而已：</p>
-<dl class="simple">
-<dt>链接3：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/">https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/</a></p>
+</div></blockquote>
+<p>注意，这些iso下载需要使用<span class="dash6">jigdo</span>，请参考页面上的说明使用。</p>
+</div>
+<div class="section" id="id3">
+<h2>小型安装映像<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p>完整的安装映像是一个比较大的文件(4GB)。为了方便，Debian还提供比较小的安装映像(400MB)，这种小的安装映像通常被命名为netins.iso，即映像中只提供基本引导程序和安装程序，在安装过程中需要的其它所有软件包都需要从网络实时下载。这种情况下，需要您的联网状况比较好才可以，否则非常耗时且有可能失败。下面是Debian的小型安装映像的下载<span class="dash6">链接-net</span>：</p>
+<dl>
+<dt>链接-net：</dt><dd><p><a class="reference external" href="https://www.debian.org/distrib/netinst.zh-cn.html">https://www.debian.org/distrib/netinst.zh-cn.html</a></p>
+<div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：</p>
+<p>对于个人和家庭用户，驿窗<strong>不推荐</strong>使用小型安装映像。</p>
+</div>
 </dd>
 </dl>
-<p>(这个链接中没有official/free字样，原因是Debian只对unofficial/non-free进行标注)</p>
 </div>
 <div class="section" id="id4">
-<h2>小型安装映像<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
-<p>上面的<a class="reference internal" href="#dvd-link-01"><span class="std std-ref">链接1</span></a>下载的安装映像是一个比较大的文件(4GB)。另外，Debian还提供比较小的安装映像(400MB)，这种小的安装映像通常被命名为netins.iso，即映像中只提供基本引导程序/安装程序，在安装过程中需要的其它所有软件包都需要从网络实时下载。这种情况下，需要您的外网状况比较好才可以，否则非常耗时且有可能失败。下面是Debian 11.0的小型安装映像的下载<strong>链接4</strong>(official/free)：</p>
-<dl>
-<dt>链接4：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.0.0-amd64-netinst.iso">https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.0.0-amd64-netinst.iso</a></p>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：对于个人和家庭用户，驿窗<strong>不推荐</strong>使用小型安装映像。</p>
-</div>
-</dd>
-</dl>
-</div>
-<div class="section" id="id5">
-<h2>云映像<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+<h2>云映像<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>云映像不适用家用和办公场景。</p>
 </div>
 <div class="section" id="live">
 <h2>Live映像<a class="headerlink" href="#live" title="永久链接至标题"></a></h2>
 <p>Live映像与上面提到的映像相比，除了可以安装系统以外，还能够在不安装系统的情况下，先体验一下系统的界面和操作感觉。</p>
 <p>把Live映像写到U盘后用U盘引导您的电脑，电脑就进入到一个真正的Debian系统中，您可以体验几乎所有的系统功能，比如浏览网页、看网络视频、安装/删除软件、存取数据、收发邮件等等。</p>
-<p>Debian根据桌面环境类型的不同提供了多个Live映像，您可以根据兴趣和需要进行选择。下面的<strong>链接5</strong>是当前稳定版的Live映像目录(official/free)：</p>
+<p>Debian根据桌面环境类型的不同提供了多个Live映像，您可以根据兴趣和需要进行选择。下面的<span class="dash6">链接-live</span>是当前稳定版的Live映像地址：</p>
 <dl class="simple">
-<dt>链接5：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/">https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/</a></p>
-</dd>
-</dl>
-<p>下面的<strong>链接6</strong>是包含无线网卡驱动的11.0.0的Live映像目录(unofficial/non-free)：</p>
-<dl>
-<dt>链接6：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/11.0.0-live+nonfree/amd64/iso-hybrid/">https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/11.0.0-live+nonfree/amd64/iso-hybrid/</a></p>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>体验用Live映像推荐unofficial/non-free</strong></p>
-<p>如果您是在笔记本电脑上体验Debian系统，那么推荐您下载链接6的Live映像，原因是它包含无线网卡驱动，系统启动后直接就可以上网。而链接5下载的映像则比较麻烦，它没有无线网卡驱动。</p>
-<p>有一种例外情况，就是在虚拟机中体验Live映像。虚拟机是不需要无线网卡驱动的，所以使用链接5就可以。</p>
-</div>
+<dt>链接-live：</dt><dd><p><a class="reference external" href="https://www.debian.org/CD/live/index.zh-cn.html">https://www.debian.org/CD/live/index.zh-cn.html</a></p>
 </dd>
 </dl>
 <p>使用Live映像前，有几个问题请了解：</p>
 <ol class="arabic simple">
 <li><p>当前Live映像采用了Calamares安装工具，Debian是从Debian 10才开始使用这个工具的，使用它来安装系统是否会有什么问题，仍然需要观察。如果对稳定性有极致要求，那么不推荐用Live映像安装系统。</p></li>
-<li><p>每一种桌面环境，都对应不同的映像。换句话说，一个映像就只能体验一种桌面环境；如果想体验不同的桌面环境，必须下载不同的Live映像。</p></li>
+<li><p>每一种桌面环境，都对应不同的live映像。换句话说，一个live映像就只能体验一种桌面环境；如果想体验不同的桌面环境，必须下载不同的Live映像。</p></li>
 <li><p>真机体验前需要把映像写入U盘和重启电脑；所以，用虚拟机体验可能更方便，这样在体验时就不需要写入U盘，也不需要重启电脑。</p></li>
 </ol>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>除了体验，Live映像也非常适合用来救急</strong></p>
+<div><div class="admonition-y-live admonition">
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：除了体验，Live映像也非常适合用来救急</p>
 <p>如果某一天系统崩溃无法正常启动，那么使用Live映像引导电脑以后，可以尝试修复启动问题。并且，如果硬件没有损坏，很容易就能把重要数据拷贝出来。所以，常备一个用Live映像制作的启动U盘放在电脑旁边是一个好习惯。</p>
 </div>
 </div></blockquote>
-<p><em>未完结</em></p>
+<p><em>最近一次更新：2024-01-24</em></p>
 </div>
 </div>
 
