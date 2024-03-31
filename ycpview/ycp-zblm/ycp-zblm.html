@@ -106,7 +106,7 @@
 <p>本文涉及的技术实现均使用开源源代码方案，并附开源协议。</p>
 <div class="admonition-y admonition">
 <p class="admonition-title"><a class="reference internal" href="../../_images/avatarp20.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp20.svg" width="22" /></a> 驿窗注：直接上手</p>
-<p>如果您对理论和技术细节不感兴趣，只关心怎么安装和使用，请直接阅读 直接上手 小节。</p>
+<p>如果您对理论和技术细节不感兴趣，只关心怎么安装和使用，请直接阅读<span class="dash6">直接上手</span>小节。</p>
 </div>
 <dl class="simple">
 <dt>文档主目录：</dt><dd><ol class="arabic simple">
@@ -154,7 +154,7 @@
 </ol>
 </dd>
 </dl>
-<p>对比一下现在市面上手机自带的防蓝光护眼功能。通常手机打开这个功能以后，屏幕原本白色的地方都会变得有点发黄，这是因为白光中包含蓝光。当把白光中的蓝光减少一部分之后，就会显得偏黄。而驿窗零蓝模式的原理，就是把输入法界面中蓝光全部去除，并且把红光也适量去除，所以结果就是：手机屏幕的<span class="dash2">输入法界面</span>部分以绿光为主，不发射蓝光，少量发射红光。</p>
+<p>对比一下现在市面上手机自带的防蓝光护眼功能。通常手机打开这个功能以后，屏幕原本白色的地方都会变得有点发黄，这是因为白光中包含的蓝光被削弱了：当把白光中的蓝光减少一部分之后，原本的白光就会显得偏黄。而驿窗零蓝模式的原理，就是把输入法界面中蓝光全部去除，并且把红光也适量去除，所以结果就是：手机屏幕的<span class="dash2">输入法界面</span>部分以绿光为主，不发射蓝光，少量发射红光。</p>
 <p>有一点需要注意，就是一旦屏幕颜色中有<span class="dash2">白色</span>或<span class="dash2">灰色</span>出现，那么通常就<span class="dash2">一定</span>会有蓝光发出。因为白色光里面是包含蓝光的，灰色光里面同样包括蓝光。所以，驿窗零蓝模式不会使用白色和灰色，包括浅灰色或者深灰色。其它颜色，比如品红色，也是包含蓝光的。具体哪些颜色不包含蓝光，请参考本文后面的内容。</p>
 <p>根据以上原理，驿窗零蓝模式的手机输入法主题提供了五种配色方案供选择，分别为：</p>
 <blockquote>
@@ -187,41 +187,41 @@
 <h3>3.1 下载并安装同文输入法(trime)<a class="headerlink" href="#trime" title="永久链接至标题"></a></h3>
 <p>通常情况下，您的手机应用商店中应该<span class="dash2">没有</span>同文输入法。所以，您需要<span class="dash2">先</span>在手机上安装F-Droid，<span class="dash2">然后</span>通过F-Droid这个app来安装同文输入法(trime)。</p>
 <div class="admonition-y-f-droid admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp20.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp20.svg" width="22" /></a> 驿窗注：关于F-Droid</p>
-<p>F-Droid也是一种手机应用商店，只不过它提供的应用都是<span class="dash2">FOSS</span>应用，即自由和开源的应用(不一定免费，开源也可以收费)。</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp20.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp20.svg" width="22" /></a> 驿窗注：F-Droid是啥</p>
+<p>F-Droid是一种安卓手机应用商店，用户可以通过它来安装手机APP，只不过它提供的应用都是<span class="dash2">FOSS</span>应用，即自由和开源的应用。</p>
 <div class="line-block">
 <div class="line">F-Droid的安全性<span class="dash2">无法担保</span>，请斟酌使用。</div>
 <div class="line">同文输入法(trime)的安全性<span class="dash2">无法担保</span>，请斟酌使用。</div>
+<div class="line">FOSS(Free and Open Source Software)不一定免费，开源也可以收费。</div>
 </div>
 </div>
 <dl class="simple">
 <dt>F-Droid下载地址：</dt><dd><p><a class="reference external" href="https://f-droid.org">https://f-droid.org</a></p>
 </dd>
 </dl>
-<p>同文输入法(trime)安装好以后先不要打开，因为打开之前我们需要先下载一些配置文件，具体操作在下面的3.2节中会详细说明。</p>
-<p><em>同文输入法(trime)的版本目前暂时推荐使用 3.2.7 。</em></p>
+<p>同文输入法(trime)安装好以后先不要打开，因为打开之前我们需要先下载一些配置文件，具体操作在下面的3.2节中有详细说明。</p>
 </div>
 <div class="section" id="zip">
 <h3>3.2. 下载驿窗零蓝zip压缩包并解压到手机根目录<a class="headerlink" href="#zip" title="永久链接至标题"></a></h3>
 <dl class="simple">
-<dt>您可以从下面的地址下载 <strong>驿窗零蓝</strong> 压缩包：</dt><dd><p>下载文件： <a class="reference download internal" download="" href="../../_downloads/0b7ccc2780879ffff804b14f5417fc28/zblm.zip"><code class="xref download docutils literal notranslate"><span class="pre">点击这里下载驿窗零蓝压缩包</span></code></a></p>
+<dt>您可以从下面的地址下载<span class="dash6">驿窗零蓝</span>压缩包：</dt><dd><p><a class="reference download internal" download="" href="../../_downloads/0b7ccc2780879ffff804b14f5417fc28/zblm.zip"><code class="xref download docutils literal notranslate"><span class="pre">点击这里下载驿窗零蓝压缩包</span></code></a></p>
 </dd>
 </dl>
-<p>下载到本地后是一个zblm.zip文件，解压即可得到rime目录，目录中有<span class="dash6">驿窗零蓝.trime.yaml</span>文件及其它文件，这些文件就是同文输入法配置文件。把包含这些文件的rime目录<span class="dash2">整体拷贝</span>到手机根目录即可。</p>
+<p>下载得到的是一个zblm.zip文件，解压即可得到rime目录，目录中有<span class="dash6">驿窗零蓝.trime.yaml</span>文件及其它文件，这些文件就是同文输入法配置文件。把包含这些文件的rime目录<span class="dash2">整体拷贝</span>到手机根目录即可。</p>
 <blockquote>
 <div><div class="admonition-y admonition">
 <p class="admonition-title"><a class="reference internal" href="../../_images/avatarp20.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp20.svg" width="22" /></a> 驿窗注：手机上的根目录在哪</p>
 <p>rime目录在手机上的位置，应该是<span class="dash2">内部存储设备 &gt; rime</span>。</p>
 <p>其中，<span class="dash2">内部存储设备</span>就表示手机根目录，有些手机不叫内部存储设备，直接就叫手机，或者叫手机存储，或者其它名称。根目录中通常可以看到有Download目录和DCIM目录。</p>
-<p>如果您无法确定手机根目录的位置，可以通过F-Droid安装“Simple File Manager Pro”，中文名称是“简单文件管理 pro”，打开它就能看到:dash2:` 内部存储器`，这个内部存储器就是根目录了。</p>
+<p>如果您无法确定手机根目录的位置，可以通过F-Droid安装<span class="dash6">Simple File Manager Pro</span>这个工具，中文名称是<span class="dash6">简单文件管理 pro</span>，打开它就能看到<span class="dash2">内部存储器</span>，这个内部存储器就是根目录了。</p>
 <p>Simple File Manager Pro的安全性<span class="dash2">无法担保</span>，请斟酌使用。</p>
 </div>
 </div></blockquote>
-<p>有一点要注意，如果您的手机上已经存在rime目录，那么这个目录中大概率会有一个trime.yaml文件，这个文件不要保留，然后确保<span class="dash6">驿窗零蓝.trime.yaml</span>这个文件一定在rime目录中，之后执行<a class="reference internal" href="#apply-new-color"><span class="std std-ref">配色方案切换</span></a>，再调用输入法就能看到界面的效果了。</p>
+<p>有一点要注意，如果您的手机上已经存在rime目录，那么这个目录中大概率会有一个trime.yaml文件，这个文件不要保留，然后确保<span class="dash6">驿窗零蓝.trime.yaml</span>这个文件一定在rime目录中，之后按下面的介绍执行<a class="reference internal" href="#apply-new-color"><span class="std std-ref">配色方案切换</span></a>，再调用输入法就能看到界面的效果了。</p>
 </div>
 <div class="section" id="id4">
 <h3>3.3. 设置同文输入法(trime)<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
-<p>同文输入法安装好，且已经把下载的rime目录拷贝到手机根目录后，请打开同文输入法并按提示进行设置。基本上，输入法需要的权限都放行即可。</p>
+<p>同文输入法安装好，且已经把下载并解压得到的rime目录拷贝到手机根目录后，请打开同文输入法并按提示进行设置。基本上，输入法需要的权限都放行即可。</p>
 <p>设置过程用文字描述不太形象，请参考下面的视频：</p>
 <blockquote>
 <div><video width=50% height=50% controls src="../../_static/trime-install1.mp4"></video><p><em>设置同文输入法</em></p>
@@ -230,7 +230,7 @@
 </div>
 <div class="section" id="id5">
 <h3>3.4. 同文输入法设置成驿窗零蓝主题<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
-<p>打开同文输入法，选择 键盘外观&gt;主题&gt;驿窗零蓝，点击确定，然后就可以使用驿窗零蓝主题了。</p>
+<p>打开同文输入法，选择<span class="dash6">键盘外观&gt;主题&gt;驿窗零蓝</span>，点击<span class="dash6">确定</span>，然后就可以使用驿窗零蓝主题了。</p>
 <p><strong>主题设置视频演示：</strong></p>
 <blockquote>
 <div><video width=50% height=50% controls src="../../_static/theme.mp4"></video><p><em>设置成驿窗零蓝主题</em></p>
@@ -243,11 +243,11 @@
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>打开同文输入法 app ；</p></li>
-<li><p>选择 键盘外观；</p></li>
-<li><p>选择 主题；</p></li>
-<li><p>选择 驿窗零蓝，点击确定；(一定要点一下，相当于重新激活)</p></li>
-<li><p>选择 配色；</p></li>
-<li><p>选择需要的驿窗零蓝模式方案，比如 驿窗零蓝2：中暗调，点击确定；</p></li>
+<li><p>选择<span class="dash2">键盘外观</span>；</p></li>
+<li><p>选择<span class="dash2">主题</span>；</p></li>
+<li><p>选择<span class="dash2">驿窗零蓝</span>，点击<span class="dash2">确定</span>；(一定要点一下，相当于重新激活)</p></li>
+<li><p>选择<span class="dash2">配色</span>；</p></li>
+<li><p>选择需要的驿窗零蓝模式方案，比如<span class="dash2">驿窗零蓝2：中暗调</span>，点击<span class="dash2">确定</span>；</p></li>
 <li><p>结束，输入法新的颜色效果已经生效了，测试下看看效果如何。</p></li>
 <li><p>(必要时，可能需要执行同文输入法app首页右上角的<span class="dash2">部署</span>操作：点击<span class="dash2">部署</span>即可)。</p></li>
 </ol>
@@ -259,7 +259,7 @@
 </div>
 <div class="section" id="id7">
 <h3>3.6. 苹果设备暂未提供操作步骤<a class="headerlink" href="#id7" title="永久链接至标题"></a></h3>
-<p>因为涉及到收费app问题，这里暂不提供具体步骤。</p>
+<p>苹果的iPhonc也可以应用驿窗零蓝方案，但因为涉及到收费app问题，这里暂不提供具体步骤。</p>
 </div>
 </div>
 <div class="section" id="id8">
@@ -267,7 +267,7 @@
 <p>下面是一些输入法使用技巧：</p>
 <blockquote>
 <div><ul>
-<li><p>同文输入法与rime一样，是一个输入法平台，可以同时包含多种不同的输入法，比如同时有拼音和五笔。实际上，同文输入法可以使用的输入方式非常多，目前应用有几十种，具体有哪些请参考官方及其它相关文档。</p></li>
+<li><p>同文输入法是基于rime的，所以也是一个输入法平台，可以同时包含多种不同的输入法，比如同时有拼音和五笔。实际上，同文输入法可以使用的输入方式非常多，目前应用有几十种，具体有哪些请参考官方及其它相关文档。</p></li>
 <li><p>同文输入法在使用的过程中，点击候选字可以直接上屏，即键盘上方候选区中显示的所有候选字，都可以用手指直接点击，点击后被点击的字词会直接上屏，当然继续输入代码也可以上屏。</p></li>
 <li><p>如果想输入繁体字，可以使用键盘上方的简繁开关切换，也可以使用五笔输入法的简入繁出功能，同时支持五笔拼音输入法。</p></li>
 <li><p>长按<span class="dash2">数字符号</span>键(键盘左下角第二个按键)可以直接切换到更大的<span class="dash2">九宫格</span>数字输入界面，方便纯数字输入。或者先按一次<span class="dash2">符号(数字)</span>键，变成<span class="dash2">配色数字</span>键后再按一次。</p></li>
@@ -311,17 +311,18 @@
 <div class="section" id="id9">
 <h2>5. 自定义同文输入法主题界面的配色<a class="headerlink" href="#id9" title="永久链接至标题"></a></h2>
 <p>驿窗零蓝主题的关键文件是<span class="dash6">驿窗零蓝.trime.yaml</span>文件，如果您想让输入法界面更具个性化特色，修改这个文件即可。</p>
-<dl>
+<dl class="simple">
 <dt>例如：</dt><dd><ul class="simple">
 <li><p>如果想修改按键的高度，可以在<span class="dash6">驿窗零蓝.trime.yaml</span>文件中找到这一行：<span class="dash2">keyboard_height: 180</span>#按键高度，默认180。比如改为240，按键会变得更高一些。</p></li>
-<li><p>如果想在键盘字母上使用自己指定的字体，可以在rime目录中创建一个fonts目录，然后把自己的字体拷贝到fonts目录。之后修改trime.yaml中的key_font参数，后面的字体名称改成拷贝的字体文件名，然后执行<a class="reference internal" href="#apply-new-color"><span class="std std-ref">配色方案切换</span></a>重新应用即可。默认情况下，键盘上字母的字体是使用手机系统的字体，不同手机，字体会不相同。</p></li>
+<li><p>如果想在键盘字母上使用自己指定的字体，可以在rime目录中创建一个fonts目录，然后把自己的字体拷贝到fonts目录。之后修改trime.yaml中的key_font参数，后面的字体名称改成拷贝的字体文件名，然后执行<a class="reference internal" href="#apply-new-color"><span class="std std-ref">配色方案切换</span></a>重新应用即可。默认情况下，键盘上字母的字体是使用手机系统的字体，不同手机，字体会不相同。</p>
+<ul>
+<li><p>shift键使用单独的颜色；<em>待更新</em></p></li>
+<li><p>shift键使用图片；<em>待更新</em></p></li>
+<li><p>键盘背景使用图片；<em>待更新</em></p></li>
+<li><p>按键提示音；<em>待更新</em></p></li>
 </ul>
-<div class="line-block">
-<div class="line">shift键使用单独的颜色；<em>待更新</em></div>
-<div class="line">shift键使用图片；<em>待更新</em></div>
-<div class="line">键盘背景使用图片；<em>待更新</em></div>
-<div class="line">按键提示音；<em>待更新</em></div>
-</div>
+</li>
+</ul>
 </dd>
 </dl>
 <div class="section" id="trime-yaml">
@@ -481,7 +482,7 @@
 <li><p>F-Droid的<span class="dash2">安全性无法担保</span>。</p></li>
 <li><p>相比驿窗零蓝的零蓝光效果，减少电子产品的使用时长才是更好的护眼方式。</p></li>
 <li><p>用户适应了驿窗零蓝的零蓝光效果后，再以相同方式看有蓝光的屏幕会感觉比以前刺眼。</p></li>
-<li><p>极小号文字有可能不清楚。</p></li>
+<li><p>极小号文字有可能看不清楚。</p></li>
 </ol>
 </div></blockquote>
 <p>应对如下：</p>
@@ -506,7 +507,7 @@
 <li><p>电子产品使用时长：首先建议减少电子产品使用时长，增加户外运动时间；其次，对于那些本职工作就是长时间看屏幕的人群，建议采用20+20+20方案，即每看20分钟屏幕后，停下来，对着窗外20米外的某个景色(比如绿草地)盯着看20秒，这样适当放松眼部肌肉后，再回到屏幕前继续工作。</p></li>
 <li><p>推测是眼睛适应了驿窗零蓝的效果，建议多使用驿窗零蓝主题；并且，如果有条件，把其它软件界面也尽量调整成驿窗零蓝效果。</p></li>
 <li><p>文字使用更亮的绿色，比如#00ff00，或者#00ee00等；如果亮度还是不够，可以更进一步使用黄色，比如#dddd00或者#ffff00 。</p></li>
-<li><p>有资料显示深红色对成年人眼睛有一定的正面作用，但由于主观心理因素及客观环境的影响，有些人会把红色与血腥、暴力、激烈等内容相关联，所以驿窗零蓝目前少使用红色。</p></li>
+<li><p>(有资料显示深红色对成年人眼睛有一定的正面作用，但由于主观心理因素及客观环境的影响，有些人会把红色与血腥、暴力、激烈等内容相关联，所以驿窗零蓝目前少使用红色。)</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -515,16 +516,16 @@
 <p>本文的最开始已经向您展示了全部使用驿窗零蓝效果的网页示例，这里再提供一个Firefox浏览器应用驿窗零蓝模式的方法。</p>
 <div class="admonition-y admonition">
 <p class="admonition-title"><a class="reference internal" href="../../_images/avatarp20.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp20.svg" width="22" /></a> 驿窗注：适用范围</p>
-<p>此示例适合在大量文字阅读时使用，比如看网络小说、论坛或者阅读pdf文件；常规网页浏览效果不佳，比如购物网站。<span class="dash2">建议仅在熟悉的网页上使用 驿窗零蓝阅读(ZBLM-Reader) 扩展</span>。</p>
+<p>此示例适合在大量文字阅读时使用，比如看网络小说、论坛或者阅读pdf文件；常规网页浏览效果不佳，比如购物网站。<span class="dash2">建议仅在熟悉的网页上使用</span>驿窗零蓝阅读(ZBLM-Reader)扩展。</p>
 </div>
 <p>这个示例分为两部分，一是Firefox打开的页面内容的颜色，二是Firefox本身的主题颜色。</p>
 <div class="section" id="firefox">
 <h3>11.1 Firefox打开的页面内容<a class="headerlink" href="#firefox" title="永久链接至标题"></a></h3>
-<p>您需要下载一个<span class="dash2">驿窗零蓝阅读(ZBLM-Reader)</span>扩展，并且要按以下步骤设置一下Firefox浏览器：</p>
+<p>您需要下载一个<span class="dash7">驿窗零蓝阅读(ZBLM-Reader)</span>扩展，并且要按以下步骤设置一下Firefox浏览器：</p>
 <dl>
-<dt>下载<span class="dash2">驿窗零蓝阅读(ZBLM-Reader)</span>扩展：</dt><dd><ol class="arabic simple">
-<li><p>如果您的firefox版本号<span class="dash2">等于或高于109.0</span>：请在Firefox中点击<span class="dash2">设置&gt;扩展和主题</span>，在上方<span class="dash2">寻找更多附加组件</span>的搜索框中输入<span class="dash2">驿窗</span>然后回车，能找到<span class="dash2">驿窗零蓝阅读ZBLM-Reader</span>，安装这个扩展。</p></li>
-<li><p>如果您使用的是firefoxESR(firefox版本号低于109.0)，<span class="dash2">请从本网站下载</span>对应的版本到本地安装。下载及安装方法：</p></li>
+<dt>下载<span class="dash7">驿窗零蓝阅读(ZBLM-Reader)</span>扩展：</dt><dd><ol class="arabic simple">
+<li><p>如果您的firefox版本号<span class="dash7">等于或高于109.0</span>：请在Firefox中点击<span class="dash7">设置&gt;扩展和主题</span>，在上方<span class="dash7">寻找更多附加组件</span>的搜索框中输入<span class="dash7">驿窗</span>然后回车，能找到<span class="dash7">驿窗零蓝阅读ZBLM-Reader</span>，安装这个扩展。</p></li>
+<li><p>如果您使用的是firefoxESR(firefox版本号<span class="dash7">低于109.0</span>)，<span class="dash7">请从本网站下载</span>对应的版本到本地安装。下载及安装方法：</p></li>
 </ol>
 <blockquote>
 <div><p><a class="reference download internal" download="" href="../../_downloads/4e60858d18171e040790eb8dab432471/zblmReader.zip"><code class="xref download docutils literal notranslate"><span class="pre">点击这里下载</span> <span class="pre">驿窗零蓝阅读扩展zblmReader.zip</span></code></a></p>
@@ -540,7 +541,17 @@
 </div>
 </div></blockquote>
 </dd>
-<dt>设置Firefox浏览器：</dt><dd><p>点击Firefox<span class="dash2">设置&gt;管理颜色</span>，在打开的<span class="dash2">颜色</span>对话框中，有四个颜色可以设置，分别是<span class="dash2">文本、背景、未访问过的链接、访问过的链接</span>。我们以<span class="dash2">文本</span>的颜色设置为例来说明操作过程：</p>
+</dl>
+<p><strong>设置Firefox浏览器：</strong></p>
+<blockquote>
+<div><blockquote>
+<div><div class="admonition-y-windowsfirefox admonition">
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp20.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp20.svg" width="22" /></a> 驿窗注：Windows系统中Firefox的设置方法有所不同</p>
+<p>下面介绍的步骤主要适用于Linux系统。</p>
+<p>如果您使用的操作系统是windows，那么下面的操作步骤可能不适用，请参考后面的<a class="reference internal" href="#firefox-win-color"><span class="std std-ref">11.3 附注：Windows系统中Firefox的设置</span></a>。</p>
+</div>
+</div></blockquote>
+<p>点击Firefox<span class="dash2">设置&gt;管理颜色</span>，在打开的<span class="dash2">颜色</span>对话框中，有四个颜色可以设置，分别是<span class="dash2">文本、背景、未访问过的链接、访问过的链接</span>。我们以<span class="dash2">文本</span>的颜色设置为例来说明操作过程：</p>
 <p>点击<span class="dash2">文本</span>右侧的色块会打开<span class="dash2">选择颜色</span>对话框，点击左下角的加号，打开<span class="dash2">选择颜色</span>对话框显示色板，默认的数值是#BF4040，把#BF4040修改为#00bb00后点击右上角的<span class="dash2">选择</span>按钮，然后在<span class="dash2">颜色</span>对话框的右下角点击<span class="dash2">确定</span>按钮，<span class="dash2">文本</span>的颜色即设置完成。另外三个颜色：<span class="dash2">背景、未访问过的链接、访问过的链接</span>按相同方法设置即可。请按下面的参数设置这四个颜色：</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -553,8 +564,7 @@
 <p>四个颜色设置完成以后，点击扩展在firefox右上角的图标即可看到效果。注意效果需要在http或者https开头的网页才能生效，在firefox设置页可能无效，且对图片、视频和少部分的网站的网页元素无效。(如果扩展图标点击后没有变化，请检查这四个颜色的设置是否正确)</p>
 <p>上述颜色参数已经完全去除了蓝光，适合在大量文字阅读时使用，比如看网络小说、论坛或者阅读本地pdf文件。常规网页浏览(比如购物网站)效果不佳，<span class="dash2">建议仅在熟悉的网页上使用 驿窗零蓝阅读(ZBLM-Reader) 扩展</span>。</p>
 <p>上述颜色中，<span class="dash2">文本颜色</span>为浏览页面中文字的颜色，<span class="dash2">背景颜色</span>为浏览页面中文本的背景色。所以，您可以自行调整文本颜色的亮度，以及文本背景颜色的亮度，从而找到适合自己的对比度。</p>
-</dd>
-</dl>
+</div></blockquote>
 <p>阅读本地pdf文件的方法：firefox打开一个新标签页，用鼠标把本地pdf文件拖入到这个标签页即可，可能需要点击地址栏左侧的<span class="dash2">刷新</span>按钮或者按<span class="dash2">F5</span>刷新一下页面。(图片类型的pdf文件无效，部分设置了背景色的pdf文件无效)</p>
 <p>此扩展仅修改Mozilla Firefox页面内容的配色，不修改Firefox浏览器本身的主题配色，比如窗体。如果您希望Firefox本身的主题配色也使用驿窗零蓝模式，请安装<a class="reference external" href="https://addons.mozilla.org/zh-CN/firefox/addon/驿窗零蓝zblm/">驿窗零蓝</a>主题。</p>
 <dl class="simple">
@@ -573,6 +583,10 @@
 </div></blockquote>
 <p>(如果您有某个项目或应用需要应用驿窗零蓝模式，请与驿窗(classenu at 163.com)联系，邮件主题请注明<span class="dash2">驿窗零蓝支持</span>)</p>
 </div>
+<div class="section" id="windowsfirefox">
+<span id="firefox-win-color"></span><h3>11.3 附注：Windows系统中Firefox的设置<a class="headerlink" href="#windowsfirefox" title="永久链接至标题"></a></h3>
+<p>如果您使用的操作系统是Windows，那么在进行颜色设置时，方法与上面介绍的有所不同，请按下面视频中演示的方法操作：</p>
+<video width=720 height=540 controls src="../../_static/firefox-win.mp4"></video></div>
 </div>
 <div class="section" id="id21">
 <h2>12. 致谢<a class="headerlink" href="#id21" title="永久链接至标题"></a></h2>
@@ -607,7 +621,7 @@
 <div class="section" id="id22">
 <h2>13. 版权声明<a class="headerlink" href="#id22" title="永久链接至标题"></a></h2>
 <p>文中下载链接提供的代码相关内容，程序关键代码主要源于trime和rime，所以在开源协议上同样遵循上游使用的GPLv3协议(<a class="reference external" href="https://github.com/rime/weasel/blob/master/LICENSE.txt">https://github.com/rime/weasel/blob/master/LICENSE.txt</a>)。如果有代码涉及不同的开源协议，均沿袭上游协议；未声明协议的代码部分，使用MPL2.0协议。商标权等专有权利，归专有权利持有人所有。</p>
-<p><em>最近一次更新：2023-08-01</em></p>
+<p><em>最近一次更新：2024年3月31日</em></p>
 </div>
 </div>
 
