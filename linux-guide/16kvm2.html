@@ -98,10 +98,6 @@
 <dt>约定：</dt><dd><p>下面的阐述中，主机=host，虚拟机=客户机=guest，不再另行说明。另外，虚拟机均为kvm的.qcow2虚拟机，vmware等其它类型未测试。</p>
 </dd>
 </dl>
-<div class="admonition-y-linuxwindows admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：客户机不分Linux和Windows</p>
-<p>本文涉及的三个方案，均不限制客户机的类型，即客户机可以是Linux，也可以是Windows。</p>
-</div>
 <div class="section" id="id1">
 <h2>方案一、命令行操作<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
 <p>如果从极限安全的角度考虑，可以使用virt-copy-in和virt-copy-out这两个命令，无论guest是Linux还是windows，都可以使用。并且，命令运行时，guest是关机的状态，相对安全性更好一些。</p>

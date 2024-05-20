@@ -175,6 +175,8 @@
 <li><p><a class="reference internal" href="#ffmpeg11-delaudio"><span class="std std-ref">删除音频，只要视频</span></a></p></li>
 <li><p><a class="reference internal" href="#ffmpeg12-flip"><span class="std std-ref">水平翻转视频</span></a></p></li>
 <li><p><a class="reference internal" href="#ffmpeg13-motion-jpg"><span class="std std-ref">把多张图片拼成视频</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg14-only-audio"><span class="std std-ref">从视频中提取音频</span></a></p></li>
+<li><p><a class="reference internal" href="#ffmpeg13-audio-clip"><span class="std std-ref">从音频中提取片段</span></a></p></li>
 </ol>
 </div></blockquote>
 <ol class="arabic simple" id="ffmpeg01-resize">
@@ -548,9 +550,26 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
 </div>
 </li>
 </ol>
+<ol class="arabic" id="ffmpeg14-only-audio" start="14">
+<li><p>从视频中提取音频：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i video.mp4 -vn -c:a libmp3lame -q:a <span class="m">1</span> audio.mp3
+</pre></div>
+</div>
+</li>
+</ol>
+<ol class="arabic" id="ffmpeg13-audio-clip" start="15">
+<li><p>从音频中提取片段：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i audio.mp3 -ss <span class="m">00</span>:00:00 -t <span class="m">00</span>:00:33 audio-clip.mp3
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><p>其中，<span class="teal">-ss</span>是开始时间，<span class="teal">-t</span>是持续时间。</p>
+</div></blockquote>
 <div class="line-block">
 <div class="line"><em>未完稿</em></div>
-<div class="line"><em>最近一次更新：2024-01-04</em></div>
+<div class="line"><em>最近一次更新：2024-05-20</em></div>
 </div>
 </div>
 
