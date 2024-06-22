@@ -56,6 +56,15 @@ span.dash2y {
     /*    text-decoration-color: yellow; */
 }
 
+span.dash2y2 {
+    /*    color: #aabb00; */
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px; 
+    text-decoration-color: yellow; 
+}
+
 span.dash2r {
     color: #ff0000;
     text-decoration-line: underline;
