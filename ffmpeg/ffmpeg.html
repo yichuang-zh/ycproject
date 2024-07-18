@@ -141,7 +141,7 @@
 </div>
 <p>FFmpeg的全称是Fast Forward mpeg。(<em>mpeg = moving picture experts group</em>)</p>
 <dl class="simple">
-<dt>FFmpeg语法通用格式：</dt><dd><p>FFmpeg命令后面的参数都是成对的，参数对中前面的参数告诉ffmpeg要干什么，参数对中后面的参数则告诉ffmpeg要怎么干。比如命令<span class="dash6">ffmpeg -i /dev/shm/test.mp4</span> ，其中 <code class="docutils literal notranslate"><span class="pre">-i</span></code> 表示要输入一个文件，而后面的 <code class="docutils literal notranslate"><span class="pre">/dev/shm/test.mp4</span></code> 则表示输入文件的位置及文件名。</p>
+<dt>FFmpeg语法通用格式：</dt><dd><p>FFmpeg命令后面的参数都是成对的，比如-i /dev/shm/test.mp4，其中-i表示要输入一个文件，而后面的/dev/shm/test.mp4则表示输入文件的路径及文件名。这些成对的参数可以有多对，其作用就是告诉ffmpeg要干什么和怎么干，比如一对参数中前面的-i告诉ffmpeg要输入文件，那么后面紧接着就要说明输入文件的文件名及文件位置。</p>
 </dd>
 </dl>
 <p>正常情况下，ffmpeg命令应该长下面这样：</p>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>视图→色彩管理</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+  <title>视图 &gt; 色彩管理</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
@@ -79,7 +79,7 @@
           <li class="breadcrumb-item"><a href="../../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../../gimp_menu.html">GIMP菜单</a></li>
           <li class="breadcrumb-item"><a href="../4view.html">视图</a></li>
-      <li class="breadcrumb-item active">视图→色彩管理</li>
+      <li class="breadcrumb-item active">视图 &gt; 色彩管理</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
@@ -92,19 +92,40 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>视图→色彩管理<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+<h1>视图 &gt; 色彩管理<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="line-block">
-<div class="line">这里的色彩管理，主要是指软打样，即在屏幕上模拟印刷效果。</div>
-<div class="line">在菜单 图像→色彩管理 中，主要是管理色彩配置文件(ICC)，与这里不是一回事。</div>
+<div class="line">这里的色彩管理，主要功能是查看色彩管理效果，包括模拟印刷效果(软打样)。</div>
+<div class="line">在GIMP中把这里的效果打印或印刷出来是不受GIMP支持的，因为GIMP不支持相关的打印引擎。</div>
+<div class="line">在菜单<span class="dash6">图像 &gt; 色彩管理</span>中，主要是管理图像文件的ICC(色彩配置文件)，与这里不是一回事。</div>
 </div>
-<blockquote>
-<div><div class="admonition-todo admonition" id="id2">
-<p class="admonition-title">待处理</p>
-<p>此处内容等待GIMP官方更新。</p>
+<div class="figure align-center" id="id2">
+<img alt="../../../_images/10-cms01.png" src="../../../_images/10-cms01.png" />
+<p class="caption"><span class="caption-text">图像 &gt; 色彩管理</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
 </div>
-</div></blockquote>
+<ol class="arabic">
+<li><p>本视图启用色彩管理</p>
+<p>勾选此选项后，此视图会切换为开启色彩管理的显示效果，但仅限于此视图，其它视图不受影响。</p>
+</li>
+<li><p>本视图启用软打样</p>
+<p>勾选此选项后，此视图会切换为开启软打样的显示效果，但仅限于此视图，其它视图不受影响。此操作要求必须勾选上面的<span class="dash6">图像 &gt; 本视图启用色彩管理</span>。</p>
+</li>
+<li><p>显示渲染效果</p>
+<p>这里选择渲染效果的意图方向。</p>
+</li>
+<li><p>黑点补偿</p>
+<p>这里选择是否启用黑点补偿。</p>
+</li>
+<li><p>显示超色域警告</p>
+<p>勾选此项后，此视图上超出色域范围的颜色，会用首选项中设置的警告色进行标识，以提醒超色域范围。</p>
+<p>这里的超色域，仅针对CMYK，即图像中无法印刷的颜色会被醒目标识出来。但此功能不能直接用于打印或印刷，因为gimp本身并不支持相关的印刷引擎。</p>
+</li>
+<li><p>按首选项设定</p>
+<p>所有相关设置都使用首选项中的色彩管理设置，包括是否启用色彩管理或软打样，以及是否显示超色域警告等。</p>
+</li>
+</ol>
+<p><em>最近一次更新：2024-07-03</em></p>
 </div>
 
 

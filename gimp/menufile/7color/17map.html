@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→映射</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+  <title>颜色→映射 Map</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
@@ -21,8 +21,8 @@
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="颜色→色彩映射" href="18tone-map.html" />
-    <link rel="prev" title="颜色→去色" href="16desaturate.html" /> 
+    <link rel="next" title="颜色→色彩映射 Tone Mapping" href="18tone-map.html" />
+    <link rel="prev" title="颜色→去色 Desaturate" href="16desaturate.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -79,85 +79,74 @@
           <li class="breadcrumb-item"><a href="../../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../../gimp_menu.html">GIMP菜单</a></li>
           <li class="breadcrumb-item"><a href="../7color.html">颜色</a></li>
-      <li class="breadcrumb-item active">颜色→映射</li>
+      <li class="breadcrumb-item active">颜色→映射 <em>Map</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="16desaturate.html" class="btn btn-neutral float-left" title="颜色→去色" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="18tone-map.html" class="btn btn-neutral float-right" title="颜色→色彩映射" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="16desaturate.html" class="btn btn-neutral float-left" title="颜色→去色 Desaturate" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="18tone-map.html" class="btn btn-neutral float-right" title="颜色→色彩映射 Tone Mapping" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>颜色→映射<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+  <div class="section" id="map">
+<h1>颜色→映射 <em>Map</em><a class="headerlink" href="#map" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="id2">
-<h2>设置颜色表<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<div class="section" id="set-colormap">
+<h2>设置颜色表 <em>Set Colormap</em><a class="headerlink" href="#set-colormap" title="永久链接至标题"></a></h2>
 <p>此命令可以选择其它调色板来替换当前索引图像的颜色表。</p>
-<div class="figure align-center" id="id20">
+<div class="figure align-center" id="id9">
 <img alt="../../../_images/17set-map.png" src="../../../_images/17set-map.png" />
-<p class="caption"><span class="caption-text">颜色→映射→设置颜色表</span><a class="headerlink" href="#id20" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">颜色→映射→设置颜色表</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
 </div>
 <p>点击调色板右侧的按钮(上图显示为Default)，可以打开 色板选择 对话框：</p>
 <blockquote>
-<div><div class="figure align-center" id="id21">
+<div><div class="figure align-center" id="id10">
 <img alt="../../../_images/17select-map.png" src="../../../_images/17select-map.png" />
-<p class="caption"><span class="caption-text">颜色→映射→设置颜色表⇒选择调色板</span><a class="headerlink" href="#id21" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">颜色→映射→设置颜色表⇒选择调色板</span><a class="headerlink" href="#id10" title="永久链接至图片"></a></p>
 </div>
 </div></blockquote>
 <p>在这里选中一个色板，点击 关闭 按钮，再点击 确定 按钮，就可以完成颜色表替换。</p>
 <p>此命令针对索引模式图像，所以，如果您的图像模式是RGB模式或灰度模式，此菜单项会显示为灰色不可用。</p>
 </div>
-<div class="section" id="id3">
-<h2>重新整理颜色表<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<div class="section" id="rearrange-colormap">
+<h2>重新整理颜色表 <em>Rearrange Colormap</em><a class="headerlink" href="#rearrange-colormap" title="永久链接至标题"></a></h2>
 <p>此命令可以重新排列当前索引图像的调色板中的颜色顺序。</p>
 <p>此命令不会修改图像；您不能添加或删除颜色。</p>
 <p>在颜色表中，可以用鼠标拖放来改变顺序，数字表示原索引；在色块上点击鼠标右键可以显示弹出操作菜单。</p>
 </div>
-<div class="section" id="id4">
-<h2>奇异映射<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
-<blockquote>
-<div><div class="admonition-todo admonition" id="id5">
-<p class="admonition-title">待处理</p>
-<p>此命令的相关说明等待GIMP官方更新。</p>
+<div class="section" id="alien-map">
+<h2>奇异映射 <em>Alien Map</em><a class="headerlink" href="#alien-map" title="永久链接至标题"></a></h2>
+<p>使用三角函数来映射色值，会导致图像颜色严重偏离原本的效果。</p>
 </div>
-</div></blockquote>
-</div>
-<div class="section" id="id6">
-<h2>颜色交换<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
+<div class="section" id="color-exchange">
+<h2>颜色交换 <em>Color Exchange</em><a class="headerlink" href="#color-exchange" title="永久链接至标题"></a></h2>
 <blockquote>
-<div><div class="figure align-center" id="id22">
+<div><div class="figure align-center" id="id11">
 <img alt="../../../_images/17color-exchange.png" src="../../../_images/17color-exchange.png" />
-<p class="caption"><span class="caption-text">颜色→映射→颜色交换</span><a class="headerlink" href="#id22" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">颜色→映射→颜色交换</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
 </div>
 </div></blockquote>
-<p>此命令可以对图像中的颜色进行替换。此工具可以和<a class="reference internal" href="../../gimp_menu.html#gegl-operation-tool-option"><span class="std std-ref">GEGL操作(工具选项)</span></a>配合使用。</p>
-<blockquote>
-<div><div class="admonition-todo admonition" id="id7">
-<p class="admonition-title">待处理</p>
-<p>此工具的相关说明等待GIMP官方更新。</p>
+<p>此命令可以对图像中的颜色进行替换，即使用一种颜色替换另一种颜色。</p>
 </div>
-</div></blockquote>
-</div>
-<div class="section" id="id8">
-<h2>旋转颜色<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
+<div class="section" id="rotate-colors">
+<h2>旋转颜色 <em>Rotate Colors</em><a class="headerlink" href="#rotate-colors" title="永久链接至标题"></a></h2>
 <blockquote>
-<div><div class="figure align-center" id="id23">
+<div><div class="figure align-center" id="id12">
 <img alt="../../../_images/17rotate-color.png" src="../../../_images/17rotate-color.png" />
-<p class="caption"><span class="caption-text">颜色→映射→旋转颜色</span><a class="headerlink" href="#id23" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">颜色→映射→旋转颜色</span><a class="headerlink" href="#id12" title="永久链接至图片"></a></p>
 </div>
 </div></blockquote>
 <p>此命令可以把一个颜色范围替换为另一个颜色范围，操作时可以通过图形操作，也可以通过数值操作，兼顾直观和精确。操作时，请随时观察右侧色盘上的变化。</p>
-<div class="section" id="id9">
-<h3>预设<a class="headerlink" href="#id9" title="永久链接至标题"></a></h3>
+<div class="section" id="id1">
+<h3>预设<a class="headerlink" href="#id1" title="永久链接至标题"></a></h3>
 <p>此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
 </div>
 <div class="section" id="source-range">
-<span id="id10"></span><h3>源范围<a class="headerlink" href="#source-range" title="永久链接至标题"></a></h3>
+<span id="id2"></span><h3>源范围<a class="headerlink" href="#source-range" title="永久链接至标题"></a></h3>
 <p>指的是原图像中需要被替换的颜色范围，即这个范围内的颜色会被换掉。</p>
 <ul class="simple">
 <li><p>从：被替换颜色范围的起点，因为是通过色盘来选择，所以范围是0°-360°。</p></li>
@@ -167,13 +156,13 @@
 <li><p>全选：0°-360°全包括。</p></li>
 </ul>
 </div>
-<div class="section" id="id11">
-<h3>目标范围<a class="headerlink" href="#id11" title="永久链接至标题"></a></h3>
+<div class="section" id="id3">
+<h3>目标范围<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
 <p>指的是新图像中，用来替换原图像颜色的颜色范围，即使用这个范围内的颜色来替换“源范围”中的颜色。</p>
 <p>各个选项的功能与上面<a class="reference internal" href="#source-range"><span class="std std-ref">源范围</span></a>相同。</p>
 </div>
-<div class="section" id="id12">
-<h3>灰色处理<a class="headerlink" href="#id12" title="永久链接至标题"></a></h3>
+<div class="section" id="id4">
+<h3>灰色处理<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
 <ul class="simple">
 <li><p>阈值：您可以设定一个阈值，饱和度低于此阈值的像素，会被处理成灰色(R=G=B)。</p></li>
 <li><p>灰度模式：设定右方色盘中心灰度“定义圈”的规则。</p>
@@ -186,37 +175,37 @@
 </li>
 </ul>
 </div>
-<div class="section" id="id13">
-<h3>混合选项/预览/分割视图<a class="headerlink" href="#id13" title="永久链接至标题"></a></h3>
+<div class="section" id="id5">
+<h3>混合选项/预览/分割视图<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
 <p>这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
 </div>
 </div>
-<div class="section" id="id14">
-<h2>渐变映射<a class="headerlink" href="#id14" title="永久链接至标题"></a></h2>
+<div class="section" id="gradient-map">
+<h2>渐变映射 <em>Gradient Map</em><a class="headerlink" href="#gradient-map" title="永久链接至标题"></a></h2>
 <p>此命令使用当前的渐变，对图像的活动图层或选区重新进行着色。</p>
 <p>使用此命令前，要先选择一个渐变。然后，对选区或图层执行此命令即可。</p>
 <p>此命令使用图像颜色的强度{intensities}(0-255)，将最暗的像素映射到渐变的最左端颜色，将最亮的像素映射到渐变的最右端颜色，中间像素映射为相应的中间色。</p>
 <p>示例：</p>
 <blockquote>
-<div><div class="figure align-center" id="id24">
+<div><div class="figure align-center" id="id13">
 <img alt="../../../_images/17rotate-color-sample.png" src="../../../_images/17rotate-color-sample.png" />
-<p class="caption"><span class="caption-text"><strong>左</strong>:原图 <strong>中</strong>:当前渐变设置为从红到白 <strong>右</strong>:执行 渐变映射</span><a class="headerlink" href="#id24" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text"><strong>左</strong>:原图 <strong>中</strong>:当前渐变设置为从红到白 <strong>右</strong>:执行 渐变映射</span><a class="headerlink" href="#id13" title="永久链接至图片"></a></p>
 </div>
 </div></blockquote>
 </div>
-<div class="section" id="id15">
-<h2>色板映射<a class="headerlink" href="#id15" title="永久链接至标题"></a></h2>
+<div class="section" id="palette-map">
+<h2>色板映射 <em>Palette Map</em><a class="headerlink" href="#palette-map" title="永久链接至标题"></a></h2>
 <p>此命令会使用当前调色板中的颜色对图像进行重新着色。</p>
 <p>当前调色板在菜单 窗口→可停靠对话框→色板 中选择。</p>
 <p>此命令把图层或选区与活动调色板进行映射：计算每个像素的亮度，并将像素替换为相应索引的调色板颜色。一个完全黑色的像素映射为调色板中最前面(编号最小)的颜色，而完全白色的像素映射为调色板中最后面(编号最大)的颜色。</p>
 </div>
-<div class="section" id="id16">
-<h2>样本着色<a class="headerlink" href="#id16" title="永久链接至标题"></a></h2>
+<div class="section" id="sample-colorize">
+<h2>样本着色 <em>Sample Colorize</em><a class="headerlink" href="#sample-colorize" title="永久链接至标题"></a></h2>
 <p>此命令可以使用指定的颜色范围对目标图像进行重新着色。</p>
 <blockquote>
-<div><div class="figure align-center" id="id25">
+<div><div class="figure align-center" id="id14">
 <img alt="../../../_images/17sample-colorize.png" src="../../../_images/17sample-colorize.png" />
-<p class="caption"><span class="caption-text">颜色→映射→样本着色</span><a class="headerlink" href="#id25" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">颜色→映射→样本着色</span><a class="headerlink" href="#id14" title="永久链接至图片"></a></p>
 </div>
 </div></blockquote>
 <p>左边是目标图像，右边是样本图像；此命令用右边的样本图像给左边的目标图像重新着色。(上图中左侧目标图像是已经被着色后的效果)</p>
@@ -230,16 +219,16 @@
 <h3>显示颜色{Show color}<a class="headerlink" href="#show-color" title="永久链接至标题"></a></h3>
 <p>可以切换彩色和灰度效果。</p>
 </div>
-<div class="section" id="id17">
-<h3>获取样本颜色<a class="headerlink" href="#id17" title="永久链接至标题"></a></h3>
+<div class="section" id="id6">
+<h3>获取样本颜色<a class="headerlink" href="#id6" title="永久链接至标题"></a></h3>
 <p>点击此按钮后，样本预览下方的渐变条会显示样本颜色。</p>
 </div>
-<div class="section" id="id18">
-<h3>输入色阶<a class="headerlink" href="#id18" title="永久链接至标题"></a></h3>
+<div class="section" id="id7">
+<h3>输入色阶<a class="headerlink" href="#id7" title="永久链接至标题"></a></h3>
 <p>限制目标图像中可以被影响的色阶范围。上方滑块同理。</p>
 </div>
-<div class="section" id="id19">
-<h3>输出色阶<a class="headerlink" href="#id19" title="永久链接至标题"></a></h3>
+<div class="section" id="id8">
+<h3>输出色阶<a class="headerlink" href="#id8" title="永久链接至标题"></a></h3>
 <p>限制样本中可以使用的色阶范围，这个范围内的颜色会被用来对目标图像进行着色。上方滑块同理。</p>
 </div>
 <div class="section" id="hold-intensity">
@@ -265,8 +254,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="16desaturate.html" class="btn btn-neutral float-left" title="颜色→去色" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="18tone-map.html" class="btn btn-neutral float-right" title="颜色→色彩映射" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="16desaturate.html" class="btn btn-neutral float-left" title="颜色→去色 Desaturate" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="18tone-map.html" class="btn btn-neutral float-right" title="颜色→色彩映射 Tone Mapping" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

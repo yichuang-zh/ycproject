@@ -93,9 +93,9 @@
   <div class="section" id="gimp-tool-unified-transform">
 <span id="id1"></span><h1>统一变换工具<a class="headerlink" href="#gimp-tool-unified-transform" title="永久链接至标题"></a></h1>
 <p>快捷键：Shift+T</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id4">
 <img alt="../../_images/11unified-transform.png" src="../../_images/11unified-transform.png" />
-<p class="caption"><span class="caption-text">统一变换工具及其工具选项</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">统一变换工具及其工具选项</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
 </div>
 <p>统一变换工具( <a class="reference internal" href="../../_images/gimp-tool-unified-transform.svg"><img alt="gimp-tool-unified-transform" class="align-middle" height="20" src="../../_images/gimp-tool-unified-transform.svg" width="20" /></a> )同时具备旋转、缩放、切变和透视四个功能，相当于这四个工具的结合体。</p>
 <div class="line-block">
@@ -103,9 +103,9 @@
 <div class="line">如果当前活动图层没有选区，那么用 统一变换工具 在这个图层上的任意位置点击一下，就可以对整个图层中的图像进行变换操作。</div>
 </div>
 <blockquote>
-<div><div class="figure align-center" id="id6">
+<div><div class="figure align-center" id="id5">
 <img alt="../../_images/11unified-transform-sample.png" src="../../_images/11unified-transform-sample.png" />
-<p class="caption"><span class="caption-text">左下是带有多个手柄的统一变换矩形，右上是变换矩阵</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">左下是带有多个手柄的统一变换矩形，右上是变换矩阵</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
 </div>
 </div></blockquote>
 <p>统一变换工具的操作方法：</p>
@@ -173,15 +173,9 @@
 <li><p>合成预览：图像变换效果的最终效果，等同于按下Enter键后的效果。</p></li>
 </ol>
 <blockquote>
-<div><ul>
-<li><p>预览链接的项目/同步预览：</p>
-<blockquote>
-<div><div class="admonition-todo admonition" id="id4">
-<p class="admonition-title">待处理</p>
-<p>这两个选项的说明等待GIMP官方更新。</p>
-</div>
-</div></blockquote>
-</li>
+<div><ul class="simple">
+<li><p>预览链接的项目：显示所有链接图层的变换处理，而不只是当前选中图层。</p></li>
+<li><p>同步预览：该选项还在测试中。其目的是在改变变换后立即渲染预览。它不会等待鼠标停止移动，而是立即渲染结果。如果GIMP能以足够快的速度渲染一切，这意味着反馈会更流畅。但该选项也会在预览渲染完成前阻止一切操作。这意味着，在图层非常大的情况下，GIMP的响应速度会大大降低。这也是默认禁用该选项的原因。</p></li>
 </ul>
 </div></blockquote>
 </li>

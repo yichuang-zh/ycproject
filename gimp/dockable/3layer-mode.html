@@ -21,7 +21,7 @@
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="1. 正常" href="layermode/1normal.html" />
+    <link rel="next" title="1. 正常 Normal" href="layermode/1normal.html" />
     <link rel="prev" title="可停靠对话框→图层" href="3layer.html" /> 
 </head>
 
@@ -83,7 +83,7 @@
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
         <a href="3layer.html" class="btn btn-neutral float-left" title="可停靠对话框→图层" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="layermode/1normal.html" class="btn btn-neutral float-right" title="1. 正常" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="layermode/1normal.html" class="btn btn-neutral float-right" title="1. 正常 Normal" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -93,75 +93,80 @@
   <div class="section" id="menu-window-dockable-layer-mode">
 <span id="id1"></span><h1>(可停靠对话框→图层⇒模式)<a class="headerlink" href="#menu-window-dockable-layer-mode" title="永久链接至标题"></a></h1>
 <p>直达<a class="reference internal" href="#dockable-layer-mode-link-list"><span class="std std-ref">模式列表</span></a></p>
-<p>(图层⇒模式 并不是一个可停靠对话框，而是 图层对话框 中的一个选项，只不过这个选项涉及的内容比较多，所以在这里单独用一个章节来进行说明)</p>
+<p>(图层模式并不是对话框，而是<span class="dash6">图层对话框</span>中的一个下拉选项，只不过这个选项中的内容比较多，所以在这里单独用一个章节来进行说明)</p>
 <div class="figure align-center" id="id3">
 <img alt="../../_images/3layer-mode.png" src="../../_images/3layer-mode.png" />
-<p class="caption"><span class="caption-text">图层⇒模式 正常</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">图层⇒模式 <span class="dash6">正常</span></span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
 <div class="legend">
-<p>截图中，图层的模式已经设置为“正常”</p>
+<p>截图中，图层的模式已经设置为<span class="dash6">正常</span></p>
 </div>
 </div>
 <p>图层的模式也叫图层的混合模式{blending mode}。GIMP通过模式来确定当前活动图层中的像素与其下方的图层中的像素如何混合。所以，图层的模式的变化，可能会导致图像的整体效果发生变化。</p>
 <p>图层的模式的存在，使您可以实现极为复杂的颜色变化操作。</p>
 <p>因为是当前图层与下方图层的混合，所以，图层的模式对于只有一个图层的图像没有意义。</p>
-<p>GIMP版本2.10.22有38种图层模式，分为七大类。下面我们对这些模式进行说明。</p>
+<div class="admonition-y-vs admonition">
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：默认 vs. 过时</p>
+<p>图层模式选择框的右侧有一个切换按钮 <a class="reference internal" href="../../_images/3layer-mode-legacy0.png"><img alt="X" class="align-middle" src="../../_images/3layer-mode-legacy0.png" style="width: 49px; height: 22px;" /></a>，它可以切换图层模式为<span class="dash6">默认</span>或者<span class="dash6">过时</span>。</p>
+<p><span class="dash6">过时</span>模式是GIMP2.8及以前版本使用的图层模式计算方法，在2.10及后续版本中已经改为<span class="dash6">默认</span>模式。新版本中<span class="dash6">过时</span>模式仍然存在的原因是为了兼容以前版本的GIMP所创建的.xcf文件。这些旧的.xcf文件中如果有保存图层模式相关内容，那么在2.10版本中打开这些.xcf文件时，图层模式会使用<span class="dash6">过时</span>模式。</p>
+<p>新创建的图像文件，请使用<span class="dash7">默认</span>模式，不要使用<span class="dash6">过时</span>模式，。</p>
+</div>
+<p>GIMP目前有38种图层模式，下面我们对这些模式进行说明。</p>
 <p id="dockable-layer-mode-link-list">下面是模式列表：</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="layermode/1normal.html">1. 正常</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/2dissolve.html">2. 融化</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/3color-erase.html">3. 颜色擦除</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/4erase.html">4. 擦除</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/5merge.html">5. 擦除</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/6split.html">6. 分割</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/7lighten-only.html">7. 仅变亮</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/8luma-luminance-lighten-only.html">8. 仅亮度变亮</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/9screen.html">9. 滤色</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/10dodge.html">10. 减淡</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/11addition.html">11. 相加</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/12darken-only.html">12. 仅变暗</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/13luma-luminance-darken-only.html">13. 仅亮度变暗</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/14multiply.html">14. 相乘</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/15burn.html">15. 加深</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/16linear-burn.html">16. 线性加深</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/17overlay.html">17. 叠加</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/18soft-light.html">18. 柔光</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/19hard-light.html">19. 强光</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/20vivid-light.html">20. 亮光</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/21pin-light.html">21. 点光</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/22linear-light.html">22. 线性光</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/23hard-mix.html">23. 实色混合</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/24difference.html">24. 差值</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/25exclusion.html">25. 排除</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/26subtract.html">26. 减去</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/27grain-extract.html">27. 增益提取</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/28grain-merge.html">28. 增益合并</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/29divide.html">29. 相除</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/30hsv-hue.html">30. HSV色相</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/31hsv-saturation.html">31. HSV饱和度</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/32hsl-color.html">32. HSL颜色</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/33hsv-value.html">33. HSV明度</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/34lch-hue.html">34. LCh色相</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/35lch-chroma.html">35. LCh浓度</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/36lch-color.html">36. LCh颜色</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/37lch-lighteness.html">37. LCh亮度</a></li>
-<li class="toctree-l1"><a class="reference internal" href="layermode/38luminance.html">38. 亮度</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/1normal.html">1. 正常 <em>Normal</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/2dissolve.html">2. 融化 <em>Dissolve</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/3color-erase.html">3. 颜色擦除 <em>Color erase</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/4erase.html">4. 擦除 <em>Erase</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/5merge.html">5. 合并 <em>Merge</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/6split.html">6. 分割 <em>Split</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/7lighten-only.html">7. 仅变亮 <em>Lighten only</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/8luma-luminance-lighten-only.html">8. 仅亮度变亮 <em>Luma/luminance lighten only</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/9screen.html">9. 滤色 <em>Screen</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/10dodge.html">10. 减淡 <em>Dodge</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/11addition.html">11. 相加 <em>Addition</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/12darken-only.html">12. 仅变暗 <em>Darken only</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/13luma-luminance-darken-only.html">13. 仅亮度变暗 <em>Luma/luminance darken only</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/14multiply.html">14. 相乘 <em>Multiply</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/15burn.html">15. 加深 <em>Burn</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/16linear-burn.html">16. 线性加深 <em>Linear burn</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/17overlay.html">17. 叠加 <em>Overlay</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/18soft-light.html">18. 柔光 <em>Soft light</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/19hard-light.html">19. 强光 <em>Hard light</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/20vivid-light.html">20. 亮光 <em>Vivid light</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/21pin-light.html">21. 点光 <em>Pin light</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/22linear-light.html">22. 线性光 <em>Linear light</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/23hard-mix.html">23. 实色混合 <em>Hard mix</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/24difference.html">24. 差值 <em>Difference</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/25exclusion.html">25. 排除 <em>Exclusion</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/26subtract.html">26. 减去 <em>Subtract</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/27grain-extract.html">27. 增益提取 <em>Grain extract</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/28grain-merge.html">28. 增益合并 <em>Grain merge</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/29divide.html">29. 相除 <em>Divide</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/30hsv-hue.html">30. HSV色相 <em>HSV Hue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/31hsv-saturation.html">31. HSV饱和度 <em>HSV Saturation</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/32hsl-color.html">32. HSL颜色 <em>HSL Color</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/33hsv-value.html">33. HSV明度 <em>HSV Value</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/34lch-hue.html">34. LCh色相 <em>LCh Hue</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/35lch-chroma.html">35. LCh浓度 <em>LCh Chroma</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/36lch-color.html">36. LCh颜色 <em>LCh Color</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/37lch-lighteness.html">37. LCh亮度 <em>LCh Lightness</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="layermode/38luminance.html">38. 亮度 <em>Luminance</em></a></li>
 </ul>
 </div>
 <blockquote id="dockable-layer-mode-formula">
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><strong>算法公式</strong>：</p>
-<p>计算机的本质是数学，图像的各种算法更是数学应用的直接体现。所以，我们在对模式进行说明时，可以尝试用数学公式对模式的算法进行描述，下面是公式会用到的三个参数：</p>
+<div><div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：算法公式</p>
+<p>计算的本质是数学，图层模式的各种算法更是数学应用的直接体现。所以，我们在对模式进行说明时，可以尝试用数学公式对模式的算法进行描述，下面是公式会用到的三个参数：</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>当前图层的像素值称为 当前图层，用字母<strong>M</strong>表示；(可以理解为蒙版，<strong>M</strong>ask)</p></li>
-<li><p>当前图层下面的图层的像素值称为 下方图层，用字母<strong>I</strong>表示；(可以理解为蒙版的目标图像，<strong>I</strong>mage)</p></li>
-<li><p>模式设定后产生的结果像素值称为 混合效果，用字母<strong>E</strong>表示；(可以理解为效果，<strong>E</strong>ffect)</p></li>
+<li><p>当前图层的像素值称为<span class="dash6">当前图层</span>，用字母<strong>M</strong>表示；(可以理解为蒙版，<strong>M</strong>ask)</p></li>
+<li><p>当前图层下面的图层的像素值称为<span class="dash6">下方图层</span>，用字母<strong>I</strong>表示；(可以理解为蒙版的目标图像，<strong>I</strong>mage)</p></li>
+<li><p>模式设定后产生的结果像素值称为<span class="dash6">混合效果</span>，用字母<strong>E</strong>表示；(可以理解为效果，<strong>E</strong>ffect)</p></li>
 </ol>
 </div></blockquote>
-<p>例如，“正常”模式的算法公式为：<strong>E=M</strong></p>
-<p>那么，为什么要理解算法的数学公式？我们来看下面的 应用示例。</p>
+<p>例如，<span class="dash6">正常</span>模式的算法公式为：<strong>E=M</strong></p>
+<p>那么，为什么要理解算法的数学公式？我们来看下面的的算法公式应用示例。</p>
 </div>
 </div></blockquote>
 <hr class="docutils" />
@@ -177,16 +182,16 @@
 <p>那么，怎样用GIMP来画这样一张图呢？</p>
 <div class="line-block">
 <div class="line">如果不了解图层<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式的算法，大家会有各种方法。</div>
-<div class="line">但了解了<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式算法之后，方法应该就比较统一了，就是三个图层，每个图层都在纯黑的背景上画一个单色的圆，然后把所有图层的模式都设置为“相加”即可；如果想要再完美一些，就调整一下尺寸和位置。</div>
+<div class="line">但了解了<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式算法之后，方法应该就比较统一了，就是三个图层，每个图层都在纯黑的背景上画一个单色的圆，然后把所有图层的模式都设置为<span class="dash6">相加</span>即可；如果想要再完美一些，就调整一下尺寸和位置。</div>
 </div>
 <div class="figure align-center" id="id5">
 <img alt="../../_images/3layer-mode-rgb-addition.png" src="../../_images/3layer-mode-rgb-addition.png" />
 <p class="caption"><span class="caption-text">用GIMP画三原色原理图</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
 </div>
-<p>我们用“相加”模式的<a class="reference internal" href="#dockable-layer-mode-formula"><span class="std std-ref">算法公式</span></a>  <strong>E=min[(M+I),255]</strong>来解释一下上面这张图：</p>
+<p>我们用<span class="dash6">相加</span>模式的<a class="reference internal" href="#dockable-layer-mode-formula"><span class="std std-ref">算法公式</span></a>  <strong>E=min[(M+I),255]</strong>来解释一下上面这张图：</p>
 <blockquote>
-<div><p>公式的意思是，当前图层选择“相加”模式后，生成的效果是把当前图层与下方图层的像素值相加；如果相加后大于255，那么只取255。</p>
-<p>我们看一下三个图层。黑色部分色值是(0,0,0)，所以任何颜色与黑色“相加”，结果都保持不变。三个图层中的黑色区域不会对结果产生任何影响，仅RGB两两重叠的部分会有颜色变化。而变化则是：</p>
+<div><p>公式的意思是，当前图层选择<span class="dash6">相加</span>模式后，生成的效果是把当前图层与下方图层的像素值相加；如果相加后大于255，那么只取255。</p>
+<p>我们看一下三个图层的模式设置为<span class="dash6">相加</span>模式后如何计算。由于黑色部分色值是(0,0,0)，所以任何颜色与黑色<span class="dash6">相加</span>，结果都保持原色，不受黑色区域影响，仅RGB两两重叠区域的颜色才会发生变化。变化如下：</p>
 <ol class="arabic">
 <li><p>图层R中圆的色值为(255,0,0)，图层G中圆的色值为(0,255,0)，二者重叠的部分相加，即(255,0,0)+(0,255,0)，结果色值为(255,255,0)，而这个色值正好是黄色Y：</p>
 <blockquote>
@@ -224,13 +229,14 @@
 </ol>
 </div></blockquote>
 <p>这就是公式的应用：通过算法公式，我们知道如何最快捷地画一个RGB原理图。</p>
-<p>最常见的操作是，我们在图层模式处使用默认的“正常”模式，而使用“正常”模式来画这张RGB原理图，会比较麻烦。</p>
-<p>所以，如果您了解模式算法并能熟练应用图层模式，随时预测当前图层与下方图层重叠的部分可能产生什么效果，那么在未来绘画时，应该会掌握很多实际应用。</p>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：目前，图层模式的算法公式中并没有关于透明度的解释，即，如果参与模式计算的最底图层有透明区域，那么最终得到的混合效果可能更复杂。</p>
+<p>默认情况下，我们的图层模式会使用<span class="dash6">正常</span>模式，而使用<span class="dash6">正常</span>模式来画这张RGB原理图，就会比较麻烦。</p>
+<p>所以，如果您了解模式算法并能熟练应用图层模式，随时预测当前图层与下方图层重叠的部分可能产生什么效果，那么在绘画时，就会更灵活地应用各种效果到图像当中。</p>
+<div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：透明区域的计算</p>
+<p>目前，图层模式的算法公式中并没有关于透明度的解释，即，如果参与模式计算的最底图层有透明区域，那么最终得到的混合效果可能更复杂。</p>
 <p>例如，上面的示例中，如果最下面的B图层存在透明区域，那么最后生成的混合效果与我们的预期会不一样，从而导致我们无法顺利完成那张RGB原理图。</p>
 </div>
+<p><em>最近一次更新：2024-07-19</em></p>
 </div>
 </div>
 
@@ -239,7 +245,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
         <a href="3layer.html" class="btn btn-neutral float-left" title="可停靠对话框→图层" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="layermode/1normal.html" class="btn btn-neutral float-right" title="1. 正常" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="layermode/1normal.html" class="btn btn-neutral float-right" title="1. 正常 Normal" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

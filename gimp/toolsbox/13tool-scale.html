@@ -93,16 +93,16 @@
   <div class="section" id="gimp-tool-scale">
 <span id="id1"></span><h1>缩放工具(变形)<a class="headerlink" href="#gimp-tool-scale" title="永久链接至标题"></a></h1>
 <p>快捷键：Shift+S</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id4">
 <img alt="../../_images/13tool-scale.png" src="../../_images/13tool-scale.png" />
-<p class="caption"><span class="caption-text">缩放工具 (变形 )及其工具选项</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">缩放工具 (变形 )及其工具选项</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
 </div>
 <p>缩放工具( <a class="reference internal" href="../../_images/gimp-tool-scale.svg"><img alt="gimp-tool-scale" class="align-middle" height="20" src="../../_images/gimp-tool-scale.svg" width="20" /></a> )可以缩放图层、选区、路径、图像。</p>
 <p>选中缩放工具后，点击图像并拖动鼠标就可以缩放，或者拖动缩放矩形框上的八个缩放控制手柄进行缩放。屏幕同时会显示缩放对话框，您可以精确设置宽度和高度的数值。</p>
 <blockquote>
-<div><div class="figure align-center" id="id6">
+<div><div class="figure align-center" id="id5">
 <img alt="../../_images/13tool-scale-sample.png" src="../../_images/13tool-scale-sample.png" />
-<p class="caption"><span class="caption-text">左边矩形是缩放对象，中间的田字方块是轴心；右边是缩放对话框</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">左边矩形是缩放对象，中间的田字方块是轴心；右边是缩放对话框</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
 </div>
 </div></blockquote>
 <p>缩放工具的操作方法：</p>
@@ -134,16 +134,16 @@
 </ul>
 </li>
 </ul>
-<ul>
-<li><p>方向：设置缩放方向：</p>
 <ul class="simple">
+<li><p>方向：设置缩放方向：</p>
+<ul>
 <li><p>正常(向前)：按照鼠标操作的方向正常缩放。</p></li>
 <li><p>校正(向后)：反转方向，即缩放结果与您操作的方向正相反。使用此方式时，建议勾选下面的 显示图像预览。</p></li>
 </ul>
 </li>
 <li><p>插值：因为图像做了重采样，所以您需要指定算法，不同的算法可能导致结果的质量不同。各个选项的说明，请参考<a class="reference internal" href="../menufile/5image/10scale.html#image-scale-quality"><span class="std std-ref">图像→缩放图像⇒质量</span></a>。</p></li>
 <li><p>剪裁：变换操作可能会导致图像尺寸变大，这里可以决定如何处理变大的尺寸：</p>
-<ul class="simple">
+<ul>
 <li><p>调整：图层尺寸被放大，以容纳增加的的区域。图层尺寸大于画布尺寸的部分没有删除，只是没显示，您可以移动图层位置来查看。</p></li>
 <li><p>剪裁：图层尺寸不变，超出图层尺寸的内容被删除。</p></li>
 <li><p>剪裁到结果：GIMP会计算变换矩形框内的图像，在变换矩形框范围内，尽可能大的保留一个矩形的图像，其它图像删除；图层边界可能会超出画布边界。</p></li>
@@ -155,20 +155,14 @@
 <li><p>图像不透明度：设置预览的不透明度。</p></li>
 <li><p>合成预览：图像变换效果的最终效果，等同于按下Enter键后的效果。</p>
 <ul>
-<li><p>预览链接的项目/同步预览：</p>
-<blockquote>
-<div><div class="admonition-todo admonition" id="id4">
-<p class="admonition-title">待处理</p>
-<p>这两个选项的说明等待GIMP官方更新。</p>
-</div>
-</div></blockquote>
-</li>
+<li><p>预览链接的项目：显示所有链接图层的变换处理，而不只是当前选中图层。</p></li>
+<li><p>同步预览：该选项还在测试中。其目的是在改变变换后立即渲染预览。它不会等待鼠标停止移动，而是立即渲染结果。如果GIMP能以足够快的速度渲染一切，这意味着反馈会更流畅。但该选项也会在预览渲染完成前阻止一切操作。这意味着，在图层非常大的情况下，GIMP的响应速度会大大降低。这也是默认禁用该选项的原因。</p></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><p>参考线：在选区中显示的参考线类型：</p>
-<ul class="simple">
+<ul>
 <li><p>无参考线：不使用参考线。</p></li>
 <li><p>中间线：一条垂直中心线和一条水平中心线，相互交叉。</p></li>
 <li><p>三分构图法：添加两条等距水平线和两条等距垂直线，将变换区域横向和纵向都三等分，整个图像九等分。</p></li>

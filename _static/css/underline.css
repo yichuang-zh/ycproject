@@ -56,7 +56,7 @@ span.dash2y {
     /*    text-decoration-color: yellow; */
 }
 
-span.dash2y2 {
+span.dash2yline {
     /*    color: #aabb00; */
     text-decoration: underline;
     text-decoration-style: dashed;
@@ -90,12 +90,12 @@ span.dash2r {
     border-bottom-color: green;
 }
 
-.dash6y2 {
-    color: #aabb00;
+.dash6yline {
+#    color: #aabb00;
     border-bottom: underline;
-    border-bottom-style: dashed;
+    border-bottom-style: dotted;
     border-bottom-width: 1px;
-    border-bottom-color: green;
+    border-bottom-color: #aabb00;
 }
 
 .dash7 {

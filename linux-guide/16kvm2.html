@@ -93,6 +93,10 @@
 <span id="kvm2"></span><h1>虚拟机virt-manager-2：host与guest文件共享<a class="headerlink" href="#virt-manager-2-hostguest" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
+<div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：</p>
+<p>本文涉及的三个方案，均不限制客户机的类型，即客户机可以Linux，也可以是Windows。</p>
+</div>
 <p>由于虚拟机的客户机在理论上与主机是完全隔离的，所以，虽然安全性很高，但客户机与主机之间如果需要交换或者共享文件，就需要一些额外的设置和操作才能实现。您可以参考下面介绍的三个方案来解决。</p>
 <dl class="simple">
 <dt>约定：</dt><dd><p>下面的阐述中，主机=host，虚拟机=客户机=guest，不再另行说明。另外，虚拟机均为kvm的.qcow2虚拟机，vmware等其它类型未测试。</p>
@@ -157,7 +161,7 @@
 在<span class="dash6">列队的文件</span>框中，右键点击服务器，取消勾选<span class="dash6">处理队列</span>即可暂停。</p>
 <blockquote>
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp14.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：</p>
 <p>由于FTP方式与前面的命令行方式分别要求guest处于开机和关机的状态，所以两种方式正好互补，建议都进行了解并保存记录，以备不时之需。</p>
 </div>
 </div></blockquote>

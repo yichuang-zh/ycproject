@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→颜色到透明</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+  <title>颜色→颜色到透明 Color to Alpha</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
@@ -21,8 +21,8 @@
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="颜色→递色" href="24dither.html" />
-    <link rel="prev" title="颜色→色相分离" href="22posterize.html" /> 
+    <link rel="next" title="颜色→抖动 Dither" href="24dither.html" />
+    <link rel="prev" title="颜色→色相分离 Posterize" href="22posterize.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -79,51 +79,51 @@
           <li class="breadcrumb-item"><a href="../../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../../gimp_menu.html">GIMP菜单</a></li>
           <li class="breadcrumb-item"><a href="../7color.html">颜色</a></li>
-      <li class="breadcrumb-item active">颜色→颜色到透明</li>
+      <li class="breadcrumb-item active">颜色→颜色到透明 <em>Color to Alpha</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="22posterize.html" class="btn btn-neutral float-left" title="颜色→色相分离" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="24dither.html" class="btn btn-neutral float-right" title="颜色→递色" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="22posterize.html" class="btn btn-neutral float-left" title="颜色→色相分离 Posterize" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="24dither.html" class="btn btn-neutral float-right" title="颜色→抖动 Dither" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>颜色→颜色到透明<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
-<div class="figure align-center" id="id7">
+  <div class="section" id="color-to-alpha">
+<h1>颜色→颜色到透明 <em>Color to Alpha</em><a class="headerlink" href="#color-to-alpha" title="永久链接至标题"></a></h1>
+<div class="figure align-center" id="id6">
 <img alt="../../../_images/23color-to-alpha.png" src="../../../_images/23color-to-alpha.png" />
-<p class="caption"><span class="caption-text">颜色→颜色到透明</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">颜色→颜色到透明</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
 </div>
 <p>此工具没有快捷键。</p>
 <p>此工具会设定一种颜色，然后使当前活动图层或选区中具有该颜色的所有像素都变透明。</p>
 <p>此工具有一定的智能成分，会尽量保持选定区域的像素与其周围的像素平滑过度。</p>
 <p>如果原图像没有透明通道，那么应用此命令后，会添加一个alpha通道。</p>
-<div class="section" id="id2">
-<h2>预设<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<div class="section" id="id1">
+<h2>预设<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
 <p>此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
 </div>
-<div class="section" id="id3">
-<h2>颜色<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<div class="section" id="id2">
+<h2>颜色<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>点击色板可以选择颜色，或者也可以用右边的滴管在图像上吸取颜色。</p>
 <p>右键点击色板可以选择前景色、背景色、白色或黑色。</p>
 <p>注意，此工具可以和<a class="reference internal" href="../../gimp_menu.html#gegl-operation-tool-option"><span class="std std-ref">GEGL操作(工具选项)</span></a>配合使用。</p>
 </div>
-<div class="section" id="id4">
-<h2>透明阈值<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+<div class="section" id="id3">
+<h2>透明阈值<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>颜色变得透明的差异范围。</p>
 <p>通过计算像素颜色的差异对比来进行透明度修改：根据像素的颜色与上面设置的颜色的差异程度来修改像素的透明度，这个差异程度就是阈值。差异低于此阈值就变透明(具有该颜色的像素完全透明)。</p>
 </div>
-<div class="section" id="id5">
-<h2>不透明阈值<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+<div class="section" id="id4">
+<h2>不透明阈值<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>颜色变得不透明的差异范围。</p>
 <p>通过计算像素颜色的差异对比来进行透明度修改：根据像素的颜色与上面设置的颜色的差异程度来修改像素的不透明度，这个差异程度就是阈值。差异高于此阈值就不透明(具有该颜色的像素完全透明)。</p>
 <p>透明阈值与不透明阈值同时设置，像素颜色与设置颜色差异越大越不透明，差异越小越透明。如果设置透明阈值为0，不透明阈值为1，那么，只有那些具有该颜色的像素才完全透明，且只有差异最大的颜色才完全不透明。</p>
 </div>
-<div class="section" id="id6">
-<h2>混合选项/预览/分割视图<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
+<div class="section" id="id5">
+<h2>混合选项/预览/分割视图<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
 </div>
 </div>
@@ -132,8 +132,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="22posterize.html" class="btn btn-neutral float-left" title="颜色→色相分离" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="24dither.html" class="btn btn-neutral float-right" title="颜色→递色" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="22posterize.html" class="btn btn-neutral float-left" title="颜色→色相分离 Posterize" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="24dither.html" class="btn btn-neutral float-right" title="颜色→抖动 Dither" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

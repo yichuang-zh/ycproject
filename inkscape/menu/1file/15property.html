@@ -20,9 +20,7 @@
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
-    <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="文件→关闭" href="16close.html" />
-    <link rel="prev" title="文件→文档元信息" href="142resource.html" /> 
+    <link rel="search" title="搜索" href="../../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,10 +39,10 @@
                 开源/Linux大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
-              <ul class="current">
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../gimp/gimp.html">GIMP操作指南</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape.html">Inkscape操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
@@ -76,16 +74,10 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../inkscape-menu.html">Inkscape菜单</a></li>
-          <li class="breadcrumb-item"><a href="../1file.html">文件</a></li>
       <li class="breadcrumb-item active">文件→文档属性</li>
       <li class="wy-breadcrumbs-aside">
       </li>
-  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="142resource.html" class="btn btn-neutral float-left" title="文件→文档元信息" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="16close.html" class="btn btn-neutral float-right" title="文件→关闭" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-  </div>
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -95,9 +87,9 @@
 <span id="id1"></span><h1>文件→文档属性<a class="headerlink" href="#inkscape-menu-file-15property" title="永久链接至标题"></a></h1>
 <p>快捷键：Ctrl+Shift+D</p>
 <p>这里您可以查看或调整当前文档的一些基本参数，比如页面尺寸、单位等，还可以对一些辅助参数进行调整，比如参考线、页面背景等。</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id9">
 <img alt="../../../_images/15property1.png" src="../../../_images/15property1.png" />
-<p class="caption"><span class="caption-text">文档属性对话框&gt;显示</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">文档属性对话框&gt;显示</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
 </div>
 <div class="section" id="id2">
 <h2><span class="dash6">显示</span>页面<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
@@ -109,12 +101,12 @@
 <li><p>缩放：这里的缩放，主要是指对viewbox进行调整。缩放的数值框右侧有一个小点，激活后，会锁定viewbox与绘图内容，使二者缩放比例一致。</p></li>
 <li><p>Viewbox：这里可以对viewbox的位置和缩放进行调整。</p>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../../_images/avatarp12.svg"><img alt="Y" class="align-middle" height="22" src="../../../_images/avatarp12.svg" width="22" /></a> 驿窗注：</p>
-<p>上面两项(缩放; viewbox)都是针对viewbox的设置。viewbox是svg的一个参数。如果您只是绘图，那么不要修改viewbox相关的设置。但如果您要进行开发，比如专门为web交互而设计svg，那么请参考svg标准中viewbox相关的内容。</p>
+<p class="admonition-title"><a class="reference internal" href="../../../_images/avatarp13.svg"><img alt="Y" class="align-middle" height="22" src="../../../_images/avatarp13.svg" width="22" /></a> 驿窗注：</p>
+<p>上面两项(缩放; viewbox)都是针对viewbox的设置。viewbox是svg的一个属性参数，编程时必须赋值。如果您只是绘图，那么不要修改viewbox相关的设置，保持为默认值就好。但如果您要进行开发，比如专门为web交互而设计svg，那么请参考svg标准中viewbox相关的内容。</p>
 </div>
 </li>
 <li><p>显示单位：即文档的度量单位。在这里调整度量单位，会同步修改工具选项栏的度量单位和页面标尺的度量单位。工具选项栏的度量单位不会影响页面标尺。</p></li>
-<li><p>页面/边框/桌面：页面表示在 <span class="dash6">格式</span>所设定的区域内部的颜色；边框表示这个区域的边框的颜色；桌面表示整个画布的背景颜色。</p></li>
+<li><p>页面/边框/桌面：页面表示在<span class="dash6">格式</span>所设定的区域内部的颜色；边框表示这个区域的边框的颜色；桌面表示整个画布的背景颜色。</p></li>
 <li><p>跳棋盘：勾选后，画布会由纯色背景变为方格背景。</p></li>
 <li><p>边框：勾选后，会在页面尺寸边缘显示框线。</p></li>
 <li><p>显示大页面标签：如果有多个页面，那么勾选后会在每个页面正下方以大标签的方式显示页面编号。</p></li>
@@ -125,19 +117,19 @@
 <div class="section" id="id3">
 <h2><span class="dash6">参考线</span>页面<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>这里可以对参考线做一些设置，包括参考线的常规颜色和高亮颜色，高亮颜色可以理解为选中时的颜色。</p>
-<p>另外，也可以在这里直接删除所有参考线。</p>
-<p>注意，不要把参考线和<span class="dash6">网格</span>搞混淆了。</p>
-<div class="figure align-center" id="id6">
+<p>另外，也可以在这里直接删除所有参考线。
+注意，不要把参考线和<span class="dash6">网格</span>搞混淆了。</p>
+<div class="figure align-center" id="id10">
 <img alt="../../../_images/15property30_guide.png" src="../../../_images/15property30_guide.png" />
-<p class="caption"><span class="caption-text">文档属性对话框&gt;参考线</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">文档属性对话框&gt;参考线</span><a class="headerlink" href="#id10" title="永久链接至图片"></a></p>
 </div>
 </div>
 <div class="section" id="id4">
 <h2><span class="dash6">网格</span>页面<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p><span class="dash6">网格</span>页面中可以根据需要添加/删除和调整页面网格。</p>
-<div class="figure align-center" id="id7">
+<div class="figure align-center" id="id11">
 <img alt="../../../_images/15property31-grid.png" src="../../../_images/15property31-grid.png" />
-<p class="caption"><span class="caption-text">文档属性对话框&gt;网格</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">文档属性对话框&gt;网格</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
 </div>
 <p>如图所示，可以创建三种类型的网格：矩形，菱形，模块。</p>
 <ol class="arabic simple">
@@ -155,10 +147,44 @@
 <li><p>移除：点击此按钮可以删除当前选中的网格。这里的选中，是指激活上面截图中的<span class="dash6">已添加网格</span>处显示的按序号命名的网格名称，因为在文档中是无法选中网格线的，这一点与参考线不一样，注意不要混淆网格与参考线。</p></li>
 </ol>
 <p>补充说明：快捷键操作</p>
-<p>此对话框中，多数条目都可以使用快捷键辅助操作。比如<span class="dash6">原点坐标X(O)</span>就表示x坐标的快捷键是Alt+o。当前对话框激活的情况下，按Alt+o就可以直接切换到原点坐标X的数值框，然后可以直接输入数值。</p>
+<blockquote>
+<div><p>此对话框中，多数条目都可以使用快捷键辅助操作。比如<span class="dash6">原点坐标X(O)</span>就表示x坐标的快捷键是Alt+o。当前对话框激活的情况下，按Alt+o就可以直接切换到原点坐标X的数值框，然后可以直接输入数值。</p>
 <p>即，括号内的字母表示快捷键。按<span class="dash6">Alt+对应字母</span>就可以快速切换到相应条目，快捷键字母不区分大小写。</p>
 <p>如果有不同条目使用了相同的快捷键字母，比如截图中的<span class="dash6">可见</span>和<span class="dash6">网格等分数</span>，快捷键都是Alt+v，那么按Alt+v时，Alt键不松，v键不停点按，就会再这两个条目间循环。当如循环到<span class="dash6">可见</span>时，松开Alt+v，按<span class="dash6">空格键</span>，就可以切换<span class="dash6">可见</span>的勾选状态。</p>
-<p><em>最近一次更新：2024-06-22</em></p>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h2><span class="dash6">颜色</span>页面<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+<p>这里可以设置用于色彩管理的icc文件。</p>
+<div class="figure align-center" id="id12">
+<img alt="../../../_images/15property34-color.png" src="../../../_images/15property34-color.png" />
+<p class="caption"><span class="caption-text">文档属性对话框&gt;颜色</span><a class="headerlink" href="#id12" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2><span class="dash6">脚本</span>页面<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
+<p>如果需要，可以在这里处理添加一些script文件。</p>
+<div class="figure align-center" id="id13">
+<img alt="../../../_images/15property35-script.png" src="../../../_images/15property35-script.png" />
+<p class="caption"><span class="caption-text">文档属性对话框&gt;脚本</span><a class="headerlink" href="#id13" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2><span class="dash6">元数据</span>页面<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
+<p>这里可以编辑文档的元数据信息。</p>
+<div class="figure align-center" id="id14">
+<img alt="../../../_images/15property36mata.png" src="../../../_images/15property36mata.png" />
+<p class="caption"><span class="caption-text">文档属性对话框&gt;元数据</span><a class="headerlink" href="#id14" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id8">
+<h2><span class="dash6">许可</span>页面<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
+<p>这里可以设置文档使用何种开源许可协议。设置后，可以通过文件管理器右键的属性查看，不需要打开文件。</p>
+<div class="figure align-center" id="id15">
+<img alt="../../../_images/15property37-license0.png" src="../../../_images/15property37-license0.png" />
+<p class="caption"><span class="caption-text">文档属性对话框&gt;许可</span><a class="headerlink" href="#id15" title="永久链接至图片"></a></p>
+</div>
+<p><em>最近一次更新：2024-06-23</em></p>
 <blockquote>
 <div></div></blockquote>
 </div>
@@ -167,10 +193,7 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="142resource.html" class="btn btn-neutral float-left" title="文件→文档元信息" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="16close.html" class="btn btn-neutral float-right" title="文件→关闭" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

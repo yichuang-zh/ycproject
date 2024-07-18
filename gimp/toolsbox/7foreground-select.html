@@ -93,9 +93,9 @@
   <div class="section" id="gimp-tool-foreground-select">
 <span id="id1"></span><h1>前景选择工具<a class="headerlink" href="#gimp-tool-foreground-select" title="永久链接至标题"></a></h1>
 <p>此工具没有快捷键。</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id4">
 <img alt="../../_images/7foreground-select.png" src="../../_images/7foreground-select.png" />
-<p class="caption"><span class="caption-text">前景选择工具及其工具选项</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+<p class="caption"><span class="caption-text">前景选择工具及其工具选项</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
 </div>
 <p>前景选择工具( <a class="reference internal" href="../../_images/gimp-tool-foreground-select.svg"><img alt="gimp-tool-foreground-select" class="align-middle" height="20" src="../../_images/gimp-tool-foreground-select.svg" width="20" /></a> )可以提取活动图层或选区的前景(驿窗注：注意是前景不是前景色)。选区创建完成后，如果反转选区，相当于选取了背景。此工具是通过蒙版来操作的。</p>
 <p>创建选区的方法：(此工具部分类似自由选择工具)</p>
@@ -140,7 +140,7 @@
 <h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>这里提供了更多的细节控制。</p>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
-<ul>
+<ul class="simple">
 <li><p>模式：模式会决定新创建的选区与已经存在的选区如何组合，有四个选项：</p>
 <ol class="arabic simple">
 <li><p>替换：已经存在的选区会被删除，只保留新创建的选区。</p></li>
@@ -151,19 +151,19 @@
 </li>
 <li><p>羽化边缘：可以融合边缘，使选区与背景过度更平滑。默认半径为10像素。</p></li>
 <li><p>绘画模式：</p>
-<ul class="simple">
+<ul>
 <li><p>绘制前景：绘制部分会成为前景内容。</p></li>
 <li><p>绘制背景：绘制部分会成为背景内容。</p></li>
 <li><p>绘制未知：将背景中的像素添加到你的选区中。</p></li>
 </ul>
 </li>
 <li><p>笔廓宽度：画线条时笔刷的尺寸。</p>
-<ul class="simple">
+<ul>
 <li><p>重置按钮：可以把笔刷尺寸重置为默认值10；</p></li>
 </ul>
 </li>
 <li><p>预览模式：</p>
-<ul class="simple">
+<ul>
 <li><p>颜色：您可以根据图像的色调来调整蒙版颜色，防止颜色相近导致的操作困难，点击下方的色板即可选择颜色。</p></li>
 <li><p>灰度：以黑白的方式预览蒙版结果。这种预览类似于图层蒙版，在前景色和背景色相差不大的图像中比较有效。</p></li>
 </ul>
@@ -171,14 +171,8 @@
 <li><p>引擎：您可以使用全局抠图工作，然后使用莱文抠图改进结果。</p>
 <ul>
 <li><p>迭代次数：如果选择全局抠图，那么会显示此选项，提高数值可能会改善结果。</p></li>
-<li><p>色阶/激活级别：如果选择莱文抠图，那么会显示这两个选项。</p>
-<blockquote>
-<div><div class="admonition-todo admonition" id="id4">
-<p class="admonition-title">待处理</p>
-<p>这两个选项的说明等待GIMP官方更新。</p>
-</div>
-</div></blockquote>
-</li>
+<li><p>级别：要使用的降采样级数。数字越大，处理速度越快，但会占用更多内存。默认为2级。(仅莱文抠图)</p></li>
+<li><p>激活级别：进行求解的级别数。数字越大，选择范围越大，但处理速度会减慢。将此数字设置得高于”级数”不会有任何影响。默认为2个有效级别(仅莱文抠图)</p></li>
 </ul>
 </li>
 </ul>
