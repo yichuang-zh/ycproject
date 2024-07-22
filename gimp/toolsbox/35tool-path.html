@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>路径工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>路径工具 Paths Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="文字工具" href="36tool-text.html" />
-    <link rel="prev" title="减淡/加深工具" href="34tool-dodge.html" /> 
+    <link rel="next" title="文字工具 Text Tool" href="36tool-text.html" />
+    <link rel="prev" title="减淡/加深工具 Dodge/Burn Tool" href="34tool-dodge.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -78,25 +84,27 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
-      <li class="breadcrumb-item active">路径工具</li>
+      <li class="breadcrumb-item active">路径工具 <em>Paths Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="34tool-dodge.html" class="btn btn-neutral float-left" title="减淡/加深工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="36tool-text.html" class="btn btn-neutral float-right" title="文字工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="34tool-dodge.html" class="btn btn-neutral float-left" title="减淡/加深工具 Dodge/Burn Tool" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="36tool-text.html" class="btn btn-neutral float-right" title="文字工具 Text Tool" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gimp-tool-path">
-<span id="id1"></span><h1>路径工具<a class="headerlink" href="#gimp-tool-path" title="永久链接至标题"></a></h1>
+  <section id="paths-tool">
+<span id="gimp-tool-path"></span><h1>路径工具 <em>Paths Tool</em><a class="headerlink" href="#paths-tool" title="Link to this heading"></a></h1>
 <p>快捷键：B</p>
-<div class="figure align-center" id="id4">
+<figure class="align-center" id="id3">
 <img alt="../../_images/35tool-path.png" src="../../_images/35tool-path.png" />
-<p class="caption"><span class="caption-text">路径工具及其工具选项</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">路径工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>路径工具( <a class="reference internal" href="../../_images/gimp-tool-path.svg"><img alt="gimp-tool-path" class="align-middle" height="20" src="../../_images/gimp-tool-path.svg" width="20" /></a> )又称为Bézier曲线工具，可以用矢量曲线创建极为复杂和极为精准的选区。您可以编辑创建的曲线，用创建的曲线绘画，可以保存、导入、导出曲线。</p>
 <p>路径工具的操作方法：</p>
 <blockquote>
@@ -127,8 +135,8 @@
 <p>(点击可查看原图)</p>
 </div></blockquote>
 <a class="reference internal image-reference" href="../../_images/35path-sample1.png"><img alt="../../_images/35path-sample1.png" src="../../_images/35path-sample1.png" style="width: 90%;" /></a>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>这里提供一些细节控制。</p>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
 <ol class="arabic simple">
@@ -162,10 +170,12 @@
 <li><p>抗锯齿：填充范围的边缘启用抗锯齿效果；</p></li>
 </ul>
 <blockquote>
-<div><div class="figure align-center" id="id5">
+<div><figure class="align-center" id="id4">
 <img alt="../../_images/35path-fill.png" src="../../_images/35path-fill.png" />
-<p class="caption"><span class="caption-text">填充路径</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">填充路径</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 </div></blockquote>
 <ol class="arabic simple" start="5">
@@ -178,13 +188,13 @@
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
 </ul>
-</div>
-<div class="section" id="id3">
-<h2>扩展说明<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id2">
+<h2>扩展说明<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>本质上，GIMP是一个位图程序，所以，GIMP对路径的创建和编辑能力有限，远不如矢量图程序强大，这也是为什么photoshop和illustrator两者都存在的原因：photoshop主要用于位图，Illustrator主要用于矢量图。只不过为了操作便捷，专攻位图的GIMP也支持一部分矢量操作，典型的就是路径工具；photoshop也是同理。</p>
 <p>在开源领域，也有一个可以免费商用且非常强大的矢量图程序，就是inkscape，其在开源软件中的地位类同于illustrator。</p>
 <p>并且，GIMP支持直接导入inkscape创建的svg路径，即，您在inkscape中创建好路径，保存成svg文件，然后就可以在GIMP中直接导入inkscape创建好的svg文件。这样，您就可以直接利用inkscape强大的矢量特性。</p>
-<p>关于inkscape的操作方法，请参考<a class="reference internal" href="../../inkscape/inkscape.html#inkscape-guide-from-yichuang"><span class="std std-ref">《Inkscape 操作指南》</span></a> 。</p>
+<p>关于inkscape的操作方法，请参考<span class="xref std std-ref">《Inkscape 操作指南》</span> 。</p>
 <dl>
 <dt>GIMP中如何导入inkscape路径：</dt><dd><ol class="arabic simple">
 <li><p>先把inkscape中创建的路径保存成svg文件；</p></li>
@@ -194,10 +204,12 @@
 <li><p>激活路径缩略图左侧的眼睛图标后，可以大幅度缩小视图，就会看到画布范围的路径，用路径工具把路径移到画布中心位置。</p></li>
 </ol>
 <blockquote>
-<div><div class="figure align-center" id="id6">
+<div><figure class="align-center" id="id5">
 <img alt="../../_images/35import-path-from-inkscape.png" src="../../_images/35import-path-from-inkscape.png" />
-<p class="caption"><span class="caption-text">画布范围外的路径</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">画布范围外的路径</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>(上图中白色矩形是画布范围，下面的五角星、红色方框、椭圆形三个是导入的inkscape路径。右侧路径面板中，三个眼睛图标都已经激活；路径缩略图只有五角星显示了一部分，另外两个路径在缩略中没有显示，没显示的原因是路径的位置已经位于画布区域之外)</p>
 </div></blockquote>
 <ol class="arabic simple" start="6">
@@ -206,21 +218,21 @@
 </ol>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="34tool-dodge.html" class="btn btn-neutral float-left" title="减淡/加深工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="36tool-text.html" class="btn btn-neutral float-right" title="文字工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="34tool-dodge.html" class="btn btn-neutral float-left" title="减淡/加深工具 Dodge/Burn Tool" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="36tool-text.html" class="btn btn-neutral float-right" title="文字工具 Text Tool" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

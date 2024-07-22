@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>应该下载哪个映像(iso)来安装系统</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>应该下载哪个映像(iso)来安装系统</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -89,13 +95,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="iso">
-<span id="which-iso"></span><h1>应该下载哪个映像(iso)来安装系统<a class="headerlink" href="#iso" title="永久链接至标题"></a></h1>
+  <section id="iso">
+<span id="which-iso"></span><h1>应该下载哪个映像(iso)来安装系统<a class="headerlink" href="#iso" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>对于系统安装，Debian官网提供了很多个版本的映像(iso)。那么，我们在安装时应该选择哪个iso？(这里的映像是指iso)</p>
 <div class="admonition-y-202377 admonition" id="dvd-link-01">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 2023年7月7更新：</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 2023年7月7更新：</p>
 <p>如果是debian11或更早的版本，最好下载带有non-free固件的映像文件，因为它带有无线网卡驱动；但从debian12之后，debian官方修改了规则，iso已经包含需要的non-free固件，不再有不包含固件的版本，所以不用再担心缺少无线网卡驱动。</p>
 <dl class="simple">
 <dt>所以，安装版本iso直接从这个链接下载就可以：</dt><dd><p><a class="reference external" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/">https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/</a></p>
@@ -105,14 +111,14 @@
 </dl>
 </div>
 <p>Debian官网提供的iso种类比较多，下面我们做一下相对全面的介绍，了解之后您就清楚应该如何选择iso 。</p>
-<div class="section" id="id1">
-<h2>Iso中都包括什么内容<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>Iso中都包括什么内容<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>Windows提供的iso中，只包括windows系统，不包括应用软件；Debian不同，Debian提供的完整iso中，除了包括系统以外，还包括一些应用程序，比如办公软件LibreOffice等。</p>
 <p>理论上，Debian官方仓库提供的软件包超过58000个，它们共同组成了<span class="dash6">操作系统+应用程序</span>。您可以随时通过网络来安装这些软件包，也可以把软件包下载到自己的本地再安装。甚至，如果愿意，您可以把整个官方仓库<span class="dash6">搬</span>到本地。</p>
 <p>另外，除了Debian官方仓库提供的软件包，您也可以安装从其它渠道获得的符合debian系统要求的软件包，这增加了Debian系统可安装应用的种类和版本范围。(完全新手不推荐)</p>
-</div>
-<div class="section" id="free-non-free-official-unofficial">
-<h2>Free/non-free/official/unofficial<a class="headerlink" href="#free-non-free-official-unofficial" title="永久链接至标题"></a></h2>
+</section>
+<section id="free-non-free-official-unofficial">
+<h2>Free/non-free/official/unofficial<a class="headerlink" href="#free-non-free-official-unofficial" title="Link to this heading"></a></h2>
 <p>Debian仓库提供的软件包分两大类，一类是自由的(free)，另一类是非自由的(non-free)。</p>
 <p>Debian对于free和non-free有明确的定义，具体请参考Debian关于<a class="reference external" href="https://www.debian.org/intro/free">自由</a>的说明以及<a class="reference external" href="https://www.debian.org/social_contract#guidelines">DFSG</a> 。简单来说，那些不开放源代码，或者虽然开放了源代码，但却不提供自由使用授权的软件，就是non-free的。而non-free的典型的就是无线网卡驱动，因为无线网卡驱动通常都是不开放源代码的。</p>
 <p>Debian <span class="dash6">official</span>类的软件包，一定是自由的(free)。而那些<span class="dash6">non-free</span>类的软件包，Debian则以<span class="dash6">unofficial</span>(非正式)方式提供。</p>
@@ -132,25 +138,25 @@
 </dl>
 </div></blockquote>
 <p>注意，这些iso下载需要使用<span class="dash6">jigdo</span>，请参考页面上的说明使用。</p>
-</div>
-<div class="section" id="id3">
-<h2>小型安装映像<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id3">
+<h2>小型安装映像<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>完整的安装映像是一个比较大的文件(4GB)。为了方便，Debian还提供比较小的安装映像(400MB)，这种小的安装映像通常被命名为netins.iso，即映像中只提供基本引导程序和安装程序，在安装过程中需要的其它所有软件包都需要从网络实时下载。这种情况下，需要您的联网状况比较好才可以，否则非常耗时且有可能失败。下面是Debian的小型安装映像的下载<span class="dash6">链接-net</span>：</p>
 <dl>
 <dt>链接-net：</dt><dd><p><a class="reference external" href="https://www.debian.org/distrib/netinst.zh-cn.html">https://www.debian.org/distrib/netinst.zh-cn.html</a></p>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
 <p>对于个人和家庭用户，驿窗<strong>不推荐</strong>使用小型安装映像。</p>
 </div>
 </dd>
 </dl>
-</div>
-<div class="section" id="id4">
-<h2>云映像<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+</section>
+<section id="id4">
+<h2>云映像<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>云映像不适用家用和办公场景。</p>
-</div>
-<div class="section" id="live">
-<h2>Live映像<a class="headerlink" href="#live" title="永久链接至标题"></a></h2>
+</section>
+<section id="live">
+<h2>Live映像<a class="headerlink" href="#live" title="Link to this heading"></a></h2>
 <p>Live映像与上面提到的映像相比，除了可以安装系统以外，还能够在不安装系统的情况下，先体验一下系统的界面和操作感觉。</p>
 <p>把Live映像写到U盘后用U盘引导您的电脑，电脑就进入到一个真正的Debian系统中，您可以体验几乎所有的系统功能，比如浏览网页、看网络视频、安装/删除软件、存取数据、收发邮件等等。</p>
 <p>Debian根据桌面环境类型的不同提供了多个Live映像，您可以根据兴趣和需要进行选择。下面的<span class="dash6">链接-live</span>是当前稳定版的Live映像地址：</p>
@@ -166,13 +172,13 @@
 </ol>
 <blockquote>
 <div><div class="admonition-y-live admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：除了体验，Live映像也非常适合用来救急</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：除了体验，Live映像也非常适合用来救急</p>
 <p>如果某一天系统崩溃无法正常启动，那么使用Live映像引导电脑以后，可以尝试修复启动问题。并且，如果硬件没有损坏，很容易就能把重要数据拷贝出来。所以，常备一个用Live映像制作的启动U盘放在电脑旁边是一个好习惯。</p>
 </div>
 </div></blockquote>
 <p><em>最近一次更新：2024-01-24</em></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -185,7 +191,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

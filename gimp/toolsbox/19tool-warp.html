@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>扭曲变换工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>扭曲变换工具 Warp Transform</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="框架变换工具" href="20tool-cage.html" />
-    <link rel="prev" title="控制柄变换工具" href="18tool-handle-transform.html" /> 
+    <link rel="next" title="框架变换工具 Cage Transform" href="20tool-cage.html" />
+    <link rel="prev" title="控制柄变换工具 Handle Transform Tool" href="18tool-handle-transform.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -78,40 +84,44 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
-      <li class="breadcrumb-item active">扭曲变换工具</li>
+      <li class="breadcrumb-item active">扭曲变换工具 <em>Warp Transform</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="18tool-handle-transform.html" class="btn btn-neutral float-left" title="控制柄变换工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="20tool-cage.html" class="btn btn-neutral float-right" title="框架变换工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="18tool-handle-transform.html" class="btn btn-neutral float-left" title="控制柄变换工具 Handle Transform Tool" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="20tool-cage.html" class="btn btn-neutral float-right" title="框架变换工具 Cage Transform" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gimp-tool-warp">
-<span id="id1"></span><h1>扭曲变换工具<a class="headerlink" href="#gimp-tool-warp" title="永久链接至标题"></a></h1>
+  <section id="warp-transform">
+<span id="gimp-tool-warp"></span><h1>扭曲变换工具 <em>Warp Transform</em><a class="headerlink" href="#warp-transform" title="Link to this heading"></a></h1>
 <p>快捷键：W</p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id2">
 <img alt="../../_images/19tool-warp.png" src="../../_images/19tool-warp.png" />
-<p class="caption"><span class="caption-text">扭曲变换工具及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">扭曲变换工具及其工具选项</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>扭曲变换工具( <a class="reference internal" href="../../_images/gimp-tool-warp.svg"><img alt="gimp-tool-warp" class="align-middle" height="20" src="../../_images/gimp-tool-warp.svg" width="20" /></a> )是一个类似画笔的工具，可以对图像的某些部分做变形处理，并且提供动画选项，可以在原始图像和变形后的图像之间创建动画。</p>
 <p>选中 扭曲变换工具后，在图像上点击并拖动鼠标，就会使鼠标经过的地方发生变形。</p>
 <blockquote>
-<div><div class="figure align-center" id="id4">
+<div><figure class="align-center" id="id3">
 <img alt="../../_images/19tool-warp-sample.png" src="../../_images/19tool-warp-sample.png" />
-<p class="caption"><span class="caption-text">矩形虚线框是变换区域，应用逆时针漩涡多次</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">矩形虚线框是变换区域，应用逆时针漩涡多次</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>扭曲变换工具的操作方法：</p>
 <blockquote>
 <div><p>扭曲变换工具类似画笔，所以操作方法很简单，就是在图像上点击或涂抹，还可以通过工具选项中的参数来进行进一步控制。</p>
 <p>由于类似画笔，所以您可以像对待画笔一样，调整 扭曲变换工具 的“笔刷”大小、硬度、强度、间距等参数。</p>
 </div></blockquote>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>这里提供了更多的细节控制。</p>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
 <ul>
@@ -156,21 +166,21 @@
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="18tool-handle-transform.html" class="btn btn-neutral float-left" title="控制柄变换工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="20tool-cage.html" class="btn btn-neutral float-right" title="框架变换工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="18tool-handle-transform.html" class="btn btn-neutral float-left" title="控制柄变换工具 Handle Transform Tool" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="20tool-cage.html" class="btn btn-neutral float-right" title="框架变换工具 Cage Transform" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

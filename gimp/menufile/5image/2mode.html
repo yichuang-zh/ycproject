@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>图像→模式</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>图像→模式</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -91,8 +97,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>图像→模式<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+  <section id="id1">
+<h1>图像→模式<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>此菜单中的命令可以修改图像的颜色模式。GIMP目前可以支持三种模式：RGB、灰度、索引。</p>
@@ -104,43 +110,45 @@
 </div>
 <p>或者，也可以使用其它软件来编辑CMYK图像，比如<a class="reference external" href="https://krita.org/zh/">Krita</a> 。</p>
 </div>
-<div class="section" id="rgb">
-<h2>RGB<a class="headerlink" href="#rgb" title="永久链接至标题"></a></h2>
+<section id="rgb">
+<h2>RGB<a class="headerlink" href="#rgb" title="Link to this heading"></a></h2>
 <p>此命令会把图像转换为RGB模式。</p>
 <div class="line-block">
 <div class="line">大多数情况下，您会在RGB模式下工作，该模式非常适合用于电子屏幕显示的图像(不包括电子书阅读器)。</div>
 <div class="line">GIMP可以把RGB模式图像转换为“灰度”或“索引”模式，但请注意，转换后一旦保存图像并关闭图像后，就无法再返回到RGB模式；所以，最好创建一个副本来转换为“灰度”或“索引”模式。</div>
 </div>
-</div>
-<div class="section" id="id2">
-<h2>灰度<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+</section>
+<section id="id2">
+<h2>灰度<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="line-block">
 <div class="line">此命令可以把图像转换为灰度模式。</div>
 <div class="line">所得到的灰度图像只有一个单一的灰度通道，由从黑到白的各级灰度组成。</div>
 </div>
 <p>黑与白之间的可用色阶数量取决于图像的精度:</p>
-<div class="section" id="id3">
-<h3>整数精度<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+<section id="id3">
+<h3>整数精度<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>8位整数灰度模式提供255个可用的色阶，从0到255(从黑到白)。</p></li>
 <li><p>16位整数灰度模式提供从0到65535(从黑到白)的65535个可用色阶。</p></li>
 <li><p>32位整数灰度模式理论上提供从0到4294967295(从黑到白)的4294967295个色阶。但由于高位深的 GIMP 2.10 的所有的内部处理是在32位浮点精度下，所以实际的色阶数不会超过32位浮点图像中可用的色阶数。</p></li>
 </ul>
-</div>
-<div class="section" id="id4">
-<h3>浮点精度<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
+</section>
+<section id="id4">
+<h3>浮点精度<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>浮点精度下：灰度图像中可用的色阶数取决于指定的位深(8位、16位或32位)和程序使用的浮点类型。</p>
-</div>
-</div>
-<div class="section" id="id5">
-<h2>索引<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+</section>
+</section>
+<section id="id5">
+<h2>索引<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>此命令会把图像转换为索引模式。</p>
-<div class="figure align-center" id="id7">
+<figure class="align-center" id="id7">
 <img alt="../../../_images/2index.png" src="../../../_images/2index.png" />
-<p class="caption"><span class="caption-text">图像→索引</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
-<div class="section" id="id6">
-<h3>颜色表<a class="headerlink" href="#id6" title="永久链接至标题"></a></h3>
+<figcaption>
+<p><span class="caption-text">图像→索引</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="id6">
+<h3>颜色表<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>生成最佳色板: 该选项可生成最佳调色板，默认最大颜色数为256种(经典GIF格式)。您可以减少这个最大颜色数量，尽管这可能会对平滑过渡产生不必要的副作用(条纹)。不过，您可以通过使用递色来降低副作用。</p></li>
 <li><p>使用为网页优化的色板: 使用针对网页优化的调色板。</p></li>
@@ -148,9 +156,9 @@
 <li><p>使用自定义色板: 此选项可以让您从列表中选择一个自定义调色板。每个调色板的颜色数量都有提示。“Web”色板有216种颜色，是“web-safe”色板。它最初是由Netscape创建的，以提供在Mac和PC上看起来一样的颜色。所有平台之间的颜色相似性问题还没有解决，可能永远也解决不了。在设计网页时，建议牢记两个原则：在深色背景上使用浅色文字或在浅色背景上使用深色文字；永远不要依靠颜色来传递重要信息。</p></li>
 <li><p>从颜色表中移除无用和重复的颜色：如果你的图片颜色数量不多，调色板中的一些颜色可能不用不到。如果勾选“从颜色表中移除无用和重复的颜色”选项，它们会从调色板中移除。</p></li>
 </ul>
-</div>
-<div class="section" id="dithering">
-<h3>递色{Dithering}<a class="headerlink" href="#dithering" title="永久链接至标题"></a></h3>
+</section>
+<section id="dithering">
+<h3>递色{Dithering}<a class="headerlink" href="#dithering" title="Link to this heading"></a></h3>
 <p>由于索引图像最多包含256种颜色，所以原始RGB模式图像中的一些颜色可能无法在调色板中使用。这可能会导致本应具有平滑渐变的区域出现一些条纹或斑块。递色选项可让您修正由调色板选项带来的这些副作用。</p>
 <ul>
 <li><p>颜色递色：此选项试图通过使用色板中类似颜色的像素群来逼近调色板中缺少的颜色。从远处看，这些像素会给人一种新颜色的感觉。</p>
@@ -159,9 +167,9 @@
 <li><p>启用透明递色：在GIF图像中，透明度以1位编码，即要么透明，要么不透明，不能半透明。为了给人以部分透明的错觉，您可以勾选“启用透明递色”选项。不过，菜单 滤镜→网络→半平整 的效果有可能更好一些。</p></li>
 <li><p>启用对文字图层的递色：此选项会导致文本图层不可再编辑。</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -174,7 +182,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

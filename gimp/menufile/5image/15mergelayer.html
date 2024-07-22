@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>图像→合并可见图层</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>图像→合并可见图层</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -91,8 +97,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>图像→合并可见图层<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+  <section id="id1">
+<h1>图像→合并可见图层<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：Ctrl+M</p>
@@ -100,34 +106,36 @@
 <div class="line">此命令会把所有可见图层合并在一起成为一个图层，原可见图层会消失。</div>
 <div class="line">如果有图层组存在，可以选择是否跨图层组执行命令。</div>
 </div>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id5">
 <img alt="../../../_images/15mergelayer.png" src="../../../_images/15mergelayer.png" />
-<p class="caption"><span class="caption-text">图像→合并可见图层</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
-<div class="section" id="id2">
-<h2>最后，合并的图层应该是：<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<figcaption>
+<p><span class="caption-text">图像→合并可见图层</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="id2">
+<h2>最后，合并的图层应该是：<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>必要时扩展：最终图层尺寸向最大图层尺寸看齐，这样可以容纳所有合并后的图层。</p></li>
 <li><p>剪裁至图像：最终图层尺寸与画布尺寸相同，超出画布边界范围的图层内容会被删除。</p></li>
 <li><p>剪裁至底端图层：最终的图层尺寸与最底层图层尺寸相同。如果最底图层尺寸比某些可见图层尺寸小，那么超出最底图层尺寸的图层内容会被删除。</p></li>
 </ul>
-</div>
-<div class="section" id="id3">
-<h2>仅合并于活动组内<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id3">
+<h2>仅合并于活动组内<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <div class="line-block">
 <div class="line">如果有图层组存在，那么这个选项会被激活，否则会显示为灰色不可用。</div>
 <div class="line">勾选此项后，命令仅对活动图层组内的图层生效，活动图层组外的图层不受影响。</div>
 </div>
-</div>
-<div class="section" id="id4">
-<h2>丢弃不可见图层<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+</section>
+<section id="id4">
+<h2>丢弃不可见图层<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>勾选此选项后，不可见图层会被删除：</p>
 <ul class="simple">
 <li><p>如果没有图层组存在，那么此命令执行后，应该只剩下一个图层，所有不可见图层全部被删除。</p></li>
 <li><p>如果有图层组存在，那么，如果未勾选“仅合并于活动组内”，执行命令后应该只剩下一个图层，所有不可见图层全部被删除；如果已勾选“仅合并于活动组内”，那么活动图层组外的原不可见图层会被保留，活动图层组内的原不可见图层会被删除。</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -140,7 +148,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

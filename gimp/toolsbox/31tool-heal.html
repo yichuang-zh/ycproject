@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>修复工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>修复工具 Healing Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="涂抹工具" href="32tool-smudge.html" />
-    <link rel="prev" title="透视克隆工具" href="30tool-perspective-clone.html" /> 
+    <link rel="next" title="涂抹工具 Smudge Tool" href="32tool-smudge.html" />
+    <link rel="prev" title="透视克隆工具 Perspective Clone Tool" href="30tool-perspective-clone.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -78,25 +84,27 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
-      <li class="breadcrumb-item active">修复工具</li>
+      <li class="breadcrumb-item active">修复工具 <em>Healing Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="30tool-perspective-clone.html" class="btn btn-neutral float-left" title="透视克隆工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="32tool-smudge.html" class="btn btn-neutral float-right" title="涂抹工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="30tool-perspective-clone.html" class="btn btn-neutral float-left" title="透视克隆工具 Perspective Clone Tool" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="32tool-smudge.html" class="btn btn-neutral float-right" title="涂抹工具 Smudge Tool" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gimp-tool-heal">
-<span id="id1"></span><h1>修复工具<a class="headerlink" href="#gimp-tool-heal" title="永久链接至标题"></a></h1>
+  <section id="healing-tool">
+<span id="gimp-tool-heal"></span><h1>修复工具 <em>Healing Tool</em><a class="headerlink" href="#healing-tool" title="Link to this heading"></a></h1>
 <p>快捷键：H</p>
-<div class="figure align-center" id="id4">
+<figure class="align-center" id="id3">
 <img alt="../../_images/31tool-heal.png" src="../../_images/31tool-heal.png" />
-<p class="caption"><span class="caption-text">修复工具及其工具选项</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">修复工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>修复工具( <a class="reference internal" href="../../_images/gimp-tool-heal.svg"><img alt="gimp-tool-heal" class="align-middle" height="20" src="../../_images/gimp-tool-heal.svg" width="20" /></a> )与克隆工具类似，但与克隆工具相比，修复工具更智能一些，它并不是简单地将像素从源复制到目的地，而是会考虑目的地的周围区域的情况：通常会根据目的地周围区域的颜色，修改克隆的颜色及边缘模糊效果。这个特点使修复工具的表现与克隆工具截然不同。</p>
 <p>修复工具的操作方法：</p>
 <blockquote>
@@ -110,16 +118,16 @@
 </div>
 </div>
 </div></blockquote>
-<div class="section" id="id2">
-<h2>辅助快捷键<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>按Shift键可以强制只能修复直线；</p></li>
 <li><p>Ctrl键+Shift键同时按，可以强制只能修复直线，且限制角度为15度的整数倍；</p></li>
 <li><p>只按Ctrl键会显示一个十字标记，这个标记位置就是源的原点位置，克隆操作时会从这里开始复制。</p></li>
 </ol>
-</div>
-<div class="section" id="id3">
-<h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>这里提供一些细节控制。</p>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
 <ol class="arabic simple">
@@ -129,7 +137,7 @@
 </ol>
 <blockquote>
 <div><p>右边的文字是笔刷的名称。</p>
-<p>文字右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a> )，点击可以打开 笔刷编辑器，这里可以查看笔刷参数，但不能修改笔刷。如果想修改笔刷，请先点击工具选项中的笔刷缩略图按钮，显示笔刷选择窗口，然后点击窗口底部最右边的“打开笔刷选择对话框”按钮( <a class="reference internal" href="../../_images/gimp-tool-paintbrush1.svg"><img alt="gimp-tool-paintbrush-icon" class="align-middle" height="20" src="../../_images/gimp-tool-paintbrush1.svg" width="20" /></a> )，会打开笔刷编辑器的选择窗口，在这里选择目标笔刷，然后点击窗口的“创建新笔刷”按钮( <a class="reference internal" href="../../_images/document-new2.svg"><img alt="document-new-icon" class="align-middle" height="20" src="../../_images/document-new2.svg" width="20" /></a> )，即可根据所选笔刷创建一个副本，您可以对副本做修改。</p>
+<p>文字右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit.svg" width="20" /></a> )，点击可以打开 笔刷编辑器，这里可以查看笔刷参数，但不能修改笔刷。如果想修改笔刷，请先点击工具选项中的笔刷缩略图按钮，显示笔刷选择窗口，然后点击窗口底部最右边的“打开笔刷选择对话框”按钮( <a class="reference internal" href="../../_images/gimp-tool-paintbrush.svg"><img alt="gimp-tool-paintbrush-icon" class="align-middle" height="20" src="../../_images/gimp-tool-paintbrush.svg" width="20" /></a> )，会打开笔刷编辑器的选择窗口，在这里选择目标笔刷，然后点击窗口的“创建新笔刷”按钮( <a class="reference internal" href="../../_images/document-new.svg"><img alt="document-new-icon" class="align-middle" height="20" src="../../_images/document-new.svg" width="20" /></a> )，即可根据所选笔刷创建一个副本，您可以对副本做修改。</p>
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li><p>大小：这里可以精确地控制笔刷的尺寸。您可以直接用鼠标调整；或者用鼠标点击后，使用键盘上的上下方向键调整，步进为1；或者使用键盘的PageUP/PageDown键调整，步进为10；也可以用鼠标滚轮调整，步进为1，滚轮+Ctrl键步进为10。右边两个按钮，重置按钮按下后会把参数值重置为原始值；链接按钮激活后会在笔刷切换时使用原始值，否则切换会使用当前设置值。</p></li>
@@ -147,8 +155,8 @@
 <li><p>间距：笔刷画出来的“线条”可以认为是多个连续的点构成的。间距可以设置相邻笔刷点之间的距离。间距越大，越不连续。调整及步进同 宽高比。</p></li>
 <li><p>硬度：笔刷边缘的模糊程度。调整及步进同 宽高比。</p></li>
 <li><p>力度：颜色的浓淡程度，力度越大，颜色越浓。较低的值会导致一定的透明属性。</p></li>
-<li><p>动态：这是一个按钮( <a class="reference internal" href="../../_images/gimp-dynamics2.svg"><img alt="gimp-dynamics-icon" class="align-middle" height="20" src="../../_images/gimp-dynamics2.svg" width="20" /></a> )。打开后，可以选择预设的动态，默认是不启用动态。您可以自行创建新的动态，具体请参考菜单 窗口→可停靠对话框→绘画动态。(关于动态的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-dynamics"><span class="std std-ref">动态概念</span></a>)</p></li>
-<li><p>动态选项：这里可以对一些动态选项进行调整。右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a> )，点击可以打开 动态绘图编辑器，对动态进行编辑，编辑方法请参考菜单 窗口→可停靠对话框→绘画动态。</p></li>
+<li><p>动态：这是一个按钮( <a class="reference internal" href="../../_images/gimp-dynamics.svg"><img alt="gimp-dynamics-icon" class="align-middle" height="20" src="../../_images/gimp-dynamics.svg" width="20" /></a> )。打开后，可以选择预设的动态，默认是不启用动态。您可以自行创建新的动态，具体请参考菜单 窗口→可停靠对话框→绘画动态。(关于动态的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-dynamics"><span class="std std-ref">动态概念</span></a>)</p></li>
+<li><p>动态选项：这里可以对一些动态选项进行调整。右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit.svg" width="20" /></a> )，点击可以打开 动态绘图编辑器，对动态进行编辑，编辑方法请参考菜单 窗口→可停靠对话框→绘画动态。</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
@@ -193,21 +201,21 @@
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="30tool-perspective-clone.html" class="btn btn-neutral float-left" title="透视克隆工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="32tool-smudge.html" class="btn btn-neutral float-right" title="涂抹工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="30tool-perspective-clone.html" class="btn btn-neutral float-left" title="透视克隆工具 Perspective Clone Tool" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="32tool-smudge.html" class="btn btn-neutral float-right" title="涂抹工具 Smudge Tool" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

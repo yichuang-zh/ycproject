@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2. 位图 vs. 矢量图</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>2. 位图 vs. 矢量图</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -89,11 +95,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="vs">
-<h1><span class="section-number">2. </span>位图 vs. 矢量图<a class="headerlink" href="#vs" title="永久链接至标题"></a></h1>
+  <section id="vs">
+<h1><span class="section-number">2. </span>位图 vs. 矢量图<a class="headerlink" href="#vs" title="Link to this heading"></a></h1>
 <p>位图和矢量图是平面领域最常用到的两个概念，这里详细解释一下。</p>
-<div class="section" id="id1">
-<h2><span class="section-number">2.1. </span>构成原理的区别<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2><span class="section-number">2.1. </span>构成原理的区别<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>位图也叫光栅图、栅格图、像素图。叫什么无所谓，反正是外来词，我们需要理解的是位图的原理。</p>
 <p>原理上，位图是像素图，即位图是由像素构成的，每一个像素只能有一种颜色，不同的像素就可以有不同的颜色。</p>
 <p>像素是位图的最小单位。所以，描述一幅位图就是描述一组像素，而打印一幅位图实际上就是打印一组像素，只不过，这组像素的数量可能非常多。</p>
@@ -101,8 +107,8 @@
 <p>在显示器上或手机上显示位图时，可以没有分辨率(ppi)这个参数，因为只有打印时才需要分辨率；仅仅显示位图时，是没有物理尺寸的概念的。</p>
 <p>矢量图不是由像素构成的，而是由曲线构成；而矢量图的曲线是通过数学公式来描述的。所以，描述一幅矢量图其实是描述一组数学公式。并且，打印矢量图与图像分辨率(ppi)无关，或者说，矢量图没有分辨率(ppi)这个概念，只有位图才有分辨率的概念。</p>
 <p>我们举个例子来看一下。</p>
-<div class="section" id="id2">
-<h3><span class="section-number">2.1.1. </span>位图描述方法<a class="headerlink" href="#id2" title="永久链接至标题"></a></h3>
+<section id="id2">
+<h3><span class="section-number">2.1.1. </span>位图描述方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>假设有一张30x30像素的位图图像，内容是一个直径3厘米的黑色圆圈，应该这样描述:</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -124,26 +130,28 @@
 <p>如果形象化一些来看的话，这幅位图就是一个有900个小方格的正方形围棋棋盘，其中每一个小方格就是一个像素。这900个小方格彼此紧挨着排列在一起，每一个小方格涂上不同的颜色，就形成了最终的位图图像。</p>
 <p>其中，有的像素是黑色(圆圈颜色)，有的像素不是黑色(背景色)。</p>
 <p><em>上面的解释过程中，忽略了分辨率参数。</em></p>
-</div>
-<div class="section" id="id3">
-<h3><span class="section-number">2.1.2. </span>矢量图描述方法<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+</section>
+<section id="id3">
+<h3><span class="section-number">2.1.2. </span>矢量图描述方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>那么，一幅黑色圆圈矢量图，文件应该怎么描述呢？这样描述：</p>
 <blockquote>
 <div><p>圆形；直径3；圆圈宽度0.1；单位厘米；描边黑色。</p>
 </div></blockquote>
 <p>很明显，矢量图的描述方式比位图要简单很多，这也是导致很多情况下矢量图比位图更节约磁盘空间的原因。</p>
-<div class="figure align-center" id="id9">
+<figure class="align-center" id="id9">
 <img alt="../../_images/circle-vs1.png" src="../../_images/circle-vs1.png" />
-<p class="caption"><span class="caption-text">圆圈：左侧是位图，右侧是矢量图</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">圆圈：左侧是位图，右侧是矢量图</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <div class="line-block">
 <div class="line">左侧位图生成工具：<a class="reference external" href="https://cquinn.dev/tools/pixelgeometry">https://cquinn.dev/tools/pixelgeometry</a></div>
 <div class="line">右侧矢量图生成工具：inkscape</div>
 </div>
-</div>
-</div>
-<div class="section" id="id4">
-<h2><span class="section-number">2.2. </span>缩放的区别<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+</section>
+</section>
+<section id="id4">
+<h2><span class="section-number">2.2. </span>缩放的区别<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>下面我们看一下位图与矢量图在缩放时的区别，先看位图。</p>
 <p>同上，30x30像素的位图图像，内容是一个直径3厘米的黑色圆圈，现在放大为60x60像素，整体变成原来四倍。文件会这样描述：</p>
 <blockquote>
@@ -171,34 +179,34 @@
 <div class="line">现在：圆形；直径6；圆圈宽度0.2；单位厘米；描边黑色。</div>
 </div>
 </div></blockquote>
-</div>
-<div class="section" id="id5">
-<h2><span class="section-number">2.3. </span>形状的区别<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+</section>
+<section id="id5">
+<h2><span class="section-number">2.3. </span>形状的区别<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>位图只能是矩形，而矢量图可以是任意形状。</p>
 <p>位图虽然只能是矩形，但可以把不需要的像素设置为透明，这样位图也可以模拟成任意形状。</p>
 <p>位图文件有多种格式，比如jpg、png、tiff等，有的位图文件格式不支持透明，所以只能显示成矩形，无法模拟其它形状。</p>
-</div>
-<div class="section" id="id6">
-<h2><span class="section-number">2.4. </span>来源的区别<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
+</section>
+<section id="id6">
+<h2><span class="section-number">2.4. </span>来源的区别<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>早期的位图来源于扫描仪扫描的图片。</p>
 <p>现在手机拍摄的照片是位图，视频也是位图组成的，屏幕截图也是位图。</p>
 <p>矢量图通常是用矢量图软件创建的。扫描或拍照是无法直接创建矢量图的。</p>
 <p>位图可以通过软件转换成矢量图，但效果与原来的位图可能会有很大区别。</p>
 <p>矢量图可以保存成位图，这种位图通常质量都很高。</p>
-</div>
-<div class="section" id="id7">
-<h2><span class="section-number">2.5. </span>打印的区别<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
+</section>
+<section id="id7">
+<h2><span class="section-number">2.5. </span>打印的区别<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>打印机在处理位图和矢量图时，基本没有区别。而矢量图打印质量更高的原因是，矢量图本身的精度就高，不像位图那样精度有限。</p>
 <p>无论是位图，还是矢量图，打印机在打印之前都会进行 <strong>光栅化</strong> (RIP)处理。</p>
-</div>
-<div class="section" id="id8">
-<h2><span class="section-number">2.6. </span>应用方向的区别<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
+</section>
+<section id="id8">
+<h2><span class="section-number">2.6. </span>应用方向的区别<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <p>线条类或者色块类的内容，使用矢量图非常适合，因为矢量图本身就是曲线，全部由线条构成。</p>
 <p>比如汉字，或者字母，或者阿拉伯数字，这些都是线条构成，用矢量图来处理会得到很高的质量，速度也比较快。</p>
 <p>从现实生活中得到的图像，典型的是拍摄的照片和扫描的图片，都是位图。这一类的图片不适合转换成矢量图，因为转换是程序化的过程，结果无法精准控制，效果有可能很奇怪。</p>
 <p>位图如果以像素为单位转换成矢量图，精确控制的话，效果可以达到原位图效果(不会提升质量)，但工作量太大，投入产出不成比例；并且，生成的矢量图有可能会比原来的位图占用更多的磁盘空间。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -211,7 +219,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

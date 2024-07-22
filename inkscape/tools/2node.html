@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>节点工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>节点工具</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
-    <link rel="search" title="搜索" href="../../search.html" /> 
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="形状生成工具" href="3shape_builder.html" />
+    <link rel="prev" title="选择工具" href="1selector.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,10 +47,10 @@
                 开源/Linux大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gimp/gimp.html">GIMP操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../inkscape.html">Inkscape操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
@@ -74,29 +82,34 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../inkscape-tools.html">Inkscape工具箱</a></li>
       <li class="breadcrumb-item active">节点工具</li>
       <li class="wy-breadcrumbs-aside">
       </li>
-  </ul>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="1selector.html" class="btn btn-neutral float-left" title="选择工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="3shape_builder.html" class="btn btn-neutral float-right" title="形状生成工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="tool-node">
-<span id="id1"></span><h1>节点工具<a class="headerlink" href="#tool-node" title="永久链接至标题"></a></h1>
+  <section id="tool-node">
+<span id="id1"></span><h1>节点工具<a class="headerlink" href="#tool-node" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：<strong>N</strong> 或者 <strong>F2</strong></p>
-<p>节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )可以用来编辑贝塞尔曲线上的节点。通过编辑节点，您可以对曲线进行细微控制和复杂调整，从而创建复杂而精确的路径。</p>
+<p>节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )可以用来编辑贝塞尔曲线上的节点。通过编辑节点，您可以对曲线进行细微控制和复杂调整，从而创建复杂而精确的路径。</p>
 <blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )是非常专业的路径编辑工具，绝大多数与图形图像有关的软件都会有节点工具。所以，如果您希望成为行业内的专业人员，请熟练掌握节点工具。</p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )是非常专业的路径编辑工具，绝大多数与图形图像有关的软件都会有节点工具。所以，如果您希望成为行业内的专业人员，请熟练掌握节点工具。</p>
 </div>
 </div></blockquote>
-<div class="section" id="id2">
-<h2>操作方法<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id2">
+<h2>操作方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>切换到节点工具；</p></li>
 <li><p>点击路径以选中该路径；</p></li>
@@ -109,10 +122,10 @@
 <li><p>删除手柄：点击节点以显示手柄，然后按住Ctrl键不松手，再点击手柄端部的小圆点即可。</p></li>
 <li><p>添加手柄：如果某个节点只有一个手柄或者没有手柄，想添加一个手柄，可以先按住Shift键不松手，然后在节点上点击并拖动一段距离，然后松开鼠标和Shift键即可。</p></li>
 <li><p>节点工具也可以直接点击并拖动相邻两个节点之间的线段，从而改变曲线形状。</p></li>
-<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer1.svg"><img alt="tool-select" class="align-middle" height="20" src="../../_images/tool-pointer1.svg" width="20" /></a> )，再按空格键则切换回节点工具。</p></li>
+<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer.svg"><img alt="tool-select" class="align-middle" height="20" src="../../_images/tool-pointer.svg" width="20" /></a> )，再按空格键则切换回节点工具。</p></li>
 </ol>
-<div class="section" id="id3">
-<h3>关于节点<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+<section id="id3">
+<h3>关于节点<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>节点是构成贝塞尔曲线的重要组成部分。节点的手柄可以对节点进行细微而精确的调整。</p>
 <a class="reference internal image-reference" href="../../_images/8-1-1.png"><img alt="../../_images/8-1-1.png" src="../../_images/8-1-1.png" style="width: 32%;" /></a>
 <a class="reference internal image-reference" href="../../_images/8-1-2.png"><img alt="../../_images/8-1-2.png" src="../../_images/8-1-2.png" style="width: 32%;" /></a>
@@ -125,7 +138,7 @@
 <p>另外，如果节点位于开放路径的起点或终点，那么，起点节点和终点节点也称为<strong>端点</strong>。端点一定是尖角节点。</p>
 <p><strong>节点操作</strong></p>
 <ol class="arabic simple">
-<li><p>使用节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )可以选中单个节点或多个节点，并可以对节点进行编辑。</p></li>
+<li><p>使用节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )可以选中单个节点或多个节点，并可以对节点进行编辑。</p></li>
 <li><p>上面图-1中，1号、2号、3号、4号这四条曲线基本相同，都是五个节点+四条线段，且箭头所指的节点都显示了两个手柄；这4条曲线仅箭头位置的节点类型有所不同，这个不同导致曲线形状产生差异。</p></li>
 <li><p>1号曲线箭头位置的节点是一个小正方形，节点本身及两个手柄三者都在一条直线上。小正方形，且节点本身及手柄都在一条直线上，这表示该节点的类型为<strong>平滑节点</strong>。</p></li>
 <li><p>平滑节点的特点是：节点与两个手柄三者共同所在的直线与曲线在节点处正好相切。</p></li>
@@ -155,8 +168,8 @@
 <li><p>按住Ctrl键不松手然后单击节点，会修改节点的类型；连续点击节点会使节点类型在平滑节点、自动平滑节点、对称节点、尖角节点四者之间循环切换。</p>
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>如何查看节点类型？</strong></p>
-<p>鼠标切换到节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )后，把鼠标指针移动到目标节点上，然后可以在窗口底部的信息提示区域看到节点类型。</p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>如何查看节点类型？</strong></p>
+<p>鼠标切换到节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )后，把鼠标指针移动到目标节点上，然后可以在窗口底部的信息提示区域看到节点类型。</p>
 </div>
 </li>
 <li><p>或者，也可以按下面的方法转换节点类型：</p>
@@ -168,23 +181,27 @@
 </ul>
 </li>
 </ul>
-<div class="figure align-center" id="id7">
+<figure class="align-center" id="id7">
 <img alt="../../_images/08-3.png" src="../../_images/08-3.png" />
-<p class="caption"><span class="caption-text">图 -2：平滑节点 (左图深蓝色小方块 )被改为尖角节点 (右图深蓝色小菱形 )，且其一个手柄的长度和方向做了调整，导致曲线不平滑</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图 -2：平滑节点 (左图深蓝色小方块 )被改为尖角节点 (右图深蓝色小菱形 )，且其一个手柄的长度和方向做了调整，导致曲线不平滑</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <ol class="arabic simple" start="25">
 <li><p>可以使用菜单 对象→对齐与分布 来对节点进行对齐操作，如下面图-3所示：(此功能仅在切换到节点工具时才会显示)</p></li>
 </ol>
 <blockquote>
-<div><div class="figure align-center" id="id8">
+<div><figure class="align-center" id="id8">
 <img alt="../../_images/02-4.png" src="../../_images/02-4.png" />
-<p class="caption"><span class="caption-text">图 -3：节点对齐与分布</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图 -3：节点对齐与分布</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-</div>
-<div class="section" id="id4">
-<h3>节点手柄<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
+</section>
+<section id="id4">
+<h3>节点手柄<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>节点手柄并不是曲线本身的一部分，而是用来辅助绘制曲线的工具。对于一段路径，当输出的时候，比如把路径打印到纸上，只会打印曲线本身，并不会打印节点的手柄。</p></li>
 <li><p>上面图-2中，左侧曲线一共显示了四个小圆点，圆点与节点有直线连接。圆点及圆点与节点连接的直线称为节点手柄。</p></li>
@@ -194,22 +211,22 @@
 <blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：节点手柄的意义是控制节点一侧曲线的切线，所以，如果节点一侧没有切线存在，就不需要手柄。</p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：节点手柄的意义是控制节点一侧曲线的切线，所以，如果节点一侧没有切线存在，就不需要手柄。</p>
 </div>
 </div></blockquote>
 <ol class="arabic simple" start="5">
-<li><p>用节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )选中一条路径，然后点击某个节点，即可对该节点进行编辑和调整。</p></li>
-<li><p>用节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )点击并拖动手柄端部的小圆点，可以调整节点两侧曲线的形状。调整要素是修改手柄的长度和手柄的方向。</p></li>
+<li><p>用节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )选中一条路径，然后点击某个节点，即可对该节点进行编辑和调整。</p></li>
+<li><p>用节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )点击并拖动手柄端部的小圆点，可以调整节点两侧曲线的形状。调整要素是修改手柄的长度和手柄的方向。</p></li>
 <li><p>如果想在一个没有手柄的节点上添加手柄，可以先按住Shift键不松手，然后在节点上点击并拖动一段距离，然后松开鼠标和Shift键即可。</p></li>
 <li><p>上面的操作会为节点添加一侧手柄，如果想添加另一侧手柄，重复上述操作即可。</p></li>
-<li><p>如果想删除某一个手柄，可以先用节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )选中该节点，此时会显示手柄，然后按住Ctrl键不松手，再点击目标手柄端部的圆点即可。</p></li>
+<li><p>如果想删除某一个手柄，可以先用节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )选中该节点，此时会显示手柄，然后按住Ctrl键不松手，再点击目标手柄端部的圆点即可。</p></li>
 <li><p>旋转手柄快捷键：</p></li>
 </ol>
 <blockquote>
 <div><blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>单侧</strong>手柄旋转</p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>单侧</strong>手柄旋转</p>
 <p>首先，单侧手柄旋转只对尖角节点有效；另三种节点无效，双侧手柄会同时旋转。</p>
 <p>其次，Linux系统如果想调整单侧手柄，可能需要先以 框选 的方式来选中目标节点，然后再对手柄进行操作。(鼠标点击的方式选择节点可能会导致双侧手柄同时旋转)</p>
 </div>
@@ -234,7 +251,7 @@
 <div><blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>单侧</strong>手柄长度调整</p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>单侧</strong>手柄长度调整</p>
 <p>首先，单侧手柄长度调整对四种类型的节点都有效，可能会导致节点类型发生改变，例如对称节点调整单侧手柄长度后变为平滑节点，两侧手柄不再等长。</p>
 <p>其次，Linux系统如果想调整单侧手柄，可能需要先以 框选 的方式来选中目标节点，然后再对手柄进行操作。(鼠标点击的方式选择节点可能会导致双侧手柄的长度同时变化)</p>
 </div>
@@ -254,27 +271,27 @@
 <blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>首选项中设定的步进值</strong></p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>首选项中设定的步进值</strong></p>
 <p>Inkscape的首选项中有关于步进的设置(编辑→首选项→行为→步进)，其中规定了 <strong>&lt;</strong> 和 <strong>&lt;</strong> 这两个键的默认步进值为2，单位是px。这里的px不是屏幕像素，而是SVG像素。</p>
 </div>
 </div></blockquote>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="id5">
-<h2>辅助快捷键<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+</section>
+</section>
+<section id="id5">
+<h2>辅助快捷键<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>移动节点：使用键盘上的方向键可以移动最后创建的节点的位置。Shift+方向键会按10倍步进移动，Alt+方向键会按一个像素步进移动。</p></li>
 <li><p>鼠标连续创建节点时，按Ctrl键可以限制新节点相对前一节点的角度步进为15°的整数倍。</p></li>
 <li><p>上面Ctrl键对节点产生的15°步进限制，用鼠标移动节点的手柄时同样有效。</p></li>
-<li><p>按Ctrl键再用节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )单击某个手柄，会删除该手柄。</p></li>
+<li><p>按Ctrl键再用节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node.svg" width="20" /></a> )单击某个手柄，会删除该手柄。</p></li>
 <li><p>按Ctrl键再移动某个手柄，会限制手柄仅改变长度，不改变方向。</p></li>
 <li><p>按Alt键再移动某个手柄，会限制手柄的长度保持不变，仅改变方向。</p></li>
 <li><p>按Ctrl键再移动某个节点，可以限制节点只能水平移动或垂直移动。</p></li>
 </ol>
-</div>
-<div class="section" id="id6">
-<h2>工具选项<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
+</section>
+<section id="id6">
+<h2>工具选项<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <ol class="arabic">
 <li><p>( <a class="reference internal" href="../../_images/1add-new.svg"><img alt="1add-new" class="align-middle" height="20" src="../../_images/1add-new.svg" width="20" /></a> )：插入节点。在选中的线段上插入一个新节点。如果同时选中多个线段，会在每一个线段上都插入一个新节点。</p></li>
 <li><p>( <a class="reference internal" href="../../_images/2insert.svg"><img alt="2insert" class="align-middle" height="20" src="../../_images/2insert.svg" width="20" /></a> )：在指定位置插入新节点：</p>
@@ -307,7 +324,7 @@
 <blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：请参考选择工具中<a class="reference internal" href="1selector.html#select-coordinate-system"><span class="std std-ref">inkscape坐标系的特别之处</span></a></p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：请参考选择工具中<a class="reference internal" href="1selector.html#select-coordinate-system"><span class="std std-ref">inkscape坐标系的特别之处</span></a></p>
 </div>
 </div></blockquote>
 </li>
@@ -318,18 +335,21 @@
 <li><p>( <a class="reference internal" href="../../_images/20node-handles.svg"><img alt="20node-handles" class="align-middle" height="20" src="../../_images/20node-handles.svg" width="20" /></a> )：显示节点手柄：显示节点的手柄。如果突然发现被选中的平滑节点 不显示任何手柄，那么最好看一下这一项是否是未激活状态。</p></li>
 <li><p>( <a class="reference internal" href="../../_images/21path-outline.svg"><img alt="21path-outline" class="align-middle" height="20" src="../../_images/21path-outline.svg" width="20" /></a> )：显示路径轮廓(无LPE)：显示路径的轮廓线，去除LPE效果。当LPE效果比较复杂时，可以用这个选项来查看原始路径。</p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="1selector.html" class="btn btn-neutral float-left" title="选择工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="3shape_builder.html" class="btn btn-neutral float-right" title="形状生成工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

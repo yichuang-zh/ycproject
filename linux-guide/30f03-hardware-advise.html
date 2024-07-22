@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux硬件购买建议</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>Linux硬件购买建议</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -89,8 +95,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="linux">
-<span id="f03-hardware-advise"></span><h1>Linux硬件购买建议<a class="headerlink" href="#linux" title="永久链接至标题"></a></h1>
+  <section id="linux">
+<span id="f03-hardware-advise"></span><h1>Linux硬件购买建议<a class="headerlink" href="#linux" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p><strong>一句话简述：相对最稳妥并保守的方案，是CPU选择Intel带核显的CPU，不要独显。</strong></p>
@@ -128,8 +134,8 @@
 </div></blockquote>
 <p>如果是用FFmpeg剪辑视频，那么使用NVIDIA私有驱动会大幅提升效率，即视频的渲染速度明显变快，举个两倍左右例子：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span> -c:v h264_nvenc outputGPU.mp4
-ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span> -c:v libx264 outputCPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>outputGPU.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>outputCPU.mp4
 </pre></div>
 </div>
 <p>上面这两条命令是把input.mp4这个视频文件的一部分画面裁掉(类似于切除黑边)。第一条命令使用了NVIDIA显卡硬编码进行处理，第二条命令使用CPU软编码进行处理。在速度上，使用NVIDIA显卡硬编码处理时，速度大概是40x，而使用CPU软编码进行处理时，速度大概是15x，显卡速度是CPU的两倍多接近三倍。(显卡硬编码可能会导致文件体积偏大，但并不绝对)</p>
@@ -164,7 +170,7 @@ ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><spa
 </dl>
 <p><em>最近一次更新：2024年03月31日</em></p>
 <p><em>未完稿……</em></p>
-</div>
+</section>
 
 
            </div>
@@ -177,7 +183,7 @@ ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><spa
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

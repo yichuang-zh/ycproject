@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→色相-浓度 Hue-Chroma</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>颜色→色相-浓度 Hue-Chroma</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -91,51 +97,55 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="hue-chroma">
-<h1>颜色→色相-浓度 <em>Hue-Chroma</em><a class="headerlink" href="#hue-chroma" title="永久链接至标题"></a></h1>
+  <section id="hue-chroma">
+<span id="gimp-menu-7color-3hue-chroma"></span><h1>颜色→色相-浓度 <em>Hue-Chroma</em><a class="headerlink" href="#hue-chroma" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>此工具没有快捷键。</p>
 <p>此工具也可以调整图像的饱和度，使用的是LCH颜色空间(Lightness/Chroma/Hue)，中文对应翻译为亮度/色度/色相。</p>
 <p>LCH颜色空间是LAB颜色空间的简单极坐标变换。</p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../../_images/3huechroma.png" src="../../../_images/3huechroma.png" />
-<p class="caption"><span class="caption-text">颜色→色相-浓度</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<div class="section" id="id1">
-<h2>预设<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<figcaption>
+<p><span class="caption-text">颜色→色相-浓度</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="id1">
+<h2>预设<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
-</div>
-<div class="section" id="hue">
-<h2>色相 <em>Hue</em><a class="headerlink" href="#hue" title="永久链接至标题"></a></h2>
+</section>
+<section id="hue">
+<h2>色相 <em>Hue</em><a class="headerlink" href="#hue" title="Link to this heading"></a></h2>
 <p>这个滑块的移动，实际上是让您选择色相环 <em>color circle</em> (范围-180°到180°)中的色相，滑块的步进与色环中的色相顺序完全一致。色相值增加(向右移动滑块)时，色相沿色环逆时针变化。</p>
 <blockquote id="color-circle">
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../../_images/avatarp10.svg"><img alt="Y" class="align-middle" height="22" src="../../../_images/avatarp10.svg" width="22" /></a> 驿窗注：如果您不了解<strong>色相环</strong>，可以参考下面这里：</p>
+<p><a class="reference internal" href="../../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../../_images/avatarp.svg" width="22" /></a> 驿窗注：如果您不了解<strong>色相环</strong>，可以参考下面这里：</p>
 <p>GIMP中点击工具箱中的前景色，打开的<span class="dash6">改变前景色</span>对话框中，点击左侧上方的<span class="dash6">轮</span>，然后会显示一个彩色圆环，环中间是一个三角。这个彩色圆环就是<span class="dash6">色相环</span>。</p>
 <blockquote>
-<div><div class="figure align-center" id="id4">
+<div><figure class="align-center" id="id4">
 <img alt="../../../_images/3colorcircle.png" src="../../../_images/3colorcircle.png" />
-<p class="caption"><span class="caption-text">色相环</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">色相环</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 </div>
 </div></blockquote>
-</div>
-<div class="section" id="chroma">
-<h2>色度 <em>Chroma</em><a class="headerlink" href="#chroma" title="永久链接至标题"></a></h2>
+</section>
+<section id="chroma">
+<h2>色度 <em>Chroma</em><a class="headerlink" href="#chroma" title="Link to this heading"></a></h2>
 <p>色度是指颜色的纯度。移动色度滑块可以使颜色变得更纯或更不纯。</p>
-</div>
-<div class="section" id="lightness">
-<h2>亮度 <em>Lightness</em><a class="headerlink" href="#lightness" title="永久链接至标题"></a></h2>
+</section>
+<section id="lightness">
+<h2>亮度 <em>Lightness</em><a class="headerlink" href="#lightness" title="Link to this heading"></a></h2>
 <p>亮度滑块可以修改亮度，范围是 -100到100 。</p>
-</div>
-<div class="section" id="id2">
-<h2>混合选项/预览/分割视图<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+</section>
+<section id="id2">
+<h2>混合选项/预览/分割视图<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -148,7 +158,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

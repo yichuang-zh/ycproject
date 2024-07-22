@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>油漆桶填充工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>油漆桶填充工具 Bucket Fill Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="渐变工具" href="22tool-gradient.html" />
-    <link rel="prev" title="框架变换工具" href="20tool-cage.html" /> 
+    <link rel="next" title="渐变工具 Gradient Tool" href="22tool-gradient.html" />
+    <link rel="prev" title="框架变换工具 Cage Transform" href="20tool-cage.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -78,25 +84,27 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
-      <li class="breadcrumb-item active">油漆桶填充工具</li>
+      <li class="breadcrumb-item active">油漆桶填充工具 <em>Bucket Fill Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="20tool-cage.html" class="btn btn-neutral float-left" title="框架变换工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="22tool-gradient.html" class="btn btn-neutral float-right" title="渐变工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="20tool-cage.html" class="btn btn-neutral float-left" title="框架变换工具 Cage Transform" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="22tool-gradient.html" class="btn btn-neutral float-right" title="渐变工具 Gradient Tool" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gimp-tool-bucket-fill">
-<span id="id1"></span><h1>油漆桶填充工具<a class="headerlink" href="#gimp-tool-bucket-fill" title="永久链接至标题"></a></h1>
+  <section id="bucket-fill-tool">
+<span id="gimp-tool-bucket-fill"></span><h1>油漆桶填充工具 <em>Bucket Fill Tool</em><a class="headerlink" href="#bucket-fill-tool" title="Link to this heading"></a></h1>
 <p>快捷键：Shift+B</p>
-<div class="figure align-center" id="id4">
+<figure class="align-center" id="id3">
 <img alt="../../_images/21tool-bucket-fill.png" src="../../_images/21tool-bucket-fill.png" />
-<p class="caption"><span class="caption-text">油漆桶填充工具及其工具选项</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">油漆桶填充工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>油漆桶填充工具( <a class="reference internal" href="../../_images/gimp-tool-bucket-fill.svg"><img alt="gimp-tool-bucket-fill" class="align-middle" height="20" src="../../_images/gimp-tool-bucket-fill.svg" width="20" /></a> )可以用前景色填充选区；如果填充时按Alt键，则会使用背景色来填充。它可以填充整个选区，也可以按颜色相似程度进行填充，但每次只能填充连续的区域，非连续区域的填充需要多次填充操作来完成。</p>
 <p>此工具的特点是可交互性、可关闭AI，某些情况下可以替代模糊选择工具(魔术棒)。</p>
 <p>选中 油漆桶填充工具 后，在选区内点击即可填充；如果没有选区存在，会填充整个图层。</p>
@@ -107,16 +115,16 @@
 <li><p>如果您激活了工具选项中的“填充相似的颜色”，那么GIMP会按颜色相似度进行填充，即从点击位置向外扩散，填充那些与点击位置像素颜色相近的像素；颜色相近程度的判断，由工具选项中的“阈值”决定。</p></li>
 <li><p>如果有透明像素需要填充，请确保没有激活图层堆栈中的“锁定透明通道”选项。</p></li>
 </ol>
-<div class="section" id="id2">
-<h2>辅助快捷键<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>按Ctrl键可以直接在图像上拾取颜色，不需要切换其它工具；</p></li>
 <li><p>按Shift键可以在工具选项中“填充整个选区”和“填充相似的颜色”二者之间切换；</p></li>
 <li><p>按Alt键可以在工具选项中“前景色填充”和“背景色填充”二者之间切换；</p></li>
 </ol>
-</div>
-<div class="section" id="id3">
-<h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>这里提供一些细节控制。</p>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
 <ol class="arabic simple">
@@ -201,34 +209,42 @@
 <p>对于 阈值 和 填充使用 这两个选项，我们用几个示例来进行说明：</p>
 <dl>
 <dt>阈值：</dt><dd><p>如果被填充对象不是纯色，而是有渐变色，那么阈值的大小会影响填充的范围大小，如下图所示：</p>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id4">
 <img alt="../../_images/21-3.png" src="../../_images/21-3.png" />
-<p class="caption"><span class="caption-text">图1：阈值不同的对比</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图1：阈值不同的对比</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
 </dl>
 <p>上图为原图，中图阈值=15,下图阈值=40。</p>
 <dl>
 <dt>填充使用：</dt><dd><p>我们以下图为例进来演示<strong>填充使用</strong>的原理。下图右侧是把前景色设为橙黄色，后面我们会用此前景色进行填充：</p>
-<div class="figure align-center" id="id6">
+<figure class="align-center" id="id5">
 <img alt="../../_images/21-20.png" src="../../_images/21-20.png" />
-<p class="caption"><span class="caption-text">图2：原图</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图2：原图</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
 <dt>例1：</dt><dd><p>把油漆桶工具的 填充使用 设置为 合成，且前景色为上图的橙黄色，用油漆桶工具点击原图上面的蓝色区域，会得到下图左侧的效果；如果点击原图上面蓝色右边相邻的黑色区域，会得到下图右侧的效果：</p>
-<div class="figure align-center" id="id7">
+<figure class="align-center" id="id6">
 <img alt="../../_images/21-4.png" src="../../_images/21-4.png" />
-<p class="caption"><span class="caption-text">图3：填充使用选择合成，点击蓝色/黑色的效果</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图3：填充使用选择合成，点击蓝色/黑色的效果</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
 <dt>说明：</dt><dd><p>当 填充使用 设置为 合成 时，油漆桶工具会提取被点击像素的色值，然后填充色值相同的连续区域。图3左侧是点击了原图的蓝色区域的效果，所以，只有蓝色区域被填充为橙黄色，其它颜色不受影响；图3右侧是点击原图蓝色右边黑色区域的效果，所以，只有黑色区域被填充为橙黄色，其它颜色不受影响。</p>
 <p>并且，图3右侧最外围的黑色区域没有被填充为橙黄色，这是因为油漆桶工具仅填充连续区域，最外围的黑色区域被白色方框完全隔离，所以不受影响。</p>
 </dd>
 <dt>例2：</dt><dd><p>把油漆桶工具的 填充使用 设置为 红色，且前景色为上图的橙黄色，用油漆桶工具点击原图中的粉色区域，如下面左图所示，会得到左图所示的结果；如果点击原图上面蓝色右边相邻的黑色区域，会得到下图右侧的效果：</p>
-<div class="figure align-center" id="id8">
+<figure class="align-center" id="id7">
 <img alt="../../_images/21-5.png" src="../../_images/21-5.png" />
-<p class="caption"><span class="caption-text">图4：填充使用选择红色，点击粉色/黑色的效果</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图4：填充使用选择红色，点击粉色/黑色的效果</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
 <dt>说明：</dt><dd><ol class="arabic simple">
 <li><p><strong>填充使用</strong>选择了红色以后，表示用被点击像素的红色通道值进行相似计算，连续区域中的任何像素，只要红色通道值与被点击像素的红色通道值相同，就会被填充。</p></li>
@@ -249,21 +265,21 @@
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置为GIMP默认值。</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="20tool-cage.html" class="btn btn-neutral float-left" title="框架变换工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="22tool-gradient.html" class="btn btn-neutral float-right" title="渐变工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="20tool-cage.html" class="btn btn-neutral float-left" title="框架变换工具 Cage Transform" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="22tool-gradient.html" class="btn btn-neutral float-right" title="渐变工具 Gradient Tool" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

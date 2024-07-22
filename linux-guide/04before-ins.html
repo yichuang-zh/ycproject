@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安装Linux系统之前需要做哪些准备工作</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>安装Linux系统之前需要做哪些准备工作</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -89,8 +95,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="linux">
-<span id="before-ins"></span><h1>安装Linux系统之前需要做哪些准备工作<a class="headerlink" href="#linux" title="永久链接至标题"></a></h1>
+  <section id="linux">
+<span id="before-ins"></span><h1>安装Linux系统之前需要做哪些准备工作<a class="headerlink" href="#linux" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>(未成年人请务必征得监护人同意后再操作)</p>
@@ -104,47 +110,47 @@
 <li><p>Debian分区建议</p></li>
 <li><p>提前熟悉Debian安装过程</p></li>
 </ol>
-<div class="section" id="id1">
-<h2>1. 确保网卡和显卡工作正常<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>1. 确保网卡和显卡工作正常<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>网卡和显卡是在用U盘体验时要检查的，主要是为了确认你的电脑可以正常使用Linux系统。确认的方法是在体验时进行确认。</p>
-</div>
-<div class="section" id="id2">
-<h2>2. 备份重要资料<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+</section>
+<section id="id2">
+<h2>2. 备份重要资料<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>最好把重要资料备份到电脑以外的其它地方，比如移动硬盘或者网络云空间。这样，即使在安装过程中不小心删除所有硬盘的数据，也不用担心数据丢失。</p>
 <p>如果使用公有云/商用云服务，请注意隐私和数据安全。敏感数据不建议备份到云空间。</p>
-</div>
-<div class="section" id="id3">
-<h2>3. 准备应急方案<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id3">
+<h2>3. 准备应急方案<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>应急方案的意义在于，在安装Debian过程中无论出现任何的意外，您都能够恢复或重新安装windows系统，这样就不会影响后续的日常使用。比较保险的措施是准备好windows安装U盘、windows驱动，还有需要的windows应用软件等。</p>
-</div>
-<div class="section" id="isodebianu">
-<h2>4. 下载iso并制作Debian启动U盘<a class="headerlink" href="#isodebianu" title="永久链接至标题"></a></h2>
+</section>
+<section id="isodebianu">
+<h2>4. 下载iso并制作Debian启动U盘<a class="headerlink" href="#isodebianu" title="Link to this heading"></a></h2>
 <ol class="loweralpha simple">
 <li><p>下载Debian iso</p></li>
 <li><p>下载启动U盘制作工具</p></li>
 <li><p>制作Debian启动U盘</p></li>
 <li><p>用启动U盘启动电脑</p></li>
 </ol>
-</div>
-<div class="section" id="bioslegacyuefi">
-<h2>5. 确认bios启动模式是Legacy还是UEFI<a class="headerlink" href="#bioslegacyuefi" title="永久链接至标题"></a></h2>
+</section>
+<section id="bioslegacyuefi">
+<h2>5. 确认bios启动模式是Legacy还是UEFI<a class="headerlink" href="#bioslegacyuefi" title="Link to this heading"></a></h2>
 <p>这两种方式在安装过程中有一点小小的不同。</p>
 <p>方法：无论是Legacy还是 UEFI，建议不要随意修改，保持不变就好。随意修改可能会导致原来的windows无法启动。如果安装Debian过程有问题，可以尝试关闭bios里面的“安全启动”和“快速启动”这两项。</p>
-</div>
-<div class="section" id="debian">
-<h2>6. Debian分区建议<a class="headerlink" href="#debian" title="永久链接至标题"></a></h2>
+</section>
+<section id="debian">
+<h2>6. Debian分区建议<a class="headerlink" href="#debian" title="Link to this heading"></a></h2>
 <p>新手安装Debian时，建议不要创建swap分区；对于Legacy启动方式，只创建一个分区就够了；对于UEFI启动方式，一个分区另外再加上一个UEFI分区。(对于UEFI启动方式，如果之前已经有windows系统，那么UEFI分区肯定已经存在，直接使用即可，不要另外再创建一个UEFI分区。使用此UEFI分区不会影响windows启动，二者是共用一个UEFI分区)</p>
 <p>安装Debian时，一定要在安装过程中调整分区，不要在windows中提前准备分区，这是Debian官方推荐的方法。Debian安装过程中，可以无损调整windows分区。(为防止意外，务必提前把重要数据备份到其它地方)。</p>
 <p>Debian官方建议内存不要小于2GB，硬盘分区不要小于10GB。驿窗建议内存至少4GB，硬盘至少20GB。安装后，Debian可以访问其它分区来读写个人数据。</p>
 <p>有一点需要注意：内存不足时，可能会导致某些程序在运行时出现一些奇怪的问题。</p>
-</div>
-<div class="section" id="id4">
-<h2>7. 提前熟悉Debian安装过程<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+</section>
+<section id="id4">
+<h2>7. 提前熟悉Debian安装过程<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>两个途径，一是去视频网站看一下安装视频，二是在虚拟机中真正安装几遍。</p>
 <p>尤其第二个途径，在windows中装个虚拟机，然后再虚拟机中初建安装一下Debian。自己动手远比看视频要管用得多。</p>
 <p><em>未完结</em></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -157,7 +163,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

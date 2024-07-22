@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>螺旋工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>螺旋工具</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
-    <link rel="search" title="搜索" href="../../search.html" /> 
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="钢笔工具" href="8pen.html" />
+    <link rel="prev" title="3D透视工具" href="6-3D-box.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,10 +47,10 @@
                 开源/Linux大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gimp/gimp.html">GIMP操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../inkscape.html">Inkscape操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
@@ -74,45 +82,52 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../inkscape-tools.html">Inkscape工具箱</a></li>
       <li class="breadcrumb-item active">螺旋工具</li>
       <li class="wy-breadcrumbs-aside">
       </li>
-  </ul>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="6-3D-box.html" class="btn btn-neutral float-left" title="3D透视工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="8pen.html" class="btn btn-neutral float-right" title="钢笔工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="tool-spiral">
-<span id="id1"></span><h1>螺旋工具<a class="headerlink" href="#tool-spiral" title="永久链接至标题"></a></h1>
+  <section id="tool-spiral">
+<span id="id1"></span><h1>螺旋工具<a class="headerlink" href="#tool-spiral" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：<strong>I</strong> 或者 <strong>F9</strong></p>
-<p>螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )可以用来绘制 阿基米德螺旋线(等速螺线)。如果想绘制其它类型的螺旋线，可以使用 菜单→扩展→渲染→函数绘图器 。</p>
+<p>螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )可以用来绘制 阿基米德螺旋线(等速螺线)。如果想绘制其它类型的螺旋线，可以使用 菜单→扩展→渲染→函数绘图器 。</p>
 <blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>用 函数绘图器 绘制螺旋线</strong></p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>用 函数绘图器 绘制螺旋线</strong></p>
 <p>先在画布上画一个正方形或矩形，然后选中该正方形或矩形，点击 菜单→扩展→渲染→函数绘图器，参数如下：</p>
-<div class="figure align-center" id="id12">
+<figure class="align-center" id="id12">
 <img alt="../../_images/07-1extensions.png" src="../../_images/07-1extensions.png" />
-<p class="caption"><span class="caption-text">函数绘图器绘制螺旋线的参数</span><a class="headerlink" href="#id12" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">函数绘图器绘制螺旋线的参数</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div>
 </div></blockquote>
-<div class="section" id="id2">
-<h2>操作方法<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id2">
+<h2>操作方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
-<li><p>切换到螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )后，鼠标左键在画布上点击并拖动一段距离即可。</p></li>
-<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer1.svg"><img alt="tool-select" class="align-middle" height="20" src="../../_images/tool-pointer1.svg" width="20" /></a> )，再按空格键则切换回螺旋工具。</p></li>
+<li><p>切换到螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )后，鼠标左键在画布上点击并拖动一段距离即可。</p></li>
+<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer.svg"><img alt="tool-select" class="align-middle" height="20" src="../../_images/tool-pointer.svg" width="20" /></a> )，再按空格键则切换回螺旋工具。</p></li>
 <li><p>螺旋线本身通过描边颜色来显示，所以请确保描边颜色没有设置为无，并且透明度为可见。</p></li>
 <li><p>操作过程中，点击上面工具选项中的( <a class="reference internal" href="../../_images/reset.svg"><img alt="reset" class="align-middle" height="20" src="../../_images/reset.svg" width="20" /></a> )图标，可以把螺旋线的全部参数重置为初始值。(圈数=3，发散度=1，内半径=0)</p></li>
-<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )拖动外手柄，可以从终点加长或缩短螺旋线的长度；此操作会影响圈数，但不会影响发散度和内径。</p></li>
-<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )拖动内手柄，可以从起点加长或缩短螺旋线的长度；此操作会影响内半径，但不会影响发散度和圈数。</p></li>
+<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )拖动外手柄，可以从终点加长或缩短螺旋线的长度；此操作会影响圈数，但不会影响发散度和内径。</p></li>
+<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )拖动内手柄，可以从起点加长或缩短螺旋线的长度；此操作会影响内半径，但不会影响发散度和圈数。</p></li>
 </ol>
-</div>
-<div class="section" id="id3">
-<h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id3">
+<h2>工具选项<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>( 圈数 )：从螺旋线的中心点开始(内半径=0)，螺旋运动到终点(外手柄所在的位置)，围绕中心一共旋转了多少个360度。它描述的是一个绝对值，所以内半径的修改不会导致圈数的数值变化。</p></li>
 <li><p>( 发散度 )：螺旋运动过程中，半径相对于角度变化的速度，螺旋线的相邻线之间的距离：</p></li>
@@ -127,41 +142,45 @@
 <ol class="arabic simple" start="3">
 <li><p>( 内半径 )：内半径=0时，起点(内手柄)正好位于螺旋线的中心。</p></li>
 </ol>
-</div>
-<div class="section" id="id4">
-<h2>手柄及辅助快捷键<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+</section>
+<section id="id4">
+<h2>手柄及辅助快捷键<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>螺旋线有两个手柄，一个为内手柄，另一个为外手柄。内手柄为螺旋线的起点，外手柄为螺旋线的终点：</p>
 <blockquote>
-<div><div class="figure align-center" id="id13">
+<div><figure class="align-center" id="id13">
 <img alt="../../_images/07-2.png" src="../../_images/07-2.png" />
-<p class="caption"><span class="caption-text">螺旋线的两个手柄及螺旋线中心</span><a class="headerlink" href="#id13" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">螺旋线的两个手柄及螺旋线中心</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <ol class="arabic simple">
-<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )点击螺旋线，即可显示内手柄和外手柄。</p></li>
-<li><p>切换到螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )后，点击并拖动内手柄或者外手柄，可以延长或缩短螺旋线的长度。</p></li>
-<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )拖动内手柄时如果按住Alt键，等同于修改工具选项中的 发散度。(注意：内半径可能会发生变化)</p></li>
-<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )拖动外手柄时如果按住Alt键，等同于修改工具选项中的 圈数。</p></li>
-<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )拖动外手柄时如果按住Shift键，可以缩放并旋转螺旋线。</p></li>
+<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )点击螺旋线，即可显示内手柄和外手柄。</p></li>
+<li><p>切换到螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )后，点击并拖动内手柄或者外手柄，可以延长或缩短螺旋线的长度。</p></li>
+<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )拖动内手柄时如果按住Alt键，等同于修改工具选项中的 发散度。(注意：内半径可能会发生变化)</p></li>
+<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )拖动外手柄时如果按住Alt键，等同于修改工具选项中的 圈数。</p></li>
+<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )拖动外手柄时如果按住Shift键，可以缩放并旋转螺旋线。</p></li>
 <li><p>如果想保持螺旋线所有参数不变，仅对尺寸进行缩放，可以同时按Ctrl+Shift键来拖动外手柄。注意有15°步进。</p></li>
-<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral1.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral1.svg" width="20" /></a> )拖动外手柄时如果按住Shift+Alt键，可以仅旋转螺旋线，所有参数不变。</p></li>
+<li><p>用螺旋工具( <a class="reference internal" href="../../_images/tool-spiral.svg"><img alt="tool-spiral" class="align-middle" height="20" src="../../_images/tool-spiral.svg" width="20" /></a> )拖动外手柄时如果按住Shift+Alt键，可以仅旋转螺旋线，所有参数不变。</p></li>
 <li><p>绘制螺旋线时按Ctrl键可以限制终点位置相对水平线的角度以15°的整数倍步进。</p></li>
 <li><p>绘制好的螺旋线，按Ctrl键不松手然后移动内(外)手柄，可以限制终点位置相对水平线的角度以15°的整数倍数移动。</p></li>
 <li><p>绘制螺旋线，按Shift键不松手然后点击内手柄，等同于设置内半径=0 。</p></li>
 </ol>
-</div>
-<div class="section" id="id5">
-<h2>螺旋线填充与描边<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
-<div class="section" id="id6">
-<h3>螺旋线填充<a class="headerlink" href="#id6" title="永久链接至标题"></a></h3>
+</section>
+<section id="id5">
+<h2>螺旋线填充与描边<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="id6">
+<h3>螺旋线填充<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>螺旋线填充颜色与矩形或者椭圆形相比，稍微有一点复杂，下面我们用示例来进行说明：</p>
-<div class="section" id="id7">
-<h4>螺旋线 1&amp;2&amp;3<a class="headerlink" href="#id7" title="永久链接至标题"></a></h4>
+<section id="id7">
+<h4>螺旋线 1&amp;2&amp;3<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <blockquote>
-<div><div class="figure align-center" id="id14">
+<div><figure class="align-center" id="id14">
 <img alt="../../_images/07-3-1.png" src="../../_images/07-3-1.png" />
-<p class="caption"><span class="caption-text">螺旋线填充示例 1&amp;2&amp;3</span><a class="headerlink" href="#id14" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">螺旋线填充示例 1&amp;2&amp;3</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>上面三个螺旋线中：</p>
 <blockquote>
@@ -173,38 +192,44 @@
 <blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>复杂路径选项： 奇偶 &amp; 非零</strong></p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>复杂路径选项： 奇偶 &amp; 非零</strong></p>
 <p>复杂路径填充时，inkscape有自己的规则，主要就是奇偶规则与非零规则(仅适用于填充，不适用于描边)，其设置位置如下图红框内所示:</p>
-<div class="figure align-center" id="id15">
+<figure class="align-center" id="id15">
 <img alt="../../_images/07-4.png" src="../../_images/07-4.png" />
-<p class="caption"><span class="caption-text">奇偶与非零设置</span><a class="headerlink" href="#id15" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">奇偶与非零设置</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="id8">
-<h4>螺旋线 4&amp;5<a class="headerlink" href="#id8" title="永久链接至标题"></a></h4>
+</section>
+<section id="id8">
+<h4>螺旋线 4&amp;5<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
 <p>下面两个螺旋线中：</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>编号4为有黑色描边，填充为渐变，复杂路径选项为 奇偶( <a class="reference internal" href="../../_images/even-odd.svg"><img alt="even-odd" class="align-middle" height="20" src="../../_images/even-odd.svg" width="20" /></a> )；</p></li>
 <li><p>编号5为有黑色描边，填充为渐变，复杂路径选项为 非零( <a class="reference internal" href="../../_images/nonzero.svg"><img alt="nonzero" class="align-middle" height="20" src="../../_images/nonzero.svg" width="20" /></a> )；</p></li>
 </ul>
-<div class="figure align-center" id="id16">
+<figure class="align-center" id="id16">
 <img alt="../../_images/07-3-2.png" src="../../_images/07-3-2.png" />
-<p class="caption"><span class="caption-text">螺旋线填充示例 4&amp;5</span><a class="headerlink" href="#id16" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">螺旋线填充示例 4&amp;5</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-</div>
-<div class="section" id="id9">
-<h4>螺旋线 6<a class="headerlink" href="#id9" title="永久链接至标题"></a></h4>
+</section>
+<section id="id9">
+<h4>螺旋线 6<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
 <p>下面是编号为6的螺旋线：</p>
 <blockquote>
-<div><div class="figure align-center" id="id17">
+<div><figure class="align-center" id="id17">
 <img alt="../../_images/07-3-3.png" src="../../_images/07-3-3.png" />
-<p class="caption"><span class="caption-text">螺旋线填充示例 6</span><a class="headerlink" href="#id17" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">螺旋线填充示例 6</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>最左侧的螺旋线6是由右侧两个螺旋线6-1与6-2重叠(螺旋线中心完全重合)得到的。</p>
 <blockquote>
@@ -213,15 +238,17 @@
 <div class="line">6-1是从6-2减一圈而来：用螺旋工具选中6-2，按住Ctrl键然后点击并拖动外手柄，使其圈数减少1，然后修改渐变为黄色，即可得到6-1。</div>
 </div>
 </div></blockquote>
-</div>
-<div class="section" id="id10">
-<h4>螺旋线 7<a class="headerlink" href="#id10" title="永久链接至标题"></a></h4>
+</section>
+<section id="id10">
+<h4>螺旋线 7<a class="headerlink" href="#id10" title="Link to this heading"></a></h4>
 <p>下面是编号为7的螺旋线：</p>
 <blockquote>
-<div><div class="figure align-center" id="id18">
+<div><figure class="align-center" id="id18">
 <img alt="../../_images/07-3-4.png" src="../../_images/07-3-4.png" />
-<p class="caption"><span class="caption-text">螺旋线填充示例 7</span><a class="headerlink" href="#id18" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">螺旋线填充示例 7</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>最左侧的螺旋线7是由右侧两个螺旋线7-1与7-2重叠(螺旋线中心完全重合)得到的。</p>
 <blockquote>
@@ -233,33 +260,38 @@
 </div></blockquote>
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：螺旋线7-1由7-2减一圈生成，而不是由7-2缩放生成。6-1同理。</p>
+<p><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：螺旋线7-1由7-2减一圈生成，而不是由7-2缩放生成。6-1同理。</p>
 </div>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="id11">
-<h3>螺旋线描边<a class="headerlink" href="#id11" title="永久链接至标题"></a></h3>
+</section>
+</section>
+<section id="id11">
+<h3>螺旋线描边<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
 <p>下面两个螺旋线的描边，左侧是红绿 线性 渐变，右侧是红绿 径向 渐变：</p>
 <blockquote>
-<div><div class="figure align-center" id="id19">
+<div><figure class="align-center" id="id19">
 <img alt="../../_images/07-3-5.png" src="../../_images/07-3-5.png" />
-<p class="caption"><span class="caption-text">螺旋线描边示例</span><a class="headerlink" href="#id19" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">螺旋线描边示例</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="6-3D-box.html" class="btn btn-neutral float-left" title="3D透视工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="8pen.html" class="btn btn-neutral float-right" title="钢笔工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

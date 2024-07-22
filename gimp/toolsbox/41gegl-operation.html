@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GEGL操作</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>GEGL操作 GEGL Operation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="next" title="GIMP可停靠对话框" href="../gimp_dockable.html" />
-    <link rel="prev" title="前景色/背景色" href="40tool-fc-bc.html" /> 
+    <link rel="prev" title="前景色/背景色 Foreground/Background Color" href="40tool-fc-bc.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -78,11 +84,11 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
           <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
-      <li class="breadcrumb-item active">GEGL操作</li>
+      <li class="breadcrumb-item active">GEGL操作 <em>GEGL Operation</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="40tool-fc-bc.html" class="btn btn-neutral float-left" title="前景色/背景色" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="40tool-fc-bc.html" class="btn btn-neutral float-left" title="前景色/背景色 Foreground/Background Color" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="../gimp_dockable.html" class="btn btn-neutral float-right" title="GIMP可停靠对话框" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
@@ -90,46 +96,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gegl">
-<span id="gimp-tool-gegl-operation"></span><h1>GEGL操作<a class="headerlink" href="#gegl" title="永久链接至标题"></a></h1>
+  <section id="gegl-gegl-operation">
+<span id="gimp-tool-gegl-operation"></span><h1>GEGL操作 <em>GEGL Operation</em><a class="headerlink" href="#gegl-gegl-operation" title="Link to this heading"></a></h1>
 <p>无快捷键。</p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id2">
 <img alt="../../_images/41gegl-operation.png" src="../../_images/41gegl-operation.png" />
-<p class="caption"><span class="caption-text">GEGL操作工具</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>GEGL操作工具( <a class="reference internal" href="../../_images/gimp-gegl.svg"><img alt="gimp-gegl-icon" class="align-middle" height="20" src="../../_images/gimp-gegl.svg" width="20" /></a> )可以对图像进行GEGL操作，并在画布上预览操作的效果。(此工具目前还处于<strong>实验阶段</strong>，很可能不稳定)</p>
-<p>(默认情况下，GIMP的工具箱中不显示GEGL操作工具。如果需要显示，可以在菜单 编辑→首选项→界面→工具箱⇒工具配置 中进行设置)</p>
-<blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp11.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp11.svg" width="22" /></a> 驿窗注：最近几年GIMP版本更新比较慢，有一个重要原因是GIMP的开发团队正在逐步把核心移植到<a class="reference external" href="https://www.gegl.org">GEGL</a>。移植工作大概从2011年开始，目标是核心代码100%移植到GEGL。</p>
-<p>GEGL(Generic Graphics Library)是一个基于数据流的图像处理框架，可以为各种图像处理软件提供浮点处理和无损图像处理功能。使用GEGL的图像处理软件包括GIMP、imgflo、GNOME Photos、gcut、iconographer等。</p>
+<figcaption>
+<p><span class="caption-text">GEGL操作工具</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>GEGL(Generic Graphical Library)是一个基于图形的图像处理库，用于处理GIMP中需要的各种图像处理任务。大多数GEGL操作在GIMP中都有自己的菜单命令。其中大部分是颜色菜单和滤镜菜单中的命令。GEGL可以为各种图像处理软件提供浮点处理和无损图像处理功能。使用GEGL的图像处理软件包括GIMP、imgflo、GNOME Photos、gcut、iconographer等。</p>
 <p>GIMP与GEGL的关系，类似汽车与发动机的关系，实际上要更紧密。</p>
+<p>不过，也有一些GEGL操作没有自己的命令。这可能是因为该操作不够重要，也可能是因为该操作仍处于试验阶段。</p>
+<p>添加GEGL操作工具( <a class="reference internal" href="../../_images/gimp-gegl.svg"><img alt="gimp-gegl-icon" class="align-middle" height="20" src="../../_images/gimp-gegl.svg" width="20" /></a> )就是为了让您可以使用这些无法以其他方式使用的操作。您可以对图像进行GEGL操作，并在预览操作结果。第三方开发人员制作的新GEGL操作也会在此对话框中显示。</p>
+<div class="admonition-y admonition">
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
+<p>最近几年GIMP版本更新比较慢，有一个重要原因是GIMP的开发团队正在逐步把程序核心移植到<a class="reference external" href="https://www.gegl.org">GEGL</a>。移植工作大概从2011年开始，目标是核心代码100%移植到GEGL。</p>
 </div>
+<p>您可以从菜单 工具→GEGL操作 打开GEGL操作工具。</p>
+<ol class="arabic">
+<li><p>从以上列表中选择一项操作：</p>
+<blockquote>
+<div><p>点击这里可选择要应用于选区的操作，如果没有选区，则应用于活动图层。</p>
+<p>这些操作中有些是非常基本的操作，如<span class="dash6">颜色</span>，它可以用指定的颜色填充选区或图层，而<span class="dash6">分形-探索器(fractal-explorer)</span>等操作则可以生成相当复杂的图案，类似渲染滤镜的功能。</p>
 </div></blockquote>
-<p>GEGL操作工具中选项和参数非常多，但因为还是实验阶段，所以各项参数说明官方暂时未提供。</p>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+</li>
+<li><p>将选区用作输入/将整个图层用作输入：计算所需要的输入数据，是取自选区，还是取自整个图层。</p></li>
+<li><p>混合选项：请参考<a class="reference internal" href="../dockable/3layer-mode.html#menu-window-dockable-layer-mode"><span class="std std-ref">图层模式</span></a></p></li>
+<li><p>预览：激活后可以直接预览图像的效果。可以通过快速切换其激活状态来查看图像效果的细微变化。</p></li>
+<li><p>分割视图：对预览功能的进一步拓展。激活后，整个视图窗口分被分割为两个区别，其中一个区域是处理前的效果(无预览)，另一个区域是处理后的效果(有预览)。这样您就可以更直观地对比图像效果的变化。</p>
+<p>显示分割线时，鼠标左键点住分割线不松手并拖动鼠标，可以移动分割线的位置。如果按Ctrl键并鼠标左键点击分割线，可以切换分割线的方向。</p>
+</li>
+</ol>
+<section id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
 <ol class="arabic simple">
-<li><p>位样平均：拾取一个正方形的范围，最终拾取颜色是正方形范围内所有颜色的平均值。“半径”用来调整正方形的大小。</p></li>
+<li><p>位样平均：拾取一个正方形的范围，最终拾取颜色是正方形范围内所有颜色的平均值。<span class="dash6">半径</span>用来调整正方形的大小。</p></li>
 <li><p>位样合并：勾选后会拾取所有可见图层的颜色，不勾选则只拾取当前活动图层的颜色。</p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="40tool-fc-bc.html" class="btn btn-neutral float-left" title="前景色/背景色" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="40tool-fc-bc.html" class="btn btn-neutral float-left" title="前景色/背景色 Foreground/Background Color" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="../gimp_dockable.html" class="btn btn-neutral float-right" title="GIMP可停靠对话框" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   
