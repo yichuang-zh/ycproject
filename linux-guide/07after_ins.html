@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>新系统要做哪些设置</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>新系统要做哪些设置</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,8 +89,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="after-ins">
-<span id="id1"></span><h1>新系统要做哪些设置<a class="headerlink" href="#after-ins" title="Link to this heading"></a></h1>
+  <div class="section" id="after-ins">
+<span id="id1"></span><h1>新系统要做哪些设置<a class="headerlink" href="#after-ins" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>新系统安装后，需要做以下设置：</p>
@@ -113,8 +107,8 @@
 <li><p>(汉化FireFox)</p></li>
 <li><p>(汉化LibreOffice)</p></li>
 </ol>
-<section id="sudo">
-<h2>一. 为当前用户添加sudo权限<a class="headerlink" href="#sudo" title="Link to this heading"></a></h2>
+<div class="section" id="sudo">
+<h2>一. 为当前用户添加sudo权限<a class="headerlink" href="#sudo" title="永久链接至标题"></a></h2>
 <p>默认情况下，好像当前普通用户并没有sudo权限(管理员权限)，所以可能无法修改一些系统级的设置，包括/etc/apt/sources.list这个软件源。</p>
 <p>如果不清楚是否有sudo权限，可以在命令行终端中运行id命令检查一下：</p>
 <blockquote>
@@ -126,8 +120,8 @@
 <blockquote>
 <div><p>在命令行运行下面的命令：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>su<span class="w"> </span>-
-adduser<span class="w"> </span>peter<span class="w"> </span>sudo
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>su -
+adduser peter sudo
 </pre></div>
 </div>
 </div></blockquote>
@@ -147,9 +141,9 @@ adduser<span class="w"> </span>peter<span class="w"> </span>sudo
 </ol>
 <video width=100% height=100% controls src="../_static/sudo_xfce.mp4"></video></div></blockquote>
 <p>为了让sudo管理员权限生效，请重启系统。</p>
-</section>
-<section id="id2">
-<h2>二. 软件源<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id2">
+<h2>二. 软件源<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>(推荐使用<a class="reference external" href="https://mirrors.ustc.edu.cn/repogen/">中国科学技术大学</a>、<a class="reference external" href="https://mirrors.tuna.tsinghua.edu.cn/help/debian/">清华大学</a>等国内软件源)</p>
 <p>Debian系统默认使用的软件源是Debian官方源，服务器不在国内，所以安装软件、升级系统时可能会比较慢。而国内软件源最大的好处就是速度快，这也是系统安装好以后先要修改软件源的主要原因。</p>
 <p>软件源主要就是指服务器地址，Debian把需要使用的服务器地址放到了一个文件中：</p>
@@ -164,44 +158,44 @@ adduser<span class="w"> </span>peter<span class="w"> </span>sudo
 <div><video width=100% height=100% controls src="../_static/sources_list.mp4"></video></div></blockquote>
 <p>默认情况下，Gnome和XFCE桌面支持从图形界面修改软件源，KDE Plasma桌面需要安装synaptic软件包，通过synaptic实现从图形界面修改软件源的操作。</p>
 <p>(与命令行方式相比，图形界面操作过程很繁锁，推荐用上面视频演示的命令行方式操作)</p>
-</section>
-<section id="cpu">
-<h2>三. cpu补丁(微码)<a class="headerlink" href="#cpu" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="cpu">
+<h2>三. cpu补丁(微码)<a class="headerlink" href="#cpu" title="永久链接至标题"></a></h2>
 <p>Debian12已经可以自动安装，不需要手动处理。Debian11或更早的版本，需要手动安装。</p>
 <p>cpu补丁其实就是一个软件包，不同的cpu，软件包名称也不相同。</p>
 <p>如果是Intel的CPU，请在命令行终端中执行下面的命令：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>intel-microcode
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install intel-microcode
 </pre></div>
 </div>
 </div></blockquote>
 <p>如果是AMD的CPU，请在命令行终端中执行下面的命令：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>amd64-microcode
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install amd64-microcode
 </pre></div>
 </div>
 </div></blockquote>
 <p>具体安装哪个取决于电脑使用的是哪种cpu，安装完成后重启系统即可。</p>
-</section>
-<section id="id5">
-<h2>四. 中文输入法<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id5">
+<h2>四. 中文输入法<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>如果您使用的是KDE桌面环境，那么中文输入法可能已经可用，其它桌面环境有可能需要单独安装。</p>
 <p>如果需要单独安装，请参考下面的说明进行操作：</p>
 <p>为了让输入法生效，请重启系统。</p>
-</section>
-<section id="id6">
-<h2>五. 防火墙<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id6">
+<h2>五. 防火墙<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
 <p>防火墙需要安装两个软件包：ufw和gufw。其中，gufw仅仅是ufw的图形界面。在命令行终端中执行下面的命令安装：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw<span class="w"> </span>gufw
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install ufw gufw
 </pre></div>
 </div>
 </div></blockquote>
 <p>安装好以后，在开始菜单中可以找到防火墙，启动后简单设置即可。</p>
 <p>防火墙和杀毒软件的详细设置说明，请参考<a class="reference internal" href="14ufw.html#ufw"><span class="std std-ref">系统安全/防火墙/杀毒</span></a>。</p>
 <p><em>未完稿</em></p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -214,7 +208,7 @@ adduser<span class="w"> </span>peter<span class="w"> </span>sudo
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

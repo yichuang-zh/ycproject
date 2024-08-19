@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta content="体验, linux, live, iso, live-iso" name="keywords" />
+  <meta charset="utf-8" /><meta content="体验, linux, live, iso, live-iso" name="keywords" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>用live-iso映像体验Linux系统</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>用live-iso映像体验Linux系统</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -96,24 +90,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="live-isolinux">
-<span id="iso-xp"></span><h1>用live-iso映像体验Linux系统<a class="headerlink" href="#live-isolinux" title="Link to this heading"></a></h1>
+  <span class="target" id="iso-xp"></span><div class="section" id="live-isolinux">
+<h1>用live-iso映像体验Linux系统<a class="headerlink" href="#live-isolinux" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="admonition danger">
 <p class="admonition-title">危险</p>
-<p><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗提示：<strong>提前备份数据；未成年人请征得父母或监护人同意后再进行操作</strong></p>
+<p><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗提示：<strong>提前备份数据；未成年人请征得父母或监护人同意后再进行操作</strong></p>
 <p>虽然体验过程不会破坏电脑硬盘中的数据，但体验系统中确实有工具能够修改硬盘，比如硬盘分区和格式化，这会导致电脑中已有数据丢失。所以，为保险起见，建议一定要提前备份重要数据；如果操作者是未成年人，务必要征得父母或监护人同意后再进行操作，以确保数据安全。</p>
 <p>本节内容假设您已经有一台没有重要数据的windows电脑。</p>
 </div>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：本节内容有视频版本</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：本节内容有视频版本</p>
 <p>本节内容的视频版本在<a class="reference external" href="https://www.bilibili.com/video/BV1Wv411p7rs">B站《Linux入门指南》P3. 创建体验用的启动U盘</a> 。</p>
 </div>
 <p>如果您平时只使用windows系统，对Linux系统并不了解，那么最简单的方法就是先体验一下Linux系统，找找感觉。</p>
 <p>体验的过程是先自己制作一个Linux启动U盘，用这个U盘来引导您的Windows电脑，然后在引导起来的Linux系统中操作，看看Linux系统与windows有什么不同。U盘启动电脑以后会是一个完整的Linux系统，是图形界面，您可以尝试几乎所有的Linux系统功能，比如尝试看网络视频、收发邮件、安装Linux软件等。整个体验过程不会损坏原有的windows系统，随时可以重启进入原有的windows系统进行其它工作。</p>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：系统时间可能会被修改</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：系统时间可能会被修改</p>
 <p>体验过程可能会导致您原windows系统的时间被修改。体验完再启动电脑进入windows系统后如果发现时间不对，直接改回正确的时间即可。</p>
 </div>
 <p>体验可能需要您动手做一些准备工作，请参考下面内容：</p>
@@ -130,41 +124,41 @@
 <li><p>检查时间是否正确，查看重要数据是否损坏；</p></li>
 <li><p>结束。</p></li>
 </ol>
-<section id="iso-xp-01backup">
-<span id="id1"></span><h2>1. 备份重要数据<a class="headerlink" href="#iso-xp-01backup" title="Link to this heading"></a></h2>
+<div class="section" id="iso-xp-01backup">
+<span id="id1"></span><h2>1. 备份重要数据<a class="headerlink" href="#iso-xp-01backup" title="永久链接至标题"></a></h2>
 <p>无论电脑中有几块硬盘，都建议把重要数据备份到移动硬盘上。最佳方案是在多个硬盘上建立多个备份，这样数据安全更有保障。</p>
 <p>用Debian Live iso引导电脑后在体验的过程中，主要是体验Linux系统与windows系统的差别，并不做对硬盘有修改的操作，不会对硬盘上的数据造成损坏。所以，这里的备份只是为了以防万一。毕竟，数据最重要。</p>
 <p>不过，因为时差问题，体验过程中可能会导致电脑系统的时间被修改，这个修改的是bios时间，windows系统本身并不会被破坏，所以，如果重新启动到windows后发现时间不对，改回即可。时间改回操作可以在bios中进行，也可以在windows系统中进行。</p>
-</section>
-<section id="gu">
-<span id="iso-xp-028g"></span><h2>2. 准备一个容量不小于8G的U盘<a class="headerlink" href="#gu" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="gu">
+<span id="iso-xp-028g"></span><h2>2. 准备一个容量不小于8G的U盘<a class="headerlink" href="#gu" title="永久链接至标题"></a></h2>
 <p>实际上，创建Debian Live启动U盘只需要大概4G的存储空间就够了，但为了防止意外问题，驿窗建议用8G或更大U盘。</p>
 <p>在创建启动U盘时，U盘中的所有数据都会丢失。所以，如果U盘中有重要数据，请提前备份到其它位置。</p>
-</section>
-<section id="debian-live-iso">
-<span id="iso-xp-03download-iso"></span><h2>3. 下载Debian Live iso映像文件并校验哈希值<a class="headerlink" href="#debian-live-iso" title="Link to this heading"></a></h2>
-<section id="id2">
-<h3>3.1. 下载Debian Live iso映像文件<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="debian-live-iso">
+<span id="iso-xp-03download-iso"></span><h2>3. 下载Debian Live iso映像文件并校验哈希值<a class="headerlink" href="#debian-live-iso" title="永久链接至标题"></a></h2>
+<div class="section" id="id2">
+<h3>3.1. 下载Debian Live iso映像文件<a class="headerlink" href="#id2" title="永久链接至标题"></a></h3>
 <p>Debian Live iso映像有不同的版本，常用的是KDE、Gnome、XFCE这三个版本，下载页面：<a class="reference external" href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/">Debian nonfree目录</a> 。</p>
 <p>这个目录里有很多文件，我们只需要下载iso文件就可以。目录中有多个不同的iso文件，区别就是桌面环境不同。与windows只有一个桌面风格不同，Linux系统可以使用多种不同的桌面环境。比如，如果您下载的iso文件名带有gnome字样，表示桌面环境是gnome桌面；如果文件名带有kde字样，则表示桌面环境是kde plasma环境，依此类推。各种桌面环境的区别请参考本书附录。</p>
 <p>如果您并不熟悉Linux系统，建议您考虑gnome和kde这两个桌面环境，因为这两个是使用人数相对比较多的桌面。Gnome的风格与手机比较像，kde的风格与windows比较像。因为风格的差异，导致二者在操作上也有很大不同。</p>
 <p>上面提供的目录位于Debian官方服务器，您也可以从国内的镜像服务器下载，比如<a class="reference external" href="http://mirrors.ustc.edu.cn/debian-cd/current-live/amd64/iso-hybrid/">中国科大镜像服务器</a> 。</p>
-</section>
-<section id="iso-sha256sum">
-<span id="id4"></span><h3>3.2. 校验Debian Live iso映像文件的哈希值<a class="headerlink" href="#iso-sha256sum" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="iso-sha256sum">
+<span id="id4"></span><h3>3.2. 校验Debian Live iso映像文件的哈希值<a class="headerlink" href="#iso-sha256sum" title="永久链接至标题"></a></h3>
 <p>把iso映像文件下载到您的电脑中以后，请一定要校验下载文件的哈希值。校验的意义是确保您下载到本地的文件与服务器上提供的文件完全一致，这表示文件在下载过程中没有任何损坏。</p>
 <p>在下载页面的iso映像文件目录中，同时会有名为SHA256SUMS的文件，这个文件里保存的是所有iso文件的SHA256哈希值。您把iso映像文件下载到本地以后，用SHA256哈希校验工具对iso映像文件进行校验，得到的sha256哈希值如果与目录中为SHA256SUMS文件里提供的哈希值完全一致，那么就表示下载到本地的iso映像文件是没有问题的。如果不完全一致，那么这个文件就已经损坏，不能使用。<span class="dash2">这一点很重要！</span></p>
 <dl>
 <dt>哈希值校验方法：</dt><dd><p>下载一个哈希校验工具，如果没有的话，可以下载<a class="reference external" href="https://www.7-zip.org">7-Zip</a>，它可以进行哈希校验。下载7-Zip并安装完成后，找到下载的iso映像文件，用鼠标右键点击iso映像文件，选择CRC SHA &gt; SHA-256，之后稍微等待一下，7-Zip会计算出此文件的SHA256哈希值，对比一下这个值与SHA256SUMS的文件中的值，完全一致即可。如果不一致，请重新下载Debian Live iso映像文件。</p>
 <div class="admonition-y-sha256 admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：SHA256哈希值</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：SHA256哈希值</p>
 <p>SHA256SUMS文件中有多个SHA256哈希值，它们分别对应不同的iso映像文件，找到您下载的映像文件所对应的哈希值，然后对比即可。</p>
 <p>哈希值不一致时，表示下载到本地的文件已经损坏，请务必重新下载，并重新校验，直到哈希值一致为止。</p>
 </div>
 <div class="admonition-y-linux admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：Linux系统中的检验方法</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：Linux系统中的检验方法</p>
 <p>如何您是使用Linux系统进行SHA256校验，比如在Debian系统中，可以同时下载iso文件和SHA256SUMS文件，下载好以后把这两个文件放到同一目录中，注意文件名不要修改，然后打开终端，切换到此目录，运行下面的命令：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sha256sum<span class="w"> </span>-c<span class="w"> </span>SHA256SUMS
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sha256sum -c SHA256SUMS
 </pre></div>
 </div>
 <p>输出的内容应该类似下面这样：</p>
@@ -183,67 +177,59 @@ debian-12.4.0-amd64-DVD-11.iso: 打开或读取失败
 </div>
 </dd>
 </dl>
-</section>
-</section>
-<section id="u-win32-disk-imager">
-<span id="iso-xp-04win32-imager"></span><h2>4. 下载U盘创建工具：Win32 Disk Imager<a class="headerlink" href="#u-win32-disk-imager" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="u-win32-disk-imager">
+<span id="iso-xp-04win32-imager"></span><h2>4. 下载U盘创建工具：Win32 Disk Imager<a class="headerlink" href="#u-win32-disk-imager" title="永久链接至标题"></a></h2>
 <p>Win32 Disk Imager是Debian官方推荐的启动U盘制作工具，下载地址在这里：
 <a class="reference external" href="https://sourceforge.net/projects/win32diskimager/">https://sourceforge.net/projects/win32diskimager/</a></p>
 <p>下载并安装完成后，就可以开始创建启动U盘了。</p>
-</section>
-<section id="u">
-<span id="iso-xp-05create-u"></span><h2>5. 创建启动U盘<a class="headerlink" href="#u" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="u">
+<span id="iso-xp-05create-u"></span><h2>5. 创建启动U盘<a class="headerlink" href="#u" title="永久链接至标题"></a></h2>
 <p>创建启动U盘，其实就是用Win32 Disk Imager把Debian Live iso映像写入到U盘中，方法如下：</p>
 <p><strong>第一步，把准备好的U盘插到电脑上；</strong></p>
 <p><strong>第二步，打开Win32 Disk Imager：</strong></p>
 <blockquote>
-<div><figure class="align-center" id="id6">
+<div><div class="figure align-center" id="id6">
 <img alt="../_images/01-1.png" src="../_images/01-1.png" />
-<figcaption>
-<p><span class="caption-text">Win32 Disk Imager</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">Win32 Disk Imager</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <p><strong>第三步，点击映像文件框右侧的文件夹图标，选择iso映像文件：</strong></p>
 <blockquote>
-<div><figure class="align-center" id="id7">
+<div><div class="figure align-center" id="id7">
 <img alt="../_images/01-2.png" src="../_images/01-2.png" />
-<figcaption>
-<p><span class="caption-text">选择映像文件</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">选择映像文件</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
+</div>
 <p>这里请注意，右下角默认文件类型是.img .IMG，需要您点击这里然后选择*.*，之后才可以选择下载的iso映像文件。</p>
 </div></blockquote>
 <p><strong>第四步，设备处选择U盘，然后点击下面的“写入”按钮：</strong></p>
 <blockquote>
-<div><figure class="align-center" id="id8">
+<div><div class="figure align-center" id="id8">
 <img alt="../_images/01-3.png" src="../_images/01-3.png" />
-<figcaption>
-<p><span class="caption-text">选择设备后点击写入按钮</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">选择设备后点击写入按钮</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
+</div>
 <p>注意设备不要选错。</p>
 <p>点击写入按钮后等待完成即可。完成后，就可以用这个U盘引导电脑来体验Linux系统了。</p>
 </div></blockquote>
-</section>
-<section id="uwindows">
-<span id="iso-xp-06boot"></span><h2>6. 用启动U盘引导您的windows电脑<a class="headerlink" href="#uwindows" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="uwindows">
+<span id="iso-xp-06boot"></span><h2>6. 用启动U盘引导您的windows电脑<a class="headerlink" href="#uwindows" title="永久链接至标题"></a></h2>
 <p>启动U盘已经创建完成，接下来就可以用这个U盘来启动电脑了。</p>
 <p>电脑启动时，可以从硬盘启动，也可以从U盘启动。但到底先从哪个启动，需要在电脑的bios中设置，大部分电脑的主板，都可以在启动时不停地按Del键进入bios菜单，然后找到<span class="dash6">启动</span>，下面有boot option #1，这个设置成U盘即可。(把启动U盘插到电脑上后再设置，否则bios检测不到U盘)</p>
 <p>如果您找不到在哪里设置，可以尝试联系电脑主板制造商的售后服务咨询，他们通常都很愿意解答此类问题；或者，有朋友比较会电脑的，也可以问一部。</p>
 <p>从启动U盘引导电脑后，应该可以看到下面的界面：</p>
 <blockquote>
-<div><figure class="align-center" id="id9">
+<div><div class="figure align-center" id="id9">
 <img alt="../_images/01-4boot.png" src="../_images/01-4boot.png" />
-<figcaption>
-<p><span class="caption-text">U盘启动电脑后的第一个操作界面</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">U盘启动电脑后的第一个操作界面</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <p>这里保持选择第一项即可，直接按回车键，就可以启动Debian系统。</p>
-</section>
-<section id="debian">
-<span id="iso-xp-07xp-debian"></span><h2>7. 体验Debian<a class="headerlink" href="#debian" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="debian">
+<span id="iso-xp-07xp-debian"></span><h2>7. 体验Debian<a class="headerlink" href="#debian" title="永久链接至标题"></a></h2>
 <p>体验过程虽然只是随意看看，但下面内容也许对您有所帮助：</p>
 <ol class="arabic simple">
 <li><p>如果后续希望在自己的电脑上安装Debian，那么请务必测试下面三个内容：</p></li>
@@ -273,8 +259,8 @@ debian-12.4.0-amd64-DVD-11.iso: 打开或读取失败
 </div></blockquote>
 <p><em>未完稿</em></p>
 <p><em>最近一次更新：2024-01-24</em></p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -287,7 +273,7 @@ debian-12.4.0-amd64-DVD-11.iso: 打开或读取失败
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

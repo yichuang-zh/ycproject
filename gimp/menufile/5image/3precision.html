@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>图像→精度</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>图像→精度</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/translations.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -97,8 +91,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>图像→精度<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+  <div class="section" id="id1">
+<h1>图像→精度<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="line-block">
@@ -109,8 +103,8 @@
 <p class="admonition-title">提示</p>
 <p>无论您在精度菜单中选择哪个选项，在高位深度的GIMP 2.10中，所有图像处理操作，在GIMP内部都是以<strong>32位浮点精度</strong>完成的；另外，大部分编辑操作都使用线性光通道编码。</p>
 </div>
-<section id="id2">
-<h2>您应该如何设置精度选项呢？<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>您应该如何设置精度选项呢？<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <ol class="arabic simple">
 <li><p>要充分利用GIMP内部32位浮点处理的优势，请选择32位浮点精度，同时选择线性光通道编码。</p></li>
 <li><p>如果您是在内存不多的机器上编辑图像，或者您要编辑非常大的图像和图层数量很多的图像，那么32位浮点精度可能会消耗大量硬件资源，您可以考虑使用16位浮点精度或16位整数精度。</p></li>
@@ -130,9 +124,9 @@
 <li><p>在任何给定的位深下，如果其它所有条件完全相同，那么整数精度比浮点精度更精确。所以16位整数精度比16位浮点精度更精确，32位整数精度比32位浮点精度更精确。然而，在GIMP中，您并不会因为选择32位整数而比选择32位浮点获得更高的精确度：即使您在精度菜单中选择了32位整数精度，GIMP内部仍然使用32位浮点精度进行所有的内部处理。重点是，精度菜单的设置只决定了图像信息在RAM中的保存方式，而不是决定图像的处理过程。</p></li>
 <li><p>在任何给定的位深下，整数精度和浮点精度在图像处理过程中使用大约相同数量的内存(RAM)进行内部计算，并且在将图像文件保存到磁盘时也需要大约相同数量的磁盘空间。</p></li>
 </ol>
-</section>
-<section id="gamma-srgb">
-<span id="image-precision-gamma"></span><h2>线性光和感官性gamma(sRGB)<a class="headerlink" href="#gamma-srgb" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="gamma-srgb">
+<span id="image-precision-gamma"></span><h2>线性光和感官性gamma(sRGB)<a class="headerlink" href="#gamma-srgb" title="永久链接至标题"></a></h2>
 <ol class="arabic simple">
 <li><p>在8位精度下，如果您选择“线性光”通道编码，图像有可能会产生难看的阴影。所以8位精度不建议使用线性光。</p></li>
 <li><p>在软打样时，如果图像是“线性光”，目前gamut检查不会返回正确的结果。所以在激活软打样之前，先改成感官性gamma(sRGB)。</p></li>
@@ -144,8 +138,8 @@
 <li><p>如果您取消勾选 图像→色彩管理→启用色彩管理 并且你的图像已经不在GIMP内置的sRGB颜色空间中，则您选择的通道编码会导致错误的颜色变化(不论是哪种通道编码方式，颜色仍然错误)。</p></li>
 </ul>
 </div></blockquote>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -158,7 +152,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

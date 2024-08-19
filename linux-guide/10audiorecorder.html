@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>录音</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>录音</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,19 +89,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="audiorecorder">
-<span id="id1"></span><h1>录音<a class="headerlink" href="#audiorecorder" title="Link to this heading"></a></h1>
+  <div class="section" id="audiorecorder">
+<span id="id1"></span><h1>录音<a class="headerlink" href="#audiorecorder" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>Linux系统中录音功能的使用与Windows系统不太像，需要熟悉一些具体操作方法。</p>
-<section id="gnome">
-<h2>一、Gnome桌面<a class="headerlink" href="#gnome" title="Link to this heading"></a></h2>
+<div class="section" id="gnome">
+<h2>一、Gnome桌面<a class="headerlink" href="#gnome" title="永久链接至标题"></a></h2>
 <p>在Gnome桌面环境中录音时，可能需要先让软件选择输入音源(默认输入音源与实际使用的可能不一致)：</p>
 <ol class="arabic">
 <li><p>安装 音源选择工具+录音工具。</p>
 <p>音源选择工具可以用<span class="dash2">pulseaudio音量控制</span>，需要安装pavucontrol这个软件包；录音工具我通常用simplescreenrecorder或者audacity(gnome自带的录音机也可以)。</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>pavucontrol<span class="w"> </span>simplescreenrecorder
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install pavucontrol simplescreenrecorder
 </pre></div>
 </div>
 </div></blockquote>
@@ -122,17 +116,17 @@
 <p>如果更换其它音源输入设备后又出现无法捕捉声音的情况，那么可能要重新运行<span class="dash6">pulseaudio音量控制</span>来选择输入音源。</p>
 </li>
 </ol>
-</section>
-<section id="kde-plasma">
-<h2>KDE Plasma桌面<a class="headerlink" href="#kde-plasma" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="kde-plasma">
+<h2>KDE Plasma桌面<a class="headerlink" href="#kde-plasma" title="永久链接至标题"></a></h2>
 <p>如果是kde plasma环境，操作起来与gnome桌面有些不同。</p>
 <p>鼠标右键点击屏幕右下角启动工具栏上的喇叭图标，选择<span class="dash2">配置音频设备</span>，</p>
 <hr class="docutils" />
 <p>使用笔记本电脑时，如果插上3.5耳机，会导致内置的喇叭不可用，这不是通过工具调整的，需要拨出3.5耳机才行。</p>
 <p><em>未完稿</em></p>
 <p><em>最近一次更新：2023年09月15日</em></p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -145,7 +139,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

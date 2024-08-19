@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>图像→对齐可见图层</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>图像→对齐可见图层</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/translations.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -97,8 +91,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>图像→对齐可见图层<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+  <div class="section" id="id1">
+<h1>图像→对齐可见图层<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>此命令没有快捷键。</p>
@@ -110,19 +104,17 @@
 <div class="line">如果想创建带有许多小图层的动画，这个命令可能比较方便。</div>
 <div class="line">默认对齐基础是画布边缘。</div>
 </div>
-<figure class="align-center" id="id9">
+<div class="figure align-center" id="id9">
 <img alt="../../../_images/17align.png" src="../../../_images/17align.png" />
-<figcaption>
-<p><span class="caption-text">图像→对齐可见图层</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">图像→对齐可见图层</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
+</div>
 <div class="line-block">
 <div class="line">在上面的截图中，有两组规则：<strong>水平方向风格</strong>与<strong>水平方向基准</strong>一起专门用于控制水平方向的位置规则；<strong>垂直方向风格</strong>与<strong>垂直方向基准</strong>一起专门用于控制垂直方向的位置规则。</div>
 <div class="line">两组规则可以同时启用，也可以分别启用。</div>
 </div>
 <p>总体上，对图层的位置处理，类似Inkscape/CorelDRAW/Illustrator等矢量软件中的<strong>对齐与分布</strong>命令，但这里的条件限定更具体。</p>
-<section id="id2">
-<h2>水平方向风格/垂直方向风格<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>水平方向风格/垂直方向风格<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p><strong>水平方向风格</strong>专门用于控制水平方向的对齐规则，<strong>垂直方向风格</strong>专门用于控制垂直方向的对齐规则。</p>
 <ul class="simple">
 <li><p>无{None}：水平或垂直位置不做改动。</p></li>
@@ -167,47 +159,47 @@
 </div>
 </div></blockquote>
 </div></blockquote>
-</section>
-<section id="id3">
-<h2>水平方向基准/垂直方向基准<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>水平方向基准/垂直方向基准<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>控制对齐操作时，图层的对齐参考基准，比如水平方向：</p>
 <ul class="simple">
 <li><p>左边界：在对齐时，以图层的左边界为对齐基准进行对齐操作。</p></li>
 <li><p>中心：在对齐时，以图层的中心为对齐基准进行对齐操作。</p></li>
 <li><p>右边界：在对齐时，以图层的右边界为对齐基准进行对齐操作。</p></li>
 </ul>
-</section>
-<section id="id4">
-<h2>网格大小<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id4">
+<h2>网格大小<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <div class="line-block">
 <div class="line">网格大小数值是指相邻网格线的间距，默认值是10，单位是像素。</div>
 <div class="line">这里如果把默认值修改为其它值，比如改为50，点击确定按钮后，GIMP会按新设定的50像素吸附到网格，但此时再勾选菜单 视图→显示网格 后，显示的网格仍然是默认值为10像素的网格，而不是50像素网格。</div>
 </div>
 <p>如果想显示50像素网格，请先使用菜单 图像→配置网格 命令改为50像素，再用菜单 视图→显示网格 命令显示网格。</p>
-</section>
-<section id="id5">
-<h2>吸附到网格<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id5">
+<h2>吸附到网格<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>没有<strong>集中</strong>操作，也没有<strong>填充</strong>操作，只会把图层的边缘吸附到最近的网格线，与网格线重合。</p>
 <p>这里的网格尺寸，是由本对话框中的<strong>网格大小</strong>设定，而不是由菜单 图像→配置网格 设定，也不是由菜单 首选项→默认图像→配置网格 设定。</p>
 <div class="line-block">
 <div class="line">水平方向上，如果图层的边缘在两条网格线的正中央，那么图层边缘会向右侧网格线吸附。</div>
 <div class="line">垂直方向上，如果图层的边缘在两条网格线的正中央，那么图层边缘会向下侧网格线吸附。</div>
 </div>
-</section>
-<section id="id6">
-<h2>即使可见也忽略底部图层<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id6">
+<h2>即使可见也忽略底部图层<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
 <p>图像→对齐可见图层 命令是针对可见图层进行对齐/分布操作，但勾选此选项后，最底部图层即使可见，也不会参与集中/填充操作，相当于最底图层被忽略。</p>
-</section>
-<section id="id7">
-<h2>使用(不可见的)底部图层作为基准<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id7">
+<h2>使用(不可见的)底部图层作为基准<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
 <p>勾选此项后，无论最底部图层是否可见，集中/填充的基准都会由画布改为最底部图层。</p>
-</section>
-<section id="align-visible-layer">
-<span id="id8"></span><h2>示例图像<a class="headerlink" href="#align-visible-layer" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="align-visible-layer">
+<span id="id8"></span><h2>示例图像<a class="headerlink" href="#align-visible-layer" title="永久链接至标题"></a></h2>
 <p>前面已经详细解释了各个参数，下面我们创建一个示例图像，然后用这个示例图像来演示各个参数的效果。</p>
-<figure class="align-center">
+<div class="figure align-center">
 <img alt="../../../_images/172sample.png" src="../../../_images/172sample.png" />
-</figure>
+</div>
 <p>此示例图像有以下要素：</p>
 <ol class="arabic simple">
 <li><p>一共有四个图层，从上到下名称依次为圆、三角、方、背景；</p></li>
@@ -286,8 +278,8 @@
 <a class="reference internal image-reference" href="../../../_images/r101.png"><img alt="../../../_images/r101.png" src="../../../_images/r101.png" style="width: 34%;" /></a>
 <a class="reference internal image-reference" href="../../../_images/r3.png"><img alt="../../../_images/r3.png" src="../../../_images/r3.png" style="width: 22%;" /></a>
 <a class="reference internal image-reference" href="../../../_images/r301.png"><img alt="../../../_images/r301.png" src="../../../_images/r301.png" style="width: 38%;" /></a>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -300,7 +292,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>图层→变换</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>图层→变换</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/translations.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -97,18 +91,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>图层→变换<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+  <div class="section" id="id1">
+<h1>图层→变换<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>这里的命令可以对图层进行翻转、旋转、位移操作。</p>
 <p>在具体解释这些命令之前，我们先创建一个示例图像，用来演示菜单命令的用法。</p>
-<figure class="align-center" id="id9">
+<div class="figure align-center" id="id9">
 <img alt="../../../_images/15ori.png" src="../../../_images/15ori.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 A</strong>：汉字图层尺寸等于画布尺寸       <strong>例图 B</strong>：汉字图层尺寸小于画布尺寸</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text"><strong>例图 A</strong>：汉字图层尺寸等于画布尺寸       <strong>例图 B</strong>：汉字图层尺寸小于画布尺寸</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
+</div>
 <p>这两张图像具有以下要素：</p>
 <ol class="arabic simple">
 <li><p>例图 A 有两个图层；</p></li>
@@ -132,135 +124,107 @@
 <div class="line">因为图层的翻转、旋转等操作与图层尺寸/位置有关，所以，在使用相关的命令时，请理解上述要素。</div>
 <div class="line">在查看下面的示例图像时，请注意观察汉字“永”在画布上的位置变化。</div>
 </div>
-<section id="id2">
-<h2>水平翻转<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>水平翻转<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <div class="line-block">
 <div class="line">此命令会把当前活动图层做水平翻转操作，即左右翻转。</div>
 <div class="line">水平翻转的中心为图层中心(黑黄虚线框中心)。</div>
 </div>
-<figure class="align-center" id="id10">
+<div class="figure align-center" id="id10">
 <img alt="../../../_images/15b11.png" src="../../../_images/15b11.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 A</strong>：水平翻转</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id11">
+<p class="caption"><span class="caption-text"><strong>例图 A</strong>：水平翻转</span><a class="headerlink" href="#id10" title="永久链接至图片"></a></p>
+</div>
+<div class="figure align-center" id="id11">
 <img alt="../../../_images/15s11.png" src="../../../_images/15s11.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 B</strong>：水平翻转</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id3">
-<h2>垂直翻转<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text"><strong>例图 B</strong>：水平翻转</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>垂直翻转<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <div class="line-block">
 <div class="line">此命令会把当前活动图层做垂直翻转操作，即上下翻转。</div>
 <div class="line">垂直翻转的中心为图层中心。</div>
 </div>
-<figure class="align-center" id="id12">
+<div class="figure align-center" id="id12">
 <img alt="../../../_images/15b21.png" src="../../../_images/15b21.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 A</strong>：垂直翻转</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id13">
+<p class="caption"><span class="caption-text"><strong>例图 A</strong>：垂直翻转</span><a class="headerlink" href="#id12" title="永久链接至图片"></a></p>
+</div>
+<div class="figure align-center" id="id13">
 <img alt="../../../_images/15s21.png" src="../../../_images/15s21.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 B</strong>：垂直翻转</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id4">
-<h2>顺时针旋转90°<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text"><strong>例图 B</strong>：垂直翻转</span><a class="headerlink" href="#id13" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>顺时针旋转90°<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>此命令把当前活动图层围绕<strong>图层中心</strong>顺时针旋转90°，图层边缘可能会延伸到画布的边界之外。</p>
 <p>GIMP允许图层尺寸大于画布尺寸。但是，除非您调整画布的尺寸或调整图层位置，否则延伸到画布边界之外的部分无法看到。</p>
 <p>注意，此命令是围绕图层中心旋转，不是画布中心。</p>
-<figure class="align-center" id="id14">
+<div class="figure align-center" id="id14">
 <img alt="../../../_images/15b31.png" src="../../../_images/15b31.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 A</strong>：顺时针旋转90°</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id15">
+<p class="caption"><span class="caption-text"><strong>例图 A</strong>：顺时针旋转90°</span><a class="headerlink" href="#id14" title="永久链接至图片"></a></p>
+</div>
+<div class="figure align-center" id="id15">
 <img alt="../../../_images/15s31.png" src="../../../_images/15s31.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 B</strong>：顺时针旋转90°</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id5">
-<h2>逆时针旋转90°<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text"><strong>例图 B</strong>：顺时针旋转90°</span><a class="headerlink" href="#id15" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>逆时针旋转90°<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>此命令把当前活动图层围绕<strong>图层中心</strong>逆时针旋转90°，图层边缘可能会延伸到画布的边界之外。</p>
 <p>GIMP允许图层尺寸大于画布尺寸。但是，除非您调整画布的尺寸或调整图层位置，否则延伸到画布边界之外的部分可能看不到。</p>
 <p>注意，此命令是围绕图层中心旋转，不是画布中心。</p>
-<figure class="align-center" id="id16">
+<div class="figure align-center" id="id16">
 <img alt="../../../_images/15b41.png" src="../../../_images/15b41.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 A</strong>：逆时针旋转90°</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id17">
+<p class="caption"><span class="caption-text"><strong>例图 A</strong>：逆时针旋转90°</span><a class="headerlink" href="#id16" title="永久链接至图片"></a></p>
+</div>
+<div class="figure align-center" id="id17">
 <img alt="../../../_images/15s41.png" src="../../../_images/15s41.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 B</strong>：逆时针旋转90°</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id6">
-<h2>旋转180°<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text"><strong>例图 B</strong>：逆时针旋转90°</span><a class="headerlink" href="#id17" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>旋转180°<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
 <p>此命令把当前活动图层围绕<strong>图层中心</strong>旋转180°。</p>
 <p>本例中图层的形状是正方形，所以围绕<strong>图层中心</strong>旋转180°之后，图层位置没有发生变化，不会延伸到画布边界之外。</p>
-<figure class="align-center" id="id18">
+<div class="figure align-center" id="id18">
 <img alt="../../../_images/15b51.png" src="../../../_images/15b51.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 A</strong>：旋转180°</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id19">
+<p class="caption"><span class="caption-text"><strong>例图 A</strong>：旋转180°</span><a class="headerlink" href="#id18" title="永久链接至图片"></a></p>
+</div>
+<div class="figure align-center" id="id19">
 <img alt="../../../_images/15s51.png" src="../../../_images/15s51.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 B</strong>：旋转180°</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id7">
-<h2>任意旋转<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text"><strong>例图 B</strong>：旋转180°</span><a class="headerlink" href="#id19" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>任意旋转<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
 <p>快捷键：Shift+R</p>
 <p>此命令会把当前活动图层旋转任意角度，您可以在弹出的对话框中输入旋转角度值。</p>
 <p>本例使用的是默认的围绕<strong>图层中心</strong>旋转，您可以修改旋转中心的坐标，也可以用鼠标直接点击对话框右侧的九点坐标来快捷设置9个旋转中心；或者，还可以用鼠标直接拖动图像窗口中显示的旋转中心图标，然后点击并拖动图像来旋转。</p>
 <p>默认的坐标单位是像素，您可以改成其它单位，比如mm。</p>
-<figure class="align-center" id="id20">
+<div class="figure align-center" id="id20">
 <img alt="../../../_images/15r1.png" src="../../../_images/15r1.png" />
-<figcaption>
-<p><span class="caption-text">图层→变换→任意旋转</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">图层→变换→任意旋转</span><a class="headerlink" href="#id20" title="永久链接至图片"></a></p>
+</div>
 <p>执行命令后，图层边缘可能会延伸到画布的边界之外。</p>
 <p>GIMP允许图层尺寸大于画布尺寸。但是，除非您调整画布的尺寸或调整图层位置，否则延伸到画布边界之外的部分可能看不到。</p>
-<figure class="align-center" id="id21">
+<div class="figure align-center" id="id21">
 <img alt="../../../_images/15b61.png" src="../../../_images/15b61.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 A</strong>：旋转30°，灰色方框为旋转后的图层边界，四个角均超出画布</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id22">
+<p class="caption"><span class="caption-text"><strong>例图 A</strong>：旋转30°，灰色方框为旋转后的图层边界，四个角均超出画布</span><a class="headerlink" href="#id21" title="永久链接至图片"></a></p>
+</div>
+<div class="figure align-center" id="id22">
 <img alt="../../../_images/15s61.png" src="../../../_images/15s61.png" />
-<figcaption>
-<p><span class="caption-text"><strong>例图 B</strong>：旋转30°，灰色方框为旋转后的图层边界，两个角超出画布</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id8">
-<h2>位移<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text"><strong>例图 B</strong>：旋转30°，灰色方框为旋转后的图层边界，两个角超出画布</span><a class="headerlink" href="#id22" title="永久链接至图片"></a></p>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>位移<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
 <p>快捷键：Ctrl+Shift+O</p>
 <p>此命令可以移动活动图层的位置，位于图层边界之外的内容都会被裁掉。</p>
 <p>此命令打开的对话框中，您可以设定图层移动的距离，以及如何填充移动图层后留下的空隙(边缘行为)。“环绕周围”选项可以用来创建平铺(tileable)的图案，典型的例子是磁砖。</p>
-<figure class="align-center" id="id23">
+<div class="figure align-center" id="id23">
 <img alt="../../../_images/15offset.png" src="../../../_images/15offset.png" />
-<figcaption>
-<p><span class="caption-text">图层→变换→位移</span><a class="headerlink" href="#id23" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">图层→变换→位移</span><a class="headerlink" href="#id23" title="永久链接至图片"></a></p>
+</div>
 <ul>
 <li><p>预设：此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">颜色-对话框通用参数</span></a>。</p></li>
 <li><p>位移：X/Y 值用来指定图层在水平(X)和垂直(Y)方向上移动的距离。您可以在输入框中输入数值。正值会使图层向右和向下移动。默认单位是像素，您可以选择不同的测量单位。当然，您完全可以使用鼠标在画布上点击并拖动来移动图层的位置。</p>
@@ -286,8 +250,8 @@
 <p>如何在当前图像中创建一个图层尺寸小于画布尺寸的新图层？</p>
 <p>您可以点击菜单 图层→新建图层 命令，在打开的对话框中，宽度和高度中的数值默认是画布的尺寸，您只需要把数值改小即可。</p>
 </div>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -300,7 +264,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

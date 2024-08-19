@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>(可停靠对话框→图层⇒模式)</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>(可停靠对话框→图层⇒模式)</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -96,24 +90,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="menu-window-dockable-layer-mode"></span><section id="id1">
-<h1>(可停靠对话框→图层⇒模式)<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+  <div class="section" id="id1">
+<h1>(可停靠对话框→图层⇒模式)<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
 <p>直达<a class="reference internal" href="#dockable-layer-mode-link-list"><span class="std std-ref">模式列表</span></a></p>
 <p>(图层模式并不是对话框，而是<span class="dash6">图层对话框</span>中的一个下拉选项，只不过这个选项中的内容比较多，所以在这里单独用一个章节来进行说明)</p>
-<figure class="align-center" id="id3">
+<div class="figure align-center" id="id3">
 <img alt="../../_images/3layer-mode.png" src="../../_images/3layer-mode.png" />
-<figcaption>
-<p><span class="caption-text">图层⇒模式 <span class="dash6">正常</span></span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p class="caption"><span class="caption-text">图层⇒模式 <span class="dash6">正常</span></span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
 <div class="legend">
 <p>截图中，图层的模式已经设置为<span class="dash6">正常</span></p>
 </div>
-</figcaption>
-</figure>
+</div>
 <p>图层的模式也叫图层的混合模式{blending mode}。GIMP通过模式来确定当前活动图层中的像素与其下方的图层中的像素如何混合。所以，图层的模式的变化，可能会导致图像的整体效果发生变化。</p>
 <p>图层的模式的存在，使您可以实现极为复杂的颜色变化操作。</p>
 <p>因为是当前图层与下方图层的混合，所以，图层的模式对于只有一个图层的图像没有意义。</p>
 <div class="admonition-y-vs admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：默认 vs. 过时</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：默认 vs. 过时</p>
 <p>图层模式选择框的右侧有一个切换按钮 <a class="reference internal" href="../../_images/3layer-mode-legacy0.png"><img alt="X" class="align-middle" src="../../_images/3layer-mode-legacy0.png" style="width: 49px; height: 22px;" /></a>，它可以切换图层模式为<span class="dash6">默认</span>或者<span class="dash6">过时</span>。</p>
 <p><span class="dash6">过时</span>模式是GIMP2.8及以前版本使用的图层模式计算方法，在2.10及后续版本中已经改为<span class="dash6">默认</span>模式。新版本中<span class="dash6">过时</span>模式仍然存在的原因是为了兼容以前版本的GIMP所创建的.xcf文件。这些旧的.xcf文件中如果有保存图层模式相关内容，那么在2.10版本中打开这些.xcf文件时，图层模式会使用<span class="dash6">过时</span>模式。</p>
 <p>新创建的图像文件，请使用<span class="dash7">默认</span>模式，不要使用<span class="dash6">过时</span>模式，。</p>
@@ -122,7 +114,7 @@
 <p id="dockable-layer-mode-link-list">下面是模式列表：</p>
 <blockquote>
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：双语→翻译的精确性</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：双语→翻译的精确性</p>
 <p>开源软件汉化是否正确/精确，通常取决于译员个人。这里在菜单后面以斜体标注英文原文，以方便用户精确理解。</p>
 </div>
 </div></blockquote>
@@ -170,7 +162,7 @@
 </ol>
 <blockquote id="dockable-layer-mode-formula">
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：算法公式</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：算法公式</p>
 <p>计算的本质是数学，图层模式的各种算法更是数学应用的直接体现。所以，我们在对模式进行说明时，可以尝试用数学公式对模式的算法进行描述，下面是公式会用到的三个参数：</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -184,28 +176,24 @@
 </div>
 </div></blockquote>
 <hr class="docutils" />
-<section id="why-study-fomula">
-<span id="id2"></span><h2>算法公式应用示例<a class="headerlink" href="#why-study-fomula" title="Link to this heading"></a></h2>
+<div class="section" id="why-study-fomula">
+<span id="id2"></span><h2>算法公式应用示例<a class="headerlink" href="#why-study-fomula" title="永久链接至标题"></a></h2>
 <p>图层模式种类很多，算法的复杂程度也各不相同，我们以相对简单的<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式为例来说明理解公式的意义。</p>
 <p>假设我们要向其他人解释三原色RGB的工作原理，那么我们可能需要这样一张图片：</p>
-<figure class="align-center" id="id4">
+<div class="figure align-center" id="id4">
 <img alt="../../_images/3layer-mode-rgb.png" src="../../_images/3layer-mode-rgb.png" />
-<figcaption>
-<p><span class="caption-text">RGB色光加色法原理图</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">RGB色光加色法原理图</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
+</div>
 <p>上面这张图很明显，就是三个原色(RGB)的圆放在一起，两两重合部分按色光加色法显示CMY颜色；最中间按色光加色法显示白色。</p>
 <p>那么，怎样用GIMP来画这样一张图呢？</p>
 <div class="line-block">
 <div class="line">如果不了解图层<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式的算法，大家会有各种方法。</div>
 <div class="line">但了解了<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式算法之后，方法应该就比较统一了，就是三个图层，每个图层都在纯黑的背景上画一个单色的圆，然后把所有图层的模式都设置为<span class="dash6">相加</span>即可；如果想要再完美一些，就调整一下尺寸和位置。</div>
 </div>
-<figure class="align-center" id="id5">
+<div class="figure align-center" id="id5">
 <img alt="../../_images/3layer-mode-rgb-addition.png" src="../../_images/3layer-mode-rgb-addition.png" />
-<figcaption>
-<p><span class="caption-text">用GIMP画三原色原理图</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">用GIMP画三原色原理图</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+</div>
 <p>我们用<span class="dash6">相加</span>模式的<a class="reference internal" href="#dockable-layer-mode-formula"><span class="std std-ref">算法公式</span></a>  <strong>E=min[(M+I),255]</strong>来解释一下上面这张图：</p>
 <blockquote>
 <div><p>公式的意思是，当前图层选择<span class="dash6">相加</span>模式后，生成的效果是把当前图层与下方图层的像素值相加；如果相加后大于255，那么只取255。</p>
@@ -213,42 +201,34 @@
 <ol class="arabic">
 <li><p>图层R中圆的色值为(255,0,0)，图层G中圆的色值为(0,255,0)，二者重叠的部分相加，即(255,0,0)+(0,255,0)，结果色值为(255,255,0)，而这个色值正好是黄色Y：</p>
 <blockquote>
-<div><figure class="align-center" id="id6">
+<div><div class="figure align-center" id="id6">
 <img alt="../../_images/3layer-mode-rg.png" src="../../_images/3layer-mode-rg.png" />
-<figcaption>
-<p><span class="caption-text">R+G: (255,0,0)+(0,255,0)=(255,255,0)</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">R+G: (255,0,0)+(0,255,0)=(255,255,0)</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 </li>
 <li><p>图层R中圆的色值为(255,0,0)，图层B中圆的色值为(0,0,255)，二者重叠的部分相加，即(255,0,0)+(0,0,255)，结果色值为(255,0,255)，而这个色值正好是品红色M：</p>
 <blockquote>
-<div><figure class="align-center" id="id7">
+<div><div class="figure align-center" id="id7">
 <img alt="../../_images/3layer-mode-rb.png" src="../../_images/3layer-mode-rb.png" />
-<figcaption>
-<p><span class="caption-text">R+B: (255,0,0)+(0,0,255)=(255,0,255)</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">R+B: (255,0,0)+(0,0,255)=(255,0,255)</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 </li>
 <li><p>图层G中圆的色值为(0,255,0)，图层B中圆的色值为(0,0,255)，二者重叠的部分相加，即(0,255,0)+(0,0,255)，结果色值为(0,255,255)，而这个色值正好是青色C：</p>
 <blockquote>
-<div><figure class="align-center" id="id8">
+<div><div class="figure align-center" id="id8">
 <img alt="../../_images/3layer-mode-gb.png" src="../../_images/3layer-mode-gb.png" />
-<figcaption>
-<p><span class="caption-text">G+B: (0,255,0)+(0,0,255)=(0,255,255)</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">G+B: (0,255,0)+(0,0,255)=(0,255,255)</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 </li>
 <li><p>中间三色叠加部分，按公式应该为(255,0,0)+(0,255,0)+(0,0,255)，结果是(255,255,255)，正好是白色W：</p>
 <blockquote>
-<div><figure class="align-center" id="id9">
+<div><div class="figure align-center" id="id9">
 <img alt="../../_images/3layer-mode-rgb3.png" src="../../_images/3layer-mode-rgb3.png" />
-<figcaption>
-<p><span class="caption-text">R+G+B: (255,0,0)+(0,255,0)+(0,0,255)=(255,255,255)</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">R+G+B: (255,0,0)+(0,255,0)+(0,0,255)=(255,255,255)</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 </li>
 <li><p>上面所有的计算结果均没有超过255。</p></li>
@@ -258,13 +238,13 @@
 <p>默认情况下，我们的图层模式会使用<span class="dash6">正常</span>模式，而使用<span class="dash6">正常</span>模式来画这张RGB原理图，就会比较麻烦。</p>
 <p>所以，如果您了解模式算法并能熟练应用图层模式，随时预测当前图层与下方图层重叠的部分可能产生什么效果，那么在绘画时，就会更灵活地应用各种效果到图像当中。</p>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：透明区域的计算</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp2.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp2.svg" width="22" /></a> 驿窗注：透明区域的计算</p>
 <p>目前，图层模式的算法公式中并没有关于透明度的解释，即，如果参与模式计算的最底图层有透明区域，那么最终得到的混合效果可能更复杂。</p>
 <p>例如，上面的示例中，如果最下面的B图层存在透明区域，那么最后生成的混合效果与我们的预期会不一样，从而导致我们无法顺利完成那张RGB原理图。</p>
 </div>
 <p><em>最近一次更新：2024-07-19</em></p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -277,7 +257,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

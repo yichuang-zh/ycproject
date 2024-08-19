@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>首选项→系统资源</title>
-      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>首选项→系统资源</title><link rel="stylesheet" href="../../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/translations.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -98,72 +92,70 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>首选项→系统资源<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+  <div class="section" id="id1">
+<h1>首选项→系统资源<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
 <p>这里可以对GIMP使用的内存量进行设置。</p>
-<figure class="align-center" id="id11">
+<div class="figure align-center" id="id11">
 <img alt="../../../../_images/1sysresource.png" src="../../../../_images/1sysresource.png" />
-<figcaption>
-<p><span class="caption-text">首选项→系统资源</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<section id="id2">
-<h2>最小撤消级别<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text">首选项→系统资源</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
+</div>
+<div class="section" id="id2">
+<h2>最小撤消级别<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>GIMP中，大多数操作都可以撤消。您可以为撤销功能分配内存数量，分配的内存越多，可撤销步骤就更多。</p>
 <p>无论内存用量如何，GIMP至少允许最低数量的撤销步骤：即最小撤消级别数量。</p>
-</section>
-<section id="id3">
-<h2>最大撤消内存<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>最大撤消内存<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>这是为每个图像分配的撤消内存数量上限。如果撤消步骤占用的内存数量超过了这个数值，最早的撤消点就会被删除，以容纳新的撤消点。</p>
-</section>
-<section id="id4">
-<h2>平铺缓存大小<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id4">
+<h2>平铺缓存大小<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>这是分配给GIMP图像数据使用的主机内存数量。如果GIMP需要的内存超过这个数值，它就会开始使用硬盘来进行缓存处理，这通常会导致GIMP运行速度变慢。</p>
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
 <p>在对图片进行处理和操作的过程中，GIMP需要很多内存，因为GIMP所有的处理都是在内存中运行。所以，可用的内存数量越多越好。</p>
 <p>在处理图像的过程中，数据内存被组织在缓冲的图形数据块中，它有两种不同形式：慢速的硬盘或快速的主机内存。GIMP最好使用主机内存，这样速度比较快。当分配给GIMP的主机内存不足时，GIMP就会开始使用硬盘来缓存剩余的数据。这些图形数据块通常被称为 tiles ，而这个系统则被称为 平铺缓存{tile cache} 。</p>
 </div>
-</section>
-<section id="id5">
-<h2>最大新建图像大小<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id5">
+<h2>最大新建图像大小<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>这只是一个参考值，具备提醒功能：如果您创建一个比这个数值更大的新图像，会提示是否真的想这么做。这可以防止您不小心因为创建太大的图像而导致内存不足，因为如果内存不足，就可能会导致GIMP的响应速度非常慢，甚至崩溃。</p>
-</section>
-<section id="id6">
-<h2>线程使用数量<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id6">
+<h2>线程使用数量<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
 <p>多线程可以利用多个处理器核心进行并行处理，当前CPU基本都是多核心CPU。不过，当前版本的GIMP并不是所有的功能都能利用多线程功能。</p>
-</section>
-<section id="id7">
-<h2>交换区压缩<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id7">
+<h2>交换区压缩<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
 <p>GIMP操作过程中，发生内存不足的情况时，GIMP会开始使用硬盘来缓存数据。而这些缓存数据是统一存储在一个交换文件 {swap file} 中的。内存已经不足时才会启用硬盘交换文件，所以，GIMP也考虑对交换文件进行压缩，这样可以节约硬盘空间。</p>
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
 <p>交换文件有可能是存在硬盘上的文件，也有可能是专门的硬盘分区。</p>
 </div>
 <p>在现在的电脑上，通常内存空间和硬盘空间都会比较充足，基本上不会用到硬盘交换文件，所以此项保持默认的 最好性能 就可以。只有内存空间和硬盘空间都特别紧张的情况下，才需要考虑把此项设置为 最好压缩 。</p>
-</section>
-<section id="opencl-use-opencl">
-<h2>使用OpenCL{Use OpenCL}<a class="headerlink" href="#opencl-use-opencl" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="opencl-use-opencl">
+<h2>使用OpenCL{Use OpenCL}<a class="headerlink" href="#opencl-use-opencl" title="永久链接至标题"></a></h2>
 <p>OpenCL是Open Computing Language的缩写。这个选项可以改善CPU和显卡(GPU)之间的关系管理。不过，目前它还是一个实验性的功能，有可能会出现速度减慢甚至崩溃的情况，如果工作很重要，<strong>请慎用</strong>此功能。</p>
-</section>
-<section id="id8">
-<h2>缩略图大小<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id8">
+<h2>缩略图大小<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
 <p>该选项允许您设置文件打开对话框中显示的缩略图的尺寸。选项有三个：</p>
 <ul class="simple">
 <li><p>无缩略图</p></li>
 <li><p>普通(128x128)</p></li>
 <li><p>大(256x256)</p></li>
 </ul>
-</section>
-<section id="id9">
-<h2>缩略图最大文件大小<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id9">
+<h2>缩略图最大文件大小<a class="headerlink" href="#id9" title="永久链接至标题"></a></h2>
 <p>如果图像文件大于指定的最大数值，则GIMP不会为其生成缩略图。这个选项可以防止GIMP对超大的图像文件生成缩略图，因为速度会比较慢。</p>
-</section>
-<section id="id10">
-<h2>保持最近文档列表中使用过文件的记录<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id10">
+<h2>保持最近文档列表中使用过文件的记录<a class="headerlink" href="#id10" title="永久链接至标题"></a></h2>
 <p>勾选后，您打开过的文件会被保存在文档历史记录中。您可以通过菜单 文件→最近打开→文档历史 来访问文件列表记录。</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -176,7 +168,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

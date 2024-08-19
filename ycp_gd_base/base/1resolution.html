@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1. 分辨率 PPI vs. DPI</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>1. 分辨率 PPI vs. DPI</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,10 +89,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ppi-vs-dpi">
-<span id="gimp-base-resolution"></span><h1><span class="section-number">1. </span>分辨率 PPI vs. DPI<a class="headerlink" href="#ppi-vs-dpi" title="Link to this heading"></a></h1>
+  <div class="section" id="ppi-vs-dpi">
+<span id="gimp-base-resolution"></span><h1><span class="section-number">1. </span>分辨率 PPI vs. DPI<a class="headerlink" href="#ppi-vs-dpi" title="永久链接至标题"></a></h1>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp17.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp17.svg" width="22" /></a> 驿窗注：</p>
 <p>分辨率是一个特别容易被误导的概念，不仅在中国，在世界范围内也是易被误解的一个关键术语。本文的目的就是帮助大家正确理解分辨率的真正含义，请耐心阅读。</p>
 </div>
 <p>图像如果不打印的话，可能就不需要分辨率(ppi)这个概念。</p>
@@ -111,8 +105,8 @@
 <li><p>扫描分辨率(dpi)，早期没有数码相机和手机拍照，照片是需要扫描到电脑中的。</p></li>
 </ol>
 <p>上面这三个分辨率应用场景，是混淆最多的，下面我们会一一解释。</p>
-<section id="id1">
-<h2><span class="section-number">1.1. </span>位图的基础 → 像素<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="section" id="id1">
+<h2><span class="section-number">1.1. </span>位图的基础 → 像素<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
 <p>位图是由像素构成的，像素是位图图像的最小构成单位。</p>
 <p>常见的像素形状是正方形，长方形比较少见。</p>
 <p>像素是有尺寸的，但尺寸大小需要另一个参数才能确定：分辨率(ppi)。</p>
@@ -127,8 +121,8 @@
 <p>总结一下就是，图像的尺寸是1920x1080(像素)，图像的分辨率在这里并没有给出来，所以是未知的。</p>
 <p>如果位图是用在网页上显示，而不是用来印刷或打印的，那么有没有分辨率(ppi)这个参数其实无所谓，因为计算机屏幕显示位图图像是不需要分辨率这个参数的。</p>
 <p>但如果要打印或印刷，那么就必须知道分辨率，因为如果不知道分辨率是多少，就无法确认图像在纸张上的物理尺寸(厘米)。</p>
-<section id="id2">
-<h3><span class="section-number">1.1.1. </span>像素数量不同会导致图像质量不同<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<div class="section" id="id2">
+<h3><span class="section-number">1.1.1. </span>像素数量不同会导致图像质量不同<a class="headerlink" href="#id2" title="永久链接至标题"></a></h3>
 <a class="reference internal image-reference" href="../../_images/1-16x16.png"><img alt="../../_images/1-16x16.png" src="../../_images/1-16x16.png" style="width: 15%;" /></a>
 <a class="reference internal image-reference" href="../../_images/1-32x32.png"><img alt="../../_images/1-32x32.png" src="../../_images/1-32x32.png" style="width: 15%;" /></a>
 <a class="reference internal image-reference" href="../../_images/1-ori.png"><img alt="../../_images/1-ori.png" src="../../_images/1-ori.png" style="width: 15%;" /></a>
@@ -139,23 +133,23 @@
 <div class="line">同一图像，颜色数量相同时，像素越少，图像就越粗糙；</div>
 <div class="line">同一图像，像素数量相同时，颜色越少，图像就越粗糙；</div>
 </div>
-</section>
-<section id="id3">
-<h3><span class="section-number">1.1.2. </span>颜色数量相同，但像素数量不同<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id3">
+<h3><span class="section-number">1.1.2. </span>颜色数量相同，但像素数量不同<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
 <a class="reference internal image-reference" href="../../_images/1-16x16-16color.png"><img alt="../../_images/1-16x16-16color.png" src="../../_images/1-16x16-16color.png" style="width: 15%;" /></a>
 <a class="reference internal image-reference" href="../../_images/1-32x32-16color.png"><img alt="../../_images/1-32x32-16color.png" src="../../_images/1-32x32-16color.png" style="width: 15%;" /></a>
 <a class="reference internal image-reference" href="../../_images/1-64x64-16color.png"><img alt="../../_images/1-64x64-16color.png" src="../../_images/1-64x64-16color.png" style="width: 15%;" /></a>
 <p>上面三张图都只有16种颜色，但左图是16x16像素，中间是32x32像素，右图是64x64像素。可以看出，像素数量越多，效果越好。(为了演示效果，三张图做了一些处理。点击可以查看大图)</p>
-</section>
-<section id="id4">
-<h3><span class="section-number">1.1.3. </span>像素数量相同，颜色数量不同<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">1.1.3. </span>像素数量相同，颜色数量不同<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
 <p>下面两张图都是32x32像素，但左图是16个颜色，右图是64个颜色，右图的蓝色渐变部分明显比左图平滑很多，原因就是右图颜色数量更多。</p>
 <a class="reference internal image-reference" href="../../_images/1-32x32-16color-ori.png"><img alt="../../_images/1-32x32-16color-ori.png" src="../../_images/1-32x32-16color-ori.png" style="width: 15%;" /></a>
 <a class="reference internal image-reference" href="../../_images/1-32x32-64color-ori.png"><img alt="../../_images/1-32x32-64color-ori.png" src="../../_images/1-32x32-64color-ori.png" style="width: 15%;" /></a>
 <p>从上面三组对比图像可以知道，同一图像的像素数量和颜色数量两个参数都会对图像的质量产生影响。但是，这个影响并不是绝对的，我们往下看。</p>
-</section>
-<section id="id5">
-<h3><span class="section-number">1.1.4. </span>像素数量对图像尺寸的影响<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id5">
+<h3><span class="section-number">1.1.4. </span>像素数量对图像尺寸的影响<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
 <p>下面三张图，左图显示比较小。鼠标点击图像，可以查看原图。</p>
 <a class="reference internal image-reference" href="../../_images/1-32x32-ori.png"><img alt="../../_images/1-32x32-ori.png" src="../../_images/1-32x32-ori.png" style="width: 6%;" /></a>
 <a class="reference internal image-reference" href="../../_images/1-32x32-ori.png"><img alt="../../_images/1-32x32-ori.png" src="../../_images/1-32x32-ori.png" style="width: 12%;" /></a>
@@ -174,7 +168,7 @@
 <p>事实上，多数软件中的100%比例，表示一个屏幕像素，对应一个图像像素。这里有一个<span class="dash6">屏幕像素</span>的概念。</p>
 <p><span class="dash6">屏幕像素</span>，比如你的电脑显示器规格是1920x1080像素，表示屏幕上水平方向分布了1920个物理发光点，垂直方向分布了1080个物理发光点，如果你有一张图片是1920x1080，那么这张图片在电脑屏幕上100%比例显示时，正好铺满整个屏幕，不多也不少：一个图像像素点正好占用一个屏幕物理发光点，图像像素点与屏幕物理发光点一一对应，这就是1:1(100%)比例的真正含义。</p>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗提示：
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp17.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp17.svg" width="22" /></a> 驿窗提示：
 屏幕上每一个像素(物理发光点)都由三个基色发光点构成</p>
 <p>显示屏基本都是RGB原理，屏幕上每一个像素都是由三个基色发光点组成的，分别是红色、绿色和蓝色发光点，即RGB。RGB三者一起构成一个物理发光点，即一个像素。这样，每一个像素就都有了RGB色值。</p>
 </div>
@@ -183,15 +177,15 @@
 <p>如果按1:1(100%)的比例来显示图像(屏幕发光点与图像像素一一对应)，那么32x32像素的图像，在屏幕上横向占据32个屏幕发光点，纵向上占据32个屏幕发光点；而64x64像素的图像，在屏幕上横向占据64个屏幕发光点，纵向上占据64个屏幕发光点。这种情况下，你看起来的效果就是，32x32像素的图像比较小，而64x64像素的图像相对大一些。这也是为什么像素数量会影响<span class="dash6">图像显示尺寸</span>的原理。</p>
 <blockquote>
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗提示：
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp17.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp17.svg" width="22" /></a> 驿窗提示：
 尺寸与像素的关系</p>
 <p>图像的像素数量仅对<span class="dash6">显示尺寸</span>产生影响，<span class="dash6">打印尺寸</span>有另外的影响因素，具体请参考<a class="reference internal" href="#base-print-resolution-dpi"><span class="std std-ref">打印机的分辨率</span></a>。</p>
 </div>
 </div></blockquote>
-</section>
-</section>
-<section id="ppi">
-<h2><span class="section-number">1.2. </span>位图的图像分辨率 → ppi<a class="headerlink" href="#ppi" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="ppi">
+<h2><span class="section-number">1.2. </span>位图的图像分辨率 → ppi<a class="headerlink" href="#ppi" title="永久链接至标题"></a></h2>
 <p>图像分辨率(ppi)，也叫图像的打印分辨率，其实就是图像打印时需要的参数。本质上，位图图像如果不打印，那么就不需要图像分辨率这个参数。</p>
 <p>之所以这么说是因为，图像分辨率(ppi)的意义在于它是用来换算像素的物理尺寸的，即像素打印在纸上时的尺寸(厘米)。</p>
 <p>像素是一个抽象概念，并没有实体，所以也没有物理尺寸一说。这不像纸张上的图像，纸张上的图像是由点构成的，点是有物理尺寸的。</p>
@@ -207,7 +201,7 @@
 <p>分辨率这个词从字面上理解，应该是一个比率值，而ppi正好是一个比率单位，所以，图像分辨率的正确单位应该是ppi，而不是像素。比如，分辨率300ppi是正确的说法，分辨率1920x1080像素则是错误的说法。</p>
 <p>现实情况是，很多人已经习惯了把1920x1080像素当做图像的分辨率来使用，没关系，不耽误使用就好，这里对错反而是次要的，因为对于那些不打印也不印刷的场景来说，ppi确实没有存在的必要。</p>
 <div class="admonition-y-red admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> <span class="red">警告：多数专业人士也会误解的概念</span></p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp17.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp17.svg" width="22" /></a> <span class="red">警告：多数专业人士也会误解的概念</span></p>
 <p>在印刷相关行业，通常会要求图片文件的分辨率不能低于某个最低值，比如不能低于300ppi，或者不能低于200ppi。</p>
 <p>现实情况是，大家都掌握了300这个数值，但数值的单位是ppi还是dpi，多数人都以为是dpi。这其实是被误导了。这里驿窗提示您，以下说法是正确的：(数值300是演示举例)</p>
 <ol class="arabic simple">
@@ -217,9 +211,9 @@
 <li><p>(另外可参考<a class="reference internal" href="#ycpbase-resolution-scan1"><span class="std std-ref">为什么会混淆扫描分辨率和图像分辨率？</span></a>)</p></li>
 </ol>
 </div>
-</section>
-<section id="dpi">
-<span id="base-print-resolution-dpi"></span><h2><span class="section-number">1.3. </span>打印机的打印分辨率 → dpi<a class="headerlink" href="#dpi" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="dpi">
+<span id="base-print-resolution-dpi"></span><h2><span class="section-number">1.3. </span>打印机的打印分辨率 → dpi<a class="headerlink" href="#dpi" title="永久链接至标题"></a></h2>
 <p>打印机的分辨率(dpi)，可以简称打印机分辨率，也有人会称为打印机的打印分辨率。(图像的打印分辨率叫图像分辨率)</p>
 <p>关于打印机的打印分辨率(dpi)，有一件事需要弄清楚，就是打印机的打印分辨率(dpi)与图像的打印分辨率(ppi)是完全不同的两个东西，二者没有任何关联，各司其职。</p>
 <p>打印机的打印分辨率(dpi)，英文是dots per inch，中文是点每英寸，即纸张每一英寸长度上可打印的墨点的数量。</p>
@@ -253,9 +247,9 @@
 <li><p>丝网印刷也不适合上述原理。</p></li>
 </ol>
 </div></blockquote>
-</section>
-<section id="id6">
-<h2><span class="section-number">1.4. </span>显示器分辨率<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id6">
+<h2><span class="section-number">1.4. </span>显示器分辨率<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
 <p>我们买电脑液晶显示器时，都会关注显示器的分辨率，比如常用的27寸显示器，常见分辨率是1920x1080。这里的1920x1080其实可以理解为屏幕上发光点的数量：横向一共有1920个发光点，纵向有1080个发光点。</p>
 <p>每一个发光点都是由三个原色液晶单元构成：RGB；这与图像由像素构成非常相似。</p>
 <p>手机等移动设备流行起来以后，大家更多看到手机厂商会在手机参数上标明手机屏幕的分辨率，比如锤子手机Smartisan T1 4.95英寸的显示屏，分辨率为1920×1080像素，显示精度为445PPI，这表示手机直立后，水平方向有1080个发光点，垂直方向有1920个发光点；屏幕发光点的密度为一英寸长度上有445个发光点。</p>
@@ -268,9 +262,9 @@
 <p>所以，假设两个电脑显示器的尺寸都是27英寸，如果最大分辨率不一样，通常是因为点距不一样导致的。27英寸屏幕，点距越小，屏幕上的发光点就越多，屏幕分辨率就越高。</p>
 <p>点距越小，制造精度的要求越高，显示画面时给人的感觉就越“精细”。</p>
 <p>其它显示器，比如平板电脑屏幕，或者电子书屏幕，分辨率原理与电脑显示器和手机屏幕基本相同。</p>
-</section>
-<section id="id7">
-<h2><span class="section-number">1.5. </span>手机摄像头分辨率<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id7">
+<h2><span class="section-number">1.5. </span>手机摄像头分辨率<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
 <p>现在的手机都有一个参数，叫摄像头分辨率，比如2600万像素摄像头，或者1亿像素摄像头，这个应该怎么理解？</p>
 <p>2600万像素的摄像头，是指摄像头的感光元件CMOS曝光一次可以记录的像素数量，即CMOS上排列的感光点总数为2600万。</p>
 <p>我们以照片为例，假设照片是1920x1080像素，那么此照片的像素总数为1920x1080=2073600，约等于207万像素，可以大概说成是210万像素。</p>
@@ -280,9 +274,9 @@
 <p>事实上，因为每一个感光点都是由三个基本感光单元组成，所以，此CMOS上一共有6240x4160x3≈7800万个基本感光单元。所有这些基本感光单元本质上都是完全相同的元件，只不过被设定了三分之一用来负责红色，三分之一用来负责绿色，还有三分之一用来负责蓝色。(比如使用三种滤色片)</p>
 <p>回头再看分辨率。摄像头CMOS的规格是2600万像素，换算成基本感光单元，此CMOS的规格应该是7800万个基本感光单元。但用7800万dpi来描述太技术化，因为大多数用户并不关心这个技术细节，而更关心照出来的照片有多少像素，所以，用“2600万像素”来描述手机摄像头更容易被多数消费者理解。</p>
 <p>数码相机，包括单反相机、无反相机，其感光元件原理与手机摄像头相同；其它数字成像设备，比如监控摄像头等，也是相同原理。</p>
-</section>
-<section id="id8">
-<h2><span class="section-number">1.6. </span>扫描分辨率 → dpi<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id8">
+<h2><span class="section-number">1.6. </span>扫描分辨率 → dpi<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
 <p>扫描分辨率也叫扫描精度，与打印机分辨率类似，都是dpi。</p>
 <p>扫描仪在扫描图像时，一英寸长度上采集的点的数量，称为扫描分辨率。</p>
 <p>早期，比如2000年以前，那时候还没有数码相机，手机也不能照相。照片进入电脑的唯一办法就是扫描，而扫描时可以设置扫描精度，也就是扫描分辨率，通常是dpi，比如把照片扫描成300dpi。然后，如果用来印刷，印前设计部门就会说，使用的照片分辨率为300dpi，这里的300dpi就是指扫描精度，或者扫描分辨率，而不是图像分辨率(ppi)。换句话说，印刷时谈到的图像最低分辨率300dpi，是指图像最低扫描分辨率为300dpi，而不是图像文件的分辨率是300dpi。原因在于，图像文件一旦成为电子文件，就只有ppi这个分辨率参数，没有dpi参数。</p>
@@ -322,13 +316,13 @@
 <p>例如，扫描仪的光学分辨率是300dpi，插值分辨率是600dpi。这表示扫描仪硬件的能力最大就是300dpi，或者说，硬件在一英寸长度上最多只能记录300个点。而得到这300个点的数据以后，扫描仪内置的软件会根据这300个点来计算出另外300个点。最简单的算法是在两个相邻的点的中间插入一个点，其数据是相邻两个点的数据相加再除以2，得到的数据其实是相邻两个原始点的平均值。通过这样的方法，在原始的300个扫描点中增加另外300个计算点，使其分辨率由300dpi变成600dpi。</p>
 <p>需要说明的是，扫描仪用插值分辨率扫描得到的数字图像多数时候效果是不好的，因为那些通过计算插入的点并不是真实的来自于原稿的数据，所以与原稿质量相差很大，关键时候可能会导致非常不好的结果。</p>
 <p>早期的时候，很多扫描仪厂商，包括数码相机厂商和手机厂商都用过此类方法进行营销，不过在其说明书的参数页通常会看到有标明“光学”和“插值”的字样(扫描仪、数码相机、手机摄像头中的感光元件非常相似，所以都可以用软件进行插值计算)。而且，插值分辨率有时会搞得很夸张，比如一款扫描仪的光学分辨率是300dpi，而其插值分辨率可以达到2400dpi。对于厂家来说，插值分辨率可能基本上没什么成本，成本主要在于扫描仪中的CCD或者CIS感光元件。</p>
-</section>
-<section id="lpi">
-<h2><span class="section-number">1.7. </span>印刷分辨率 → lpi<a class="headerlink" href="#lpi" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="lpi">
+<h2><span class="section-number">1.7. </span>印刷分辨率 → lpi<a class="headerlink" href="#lpi" title="永久链接至标题"></a></h2>
 <p>传统印刷主要是使用网点来呈现图像，所以，印刷分辨率(lpi)主要是用来描述网点的，比如一英寸的长度上有多少个网点。150 lpi是150线每英寸，也表示150个网点每英寸，即一英寸长度上有150个网点。</p>
 <blockquote>
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp17.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp17.svg" width="22" /></a> 驿窗注：</p>
 <p>这里有一点需要注意，就是一英寸长度上<span class="dash6">网点</span>的数量和一英寸长度上<span class="dash6">点</span>的数量不是一回事。后者的单位其实就是dpi，而前者，或者说印刷分辨率，单位是lpi。lpi英文是line per inch，中文是线每英寸。</p>
 </div>
 </div></blockquote>
@@ -345,7 +339,7 @@
 <p>150 lpi加网的印刷效果，其品质已经比较好了，很多彩色期刊都是使用150 lpi挂网。而对于300dpi或者600dpi的激光打印机，其打印效果可能还不如传统150 lpi的印刷效果。仅仅从数字上对比，600dpi不如150 lpi，这是为什么呢？</p>
 <blockquote>
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp17.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp17.svg" width="22" /></a> 驿窗注：</p>
 <p>请注意，上面这段文字中有的地方是<span class="dash2">dpi</span>，有的地方是<span class="dash2">lpi</span>。</p>
 </div>
 </div></blockquote>
@@ -369,9 +363,9 @@
 <blockquote>
 <div><p>在gimp中从左图用滤镜制作：滤镜→扭曲→报纸；图案：圆形；周期：12；角度：90；其它参数保持默认。</p>
 </div></blockquote>
-</section>
-<section id="id9">
-<h2><span class="section-number">1.8. </span>应用<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id9">
+<h2><span class="section-number">1.8. </span>应用<a class="headerlink" href="#id9" title="永久链接至标题"></a></h2>
 <p>了解了上面这些分辨率相关知识，怎么用？或者什么地方用得上？</p>
 <p>这需要举个例子。</p>
 <p>首选要明确，图像分辨率(ppi)是用来确定打印尺寸的，与屏幕显示无关。</p>
@@ -382,35 +376,31 @@
 <p>所以，如果在办公软件中碰到图片尺寸不匹配的问题时，可以考虑用gimp来调整图像的分辨率(ppi)，实现在质量最佳的前提下对图片打印尺寸的精确调整。(这里没推荐photoshop是因为gimp是开源软件，不限制使用，不用担心版权)</p>
 <p>调整时不一定非要从分辨率(ppi)下手，因为gimp会自动换算分辨率与打印尺寸，所以，可以直接从打印尺寸下手。操作方法如下：</p>
 <p>在gimp中点击菜单 图像→打印大小，会打开下面窗口：</p>
-<figure class="align-center" id="id13">
-<img alt="../../_images/9printsize.png" src="../../_images/9printsize.png" />
-<figcaption>
-<p><span class="caption-text">图像→打印大小 对话框</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<div class="figure align-center" id="id13">
+<img alt="../../_images/9printsize1.png" src="../../_images/9printsize1.png" />
+<p class="caption"><span class="caption-text">图像→打印大小 对话框</span><a class="headerlink" href="#id13" title="永久链接至图片"></a></p>
+</div>
 <p>在这个对话框中，直接修改宽度和高度，分辨率会自动随之变化。注意宽度和高度后面的单位是mm，别搞错了。精确设置好尺寸之后，记得要把图片导出为PNG：点击菜单 文件→导出为，弹出下面的窗口</p>
-<figure class="align-center" id="id14">
-<img alt="../../_images/09exportas.png" src="../../_images/09exportas.png" />
-<figcaption>
-<p><span class="caption-text">文件→导出为 对话框</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<div class="figure align-center" id="id14">
+<img alt="../../_images/09exportas1.png" src="../../_images/09exportas1.png" />
+<p class="caption"><span class="caption-text">文件→导出为 对话框</span><a class="headerlink" href="#id14" title="永久链接至图片"></a></p>
+</div>
 <p>这个对话框中，有一项“Save resolution”一定要勾选，表示在图像中保存分辨率信息(ppi)。带有分辨率信息的图像再放到办公软件中或其它排版软件中以后，办公软件或其它排版软件会自动识别到分辨率信息，然后按分辨率信息来“换算”为对应的打印尺寸。</p>
 <p>没错，是换算。图像本身可以保存分辨率信息，但不能保存打印尺寸信息。所以，办公软件会根据图像自身的ppi信息来换算图像的打印尺寸并在页面上应用。</p>
 <p>这样，就完美解决了办公软件中图像的尺寸与页面尺寸匹配的问题。</p>
 <p>所有排版类软件，比如Word、WPS、InDesign、QuarkXPress、LibreOffice Writer等等，甚至包括矢量图软件都可以使用这个方法。</p>
 <p>同理，如果想在电脑屏幕上查看图像的打印尺寸，或者设置图像的打印尺寸，使用相同的方法在gimp中查看或修改菜单 图像→打印大小 即可，导出时记得要勾选“Save resolution”。</p>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗提示：</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp17.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp17.svg" width="22" /></a> 驿窗提示：</p>
 <p>导出文件时，如果是导出jpg格式，那么gimp不会显示分辨率选项。</p>
 <p>事实是，如果在gimp中已经设置了分辨率信息，那么在导出为jpg格式的时候，jpg图像会自动保存分辨率信息，不需要再单独勾选。</p>
 </div>
 <hr class="docutils" />
 <blockquote>
 <div></div></blockquote>
-</section>
-<section id="id10">
-<h2><span class="section-number">1.9. </span>深入思考<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id10">
+<h2><span class="section-number">1.9. </span>深入思考<a class="headerlink" href="#id10" title="永久链接至标题"></a></h2>
 <p>上面把分辨率相关的各个概念基本都进行了说明，接下来，如果有兴趣的话，您可以尝试分析下面的问题，看看能不能找到比较严谨的答案～</p>
 <dl class="simple">
 <dt><strong>提问1：</strong></dt><dd><p>在印刷行业，通常会要求图片文件的分辨率不能低于某个最低值，比如不能低于300ppi，或者不能低于200ppi。<span class="dash2">有一点请了解，就是这个最低值并不是经验值，而是计算值，即它是计算出来的</span>。请尝试根据分辨率/网点原理来计算推导这个数值。</p>
@@ -420,12 +410,12 @@
 </dl>
 <p>提示：上面两个问题本质上是相同的。完全不了解印刷的话，很难得出完美答案。</p>
 <p><em>以下内容为2024-06-21补充：</em></p>
-</section>
-<section id="dpippi">
-<h2><span class="section-number">1.10. </span>补充知识：DPI与PPI的例子<a class="headerlink" href="#dpippi" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="dpippi">
+<h2><span class="section-number">1.10. </span>补充知识：DPI与PPI的例子<a class="headerlink" href="#dpippi" title="永久链接至标题"></a></h2>
 <p>点是点，像素是像素，二者没有任何联系，二者是互相独立存在的，不存在谁影响了谁的说法。(即dot和pixel没有任何关系)</p>
-<section id="id11">
-<h3><span class="section-number">1.10.1. </span>一个像素<span class="dash6">看似等同于</span>一个点<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<div class="section" id="id11">
+<h3><span class="section-number">1.10.1. </span>一个像素<span class="dash6">看似等同于</span>一个点<a class="headerlink" href="#id11" title="永久链接至标题"></a></h3>
 <p>这是容易导致大家混淆的一种情况，请看下面的阐述。</p>
 <p>一个600x300像素的图像文件，分辨率为300PPI，用激光打印机打印在纸上，激光打印机的精度为300<span class="dash6">DPI</span>。</p>
 <p>打印输出的结果是，纸张上的图像横向尺寸为2英寸，这2英寸内容由600个像素组成。图像纵向尺寸为1英寸，这1英寸内容由300个像素组成。</p>
@@ -434,9 +424,9 @@
 <p>总结：
 纸张上的图像在水平方向上有600个像素，打印机用600个墨粉点呈现这600个像素；在垂直方向上有300个像素，打印机用300个墨粉点呈现这300个像素。</p>
 <p>在这里，像素和墨粉点相互是一一对应的，结果就是<span class="dash6">一个墨粉点呈现了一个像素</span>，这导致经常会有人说”一个点就是一个像素”。<span class="dash6">这个说法是错误的</span>。</p>
-</section>
-<section id="id12">
-<h3><span class="section-number">1.10.2. </span>一个像素<span class="dash6">不等同</span>于一个点<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id12">
+<h3><span class="section-number">1.10.2. </span>一个像素<span class="dash6">不等同</span>于一个点<a class="headerlink" href="#id12" title="永久链接至标题"></a></h3>
 <p>同一个图像文件，同一台激光打印机，在打印之前，我们把图像的分辨率从300PPI改为600PPI。然后把图像打印到纸上，看看有什么变化。</p>
 <p>(注意，现在图像文件是600x300像素, 分辨率是600PPI，打印机精度是300DPI。)</p>
 <p>因为图像的的分辨率是600PPI，所以，打印到纸上的图像，横向尺寸是1英寸(600pixels/600PPI=1英寸)，纵向尺寸是0.5英寸(300pixels/600PPI=0.5英寸)。</p>
@@ -453,9 +443,9 @@
 <p>当然，如果图像文件不是用于打印或印刷，只用于屏幕显示，那么就完全不用管DPI，甚至也基本不需要管PPI，因为PPI的目的就是转换打印尺寸，而不是显示尺寸。</p>
 <p>有人提到手机屏幕分辨率比电脑屏幕分辨率要高，会导致图像显示尺寸发生变化。这个问题与图像无关，原因是，不同屏幕间图像显示尺寸的变化，应该不仅仅是图像变化，而是任何内容显示尺寸都会发生变化，所以。对于不同屏幕之间的差异问题，比如智能手表屏幕与电脑屏幕及手机屏幕，问题不应该从图像层面寻找解决方案，而应该从更底层的显示驱动及控制层面处理。底层解决了，上层的图像自然也随之解决。</p>
 <p><em>最后一次编辑：2024-06-24</em></p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
@@ -468,7 +458,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

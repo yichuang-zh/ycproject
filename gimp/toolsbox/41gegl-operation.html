@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GEGL操作 GEGL Operation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>GEGL操作 GEGL Operation</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -96,21 +90,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="gegl-gegl-operation">
-<span id="gimp-tool-gegl-operation"></span><h1>GEGL操作 <em>GEGL Operation</em><a class="headerlink" href="#gegl-gegl-operation" title="Link to this heading"></a></h1>
+  <div class="section" id="gegl-gegl-operation">
+<span id="gimp-tool-gegl-operation"></span><h1>GEGL操作 <em>GEGL Operation</em><a class="headerlink" href="#gegl-gegl-operation" title="永久链接至标题"></a></h1>
 <p>无快捷键。</p>
-<figure class="align-center" id="id2">
+<div class="figure align-center" id="id2">
 <img alt="../../_images/41gegl-operation.png" src="../../_images/41gegl-operation.png" />
-<figcaption>
-<p><span class="caption-text">GEGL操作工具</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">GEGL操作工具</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
+</div>
 <p>GEGL(Generic Graphical Library)是一个基于图形的图像处理库，用于处理GIMP中需要的各种图像处理任务。大多数GEGL操作在GIMP中都有自己的菜单命令。其中大部分是颜色菜单和滤镜菜单中的命令。GEGL可以为各种图像处理软件提供浮点处理和无损图像处理功能。使用GEGL的图像处理软件包括GIMP、imgflo、GNOME Photos、gcut、iconographer等。</p>
 <p>GIMP与GEGL的关系，类似汽车与发动机的关系，实际上要更紧密。</p>
 <p>不过，也有一些GEGL操作没有自己的命令。这可能是因为该操作不够重要，也可能是因为该操作仍处于试验阶段。</p>
 <p>添加GEGL操作工具( <a class="reference internal" href="../../_images/gimp-gegl.svg"><img alt="gimp-gegl-icon" class="align-middle" height="20" src="../../_images/gimp-gegl.svg" width="20" /></a> )就是为了让您可以使用这些无法以其他方式使用的操作。您可以对图像进行GEGL操作，并在预览操作结果。第三方开发人员制作的新GEGL操作也会在此对话框中显示。</p>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../../_images/avatarp11.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp11.svg" width="22" /></a> 驿窗注：</p>
 <p>最近几年GIMP版本更新比较慢，有一个重要原因是GIMP的开发团队正在逐步把程序核心移植到<a class="reference external" href="https://www.gegl.org">GEGL</a>。移植工作大概从2011年开始，目标是核心代码100%移植到GEGL。</p>
 </div>
 <p>您可以从菜单 工具→GEGL操作 打开GEGL操作工具。</p>
@@ -128,15 +120,15 @@
 <p>显示分割线时，鼠标左键点住分割线不松手并拖动鼠标，可以移动分割线的位置。如果按Ctrl键并鼠标左键点击分割线，可以切换分割线的方向。</p>
 </li>
 </ol>
-<section id="id1">
-<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="section" id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
 <ol class="arabic simple">
 <li><p>位样平均：拾取一个正方形的范围，最终拾取颜色是正方形范围内所有颜色的平均值。<span class="dash6">半径</span>用来调整正方形的大小。</p></li>
 <li><p>位样合并：勾选后会拾取所有可见图层的颜色，不勾选则只拾取当前活动图层的颜色。</p></li>
 </ol>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -149,7 +141,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

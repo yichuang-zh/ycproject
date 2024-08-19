@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→自动 Auto</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>颜色→自动 Auto</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/translations.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -97,48 +91,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="auto">
-<span id="gimp-menu-7color-14auto"></span><h1>颜色→自动 <em>Auto</em><a class="headerlink" href="#auto" title="Link to this heading"></a></h1>
+  <div class="section" id="auto">
+<span id="gimp-menu-7color-14auto"></span><h1>颜色→自动 <em>Auto</em><a class="headerlink" href="#auto" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>这个子菜单中主要是自动调整颜色分布的命令。</p>
 <p>这些命令可以拉伸颜色通道的直方图的列：把亮像素向右拉，把暗像素向左拉，从而使亮像素更亮，暗像素更暗，结果是增强对比度。</p>
 <p>如果三个颜色通道平均拉伸，则色相{Hue}不会变化；如果三个通道分别拉伸，则色相会发生变化。</p>
-<section id="equalize">
-<h2>色相均化 <em>Equalize</em><a class="headerlink" href="#equalize" title="Link to this heading"></a></h2>
+<div class="section" id="equalize">
+<h2>色相均化 <em>Equalize</em><a class="headerlink" href="#equalize" title="永久链接至标题"></a></h2>
 <p>此命令会自动调整整个活动层的颜色亮度{brightness}，使明度{Value}通道的直方图尽可能的平坦，也就是说，每个可能的亮度值{brightness value}的像素数量与其他亮度值的像素数量差不多。</p>
 <p>有时，此命令可以很好地增强图像的对比度，使之前很难看到的细节得以显现。</p>
-</section>
-<section id="white-balance">
-<h2>白平衡 <em>White Balance</em><a class="headerlink" href="#white-balance" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="white-balance">
+<h2>白平衡 <em>White Balance</em><a class="headerlink" href="#white-balance" title="永久链接至标题"></a></h2>
 <p>此命令分别拉伸红色、绿色、蓝色通道，以自动校正白平衡。</p>
 <p>为此，它会丢弃红色、绿色、蓝色直方图各端的像素颜色(这些像素颜色仅由图像中极少(0.05％)的像素使用)，然后尽可能地扩展其余范围。</p>
 <p>结果是，与 拉伸对比度 相比，在直方图的外部边缘很少出现的像素颜色(可能是灰尘等)不会负面影响用于拉伸直方图的最小值和最大值，但可能会发生色相{Hue}变化。</p>
 <p>此命令对RGB模式图像有效，如果图像是灰度或索引模式，则此命令会显示为灰色不可用。</p>
-</section>
-<section id="stretch-contrast">
-<h2>拉伸对比度 <em>Stretch Contrast</em><a class="headerlink" href="#stretch-contrast" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="stretch-contrast">
+<h2>拉伸对比度 <em>Stretch Contrast</em><a class="headerlink" href="#stretch-contrast" title="永久链接至标题"></a></h2>
 <p>此命令自动拉伸直方图值{histogram values}。</p>
 <p>对于活动图层的每一个通道，它都会找到最小值和最大值，并使用它们将红、绿、蓝直方图拉伸到整个对比度范围。亮色变得更亮，暗色变得更暗，从而增加对比度。</p>
 <p>因为此命令不拒绝任何非常暗或非常亮的像素，因此可能会导致白色不纯。</p>
-</section>
-<section id="hsv-stretch-contrast-hsv">
-<h2>拉伸对比度HSV <em>Stretch Contrast HSV</em><a class="headerlink" href="#hsv-stretch-contrast-hsv" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="hsv-stretch-contrast-hsv">
+<h2>拉伸对比度HSV <em>Stretch Contrast HSV</em><a class="headerlink" href="#hsv-stretch-contrast-hsv" title="永久链接至标题"></a></h2>
 <p>此命令与 拉伸对比度 命令相同，区别是，此命令使用HSV空间(可保留色相)，而 拉伸对比度 命令使用RGB空间。</p>
 <p>此命令会分别拉伸色相、饱和度和明度{Hue、Saturation和Value}分量的范围。</p>
-</section>
-<section id="color-enhance">
-<h2>色彩增强 <em>Color Enhance</em><a class="headerlink" href="#color-enhance" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="color-enhance">
+<h2>色彩增强 <em>Color Enhance</em><a class="headerlink" href="#color-enhance" title="永久链接至标题"></a></h2>
 <p>此命令适用于RGB模式和索引模式。 如果模式为灰度，则此命令会显示为灰色不可用。</p>
-</section>
-<section id="legacy-color-enhance-legacy">
-<h2>色彩增强(legacy) <em>Color Enhance (legacy)</em><a class="headerlink" href="#legacy-color-enhance-legacy" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="legacy-color-enhance-legacy">
+<h2>色彩增强(legacy) <em>Color Enhance (legacy)</em><a class="headerlink" href="#legacy-color-enhance-legacy" title="永久链接至标题"></a></h2>
 <p>此命令可增加颜色的饱和度范围，而不会更改亮度或色相{brightness 或 hue}。</p>
 <p>此命令把颜色转换为HSV空间，测量整个图像的饱和度值范围，然后将该范围扩大到尽可能大，最后再将颜色转换回RGB。</p>
 <p>此命令在HSV颜色空间中工作(可保留色相)。</p>
 <p>此命令适用于RGB模式和索引模式。 如果模式为灰度，则此命令会显示为灰色不可用。</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -151,7 +145,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>系统急救</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>系统急救</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,12 +89,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="emergency">
-<span id="id1"></span><h1>系统急救<a class="headerlink" href="#emergency" title="Link to this heading"></a></h1>
+  <div class="section" id="emergency">
+<span id="id1"></span><h1>系统急救<a class="headerlink" href="#emergency" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="admonition-y-liveu admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注： <strong>常备Live启动U盘</strong></p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注： <strong>常备Live启动U盘</strong></p>
 <p>在电脑边常备一个Debian Live启动U盘，可以在Linux系统出故障的时候，用U盘引导电脑，然后把重要数据拷贝出来备份，之后可以用U盘中的各种工具对系统进行修复，甚至可以通过网络安装其它系统救援工具。</p>
 <p>Debian Live启动U盘不仅可以用来体验Debian，它作为应急启动工具也非常实用，请使用Linux系统的用户一定在电脑边常备，以应对突发状况。</p>
 </div>
@@ -114,8 +108,8 @@
 <li><p>忘记密码导致无法登录</p></li>
 <li><p>备份整个系统</p></li>
 </ol>
-<section id="id2">
-<h2>1. 安全的两个大方向<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>1. 安全的两个大方向<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>我们讨论安全，无非就是保密和防止丢失两大类。</p>
 <dl>
 <dt>保密：</dt><dd><p>如果有些数据需要保密，在成果完成之前不想让任何人看到，那么应该重点考虑<span class="dash2">数据加密</span>。如果能够做到加密后的数据只能自己才能解密，那么保密完全没有问题。</p>
@@ -126,9 +120,9 @@
 <dt>丢失：</dt><dd><p>加密的数据也可能丢失，比如不小心误删除，硬盘损坏或者被盗等。应对丢失这种情况，应该重点考虑下面讨论的<span class="dash2">备份策略</span>。</p>
 </dd>
 </dl>
-</section>
-<section id="id3">
-<h2>2. 平时工作时的备份策略<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>2. 平时工作时的备份策略<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>第一，平时电脑数据备份，应该是从一块硬盘备份到另一块硬盘：两块硬盘同时损坏的机率远远小于一块硬盘损坏的机率。</p>
 <p>第二，可以考虑建立本地私有云备份功能，比如用NAS+Nextcloud来创建私人云盘。如果不得不使用商用云存储，那么务必在上传数据前，对必要的数据进行加密处理。</p>
 <p>所以，您的电脑应该配备双硬盘，这有点类似于<span class="dash6">不要把所有鸡蛋放在一个篮子里</span>。</p>
@@ -139,78 +133,78 @@
 <p><span class="dash6">手动备份</span>，就是人工手动操作备份工具进行备份。</p>
 <p>之所以需要自动+手动两种方式，与用户的需求有关。常规情况下，自动备份到指定的自动备份目录可以满足99%的备份需求，但为灵活起见，临时手动操作备份数据到另一个专门的手动备份目录，也能满足部分特殊需求。两种方式的脚本在命令上没有大的区别，主要区别是备份目录不同。</p>
 </div></blockquote>
-</section>
-<section id="rsync">
-<h2>3. 数据备份工具rsync及操作方法<a class="headerlink" href="#rsync" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="rsync">
+<h2>3. 数据备份工具rsync及操作方法<a class="headerlink" href="#rsync" title="永久链接至标题"></a></h2>
 <p>rsync是linux平台非常有名的备份工具，且经常被用于生产环境，这里我们仅介绍一下简单的手动备份方法：</p>
-<section id="id4">
-<h3>3.1 安装rsync<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<div class="section" id="id4">
+<h3>3.1 安装rsync<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
 <p>先检查一下看系统中是否存在rsync命令:</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rsync<span class="w"> </span>--version
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rsync --version
 </pre></div>
 </div>
 </div></blockquote>
 <p>如果输出类似下面的信息则表明系统中已经存在rsync，直接使用即可：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peter@Debian12:~<span class="w"> </span>$<span class="w"> </span>rsync<span class="w"> </span>--version
-rsync<span class="w">  </span>version<span class="w"> </span><span class="m">3</span>.2.7<span class="w">  </span>protocol<span class="w"> </span>version<span class="w"> </span><span class="m">31</span>
-Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">1996</span>-2022<span class="w"> </span>by<span class="w"> </span>Andrew<span class="w"> </span>Tridgell,<span class="w"> </span>Wayne<span class="w"> </span>Davison,<span class="w"> </span>and<span class="w"> </span>others.
-Web<span class="w"> </span>site:<span class="w"> </span>https://rsync.samba.org/
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peter@Debian12:~ $ rsync --version
+rsync  version <span class="m">3</span>.2.7  protocol version <span class="m">31</span>
+Copyright <span class="o">(</span>C<span class="o">)</span> <span class="m">1996</span>-2022 by Andrew Tridgell, Wayne Davison, and others.
+Web site: https://rsync.samba.org/
 Capabilities:
-<span class="w">    </span><span class="m">64</span>-bit<span class="w"> </span>files,<span class="w"> </span><span class="m">64</span>-bit<span class="w"> </span>inums,<span class="w"> </span><span class="m">64</span>-bit<span class="w"> </span>timestamps,<span class="w"> </span><span class="m">64</span>-bit<span class="w"> </span>long<span class="w"> </span>ints,<span class="w"> </span>socketpairs,<span class="w"> </span>symlinks,<span class="w"> </span>symtimes,<span class="w"> </span>hardlinks,<span class="w"> </span>hardlink-specials,<span class="w"> </span>hardlink-symlinks,<span class="w"> </span>IPv6,<span class="w"> </span>atimes,<span class="w"> </span>batchfiles,<span class="w"> </span>inplace,<span class="w"> </span>append,<span class="w"> </span>ACLs,<span class="w"> </span>xattrs,<span class="w"> </span>optional<span class="w"> </span>secluded-args,<span class="w"> </span>iconv,<span class="w"> </span>prealloc,<span class="w"> </span>stop-at,<span class="w"> </span>no<span class="w"> </span>crtimes
+    <span class="m">64</span>-bit files, <span class="m">64</span>-bit inums, <span class="m">64</span>-bit timestamps, <span class="m">64</span>-bit long ints, socketpairs, symlinks, symtimes, hardlinks, hardlink-specials, hardlink-symlinks, IPv6, atimes, batchfiles, inplace, append, ACLs, xattrs, optional secluded-args, iconv, prealloc, stop-at, no crtimes
 Optimizations:
-<span class="w">    </span>no<span class="w"> </span>SIMD-roll,<span class="w"> </span>no<span class="w"> </span>asm-roll,<span class="w"> </span>openssl-crypto,<span class="w"> </span>no<span class="w"> </span>asm-MD5
-Checksum<span class="w"> </span>list:
-<span class="w">    </span>xxh128<span class="w"> </span>xxh3<span class="w"> </span>xxh64<span class="w"> </span><span class="o">(</span>xxhash<span class="o">)</span><span class="w"> </span>md5<span class="w"> </span>md4<span class="w"> </span>sha1<span class="w"> </span>none
-Compress<span class="w"> </span>list:
-<span class="w">    </span>zstd<span class="w"> </span>lz4<span class="w"> </span>zlibx<span class="w"> </span>zlib<span class="w"> </span>none
-Daemon<span class="w"> </span>auth<span class="w"> </span>list:
-<span class="w">    </span>sha512<span class="w"> </span>sha256<span class="w"> </span>sha1<span class="w"> </span>md5<span class="w"> </span>md4
+    no SIMD-roll, no asm-roll, openssl-crypto, no asm-MD5
+Checksum list:
+    xxh128 xxh3 xxh64 <span class="o">(</span>xxhash<span class="o">)</span> md5 md4 sha1 none
+Compress list:
+    zstd lz4 zlibx zlib none
+Daemon auth list:
+    sha512 sha256 sha1 md5 md4
 
-rsync<span class="w"> </span>comes<span class="w"> </span>with<span class="w"> </span>ABSOLUTELY<span class="w"> </span>NO<span class="w"> </span>WARRANTY.<span class="w">  </span>This<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software,<span class="w"> </span>and<span class="w"> </span>you<span class="w"> </span>are<span class="w"> </span>welcome<span class="w"> </span>to<span class="w"> </span>redistribute<span class="w"> </span>it<span class="w"> </span>under<span class="w"> </span>certain<span class="w"> </span>conditions.<span class="w">  </span>See<span class="w"> </span>the<span class="w"> </span>GNU<span class="w"> </span>General<span class="w"> </span>Public<span class="w"> </span>Licence<span class="w"> </span><span class="k">for</span><span class="w"> </span>details.
+rsync comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are welcome to redistribute it under certain conditions.  See the GNU General Public Licence <span class="k">for</span> details.
 </pre></div>
 </div>
 </div></blockquote>
 <p>否则，您需要使用下面的命令安装rsync：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>rsync
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt update
+sudo apt install rsync
 </pre></div>
 </div>
 </div></blockquote>
-</section>
-<section id="id5">
-<h3>3.2 手动备份<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id5">
+<h3>3.2 手动备份<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
 <p>假设重要数据在/home/peter/data/目录中，您希望对整个data目录进行备份，备份的位置是另一个硬盘/media/peter/backup/data/ :</p>
 <p>手动备份，您需要使用下面的命令：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rsync<span class="w"> </span>-avcP<span class="w"> </span>--delete<span class="w"> </span>/home/peter/data/<span class="w"> </span>/media/peter/rootfs/home/peter/data/
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rsync -avcP --delete /home/peter/data/ /media/peter/rootfs/home/peter/data/
 </pre></div>
 </div>
 </div></blockquote>
 <p>命令运行成功后，您可以在文件管理器中鼠标右键点击data文件夹&gt;属性，检查一下两个目录大小，尤其是字节数，字节数应该完全一致。一致表示两个目录完全一样，备份成功；否则表示备份失败，需要检查原因。</p>
-</section>
-<section id="id6">
-<h3>3.3 自动备份<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id6">
+<h3>3.3 自动备份<a class="headerlink" href="#id6" title="永久链接至标题"></a></h3>
 <p>自动备份除了使用rsync，还会用到debian系统的cron服务，可以先检查一下cron服务是否存在：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>crontab<span class="w"> </span>-l
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>crontab -l
 </pre></div>
 </div>
 </div></blockquote>
 <p>如果提示类似下面的信息，就表示cron服务已经运行，可以直接使用：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peter@debian12:~/data<span class="w"> </span>$<span class="w"> </span>crontab<span class="w"> </span>-l
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peter@debian12:~/data $ crontab -l
 
-no<span class="w"> </span>crontab<span class="w"> </span><span class="k">for</span><span class="w"> </span>peter
+no crontab <span class="k">for</span> peter
 </pre></div>
 </div>
 </div></blockquote>
 <p>否则，您需要按下面的命令安装cron：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cron
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt update
+sudo apt install cron
 </pre></div>
 </div>
 </div></blockquote>
@@ -218,30 +212,30 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/bash</span>
 
-rsync<span class="w"> </span>-acP<span class="w"> </span>--delete<span class="w"> </span>/home/peter/data/<span class="w"> </span>/media/peter/rootfs/home/peter/data/
+rsync -acP --delete /home/peter/data/ /media/peter/rootfs/home/peter/data/
 </pre></div>
 </div>
 </div></blockquote>
 <p>上面这个文件其实是把手动备份命令放到backmydata这个脚本文件里，之后让系统定期执行这个脚本文件就可以了，等同于定期执行脚本文件中的备份命令。</p>
 <p>接下来运行crontab命令，设置自动备份命令执行的时间：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peter@debian12:~/data<span class="w"> </span>$<span class="w"> </span>crontab<span class="w"> </span>-e
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>peter@debian12:~/data $ crontab -e
 </pre></div>
 </div>
 </div></blockquote>
 <p>首次运行crontab -e命令会提示下面的信息：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>no<span class="w"> </span>crontab<span class="w"> </span><span class="k">for</span><span class="w"> </span>peter<span class="w"> </span>-<span class="w"> </span>using<span class="w"> </span>an<span class="w"> </span>empty<span class="w"> </span>one
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>no crontab <span class="k">for</span> peter - using an empty one
 
-Select<span class="w"> </span>an<span class="w"> </span>editor.<span class="w">  </span>To<span class="w"> </span>change<span class="w"> </span>later,<span class="w"> </span>run<span class="w"> </span><span class="s1">&#39;select-editor&#39;</span>.
-<span class="w">  </span><span class="m">1</span>.<span class="w"> </span>/bin/nano<span class="w">        </span>&lt;----<span class="w"> </span>easiest
-<span class="w">  </span><span class="m">2</span>.<span class="w"> </span>/usr/bin/vim.tiny
+Select an editor.  To change later, run <span class="s1">&#39;select-editor&#39;</span>.
+  <span class="m">1</span>. /bin/nano        &lt;---- easiest
+  <span class="m">2</span>. /usr/bin/vim.tiny
 
-Choose<span class="w"> </span><span class="m">1</span>-2<span class="w"> </span><span class="o">[</span><span class="m">1</span><span class="o">]</span>:
+Choose <span class="m">1</span>-2 <span class="o">[</span><span class="m">1</span><span class="o">]</span>:
 </pre></div>
 </div>
 <div class="admonition-y-nano admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：nano编辑器的简单指南</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：nano编辑器的简单指南</p>
 <p>nano编辑器默认系统自带不需要安装，简单操作方法如下：</p>
 <ol class="arabic simple">
 <li><p>Ctrl+o：保存</p></li>
@@ -283,7 +277,7 @@ Choose<span class="w"> </span><span class="m">1</span>-2<span class="w"> </span>
 <p>在上面文件的最末尾，添加下面两行：</p>
 <blockquote>
 <div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">SHELL</span><span class="o">=</span>/usr/bin/bash
-<span class="m">0</span><span class="w"> </span><span class="m">12</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="nv">$HOME</span>/backmydata
+<span class="m">0</span> <span class="m">12</span> * * * <span class="nv">$HOME</span>/backmydata
 </pre></div>
 </div>
 </div></blockquote>
@@ -313,25 +307,25 @@ Choose<span class="w"> </span><span class="m">1</span>-2<span class="w"> </span>
 <span class="c1">#</span>
 <span class="c1"># m h  dom mon dow   command</span>
 <span class="nv">SHELL</span><span class="o">=</span>/usr/bin/bash
-<span class="m">0</span><span class="w"> </span><span class="m">12</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="nv">$HOME</span>/backmydata
+<span class="m">0</span> <span class="m">12</span> * * * <span class="nv">$HOME</span>/backmydata
 </pre></div>
 </div>
 </div></blockquote>
 <p>其中，<code class="docutils literal notranslate"><span class="pre">SHELL=/usr/bin/bash</span></code>表示执行终端命令， <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">12</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">$HOME/backmydata</span></code>表示每天的中午12点执行/home/peter/目录中的backmydata脚本。因为脚本中的命令就是备份，所以执行backmydata脚本等同于执行备份命令。</p>
-</section>
-</section>
-<section id="id7">
-<h2>4. 系统故障导致无法正常启动<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>4. 系统故障导致无法正常启动<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
 <p>在拯救系统之前，我们先要确保数据安全。所以，这时最有效的方法是使用有数据拷贝功能的启动U盘启动电脑，先把数据拷贝到安全的地方，然后再考虑如何拯救系统。</p>
 <p>启动U盘很简单，使用Debian-live的iso创建的U盘就可以，主要功能就是把电脑引导起来，然后进行进一步的操作，比如把重要的数据拷贝到移动硬盘、对系统进行修复等等。</p>
 <p>这要求您在平时就创建好一个Live启动U盘放在电脑边备用。实际上，驿窗强烈您平时准备一个Debian Live启动U盘，这样系统无论何时出任何状况，只要硬件没坏，您就可以用这个U盘把电脑引导起来，然后拷贝您的重要数据并尝试修复系统。</p>
-</section>
-<section id="id8">
-<h2>5. 忘记密码导致无法登录<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id8">
+<h2>5. 忘记密码导致无法登录<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
 <p>这个情况通常不需要重新安装系统，只需要重置密码就可以了，包括root密码也可以重置。</p>
-</section>
-<section id="id9">
-<h2>6. 备份整个系统<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id9">
+<h2>6. 备份整个系统<a class="headerlink" href="#id9" title="永久链接至标题"></a></h2>
 <p>之所以把备份整个系统放在最后，是因为对于多数人，尤其是对于新手来说，备份系统不如只备份重要数据。当系统有问题时，重装系统更适合。</p>
 <p>但当用户的Linux水平和经验以及应用有一定积累以后，备份整个系统的需求就显得更有意义一些。例如，当你的系统里有一些特殊设置，或者有一些复杂的设置，或者有比较多的应用。这种情况下，重装系统之后，需要花很多时间和精力来配置新装的系统，否则无法正常工作，这导致工作进度会被暂停，尤其对于需要快速进入工作状态的情况下，会显得很浪费时间。这个时候，整个系统的备份/还原功能就非常方便。</p>
 <p>接下来，我们介绍两种备份/还原整个系统的方法：</p>
@@ -345,8 +339,8 @@ Choose<span class="w"> </span><span class="m">1</span>-2<span class="w"> </span>
 <p>如果源硬盘是512GB，新硬盘是480GB，那么clonezilla工具失败的概率就非常大。这种情况下，就要考虑使用rsync命令，因为rsync命令不用考虑两个硬盘到底哪个大哪个小，只要空间容量足够存放数据即可。比如源硬盘，在系统中运行df -Th命令可以查看其大小和<span class="dash6">已用空间</span>，所有<span class="dash6">已用空间</span>的总和就是需要的新硬盘的容量。新硬盘容量只要大于这个已用空间数值就可以。</p>
 <p><em>未完稿……</em></p>
 <p><a href="#id10"><span class="problematic" id="id11">*</span></a>最近一次更新：2024-01-20</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -359,7 +353,7 @@ Choose<span class="w"> </span><span class="m">1</span>-2<span class="w"> </span>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

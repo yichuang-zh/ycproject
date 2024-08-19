@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>保存选中范围/载入选中范围</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="驿窗平面基础" href="../../ycp_gd_base/ycp_base.html" />
+    <link rel="prev" title="命令面板" href="01inkscape-cmd-palette.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
+          <li class="breadcrumb-item"><a href="../inkscape-unmenu.html">Inkscape非常规命令</a></li>
+      <li class="breadcrumb-item active">保存选中范围/载入选中范围</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="01inkscape-cmd-palette.html" class="btn btn-neutral float-left" title="命令面板" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../ycp_gd_base/ycp_base.html" class="btn btn-neutral float-right" title="驿窗平面基础" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="select-backup">
+<span id="id1"></span><h1>保存选中范围/载入选中范围<a class="headerlink" href="#select-backup" title="永久链接至标题"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>此功能无法通过菜单打开，需要使用快捷键打开。默认情况下，inkscape没有为此功能分配快捷键，您需要自行分配快捷键。</p>
+<p>此功能有三个命令，分别是：</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>保存当前选中范围</p></li>
+<li><p>载入保存的选中范围</p></li>
+<li><p>删除保存的选中范围</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="set-selection-backup">
+<h1>1. 保存当前选中范围 <em>Set selection backup</em><a class="headerlink" href="#set-selection-backup" title="永久链接至标题"></a></h1>
+<p>执行此命令后，当前已经选中的对象(包括节点)会被保存起来，等待以后再次使用。对于需要重复实现的复杂的选择操作，这个功能很实用。</p>
+<p>它有点类似剪贴板的功能，或者类似gimp中的<span class="dash6">选区保存到通道</span>或者<span class="dash6">选区保存到路径</span>功能，目的是在后面可以重新调取相同的选中范围。</p>
+<p>当前文档中只能保存一个选中范围；如果您多次执行此命令，则只有最后一个选中范围会被保存。</p>
+</div>
+<div class="section" id="restore-selection-backup">
+<h1>2. 载入保存的选中范围 <em>Restore selection backup</em><a class="headerlink" href="#restore-selection-backup" title="永久链接至标题"></a></h1>
+<p>执行此命令后，会把之前保存的选中范围调取出来，即把当前选中对象切换为之前保存的选中范围，对于复杂选择操作来说此命令相当迅速。</p>
+</div>
+<div class="section" id="empty-selection-backup">
+<h1>3. 删除保存的选中范围 <em>Empty selection backup</em><a class="headerlink" href="#empty-selection-backup" title="永久链接至标题"></a></h1>
+<p>删掉之前保存的选中范围，之后再执行<span class="dash6">载入保存的选中范围</span>命令会导致不选中任何对象。</p>
+</div>
+<div class="section" id="id2">
+<h1>4. 三个命令的快捷键如何设置<a class="headerlink" href="#id2" title="永久链接至标题"></a></h1>
+<p>默认没有分配快捷键，你需要自行指定快捷键：</p>
+<p>菜单 编辑 &gt; 界面 &gt; 快捷键，<span class="dash6">名称</span>列找到<span class="dash6">Select</span>并点击展开，向下滚动可以找到这三个命令。找到命令后，点击<span class="dash6">快捷键</span>列对应的位置，会显示<span class="dash6">新建快捷键…</span>，就可以设置快捷键了。</p>
+<p>三个命令都设置好快捷键以后，就可以在窗口中通过快捷键来操作复杂的选择操作。</p>
+<p><em>最近一次更新：2024-07-24</em></p>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="01inkscape-cmd-palette.html" class="btn btn-neutral float-left" title="命令面板" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../ycp_gd_base/ycp_base.html" class="btn btn-neutral float-right" title="驿窗平面基础" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗.</p>
+  </div>
+
+  
+<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

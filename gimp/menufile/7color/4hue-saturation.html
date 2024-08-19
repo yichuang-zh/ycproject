@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→色相-饱和度 Hue-Saturation</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>颜色→色相-饱和度 Hue-Saturation</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/translations.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -97,38 +91,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="hue-saturation">
-<span id="gimp-menu-7color-4hue-saturation"></span><h1>颜色→色相-饱和度 <em>Hue-Saturation</em><a class="headerlink" href="#hue-saturation" title="Link to this heading"></a></h1>
+  <div class="section" id="hue-saturation">
+<span id="gimp-menu-7color-4hue-saturation"></span><h1>颜色→色相-饱和度 <em>Hue-Saturation</em><a class="headerlink" href="#hue-saturation" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>此工具没有快捷键。</p>
 <p>此工具可以在所选区域或活动图层上根据多个颜色的权重来调整色相、饱和度和亮度水平。</p>
-<figure class="align-center" id="id6">
+<div class="figure align-center" id="id6">
 <img alt="../../../_images/4huesaturation.png" src="../../../_images/4huesaturation.png" />
-<figcaption>
-<p><span class="caption-text">颜色→色相-饱和度</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<section id="id1">
-<h2>预设<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text">颜色→色相-饱和度</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+</div>
+<div class="section" id="id1">
+<h2>预设<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
 <p>此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
-</section>
-<section id="id2">
-<h2>选择要调整的主颜色<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id2">
+<h2>选择要调整的主颜色<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>您可以在六种颜色中选择要修改的颜色：三种原色(红、绿、蓝)和三种互补色(青、品红、黄)。它们的相对位置与<a class="reference internal" href="3hue-chroma.html#color-circle"><span class="std std-ref">色环</span></a>一致。</p>
 <p>选择好主颜色后，当下面的色相{hue}值增加时，主颜色的色相会沿<a class="reference internal" href="3hue-chroma.html#color-circle"><span class="std std-ref">色环</span></a>逆时针变化；值减少时，色相会沿<a class="reference internal" href="3hue-chroma.html#color-circle"><span class="std std-ref">色环</span></a>顺时针变化。</p>
 <p>如果您点击六个颜色中间的“总值” 按钮，则所有的六个颜色会同时关联变化。</p>
 <p>GIMP的标准是将红色设置为0(色环上的0°位置)。</p>
 <p>注意，这里的六个颜色指的是颜色范围，不是具体的单一颜色通道。</p>
 <p>参数调整过程中，六个色板会显示色相{Hue}的变化；如果勾选了预览选项，在图像中就能够直接看到变化效果。</p>
-</section>
-<section id="id3">
-<h2>叠加<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>叠加<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>这个滑块可以让您设置颜色范围的重叠程度。</p>
 <p>此选项产生的效果极为轻微，可能只对<a class="reference internal" href="3hue-chroma.html#color-circle"><span class="std std-ref">色环</span></a>上相邻的下一种的颜色有效。</p>
-</section>
-<section id="id4">
-<h2>调整选中的颜色<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id4">
+<h2>调整选中的颜色<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <ul>
 <li><p>色相{Hue}：通过滑块在<a class="reference internal" href="3hue-chroma.html#color-circle"><span class="std std-ref">色环</span></a>中选择一个色相Hue(-180°，180°)。</p></li>
 <li><p>亮度{Lightness}：滑块可以修改亮度( -100，100) 。</p>
@@ -141,12 +133,12 @@
 <li><p>饱和度：可以通过滑块来设置饱和度(-100，100)。</p></li>
 <li><p>重置颜色：此按钮会把所选颜色的色相、亮度和饱和度的修改重置为初始值。</p></li>
 </ul>
-</section>
-<section id="id5">
-<h2>混合选项/预览/分割视图<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id5">
+<h2>混合选项/预览/分割视图<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -159,7 +151,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>首选项→图像导入和导出</title>
-      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>首选项→图像导入和导出</title><link rel="stylesheet" href="../../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/translations.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -98,17 +92,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>首选项→图像导入和导出<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+  <div class="section" id="id1">
+<h1>首选项→图像导入和导出<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
 <p>GIMP在导入或导出图像文件时，会有一些默认的设置，这些默认设置可以在这里修改。</p>
-<figure class="align-center" id="id8">
+<div class="figure align-center" id="id8">
 <img alt="../../../../_images/3importexport.png" src="../../../../_images/3importexport.png" />
-<figcaption>
-<p><span class="caption-text">首选项→图像导入和导出</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<section id="id2">
-<h2>将导入的图像提升为浮点精度<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p class="caption"><span class="caption-text">首选项→图像导入和导出</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
+</div>
+<div class="section" id="id2">
+<h2>将导入的图像提升为浮点精度<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <div class="line-block">
 <div class="line">默认情况下，GIMP导入文件时使用的精度为：8位整数 + 感官性伽马。</div>
 <div class="line">勾选此项后，GIMP导入文件时使用的精度为：32位浮点 + 线性光。</div>
@@ -117,38 +109,38 @@
 <p class="admonition-title">提示</p>
 <p>这里提到的“导入文件”，也包括打开文件。重点是，XCF格式的文件，打开时不会受此选项影响，所以不会改变图像精度；XCF格式以外的其它格式文件，打开时则会受此选项的影响而改变精度。</p>
 </div>
-</section>
-<section id="id3">
-<h2>提升为浮点时对图像递色<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>提升为浮点时对图像递色<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>在把图像精度提升为“32位浮点+线性光”的同时，应用“递色”功能：添加最小数值的噪点，以便使色彩更分散。</p>
-</section>
-<section id="id4">
-<h2>为导入的图像添加一个透明通道<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id4">
+<h2>为导入的图像添加一个透明通道<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>导入图像的同时，给图像添加一个alpha通道。</p>
-</section>
-<section id="id5">
-<h2>色彩配置文件方案<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id5">
+<h2>色彩配置文件方案<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>此选项用来告诉GIMP如何处理图像文件中内嵌的色彩配置文件。</p>
 <ul class="simple">
 <li><p>询问做什么：选择此项后，GIMP在打开有内嵌色彩配置文件的图像时，会提示图像带有嵌入的色彩配置文件，并请您确定是否进行转换。如果不做任何调整，直接关闭询问对话框，GIMP会保留内嵌的色彩配置文件不做转换处理，等同于“保持内嵌的配置文件”。</p></li>
 </ul>
 <blockquote>
-<div><figure class="align-center">
+<div><div class="figure align-center">
 <img alt="../../../../_images/4embcolor.png" src="../../../../_images/4embcolor.png" />
-</figure>
+</div>
 </div></blockquote>
 <ul class="simple">
 <li><p>保持内嵌的配置文件：保留图像文件自身内嵌的色彩配置文件，不做转换。</p></li>
 <li><p>转换为内置sRGB或灰阶配置文件：不保留图像文件自身内嵌的色彩配置文件，转换为GIMP内置的色彩配置文件：如果原图像文件是RGB模式，那么会转换为GIMP built-in sRGB；如果原图像是灰度模式，那么会转换为GIMP built-in D65 Grayscale with sRGB TRC 。</p></li>
 </ul>
-</section>
-<section id="id6">
-<h2>导出方案<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id6">
+<h2>导出方案<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
 <p>GIMP导出文件时是否一并导出色彩配置文件和三种元数据。</p>
 <p>这里的设置，优先级要低于<a class="reference internal" href="../../1file/12exportas.html#menu-file-export"><span class="std std-ref">文件→导出为⇒导出</span></a>对话框的优先级。</p>
-</section>
-<section id="id7">
-<h2>默认导出文件类型<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id7">
+<h2>默认导出文件类型<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
 <p>可以设置默认导出的文件格式。</p>
 <blockquote>
 <div><div class="admonition hint">
@@ -156,12 +148,12 @@
 <p>关于各种文件格式，请参考<a class="reference internal" href="../../../../ycp_gd_base/ycp_base.html#gimp-graphic-base"><span class="std std-ref">GIMP平面基础</span></a> 。</p>
 </div>
 </div></blockquote>
-</section>
-<section id="raw">
-<h2>Raw图像导入<a class="headerlink" href="#raw" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="raw">
+<h2>Raw图像导入<a class="headerlink" href="#raw" title="永久链接至标题"></a></h2>
 <p>默认情况下GIMP无法打开RAW文件，您需要通过第三方工具或插件才可以打开RAW文件，比如darktable、rawtherapee，或者ufraw。</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -174,7 +166,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

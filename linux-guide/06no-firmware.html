@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安装过程中提示缺失固件文件</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>安装过程中提示缺失固件文件</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,41 +89,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="no-firmware">
-<span id="id1"></span><h1>安装过程中提示缺失固件文件<a class="headerlink" href="#no-firmware" title="Link to this heading"></a></h1>
+  <div class="section" id="no-firmware">
+<span id="id1"></span><h1>安装过程中提示缺失固件文件<a class="headerlink" href="#no-firmware" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：</p>
 <p>从Debian12起，官方提供的iso均包含firmware，基本不会再提示缺失固件文件。</p>
 </div>
 <p>如果您下载的映像(iso)不是<a class="reference internal" href="03which_iso.html#which-iso"><span class="std std-ref">驿窗推荐的iso</span></a>的话，那么在安装过程中有可能提示缺失固件文件。</p>
 <blockquote>
 <div><div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>固件 | firmware | 驱动</strong></p>
+<p><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：<strong>固件 | firmware | 驱动</strong></p>
 <p>这里的固件和firmware其实就是指驱动程序，缺失固件文件就是缺少驱动程序。</p>
 </div>
 </div></blockquote>
-<section id="id2">
-<h2>解决方案<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>解决方案<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>如果安装过程中提示固件缺失，表示您下载的iso中不包括无线网卡驱动。对于这个问题，我们可以用以下几个方法解决：</p>
 <ol class="arabic simple">
 <li><p>跳过提示继续安装系统，系统安装好以后通过有线网络来安装驱动</p></li>
 <li><p>在另一个U盘中放固件文件并插入到电脑中，安装驱动</p></li>
 <li><p>放弃当前安装，重新下载包含固件的iso并创建启动U盘，重新安装系统</p></li>
 </ol>
-<section id="linux-guide-no-firmware-step1">
-<span id="id3"></span><h3>1. 跳过提示继续安装系统<a class="headerlink" href="#linux-guide-no-firmware-step1" title="Link to this heading"></a></h3>
+<div class="section" id="linux-guide-no-firmware-step1">
+<span id="id3"></span><h3>1. 跳过提示继续安装系统<a class="headerlink" href="#linux-guide-no-firmware-step1" title="永久链接至标题"></a></h3>
 <p>可以在提示缺失固件时截图(或照相)，然后跳过无线驱动继续安装系统；系统安装好后，通过有线网络来安装无线网卡驱动。</p>
 <p>比如提示缺失的固件是 iwlwifi-7260-17.ucode，这个在网上能查到是intel无线网卡，那么安装firmware-iwlwifi就可以。系统安装好以后，先设置一下<a class="reference internal" href="07after_ins.html#after-ins"><span class="std std-ref">软件源</span></a>，然后运行命令：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>firmware-iwlwifi
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install firmware-iwlwifi
 </pre></div>
 </div>
 <p>所有intel无线网卡驱动应该都可以安装这个firmware-iwlwifi来解决。如果提示缺失的固件不是intel的无线网卡，那么需要到网上查一下，然后安装对应的固件包。</p>
-</section>
-<section id="u">
-<h3>2. 在另一个U盘中存放固件文件<a class="headerlink" href="#u" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="u">
+<h3>2. 在另一个U盘中存放固件文件<a class="headerlink" href="#u" title="永久链接至标题"></a></h3>
 <p>如果您只有一台电脑，那么此方法需要您在安装之前提前完成。在安装过程中，电脑因为已经处于系统安装状态，所以无法执行此操作。</p>
 <dl class="simple">
 <dt>并且，此操作要求您：</dt><dd><ol class="arabic simple">
@@ -147,15 +141,15 @@
 </dd>
 </dl>
 <p>如果需要，请对下载的firmware.zip文件进行SHA256校验，方法与<a class="reference internal" href="01iso_xp.html#iso-sha256sum"><span class="std std-ref">iso校验方法</span></a>相同。</p>
-</section>
-<section id="iso">
-<h3>3. 放弃当前安装，重新下载包含固件的iso，重装系统<a class="headerlink" href="#iso" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="iso">
+<h3>3. 放弃当前安装，重新下载包含固件的iso，重装系统<a class="headerlink" href="#iso" title="永久链接至标题"></a></h3>
 <p>如果安装过程中提示缺失固件，但您没有提前准备存放固件的U盘，也没有另外的电脑来马上准备，诸如此类问题，会导致您无法解决缺失固件的问题。</p>
 <p>您可以考虑放弃此次安装，重新下载<a class="reference internal" href="03which_iso.html#dvd-link-01"><span class="std std-ref">带固件的iso</span></a>，并重新制作启动U盘。</p>
-</section>
-</section>
-<section id="id4">
-<h2>如果已经安装好的系统缺少固件如何解决<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>如果已经安装好的系统缺少固件如何解决<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>已经安装好的系统如果没有固件，通常无法使用wifi，因为没有安装无线网卡驱动。</p>
 <p>可以参考以下步骤解决：</p>
 <ol class="arabic simple">
@@ -167,8 +161,8 @@
 <li><p>断开有线网络，使用无线网络上网。</p></li>
 </ol>
 <p><em>未完稿</em></p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -181,7 +175,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

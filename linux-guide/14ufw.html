@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>系统安全/防火墙/杀毒</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>系统安全/防火墙/杀毒</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,12 +89,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ufw">
-<span id="id1"></span><h1>系统安全/防火墙/杀毒<a class="headerlink" href="#ufw" title="Link to this heading"></a></h1>
+  <div class="section" id="ufw">
+<span id="id1"></span><h1>系统安全/防火墙/杀毒<a class="headerlink" href="#ufw" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<section id="id2">
-<h2>1. 系统安全<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>1. 系统安全<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>对于电脑操作系统来说，可能性最高的安全威胁应该是浏览器，换句话说，浏览器的漏洞是目前大家电脑上最大的系统安全威胁来源。</p>
 <p>解决这个问题有两个方向，一是沙箱运行浏览器，比如firejail；另一个是虚拟机运行浏览器。二者都能实现安全隔离的功能。基于整体上的考量，驿窗建议大家使用虚拟机，具体请参考下面的对比说明：</p>
 <dl class="simple">
@@ -118,27 +112,27 @@
 <p>基于上述原因，驿窗推荐使用虚拟机，并把平时的网页浏览放到虚拟机中进行，最大限度的防范浏览器漏洞风险。</p>
 <blockquote>
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>虚拟机逃逸</strong></p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：<strong>虚拟机逃逸</strong></p>
 <p>虚拟机逃逸是能够做到从虚拟机中对主机系统进行攻击的。不过，虚拟机逃逸的难度级别非常高，对于常规的家用和办公目的来说，可以忽略不计。</p>
 </div>
 </div></blockquote>
 <p>关于虚拟机与防火墙的配合，请参考<a class="reference internal" href="16kvm.html#kvm"><span class="std std-ref">虚拟机virt-manager</span></a>。</p>
-</section>
-<section id="id3">
-<h2>2. 防火墙<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>2. 防火墙<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>Linux系统安装安装一款非常简单好用的防火墙ufw。ufw全称是Uncomplicated Firewall，本质上它并不是防火墙，而是防火墙的配置工具，而核心的防火墙是Linux内核自带的，名字叫Netfilter，通过ufw进行配置。ufw通过对Netfilter进行配置，来实现需要的安全规则。</p>
 <p>对于个人用户来说，ufw完全够用；但如果是用于服务器，那么ufw可能并不适合，需要更灵活和更强大的工具。</p>
-<section id="id4">
-<h3>防火墙安装<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<div class="section" id="id4">
+<h3>防火墙安装<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
 <p>对于个人电脑来说，只需要安装两个软件包：</p>
 <ol class="arabic">
 <li><p>ufw</p></li>
 <li><p>gufw</p>
 <blockquote>
 <div><div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：</p>
+<p class="admonition-title"><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：</p>
 <p>可以在终端中输入下面这条命令来快速安装ufw和gufw：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw<span class="w"> </span>gufw
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install ufw gufw
 </pre></div>
 </div>
 </div>
@@ -146,9 +140,9 @@
 </li>
 </ol>
 <p>上面我们安装了两个安装包ufw和gufw，其中gufw只是一个UI界面，专门用于ufw；如果没有gufw，那么我们就只能通过命令来配置防火墙。</p>
-</section>
-<section id="id5">
-<h3>防火墙启用<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id5">
+<h3>防火墙启用<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
 <p>防火墙安装好以后，默认是不启用的。如果想启用防火墙，可以打开<strong>防火墙配置</strong>，按下图设置：</p>
 <blockquote>
 <div><ul class="simple">
@@ -157,16 +151,14 @@
 <li><p>传入：否认</p></li>
 <li><p>传出：允许</p></li>
 </ul>
-<figure class="align-center" id="id10">
+<div class="figure align-center" id="id10">
 <img alt="../_images/14ufw1.png" src="../_images/14ufw1.png" />
-<figcaption>
-<p><span class="caption-text">防火墙启用后的状态</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">防火墙启用后的状态</span><a class="headerlink" href="#id10" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
-</section>
-<section id="id6">
-<h3>防火墙配置<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id6">
+<h3>防火墙配置<a class="headerlink" href="#id6" title="永久链接至标题"></a></h3>
 <p>安装好以后，会在系统应用程序中多出一个 防火墙 图标，双击这个图标就可以配置防火墙。防火墙需要管理员权限才可以进行配置：</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -203,34 +195,28 @@
 <li><p>基本设置完成后，主机的浏览器应该已经无法上网。点击Rules按钮，下面会切换到规则界面：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id11">
+<div><div class="figure align-center" id="id11">
 <img alt="../_images/14ufw2.png" src="../_images/14ufw2.png" />
-<figcaption>
-<p><span class="caption-text">点击 Rules 切换到规则界面</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">点击 Rules 切换到规则界面</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <ol class="loweralpha simple" start="2">
 <li><p>点击上图中左下角的加号按钮，打开“添加一个防火墙规则”对话框：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id12">
+<div><div class="figure align-center" id="id12">
 <img alt="../_images/14ufw3.png" src="../_images/14ufw3.png" />
-<figcaption>
-<p><span class="caption-text">添加一个防火墙规则 对话框</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">添加一个防火墙规则 对话框</span><a class="headerlink" href="#id12" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <ol class="loweralpha simple" start="3">
 <li><p>点击上图中的“高级”选项卡，切换到高级配置界面：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id13">
+<div><div class="figure align-center" id="id13">
 <img alt="../_images/14ufw4.png" src="../_images/14ufw4.png" />
-<figcaption>
-<p><span class="caption-text">高级 选项卡</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">高级 选项卡</span><a class="headerlink" href="#id13" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <ol class="loweralpha simple" start="4">
 <li><p>设置53端口规则：</p></li>
@@ -244,54 +230,46 @@
 <li><p>至：右侧的方框内填写53</p></li>
 </ul>
 <p>其它内容保持不变，然后点击右下角的“添加”按钮，如下图所示：</p>
-<figure class="align-center" id="id14">
+<div class="figure align-center" id="id14">
 <img alt="../_images/14ufw5.png" src="../_images/14ufw5.png" />
-<figcaption>
-<p><span class="caption-text">53端口规则</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">53端口规则</span><a class="headerlink" href="#id14" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <ol class="loweralpha simple" start="5">
 <li><p>按同样的流程(a-d)添加80端口规则，如下图所示：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id15">
+<div><div class="figure align-center" id="id15">
 <img alt="../_images/14ufw6.png" src="../_images/14ufw6.png" />
-<figcaption>
-<p><span class="caption-text">80端口规则</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">80端口规则</span><a class="headerlink" href="#id15" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <ol class="loweralpha simple" start="6">
 <li><p>按同样的流程(a-d)添加443端口规则，如下图所示：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id16">
+<div><div class="figure align-center" id="id16">
 <img alt="../_images/14ufw7.png" src="../_images/14ufw7.png" />
-<figcaption>
-<p><span class="caption-text">443端口规则</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">443端口规则</span><a class="headerlink" href="#id16" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 <ol class="loweralpha simple" start="7">
 <li><p>最终完成以后，在Rules框中增加了6条红色的新规则，如下图所示：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id17">
+<div><div class="figure align-center" id="id17">
 <img alt="../_images/14ufw8.png" src="../_images/14ufw8.png" />
-<figcaption>
-<p><span class="caption-text">高级配置完成</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">高级配置完成</span><a class="headerlink" href="#id17" title="永久链接至图片"></a></p>
+</div>
 </div></blockquote>
 </div></blockquote>
 </dd>
 <dt>高级配置方法2：</dt><dd><p>配合虚拟机使用，即传入和传出都为 否认，然后在Rules里添加一个规则，只开放53端口传出(允许虚拟机连接网络)。如果本机系统需要安装软件或者升级等连接网络的操作，就临时开放一下443端口出，网络操作完成后马上关闭443端口。</p>
 </dd>
 </dl>
-</section>
-<section id="id7">
-<h3>防火墙状态<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id7">
+<h3>防火墙状态<a class="headerlink" href="#id7" title="永久链接至标题"></a></h3>
 <p>防火墙的状态如果是未激活，表示系统的防火墙没有启用，等同于电脑没有防火墙。如果是激活，就表示系统启用了防火墙。</p>
 <p>启用了防火墙之后，并不表示系统就安全，因为 启用 仅代表防火墙程序开始工作，但具体的工作内容还需要进一步设置，最简单的设置就是上面提到的 初级配置。</p>
 <p>打开gufw进行配置时会看到传入、传出、允许、否认之类的功能，其中：</p>
@@ -304,17 +282,17 @@
 <li><p>拒绝：</p></li>
 </ol>
 </div></blockquote>
-</section>
-<section id="id8">
-<h3>防火墙规则<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id8">
+<h3>防火墙规则<a class="headerlink" href="#id8" title="永久链接至标题"></a></h3>
 <p>打开gufw进行配置时会注意到下面有一个Rules，点击这里，可以看到已经添加的防火墙规则，默认情况下没有任何规则。</p>
 <p>所谓的规则，其实就是指定某一个端口，然后确认端口是否放行，放行的方向是传出还是传入。</p>
 <p>这一点与windows系统的防火墙有时候不太一样。windows系统中防火墙很多时候是对某一个应用程序进行设置，而不是对端口进行设置，但原理是相同的。windows中对应用进行设置，其实就是对应用所使用的端口进行设置。Linux中对端口进行设置，其实是已经知道了某个应用会使用某个端口，端口一封，应用就无法连接网络。</p>
 <p>所以，Linux系统如果想更深入地对防火墙进行设置，需要学会如何查看应用程序所使用的端口。</p>
-</section>
-</section>
-<section id="id9">
-<h2>3. 杀毒软件<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>3. 杀毒软件<a class="headerlink" href="#id9" title="永久链接至标题"></a></h2>
 <p>Debian可以安装一个很有名的开源杀毒软件叫clamav，这是一个命令行方式的杀毒软件；如果想使用图形界面，可以再安装一个包叫clamtk，它是专门用于clamav的图形界面组件。</p>
 <p>实际上，按clamav的说法，clamav的病毒库95%是用于查杀windows病毒的，这说明Linux系统病毒种类是远少于windows的。事实是，使用windows系统的时候，大家对杀毒软件/防火墙通常都比较熟悉，也会安装和配置使用；而一旦使用了Linux系统以后，慢慢地就变成不太会使用杀毒软件和防火墙了，因为基本用不到，也就不熟悉。这与Linux系统的特性有关。</p>
 <p>驿窗测试了一段时间clamav，Debian系统从来没杀出过病毒，倒是很久以前使用windows时的一个数据备份目录，杀出一种病毒。再之后，就基本没怎么用过了。</p>
@@ -323,8 +301,8 @@
 <p><em>未完稿……</em></p>
 <p><em>最近一次更新：2024-01-19</em></p>
 <hr class="docutils" />
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -337,7 +315,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

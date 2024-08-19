@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安装/卸载字体</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>安装/卸载字体</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,37 +89,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="font">
-<span id="id1"></span><h1>安装/卸载字体<a class="headerlink" href="#font" title="Link to this heading"></a></h1>
+  <div class="section" id="font">
+<span id="id1"></span><h1>安装/卸载字体<a class="headerlink" href="#font" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>Debian系统如果想添加新字体，可以使用两种方法，一是通过应用商店安装，二是拷贝字体文件手动安装，具体操作如下：</p>
-<section id="id2">
-<h2>1. 通过应用商店安装<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>1. 通过应用商店安装<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>通过应用商店安装意味着字体已经进入了Debian官方仓库，这种情况下我们只要在应用商店中操作即可，比如安装谷哥的CJK字体fonts-noto-cjk，打开应用商店，搜索fonts-noto-cjk，找到后点击安装即可。删除方法同理。</p>
 <p>此方法需要您已经了解字体安装包的名称，否则无法安装。</p>
-</section>
-<section id="id3">
-<h2>2. 拷贝字体文件手动安装<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>2. 拷贝字体文件手动安装<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>手动安装更灵活一些，适合您已经有了字体文件的情况。</p>
 <p>手动创建一个~/.fonts目录，然后把得到的字体文件拷贝到这个目录中，默认情况下，系统应该会在几秒钟内就会更新字体缓存，自动识别拷贝到目录中的字体，之后打开办公软件就可以使用新字体了。如果长时间没有自动识别字体，您可以尝试重新启动系统。如果想删除字体，只需要把字体文件从目录中移除即可。</p>
 <p>~/.fonts目录是指在您的home目录下创建一个名为.fonts的目录(名称前面带一个点)。比如，我的用户名为ycproject，那么我的home目录的绝对路径就是/home/ycproject/，而~/.fonts目录的绝对路径则应该是/home/ycproject/.fonts。</p>
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>隐藏文件/文件夹</strong></p>
+<p><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：<strong>隐藏文件/文件夹</strong></p>
 <p>Debian系统中，文件名或者目录名的前面如果有一个小点，就表示这个文件或目录是隐藏的。上面创建的.fonts目录，文件名前面就带了一个小点，这表示这个目录是隐藏目录。</p>
 <p>隐藏目录默认情况下是无法看到的，需要在文件管理器设置一下是否显示隐藏内容。</p>
 <p>多数Debian桌面环境中，可以按Ctrl+H来显示/隐藏当前目录的隐藏内容。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">小技巧</p>
-<p><a class="reference internal" href="../_images/avatarp.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp.svg" width="22" /></a> 驿窗注：<strong>提高生产力</strong></p>
+<p><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：<strong>提高生产力</strong></p>
 <p>使用下面的命令可以提高您的生产力：</p>
 <ol class="arabic simple">
 <li><p>安装字体：</p></li>
 </ol>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>fonts-noto-cjk-extra
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install fonts-noto-cjk-extra
 </pre></div>
 </div>
 </div></blockquote>
@@ -133,7 +127,7 @@
 <li><p>删除字体：</p></li>
 </ol>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>fonts-noto-cjk-extra
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt remove fonts-noto-cjk-extra
 </pre></div>
 </div>
 </div></blockquote>
@@ -141,14 +135,14 @@
 <li><p>马上更新字体缓存：</p></li>
 </ol>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fc-cache<span class="w"> </span>-v
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fc-cache -v
 </pre></div>
 </div>
 </div></blockquote>
 </div>
-</section>
-<section id="id4">
-<h2>3. 可能产生的问题<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id4">
+<h2>3. 可能产生的问题<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>上面的方法，都是最直接的添加新字体的方式。方法很简单，但可能带来的一个问题是，系统UI的字体可能会自动变成新添加的字体。</p>
 <p>把新字体移除后，UI字体就会自动恢复到原先默认的字体。</p>
 <p>如果您希望在添加新字体时，系统UI字体能够不受影响，有两个方法可以实现(以下假设保持系统UI字体为noto sans cjk字体，如果您希望使用其它字体，那么把字体名称修改为您指定的字体名称即可)：</p>
@@ -167,8 +161,8 @@
 <li><p>可能需要考虑使用fontconfig这个字体管理工具，详情请参考本书附录(此方法也适用于KDE桌面环境)。</p></li>
 </ol>
 <p><em>未完稿</em></p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -181,7 +175,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

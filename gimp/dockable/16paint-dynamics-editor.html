@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>(可停靠对话框→动态绘图编辑器)</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>(可停靠对话框→动态绘图编辑器)</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -96,21 +90,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="menu-window-dockable-16paint-dynamics-editor">
-<span id="id1"></span><h1>(可停靠对话框→动态绘图编辑器)<a class="headerlink" href="#menu-window-dockable-16paint-dynamics-editor" title="Link to this heading"></a></h1>
+  <div class="section" id="menu-window-dockable-16paint-dynamics-editor">
+<span id="id1"></span><h1>(可停靠对话框→动态绘图编辑器)<a class="headerlink" href="#menu-window-dockable-16paint-dynamics-editor" title="永久链接至标题"></a></h1>
 <p>没有快捷键。</p>
-<figure class="align-center" id="id6">
+<div class="figure align-center" id="id6">
 <img alt="../../_images/16paint-dynamics-editor.png" src="../../_images/16paint-dynamics-editor.png" />
-<figcaption>
-<p><span class="caption-text">可停靠对话框→动态绘图编辑器</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">可停靠对话框→动态绘图编辑器</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+</div>
 <p>动态绘图编辑器中( <a class="reference internal" href="../../_images/gimp-dynamics.svg"><img alt="gimp-dynamics-icon" class="align-middle" height="20" src="../../_images/gimp-dynamics.svg" width="20" /></a> )可以自定义动态的参数，创建自定义动态。</p>
 <p>GIMP自带的预设动态不允许修改，所以，最快捷的方法是在 动态绘图对话框 中复制一个已有的动态，然后对这个副本进行修改，最后保存为新的自定义动态。</p>
 <p>(动态绘图功能主要是为了使用绘图板而创建的，但有一些动态绘图功能也可以用在鼠标上)</p>
 <p>“映射矩阵”上方是动态的名称，可以修改。</p>
-<section id="id2">
-<h2>映射矩阵<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>映射矩阵<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>映射矩阵设定笔刷的哪些参数可以被手写笔的哪些行为影响。GIMP官方的建议是，您可以启用任意数量的参数和参数组合，但越少越好。阵列中：</p>
 <ol class="arabic simple">
 <li><p>横向第一行7个条目是手写笔的行为方式：压力、速率、方向、倾斜、滚轮/旋转、随机、淡出；</p></li>
@@ -118,8 +110,8 @@
 </ol>
 <p>例如，压力与不透明度的交叉处<strong>被打叉</strong>，表示手写笔的压力<strong>会影响</strong>笔刷的不透明度：绘画时，手写笔压力越大，画出的线条越不透明；压力越小，线条越透明。</p>
 <p>而压力右侧的“速率”与不透明度的交叉处<strong>没被打叉</strong>，表示手写笔的移动速度<strong>不会影响</strong>笔刷的不透明度：绘画时，手写笔移动速度变快或变慢，不透明度均保持不变。</p>
-<section id="id3">
-<h3>手写笔的7个行为方式<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<div class="section" id="id3">
+<h3>手写笔的7个行为方式<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
 <ol class="arabic simple">
 <li><p>压力：手写笔压在绘图板上的力量大小。此行为对鼠标无效。</p></li>
 <li><p>速率：手写笔移动的速度。此行为对鼠标有效。</p></li>
@@ -129,9 +121,9 @@
 <li><p>随机：相应的参数会产生随机变化。此行为对鼠标有效。</p></li>
 <li><p>淡出：通过工具选项中的“动态选项”的设置来影响淡入淡出效果。此行为对鼠标有效。</p></li>
 </ol>
-</section>
-<section id="id4">
-<h3>笔刷的11个参数<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+</div>
+<div class="section" id="id4">
+<h3>笔刷的11个参数<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
 <ol class="arabic simple">
 <li><p>不透明度：手写笔画出的笔迹的不透明度：</p></li>
 </ol>
@@ -249,21 +241,19 @@
 <div class="line">11.7. 淡出：跳动的幅度从0开始，到达“计数”值后结束。对鼠标有效。</div>
 </div>
 </div></blockquote>
-</section>
-</section>
-<section id="id5">
-<h2>笔刷参数曲线调整<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>笔刷参数曲线调整<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>对话框中，点击“映射矩阵”右侧的( <a class="reference internal" href="../../_images/go-down.svg"><img alt="go-down-icon" class="align-middle" height="20" src="../../_images/go-down.svg" width="20" /></a> )按钮，会打开一个下拉列表，列表内是11个笔刷参数。选中其中一个参数，可以对其曲线进行调整。下面的示例主要用来帮助理解曲线的功能(笔刷选择 2.Hardness 075)：</p>
 <ol class="arabic simple">
 <li><p>11个笔刷参数中，我们以硬度参数为例，看一下手写笔移动速率对笔迹硬度的影响，先看一下原始状态：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id7">
+<div><div class="figure align-center" id="id7">
 <img alt="../../_images/16paint-dynamics-editor-sample-1.png" src="../../_images/16paint-dynamics-editor-sample-1.png" />
-<figcaption>
-<p><span class="caption-text">手写笔移动速率对笔迹硬度的影响 原始状态</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 原始状态</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
+</div>
 <div class="line-block">
 <div class="line">1.1. 截图中坐标系上方“硬度”表示当前显示的曲线是硬度曲线；</div>
 <div class="line">1.2. 截图纵坐标代表硬度，横坐标代表手写笔移动速率；</div>
@@ -279,53 +269,45 @@
 <li><p>曲线调整示例一：绿色曲线中间位置点击并向左上拖动到截图位置：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id8">
+<div><div class="figure align-center" id="id8">
 <img alt="../../_images/16paint-dynamics-editor-sample-2.png" src="../../_images/16paint-dynamics-editor-sample-2.png" />
-<figcaption>
-<p><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例一</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例一</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
+</div>
 <p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从不模糊到模糊的变化比较慢且突然，不如 <em>原始状态</em> 那么平滑；</p>
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li><p>曲线调整示例二：绿色曲线中间位置点击并向右下拖动到截图位置：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id9">
+<div><div class="figure align-center" id="id9">
 <img alt="../../_images/16paint-dynamics-editor-sample-3.png" src="../../_images/16paint-dynamics-editor-sample-3.png" />
-<figcaption>
-<p><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例二</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例二</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
+</div>
 <p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从上到下，从不模糊到模糊的变化比较快(看不出突然)；</p>
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li><p>曲线调整示例三：绿色曲线调整为波峰形状：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id10">
+<div><div class="figure align-center" id="id10">
 <img alt="../../_images/16paint-dynamics-editor-sample-4.png" src="../../_images/16paint-dynamics-editor-sample-4.png" />
-<figcaption>
-<p><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例三</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例三</span><a class="headerlink" href="#id10" title="永久链接至图片"></a></p>
+</div>
 <p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从上到下，模糊变化为：先是模糊，然后到不模糊，再到模糊；</p>
 </div></blockquote>
 <ol class="arabic simple" start="5">
 <li><p>曲线调整示例四：绿色曲线调整为波谷形状：</p></li>
 </ol>
 <blockquote>
-<div><figure class="align-center" id="id11">
+<div><div class="figure align-center" id="id11">
 <img alt="../../_images/16paint-dynamics-editor-sample-5.png" src="../../_images/16paint-dynamics-editor-sample-5.png" />
-<figcaption>
-<p><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例四</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">手写笔移动速率对笔迹硬度的影响 示例四</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
+</div>
 <p>截图中左边显示的纵向笔迹与 <em>原始状态</em> 截图相比，从上到下，模糊变化为：先是不模糊，然后到模糊，再到不模糊；</p>
 </div></blockquote>
 <p>上面的示例是硬度参数曲线的调整，另外10个笔刷参数同理。</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -338,7 +320,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

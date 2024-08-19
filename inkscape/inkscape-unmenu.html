@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inkscape快速入门教程(文字版)</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+  <title>Inkscape非常规命令</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
@@ -20,7 +20,9 @@
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../_static/opensearch.xml"/>
-    <link rel="search" title="搜索" href="../search.html" /> 
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="命令面板" href="unmenu/01inkscape-cmd-palette.html" />
+    <link rel="prev" title="页面工具" href="tools/24pages.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,10 +41,10 @@
                 开源/Linux大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gimp/gimp.html">GIMP操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="inkscape.html">Inkscape操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../linux-guide/0linux-guide.html">Linux入门指南</a></li>
@@ -74,42 +76,42 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Inkscape快速入门教程(文字版)</li>
+          <li class="breadcrumb-item"><a href="inkscape.html">Inkscape操作指南</a></li>
+      <li class="breadcrumb-item active">Inkscape非常规命令</li>
       <li class="wy-breadcrumbs-aside">
       </li>
-  </ul>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="tools/24pages.html" class="btn btn-neutral float-left" title="页面工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="unmenu/01inkscape-cmd-palette.html" class="btn btn-neutral float-right" title="命令面板" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <div class="section" id="inkscape">
-<span id="inkscape-tutorials"></span><h1>Inkscape快速入门教程(文字版)<a class="headerlink" href="#inkscape" title="永久链接至标题"></a></h1>
+<span id="inkscape-unmenu"></span><h1>Inkscape非常规命令<a class="headerlink" href="#inkscape" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unmenu/01inkscape-cmd-palette.html">命令面板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unmenu/02select-backup.html">保存选中范围/载入选中范围</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unmenu/02select-backup.html#set-selection-backup">1. 保存当前选中范围 <em>Set selection backup</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="unmenu/02select-backup.html#restore-selection-backup">2. 载入保存的选中范围 <em>Restore selection backup</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="unmenu/02select-backup.html#empty-selection-backup">3. 删除保存的选中范围 <em>Empty selection backup</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="unmenu/02select-backup.html#id2">4. 三个命令的快捷键如何设置</a></li>
+</ul>
 </div>
-<p>Inkscape自带快速入门教程，可以在inkscape的菜单<strong>帮助→教程</strong>中查看，一共9个教程。(1.2.1及以后版本已经更新为简体中文)</p>
-<dl class="simple">
-<dt>官网html版本链接如下：</dt><dd><ol class="arabic simple">
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/basic/tutorial-basic.html?switchlang=zh-hans">基础</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/shapes/tutorial-shapes.html?switchlang=zh-hans">形状</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/advanced/tutorial-advanced.html?switchlang=zh-hans">高级</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/tracing/tutorial-tracing.html?switchlang=zh-hans">临摹位图</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/tracing-pixelart/tutorial-tracing-pixelart.html?switchlang=zh-hans">临摹像素画</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/calligraphy/tutorial-calligraphy.html?switchlang=zh-hans">书法</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/interpolate/tutorial-interpolate.html?switchlang=zh-hans">插值</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/elements/tutorial-elements.html?switchlang=zh-hans">设计要素</a></p></li>
-<li><p><a class="reference external" href="https://inkscape.org/zh-hans/doc/tutorials/tips/tutorial-tips.html?switchlang=zh-hans">提示与技巧</a></p></li>
-</ol>
-</dd>
-</dl>
-<p>另外，到<a class="reference external" href="https://www.bilibili.com">B站</a>搜索<strong>驿窗</strong>可以查看对应的视频版本。</p>
-<p><em>已完稿</em></p>
+<p>这里列出一些非常规命令，之所以叫非常规，是因为这些命令无法通过菜单访问，只能通过快捷键访问或使用。</p>
+<p><em>最近一次更新：2024-07-24</em></p>
 </div>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="tools/24pages.html" class="btn btn-neutral float-left" title="页面工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="unmenu/01inkscape-cmd-palette.html" class="btn btn-neutral float-right" title="命令面板" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

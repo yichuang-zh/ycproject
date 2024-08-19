@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→颜色到透明 Color to Alpha</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>颜色→颜色到透明 Color to Alpha</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/translations.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -97,44 +91,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="color-to-alpha">
-<span id="gimp-menu-7color-23color-to-alpha"></span><h1>颜色→颜色到透明 <em>Color to Alpha</em><a class="headerlink" href="#color-to-alpha" title="Link to this heading"></a></h1>
-<figure class="align-center" id="id6">
+  <div class="section" id="color-to-alpha">
+<span id="gimp-menu-7color-23color-to-alpha"></span><h1>颜色→颜色到透明 <em>Color to Alpha</em><a class="headerlink" href="#color-to-alpha" title="永久链接至标题"></a></h1>
+<div class="figure align-center" id="id6">
 <img alt="../../../_images/23color-to-alpha.png" src="../../../_images/23color-to-alpha.png" />
-<figcaption>
-<p><span class="caption-text">颜色→颜色到透明</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">颜色→颜色到透明</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
+</div>
 <p>此工具没有快捷键。</p>
 <p>此工具会设定一种颜色，然后使当前活动图层或选区中具有该颜色的所有像素都变透明。</p>
 <p>此工具有一定的智能成分，会尽量保持选定区域的像素与其周围的像素平滑过度。</p>
 <p>如果原图像没有透明通道，那么应用此命令后，会添加一个alpha通道。</p>
-<section id="id1">
-<h2>预设<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="section" id="id1">
+<h2>预设<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
 <p>此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
-</section>
-<section id="id2">
-<h2>颜色<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id2">
+<h2>颜色<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>点击色板可以选择颜色，或者也可以用右边的滴管在图像上吸取颜色。</p>
 <p>右键点击色板可以选择前景色、背景色、白色或黑色。</p>
 <p>注意，此工具可以和<a class="reference internal" href="../../gimp_menu.html#gegl-operation-tool-option"><span class="std std-ref">GEGL操作(工具选项)</span></a>配合使用。</p>
-</section>
-<section id="id3">
-<h2>透明阈值<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id3">
+<h2>透明阈值<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
 <p>颜色变得透明的差异范围。</p>
 <p>通过计算像素颜色的差异对比来进行透明度修改：根据像素的颜色与上面设置的颜色的差异程度来修改像素的透明度，这个差异程度就是阈值。差异低于此阈值就变透明(具有该颜色的像素完全透明)。</p>
-</section>
-<section id="id4">
-<h2>不透明阈值<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id4">
+<h2>不透明阈值<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
 <p>颜色变得不透明的差异范围。</p>
 <p>通过计算像素颜色的差异对比来进行透明度修改：根据像素的颜色与上面设置的颜色的差异程度来修改像素的不透明度，这个差异程度就是阈值。差异高于此阈值就不透明(具有该颜色的像素完全透明)。</p>
 <p>透明阈值与不透明阈值同时设置，像素颜色与设置颜色差异越大越不透明，差异越小越透明。如果设置透明阈值为0，不透明阈值为1，那么，只有那些具有该颜色的像素才完全透明，且只有差异最大的颜色才完全不透明。</p>
-</section>
-<section id="id5">
-<h2>混合选项/预览/分割视图<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id5">
+<h2>混合选项/预览/分割视图<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
 <p>这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -147,7 +139,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

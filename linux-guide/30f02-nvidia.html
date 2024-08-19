@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安装独立显卡官方驱动</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>安装独立显卡官方驱动</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -95,74 +89,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="f02-nvidia">
-<span id="id1"></span><h1>安装独立显卡官方驱动<a class="headerlink" href="#f02-nvidia" title="Link to this heading"></a></h1>
+  <div class="section" id="f02-nvidia">
+<span id="id1"></span><h1>安装独立显卡官方驱动<a class="headerlink" href="#f02-nvidia" title="永久链接至标题"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>目前独立显卡主要是指Nvidia和AMD两种，我们分别说明。不过，在安装之前，有些问题需要事先了解。</p>
-<section id="id2">
-<h2>已知问题<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="section" id="id2">
+<h2>已知问题<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>因为Nvidia对于Linux支持的力度问题，Nvidia官方驱动虽然可以释放显卡的性能，但可能在某些小的方面不如开源驱动。所以，如果安装了官方驱动后想换回开源驱动，那么仅仅是按说明卸载的话，可能无法恢复到之前的开源驱动的效果。</p>
 <p>所以，请做好系统备份，甚至做好重装系统的准备工作，以防万一。</p>
-</section>
-<section id="nvidia">
-<h2>一、Nvidia显卡驱动安装过程<a class="headerlink" href="#nvidia" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="nvidia">
+<h2>一、Nvidia显卡驱动安装过程<a class="headerlink" href="#nvidia" title="永久链接至标题"></a></h2>
 <p>关于Nvidia显卡驱动的安装，Debian官方已经提供详细的步骤，地址在这里：</p>
 <blockquote>
 <div><p><a class="reference external" href="https://wiki.debian.org/NvidiaGraphicsDrivers">https://wiki.debian.org/NvidiaGraphicsDrivers</a></p>
 </div></blockquote>
 <p>(或者打开bing.com搜索nvidia即可找到)</p>
 <p>下面是此链接内容的中文整理版本：</p>
-<section id="id3">
-<h3>第一步，确认自己的显卡型号是否有驱动支持<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
-</section>
-<section id="kernel-headers">
-<h3>第二步，如果支持，那么无论是哪个驱动，都需要安装Kernel headers包<a class="headerlink" href="#kernel-headers" title="Link to this heading"></a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>linux-headers-amd64
+<div class="section" id="id3">
+<h3>第一步，确认自己的显卡型号是否有驱动支持<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
+</div>
+<div class="section" id="kernel-headers">
+<h3>第二步，如果支持，那么无论是哪个驱动，都需要安装Kernel headers包<a class="headerlink" href="#kernel-headers" title="永久链接至标题"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install linux-headers-amd64
 </pre></div>
 </div>
 <p>这里有一点需要注意，就是之前已经安装的linux-image-amd64版本是从backports安装的，那么Kernel headers包也需要从backports安装；即linux-image-amd64与linux-headers-amd64必须是匹配的。</p>
 <p>假设我之前的linux-image-amd64安装是使用下面的命令：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-t<span class="w"> </span>bullseye-backports<span class="w"> </span>linux-image-amd64
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install -t bullseye-backports linux-image-amd64
 </pre></div>
 </div>
 </div></blockquote>
 <p>那么，linux-headers-amd64也需要使用相同的命令来安装：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-t<span class="w"> </span>bullseye-backports<span class="w"> </span>linux-headers-amd64
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install -t bullseye-backports linux-headers-amd64
 </pre></div>
 </div>
 </div></blockquote>
 <p>(上面说的<strong>相同的命令</strong>主要是指 <strong>-t bullseye-backports</strong>)</p>
-</section>
-<section id="id4">
-<h3>第三步，安装对应的驱动<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nvidia-driver<span class="w"> </span>firmware-misc-nonfree
+</div>
+<div class="section" id="id4">
+<h3>第三步，安装对应的驱动<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install nvidia-driver firmware-misc-nonfree
 </pre></div>
 </div>
-</section>
-<section id="id5">
-<h3>第四步，重启系统<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
-</section>
-</section>
-<section id="id6">
-<h2>二、Nvidia显卡驱动卸载过程<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id5">
+<h3>第四步，重启系统<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>二、Nvidia显卡驱动卸载过程<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo apt purge &quot;*nvidia*&quot;
 </pre></div>
 </div>
 <p>然后重新启动系统即可。如果有问题，可以尝试重装开源驱动：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>--reinstall<span class="w"> </span>xserver-xorg-core<span class="w"> </span>xserver-xorg-video-nouveau
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install --reinstall xserver-xorg-core xserver-xorg-video-nouveau
 </pre></div>
 </div>
 <p>然后再重启系统。</p>
-</section>
-<section id="amd">
-<h2>三、AMD显卡驱动<a class="headerlink" href="#amd" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="amd">
+<h2>三、AMD显卡驱动<a class="headerlink" href="#amd" title="永久链接至标题"></a></h2>
 <p>目前，AMD官方只提供RHEL、CentOS、Ubuntu、SLED/SLES这四种发行版的驱动，不提供Debian驱动。不建议您尝试在Debian系统上安装Ubuntu版本的驱动，可能安装失败或产生其它问题。</p>
 <p><em>未完稿</em></p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -175,7 +169,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   

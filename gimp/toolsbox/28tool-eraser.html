@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<html class="writer-html5" lang="zh-CN" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>橡皮工具 Eraser Tool</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=cedbb25d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=77ddf845" />
-
-  
+  <title>橡皮工具 Eraser Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
-        <script src="../../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../_static/translations.js?v=beaddf03"></script>
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -96,15 +90,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="eraser-tool">
-<span id="gimp-tool-eraser"></span><h1>橡皮工具 <em>Eraser Tool</em><a class="headerlink" href="#eraser-tool" title="Link to this heading"></a></h1>
-<p>快捷键：Shift+E</p>
-<figure class="align-center" id="id3">
+  <div class="section" id="eraser-tool">
+<span id="gimp-tool-eraser"></span><h1>橡皮工具 <em>Eraser Tool</em><a class="headerlink" href="#eraser-tool" title="永久链接至标题"></a></h1>
+<p>快捷键：<span class="guilabel">Shift</span>+<span class="guilabel">E</span></p>
+<div class="figure align-center" id="id3">
 <img alt="../../_images/28tool-eraser.png" src="../../_images/28tool-eraser.png" />
-<figcaption>
-<p><span class="caption-text">橡皮工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">橡皮工具及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
+</div>
 <p>橡皮工具( <a class="reference internal" href="../../_images/gimp-tool-eraser.svg"><img alt="gimp-tool-eraser" class="align-middle" height="20" src="../../_images/gimp-tool-eraser.svg" width="20" /></a> )可以删除一个颜色区域。(原理是使该区域变透明，图像的原始数据并没有被删除)</p>
 <p>橡皮工具有时会用来修剪选区的边缘，以精确调整选区范围，比如蒙版。</p>
 <p>如果橡皮擦用于不支持透明度的对象，则擦除后会显示背景色(如果对象是蒙板，擦除后选区会被修改)。否则，根据工具选项的设置，擦除会导致产生部分或完全透明。</p>
@@ -116,17 +108,17 @@
 <p>如果想完全擦除某区域的像素，不留下任何痕迹，请在工具选项中勾选“硬质边界”选项，而不是把工具选项中的“硬度”和“力度”调整为100；否则，笔刷边缘的部分不会被完全擦除。</p>
 </div>
 </div></blockquote>
-<section id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="section" id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
 <ol class="arabic simple">
 <li><p>按Ctrl键可以把橡皮工具临时改为颜色选择器，但吸取的颜色会成为背景色，不像画笔工具和铅笔工具那样成为前景色；</p></li>
 <li><p>按Shift键可以强制只能擦除直线；</p></li>
 <li><p>Ctrl键+Shift键同时按，可以强制只能擦除直线，且限制角度为15度的整数倍；</p></li>
 <li><p>按Alt键会切换为“反擦除”模式，即修复之前被擦除的内容。</p></li>
 </ol>
-</section>
-<section id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+</div>
+<div class="section" id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
 <p>这里提供一些细节控制。</p>
 <p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
 <ol class="arabic simple">
@@ -136,7 +128,7 @@
 </ol>
 <blockquote>
 <div><p>右边的文字是笔刷的名称。</p>
-<p>文字右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit.svg" width="20" /></a> )，点击可以打开 笔刷编辑器，这里可以查看笔刷参数，但不能修改笔刷。如果想修改笔刷，请先点击工具选项中的笔刷缩略图按钮，显示笔刷选择窗口，然后点击窗口底部最右边的“打开笔刷选择对话框”按钮( <a class="reference internal" href="../../_images/gimp-tool-paintbrush.svg"><img alt="gimp-tool-paintbrush-icon" class="align-middle" height="20" src="../../_images/gimp-tool-paintbrush.svg" width="20" /></a> )，会打开笔刷编辑器的选择窗口，在这里选择目标笔刷，然后点击窗口的“创建新笔刷”按钮( <a class="reference internal" href="../../_images/document-new.svg"><img alt="document-new-icon" class="align-middle" height="20" src="../../_images/document-new.svg" width="20" /></a> )，即可根据所选笔刷创建一个副本，您可以对副本做修改。</p>
+<p>文字右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a> )，点击可以打开 笔刷编辑器，这里可以查看笔刷参数，但不能修改笔刷。如果想修改笔刷，请先点击工具选项中的笔刷缩略图按钮，显示笔刷选择窗口，然后点击窗口底部最右边的“打开笔刷选择对话框”按钮( <a class="reference internal" href="../../_images/gimp-tool-paintbrush1.svg"><img alt="gimp-tool-paintbrush-icon" class="align-middle" height="20" src="../../_images/gimp-tool-paintbrush1.svg" width="20" /></a> )，会打开笔刷编辑器的选择窗口，在这里选择目标笔刷，然后点击窗口的“创建新笔刷”按钮( <a class="reference internal" href="../../_images/document-new2.svg"><img alt="document-new-icon" class="align-middle" height="20" src="../../_images/document-new2.svg" width="20" /></a> )，即可根据所选笔刷创建一个副本，您可以对副本做修改。</p>
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li><p>大小：这里可以精确地控制笔刷的尺寸。您可以直接用鼠标调整；或者用鼠标点击后，使用键盘上的上下方向键调整，步进为1；或者使用键盘的PageUP/PageDown键调整，步进为10；也可以用鼠标滚轮调整，步进为1，滚轮+Ctrl键步进为10。右边两个按钮，重置按钮按下后会把参数值重置为原始值；链接按钮激活后会在笔刷切换时使用原始值，否则切换会使用当前设置值。</p></li>
@@ -154,8 +146,8 @@
 <li><p>间距：笔刷画出来的“线条”可以认为是多个连续的点构成的。间距可以设置相邻笔刷点之间的距离。间距越大，越不连续。调整及步进同 宽高比。</p></li>
 <li><p>硬度：笔刷边缘的模糊程度。调整及步进同 宽高比。</p></li>
 <li><p>力度：颜色的浓淡程度，力度越大，颜色越浓。较低的值会导致一定的透明属性。</p></li>
-<li><p>动态：这是一个按钮( <a class="reference internal" href="../../_images/gimp-dynamics.svg"><img alt="gimp-dynamics-icon" class="align-middle" height="20" src="../../_images/gimp-dynamics.svg" width="20" /></a> )。打开后，可以选择预设的动态，默认是不启用动态。您可以自行创建新的动态，具体请参考菜单 窗口→可停靠对话框→绘画动态。(关于动态的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-dynamics"><span class="std std-ref">动态概念</span></a>)</p></li>
-<li><p>动态选项：这里可以对一些动态选项进行调整。右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit.svg" width="20" /></a> )，点击可以打开 动态绘图编辑器，对动态进行编辑，编辑方法请参考菜单 窗口→可停靠对话框→绘画动态。</p></li>
+<li><p>动态：这是一个按钮( <a class="reference internal" href="../../_images/gimp-dynamics2.svg"><img alt="gimp-dynamics-icon" class="align-middle" height="20" src="../../_images/gimp-dynamics2.svg" width="20" /></a> )。打开后，可以选择预设的动态，默认是不启用动态。您可以自行创建新的动态，具体请参考菜单 窗口→可停靠对话框→绘画动态。(关于动态的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-dynamics"><span class="std std-ref">动态概念</span></a>)</p></li>
+<li><p>动态选项：这里可以对一些动态选项进行调整。右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a> )，点击可以打开 动态绘图编辑器，对动态进行编辑，编辑方法请参考菜单 窗口→可停靠对话框→绘画动态。</p></li>
 </ol>
 <blockquote>
 <div><p>11.1 淡出选项：</p>
@@ -176,7 +168,7 @@
 <p>11.2 颜色选项：如果笔刷有颜色选项，这里可以设置渐变样式。如果无颜色选项，会使用前景色。</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>渐变：同<a class="reference internal" href="22tool-gradient.html#gimp-tool-gradient"><span class="std std-ref">渐变工具</span></a>，可以选择一个渐变样式。缩略图按钮右侧是反向开关，可以反转渐变的顺序。最右边是渐变编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit.svg" width="20" /></a>，点击可以编辑渐变。(渐变的编辑方法，请参考菜单 窗口→可停靠对话框→渐变)</p></li>
+<li><p>渐变：同<a class="reference internal" href="22tool-gradient.html#gimp-tool-gradient"><span class="std std-ref">渐变工具</span></a>，可以选择一个渐变样式。缩略图按钮右侧是反向开关，可以反转渐变的顺序。最右边是渐变编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a>，点击可以编辑渐变。(渐变的编辑方法，请参考菜单 窗口→可停靠对话框→渐变)</p></li>
 <li><p>混合色彩空间：混合RGB渐变片段时使用哪种色彩空间。</p></li>
 </ul>
 </div></blockquote>
@@ -196,8 +188,8 @@
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -210,7 +202,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗。</p>
+    <p>&#169; 版权所有 : 驿窗.</p>
   </div>
 
   
