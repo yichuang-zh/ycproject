@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7. HSV HSL RGB</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="LibreOffice操作指南" href="../../libreoffice/libreoffice.html" />
+    <link rel="prev" title="6. 像素画 pixel art" href="pixelart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../ycp_base.html">驿窗平面基础</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>HSV HSL RGB</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="pixelart.html" class="btn btn-neutral float-left" title="6. 像素画 pixel art" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../libreoffice/libreoffice.html" class="btn btn-neutral float-right" title="LibreOffice操作指南" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="hsv-hsl-rgb">
+<span id="hsv-hsl"></span><h1><span class="section-number">7. </span>HSV HSL RGB<a class="headerlink" href="#hsv-hsl-rgb" title="Link to this heading"></a></h1>
+<p>这里主要讨论HSV和HSL。</p>
+<p>首先明确一点，HSV和HSL都是RGB的另外的表现形式，即HSV和HSL所表达的颜色范围与RGB是一样的。既然一样，却出现了不同的形式，肯定有一定道理。</p>
+<p>这个道理就是，RGB是纯粹从数学角度来描述颜色，这种描述方式让人类感觉不是很形象。换句话说，人类如果想用自然语言来形容一个颜色，通常无法使用RGB色值来表达，因为RGB色值表达方法最初设计就没有考虑过要专门给人用，而是简单的数学概念。人类对于颜色的形容，首先是什么颜色，比如红色，在HSV中用色相(H)来定义，这也是首先能被人类感知的颜色要素；然后是颜色的饱和程度，红色发灰的程度或者鲜艳的程度，通常用饱和度(S)来定义；再然后是颜色的明暗程度，用明度(V)定义。这样的形容颜色的表达方式，就与人类的直觉的思维模式比较接近。所以，从人类感知的角度来评价，HSV/HSL的表达方式比RGB的表达方式更容易被大家理解、使用和交流。</p>
+<p>因为考虑人类直觉感知的需要，HSV/HSL才被设计出来：</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>HSV是指Hue, Saturation, Value</p></li>
+<li><p>HSL是指Hue, Saturation, Lightness</p></li>
+</ol>
+</div></blockquote>
+<p>二者前两个词汇一模一样，只有第三个词不同。不要被这个表象迷惑，实际上，二者只有第一个词代表的含义是相同的，第二个词虽然使用了相同的英文单词，也都代表饱和度，但细节上却有较大所区别。</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="pixelart.html" class="btn btn-neutral float-left" title="6. 像素画 pixel art" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../libreoffice/libreoffice.html" class="btn btn-neutral float-right" title="LibreOffice操作指南" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗。</p>
+  </div>
+
+  
+<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

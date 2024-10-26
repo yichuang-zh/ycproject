@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>驿窗平面基础</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>驿窗平面基础</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="1. 分辨率 PPI vs. DPI" href="base/1resolution.html" />
-    <link rel="prev" title="页面工具" href="../inkscape/tools/24pages.html" /> 
+    <link rel="prev" title="Inkscape用户界面汉化记录" href="../inkscape/inkscapeUI/update.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -80,7 +88,7 @@
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="../inkscape/tools/24pages.html" class="btn btn-neutral float-left" title="页面工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../inkscape/inkscapeUI/update.html" class="btn btn-neutral float-left" title="Inkscape用户界面汉化记录" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="base/1resolution.html" class="btn btn-neutral float-right" title="1. 分辨率 PPI vs. DPI" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
@@ -88,14 +96,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gimp-graphic-base">
-<span id="id1"></span><h1>驿窗平面基础<a class="headerlink" href="#gimp-graphic-base" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="gimp-graphic-base">
+<span id="id1"></span><h1>驿窗平面基础<a class="headerlink" href="#gimp-graphic-base" title="Link to this heading"></a></h1>
 <p>计算机是老外发明的，相应的，软件也是外国先做出来，中国在这个领域是后来者。</p>
 <p>平面图形图像软件也一样，使用的相关术语大多都是外国“发明”的，然后我们进行翻译，比如像素、色域、分辨率、颜色空间、蒙版、通道等等。</p>
 <p>互联网信息庞大，但有一个问题就是很多信息未必是正确的，或者未必精准；有翻译的原因，也有理解的原因，还有一些是知识面不全造成的。</p>
 <p>这里主要是针对平面设计所涉及到的相关术语进行说明，争取能更精确的描述正确的信息 。</p>
-<div class="section" id="id2">
-<h2>术语<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id2">
+<h2>术语<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p><em>下面关于术语的解释，主要目的是为了帮助非专业人员了解原理，真实情况可能有所不同</em></p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -104,6 +112,8 @@
 <li class="toctree-l1"><a class="reference internal" href="base/3color_manager.html">3. 色彩管理</a></li>
 <li class="toctree-l1"><a class="reference internal" href="base/4spec_color.html">4. 专色</a></li>
 <li class="toctree-l1"><a class="reference internal" href="base/5cmyk_rgb.html">5. CMYK 与 RGB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="base/pixelart.html">6. 像素画 <em>pixel art</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="base/7hsv.html">7. HSV HSL RGB</a></li>
 </ul>
 </div>
 <p>以下术语内容筹备中…</p>
@@ -118,13 +128,13 @@
 <div class="line">纯色</div>
 <div class="line">黑色的概念：例如在红色通道，黑色表示没有红。</div>
 <div class="line">HSV色相饱和度明度</div>
-<div class="line">色相环</div>
-<div class="line">色环</div>
+<div class="line">色相环/色环</div>
 <div class="line">亮度</div>
 <div class="line">选区：选区的本质其实是通道。</div>
 <div class="line">通道：非专业人员不需要了解通道的概念，但专业人员必须掌握通道的原理。</div>
 <div class="line">色域/超色域</div>
 <div class="line">黑点补偿</div>
+<div class="line">感官, 相对色度, 饱和度，绝对色度</div>
 <div class="line">画布尺寸/图像尺寸/图层尺寸/对象尺寸</div>
 <div class="line">反色</div>
 <div class="line">跳阶 <em>color banding</em></div>
@@ -133,24 +143,24 @@
 <p class="admonition-title">《驿窗平面基础》更新、增补、修订</p>
 <blockquote>
 <div><p>受资源限制，暂时无法搭建Git服务器，所以也就无法使用多人协作的方式来编辑本书。</p>
-<p>如果您对本书的内容/结构有任何想法或意见，请直接与驿窗联系：classenu at 163.com，邮件主题请注明 平面基础 。</p>
+<p>如果您对本书的内容/结构有任何想法或意见，请直接与驿窗联系：classenu at 163.com，邮件主题请注明<span class="dash7">平面基础</span> 。</p>
 </div></blockquote>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="../inkscape/tools/24pages.html" class="btn btn-neutral float-left" title="页面工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../inkscape/inkscapeUI/update.html" class="btn btn-neutral float-left" title="Inkscape用户界面汉化记录" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="base/1resolution.html" class="btn btn-neutral float-right" title="1. 分辨率 PPI vs. DPI" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

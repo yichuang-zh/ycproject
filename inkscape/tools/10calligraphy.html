@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>书法工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>书法工具</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../inkscape-tools.html">Inkscape工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../inkscape-tools.html">工具箱</a></li>
       <li class="breadcrumb-item active">书法工具</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,109 +98,117 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="tool-calligraphy">
-<span id="id1"></span><h1>书法工具<a class="headerlink" href="#tool-calligraphy" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="tool-calligraphy">
+<span id="id1"></span><h1>书法工具<a class="headerlink" href="#tool-calligraphy" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：<span class="guilabel">C</span> 或者 <span class="guilabel">Ctrl</span>+<span class="guilabel">F6</span></p>
-<p>书法工具( <a class="reference internal" href="../../_images/tool-calligraphy1.svg"><img alt="tool-calligraphy" class="align-middle" height="20" src="../../_images/tool-calligraphy1.svg" width="20" /></a> )类似国外古代使用的鹅毛笔工具，可以用来绘制有书法感觉的线条。</p>
-<p>(书法工具支持压感设备，例如压力敏感度和倾斜敏感度；所以，使用绘图板类的设备，绘制效果比使用鼠标更好)</p>
-<p>(连接绘图板需要重启inkscape)</p>
+<p>书法工具( <a class="reference internal" href="../../_images/tool-calligraphy.svg"><img alt="tool-calligraphy" class="align-middle" src="../../_images/tool-calligraphy.svg" style="width: 20px; height: 20px;" /></a> )类似国外古代使用的鹅毛笔工具，可以用来绘制有书法感觉的线条。</p>
+<p>(书法工具支持压感设备，例如压力敏感度和倾斜敏感度；所以，使用绘图板类的设备，绘制效果比使用鼠标更好)(连接绘图板需要重启inkscape)</p>
 <p>书法工具不同于钢笔工具和铅笔工具。钢笔工具和铅笔工具创建的都是路径曲线，着色默认是 描边，未填充；而书法工具则是创建由路径曲线构成的区域，着色默认是 填充，未描边。</p>
-<p>因为书法工具创建的线条都是区域，所以，其形状的宽度可以通过节点调整来更灵活地进行控制：</p>
+<p>因为书法工具创建的线条都是区域，所以，其宽度可以通过节点调整来更灵活地进行控制：</p>
 <blockquote>
-<div><div class="figure align-center" id="id5">
+<div><figure class="align-center" id="id5">
 <img alt="../../_images/10-1.png" src="../../_images/10-1.png" />
-<p class="caption"><span class="caption-text">图 -1：铅笔工具 (上 )与书法工具 (下 )对比，红色是路径</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图 -1：铅笔工具 (上 )与书法工具 (下 )对比，红色是路径</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-<dl>
-<dt>图-1说明：</dt><dd><div class="line-block">
-<div class="line">上方线条是铅笔工具创建，只有一条路径，做了LPE描边处理；无填充；</div>
-<div class="line">下方线条是书法工具创建；路径所形成的区域做了填充处理；无描边；</div>
-</div>
+<dl class="simple">
+<dt>图-1说明：</dt><dd><ol class="arabic simple">
+<li><p>上方线条是铅笔工具创建，只有一条路径，做了LPE描边处理；无填充；</p></li>
+<li><p>下方线条是书法工具创建；路径所形成的区域做了填充处理；无描边；</p></li>
+</ol>
 </dd>
 </dl>
-<div class="section" id="id2">
-<h2>操作方法<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<ol class="arabic simple">
-<li><p>切换到书法工具( <a class="reference internal" href="../../_images/tool-calligraphy1.svg"><img alt="tool-calligraphy" class="align-middle" height="20" src="../../_images/tool-calligraphy1.svg" width="20" /></a> )；</p></li>
+<section id="id2">
+<h2>操作方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>切换到书法工具( <a class="reference internal" href="../../_images/tool-calligraphy.svg"><img alt="tool-calligraphy" class="align-middle" src="../../_images/tool-calligraphy.svg" style="width: 20px; height: 20px;" /></a> )；</p></li>
 <li><p>鼠标在画布上点击并拖动一段距离，然后松开鼠标即可。</p></li>
-<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer1.svg"><img alt="tool-select" class="align-middle" height="20" src="../../_images/tool-pointer1.svg" width="20" /></a> )，再按空格键则切换回书法工具。</p></li>
-<li><p>(书法工具绘制的线条，样式会使用当前默认样式；您可以在菜单 编辑→首选项→工具→书法 中自定义其默认的样式)</p></li>
+<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer.svg"><img alt="tool-select" class="align-middle" src="../../_images/tool-pointer.svg" style="width: 20px; height: 20px;" /></a> )，再按空格键则切换回书法工具。</p></li>
+<li><p>(书法工具绘制的线条，样式会使用当前默认样式；您可以在菜单【编辑⇨首选项⇨工具⇨书法】中自定义其默认的样式)</p></li>
 </ol>
-<div class="section" id="id3">
-<h3>辅助快捷键<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
-<ol class="arabic">
-<li><p>在绘制线条过程中，按住左方向键或右方向键，可以动态调整笔划的宽度：左方向键变细，右方向键变粗。</p></li>
+</div></blockquote>
+<section id="id3">
+<h3>辅助快捷键<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p>在绘制线条过程中，按住<span class="dash6">左</span>方向键或<span class="dash6">右</span>方向键，可以动态调整笔划的宽度：左方向键变细，右方向键变粗。</p></li>
 <li><p>如果按Home键，会将宽度变为最小；如果按End键，会将宽度变为最大。</p></li>
 <li><p>Alt+X会马上切换到上方工具选项的 宽度 数值框，方便精确定义宽度数值。</p></li>
-<li><p>按住上方向键或下方向键，可以动态调整笔划的角度。</p></li>
+<li><p>按住<span class="dash6">上</span>方向键或<span class="dash6">下</span>方向键，可以动态调整笔划的角度。</p></li>
 <li><p>在绘制线条时，如果按住Shift键，会把绘制的线条添加到之前选中的路径中。</p></li>
 <li><p>在绘制线条时，如果按住Alt键，会从之前选中的路径中减去新绘制的路径。(挖空)</p>
-<blockquote>
-<div><div class="figure align-center" id="id6">
+<figure class="align-center" id="id6">
 <img alt="../../_images/10-2.png" src="../../_images/10-2.png" />
-<p class="caption"><span class="caption-text">左侧是选中的椭圆，右侧是按住 Alt键在椭圆上画了一笔</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
-</div></blockquote>
+<figcaption>
+<p><span class="caption-text">左侧是选中的椭圆，右侧是按住 Alt键在椭圆上画了一笔</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </li>
 <li><p>按Esc或者Ctrl+Z可以取消当前绘制的路径。</p></li>
-<li><p>引导线辅助雕刻：书法工具可以按某一条参照路径(引导线)的走向来创建新路径，新路径与参照路径的距离是可以控制的。操作方法如下：</p></li>
-</ol>
+<li><p>引导线辅助雕刻：书法工具可以按某一条参照路径(引导线)的走向来创建新路径，新路径与参照路径的距离是可以控制的。操作方法如下：</p>
 <blockquote>
-<div><ol class="loweralpha simple">
+<div><ul class="simple">
 <li><p>用钢笔工具画一条参照路径，并选中此参照路径；(后续会以此参照路径为引导线来绘制新路径)</p></li>
 <li><p>切换到书法工具；</p></li>
-<li><p>按Ctrl键不松手，鼠标移动到参照路径附近，会显示一个中间带书法绘画图标( <a class="reference internal" href="../../_images/circle-calligraphy.svg"><img alt="circle-calligraphy" class="align-middle" height="20" src="../../_images/circle-calligraphy.svg" width="20" /></a> )的圆圈，圆圈的大小会随鼠标位置变化；</p></li>
+<li><p>按Ctrl键不松手，鼠标移动到参照路径附近，会显示一个中间带书法绘画图标( <a class="reference internal" href="../../_images/circle-calligraphy.svg"><img alt="circle-calligraphy" class="align-middle" src="../../_images/circle-calligraphy.svg" style="width: 20px; height: 20px;" /></a> )的圆圈，圆圈的大小会随鼠标位置变化；</p></li>
 <li><p>保持Ctrl键不松手，点击并沿参照路径拖动鼠标，绘制出新的路径；(速度慢一些；拖动时圆圈变成绿色)</p></li>
 <li><p>松开鼠标和Ctrl键，鼠标指针经过的轨迹就会创建一条新的路径；</p></li>
 <li><p>重复上述操作，按住Ctrl键不松手，点击并沿参照路径拖动鼠标，只不过让圆圈大小变一下；(圆圈大小表示新路径与参照路径的距离)</p></li>
 <li><p>多次操作后所创建的多条路径，就是生成的多条 雕刻线。(操作完成)</p></li>
 <li><p>直接在画布上执行此操作没有任何意义，应该先在画布上放一张有明暗对比的图片，然后在图片上执行此操作，结果就是做出了图片的 雕刻。</p></li>
-<li><p>(默认情况下，Inkscape会用新创建的路径做为下一条路径的引导线。如果想一直用原始路径做为引导线，请点击菜单 编辑→首选项→工具→书法，取消勾选 选择新路径 即可)</p></li>
+<li><p>(默认情况下，Inkscape会用新创建的路径做为下一条路径的引导线。如果想一直用原始路径做为引导线，请点击菜单【编辑⇨首选项⇨工具⇨书法】，取消勾选 选择新路径 即可)</p></li>
 <li><p>效果示例请参考下面的 图-2 。</p></li>
+</ul>
+</div></blockquote>
+</li>
 </ol>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="id4">
-<h2>工具选项<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
-<ol class="arabic">
+</section>
+</section>
+<section id="id4">
+<h2>工具选项<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic">
 <li><p>( 无预置 )：这里有多个已经设定好的笔划形状(预置)，分别是蘸水笔、记号笔、刷子、摇摆、斑痕、临摹。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/2set-pre.svg"><img alt="2set-pre" class="align-middle" height="20" src="../../_images/2set-pre.svg" width="20" /></a> )：配置文件。这里可以添加或编辑预置的配置文件。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/2set-pre.svg"><img alt="2set-pre" class="align-middle" src="../../_images/2set-pre.svg" style="width: 20px; height: 20px;" /></a> )：配置文件。这里可以添加或编辑预置的配置文件。</p></li>
 <li><p>( 宽度 )：笔划的宽度，范围1-100，可以用左右方向键调整。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/4pressure.svg"><img alt="4pressure" class="align-middle" height="20" src="../../_images/4pressure.svg" width="20" /></a> )：压力开关。如果使用绘图板，那么激活此功能后，可以应用压力敏感度参数。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/5trace-background.svg"><img alt="5trace-background" class="align-middle" height="20" src="../../_images/5trace-background.svg" width="20" /></a> )：背景雕刻。激活此选项后，书法工具会根据背景颜色的深浅来自动调整笔划的宽度：浅色变窄，深色变宽；白色最窄，黑色最宽。(可以用来创建雕刻效果，参考下面的 图-2)</p></li>
+<li><p>( <a class="reference internal" href="../../_images/4pressure.svg"><img alt="4pressure" class="align-middle" src="../../_images/4pressure.svg" style="width: 20px; height: 20px;" /></a> )：压力开关。如果使用绘图板，那么激活此功能后，可以应用压力敏感度参数。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/5trace-background.svg"><img alt="5trace-background" class="align-middle" src="../../_images/5trace-background.svg" style="width: 20px; height: 20px;" /></a> )：背景雕刻。激活此选项后，书法工具会根据背景颜色的深浅来自动调整笔划的宽度：浅色变窄，深色变宽；白色最窄，黑色最宽。(可以用来创建雕刻效果，参考下面的 图-2)</p></li>
 <li><p>( 细化 )：笔划粗细与速度的相关程度，范围是-100到100：大于0表示线条宽度随速度的增加而减小；0表示线条宽度与速度无关；小于0表示线条宽度随速度的增加而增大。(时快时慢会导致线条时宽时窄)</p></li>
 <li><p>( 质量 )：范围0-100，让笔划产生滞后的惯性感觉，数值越大感觉越明显。(质量越大惯性越大)</p></li>
 <li><p>( 角度 )：范围-90到90，绘画时笔尖相对画布水平方向的角度。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/9use-tilt.svg"><img alt="9use-tilt" class="align-middle" height="20" src="../../_images/9use-tilt.svg" width="20" /></a> )：倾斜度开关，让压感设备笔的倾斜度来影响笔尖的角度。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/9use-tilt.svg"><img alt="9use-tilt" class="align-middle" src="../../_images/9use-tilt.svg" style="width: 20px; height: 20px;" /></a> )：倾斜度开关，让压感设备笔的倾斜度来影响笔尖的角度。</p></li>
 <li><p>( 固定 )：范围0-100，笔尖的角度与笔的移动方向的相关程度：0表示笔尖的角度始终垂直于笔的移动方向；100表示笔尖的角度等于左侧 角度 框中的数值。</p></li>
 <li><p>( 端点 )：范围0.00-5.00，用来设置笔划两端的端点的形状，只能是平的或者圆弧形：0.00表示端点是平的；5.00表示端点是椭圆形。</p></li>
 <li><p>( 抖动 )：范围0-100，控制笔划粗细的随机性：0表示笔划粗细恒定；100表示笔划粗细有很强的随机变化。</p></li>
 <li><p>( 摆动 )：范围0-100，模拟纸张对笔尖的阻力，增加一点打滑的效果：0表示无阻力，笔尖在纸张上不会打滑；100表示阻力很大，打滑严重。</p>
-<blockquote>
-<div><div class="figure align-center" id="id7">
+<figure class="align-center" id="id7">
 <img alt="../../_images/10-3.png" src="../../_images/10-3.png" />
-<p class="caption"><span class="caption-text">图 -2：引导线辅助雕刻功能与工具选项中的背景雕刻选项结合使用</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
-</div></blockquote>
+<figcaption>
+<p><span class="caption-text">图 -2：引导线辅助雕刻功能与工具选项中的背景雕刻选项结合使用</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </li>
 </ol>
 <dl class="simple">
-<dt>图-2说明：</dt><dd><ul class="simple">
+<dt>图-2说明：</dt><dd><ol class="arabic simple">
 <li><p>最左侧的纵向黑色线条是用钢笔工具创建的参照路径(引导线)；</p></li>
 <li><p>中间是一张PNG头像，并用书法工具在头像上按引导线画了一些浅红色线条，所有线条都使用左侧的黑线做为引导线；</p></li>
 <li><p>右侧的浅红色图形是所有线条画完后移除PNG头像的效果。</p></li>
 <li><p>(浅红色线条的粗细变化是由工具选项中的 背景雕刻 选项自动生成的)</p></li>
 <li><p>(用作参照路径的引导线可以很复杂，比如用文字来做为参照路径)</p></li>
 <li><p>(图-2只使用了一条纵向直线做为引导线；您可以尝试使用一条斜向引导线，然后重复整个过程；甚至可以尝试使用两条不同方向的引导线或弯线作为引导线)</p></li>
-</ul>
+</ol>
 </dd>
 </dl>
-</div>
-</div>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -205,7 +221,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

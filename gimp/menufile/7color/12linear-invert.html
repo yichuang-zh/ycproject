@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→线性反转 Linear Invert</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>⇨线性反转 Linear Invert</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="颜色→明度反转 Value Invert" href="13value-invert.html" />
-    <link rel="prev" title="颜色→反相 Invert" href="11invert.html" /> 
+    <link rel="next" title="⇨明度反转 Value Invert" href="13value-invert.html" />
+    <link rel="prev" title="⇨反相 Invert" href="11invert.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,41 +85,41 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../gimp_menu.html">GIMP菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../gimp_menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../7color.html">颜色</a></li>
-      <li class="breadcrumb-item active">颜色→线性反转 <em>Linear Invert</em></li>
+      <li class="breadcrumb-item active">⇨线性反转 <span class="i070">Linear Invert</span></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="11invert.html" class="btn btn-neutral float-left" title="颜色→反相 Invert" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="13value-invert.html" class="btn btn-neutral float-right" title="颜色→明度反转 Value Invert" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="11invert.html" class="btn btn-neutral float-left" title="⇨反相 Invert" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="13value-invert.html" class="btn btn-neutral float-right" title="⇨明度反转 Value Invert" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="linear-invert">
-<span id="gimp-menu-7color-12linear-invert"></span><h1>颜色→线性反转 <em>Linear Invert</em><a class="headerlink" href="#linear-invert" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="linear-invert">
+<span id="gimp-menu-7color-12linear-invert"></span><h1>⇨线性反转 <span class="i070">Linear Invert</span><a class="headerlink" href="#linear-invert" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>此命令没有快捷键。</p>
-<p>将当前图层中所有颜色以线性光(line light)反相。暗部会变亮，亮部会变暗。</p>
+<p>将当前图层中所有颜色以线性光<span class="i070">line light</span>反相。暗部会变亮，亮部会变暗。</p>
 <p>此命令不会处理Alpha通道。</p>
-</div>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="11invert.html" class="btn btn-neutral float-left" title="颜色→反相 Invert" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="13value-invert.html" class="btn btn-neutral float-right" title="颜色→明度反转 Value Invert" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="11invert.html" class="btn btn-neutral float-left" title="⇨反相 Invert" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="13value-invert.html" class="btn btn-neutral float-right" title="⇨明度反转 Value Invert" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

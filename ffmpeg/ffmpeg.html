@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta content="ffmpeg, 视频, 开源视频处理" name="keywords" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="ffmpeg, 视频, 开源视频处理" name="keywords" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FFmpeg应用参考</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>FFmpeg应用参考</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -60,7 +69,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -89,74 +97,83 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="ffmpeg"></span><div class="section" id="id1">
-<h1>FFmpeg应用参考<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
-<dl class="simple">
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="ffmpeg">
+<span id="id1"></span><h1>FFmpeg应用参考<a class="headerlink" href="#ffmpeg" title="Link to this heading"></a></h1>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-m-0 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header sd-bg-dark sd-bg-text-dark">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-book" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></svg></span><span class="sd-summary-text">基础知识：文件格式、封装格式、编码格式(压缩格式)、视频格式；编码、解码；转码</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="line-block">
+<div class="line"><em>FFmpeg的全称是Fast Forward mpeg</em></div>
+<div class="line"><em>mpeg = moving picture experts group</em></div>
+</div>
+<p class="sd-card-text"><strong>一、文件格式、封装格式、编码格式</strong></p>
+<blockquote>
+<div><p class="sd-card-text">mp4不是<span class="dash6">编码</span>格式，而是<span class="dash6">封装</span>格式。</p>
+<p class="sd-card-text">我们通常所说的mp4视频，或者mp4格式视频，都是指封装为mp4的视频。习惯上，我们把mp4格式理解为<span class="dash6">文件格式</span>，这其实是不正确的或者不精确的理解，因为文件格式无法精确定义视频。</p>
+<p class="sd-card-text">(文件格式方面的混淆，应该是源于Windows系统。Windows系统中文件格式通常专指文件名称的后缀，比如video.mp4，文件格式就是mp4；而Linux系统中，文件名称不需要后缀，比如把video.mp4重命名为video，系统完全能正确识别为mp4视频。不同系统间的这个差异导致<span class="dash6">文件格式</span>这个描述不适用于视频文件。)</p>
+</div></blockquote>
+<p class="sd-card-text"><strong>二、压缩格式</strong></p>
+<blockquote>
+<div><p class="sd-card-text">视频的编码格式也叫压缩格式，有点类同于图像的压缩。</p>
+<p class="sd-card-text">例如，1920x1080的JPEG图片，压缩是通过JPEG压缩算法来实现的。而1920x1080的视频，不是通过JPEG算法，而是通过编码器进行计算压缩。图片压缩与视频压缩的实现在本质上是一个意思，只不过视频的压缩算法(即编码器)，考虑的技术细节更多而已，所以也就比图片压缩显得更复杂一些。</p>
+<p class="sd-card-text">正确或更精确的理解，我们可以从封装格式和编码格式这两个角度来描述视频文件。</p>
+<p class="sd-card-text">上面讨论的编码与封装，正确的理解是：<span class="dash6">封装</span>格式为mp4的视频可能有多种<span class="dash6">编码</span>格式，比如编码为<span class="dash2">h.264</span>格式的mp4视频，或者编码为<span class="dash2">h.265</span>格式的mp4视频。</p>
+</div></blockquote>
+<p class="sd-card-text"><strong>三、视频格式</strong></p>
+<blockquote>
+<div><p class="sd-card-text"><span class="dash6">视频格式</span>这个描述，与文件格式的描述相近，但比文件格式更精确。讨论视频时如果提到<span class="dash6">视频格式</span>，那么通常要同时指明<span class="dash6">编码格式</span>和<span class="dash6">封装格式</span>两个参数。比如对方问你能提供什么样的视频格式文件，回答时最好说<span class="dash2">h.264的mp4文件</span>，而不是简单回答<span class="dash6">mp4文件</span>。</p>
+<p class="sd-card-text">典型案例：Firefox ESR 102.15在播放<span class="dash6">h.265</span>编码的mp4时，<span class="dash2">只有声音没有画面</span>，播放<span class="dash6">h.264</span>编码的mp4则声音画面都正常。</p>
+</div></blockquote>
+<p class="sd-card-text"><strong>四、编码、解码</strong></p>
+<blockquote>
+<div><p class="sd-card-text">不同编码格式的mp4视频，创建或编辑或播放时，对硬件和软件要求不同。</p>
+<p class="sd-card-text">想用显卡来<span class="dash6">创建</span>h.265格式的mp4，需要显卡硬件支持h.265<span class="dash6">编码</span>；创建视频即视频的<span class="dash6">编码</span>过程，或者视频的压缩过程。</p>
+<p class="sd-card-text">想<span class="dash2">播放</span>h.265格式的mp4视频，需要播放器支持h.265格式<span class="dash2">解码</span>；播放视频即视频的<span class="dash2">解码</span>过程，或者视频的解压缩过程。</p>
+<p class="sd-card-text">编辑视频，通常是先解码，再编码，即下面提到的转码。</p>
+<p class="sd-card-text">使用CPU编码/解码，通常叫做软编码/软解码；使用GPU编码/解码，通常叫做硬编码/硬解码。有的电视盒子上会标4k硬解，其实就表示有专门用于硬解码的视频解码芯片，功能类似于显卡。</p>
+</div></blockquote>
+<p class="sd-card-text"><strong>五、转码</strong></p>
+<blockquote>
+<div><p class="sd-card-text">转码：对已有的视频重新编码，就是转码。转码的过程其实就是先解码原视频，再把视频编码为新视频。转码使用的编码格式，可能与原视频的编码格式相同，也可能不同。如果相同，那么不使用编码器，直接copy，转码的过程就会非常快(命令参数为<span class="dash2">-c copy</span>)；直接copy等同于不转码也不编码。</p>
+<p class="sd-card-text">对视频添加水印类的操作，必须转码(先解码再重新编码)，不能使用<span class="dash2">-c copy</span>参数，因为视频的画面内容已经发生变化。即只要视频的画面内容有变化，就必须转码(先解码再重新编码)。如果只是从一个视频上截取其中一段下来，那么截取下来的那一段，画面与原视频其实完全相同，这个过程就不需要转码，等同于直接拷贝，处理速度会非常快。</p>
+</div></blockquote>
+<ul class="simple">
+<li><p class="sd-card-text">注1：封装格式除了mp4，还有MKV、AVI、3GP、WebM、QuickTime等。</p></li>
+<li><p class="sd-card-text">注2：编码格式除了h.264和h.265，还有AV1、QuickTime、DVI、WMV等。</p></li>
+<li><p class="sd-card-text">注3：可以把封装格式理解为商品的外包装，编码格式理解为商品本身的结构。</p></li>
+<li><p class="sd-card-text">注4：封装格式与编码格式不能随意搭配，比如不能用mp4来封装wmv。</p></li>
+<li><p class="sd-card-text">注5：当下流行的是h.264编码格式的mp4视频。</p></li>
+<li><p class="sd-card-text">注6：以上讨论内容，不仅适用于FFmpeg，也适用于其它视频剪辑软件。</p></li>
+</ul>
+</div>
+</details><br /><dl class="simple">
 <dt>为啥要了解FFmpeg？因为有些时候FFmpeg明显快很多！</dt><dd><p>很简单，按下面第6个示例，给视频加个logo水印，先用常用的视频剪辑工具做，再用FFmpeg做，然后对比一下二者的速度、质量、生成文件的体积，就会发现FFmpeg的好处了。</p>
 </dd>
 </dl>
 <p>FFmpeg在处理音视频时效率非常高，对于注重效率和文件体积的情况有明显效果。如果您经常剪辑视频文件，那么FFmpeg非常适合作为剪辑工具的补充来配合使用。本文尝试通过一些实例来演示FFmpeg的使用方法。</p>
-<div class="admonition-y admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp1.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp1.svg" width="22" /></a> 预备知识</p>
-<p>文件格式、封装格式、编码格式(压缩格式)、视频格式；编码、解码；转码</p>
-<p><strong>一、文件格式、封装格式、编码格式</strong></p>
 <blockquote>
-<div><p>mp4不是<span class="dash6">编码</span>格式，而是<span class="dash6">封装</span>格式。</p>
-<p>我们通常所说的mp4视频，或者mp4格式视频，都是指封装为mp4的视频。习惯上，我们把mp4格式理解为<span class="dash6">文件格式</span>，这其实是不正确的或者不精确的理解，因为文件格式无法精确定义视频。</p>
-<p>(文件格式方面的混淆，应该是源于Windows系统。Windows系统中文件格式通常专指文件名称的后缀，比如video.mp4，文件格式就是mp4；而Linux系统中，文件名称不需要后缀，比如把video.mp4重命名为video，系统完全能正确识别为mp4视频。不同系统间的这个差异导致<span class="dash6">文件格式</span>这个描述不适用于视频文件。)</p>
-</div></blockquote>
-<p><strong>二、压缩格式</strong></p>
-<blockquote>
-<div><p>视频的编码格式也叫压缩格式，有点类同于图像的压缩。</p>
-<p>例如，1920x1080的JPEG图片，压缩是通过JPEG压缩算法来实现的。而1920x1080的视频，不是通过JPEG算法，而是通过编码器进行计算压缩。图片压缩与视频压缩的实现在本质上是一个意思，只不过视频的压缩算法(即编码器)，考虑的技术细节更多而已，所以也就比图片压缩显得更复杂一些。</p>
-<p>正确或更精确的理解，我们可以从封装格式和编码格式这两个角度来描述视频文件。</p>
-<p>上面讨论的编码与封装，正确的理解是：<span class="dash6">封装</span>格式为mp4的视频可能有多种<span class="dash6">编码</span>格式，比如编码为<span class="dash2">h.264</span>格式的mp4视频，或者编码为<span class="dash2">h.265</span>格式的mp4视频。</p>
-</div></blockquote>
-<p><strong>三、视频格式</strong></p>
-<blockquote>
-<div><p><span class="dash6">视频格式</span>这个描述，与文件格式的描述相近，但比文件格式更精确。讨论视频时如果提到<span class="dash6">视频格式</span>，那么通常要同时指明<span class="dash6">编码格式</span>和<span class="dash6">封装格式</span>两个参数。比如对方问你能提供什么样的视频格式文件，回答时最好说<span class="dash2">h.264的mp4文件</span>，而不是简单回答<span class="dash6">mp4文件</span>。</p>
-<p>典型案例：Firefox ESR 102.15在播放<span class="dash6">h.265</span>编码的mp4时，<span class="dash2">只有声音没有画面</span>，播放<span class="dash6">h.264</span>编码的mp4则声音画面都正常。</p>
-</div></blockquote>
-<p><strong>四、编码、解码</strong></p>
-<blockquote>
-<div><p>不同编码格式的mp4视频，创建或编辑或播放时，对硬件和软件要求不同。</p>
-<p>想用显卡来<span class="dash6">创建</span>h.265格式的mp4，需要显卡硬件支持h.265<span class="dash6">编码</span>；创建视频即视频的<span class="dash6">编码</span>过程，或者视频的压缩过程。</p>
-<p>想<span class="dash2">播放</span>h.265格式的mp4视频，需要播放器支持h.265格式<span class="dash2">解码</span>；播放视频即视频的<span class="dash2">解码</span>过程，或者视频的解压缩过程。</p>
-<p>编辑视频，通常是先解码，再编码，即下面提到的转码。</p>
-<p>使用CPU编码/解码，通常叫做软编码/软解码；使用GPU编码/解码，通常叫做硬编码/硬解码。有的电视盒子上会标4k硬解，其实就表示有专门用于硬解码的视频解码芯片，功能类似于显卡。</p>
-</div></blockquote>
-<p><strong>五、转码</strong></p>
-<blockquote>
-<div><p>转码：对已有的视频重新编码，就是转码。转码的过程其实就是先解码原视频，再把视频编码为新视频。转码使用的编码格式，可能与视频现有的编码格式相同，也可能不同。如果相同，那么不使用编码器，直接copy，转码的过程就会非常快(命令参数为<span class="dash2">-c copy</span>)；直接copy等同于不转码也不编码。</p>
-<p>对视频添加水印类的操作，必须转码(先解码再重新编码)，不能使用<span class="dash2">-c copy</span>参数，因为视频的画面内容已经发生变化。即只要视频的画面内容有变化，就必须转码(先解码再重新编码)。如果只是从一个视频上截取其中一段下来，那么截取下来的那一段，画面与原视频其实完全相同，这个过程就不需要转码，等同于直接拷贝，速度会非常快。</p>
-</div></blockquote>
-<ul class="simple">
-<li><p>注1：封装格式除了mp4，还有MKV、AVI、3GP、WebM、QuickTime等。</p></li>
-<li><p>注2：编码格式除了h.264和h.265，还有AV1、QuickTime、DVI、WMV等。</p></li>
-<li><p>注3：可以把封装格式理解为商品的外包装，编码格式理解为商品本身的结构。</p></li>
-<li><p>注4：封装格式与编码格式不能随意搭配，比如不能用mp4来封装wmv。</p></li>
-<li><p>注5：当下流行的是h.264编码格式的mp4视频。</p></li>
-<li><p>注6：以上讨论内容，不仅适用于FFmpeg，也适用于其它视频剪辑软件。</p></li>
-</ul>
+<div><div class="admonition-losslesscut admonition">
+<p class="admonition-title">LosslessCut</p>
+<p>LosslessCut是一个相对较新的视频剪辑工具，专门体现FFmpeg的速度，如果您不想使用命令行，又想利用FFmpeg的速度，那么可以试一下<a class="reference external" href="https://github.com/mifi/lossless-cut">LosslessCut</a>这个工具。</p>
 </div>
-<p>FFmpeg的全称是Fast Forward mpeg。(<em>mpeg = moving picture experts group</em>)</p>
+</div></blockquote>
 <dl class="simple">
-<dt>FFmpeg语法通用格式：</dt><dd><p>FFmpeg命令后面的参数都是成对的，比如-i /dev/shm/test.mp4，其中-i表示要输入一个文件，而后面的/dev/shm/test.mp4则表示输入文件的路径及文件名。这些成对的参数可以有多对，其作用就是告诉ffmpeg要干什么和怎么干，比如一对参数中前面的-i告诉ffmpeg要输入文件，那么后面紧接着就要说明输入文件的文件名及文件位置。</p>
+<dt>FFmpeg语法通用格式：</dt><dd><p>FFmpeg命令后面的参数都是成对的，比如-i /dev/shm/test.mp4，其中-i表示要输入一个文件，而后面的/dev/shm/test.mp4则表示输入文件的路径及文件名。这些成对的参数可以有多对，其作用就是告诉ffmpeg要做什么操作及操作对象是谁，比如一对参数中前面的-i告诉FFmpeg要做的操作是输入文件，那么后面紧接着就要说明操作对象，即输入文件的文件名及文件位置。</p>
 </dd>
 </dl>
-<p>正常情况下，ffmpeg命令应该长下面这样：</p>
+<p>正常情况下，FFmpeg命令应该长下面这样：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -flag action new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-flag<span class="w"> </span>action<span class="w"> </span>new.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>上面命令中：</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p><span class="teal">ffmpeg</span>：表示执行ffmpeg命令</p></li>
-<li><p><span class="teal">-i old.mp4</span>：表示输入的文件是input_file.mp4 (可以是其它格式，比如.mov)</p></li>
-<li><p><span class="teal">-flag action</span>：表示对输入文件做的操作，-flat是操作名，action是操作内容</p></li>
-<li><p><span class="teal">new.mp4</span>：表示操作完成输出的文件名为new.mp4 (可以是其它格式，如.mov)</p></li>
+<li><p><span class="d60c0n">ffmpeg</span>：表示执行FFmpeg命令</p></li>
+<li><p><span class="d60c0n">-i old.mp4</span>：表示输入的文件是old.mp4 (可以是其它格式，比如.mov)</p></li>
+<li><p><span class="d60c0n">-flag action</span>：表示对输入文件做的操作，-flat是操作名，action是操作内容</p></li>
+<li><p><span class="d60c0n">new.mp4</span>：表示操作完成输出的文件名为new.mp4 (可以是其它格式，如.mov)</p></li>
 </ol>
 </div></blockquote>
 <p><strong>应用示例：</strong></p>
@@ -177,131 +194,133 @@
 <li><p><a class="reference internal" href="#ffmpeg13-motion-jpg"><span class="std std-ref">把多张图片拼成视频</span></a></p></li>
 <li><p><a class="reference internal" href="#ffmpeg14-only-audio"><span class="std std-ref">从视频中提取音频</span></a></p></li>
 <li><p><a class="reference internal" href="#ffmpeg13-audio-clip"><span class="std std-ref">从音频中提取片段</span></a></p></li>
+<li><p><a class="reference internal" href="#add-cover"><span class="std std-ref">给mp4视频添加封面</span></a></p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" id="ffmpeg01-resize">
-<li><p>裁切视频的画面尺寸(<span class="dash6">Nvidia显卡</span>转码)：</p></li>
-</ol>
+<section id="nvidia">
+<span id="ffmpeg01-resize"></span><h2>一、裁切视频的画面尺寸(<span class="dash6">Nvidia显卡</span>转码)：<a class="headerlink" href="#nvidia" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;576:324:72:428&#39;</span> -c:v h264_nvenc newGPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;576:324:72:428&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>newGPU.mp4
 </pre></div>
 </div>
 <p>生成的新视频的尺寸为576x324，从原视频的X=72，Y=428位置为原点开始裁切。</p>
 <p><span class="dash6">-c:v h264_nvenc</span>表示使用Nvidia显卡h.264编码；如果想使用Nvidia显卡h.265编码，把h264_nvenc改为hevc_nvenc即可。</p>
 <p>上面的命令是使用Nvidia显卡转码，下面改为使用<span class="dash6">CPU转码</span>：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;576:324:72:428&#39;</span> -c:v libx264 newCPU.mp4
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;576:324:72:428&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>newCPU.mp4
 </pre></div>
 </div>
 <p><span class="dash6">-c:v libx264</span>表示使用CPU转码，编码器为h.264。</p>
 <p>如果想让CPU转h.265，把libx264改成libx265即可。</p>
-<div class="admonition-y-gpu-cpu admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp1.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp1.svg" width="22" /></a> 使用显卡(GPU)和使用CPU的区别</p>
+<div class="admonition-gpu-cpu admonition">
+<p class="admonition-title">使用显卡(GPU)和使用CPU的区别</p>
 <p>GPU和CPU的区别是，GPU比CPU快近一倍，但GPU生成的视频文件体积比CPU的大很多，二者质量基本相同。换句话说，相同画面质量下，CPU编码的文件体积小很多；相同体积下，GPU编码的文件，画面质量会稍差一些。</p>
 <p>GPU硬编码相比CPU，使用时偶尔会有一些小小的限制，原因是，GPU编码通过硬件实现，硬件已经固定了，无法随意修改；而CPU编码通过软件实现，软件是代码，代码是可以随意修改的。</p>
 </div>
 <p>下面命令指定了码率为1M；减小码率，可以有效减小视频体积，但画面质量有可能变差：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;1048:587:0:70&#39;</span> -c:v h264_nvenc -b:v 1M newGPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;1048:587:0:70&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>-b:v<span class="w"> </span>1M<span class="w"> </span>newGPU.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>不指定码率：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;1048:587:0:70&#39;</span> -c:v h264_nvenc newGPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;1048:587:0:70&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>newGPU.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>视频的码率、比特率，表示视频压缩的等级。这有点像JPEG图像，压缩得越小，图片质量就越差。对于视频，码率即单位时间传输的数据量。这个数据量越小，画面质量越差，分辨率固定。</p>
 </div></blockquote>
-<ol class="arabic" id="ffmpeg02-cut" start="2">
-<li><p>分割视频：</p>
+</section>
+<section id="ffmpeg02-cut">
+<span id="id2"></span><h2>二、分割视频：<a class="headerlink" href="#ffmpeg02-cut" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old1.mp4 -ss <span class="m">00</span>:00:08 -to <span class="m">01</span>:50 -c copy new1.mp4
-ffmpeg -i old2.mp4 -ss <span class="m">00</span>:00:03 -c copy -t <span class="m">00</span>:02:48 new2.mp4
-ffmpeg -i old3.mp4 -ss <span class="m">00</span>:00:03 -t <span class="m">00</span>:02:48 -c:v h264_nvenc new3.mp4
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old1.mp4<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:00:08<span class="w"> </span>-to<span class="w"> </span><span class="m">01</span>:50<span class="w"> </span>-c<span class="w"> </span>copy<span class="w"> </span>new1.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old2.mp4<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:00:03<span class="w"> </span>-c<span class="w"> </span>copy<span class="w"> </span>-t<span class="w"> </span><span class="m">00</span>:02:48<span class="w"> </span>new2.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old3.mp4<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:00:03<span class="w"> </span>-t<span class="w"> </span><span class="m">00</span>:02:48<span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>new3.mp4
 </pre></div>
 </div>
 </div></blockquote>
-</li>
-</ol>
-<blockquote>
-<div><p>第一条命令是把视频old1.mp4的第8秒到1分50秒这一段截取出来，保存为新文件new1.mp4；由于不转码(<span class="teal">-c copy</span>)，所以速度很快，几乎瞬间完成。</p>
+<p>第一条命令是把视频old1.mp4的第8秒到1分50秒这一段截取出来，保存为新文件new1.mp4；由于不转码(<span class="d60c0n">-c copy</span>)，所以速度很快，几乎瞬间完成。</p>
 <p>第二条命令是将视频old2.mp4从00:00:03处开始提取出2分48秒，提取出的新视频文件名称是new2.mp4。不转码，几乎是瞬间完成。</p>
 <p>第三条命令是将视频old3.mp4从00:00:03处开始提取出02:48的长度，提取出的视频名字是new3.mp4。没有瞬间完成(-c:v h264_nvenc表示转码)。</p>
-<p>在执行速度上，第一条命令和第二条命令都比第三条命令要快上几十倍，基本是瞬间完成：因为只是copy，不转码(<span class="teal">-c copy</span>)。第三条命令因为有转码过程(<span class="teal">-c:v h264_nvenc</span>)，所以相对慢很多。</p>
-<p><span class="dash6">不过，有些情况下，可能必须转码，不能copy</span>。因为在copy的时候，严重依赖原视频，有可能会出现copy出来的片段播放异常的情况，这时候，用<span class="teal">-c:v h264_nvenc</span>转码可以解决异常。</p>
+<p>在执行速度上，第一条命令和第二条命令都比第三条命令要快上几十倍，基本是瞬间完成：因为只是copy，不转码(<span class="d60c0n">-c copy</span>)。第三条命令因为有转码过程(<span class="d60c0n">-c:v h264_nvenc</span>)，所以相对慢很多。</p>
+<p><span class="dash6">不过，有些情况下，可能必须转码，不能copy</span>。因为在copy的时候，严重依赖原视频，有可能会出现copy出来的片段播放异常的情况，这时候，用<span class="d60c0n">-c:v h264_nvenc</span>转码可以解决异常。</p>
 </div></blockquote>
-<ol class="arabic" id="ffmpeg03-combine" start="3">
-<li><p>把从同一视频截取出来的两个mp4片段合并成一个新的mp4:</p>
+</section>
+<section id="mp4mp4">
+<span id="ffmpeg03-combine"></span><h2>三、把从同一视频截取出来的两个mp4片段合并成一个新的mp4:<a class="headerlink" href="#mp4mp4" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -f concat -i v.txt -c copy new.mp4
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-f<span class="w"> </span>concat<span class="w"> </span>-i<span class="w"> </span>v.txt<span class="w"> </span>-c<span class="w"> </span>copy<span class="w"> </span>new.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>v.txt文件内容如下：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>file <span class="s1">&#39;z1.mp4&#39;</span>
-file <span class="s1">&#39;z2.mp4&#39;</span>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>file<span class="w"> </span><span class="s1">&#39;z1.mp4&#39;</span>
+file<span class="w"> </span><span class="s1">&#39;z2.mp4&#39;</span>
 </pre></div>
 </div>
 </div></blockquote>
 <p>v.txt文件需要您手动创建，与视频片段放在相同目录中。z1.mp4和z2.mp4是两个片段。如果有更多片段，在v.txt文件中继续增加即可。</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><span class="teal">-f concat</span>：对文件进行拼接。</p></li>
-<li><p><span class="teal">-i v.txt</span>：指定输入文件为v.txt中的内容。</p></li>
-<li><p><span class="teal">-c copy</span>：不重新编码，直接复制。</p></li>
-<li><p><span class="teal">new.mp4</span>：指定输出文件名为new.mp4。</p></li>
-</ul>
-</div></blockquote>
-</li>
+<div><ol class="arabic simple">
+<li><p><span class="d60c0n">-f concat</span>：对文件进行拼接。</p></li>
+<li><p><span class="d60c0n">-i v.txt</span>：指定输入文件为v.txt中的内容。</p></li>
+<li><p><span class="d60c0n">-c copy</span>：不重新编码，直接复制。</p></li>
+<li><p><span class="d60c0n">new.mp4</span>：指定输出文件名为new.mp4。</p></li>
 </ol>
-<ol class="arabic" id="ffmpeg04-resolution" start="4">
-<li><p>调整画面分辨率：</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="ffmpeg04-resolution">
+<span id="id3"></span><h2>四、调整画面分辨率：<a class="headerlink" href="#ffmpeg04-resolution" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="nv">scale</span><span class="o">=</span><span class="m">1920</span>:1080 -c:v h264_nvenc new.mp4
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">scale</span><span class="o">=</span><span class="m">1920</span>:1080<span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>new.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>生成的视频的尺寸/分辨率为1920x1080。</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><span class="teal">-i old.mp4</span>：指定输入文件名为old.mp4。</p></li>
-<li><p><span class="teal">-vf</span>：调用滤镜。</p></li>
-<li><p><span class="teal">scale</span>：这是滤镜，用来调整画面的尺寸/分辨率。</p></li>
-<li><p><span class="teal">-c:v h264_nvenc</span>：指定视频编码器为Nvidia显卡硬编码(<span class="teal">h264_nvenc</span>)。</p></li>
-<li><p><span class="teal">new.mp4</span>：指定输出文件名为new.mp4。</p></li>
-</ul>
-</div></blockquote>
-</li>
+<div><ol class="arabic simple">
+<li><p><span class="d60c0n">-i old.mp4</span>：指定输入文件名为old.mp4。</p></li>
+<li><p><span class="d60c0n">-vf</span>：调用滤镜。</p></li>
+<li><p><span class="d60c0n">scale</span>：这是滤镜，用来调整画面的尺寸/分辨率。</p></li>
+<li><p><span class="d60c0n">-c:v h264_nvenc</span>：指定视频编码器为Nvidia显卡硬编码(<span class="d60c0n">h264_nvenc</span>)。</p></li>
+<li><p><span class="d60c0n">new.mp4</span>：指定输出文件名为new.mp4。</p></li>
 </ol>
-<ol class="arabic" id="ffmpeg05-phone-large" start="5">
-<li><p>手机录制的mp4文件太大，在电脑上重新编码，让文件体积变小：</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="mp4">
+<span id="ffmpeg05-phone-large"></span><h2>五、手机录制的mp4文件太大，在电脑上重新编码，让文件体积变小：<a class="headerlink" href="#mp4" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v hevc_nvenc newGPUh265.mp4
-ffmpeg -i old.mp4 -c:v h264_nvenc newGPUh264.mp4
-ffmpeg -i old.mp4 -c:v libx265 newCPUh265.mp4
-ffmpeg -i old.mp4 -c:v libx264 newCPUh264.mp4
+<div><blockquote>
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>hevc_nvenc<span class="w"> </span>newGPUh265.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>newGPUh264.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>libx265<span class="w"> </span>newCPUh265.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>newCPUh264.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>四条命令的区别是使用的编码器不同。</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><span class="teal">-c:v</span>：指定视频编码器。</p></li>
-<li><p><span class="teal">hevc_nvenc</span>：这是视频编码器，专门用于Nvidia显卡h.265编码(GPU)。</p></li>
-<li><p><span class="teal">h264_nvenc</span>：这是视频编码器，专门用于Nvidia显卡h.264编码(GPU)。</p></li>
-<li><p><span class="teal">libx265</span>：这是视频编码器，用CPU进行h.265编码。</p></li>
-<li><p><span class="teal">libx264</span>：这是视频编码器，用CPU进行h.264编码。</p></li>
-</ul>
-</div></blockquote>
-</li>
+<div><ol class="arabic simple">
+<li><p><span class="d60c0n">-c:v</span>：指定视频编码器。</p></li>
+<li><p><span class="d60c0n">hevc_nvenc</span>：这是视频编码器，专门用于Nvidia显卡h.265编码(GPU)。</p></li>
+<li><p><span class="d60c0n">h264_nvenc</span>：这是视频编码器，专门用于Nvidia显卡h.264编码(GPU)。</p></li>
+<li><p><span class="d60c0n">libx265</span>：这是视频编码器，用CPU进行h.265编码。</p></li>
+<li><p><span class="d60c0n">libx264</span>：这是视频编码器，用CPU进行h.264编码。</p></li>
 </ol>
-<blockquote>
-<div><p>第一条命令使用GPU <span class="dash6">h.265</span>编码(<span class="teal">-c:v hevc_nvenc</span>)；需要GPU硬件支持。此视频播放时，需要播放工具支持<span class="dash6">h.265</span>解码。</p>
-<p>第二条命令使用GPU编码，但是<span class="dash2">h.264</span>编码(<span class="teal">-c:v h264_nvenc</span>)；需要GPU硬件支持。播放时需要播放工具支持<span class="dash2">h.264</span>解码(目前基本所有播放工具都支持)。</p>
-<p>第三条命令使用CPU <span class="dash6">h.265</span>编码(<span class="teal">-c:v libx265</span>)；不需要CPU专门硬件支持。播放时需要播放工具支持<span class="dash6">h.265</span>解码。</p>
-<p>第四条命令使用CPU编码，是<span class="dash2">h.264</span>编码(<span class="teal">-c:v libx264</span>)；不需要CPU专门硬件支持。播放时需要播放工具支持<span class="dash2">h.264</span>解码。</p>
+</div></blockquote>
+</div></blockquote>
+<p>第一条命令使用GPU <span class="dash6">h.265</span>编码(<span class="d60c0n">-c:v hevc_nvenc</span>)；需要GPU硬件支持。此视频播放时，需要播放工具支持<span class="dash6">h.265</span>解码。</p>
+<p>第二条命令使用GPU编码，但是<span class="dash2">h.264</span>编码(<span class="d60c0n">-c:v h264_nvenc</span>)；需要GPU硬件支持。播放时需要播放工具支持<span class="dash2">h.264</span>解码(目前基本所有播放工具都支持)。</p>
+<p>第三条命令使用CPU <span class="dash6">h.265</span>编码(<span class="d60c0n">-c:v libx265</span>)；不需要CPU专门硬件支持。播放时需要播放工具支持<span class="dash6">h.265</span>解码。</p>
+<p>第四条命令使用CPU编码，是<span class="dash2">h.264</span>编码(<span class="d60c0n">-c:v libx264</span>)；不需要CPU专门硬件支持。播放时需要播放工具支持<span class="dash2">h.264</span>解码。</p>
 <p>GPU硬件支持，或者CPU硬件支持，是指硬件本身具有这个功能，比如Nvidia3060显卡，硬件上支持<span class="dash2">h.264</span>编码和<span class="dash6">h.265</span>编码。这表示，使用3060显卡的电脑，可以使用第一条命令和第二条命令进行视频转码剪辑；第三条第四条命令使用的是CPU，无需考虑CPU是否支持。如果您使用的显卡不支持<span class="dash6">h.265</span>编码，那么就不能使用第一条命令进行视频转码剪辑。</p>
 <p>播放工具支持，是指视频播放器本身支持解码。比如使用vlc播放<span class="dash6">h.265</span>编码的mp4，那么需要vlc本身有<span class="dash6">h.265</span>解码功能。如果用firefox播放，那么需要firefox支持相应的解码功能。</p>
 <p>想知道是否支持相应的编码/解码功能，需要查看相关的文档或技术参数，比如硬件，要查看CPU/GPU参数，或者咨询供应商；软件，需要查看vlc或者firefox的功能参数。</p>
@@ -311,18 +330,18 @@ ffmpeg -i old.mp4 -c:v libx264 newCPUh264.mp4
 <p>(显卡支持h.265<span class="dash2">解码</span>，不一定支持h.265<span class="dash2">编码</span>，即二者不一定成对支持。)</p>
 <p>如果上面四条命令效果不明显，还可以通过码率参数来调节视频文件的体积，比如上面四条命令可以按下面的方式添加码率参数：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v hevc_nvenc -b:v 1M newGPUh265.mp4
-ffmpeg -i old.mp4 -c:v h264_nvenc -b:v 1M newGPUh264.mp4
-ffmpeg -i old.mp4 -c:v libx265 -b:v 1M newCPUh265.mp4
-ffmpeg -i old.mp4 -c:v libx264 -b:v 1M newCPUh264.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>hevc_nvenc<span class="w"> </span>-b:v<span class="w"> </span>1M<span class="w"> </span>newGPUh265.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>-b:v<span class="w"> </span>1M<span class="w"> </span>newGPUh264.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>libx265<span class="w"> </span>-b:v<span class="w"> </span>1M<span class="w"> </span>newCPUh265.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>-b:v<span class="w"> </span>1M<span class="w"> </span>newCPUh264.mp4
 </pre></div>
 </div>
 </div></blockquote>
-<p>其中，<span class="teal">-b:v 1M</span>表示指定码率为1Mbit/s，简写为1Mb/s，或者1M。您可以尝试把<span class="teal">-b:v 1M</span>改为<span class="teal">-b:v 2M</span>或更大的数值，比如4M或者8M，然后看看效果。</p>
+<p>其中，<span class="d60c0n">-b:v 1M</span>表示指定码率为1Mbit/s，简写为1Mb/s，或者1M。您可以尝试把<span class="d60c0n">-b:v 1M</span>改为<span class="d60c0n">-b:v 2M</span>或更大的数值，比如4M或者8M，然后看看效果。</p>
 <blockquote>
-<div><div class="admonition-y-ffmpeg admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp1.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp1.svg" width="22" /></a> 驿窗提示：FFmpeg查看当前视频码率</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4
+<div><div class="admonition-ffmpeg admonition">
+<p class="admonition-title">驿窗提示：FFmpeg查看当前视频码率</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4
 </pre></div>
 </div>
 <p>在输出的信息中，<span class="dash6">Duration:</span> 表示视频时长，<span class="dash6">bitrate:</span> 表示码率。</p>
@@ -330,255 +349,325 @@ ffmpeg -i old.mp4 -c:v libx264 -b:v 1M newCPUh264.mp4
 </div></blockquote>
 <p>在本地视频文件中使用，建议考虑crf参数，实现动态码率。</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v libx264 -crf <span class="m">23</span> newCPUcrf23.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>-crf<span class="w"> </span><span class="m">23</span><span class="w"> </span>newCPUcrf23.mp4
 </pre></div>
 </div>
-<div class="admonition-y-teal-crf-23-gpu admonition">
-<p class="admonition-title"><a class="reference internal" href="../_images/avatarp1.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp1.svg" width="22" /></a> 驿窗提示：<span class="teal">-crf 23</span>参数的GPU限制</p>
-<p>上面的命令使用了CPU软编码<span class="teal">-c:v libx264</span>。</p>
-<p>对于<span class="teal">-crf 23</span>这个参数，如果想用GPU硬编码，需要额外的参数；直接把上面命令中的<span class="teal">libx264</span>替换为<span class="teal">h264_nvenc</span>是无效的。</p>
-<p>无效是指，使用GPU硬编码时改变<span class="teal">-crf 23</span>的数值，对视频没有任何影响。比如下面的三条命令，生成的视频有可能完全相同：</p>
+<div class="admonition-d60c0n-crf-23-gpu admonition">
+<p class="admonition-title">驿窗提示：<span class="d60c0n">-crf 23</span>参数的GPU限制</p>
+<p>上面的命令使用了CPU软编码<span class="d60c0n">-c:v libx264</span>。</p>
+<p>对于<span class="d60c0n">-crf 23</span>这个参数，如果想用<span class="d7f00n">G</span>PU硬编码，需要额外的参数；直接把上面命令中的<span class="d60c0n">libx264</span>替换为<span class="d60c0n">h264_nvenc</span>是无效的。</p>
+<p>无效是指，使用GPU硬编码时改变<span class="d60c0n">-crf 23</span>的数值，对视频没有任何影响。比如下面的三条命令，生成的视频有可能完全相同：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v h264_nvenc -crf <span class="m">23</span> newGPUcrf23.mp4
-ffmpeg -i old.mp4 -c:v h264_nvenc -crf <span class="m">48</span> newGPUcrf48.mp4
-ffmpeg -i old.mp4 -c:v h264_nvenc -crf <span class="m">1</span> newGPUcrf1.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>-crf<span class="w"> </span><span class="m">23</span><span class="w"> </span>newGPUcrf23.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>-crf<span class="w"> </span><span class="m">48</span><span class="w"> </span>newGPUcrf48.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>-crf<span class="w"> </span><span class="m">1</span><span class="w"> </span>newGPUcrf1.mp4
 </pre></div>
 </div>
 </div></blockquote>
 </div>
 </div></blockquote>
 </div></blockquote>
-<ol class="arabic" id="ffmpeg06-logo" start="6">
-<li><p>给视频添加logo(水印):</p>
+</section>
+<section id="logo">
+<span id="ffmpeg06-logo"></span><h2>六、给视频添加logo(水印):<a class="headerlink" href="#logo" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=x=10:y=20&quot;</span> -c:v libx264 new.mp4
-ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=10:20&quot;</span> -c:v libx264 new.mp4
-ffmpeg -i old.mp4 -i logo.png -filter_complex <span class="s2">&quot;overlay=10:20&quot;</span> -c:v h264_nvenc new.mp4
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span>logo.png<span class="w"> </span>-filter_complex<span class="w"> </span><span class="s2">&quot;overlay=x=10:y=20&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span>logo.png<span class="w"> </span>-filter_complex<span class="w"> </span><span class="s2">&quot;overlay=10:20&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span>logo.png<span class="w"> </span>-filter_complex<span class="w"> </span><span class="s2">&quot;overlay=10:20&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>new.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>上面第一条命令对视频old.mp4添加logo，logo文件是logo.png，logo在视频中的位置是视频<span class="dash6">左</span>上角10x20像素的地方：logo距离视频<span class="dash6">左</span>边缘10像素，距离视频<span class="dash6">上</span>边缘20像素。上面第二条命令是第一条命令的简化写法(CPU软编码)。第三条命令在第二条命令的基础上，把编码器改为Nvidia显卡(GPU h.264硬编码)。</p>
 <p>参数说明：</p>
-<ul class="simple">
-<li><p><span class="teal">-i old.mp4</span>：指定输入视频为old.mp4。</p></li>
-<li><p><span class="teal">-i logo.png</span>：指定logo文件为logo.png。</p></li>
-<li><p><span class="teal">-filter_complex</span>：表示要调用复杂滤镜。</p></li>
-<li><p><span class="teal">overlay</span>：这是一个滤镜，用来叠加视频。</p></li>
-<li><p><span class="teal">“overlay=10:20”</span>：这是overlay滤镜的具体用法，即overlay=x:y，单位为像素。</p></li>
-<li><p><span class="teal">“overlay=10:20”</span>：表示logo图像距离视频<span class="dash6">左</span>边缘10像素，距离视频<span class="dash6">上</span>边缘20像素。</p></li>
-<li><p><span class="teal">-c:v libx264</span>：指定视频编码器为libx264，用CPU进行h.264软编码。</p></li>
-<li><p><span class="teal">-c:v h264_nvenc</span>：指定视频编码器为h264_nvenc，用显卡进行h.264硬编码。</p></li>
-<li><p><span class="teal">new.mp4</span>：输出文件名为new.mp4。</p></li>
-</ul>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><span class="d60c0n">-i old.mp4</span>：指定输入视频为old.mp4。</p></li>
+<li><p><span class="d60c0n">-i logo.png</span>：指定logo文件为logo.png。</p></li>
+<li><p><span class="d60c0n">-filter_complex</span>：表示要调用复杂滤镜。</p></li>
+<li><p><span class="d60c0n">overlay</span>：这是一个滤镜，用来叠加视频。</p></li>
+<li><p><span class="d60c0n">“overlay=10:20”</span>：这是overlay滤镜的具体用法，即overlay=x:y，单位为像素。</p></li>
+<li><p><span class="d60c0n">“overlay=10:20”</span>：表示logo图像距离视频<span class="dash6">左</span>边缘10像素，距离视频<span class="dash6">上</span>边缘20像素。</p></li>
+<li><p><span class="d60c0n">-c:v libx264</span>：指定视频编码器为libx264，用CPU进行h.264软编码。</p></li>
+<li><p><span class="d60c0n">-c:v h264_nvenc</span>：指定视频编码器为h264_nvenc，用显卡进行h.264硬编码。</p></li>
+<li><p><span class="d60c0n">new.mp4</span>：输出文件名为new.mp4。</p></li>
+</ol>
+</div></blockquote>
 <p>6.1 接下来尝试把logo放在视频画面的其它位置，比如正中心的位置：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2&quot;</span> -c:v libx264 new_zhongxin.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span><span class="m">00</span>.png<span class="w"> </span>-filter_complex<span class="w"> </span><span class="s2">&quot;overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new_zhongxin.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>6.2 logo放在画面的<span class="dash6">右</span>上角，距离<span class="dash6">右</span>边缘20像素，<span class="dash6">上</span>边缘10像素：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=(main_w-overlay_w)-20:10&quot;</span> -c:v libx264 new_youshang.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span><span class="m">00</span>.png<span class="w"> </span>-filter_complex<span class="w"> </span><span class="s2">&quot;overlay=(main_w-overlay_w)-20:10&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new_youshang.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>6.3 logo放在画面的<span class="dash6">左</span>下角，距离<span class="dash6">左</span>边缘20像素，<span class="dash6">下</span>边缘10像素：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=20:(main_h-overlay_h)-10&quot;</span> -c:v libx264 new_zuoxia.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span><span class="m">00</span>.png<span class="w"> </span>-filter_complex<span class="w"> </span><span class="s2">&quot;overlay=20:(main_h-overlay_h)-10&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new_zuoxia.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>6.4 logo放在画面的<span class="dash6">右</span>下角，距离<span class="dash6">右</span>边缘20像素，<span class="dash6">下</span>边缘10像素：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -i <span class="m">00</span>.png -filter_complex <span class="s2">&quot;overlay=(main_w-overlay_w)-20:(main_h-overlay_h)-10&quot;</span> -c:v libx264 new_youxia.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span><span class="m">00</span>.png<span class="w"> </span>-filter_complex<span class="w"> </span><span class="s2">&quot;overlay=(main_w-overlay_w)-20:(main_h-overlay_h)-10&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new_youxia.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>上面6.1-6.4中，双引号内其实是使用了计算公式，简单的减法和除法，我们先看一下参数说明：</p>
-<ul class="simple">
-<li><p><span class="teal">main_w</span>：输入视频old.mp4的画面宽度。</p></li>
-<li><p><span class="teal">main_h</span>：输入视频old.mp4的画面高度。</p></li>
-<li><p><span class="teal">overlay_w</span>：logo图像00.png的宽度。</p></li>
-<li><p><span class="teal">overlay_h</span>：logo图像00.png的高度。</p></li>
-<li><p><span class="teal">“overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2”</span>：logo放在视频中心。</p></li>
-<li><p><span class="teal">“overlay=(main_w-overlay_w)-20:10”</span>：logo放视频右上角。右边距20上边距10。</p></li>
-<li><p><span class="teal">“overlay=20:(main_h-overlay_h)-10”</span>：logo放视频左下角。左边距20上边距10。</p></li>
-<li><p><span class="teal">“overlay=(main_w-overlay_w)-20:(main_h-overlay_h)-10”</span>：右下角。右20上10。</p></li>
-</ul>
-<p>为了详细解释这些参数及用法，我们先看一张示意图：</p>
 <blockquote>
-<div><div class="figure align-center" id="id2">
-<img alt="../_images/logo_calc.png" src="../_images/logo_calc.png" />
-<p class="caption"><span class="caption-text">logo位置计算</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
-</div>
-<p>上图中，灰色大方块表示视频画面，红色小方块表示logo图像。其中：</p>
-<p>main-w表示视频的宽度，main-h表示视频的高度；overlay_w表示logo宽度，overlay_h表示logo高度。</p>
-<p>上面的参数中：</p>
-<ul class="simple">
-<li><p><span class="teal">(main_w-overlay_w)/2</span>：(视频宽度-logo宽度)/2 (先减法再除法)；</p></li>
-<li><p><span class="teal">(main_h-overlay_h)/2</span>：(视频高度-logo高度)/2 (先减法再除法)；</p></li>
-<li><p><span class="teal">(main_w-overlay_w)-20</span>：(视频宽度-logo宽度)-20 (两次减法)；</p></li>
-<li><p><span class="teal">overlay=(main_w-overlay_w)-20:10</span>中的冒号表示分隔，即x:y；</p></li>
-<li><p>上面的<span class="teal">overlay=(main_w-overlay_w)-20</span>即为x；</p></li>
-<li><p>上面的<span class="teal">overlay=(main_w-overlay_w)-20:10</span>中冒号右边的10即为y；</p></li>
-<li><p><span class="teal">x:y</span>：其中x表示logo左边缘到视频左边缘的距离；</p></li>
-<li><p><span class="teal">x:y</span>：其中y表示logo上边缘到视频上边缘的距离；</p></li>
+<div><ol class="arabic simple">
+<li><p><span class="d60c0n">main_w</span>：输入视频old.mp4的画面宽度。</p></li>
+<li><p><span class="d60c0n">main_h</span>：输入视频old.mp4的画面高度。</p></li>
+<li><p><span class="d60c0n">overlay_w</span>：logo图像00.png的宽度。</p></li>
+<li><p><span class="d60c0n">overlay_h</span>：logo图像00.png的高度。</p></li>
+<li><p><span class="d60c0n">“overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2”</span>：logo放在视频中心。</p></li>
+<li><p><span class="d60c0n">“overlay=(main_w-overlay_w)-20:10”</span>：logo放视频右上角。右边距20上边距10。</p></li>
+<li><p><span class="d60c0n">“overlay=20:(main_h-overlay_h)-10”</span>：logo放视频左下角。左边距20上边距10。</p></li>
+<li><p><span class="d60c0n">“overlay=(main_w-overlay_w)-20:(main_h-overlay_h)-10”</span>：右下角。右20上10。</p></li>
+</ol>
+</div></blockquote>
+<p>为了详细解释这些参数及用法，我们先看一张示意图：</p>
+<blockquote id="figure1-by-gimp">
+<div><figure class="align-center" id="id12">
+<img alt="../_images/logo_calc1.png" src="../_images/logo_calc1.png" />
+<figcaption>
+<p><span class="caption-text">图1：logo位置计算</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>上图中，绿色大方块表示整体视频画面，双灯笼小方块表示logo图像。其中：</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>黄色的<span class="d6ff0n">x</span>：表示logo左边缘到视频左边缘的距离；</p></li>
+<li><p>黄色的<span class="d6ff0n">y</span>：表示logo上边缘到视频上边缘的距离；</p></li>
+<li><p>绿色的<span class="d60c0n">main-w</span>：表示视频的宽度；</p></li>
+<li><p>绿色的<span class="d60c0n">main-h</span>：表示视频的高度；</p></li>
+<li><p>红色的<span class="d6f00n">overlay_w</span>：表示logo的宽度；</p></li>
+<li><p>红色的<span class="d6f00n">overlay-h</span>：表示logo的高度；</p></li>
+<li><p><span class="d60c0n">(main_w-overlay_w)/2</span>：(视频宽度-logo宽度)/2 (先减法再除法)；</p></li>
+<li><p><span class="d60c0n">(main_h-overlay_h)/2</span>：(视频高度-logo高度)/2 (先减法再除法)；</p></li>
+<li><p><span class="d60c0n">(main_w-overlay_w)-20</span>：(视频宽度-logo宽度)-20 (两次减法)；</p></li>
+<li><p><span class="d60c0n">overlay=(main_w-overlay_w)-20:10</span>中的冒号表示分隔，即<span class="d6ff0n">x:y</span>；</p></li>
+<li><p>上面的<span class="d60c0n">overlay=(main_w-overlay_w)-20</span>即为<span class="d6ff0n">x</span>；</p></li>
+<li><p>上面的<span class="d60c0n">overlay=(main_w-overlay_w)-20:10</span>中冒号右边的10即为<span class="d6ff0n">y</span>；</p></li>
 <li><p>计算过程不需要知道视频和图像的具体宽度和高度数值；</p></li>
 <li><p>公式的单位为像素；</p></li>
-</ul>
+</ol>
+</div></blockquote>
 </div></blockquote>
 <p>以6.3为例，我们再推导一下计算过程：</p>
 <blockquote>
-<div><p><span class="teal">overlay=20:(main_h-overlay_h)-10</span></p>
+<div><p><span class="d60c0n">overlay=20:(main_h-overlay_h)-10</span></p>
 </div></blockquote>
 <p>按overlay=x:y推导：</p>
 <blockquote>
-<div><p>x=<span class="teal">20</span>，即logo左边缘距离视频左边缘20像素；</p>
-<p>y=<span class="teal">(main_h-overlay_h)-10</span>，即视频高度-logo高度-10。如果y=视频高度-logo高度，其实就是让logo下边缘挨着视频下边缘，没有空隙；在此基础上减去10，即y值再减去10，这导致logo位置升高了10个像素，结果是logo下边缘距离视频下边缘从0像素变为10像素，即y=<span class="teal">(main_h-overlay_h)-10</span>。</p>
+<div><p>x=<span class="d60c0n">20</span>，即logo左边缘距离视频左边缘20像素；</p>
+<p>y=<span class="d60c0n">(main_h-overlay_h)-10</span>，即视频高度-logo高度-10。如果y=视频高度-logo高度，其实就是让logo下边缘挨着视频下边缘，没有空隙；在此基础上减去10，即y值再减去10，这导致logo位置升高了10个像素，结果是logo下边缘距离视频下边缘从0像素变为10像素，即y=<span class="d60c0n">(main_h-overlay_h)-10</span>。</p>
 </div></blockquote>
 <p>根据上面的说明，您可以随意把logo放到视频画面的四个角，只需要在公式中输入logo距离视频边缘的空隙值即可。</p>
+</div></blockquote>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-m-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header sd-bg-dark sd-bg-text-dark">
+<span class="sd-summary-text">驿窗提示∷上面的计算有点复杂，看这里更简单的方法！</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">上面的方法比较麻烦，这里介绍一个简单的方法，需要用到vlc和GIMP这两个开源工具：</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="sd-card-text">用vlc播放原始视频，暂停，点击vlc菜单【视频⇨截图】会生成一张当前播放画面的截图；(可以忽略vlc当前播放窗口尺寸，vcl会按视频原始尺寸生成截图)</p></li>
+<li><p class="sd-card-text">用GIMP打开这个截图；</p></li>
+<li><p class="sd-card-text">GIMP中用矩形工具在截图上画一个矩形选区，选区的尺寸和logo尺寸相同，并且选区位置也与logo相同；</p></li>
+<li><p class="sd-card-text">选区尺寸和位置调整好以后，保持不动，查看<span class="dash6">选择工具</span>的工具选项中的<span class="dash6">位置</span>和<span class="dash6">大小</span>这两个参数：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p class="sd-card-text">位置：左边数1值即为<span class="d7ff0n">x</span>，右边数值即为<span class="d7ff0n">y</span>；</p></li>
+<li><p class="sd-card-text">大小：矩形方框的尺寸，即logo的尺寸，左边数值即为<span class="d6f00n">overlay_w</span>，右边数值即为<span class="d6f00n">overlay_h</span>；</p></li>
+<li><p class="sd-card-text">视频宽度和高度：GIMP菜单上方的标题栏中会显示截图的尺寸数值，这个数值就是视频的宽度<span class="d60c0n">main-w</span>和视频高度<span class="d60c0n">main-h</span>。</p></li>
+</ul>
+</div></blockquote>
 </li>
 </ol>
-<ol class="arabic" id="ffmpeg07-ffplay" start="7">
-<li><p>ffplay播放功能</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffplay -f lavfi <span class="s2">&quot;movie=z93a.mp4[a];movie=z93b.mp4[b];[a][b]blend=all_mode=difference&quot;</span>
+</div></blockquote>
+<p class="sd-card-text">请参考下图及后附的说明：</p>
+<figure class="align-center" id="id13">
+<img alt="../_images/logo_gimp.png" src="../_images/logo_gimp.png" />
+<figcaption>
+<p><span class="caption-text">图2：GIMP辅助定位logo</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text">上图说明：<em>建议图2与上面图1对比查看</em></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p class="sd-card-text">(大小)<span class="d6f00n">overlay_w</span>，黑白虚线方框宽度，即logo宽度；</p></li>
+<li><p class="sd-card-text">(大小)<span class="d6f00n">overlay_h</span>，黑白虚线方框高度，即logo高度；</p></li>
+<li><p class="sd-card-text">(位置)<span class="d6ff0n">x</span>，logo(黑白虚线框)左边缘到视频左边缘的距离；</p></li>
+<li><p class="sd-card-text">(位置)<span class="d6ff0n">y</span>，logo(黑白虚线框)上边缘到视频上边缘的距离；</p></li>
+<li><p class="sd-card-text">黄黑虚线框，代表视频尺寸；</p></li>
+<li><p class="sd-card-text">黑白虚线框，代表logo尺寸和位置；</p></li>
+<li><p class="sd-card-text">(标题栏)<span class="d60c0n">main-w</span>，视频的宽度(黄黑虚线框宽度)；</p></li>
+<li><p class="sd-card-text">(标题栏)<span class="d60c0n">main-h</span>，视频的高度(黄黑虚线框高度)；</p></li>
+</ol>
+</div></blockquote>
+</div>
+</details></section>
+<section id="ffplay">
+<span id="ffmpeg07-ffplay"></span><h2>七、ffplay播放功能<a class="headerlink" href="#ffplay" title="Link to this heading"></a></h2>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffplay<span class="w"> </span>-f<span class="w"> </span>lavfi<span class="w"> </span><span class="s2">&quot;movie=z93a.mp4[a];movie=z93b.mp4[b];[a][b]blend=all_mode=difference&quot;</span>
 </pre></div>
 </div>
-</li>
-</ol>
-<blockquote>
-<div><p>上面这条命令在播放窗口中只播放两个视频不同的部分，其它相同的则隐藏不显示。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffplay -f lavfi -i <span class="s2">&quot;movie=old.mp4[v0];movie=new.mp4[v1];[v0][v1]hstack&quot;</span>
+</div></blockquote>
+<p>上面这条命令在播放窗口中只播放两个视频不同的部分，其它相同的则隐藏不显示。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffplay<span class="w"> </span>-f<span class="w"> </span>lavfi<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;movie=old.mp4[v0];movie=new.mp4[v1];[v0][v1]hstack&quot;</span>
 </pre></div>
 </div>
 <p>上面这条命令是同屏播放两个视频，方便看一下区别。</p>
 </div></blockquote>
-<ol class="arabic" id="ffmpeg08-capture" start="8">
-<li><p>从视频指定位置截图：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -ss <span class="m">00</span>:26:30 -i old.mp4 -frames:v <span class="m">1</span> -q:v <span class="m">1</span> oldimg.jpg
+</section>
+<section id="ffmpeg08-capture">
+<span id="id4"></span><h2>八、从视频指定位置截图：<a class="headerlink" href="#ffmpeg08-capture" title="Link to this heading"></a></h2>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:26:30<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-frames:v<span class="w"> </span><span class="m">1</span><span class="w"> </span>-q:v<span class="w"> </span><span class="m">1</span><span class="w"> </span>oldimg.jpg
 </pre></div>
 </div>
 <p>其中：</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><span class="teal">-ss 00:26:30</span>表示指定截图的位置为26分30秒；</p></li>
-<li><p><span class="teal">-frames:v 1</span>表示只截取一帧；</p></li>
-<li><p><span class="teal">-q:v 1</span>表示指定jpg的质量为1，1表示质量最好，此值范围是1-31。</p></li>
-</ul>
-</div></blockquote>
-</li>
+<div><ol class="arabic simple">
+<li><p><span class="d60c0n">-ss 00:26:30</span>表示指定截图的位置为26分30秒；</p></li>
+<li><p><span class="d60c0n">-frames:v 1</span>表示只截取一帧；</p></li>
+<li><p><span class="d60c0n">-q:v 1</span>表示指定jpg的质量为1，1表示质量最好，此值范围是1-31。</p></li>
 </ol>
-<blockquote>
-<div><p>下面相对简单，截图是PNG格式：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -ss <span class="m">00</span>:00:30 -i old.mp4 -vframes <span class="m">1</span> oldimg.png
+</div></blockquote>
+</div></blockquote>
+<p>下面相对简单，截图是PNG格式：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:00:30<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vframes<span class="w"> </span><span class="m">1</span><span class="w"> </span>oldimg.png
 </pre></div>
 </div>
 <p>下面则是按帧编号截图：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i k0.mp4 -vf <span class="s2">&quot;select=eq(n\,720)&quot;</span> -vframes <span class="m">1</span> frame-720.png
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>k0.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="s2">&quot;select=eq(n\,720)&quot;</span><span class="w"> </span>-vframes<span class="w"> </span><span class="m">1</span><span class="w"> </span>frame-720.png
 </pre></div>
 </div>
 <p>其中：</p>
 <blockquote>
-<div><p><span class="teal">-vf “select=eq(n,720)”</span>表示帧编号是160(起始帧编号是0，不是1)。</p>
+<div><p><span class="d60c0n">-vf “select=eq(n,720)”</span>表示帧编号是160(起始帧编号是0，不是1)。</p>
 </div></blockquote>
 <p>并且，时间与帧编号可以换算:</p>
 <blockquote>
 <div><p>截图时间为30秒，帧率为24fps，30*24=720。(上面两个命令截取的图片是完全一样的，比如，用sha256验证，sha256码完全一样)</p>
 </div></blockquote>
 </div></blockquote>
-<ol class="arabic" id="ffmpeg09-gif" start="9">
-<li><p>mp4转gif:</p>
+</section>
+<section id="mp4gif">
+<span id="ffmpeg09-gif"></span><h2>九、mp4转gif:<a class="headerlink" href="#mp4gif" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf palettegen palette.png
-ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span>palettegen<span class="w"> </span>palette.png
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-i<span class="w"> </span>palette.png<span class="w"> </span>-lavfi<span class="w"> </span>paletteuse<span class="w"> </span>new.gif
 </pre></div>
 </div>
 </div></blockquote>
 <p>这两条命令可以合成一条：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot;</span> new.gif
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="s2">&quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot;</span><span class="w"> </span>new.gif
 </pre></div>
 </div>
 </div></blockquote>
 <p>或者再精细一点：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot;</span> -s <span class="m">480</span>*320 -r <span class="m">10</span> new.gif
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="s2">&quot;split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&quot;</span><span class="w"> </span>-s<span class="w"> </span><span class="m">480</span>*320<span class="w"> </span>-r<span class="w"> </span><span class="m">10</span><span class="w"> </span>new.gif
 </pre></div>
 </div>
 </div></blockquote>
 <p>其中：</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><span class="teal">-s</span>表示分辨率；</p></li>
-<li><p><span class="teal">-r</span>表示帧率fps；</p></li>
-<li><p><span class="teal">-vf</span>表示生成色板palettegen和使用色板paletteuse；</p></li>
-</ul>
+<div><ol class="arabic simple">
+<li><p><span class="d60c0n">-s</span>表示分辨率；</p></li>
+<li><p><span class="d60c0n">-r</span>表示帧率fps；</p></li>
+<li><p><span class="d60c0n">-vf</span>表示生成色板palettegen和使用色板paletteuse；</p></li>
+</ol>
 </div></blockquote>
-</li>
-</ol>
-<ol class="arabic simple" id="ffmpeg10-smaller" start="10">
-<li><p>录制视频时减小视频文件的体积</p></li>
-</ol>
+</div></blockquote>
+</section>
+<section id="ffmpeg10-smaller">
+<span id="id5"></span><h2>十、录制视频时减小视频文件的体积<a class="headerlink" href="#ffmpeg10-smaller" title="Link to this heading"></a></h2>
 <blockquote>
 <div><p>对于软件教学类的视频，由于视频内容主要是软件操作，所以可以在录制视频时降低帧率。</p>
 <p>一般视频的常用帧率为24fps或者30fps，软件教学视频在录制时可以降低为12fps，或者更低，看起来有可能会像gif，但完全不影响教学演示效果。</p>
 </div></blockquote>
-<ol class="arabic simple" id="ffmpeg11-delaudio" start="11">
-<li><p>删除音频，只要视频：</p></li>
-</ol>
+</section>
+<section id="ffmpeg11-delaudio">
+<span id="id6"></span><h2>十一、删除音频，只要视频：<a class="headerlink" href="#ffmpeg11-delaudio" title="Link to this heading"></a></h2>
 <blockquote>
 <div><blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -c:v copy -an new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-c:v<span class="w"> </span>copy<span class="w"> </span>-an<span class="w"> </span>new.mp4
 </pre></div>
 </div>
 </div></blockquote>
-<p>其中，<span class="teal">-an</span>是指不复制音频。此命令仅适用于单音轨视频。</p>
+<p>其中，<span class="d60c0n">-an</span>是指不复制音频。此命令仅适用于单音轨视频。</p>
 </div></blockquote>
-<ol class="arabic simple" id="ffmpeg12-flip" start="12">
-<li><p>水平翻转视频：</p></li>
-</ol>
+</section>
+<section id="ffmpeg12-flip">
+<span id="id7"></span><h2>十二、水平翻转视频：<a class="headerlink" href="#ffmpeg12-flip" title="Link to this heading"></a></h2>
 <blockquote>
 <div><blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;hflip&quot;</span> -c:v libx264 new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="s2">&quot;hflip&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new.mp4
 </pre></div>
 </div>
 </div></blockquote>
 <p>垂直翻转视频：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i old.mp4 -vf <span class="s2">&quot;vflip&quot;</span> -c:v libx264 new.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="s2">&quot;vflip&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>new.mp4
 </pre></div>
 </div>
 </div></blockquote>
 </div></blockquote>
-<ol class="arabic" id="ffmpeg13-motion-jpg" start="13">
-<li><p>把多张图片拼成视频：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -r <span class="m">0</span>.5 -f image2 -i aaa%d.jpg -b:v 4M new.mp4
-</pre></div>
-</div>
-</li>
-</ol>
-<ol class="arabic" id="ffmpeg14-only-audio" start="14">
-<li><p>从视频中提取音频：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i video.mp4 -vn -c:a libmp3lame -q:a <span class="m">1</span> audio.mp3
-</pre></div>
-</div>
-</li>
-</ol>
-<ol class="arabic" id="ffmpeg13-audio-clip" start="15">
-<li><p>从音频中提取片段：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i audio.mp3 -ss <span class="m">00</span>:00:00 -t <span class="m">00</span>:00:33 audio-clip.mp3
-</pre></div>
-</div>
-</li>
-</ol>
+</section>
+<section id="ffmpeg13-motion-jpg">
+<span id="id8"></span><h2>十三、把多张图片拼成视频：<a class="headerlink" href="#ffmpeg13-motion-jpg" title="Link to this heading"></a></h2>
 <blockquote>
-<div><p>其中，<span class="teal">-ss</span>是开始时间，<span class="teal">-t</span>是持续时间。</p>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-r<span class="w"> </span><span class="m">0</span>.5<span class="w"> </span>-f<span class="w"> </span>image2<span class="w"> </span>-i<span class="w"> </span>aaa%d.jpg<span class="w"> </span>-b:v<span class="w"> </span>4M<span class="w"> </span>new.mp4
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="ffmpeg14-only-audio">
+<span id="id9"></span><h2>十四、从视频中提取音频：<a class="headerlink" href="#ffmpeg14-only-audio" title="Link to this heading"></a></h2>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>video.mp4<span class="w"> </span>-vn<span class="w"> </span>-c:a<span class="w"> </span>libmp3lame<span class="w"> </span>-q:a<span class="w"> </span><span class="m">1</span><span class="w"> </span>audio.mp3
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="ffmpeg13-audio-clip">
+<span id="id10"></span><h2>十五、从音频中提取片段：<a class="headerlink" href="#ffmpeg13-audio-clip" title="Link to this heading"></a></h2>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>audio.mp3<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:00:00<span class="w"> </span>-t<span class="w"> </span><span class="m">00</span>:00:33<span class="w"> </span>audio-clip.mp3
+</pre></div>
+</div>
+</div></blockquote>
+<p>其中，<span class="d60c0n">-ss</span>是开始时间，<span class="d60c0n">-t</span>是持续时间。</p>
+</div></blockquote>
+</section>
+<section id="add-cover">
+<span id="id11"></span><h2>十六、给mp4视频添加封面：<a class="headerlink" href="#add-cover" title="Link to this heading"></a></h2>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp4<span class="w"> </span>-i<span class="w"> </span>cover.jpeg<span class="w"> </span>-map<span class="w"> </span><span class="m">1</span><span class="w"> </span>-map<span class="w"> </span><span class="m">0</span><span class="w"> </span>-c<span class="w"> </span>copy<span class="w"> </span>-disposition:0<span class="w"> </span>attached_pic<span class="w"> </span>output.mp4
+</pre></div>
+</div>
+</div></blockquote>
+<p>其中，<span class="d60c0n">input.mp4</span>是原始视频，<span class="d60c0n">cover.jpeg</span>是封面图片文件， <span class="d60c0n">output.mp4</span>是得到的带封面的视频。</p>
 </div></blockquote>
 <div class="line-block">
 <div class="line"><em>未完稿</em></div>
-<div class="line"><em>最近一次更新：2024-05-20</em></div>
+<div class="line"><em>最近一次更新：2024-09-30</em></div>
 </div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -591,7 +680,7 @@ ffmpeg -i old.mp4 -i palette.png -lavfi paletteuse new.gif
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

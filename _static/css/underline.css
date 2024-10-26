@@ -1,36 +1,636 @@
 /* Inline text style with bottom dot-line */
 
-.green6bc6 {
-    color: #6bc600;
+.i050 {
+    color: #005500;
+    font-style: italic;
 }
 
-.darkreda00 {
-    color: #aa0000;
+.i060 {
+    color: #006600;
+    font-style: italic;
 }
 
-.darkredb00 {
-    color: #bb0000;
+.i070 {
+    color: #007700;
+    font-style: italic;
 }
 
-.darkredc00 {
-    color: #cc0000;
+.i080 {
+    color: #008800;
+    font-style: italic;
 }
 
-.darkredd00 {
-    color: #dd0000;
+.i090 {
+    color: #009900;
+    font-style: italic;
 }
 
-.darkrede00 {
-    color: #ee0000;
+.t600 {
+    color: #660000;
 }
 
-.darkred700 {
+.t700 {
     color: #770000;
 }
 
-.darkred900 {
+.t800 {
+    color: #880000;
+}
+
+.t900 {
     color: #990000;
 }
+
+.ta00 {
+    color: #aa0000;
+}
+
+.tb00 {
+    color: #bb0000;
+}
+
+.tc00 {
+    color: #cc0000;
+}
+
+.td00 {
+    color: #dd0000;
+}
+
+.te00 {
+    color: #ee0000;
+}
+
+.tf00 {
+    color: #ff0000;
+}
+
+.t060 {
+    color: #006600;
+}
+
+.t070 {
+    color: #007700;
+}
+
+.t080 {
+    color: #008800;
+}
+
+.t090 {
+    color: #009900;
+}
+
+.t0a0 {
+    color: #00aa00;
+}
+
+.t0b0 {
+    color: #00bb00;
+}
+
+.t0c0 {
+    color: #00cc00;
+}
+
+.t0d0 {
+    color: #00dd00;
+}
+
+.t0e0 {
+    color: #00ee00;
+}
+
+.t0f0 {
+    color: #00ff00;
+}
+
+.d2030n {
+    color: #003300;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d2040n {
+    color: #004400;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d2050n {
+    color: #005500;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d2060n {
+    color: #006600;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d2070n {
+    color: #007700;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d2080n {
+    color: #008800;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d2090n {
+    color: #009900;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d20a0n {
+    color: #00aa00;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d20b0n {
+    color: #00bb00;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d20c0n {
+    color: #00cc00;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d20d0n {
+    color: #00dd00;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d20e0n {
+    color: #00ee00;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+.d20f0n {
+    color: #00ff00;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #009900
+}
+
+/* dash2 上色，文字无色 */
+
+.d20a0 {
+/*    color: #00aa00; */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #00aa00
+}
+
+.d20b0 {
+/*    color: #00aa00; */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #00bb00
+}
+
+.d20c0 {
+/*    color: #00aa00; */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #00cc00
+}
+
+.d20d0 {
+/*    color: #00aa00; */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #00dd00
+}
+
+.d20e0 {
+/*    color: #00aa00; */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #00ee00
+}
+
+.d20f0 {
+/*    color: #00aa00; */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #00ff00
+}
+
+
+.d2ff0 {
+/*    color: #00ff00; */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #ffff00
+}
+
+
+
+.d6030n {
+    color: #003300;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d6040n {
+    color: #004400;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d6050n {
+    color: #005500;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d6060n {
+    color: #006600;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d6070n {
+    color: #007700;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d6080n {
+    color: #008800;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d6090n {
+    color: #009900;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d60a0n {
+    color: #00aa00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d60b0n {
+    color: #00bb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d60c0n {
+    color: #00cc00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d60d0n {
+    color: #00dd00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d60e0n {
+    color: #00ee00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.d60f0n {
+    color: #00ff00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+
+
+
+.d6300 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #330000;
+}
+
+.d6400 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #440000;
+}
+
+.d6500 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #550000;
+}
+
+.d6600 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #660000;
+}
+
+.d6700 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #770000;
+}
+
+.d6800 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #880000;
+}
+
+.d6900 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #990000;
+}
+
+.d6a00 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #aa0000;
+}
+
+.d6b00 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #bb0000;
+}
+
+.d6c00 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #cc0000;
+}
+
+.d6d00 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #dd0000;
+}
+
+.d6e00 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #ee0000;
+}
+
+.d6f00 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #ff0000;
+}
+
+
+.d6ff0 {
+#    color: #aabb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #ffff00;
+}
+
+.bold-underline-gr {
+    color: #00aa00; /* 文字的颜色，删除则使用css默认颜色 */
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.bold-underline-gr::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;  /* 调整此值以改变下划线与文字的距离 */
+    width: 100%;
+    height: 1px;  /* 下划线的粗细 */
+    background-color: #ff0000;  /* 下划线的颜色，currentColor使用当前文字颜色 */
+}
+
+.bold-under-dashline-rg {
+    --text-color: #bb0000;
+    --underline-color: #00dd00;
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.bold-under-dashline-rg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 1px; 
+    background-image: linear-gradient(to right, var(--underline-color) 75%, transparent 25%); 
+    background-size: 6px;
+    background-repeat: repeat-x;
+}
+
+/*    下面是双下划虚线，虚线密度、与文字距离都可以调整  */
+
+.double-dotted-underline {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.double-dotted-underline::before,
+.double-dotted-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, currentColor 30%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 2px 1px;
+    background-repeat: repeat-x;
+}
+
+.double-dotted-underline::before {
+    bottom: 0;
+    transform: translateY(-2px);  /* 向下移动 3px */
+}
+
+.double-dotted-underline::after {
+    bottom: 0;
+    transform: translateY(0px);  /* 向下移动 6px */
+}
+
+/*    上面是双下划虚线，虚线密度、与文字距离都可以调整  */
+
+/*    下面是加粗且下划实线  */
+
+.bold-underline {
+    color: #bb0000; /* 文字的颜色，删除则使用css默认颜色 */
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.bold-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;  /* 调整此值以改变下划线与文字的距离 */
+    width: 100%;
+    height: 1px;  /* 下划线的粗细 */
+    background-color: #00bb00;  /* 下划线的颜色，currentColor使用当前文字颜色 */
+}
+
+/*    上面是加粗且下划实线  */
+
+/* 下面是加粗且虚线下划线样式 */
+
+.bold-under-dashline {
+    --text-color: #00bb00; /* 虚线上方文字的颜色 */
+    --underline-color: #ff0000; /* 虚线本身的颜色 */
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.bold-under-dashline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px; /* 调整此值以改变下划线与文字的距离 */
+    width: 100%;
+    height: 1px;  /* 虚线的厚度 */
+    background-image: linear-gradient(to right, var(--underline-color) 75%, transparent 25%); /* 虚线的实部与空部百分比；75%: 从左边开始，使用当前文本颜色填充75%的宽度；transparent 25%: 剩下的25%宽度是透明的。*/
+    background-size: 6px; /*  6px控制虚线一虚+一实的长度，1px控制虚线厚度, 与上一行配合使用  */
+    background-repeat: repeat-x;
+}
+
+/* 上面是加粗且虚线下划线样式 */
+
 
 
 .dash1 {
@@ -47,7 +647,7 @@ span.dash2 {
     /*    text-decoration-color: yellow; */
 }
 
-span.dash2y {
+span.d2ab0 {
     color: #aabb00;
     text-decoration: underline;
     text-decoration-style: dashed;
@@ -56,22 +656,23 @@ span.dash2y {
     /*    text-decoration-color: yellow; */
 }
 
-span.dash2yline {
-    /*    color: #aabb00; */
-    text-decoration: underline;
-    text-decoration-style: dashed;
-    text-underline-position: under;
-    text-decoration-thickness: 1px; 
-    text-decoration-color: yellow; 
-}
-
-span.dash2r {
+span.d2f00ff0{
     color: #ff0000;
     text-decoration-line: underline;
     text-decoration-style: dashed;
     text-underline-position: under;
     text-decoration-thickness: 1px;
     text-decoration-color: yellow;
+    /*    text-decoration-color: red; */
+}
+
+span.d2f00 {
+    /*    color: #ff0000;  */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #ff0000;
     /*    text-decoration-color: red; */
 }
 
@@ -82,26 +683,338 @@ span.dash2r {
 /*    border-bottom-color: green; */
 }
 
-.dash6y {
-    color: #aabb00;
+span.updash2 {
+    text-decoration-line: overline;
+    text-decoration-style: dashed;
+    text-underline-position: over;
+    text-decoration-thickness: 1px;
+    /*    text-decoration-color: yellow; */
+}
+
+.updash4 {
+    border-top: overline;
+    border-top-style: solid;
+    border-top-width: 1px;
+/*    border-bottom-color: green; */
+}
+
+span.updash5 {
+    text-decoration-line: overline;
+    text-decoration-style: solid;
+    text-decoration-style: double;
+    text-underline-position: over;
+    text-decoration-thickness: 1px;
+    /*    text-decoration-color: yellow; */
+}
+
+.updash6 {
+    border-top: overline;
+    border-top-style: dotted;
+    border-top-width: 1px;
+/*    border-bottom-color: green; */
+}
+
+.d6ff0n {
+    color: #ffff00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #009900;
+}
+
+.dash60d0 {
+    color: #00dd00;
     border-bottom: underline;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
     border-bottom-color: green;
 }
 
-.dash6yline {
-#    color: #aabb00;
+.d6f00n {
+    color: #ff0000;
     border-bottom: underline;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
-    border-bottom-color: #aabb00;
+    border-bottom-color: #009900;
+}
+
+
+.dash60b0  {
+    color: #00bb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #00bb00;
 }
 
 .dash7 {
     border-bottom: underline;
     border-bottom-style: dotted;
     border-bottom-width: 2px;
+}
+
+.d70a0n  {
+    color: #00aa00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d70b0n  {
+    color: #00bb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d70c0n  {
+    color: #00cc00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d70d0n  {
+    color: #00dd00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d70e0n  {
+    color: #00ee00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d70f0n  {
+    color: #00ff00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7a00n {
+    color: #aa0000; 
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00aa00;
+}
+
+.d70a0  {
+/*      color: #00dd00;   */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00aa00;
+}
+
+.d70b0  {
+/*      color: #00dd00;   */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00bb00;
+}
+
+.d70c0  {
+/*      color: #00dd00;   */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00cc00;
+}
+
+.d70d0  {
+/*      color: #00dd00;   */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00dd00;
+}
+
+.d70e0  {
+/*      color: #00dd00;   */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00ee00;
+}
+
+.d70f0  {
+/*      color: #00dd00;   */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00ff00;
+}
+
+.d7a00n {
+    color: #aa0000;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7b00n {
+    color: #bb0000;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7c00n {
+    color: #cc0000;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7d00n {
+    color: #dd0000;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7e00n {
+    color: #ee0000;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7f00n {
+    color: #ff0000;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7a00 {
+/*    color: #ff0000;  */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #aa0000;
+}
+
+.d7b00 {
+/*    color: #ff0000;  */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #bb0000;
+}
+
+.d7c00 {
+/*    color: #ff0000;  */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #dd0000;
+}
+
+.d7d00 {
+/*    color: #ff0000;  */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #dd0000;
+}
+
+.d7e00 {
+/*    color: #ff0000;  */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #ee0000;
+}
+
+.d7f00 {
+/*    color: #ff0000;  */
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #ff0000;
+}
+
+.d7f00d {
+    color: #ff0000;  
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #ff0000;
+}
+
+.d7f000f0 {
+    color: #ff0000;  
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #00ff00;
+}
+
+.d7aa0n {
+    color: #aaaa00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7bb0n {
+    color: #bbbb00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7cc0n {
+    color: #cccc00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7dd0n {
+    color: #dddd00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7ee0n {
+    color: #eeee00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
+}
+
+.d7ff0n {
+    color: #ffff00;
+    border-bottom: underline;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #009900; 
 }
 
 .dash9 {
@@ -172,6 +1085,6 @@ span.dash4 {
     color: yellow;
 }   
 
-:root{--sd-color-primary: #0071bc;--sd-color-secondary: #6c757d;--sd-color-success: #28a745;--sd-color-info: #2a2a2a;--sd-color-warning: #f0b37e;--sd-color-danger: #dc3545;--sd-color-light: #f8f9fa;--sd-color-muted: #6c757d;--sd-color-dark: #003d00;--sd-color-black: black;--sd-color-white: white;--sd-color-primary-highlight: #0060a0;--sd-color-secondary-highlight: #5c636a;--sd-color-success-highlight: #228e3b;--sd-color-info-highlight: #148a9c;--sd-color-warning-highlight: #cc986b;--sd-color-danger-highlight: #bb2d3b;--sd-color-light-highlight: #d3d4d5;--sd-color-muted-highlight: #5c636a;--sd-color-dark-highlight: #1c1f23;--sd-color-black-highlight: black;--sd-color-white-highlight: #d9d9d9;--sd-color-primary-text: #fff;--sd-color-secondary-text: #fff;--sd-color-success-text: #fff;--sd-color-info-text: #777;--sd-color-warning-text: #212529;--sd-color-danger-text: #fff;--sd-color-light-text: #212529;--sd-color-muted-text: #fff;--sd-color-dark-text: #960;--sd-color-black-text: #fff;--sd-color-white-text: #212529;--sd-color-shadow: rgba(0, 0, 0, 0.15);--sd-color-card-border: #004400;--sd-color-card-border-hover:#hsla(231, 99%, 66%, 1);--sd-color-card-background: transparent;--sd-color-card-text: inherit;--sd-color-card-header: transparent;--sd-color-card-footer: transparent;--sd-color-tabs-label-active: hsla(231, 99%, 66%, 1);--sd-color-tabs-label-hover: hsla(231, 99%, 66%, 1);--sd-color-tabs-label-inactive: hsl(0, 0%, 66%);--sd-color-tabs-underline-active: hsla(231, 99%, 66%, 1);--sd-color-tabs-underline-hover: rgba(178, 206, 245, 0.62);--sd-color-tabs-underline-inactive: transparent;--sd-color-tabs-overline: rgb(222, 222, 222);--sd-color-tabs-underline: rgb(222, 222, 222);--sd-fontsize-tabs-label: 1rem}
+:root{--sd-color-primary: #0071bc;--sd-color-secondary: #6c757d;--sd-color-success: #28a745;--sd-color-info: #2a2a2a;--sd-color-warning: #f0b37e;--sd-color-danger: #dc3545;--sd-color-light: #f8f9fa;--sd-color-muted: #6c757d;--sd-color-dark: #004400;--sd-color-black: black;--sd-color-white: white;--sd-color-primary-highlight: #0060a0;--sd-color-secondary-highlight: #5c636a;--sd-color-success-highlight: #228e3b;--sd-color-info-highlight: #148a9c;--sd-color-warning-highlight: #cc986b;--sd-color-danger-highlight: #bb2d3b;--sd-color-light-highlight: #d3d4d5;--sd-color-muted-highlight: #5c636a;--sd-color-dark-highlight: #1c1f23;--sd-color-black-highlight: black;--sd-color-white-highlight: #d9d9d9;--sd-color-primary-text: #ffffff;--sd-color-secondary-text: #ffffff;--sd-color-success-text: #ffffff;--sd-color-info-text: #777777;--sd-color-warning-text: #212529;--sd-color-danger-text: #ffffff;--sd-color-light-text: #212529;--sd-color-muted-text: #ffffff;--sd-color-dark-text: #00aa00;--sd-color-black-text: #ffffff;--sd-color-white-text: #212529;--sd-color-shadow: rgba(0, 0, 0, 0.15);--sd-color-card-border: #004400;--sd-color-card-border-hover:#hsla(231, 99%, 66%, 1);--sd-color-card-background: transparent;--sd-color-card-text: inherit;--sd-color-card-header: transparent;--sd-color-card-footer: transparent;--sd-color-tabs-label-active: hsla(231, 99%, 66%, 1);--sd-color-tabs-label-hover: hsla(231, 99%, 66%, 1);--sd-color-tabs-label-inactive: hsl(0, 0%, 66%);--sd-color-tabs-underline-active: hsla(231, 99%, 66%, 1);--sd-color-tabs-underline-hover: rgba(178, 206, 245, 0.62);--sd-color-tabs-underline-inactive: transparent;--sd-color-tabs-overline: rgb(222, 222, 222);--sd-color-tabs-underline: rgb(222, 222, 222);--sd-fontsize-tabs-label: 1rem}
 
 .sd-btn-outline-dark{color:var(--sd-color-info) !important;border-color:var(--sd-color-info) !important;border-width:4px !important;border-style:solid !important}

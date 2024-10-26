@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>渐变工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>渐变工具</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../inkscape-tools.html">Inkscape工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../inkscape-tools.html">工具箱</a></li>
       <li class="breadcrumb-item active">渐变工具</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,160 +98,174 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="tool-gradient">
-<span id="id1"></span><h1>渐变工具<a class="headerlink" href="#tool-gradient" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="tool-gradient">
+<span id="id1"></span><h1>渐变工具<a class="headerlink" href="#tool-gradient" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：<span class="guilabel">G</span> 或者 <span class="guilabel">Ctrl</span>+<span class="guilabel">F1</span></p>
-<p>渐变工具( <a class="reference internal" href="../../_images/tool-gradient1.svg"><img alt="tool-gradient" class="align-middle" height="20" src="../../_images/tool-gradient1.svg" width="20" /></a> )用来创建渐变，渐变可以应用于填充，也可以应用于描边。</p>
+<p>渐变工具( <a class="reference internal" href="../../_images/tool-gradient.svg"><img alt="tool-gradient" class="align-middle" src="../../_images/tool-gradient.svg" style="width: 20px; height: 20px;" /></a> )用来创建渐变，渐变可以应用于填充，也可以应用于描边。</p>
 <p>渐变由渐变路径及路径上的色标来控制渐变效果：渐变路径控制渐变的范围/方向；渐变路径上的色标控制具体的颜色变化及渐变的层次。</p>
-<div class="section" id="id2">
-<h2>操作方法<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<ol class="arabic">
-<li><p>选中一个对象，比如选中一个椭圆形；</p></li>
-<li><p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient1.svg"><img alt="tool-gradient" class="align-middle" height="20" src="../../_images/tool-gradient1.svg" width="20" /></a> )；</p></li>
-<li><p>鼠标在椭圆形中点击并拖动一段距离，然后松开鼠标即可；</p>
+<section id="id2">
+<h2>操作方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <blockquote>
-<div><div class="figure align-center" id="id14">
+<div><ol class="arabic">
+<li><p>选中一个对象，比如选中一个椭圆形；</p></li>
+<li><p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient.svg"><img alt="tool-gradient" class="align-middle" src="../../_images/tool-gradient.svg" style="width: 20px; height: 20px;" /></a> )；</p></li>
+<li><p>鼠标在椭圆形中点击并拖动一段距离，然后松开鼠标即可；</p>
+<figure class="align-center" id="id14">
 <img alt="../../_images/12-01.png" src="../../_images/12-01.png" />
-<p class="caption"><span class="caption-text">从左到右的线性渐变 ：左侧为白色画布背景 ，右侧为棋盘方格画布背景</span><a class="headerlink" href="#id14" title="永久链接至图片"></a></p>
-</div>
-</div></blockquote>
+<figcaption>
+<p><span class="caption-text">从左到右的线性渐变 ：左侧为白色画布背景 ，右侧为棋盘方格画布背景</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </li>
 <li><p>(在椭圆形区域外拖动鼠标也可以，但效果有所不同)</p></li>
 <li><p>(默认会使用线性渐变，且仅对填充应用渐变，描边不应用)</p></li>
 <li><p>(上图中，椭圆形中的直线段是渐变路径，路径长度用来确定渐变范围)</p></li>
-<li><p>(渐变路径两端是两个渐变色标，色标用来确定渐变颜色；因为在两端，所以也叫端点色标；它们也叫渐变手柄)</p></li>
+<li><p>(渐变路径两端是两个渐变色标，色标用来确定渐变颜色；因为在两端，所以也叫起始色标、终点色标、结束色标、端点色标；它们也叫渐变手柄)</p></li>
 <li><p>(左端点色标是小正方形，表示起点；右端点色标是小圆形，表示终点)</p></li>
 <li><p>(两个端点色标形状不同是因为渐变是有方向的；如果需要，您可以反转渐变方向)</p></li>
 <li><p>(两个端点色标之间可以添加更多的色标；端点色标之间的其它色标也叫中间色标，其形状为小菱形)</p></li>
 <li><p>(每一个色标都可以单独设置颜色和透明度)</p></li>
 <li><p>(每一个色标的位置都可以移动，但移动端点色标会改变渐变范围/方向)</p></li>
-<li><p>(默认的线性渐变，起始端点色标使用纯色，透明度为完全不透明，即100；结束端点色标也使用纯色，颜色与起始端点色标相同，但透明度为完全透明，即0)</p>
-<blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>结束端点色标不是白色</strong></p>
-<p>有些人的电脑上终点端点色标看起来像白色，这是因为画布背景色是白色导致。</p>
-<p>您可以把画布背景改为棋盘方格：菜单 文件→文档属性→页面，勾选 棋盘方格背景。</p>
+<li><p>(默认的线性渐变，起始色标使用纯色，透明度为完全不透明，即100；结束色标也使用纯色，颜色与起始色标相同，但透明度为完全透明，即0)</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：结束色标不是白色</p>
+<p>有些人的电脑上终点色标看起来像白色，这是因为画布背景色是白色导致。</p>
+<p>您可以把画布背景改为棋盘方格：菜单【文件⇨文档属性➡页面】，勾选 棋盘方格背景。</p>
 </div>
-</div></blockquote>
 </li>
 <li><p>(线性渐变是颜色沿一个方向线性变化，径向渐变是颜色从中心向四周扩散变化)</p></li>
-<li><p>(渐变工具经常要结合 填充与描边 对话框[Ctrl+Shift+F]一起使用)</p></li>
+<li><p>(渐变工具经常要结合<span class="dash6">填充与描边</span>对话框(Ctrl+Shift+F)一起使用)</p></li>
 <li><p>(径向渐变的渐变路径是两个构成直角的手柄组成，二个手柄的起点重合在一起，是小正方形；两个终点分开呈直角，是小圆形)</p>
-<blockquote>
-<div><div class="figure align-center" id="id15">
+<figure class="align-center" id="id15">
 <img alt="../../_images/12-2.png" src="../../_images/12-2.png" />
-<p class="caption"><span class="caption-text">径向渐变</span><a class="headerlink" href="#id15" title="永久链接至图片"></a></p>
-</div>
-</div></blockquote>
+<figcaption>
+<p><span class="caption-text">径向渐变</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </li>
 <li><p>(径向渐变路径上的小正方形是渐变的中心，也叫渐变焦点；渐变以此为中心向外扩散)</p></li>
 <li><p>(径向渐变的渐变路径在两个方向上长度可以不相同；二者一起表示渐变范围)</p></li>
 <li><p>(径向渐变的两个小圆形端点色标颜色和透明度完全一致，且必须一致)</p></li>
 <li><p>(径向渐变在一个方向上添加色标，另一个方向上会自动添加完全相同的色标；删除同理)</p></li>
 <li><p>(按Shift不松手，然后用渐变工具点击并拖动径向渐变中心的小正方形，拖动一小段距离后松手，在对应位置上会显示一个小叉，这个叉的位置是新的径向渐变焦点)</p>
-<blockquote>
-<div><div class="figure align-center" id="id16">
+<figure class="align-center" id="id16">
 <img alt="../../_images/12-3.png" src="../../_images/12-3.png" />
-<p class="caption"><span class="caption-text">改变径向渐变的焦点 小叉在左下方向</span><a class="headerlink" href="#id16" title="永久链接至图片"></a></p>
-</div>
-</div></blockquote>
+<figcaption>
+<p><span class="caption-text">改变径向渐变的焦点 小叉在左下方向</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </li>
 <li><p>(如果想恢复焦点到小正方形的位置，可以直接点击并拖动小叉到小正方形处即可，小叉会被自动吸附)</p></li>
-<li><p>同时选中多个形状对象，然后用渐变工具对其整体应用渐变，会导致选中的多个对象的渐变被“对齐”，即把多个对齐当做一个单独的对象处理。虽然渐变被对齐，但因为多个对象并没有使用合并命令(路径→合并)合并为单一路径对象，所以，后续每个对象都可以单独移动和调整渐变，不影响其它对象。</p></li>
+<li><p>同时选中多个图形对象，然后用渐变工具对其整体应用渐变，会导致选中的多个对象的渐变被“对齐”，即把多个对齐当做一个单独的对象处理。虽然渐变被对齐，但因为多个对象并没有使用合并命令(路径⇨合并)合并为单一路径对象，所以，后续每个对象都可以单独移动和调整渐变，不影响其它对象。</p></li>
 </ol>
-</div>
-<div class="section" id="id3">
-<h2>修改渐变颜色和方向<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
-<div class="section" id="id4">
-<h3>修改已有色标颜色<a class="headerlink" href="#id4" title="永久链接至标题"></a></h3>
-<p>渐变的颜色由色标来确定。</p>
-<p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient1.svg"><img alt="tool-gradient" class="align-middle" height="20" src="../../_images/tool-gradient1.svg" width="20" /></a> )后，选择已有的渐变对象，点击一个色标，然后双击左下角的 填充(打开 填充和描边 对话框)，就可以在 填充和描边 对话框中修改此色标的颜色及透明度：</p>
+</div></blockquote>
+</section>
+<section id="id3">
+<h2>修改渐变颜色和方向<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>修改已有色标颜色<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <blockquote>
-<div><div class="figure align-center" id="id17">
+<div><p>渐变的颜色由色标来确定。</p>
+<p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient.svg"><img alt="tool-gradient" class="align-middle" src="../../_images/tool-gradient.svg" style="width: 20px; height: 20px;" /></a> )后，选择已有的渐变对象，点击一个色标，然后双击左下角的<span class="dash6">填充</span>(打开 <span class="dash6">填充和描边</span>对话框)，就可以在<span class="dash6">填充和描边</span>对话框中修改此色标的颜色及透明度：</p>
+<blockquote>
+<div><figure class="align-center" id="id17">
 <img alt="../../_images/12-4.png" src="../../_images/12-4.png" />
-<p class="caption"><span class="caption-text">通过修改色标的颜色来控制渐变的颜色变化</span><a class="headerlink" href="#id17" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">通过修改色标的颜色来控制渐变的颜色变化</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>用鼠标直接把窗口底部的某个色板拖到一个色标上，可以直接把色板颜色应用到该色标。</p>
-</div>
-<div class="section" id="id5">
-<h3>添加新颜色(新色标)<a class="headerlink" href="#id5" title="永久链接至标题"></a></h3>
-<p>默认的渐变只有两个色标：起始端点色标和结束端点色标，所以，也只能有两个颜色。如果想增加更多的渐变颜色，就需要增加更多的色标，每一个色标就代表一个过渡颜色。</p>
-<p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient1.svg"><img alt="tool-gradient" class="align-middle" height="20" src="../../_images/tool-gradient1.svg" width="20" /></a> )后，选择已有的渐变对象，此时会显示渐变路径，用鼠标在渐变路径上双击，或者Ctrl+Alt+鼠标左键单击，就可以在点击位置添加一个色标，之后修改此色标的颜色即可：</p>
+</div></blockquote>
+</section>
+<section id="id5">
+<h3>添加新颜色(新色标)<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <blockquote>
-<div><div class="figure align-center" id="id18">
+<div><p>默认的渐变只有两个色标：起始色标和结束色标，所以，也只能有两个颜色。如果想增加更多的渐变颜色，就需要增加更多的色标，每一个色标就代表一个可控颜色。</p>
+<p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient.svg"><img alt="tool-gradient" class="align-middle" src="../../_images/tool-gradient.svg" style="width: 20px; height: 20px;" /></a> )后，选择已有的渐变对象，此时会显示渐变路径，用鼠标在渐变路径上双击，或者Ctrl+Alt+鼠标左键单击，就可以在点击位置添加一个色标，之后修改此色标的颜色即可：</p>
+<blockquote>
+<div><figure class="align-center" id="id18">
 <img alt="../../_images/12-05.png" src="../../_images/12-05.png" />
-<p class="caption"><span class="caption-text">图 -1：增加了一个色标，且该色标设置为粉色 /不透明度 100</span><a class="headerlink" href="#id18" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图 -1：增加了一个色标，且该色标设置为粉色 /不透明度 100</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>依此类推，可以添加更多的色标，让渐变的颜色变化更丰富。</p>
-<p>(选择相邻的两个色标，然后点击工具选项中的( <a class="reference internal" href="../../_images/12add-new.svg"><img alt="12add-new" class="align-middle" height="20" src="../../_images/12add-new.svg" width="20" /></a> )按钮，会在两个选中色标的正中间位置插入一个新的色标，该色标的颜色会使用当前渐变位置的颜色，所以默认不会改变渐变的颜色变化)</p>
-</div>
-<div class="section" id="id6">
-<h3>删除已有的色标<a class="headerlink" href="#id6" title="永久链接至标题"></a></h3>
-<p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient1.svg"><img alt="tool-gradient" class="align-middle" height="20" src="../../_images/tool-gradient1.svg" width="20" /></a> )后，Ctrl+Alt+鼠标左键单击需要删除的色标就可以删除。</p>
-<div class="line-block">
-<div class="line">也可以用渐变工具选中色标后，按Delete/Del键删除；</div>
-<div class="line">还可以用渐变工具选中色标后，点击工具选项中的删除按钮( <a class="reference internal" href="../../_images/13delete.svg"><img alt="13delete" class="align-middle" height="20" src="../../_images/13delete.svg" width="20" /></a> )来删除。</div>
-<div class="line">端点色标也可以删除，前提是至少有一个中间色标。</div>
-<div class="line">端点色标删除后，最近的色标变为端点色标；渐变路径变短。</div>
-</div>
-</div>
-<div class="section" id="id7">
-<h3>移动色标<a class="headerlink" href="#id7" title="永久链接至标题"></a></h3>
+<p>(选择相邻的两个色标，然后点击工具选项中的( <a class="reference internal" href="../../_images/12add-new.svg"><img alt="12add-new" class="align-middle" src="../../_images/12add-new.svg" style="width: 20px; height: 20px;" /></a> )按钮，会在两个选中色标的正中间位置插入一个新的色标，该色标的颜色会使用当前渐变位置的颜色，所以默认不会改变渐变的颜色变化)</p>
+</div></blockquote>
+</section>
+<section id="id6">
+<h3>删除已有的色标<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>切换到渐变工具( <a class="reference internal" href="../../_images/tool-gradient.svg"><img alt="tool-gradient" class="align-middle" src="../../_images/tool-gradient.svg" style="width: 20px; height: 20px;" /></a> )后，Ctrl+Alt+鼠标左键单击需要删除的色标就可以删除。</p>
 <ol class="arabic simple">
+<li><p>也可以用渐变工具选中色标后，按Delete/Del键删除；</p></li>
+<li><p>还可以用渐变工具选中色标后，点击工具选项中的删除按钮( <a class="reference internal" href="../../_images/13delete.svg"><img alt="13delete" class="align-middle" src="../../_images/13delete.svg" style="width: 20px; height: 20px;" /></a> )来删除。</p></li>
+<li><p>端点色标也可以删除，前提是至少有一个中间色标。</p></li>
+<li><p>端点色标删除后，最近的色标变为端点色标；渐变路径变短。</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="id7">
+<h3>移动色标<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>切换到渐变工具后，可以直接用鼠标移动色标。</p></li>
 <li><p>切换到渐变工具后，可以用键盘上的方向键移动选中的色标。</p></li>
 <li><p>任何一个色标，其移动范围都受相邻色标的限制，移动时不能越过相邻色标。</p></li>
 </ol>
-</div>
-<div class="section" id="id8">
-<h3>调整渐变为非线性效果<a class="headerlink" href="#id8" title="永久链接至标题"></a></h3>
+</div></blockquote>
+</section>
+<section id="id8">
+<h3>调整渐变为非线性效果<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>默认情况下，inkscape渐变的色标只能设置为线性过渡，无法设置为非线性过渡。如果想实现非线性过渡效果，可以通过叠加两个不同颜色的色标来实现，即把两个不同颜色的色标放在同一位置：</p>
 <blockquote>
-<div><div class="figure align-center" id="id19">
+<div><figure class="align-center" id="id19">
 <img alt="../../_images/12-07.png" src="../../_images/12-07.png" />
-<p class="caption"><span class="caption-text">图 -2：左图是添加新色标并设为红色，右图是向左移动新色标使其与粉色色标重合</span><a class="headerlink" href="#id19" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图 -2：左图是添加新色标并设为红色，右图是向左移动新色标使其与粉色色标重合</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <dl>
-<dt>实现方法：</dt><dd><p>在上面图-1中间粉色色标的右侧添加一个新色标，然后设置新色标的颜色为红色/不透明度100，得到上面图-2中左侧的椭圆；再用渐变工具( <a class="reference internal" href="../../_images/tool-gradient1.svg"><img alt="tool-gradient" class="align-middle" height="20" src="../../_images/tool-gradient1.svg" width="20" /></a> )向左移动这个红色新色标的位置，使其与左侧粉红色色标重合，即得到图-2中右侧椭圆的效果。(右侧椭圆中只能看到三个色标，但实际上有四个色标：中间的色标是两个不同颜色的色标重合在一起)</p>
+<dt>实现方法：</dt><dd><p>在上面图-1中间粉色色标的右侧添加一个新色标，然后设置新色标的颜色为红色/不透明度100，得到上面图-2中左侧的椭圆；再用渐变工具( <a class="reference internal" href="../../_images/tool-gradient.svg"><img alt="tool-gradient" class="align-middle" src="../../_images/tool-gradient.svg" style="width: 20px; height: 20px;" /></a> )向左移动这个红色新色标的位置，使其与左侧粉红色色标重合，即得到图-2中右侧椭圆的效果。(右侧椭圆中只能看到三个色标，但实际上有四个色标：中间的色标是两个不同颜色的色标重合在一起)</p>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>中间色标的位置</strong></p>
+<div><div class="admonition- admonition">
+<p class="admonition-title">驿窗注：中间色标的位置</p>
 <p>中间色标可以用渐变工具的工具选项中的 偏移量 数值来精确设定相对位置。</p>
 </div>
 </div></blockquote>
 </dd>
 </dl>
-</div>
-<div class="section" id="id9">
-<h3>调整渐变的方向<a class="headerlink" href="#id9" title="永久链接至标题"></a></h3>
-<p>用渐变工具( <a class="reference internal" href="../../_images/tool-gradient1.svg"><img alt="tool-gradient" class="align-middle" height="20" src="../../_images/tool-gradient1.svg" width="20" /></a> )移动端点色标，可以调整渐变的方向：(中间色标只能沿渐变路径移动，不能离开渐变路径)</p>
+</section>
+<section id="id9">
+<h3>调整渐变的方向<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<p>用渐变工具( <a class="reference internal" href="../../_images/tool-gradient.svg"><img alt="tool-gradient" class="align-middle" src="../../_images/tool-gradient.svg" style="width: 20px; height: 20px;" /></a> )移动端点色标，可以调整渐变的方向：(中间色标只能沿渐变路径移动，不能离开渐变路径)</p>
 <blockquote>
-<div><div class="figure align-center" id="id20">
+<div><figure class="align-center" id="id20">
 <img alt="../../_images/12-06.png" src="../../_images/12-06.png" />
-<p class="caption"><span class="caption-text">右端点色标从右侧移到中间下面的位置</span><a class="headerlink" href="#id20" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">右端点色标从右侧移到中间下面的位置</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-</div>
-<div class="section" id="id10">
-<h3>渐变联结<a class="headerlink" href="#id10" title="永久链接至标题"></a></h3>
-<p>Inkscape的结点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )也可以对渐变色标进行调整，操作方法与渐变工具基本相同；您可以取消勾选菜单 编辑→工具→首选项→工具→节点 中的 允许渐变编辑 选项，来禁止节点工具对渐变色标的操作。</p>
+</section>
+<section id="id10">
+<h3>渐变联结<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>Inkscape的结点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" src="../../_images/tool-node.svg" style="width: 20px; height: 20px;" /></a> )也可以对渐变色标进行调整，操作方法与渐变工具基本相同；您可以取消勾选菜单【编辑⇨工具⇨首选项⇨工具⇨节点】中的 允许渐变编辑 选项，来禁止节点工具对渐变色标的操作。</p>
 <p>使用节点工具对色标操作，可以对多个不同渐变的端点色标进行“联结”，即把多个不同渐变的端点色标重合在一起，但渐变效果仍然各自独立，不产生相互影响。端点色标联结后，多个不同的渐变的端点色标会共享同的位置坐标。</p>
 <dl>
-<dt>联结方法：</dt><dd><p>先创建两个不同的渐变对象，然后切换到节点工具( <a class="reference internal" href="../../_images/tool-node1.svg"><img alt="tool-node" class="align-middle" height="20" src="../../_images/tool-node1.svg" width="20" /></a> )，用节点工具框选两个渐变对象，会显示两个对象的两条渐变路径，用节点工具拖动其中一条渐变路径的一个端点色标，使其靠近另一条渐变路径的一个，移动到一定距离后，两个端点色标会自动吸附在一起。之后移动此端点色标，两个渐变对象会同时发生变化，但各自独立。</p>
-<p>联结操作需要确保菜单 编辑→工具→首选项→工具→节点 中的 允许渐变编辑 选项是已勾选状态。</p>
+<dt>联结方法：</dt><dd><p>先创建两个不同的渐变对象，然后切换到节点工具( <a class="reference internal" href="../../_images/tool-node.svg"><img alt="tool-node" class="align-middle" src="../../_images/tool-node.svg" style="width: 20px; height: 20px;" /></a> )，用节点工具框选两个渐变对象，会显示两个对象的两条渐变路径，用节点工具拖动其中一条渐变路径的一个端点色标，使其靠近另一条渐变路径的一个，移动到一定距离后，两个端点色标会自动吸附在一起。之后移动此端点色标，两个渐变对象会同时发生变化，但各自独立。</p>
+<p>联结操作需要确保菜单【编辑⇨工具⇨首选项⇨工具⇨节点】中的 允许渐变编辑 选项是已勾选状态。</p>
 </dd>
 </dl>
-</div>
-</div>
-<div class="section" id="id11">
-<h2>辅助快捷键<a class="headerlink" href="#id11" title="永久链接至标题"></a></h2>
+</section>
+</section>
+<section id="id11">
+<h2>辅助快捷键<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>用渐变工具选择色标时，按住Shift键点击可以选择多个色标，或者也可以按住Shift键然后鼠标框选多个色标，或者Ctrl+A选择全部色标。</p></li>
 <li><p>Ctrl+Alt+鼠标左键单击，可以删除点击的色标。</p></li>
@@ -255,26 +277,25 @@
 <li><p>上面复制后，再选中另一个色标，然后按Ctrl+Shift+V，会粘贴颜色，即把复制的颜色和透明度应用到被新选中的色标上。</p></li>
 <li><p>让渐变方向反转可以使用Shift+R 。</p></li>
 </ol>
-</div>
-<div class="section" id="id12">
-<h2>工具选项<a class="headerlink" href="#id12" title="永久链接至标题"></a></h2>
+</section>
+<section id="id12">
+<h2>工具选项<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
 <ol class="arabic">
-<li><p>( <a class="reference internal" href="../../_images/1linear.svg"><img alt="1linear" class="align-middle" height="20" src="../../_images/1linear.svg" width="20" /></a> )：线性渐变。沿一个方向变化。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/2radial.svg"><img alt="2radial" class="align-middle" height="20" src="../../_images/2radial.svg" width="20" /></a> )：径向渐变。从中心向四周扩散，呈圆形或椭圆形。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/3solid.svg"><img alt="3solid" class="align-middle" height="20" src="../../_images/3solid.svg" width="20" /></a> )：新渐变应用于填充，不应用于描边。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/4in-stroke.svg"><img alt="4in-stroke" class="align-middle" height="20" src="../../_images/4in-stroke.svg" width="20" /></a> )：新渐变应用于描边，不应用于填充。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/1linear.svg"><img alt="1linear" class="align-middle" src="../../_images/1linear.svg" style="width: 20px; height: 20px;" /></a> )：线性渐变。沿一个方向变化。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/2radial.svg"><img alt="2radial" class="align-middle" src="../../_images/2radial.svg" style="width: 20px; height: 20px;" /></a> )：径向渐变。从中心向四周扩散，呈圆形或椭圆形。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/3solid.svg"><img alt="3solid" class="align-middle" src="../../_images/3solid.svg" style="width: 20px; height: 20px;" /></a> )：新渐变应用于填充，不应用于描边。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/4in-stroke.svg"><img alt="4in-stroke" class="align-middle" src="../../_images/4in-stroke.svg" style="width: 20px; height: 20px;" /></a> )：新渐变应用于描边，不应用于填充。</p></li>
 <li><p>( 选择 )：选择渐变方案。在一个文件中，可能会创建多种类型的渐变，每一种类型的渐变即一个方案，每个方案会被分配一个单独的编号。不同的对象，如果使用了相同的渐变方案，其渐变编号会相同，您可以用编号来区分不同的方案。如果有多个渐变方案，可以在这里切换。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/6unlocked.svg"><img alt="6unlocked" class="align-middle" height="20" src="../../_images/6unlocked.svg" width="20" /></a> )：渐变链接不锁定。激活后，不同对象即使使用了相同的渐变方案，渐变也会各自保持独立，不会关联变化。默认激活。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/7locked.svg"><img alt="7locked" class="align-middle" height="20" src="../../_images/7locked.svg" width="20" /></a> )：渐变链接锁定。激活后，针对某一个对象上已经应用的渐变方案进行修改时，其它已经应用相同渐变方案的对象，渐变会同步修改；即应用相同渐变方案的所有对象，渐变会保持同步。</p>
+<li><p>( <a class="reference internal" href="../../_images/6unlocked.svg"><img alt="6unlocked" class="align-middle" src="../../_images/6unlocked.svg" style="width: 20px; height: 20px;" /></a> )：渐变链接不锁定。激活后，不同对象即使使用了相同的渐变方案，渐变也会各自保持独立，不会关联变化。默认激活。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/7locked.svg"><img alt="7locked" class="align-middle" src="../../_images/7locked.svg" style="width: 20px; height: 20px;" /></a> )：渐变链接锁定。激活后，针对某一个对象上已经应用的渐变方案进行修改时，其它已经应用相同渐变方案的对象，渐变会同步修改；即应用相同渐变方案的所有对象，渐变会保持同步。</p>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>渐变链接锁定</strong> | <strong>渐变保持同步</strong></p>
+<div><div class="admonition- admonition">
+<p class="admonition-title">驿窗注：渐变链接锁定 | 渐变保持同步</p>
 <p>渐变链接锁定后，只会同步相同渐变方案色标的相对位置(偏移量)及颜色和透明度，不会同步渐变路径的长度和角度。</p>
 </div>
 </div></blockquote>
 </li>
-<li><p>( <a class="reference internal" href="../../_images/8flip.svg"><img alt="8flip" class="align-middle" height="20" src="../../_images/8flip.svg" width="20" /></a> )：反向。反转渐变方向。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/8flip.svg"><img alt="8flip" class="align-middle" src="../../_images/8flip.svg" style="width: 20px; height: 20px;" /></a> )：反向。反转渐变方向。</p></li>
 <li><p>( 重复 )：渐变路径范围以外的区域如何填充：</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -282,41 +303,47 @@
 <li><p>反射：在端点色标处沿渐变路径延伸，继续使用相同的渐变，但渐变方向为反向；如果区域比较大，会重复反射。</p></li>
 <li><p>直接：与反射相同，区别是渐变的方向不做反向处理，看起来会感觉颜色变化非常“硬”。</p></li>
 </ol>
-<div class="figure align-center" id="id21">
+<figure class="align-center" id="id21">
 <img alt="../../_images/12-8.png" src="../../_images/12-8.png" />
-<p class="caption"><span class="caption-text">从上到下三个渐变的重复分别为无 反射 直接</span><a class="headerlink" href="#id21" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">从上到下三个渐变的重复分别为无 反射 直接</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 </li>
 <li><p>( 色标 )：这里可以直接选择渐变上任何一个色标。</p></li>
 <li><p>( 偏移量 )：调整色标在渐变方向上的相对位置。起点值为0，终点值为1 。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/12add-new.svg"><img alt="12add-new" class="align-middle" height="20" src="../../_images/12add-new.svg" width="20" /></a> )：添加新的色标。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/13delete.svg"><img alt="13delete" class="align-middle" height="20" src="../../_images/13delete.svg" width="20" /></a> )：删除选中的色标。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/12add-new.svg"><img alt="12add-new" class="align-middle" src="../../_images/12add-new.svg" style="width: 20px; height: 20px;" /></a> )：添加新的色标。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/13delete.svg"><img alt="13delete" class="align-middle" src="../../_images/13delete.svg" style="width: 20px; height: 20px;" /></a> )：删除选中的色标。</p></li>
 </ol>
-</div>
-<div class="section" id="id13">
-<h2>扩展说明<a class="headerlink" href="#id13" title="永久链接至标题"></a></h2>
+</section>
+<section id="id13">
+<h2>扩展说明<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
 <p>Inkscape中，线性渐变只能是沿一条直线变化，不会弯曲，例如下面的示例：</p>
 <blockquote>
-<div><div class="figure align-center" id="id22">
+<div><figure class="align-center" id="id22">
 <img alt="../../_images/12-10-gimp1.png" src="../../_images/12-10-gimp1.png" />
-<p class="caption"><span class="caption-text">扩展图 -1：螺旋形描边渐变，填充无</span><a class="headerlink" href="#id22" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">扩展图 -1：螺旋形描边渐变，填充无</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>上面扩展图-1由inkscape创建，其顶部的横向矩形渐变是自定义的渐变方案，下面的螺旋形是应用了此渐变方案的实际效果。可以明显看到，螺旋形渐变的变化过程并不是沿着螺旋一圈一圈逐渐变化的，而是从左向右直线变化；但下面的扩展图-2则不同，渐变的颜色变化是严格沿着螺旋方向一圈一圈逐渐变化的：(扩展图-2由GIMP创建)</p>
 <blockquote>
-<div><div class="figure align-center" id="id23">
-<img alt="../../_images/12-10-gimp21.png" src="../../_images/12-10-gimp21.png" />
-<p class="caption"><span class="caption-text">扩展图 -2：螺旋形渐变</span><a class="headerlink" href="#id23" title="永久链接至图片"></a></p>
-</div>
+<div><figure class="align-center" id="id23">
+<img alt="../../_images/12-10-gimp2.png" src="../../_images/12-10-gimp2.png" />
+<figcaption>
+<p><span class="caption-text">扩展图 -2：螺旋形渐变</span><a class="headerlink" href="#id23" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>理论上，inkscape(版本1.1)是无法创建扩展图-2这样的渐变的，即inkscape中线性渐变的颜色变化方向必须是直线，不能是弯线，所以无法实现沿弯曲路径的渐变；这一点与文字不同，文字是可以沿弯曲路径排列的。</p>
 <dl class="simple">
 <dt>解决方案：</dt><dd><p>如果想创建像 扩展图-2 这种颜色沿路径方向变化的效果，最佳方案是使用位图处理软件。位图软件在这方面比矢量图软件有优势，主要用到的是笔刷功能，比如GIMP。GIMP创建螺旋形渐变的操作过程，请参考 <a class="reference internal" href="../../gimp/toolsbox/22tool-gradient.html#gimp-tool-paintbrush-create-spiral-gradient"><span class="std std-ref">GIMP创建螺旋形渐变</span></a> 。</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -329,7 +356,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

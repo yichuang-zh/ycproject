@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>剪裁工具 Crop Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>剪裁工具 Crop Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">剪裁工具 <em>Crop Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,71 +98,81 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="crop-tool">
-<span id="gimp-tool-crop"></span><h1>剪裁工具 <em>Crop Tool</em><a class="headerlink" href="#crop-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="crop-tool">
+<span id="gimp-tool-crop"></span><h1>剪裁工具 <em>Crop Tool</em><a class="headerlink" href="#crop-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">Shift</span>+<span class="guilabel">C</span></p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/10crop.png" src="../../_images/10crop.png" />
-<p class="caption"><span class="caption-text">剪裁工具及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>剪裁工具( <a class="reference internal" href="../../_images/gimp-tool-crop1.svg"><img alt="gimp-tool-crop" class="align-middle" height="20" src="../../_images/gimp-tool-crop1.svg" width="20" /></a> )用于裁剪图像，它默认会裁剪图像的所有图层，包括可见图层和不可见图层。剪裁工具通常用于去除边界，或删除不需要的区域，也可用于修改图像尺寸。</p>
+<figcaption>
+<p><span class="caption-text">剪裁工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>剪裁工具( <a class="reference internal" href="../../_images/gimp-tool-crop.svg"><img alt="gimp-tool-crop" class="align-middle" src="../../_images/gimp-tool-crop.svg" style="width: 20px; height: 20px;" /></a> )用于裁剪图像，它默认会裁剪图像的所有图层，包括可见图层和不可见图层。剪裁工具通常用于去除边界，或删除不需要的区域，也可用于修改图像尺寸。</p>
 <p>剪裁工具 创建的矩形与 矩形选择工具 基本相同，区别是最外框：剪裁工具创建的矩形最外框是实线，而 矩形选择工具 创建的矩形最外框 是虚线。</p>
 <blockquote>
-<div><div class="figure align-center" id="id4">
+<div><figure class="align-center" id="id4">
 <img alt="../../_images/10crop-sample.png" src="../../_images/10crop-sample.png" />
-<p class="caption"><span class="caption-text">剪裁矩形 (外框是实线</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">剪裁矩形 (外框是实线</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>剪裁工具的操作方法：</p>
 <blockquote>
 <div><p>此工具与 矩形选择工具 基本一样，有八个相同的控制手柄；选中 剪裁工具 后，直接在图像上画一个矩形，然后通过八个控制手柄来调整矩形的尺寸和位置，调整好以后按Enter键即可应用剪裁。</p>
 <p>剪裁过程中不要切换其它工具，切换其它工具等同于按Enter键应用剪裁。</p>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div><div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
 <p>一个已经做了精确调整的选区，如果以后还想使用，可以把这个选区保存起来，以后可以直接调出来重复使用。</p>
 <div class="line-block">
-<div class="line">保存方法：菜单 选择→保存到通道；</div>
-<div class="line">调用方法：菜单 窗口→可停靠对话框→通道，选中相应的通道，点击鼠标右键→通道到选区)</div>
+<div class="line">保存方法：菜单【选择⇨保存到通道】；</div>
+<div class="line">调用方法：菜单【窗口⇨可停靠对话框⇨通道】，选中相应的通道，点击鼠标右键⇨通道到选区)</div>
 </div>
 </div>
 </div></blockquote>
 </div></blockquote>
-<div class="section" id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<p>创建矩形裁剪选区时，可以使用 Ctrl、Shift、Alt 这三个快捷键来辅助操作，来实现一些功能：</p>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>创建矩形裁剪选区时，可以使用 Ctrl、Shift、Alt 这三个快捷键来辅助操作，来实现一些功能：</p>
 <ol class="arabic simple">
 <li><p>创建矩形裁剪选区的过程中(已经画了一部分，但未画完)按下Ctrl键，可以让裁剪矩形以鼠标点击的位置为中心向外扩展；</p></li>
 <li><p>创建裁剪矩形选区的过程中(已经画了一部分，但未画完)按下Ctrl+Shift键，可以让裁剪矩形以鼠标点击的位置为中心向外扩展，且保持为正方形；(需要工具选项中设置固定宽高比 1:1)</p></li>
 <li><p>创建裁剪矩形选区的过程中(已经画了一部分，但未画完)按下Shift键，可以让裁剪矩形保持为正方形；(需要工具选项中设置固定宽高比 1:1)</p></li>
 <li><p>创建好裁剪矩形选区后，按下Alt键并点击裁剪矩形选区内部，可以移动裁剪矩形；</p></li>
 </ol>
+</div></blockquote>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>这里提供了更多的细节控制。</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
+<p>如果您的工具箱下方没有显示<strong>工具选项</strong>，可以点击菜单【窗口⇨可停靠对话框⇨工具选项】，即可显示工具选项，详细请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具选项提示</span></a>。</p>
 </div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<p>这里提供了更多的细节控制。</p>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p>如果您的工具箱下方没有显示<strong>工具选项</strong>，可以点击菜单 窗口→可停靠对话框→工具选项，即可显示工具选项，详细请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具选项提示</span></a>。</p>
-</div>
-<ul class="simple">
+<ol class="arabic">
 <li><p>仅对当前图层：勾选此项后，只裁剪当前活动图层；如果不勾选此项，GIMP会裁剪所有图层，无论是否可见。</p></li>
 <li><p>删除剪裁的像素：勾选此项后，剪裁范围外的像素数据会全部删除，同时图层尺寸和画布尺寸一起缩小到与剪裁矩形一致。如果不勾选此选项，则剪裁范围外的像素数据会被保留，图层尺寸不变，仅画布尺寸缩小到与剪裁矩形一致；这种情况下，如果移动剪裁后的图层，会看到画布边缘以外的数据仍然存在。</p></li>
 <li><p>允许增长：勾选此项后，允许剪裁矩形的尺寸超出画布边缘之外。剪裁后，超出画布边缘的区域，如果本来就有像素，那么就用原本的像素填充；如果没有像素，那么就填充透明。</p></li>
 <li><p>从中心扩展：勾选后，鼠标点击的位置会成为剪裁矩形的中心点，剪裁矩形从中心向外扩散。</p></li>
-<li><p>固定：几种限制剪裁矩形形状的方法：</p>
-<ol class="arabic simple">
+<li><p>固定：几种限制剪裁矩形外形的方法：</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>宽高比：让剪裁矩形的宽高比保持固定比例，比例值在下面的数值框内，默认是1:1(正方形)。数值框右侧有两个小图标，可以反转比例。</p></li>
 <li><p>宽度：固定剪裁矩形的宽度，宽度值在下面的数值框内，默认是0。</p></li>
 <li><p>高度：固定剪裁矩形的高度，高度值在下面的数值框内，默认是0。</p></li>
 <li><p>大小：固定剪裁矩形的尺寸，数值在下面的数值框内，默认值是100x100。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>位置：剪裁矩形左上角的横坐标和纵坐标，修改这两个值可以精确地调整剪裁矩形的位置。默认单位是像素，可以改为其它单位。</p></li>
 <li><p>大小：剪裁矩形的宽度值和高度值，修改这两个值可以精确地调整剪裁矩形的尺寸。默认单位是像素，可以改为其它单位。</p></li>
 <li><p>高亮：勾选后，剪裁矩形区域外会变暗(类似蒙版)，视觉效果上更方便。不透明度滑块可以调整剪裁矩形区域外变暗的程度。</p></li>
 <li><p>参考线：在剪裁矩形中显示的参考线类型，即剪裁的同时在剪裁矩形内显示参考线。</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>无参考线：不使用参考线。</p></li>
 <li><p>中间线：一条垂直中心线和一条水平中心线，相互交叉。</p></li>
 <li><p>三分构图法：添加两条等距水平线和两条等距垂直线，将变换区域横向和纵向都三等分，整个图像九等分。</p></li>
@@ -162,19 +180,23 @@
 <li><p>黄金分割：数学上又称黄金比例(0.618)，面积分成九份，各份与被变换的面积成黄金比例。</p></li>
 <li><p>对角线：用45度对角线划分变换区域。</p></li>
 </ul>
+</div></blockquote>
 </li>
-<li><p>自动收缩：点击此按钮，剪裁矩形会自动收缩到最接近剪裁矩形内元素尺寸的矩形形状。此算法有一点点笨AI。</p></li>
+<li><p>自动收缩：点击此按钮，剪裁矩形会自动收缩到最接近剪裁矩形内元素尺寸的矩形外形。此算法有一点点笨AI。</p></li>
 <li><p>收缩合并：勾选此项后，上面的 自动收缩 按钮不再只计算当前活动图层，改为计算所有可见图层。(类似于位样合并)</p></li>
-</ul>
+</ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -187,7 +209,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

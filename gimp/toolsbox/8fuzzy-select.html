@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>模糊选择工具(魔术棒) Fuzzy Select Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>模糊选择工具(魔术棒) Fuzzy Select Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">模糊选择工具(魔术棒) <em>Fuzzy Select Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,34 +98,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="fuzzy-select-tool">
-<span id="gimp-tool-fuzzy-select"></span><h1>模糊选择工具(魔术棒) <em>Fuzzy Select Tool</em><a class="headerlink" href="#fuzzy-select-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="fuzzy-select-tool">
+<span id="gimp-tool-fuzzy-select"></span><h1>模糊选择工具(魔术棒) <em>Fuzzy Select Tool</em><a class="headerlink" href="#fuzzy-select-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">U</span></p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/8fuzzy-select.png" src="../../_images/8fuzzy-select.png" />
-<p class="caption"><span class="caption-text">模糊选择工具 (魔术棒 )及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>模糊选择工具( <a class="reference internal" href="../../_images/gimp-tool-fuzzy-select.svg"><img alt="gimp-tool-fuzzy-select" class="align-middle" height="20" src="../../_images/gimp-tool-fuzzy-select.svg" width="20" /></a> )可以根据颜色相似程度来<strong>粗略地</strong>创建一个选区，通常用来选择具有尖锐边缘的对象。此工具创建的选区并不完美。</p>
+<figcaption>
+<p><span class="caption-text">模糊选择工具 (魔术棒 )及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>模糊选择工具( <a class="reference internal" href="../../_images/gimp-tool-fuzzy-select.svg"><img alt="gimp-tool-fuzzy-select" class="align-middle" src="../../_images/gimp-tool-fuzzy-select.svg" style="width: 20px; height: 20px;" /></a> )可以根据颜色相似程度来<strong>粗略地</strong>创建一个选区，通常用来选择具有尖锐边缘的对象。此工具创建的选区并不完美。</p>
 <p>创建选区的方法：选中 模糊选择工具 后，直接点击一次要选择的对象的边缘即可，或者点击并拖动鼠标一定距离。</p>
-<div class="section" id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<p>选区创建好以后，按Alt键点击选区内部可以移动选区。</p>
-<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱→矩形选择工具→保存选区提示</span></a>)</p>
-</div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<p>这里提供了更多的细节控制。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)
-- 模式：模式会决定新创建的选区与已经存在的选区如何组合，有四个选项：</p>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <blockquote>
-<div><ol class="arabic simple">
+<div><p>选区创建好以后，按Alt键点击选区内部可以移动选区。</p>
+<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱⇨矩形选择工具⇨保存选区提示</span></a>)</p>
+</div></blockquote>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>这里提供了更多的细节控制。</p>
+<p>(工具选项的位置请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
+<ol class="arabic">
+<li><p>模式：模式会决定新创建的选区与已经存在的选区如何组合，有四个选项：</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>替换：已经存在的选区会被删除，只保留新创建的选区。</p></li>
 <li><p>合并：新创建的选区和已经存在的选区相加，相当于<strong>并集</strong>。</p></li>
 <li><p>减去：从已经存在的选区减去新创建的选区，相当于<strong>差集</strong>。</p></li>
 <li><p>相交：保留新创建的选区和已经存在的选区的重合部分，未重合部分全部删除，相当于<strong>交集</strong>。</p></li>
-</ol>
+</ul>
 </div></blockquote>
-<ul class="simple">
+</li>
 <li><p>抗锯齿：使选区的边缘更平滑(通常对弧线或斜线有效)。</p></li>
 <li><p>羽化边缘：可以融合边缘，使选区与背景过度更平滑。默认半径为10像素。</p></li>
 <li><p>选择透明区域：勾选此项后，能够选择完全透明的区域。如果不勾选这个选项则不会选择透明区域。</p></li>
@@ -126,16 +140,19 @@
 <li><p>阈值：鼠标指针点击在初始点上的瞬间所选择的颜色范围。阈值越高，产生的选区越大。在第一次按下鼠标按钮后，向下或向右拖动鼠标指针会扩大选区的尺寸；向上或向左拖动会缩小选区的尺寸。</p></li>
 <li><p>选择通过：计算相似度的参数。</p></li>
 <li><p>绘制蒙版：此选项是一个显示辅助功能。勾选此选项后，只要鼠标没有松开，那么选中的区域就会显示品红色蒙版，直到松开鼠标，品红色蒙版才会消失。</p></li>
-</ul>
+</ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -148,7 +165,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

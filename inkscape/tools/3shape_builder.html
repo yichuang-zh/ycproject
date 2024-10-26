@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>形状生成工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>图形生成工具</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,8 +85,8 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../inkscape-tools.html">Inkscape工具箱</a></li>
-      <li class="breadcrumb-item active">形状生成工具</li>
+          <li class="breadcrumb-item"><a href="../inkscape-tools.html">工具箱</a></li>
+      <li class="breadcrumb-item active">图形生成工具</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
@@ -90,23 +98,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="tool-shape-builder">
-<span id="id1"></span><h1>形状生成工具<a class="headerlink" href="#tool-shape-builder" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="tool-shape-builder">
+<span id="id1"></span><h1>图形生成工具<a class="headerlink" href="#tool-shape-builder" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：<span class="guilabel">X</span></p>
-<p>形状生成工具( <img alt="tool-shape_builder" src="../../_images/tool-shape_builder1.svg" /> )使用布尔计算方法来简化那些复杂的重叠图形。</p>
-<div class="section" id="id2">
-<h2>操作方法<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<ol class="arabic">
+<p>图形生成工具( <img alt="tool-shape_builder" src="../../_images/tool-shape_builder.svg" /> )使用布尔计算方法来简化那些复杂的重叠图形。</p>
+<section id="id2">
+<h2>操作方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic">
 <li><p>(此工具主要针对有重叠的多个对象，所以，在尝试之前，请确保已经选中了多个相互间有重叠的对象)</p></li>
-<li><p>选中重叠对象后，鼠标点击形状生成工具( <img alt="tool-shape_builder" src="../../_images/tool-shape_builder1.svg" /> )；</p></li>
-<li><p>(切换到形状生成工具后，所选对象会变成线条图，以突出显示所有路径；且上方工具选项栏默认激活的功能为<span class="dash6">添加图形</span> <a class="reference internal" href="../../_images/union.svg"><img alt="union" class="align-middle" height="20" src="../../_images/union.svg" width="20" /></a> )</p></li>
+<li><p>选中重叠对象后，鼠标点击图形生成工具( <img alt="tool-shape_builder" src="../../_images/tool-shape_builder.svg" /> )；</p></li>
+<li><p>(切换到图形生成工具后，所选对象会变成线条图，以突出显示所有路径；且上方工具选项栏默认激活的功能为<span class="dash6">添加图形</span> <a class="reference internal" href="../../_images/union.svg"><img alt="union" class="align-middle" src="../../_images/union.svg" style="width: 20px; height: 20px;" /></a> )</p></li>
 <li><p>鼠标点击单个区域，所点击的区域变为蓝色；</p></li>
 <li><p>(按住鼠标不松手并移动鼠标可以连续操作多个区域)</p></li>
 <li><p>(蓝色区域即最后生成的图形，灰色区域会被删除)</p></li>
-<li><p>点击上方工具选项栏的确认按钮( <a class="reference internal" href="../../_images/on.svg"><img alt="on" class="align-middle" height="20" src="../../_images/on.svg" width="20" /></a> )，形状生成操作完成；</p></li>
-<li><p>如果想放弃所有操作，点击上方工具选项栏的取消按钮( <a class="reference internal" href="../../_images/off.svg"><img alt="off" class="align-middle" height="20" src="../../_images/off.svg" width="20" /></a> )；</p></li>
+<li><p>点击上方工具选项栏的确认按钮( <a class="reference internal" href="../../_images/on.svg"><img alt="on" class="align-middle" src="../../_images/on.svg" style="width: 20px; height: 20px;" /></a> )，图形生成操作完成；</p></li>
+<li><p>如果想放弃所有操作，点击上方工具选项栏的取消按钮( <a class="reference internal" href="../../_images/off.svg"><img alt="off" class="align-middle" src="../../_images/off.svg" style="width: 20px; height: 20px;" /></a> )；</p></li>
 <li><p>(操作添加或删除区域时，同时按住Shift键可以在添加或删除功能之间切换)</p>
 <dl class="simple">
 <dt>操作汇总：</dt><dd><ul class="simple">
@@ -119,24 +128,36 @@
 </dl>
 </li>
 </ol>
-</div>
-<div class="section" id="id3">
-<h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</div></blockquote>
+</section>
+<section id="id3">
+<h2>工具选项<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <blockquote>
+<div><blockquote>
 <div><p><a class="reference internal" href="../../_images/0bar1.png"><img alt="0bar" class="align-middle" src="../../_images/0bar1.png" style="height: 20px;" /></a></p>
 </div></blockquote>
 <ol class="arabic simple">
-<li><p>( <a class="reference internal" href="../../_images/union.svg"><img alt="union" class="align-middle" height="20" src="../../_images/union.svg" width="20" /></a> )：添加图形。激活时，鼠标默认操作为添加几何图形，同时按Shift键会切换为删除图形。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/diff.svg"><img alt="diff" class="align-middle" height="20" src="../../_images/diff.svg" width="20" /></a> )：删除图形。激活时，鼠标默认操作为删除几何图形，同时按Shift键会切换为添加图形。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/on.svg"><img alt="on" class="align-middle" height="20" src="../../_images/on.svg" width="20" /></a> )：确认按钮。点击表示确认所有操作，生成结果。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/off.svg"><img alt="off" class="align-middle" height="20" src="../../_images/off.svg" width="20" /></a> )：取消按钮。点击表示放弃所有操作，回到操作前的选中状态。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/union.svg"><img alt="union" class="align-middle" src="../../_images/union.svg" style="width: 20px; height: 20px;" /></a> )：添加图形。激活时，鼠标默认操作为添加几何图形，同时按Shift键会切换为删除图形。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/diff.svg"><img alt="diff" class="align-middle" src="../../_images/diff.svg" style="width: 20px; height: 20px;" /></a> )：删除图形。激活时，鼠标默认操作为删除几何图形，同时按Shift键会切换为添加图形。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/on.svg"><img alt="on" class="align-middle" src="../../_images/on.svg" style="width: 20px; height: 20px;" /></a> )：确认按钮。点击表示确认所有操作，生成结果。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/off.svg"><img alt="off" class="align-middle" src="../../_images/off.svg" style="width: 20px; height: 20px;" /></a> )：取消按钮。点击表示放弃所有操作，回到操作前的选中状态。</p></li>
 </ol>
-<p><strong>下面是形状生成工具操作方法的视频参考：喜字</strong></p>
+<p><strong>下面是图形生成工具操作方法的视频参考：喜字</strong></p>
 <blockquote>
-<div><video width=100% height=100% controls src="../../_static/tool3_shapebuilder1.mp4"></video><p><em>形状生成工具视频参考 - 喜字</em></p>
+<div><video width=100% height=100% controls src="../../_static/tool3_shapebuilder1.mp4"></video><p><em>图形生成工具视频参考 - 喜字</em></p>
 </div></blockquote>
-</div>
-</div>
+</div></blockquote>
+</section>
+<section id="id4">
+<h2>版本1.4增加了位图剪裁功能<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>Inkscape更新到1.4版本之后，图形生成工具(shape builder)增加了对位图剪裁的功能，可以很方便地对导入的位图进行裁剪，下面是演示视频：</p>
+<blockquote>
+<div><video width=550 height=480 controls src="../../_static/tool3-shapebuilder-bitmap.mp4"></video><p><em>图形生成工具视频参考 - 喜字</em></p>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -149,7 +170,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>橡皮工具 Eraser Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>橡皮工具 Eraser Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">橡皮工具 <em>Eraser Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,77 +98,81 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="eraser-tool">
-<span id="gimp-tool-eraser"></span><h1>橡皮工具 <em>Eraser Tool</em><a class="headerlink" href="#eraser-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="eraser-tool">
+<span id="gimp-tool-eraser"></span><h1>橡皮工具 <em>Eraser Tool</em><a class="headerlink" href="#eraser-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">Shift</span>+<span class="guilabel">E</span></p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/28tool-eraser.png" src="../../_images/28tool-eraser.png" />
-<p class="caption"><span class="caption-text">橡皮工具及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>橡皮工具( <a class="reference internal" href="../../_images/gimp-tool-eraser.svg"><img alt="gimp-tool-eraser" class="align-middle" height="20" src="../../_images/gimp-tool-eraser.svg" width="20" /></a> )可以删除一个颜色区域。(原理是使该区域变透明，图像的原始数据并没有被删除)</p>
+<figcaption>
+<p><span class="caption-text">橡皮工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>橡皮工具( <a class="reference internal" href="../../_images/gimp-tool-eraser.svg"><img alt="gimp-tool-eraser" class="align-middle" src="../../_images/gimp-tool-eraser.svg" style="width: 20px; height: 20px;" /></a> )可以删除一个颜色区域。(原理是使该区域变透明，图像的原始数据并没有被删除)</p>
 <p>橡皮工具有时会用来修剪选区的边缘，以精确调整选区范围，比如蒙版。</p>
 <p>如果橡皮擦用于不支持透明度的对象，则擦除后会显示背景色(如果对象是蒙板，擦除后选区会被修改)。否则，根据工具选项的设置，擦除会导致产生部分或完全透明。</p>
-<p>橡皮工具的操作方法：</p>
-<blockquote>
-<div><p>很简单，选中 橡皮工具 后，在选区内点击或点击并拖动鼠标一段距离再松开鼠标即可。</p>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
+<dl>
+<dt>橡皮工具的操作方法：</dt><dd><p>很简单，选中橡皮工具后，在选区内点击或点击并拖动鼠标一段距离再松开鼠标即可。</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
 <p>如果想完全擦除某区域的像素，不留下任何痕迹，请在工具选项中勾选“硬质边界”选项，而不是把工具选项中的“硬度”和“力度”调整为100；否则，笔刷边缘的部分不会被完全擦除。</p>
 </div>
-</div></blockquote>
-<div class="section" id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<ol class="arabic simple">
+</dd>
+</dl>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>按Ctrl键可以把橡皮工具临时改为颜色选择器，但吸取的颜色会成为背景色，不像画笔工具和铅笔工具那样成为前景色；</p></li>
 <li><p>按Shift键可以强制只能擦除直线；</p></li>
 <li><p>Ctrl键+Shift键同时按，可以强制只能擦除直线，且限制角度为15度的整数倍；</p></li>
 <li><p>按Alt键会切换为“反擦除”模式，即修复之前被擦除的内容。</p></li>
 </ol>
-</div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<p>这里提供一些细节控制。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
-<ol class="arabic simple">
-<li><p>模式：请参考<a class="reference internal" href="../dockable/3layer-mode.html#menu-window-dockable-layer-mode"><span class="std std-ref">窗口→可停靠对话框→图层⇒模式</span></a>。</p></li>
+</div></blockquote>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>这里提供一些细节控制。</p>
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
+<ol class="arabic">
+<li><p>模式：请参考<a class="reference internal" href="../dockable/3layer-mode.html#menu-window-dockable-layer-mode"><span class="std std-ref">窗口⇨可停靠对话框⇨图层➡模式</span></a>。</p></li>
 <li><p>不透明度：填充的不透明度级别。</p></li>
-<li><p>笔刷：这个按钮会显示笔刷缩略图，通过它可以决定铅笔影响多少像素及如何影响像素，比如设置尺寸、间距等参数。GIMP内置了很多笔刷，您也可以自已创建新的笔刷，或者从网上下载别人定义好的笔刷。(关于笔刷的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-brush"><span class="std std-ref">笔刷概念</span></a>)</p></li>
-</ol>
+<li><p>笔刷：这个按钮会显示笔刷缩略图，通过它可以决定铅笔影响多少像素及如何影响像素，比如设置尺寸、间距等参数。GIMP内置了很多笔刷，您也可以自已创建新的笔刷，或者从网上下载别人定义好的笔刷。(关于笔刷的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-brush"><span class="std std-ref">笔刷概念</span></a>)</p>
 <blockquote>
 <div><p>右边的文字是笔刷的名称。</p>
-<p>文字右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a> )，点击可以打开 笔刷编辑器，这里可以查看笔刷参数，但不能修改笔刷。如果想修改笔刷，请先点击工具选项中的笔刷缩略图按钮，显示笔刷选择窗口，然后点击窗口底部最右边的“打开笔刷选择对话框”按钮( <a class="reference internal" href="../../_images/gimp-tool-paintbrush1.svg"><img alt="gimp-tool-paintbrush-icon" class="align-middle" height="20" src="../../_images/gimp-tool-paintbrush1.svg" width="20" /></a> )，会打开笔刷编辑器的选择窗口，在这里选择目标笔刷，然后点击窗口的“创建新笔刷”按钮( <a class="reference internal" href="../../_images/document-new2.svg"><img alt="document-new-icon" class="align-middle" height="20" src="../../_images/document-new2.svg" width="20" /></a> )，即可根据所选笔刷创建一个副本，您可以对副本做修改。</p>
+<p>文字右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" src="../../_images/gtk-edit.svg" style="width: 20px; height: 20px;" /></a> )，点击可以打开 笔刷编辑器，这里可以查看笔刷参数，但不能修改笔刷。如果想修改笔刷，请先点击工具选项中的笔刷缩略图按钮，显示笔刷选择窗口，然后点击窗口底部最右边的“打开笔刷选择对话框”按钮( <a class="reference internal" href="../../_images/gimp-tool-paintbrush.svg"><img alt="gimp-tool-paintbrush-icon" class="align-middle" src="../../_images/gimp-tool-paintbrush.svg" style="width: 20px; height: 20px;" /></a> )，会打开笔刷编辑器的选择窗口，在这里选择目标笔刷，然后点击窗口的“创建新笔刷”按钮( <a class="reference internal" href="../../_images/document-new.svg"><img alt="document-new-icon" class="align-middle" src="../../_images/document-new.svg" style="width: 20px; height: 20px;" /></a> )，即可根据所选笔刷创建一个副本，您可以对副本做修改。</p>
 </div></blockquote>
-<ol class="arabic simple" start="4">
+</li>
 <li><p>大小：这里可以精确地控制笔刷的尺寸。您可以直接用鼠标调整；或者用鼠标点击后，使用键盘上的上下方向键调整，步进为1；或者使用键盘的PageUP/PageDown键调整，步进为10；也可以用鼠标滚轮调整，步进为1，滚轮+Ctrl键步进为10。右边两个按钮，重置按钮按下后会把参数值重置为原始值；链接按钮激活后会在笔刷切换时使用原始值，否则切换会使用当前设置值。</p></li>
 </ol>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div><div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
 <p>这里调整笔刷的尺寸时需要激活笔刷大小数值框，如果您在使用画笔工具时想在画布上直接修改笔刷的尺寸，可以使用快捷方式，即在画布上显示笔刷的虚线框时，按住键盘上的“<strong>{</strong>”键，或者按住“<strong>}</strong>”键(需要在英文输入法状态下；不需要按Shift)。</p>
 <p>快速缩放笔刷尺寸请参考<a class="reference internal" href="23tool-paintbrush.html#how-to-scale-brush-size-efficiently"><span class="std std-ref">快捷缩放笔刷尺寸</span></a>。</p>
 </div>
 </div></blockquote>
-<ol class="arabic simple" start="5">
+<ol class="arabic" start="5">
 <li><p>宽高比：设置笔刷的高度和宽度之间的比例。假设您选择的笔刷形状是正圆，那么宽高比值为0时，笔刷形状是正圆；宽高比值不为0时，笔刷形状为椭圆。您可以直接用鼠标调整；或者用鼠标点击后，使用键盘上的上下方向键调整，步进为0.1；或者使用键盘的PageUP/PageDown键调整，步进为1；也可以用鼠标滚轮调整，步进为0.1。</p></li>
 <li><p>角度：笔刷形状可以围绕鼠标移动的中心转动。调整及步进同 宽高比。</p></li>
-<li><p>间距：笔刷画出来的“线条”可以认为是多个连续的点构成的。间距可以设置相邻笔刷点之间的距离。间距越大，越不连续。调整及步进同 宽高比。</p></li>
+<li><p>间距：笔刷画出来的线条可以认为是多个连续的点构成的。间距可以设置相邻笔刷点之间的距离。间距越大，越不连续。调整及步进同 宽高比。</p></li>
 <li><p>硬度：笔刷边缘的模糊程度。调整及步进同 宽高比。</p></li>
 <li><p>力度：颜色的浓淡程度，力度越大，颜色越浓。较低的值会导致一定的透明属性。</p></li>
-<li><p>动态：这是一个按钮( <a class="reference internal" href="../../_images/gimp-dynamics2.svg"><img alt="gimp-dynamics-icon" class="align-middle" height="20" src="../../_images/gimp-dynamics2.svg" width="20" /></a> )。打开后，可以选择预设的动态，默认是不启用动态。您可以自行创建新的动态，具体请参考菜单 窗口→可停靠对话框→绘画动态。(关于动态的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-dynamics"><span class="std std-ref">动态概念</span></a>)</p></li>
-<li><p>动态选项：这里可以对一些动态选项进行调整。右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a> )，点击可以打开 动态绘图编辑器，对动态进行编辑，编辑方法请参考菜单 窗口→可停靠对话框→绘画动态。</p></li>
-</ol>
+<li><p>动态：这是一个按钮( <a class="reference internal" href="../../_images/gimp-dynamics.svg"><img alt="gimp-dynamics-icon" class="align-middle" src="../../_images/gimp-dynamics.svg" style="width: 20px; height: 20px;" /></a> )。打开后，可以选择预设的动态，默认是不启用动态。您可以自行创建新的动态，具体请参考菜单【窗口⇨可停靠对话框⇨绘画动态】。(关于动态的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-dynamics"><span class="std std-ref">动态概念</span></a>)</p></li>
+<li><p>动态选项：这里可以对一些动态选项进行调整。右边有一个编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" src="../../_images/gtk-edit.svg" style="width: 20px; height: 20px;" /></a> )，点击可以打开 动态绘图编辑器，对动态进行编辑，编辑方法请参考菜单【窗口⇨可停靠对话框⇨绘画动态】。</p>
+<p>11.1 淡出选项：</p>
 <blockquote>
-<div><p>11.1 淡出选项：</p>
-<blockquote>
-<div><ul class="simple">
+<div><ul>
 <li><p>淡出长度：调整淡出的长度，即笔画淡出前的距离，单位为像素，可以改为其它单位。</p></li>
 <li><p>重复：淡出的重复方式：</p>
-<ol class="loweralpha simple">
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>无：不重复。</p></li>
 <li><p>锯齿波：从前景过渡到背景，再从前景过渡到背景，如此循环，实现类似锯齿效果，间距由鼠标移动距离决定。</p></li>
 <li><p>三角波：从前景过渡到背景再过渡到前景…，如此循环，间距由鼠标移动距离决定。(驿窗注：锯齿波和三角波，二者一个是重复，另一个是循环)。</p></li>
 <li><p>截断：与上面两项相比，此项仅在鼠标移动的直线范围内填充过渡效果，鼠标移动的直线范围外全部删除。(仅保留画线长度内的渐变)。</p></li>
 </ol>
+</div></blockquote>
 </li>
 <li><p>反向：反转淡出的方向。</p></li>
 </ul>
@@ -168,12 +180,11 @@
 <p>11.2 颜色选项：如果笔刷有颜色选项，这里可以设置渐变样式。如果无颜色选项，会使用前景色。</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>渐变：同<a class="reference internal" href="22tool-gradient.html#gimp-tool-gradient"><span class="std std-ref">渐变工具</span></a>，可以选择一个渐变样式。缩略图按钮右侧是反向开关，可以反转渐变的顺序。最右边是渐变编辑按钮( <a class="reference internal" href="../../_images/gtk-edit1.svg"><img alt="gtk-edit.svg" class="align-middle" height="20" src="../../_images/gtk-edit1.svg" width="20" /></a>，点击可以编辑渐变。(渐变的编辑方法，请参考菜单 窗口→可停靠对话框→渐变)</p></li>
+<li><p>渐变：同<a class="reference internal" href="22tool-gradient.html#gimp-tool-gradient"><span class="std std-ref">渐变工具</span></a>，可以选择一个渐变样式。缩略图按钮右侧是反向开关，可以反转渐变的顺序。最右边是渐变编辑按钮( <a class="reference internal" href="../../_images/gtk-edit.svg"><img alt="gtk-edit.svg" class="align-middle" src="../../_images/gtk-edit.svg" style="width: 20px; height: 20px;" /></a> )，点击可以编辑渐变。(渐变的编辑方法，请参考菜单【窗口⇨可停靠对话框⇨渐变】)</p></li>
 <li><p>混合色彩空间：混合RGB渐变片段时使用哪种色彩空间。</p></li>
 </ul>
 </div></blockquote>
-</div></blockquote>
-<ol class="arabic simple" start="12">
+</li>
 <li><p>应用抖动：笔刷偏离鼠标移动轨迹的距离。绘画过程中，笔刷连接在一起成为一条“线条”，笔刷间距会导致线条变成“虚线”，而抖动会导致笔刷在鼠标移动轨迹上垂直于轨迹来回跳动。计数就是跳动的幅度。</p></li>
 <li><p>平滑笔廓：消除绘画时产生的晃动感，显得更平滑。质量和权重参数需要您亲自测试一下效果。</p></li>
 <li><p>笔刷锁定到视图：勾选此项后，笔刷的尺寸相对于屏幕尺寸被固定。此选项非常适合用来快速缩放笔刷尺寸，具体请参考<a class="reference internal" href="23tool-paintbrush.html#how-to-scale-brush-size-efficiently"><span class="std std-ref">快捷缩放笔刷尺寸</span></a>。</p></li>
@@ -181,15 +192,18 @@
 <li><p>硬质边界：此选项可确保在笔刷边缘进行100%擦除，结果是硬边。</p></li>
 <li><p>反擦除(Alt)：恢复之前被擦除的区域。(此工具要求图层有alpha通道)</p></li>
 </ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -202,7 +216,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

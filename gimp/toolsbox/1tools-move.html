@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>移动工具 Move Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>移动工具 Move Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="next" title="对齐工具 Alignment Tool" href="2tools-align.html" />
-    <link rel="prev" title="GIMP工具箱" href="../gimp_toolbox.html" /> 
+    <link rel="prev" title="工具箱" href="../gimp_toolbox.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,12 +85,12 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">移动工具 <em>Move Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="../gimp_toolbox.html" class="btn btn-neutral float-left" title="GIMP工具箱" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../gimp_toolbox.html" class="btn btn-neutral float-left" title="工具箱" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="2tools-align.html" class="btn btn-neutral float-right" title="对齐工具 Alignment Tool" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
@@ -90,19 +98,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="move-tool">
-<span id="gimp-tool-move"></span><h1>移动工具 <em>Move Tool</em><a class="headerlink" href="#move-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="move-tool">
+<span id="gimp-tool-move"></span><h1>移动工具 <em>Move Tool</em><a class="headerlink" href="#move-tool" title="Link to this heading"></a></h1>
 <div class="line-block">
 <div class="line">快捷键：<span class="guilabel">M</span></div>
-<div class="line">快捷键：按住空格键不松手(此方式需要您在菜单 编辑→首选项→图像窗口⇒空格键处设置为<strong>切换到移动工具</strong>，默认的平移视图功能丢失)</div>
+<div class="line">快捷键：按住空格键不松手(此方式需要您在菜单【编辑⇨首选项⇨图像窗口➡空格键】处设置为<strong>切换到移动工具</strong>，默认的平移视图功能丢失)</div>
 </div>
-<div class="figure align-center" id="id2">
+<figure class="align-center" id="id2">
 <img alt="../../_images/1move1.png" src="../../_images/1move1.png" />
-<p class="caption"><span class="caption-text">移动工具及其工具选项</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
-</div>
-<p>移动工具( <a class="reference internal" href="../../_images/gimp-transform-3d-move1.svg"><img alt="gimp-tool-move" class="align-middle" height="20" src="../../_images/gimp-transform-3d-move1.svg" width="20" /></a> )可以用来移动选定的对象，比如移动图层、选区、文字等。</p>
-<div class="section" id="id1">
-<h2>工具选项<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<figcaption>
+<p><span class="caption-text">移动工具及其工具选项</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>移动工具( <a class="reference internal" href="../../_images/gimp-transform-3d-move.svg"><img alt="gimp-tool-move" class="align-middle" src="../../_images/gimp-transform-3d-move.svg" style="width: 20px; height: 20px;" /></a> )可以用来移动选定的对象，比如移动图层、选区、文字等。</p>
+<section id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>移动：<img alt="1move-option1" class="align-middle" src="../../_images/1move-option1.png" /></p>
 <ul>
@@ -120,10 +130,8 @@
 </li>
 </ul>
 <blockquote id="tools-move-how-to-move-channel">
-<div><blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp11.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp11.svg" width="22" /></a><strong>移动通道/选区蒙版</strong></p>
+<div><div class="admonition- admonition">
+<p class="admonition-title">驿窗注：移动通道/选区蒙版</p>
 <p>虽然移动工具的工具选项中没有“通道”这个选项，但事实上您也可以移动通道的位置。</p>
 <p>方法：</p>
 <ol class="arabic simple">
@@ -134,47 +142,49 @@
 </ol>
 </div>
 </div></blockquote>
-</div></blockquote>
 <p>在移动图层/选区/路径时，有以下事项请了解：</p>
 <ol class="arabic simple">
-<li><p>如果想精确移动图层的位置，可以使用菜单 图层→变换→位移。</p></li>
+<li><p>如果想精确移动图层的位置，可以使用菜单【图层⇨变换⇨位移】。</p></li>
 <li><p>如果当前移动对象是图层，那么按Ctrl+Alt键可以临时切换到移动选区。</p></li>
 <li><p>移动选区时，只能移动选区范围，不移动选区内的图像内容。</p></li>
 <li><p>移动路径时，鼠标需要点击在路径曲线上，不能点击路径内部。</p></li>
-<li><p>移动路径时，如果看不到路径，可以在路径堆栈中(窗口→可停靠对话框→路径)点击路径左侧的位置，使其显示 眼睛 图标，这样图像中该路径就变得可见。</p></li>
+<li><p>移动路径时，如果看不到路径，可以在路径堆栈中(窗口⇨可停靠对话框⇨路径)点击路径左侧的位置，使其显示 眼睛 图标，这样图像中该路径就变得可见。</p></li>
 <li><p>要想移动文字(文字还没有转换成位图)，等同于移动文字图层，所以，请设置为移动图层。</p></li>
 <li><p>移动对象时，比如移动图层，按住鼠标左键后再按住Ctrl键不松手，此时移动鼠标，可以实现平移功能，即只沿x方向或只沿y方向移动图层。</p></li>
 <li><p>只按键盘上的方向键，也可以实现平移功能。(按住Shift键可以增加移动距离)</p></li>
 </ol>
-<div class="admonition hint" id="if-no-tools-option">
-<p class="admonition-title">提示</p>
-<p>如何显示工具选项：</p>
-<p>如果您的工具箱下方没有显示<strong>工具选项</strong>，可以点击菜单 窗口→可停靠对话框→工具选项，即可显示工具选项。</p>
-<p>有时工具选项会显示在屏幕的其它位置，您可以修改位置，把工具选项放到工具箱的下方，方法是点击工具选项的<strong>标签</strong>，然后不要松开鼠标，拖动到工具箱下方的位置即可。</p>
-<div class="figure align-center" id="id3">
+<div class="admonition- admonition" id="if-no-tools-option">
+<p class="admonition-title">驿窗注：如何显示工具选项</p>
+<p>如果您的工具箱下方没有显示 工具选项，可以点击菜单【窗口⇨可停靠对话框⇨工具选项】，即可显示工具选项。</p>
+<p>有时工具选项会显示在屏幕的其它位置，您可以修改位置，把工具选项放到工具箱的下方，方法是点击工具选项的 标签，然后不要松开鼠标，拖动到工具箱下方的位置即可。</p>
+<figure class="align-center" id="id3">
 <img alt="../../_images/1move-option.png" src="../../_images/1move-option.png" />
-<p class="caption"><span class="caption-text">工具选项不在工具箱下方，而是在窗口右侧 (鼠标已经放在标签上 )</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<div class="figure align-center" id="id4">
+<figcaption>
+<p><span class="caption-text">工具选项不在工具箱下方，而是在窗口右侧 (鼠标已经放在标签上 )</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
 <img alt="../../_images/1move-option-2.png" src="../../_images/1move-option-2.png" />
-<p class="caption"><span class="caption-text">拖动工具选项标签到工具箱下方</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
+<figcaption>
+<p><span class="caption-text">拖动工具选项标签到工具箱下方</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="../gimp_toolbox.html" class="btn btn-neutral float-left" title="GIMP工具箱" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../gimp_toolbox.html" class="btn btn-neutral float-left" title="工具箱" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="2tools-align.html" class="btn btn-neutral float-right" title="对齐工具 Alignment Tool" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

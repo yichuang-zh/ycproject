@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>编辑→撤消</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>⇨撤消</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="编辑→重做" href="2redo.html" />
+    <link rel="next" title="⇨重做" href="2redo.html" />
     <link rel="prev" title="编辑" href="../2edit.html" /> 
 </head>
 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,90 +85,96 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../gimp_menu.html">GIMP菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../gimp_menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../2edit.html">编辑</a></li>
-      <li class="breadcrumb-item active">编辑→撤消</li>
+      <li class="breadcrumb-item active">⇨撤消</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
         <a href="../2edit.html" class="btn btn-neutral float-left" title="编辑" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="2redo.html" class="btn btn-neutral float-right" title="编辑→重做" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="2redo.html" class="btn btn-neutral float-right" title="⇨重做" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>编辑→撤消<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="id1">
+<h1>⇨撤消<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>快捷键：Ctrl+Z</p>
-<p>撤销 命令可以撤销最后的更改操作，将图像返回到修改之前的状态。</p>
-<p>您对图像所做的任何操作几乎都可以用这种方式撤销(脚本除外)。</p>
-<p>根据菜单 首选项→系统资源⇒最小撤消级别 所设置的数量，可以撤消多步操作。</p>
-<p>被撤消的操作不会立即丢失，您可以立即使用 重做(Ctrl+Y) 命令将其恢复。</p>
-<div class="line-block">
-<div class="line">有的时候，在撤消和重做两个操作之间来回切换，对观察图像效果的变化很有效。</div>
-<div class="line">撤消和重做的执行速度非常快，因为它们是在内存中运行，而且不消耗任何额外的硬件资源。</div>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">警告</p>
+<p>快捷键： <span class="guilabel">Ctrl</span>+<span class="guilabel">Z</span></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p><span class="dash6">撤消</span>命令可以撤销最后的更改操作，将图像返回到修改之前的状态。</p></li>
+<li><p>您对图像所做的任何操作几乎都可以用这种方式撤销(脚本除外)。</p></li>
+<li><p>根据菜单【首选项⇨系统资源➡最小撤消级别】所设置的数量，可以撤消多步操作。</p></li>
+<li><p>被撤消的操作不会立即丢失，您可以立即使用 重做(<span class="guilabel">Ctrl</span>+<span class="guilabel">Y</span>)命令将其恢复。</p></li>
+<li><p>有的时候，在撤消和重做两个操作之间来回切换，对观察图像效果的变化很有效。</p></li>
+<li><p>撤消和重做的执行速度非常快，因为它们是在内存中运行，而且不消耗任何额外的硬件资源。</p>
+<blockquote>
+<div><div class="admonition-tb00 admonition">
+<p class="admonition-title"><span class="tb00">警告：</span></p>
 <p>有的时候，频繁的撤销和重做会让您感到非常麻烦，一个解决方法是复制当前图像，然后在副本上进行测试。(不要在原件上做测试)</p>
 <p>无论您使用什么格式保存图像(即使是XCF格式)，都不会保存撤消历史。</p>
 </div>
-<div class="line-block">
-<div class="line">GIMP对撤消操作的实现相当复杂。</div>
-<div class="line">许多操作只需要很少的撤消内存 (例如，改变图层的可见性)，所以您可以在删除撤消历史之前执行很多步骤的撤消操作。</div>
-<div class="line">有些操作，如改变图层的可见性，是经过压缩的，所以连续做几次可能只会在撤消历史中产生一个记录点。</div>
-</div>
-<div class="line-block">
-<div class="line">然而，还有一些操作可能会消耗大量的撤销内存。</div>
-<div class="line">大多数滤镜都是由插件实现的，因此GIMP核心没有有效的方法来了解滤镜改变了哪些内容。因此，除了通过人为记忆操作前后受影响的内容，没有办法有效实现撤消操作。</div>
-</div>
-<p>大多数改变图像的操作都可以撤销。</p>
-<div class="line-block">
-<div class="line">不改变图像的操作一般不能撤销。</div>
-<div class="line">例如将图像保存到文件、复制图像、将部分图像复制到剪贴板等。</div>
-<div class="line">大多数影响图像显示而不改变实际图像数据的操作也无法撤销，比如缩放视图。</div>
-<div class="line">也有例外情况：打开或关闭快速蒙版可以撤销，尽管它不会改变图像数据。</div>
-</div>
+</div></blockquote>
+</li>
+<li><p>GIMP对撤消操作的实现相当复杂。</p></li>
+<li><p>许多操作只需要很少的撤消内存 (例如，改变图层的可见性)，所以您可以在删除撤消历史之前执行很多步骤的撤消操作。</p></li>
+<li><p>有些操作，如改变图层的可见性，是经过压缩的，所以连续做几次可能只会在撤消历史中产生一个记录点。</p></li>
+<li><p>然而，还有一些操作可能会消耗大量的撤销内存。</p></li>
+<li><p>大多数滤镜都是由插件实现的，因此GIMP核心没有有效的方法来了解滤镜改变了哪些内容。因此，除了通过人为记忆操作前后受影响的内容，没有办法有效实现撤消操作。</p></li>
+<li><p>大多数改变图像的操作都可以撤销。</p></li>
+<li><p>不改变图像的操作一般不能撤销。</p></li>
+<li><p>例如将图像保存到文件、复制图像、将部分图像复制到剪贴板等。</p></li>
+<li><p>大多数影响图像显示而不改变实际图像数据的操作也无法撤销，比如缩放视图。</p></li>
+<li><p>也有例外情况：打开或关闭快速蒙版可以撤销，尽管它不会改变图像数据。</p></li>
+</ol>
+</div></blockquote>
 <p>有一些重要的操作虽然会改变图像，但不能撤销：</p>
-<ul>
+<blockquote>
+<div><ol class="arabic">
 <li><p>关闭图像</p>
-<p>当图像被关闭后，所有的撤消记录都会被清空消失。正因为如此，除非图像在上次保存后没有被修改过，否则GIMP会要求您确认是否真的要关闭图像。</p>
+<blockquote>
+<div><p>当图像被关闭后，所有的撤消记录都会被清空消失。正因为如此，除非图像在上次保存后没有被修改过，否则GIMP会要求您确认是否真的要关闭图像。</p>
+</div></blockquote>
 </li>
 <li><p>恢复图像</p>
-<p>“恢复”命令实际上是先关闭图像后再重新加载图像。
-这种情况下，撤销历史记录会全部丢失。正因为如此，如果图像被修改过，GIMP会要求您确认是否真的要恢复(还原)图像。</p>
+<blockquote>
+<div><p><span class="dash6">恢复</span>命令实际上是先关闭图像后再重新加载图像。这种情况下，撤销历史记录会全部丢失。正因为如此，如果图像被修改过，GIMP会要求确认是否真的要恢复(还原)图像。</p>
+</div></blockquote>
 </li>
-<li><p>整个操作流程的“一部分”</p>
-<div class="line-block">
-<div class="line">有些工具要求您在生效前进行一系列复杂的操作，但只允许您撤销整个操作过程，而不是撤消单个操作步骤。</div>
-<div class="line">例如，智能剪刀 {Intelligent Scissors} 需要您点击图像中的多个点来创建一个封闭的路径，然后在路径内点击来创建一个选区。</div>
-<div class="line">您无法撤消单个点击；撤消操作会一次性撤销全部点击。</div>
-</div>
-<p>再举个例子，当您使用文字工具时，您不能撤消单个字母、字体变化等，撤消操作可能会删除全部文字内容。</p>
-</li>
+<li><p>整个操作流程的<span class="dash6">一部分</span></p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p>有些工具要求您在生效前进行一系列复杂的操作，但只允许撤销整个操作过程，而不是撤消单个操作步骤。</p></li>
+<li><p>例如，智能剪刀<span class="i070">Intelligent Scissors</span> 需要点击图像中的多个点来创建一个封闭的路径，然后在路径内点击来创建一个选区。</p></li>
+<li><p>您无法撤消单个点击；撤消操作会一次性撤销全部点击。</p></li>
 </ul>
+</div></blockquote>
+<p>再举个例子，当使用文字工具时，不能撤消单个字母、字体变化等，撤消操作可能会删除全部文字内容。</p>
 <p>滤镜以及由插件或脚本执行的其他操作，可以像GIMP核心实现的操作一样被撤消，前提是它们正确使用了GIMP的撤消功能，但这也无法保证。</p>
-<p>如果代码不正确，插件可能会破坏撤销历史记录，这样不仅是插件，包括以前的其它操作也无法再正确撤销。</p>
-<p>GIMP自带的插件和脚本应该都是正确的，但不能保证您从其他来源获得的插件也是正确的。</p>
-<p>另外，即使代码是正确的，在插件运行时取消它也可能会破坏撤销历史记录，所以最好避免这样做。</p>
-</div>
+<p>如果代码不正确，插件可能会破坏撤销历史记录，这样不仅是插件，包括以前的其它操作也无法再正确撤销。GIMP自带的插件和脚本应该都是正确的，但不能保证您从其他来源获得的插件也是正确的。另外，即使代码是正确的，在插件运行时取消它也可能会破坏撤销历史记录，所以最好避免这样做。</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
         <a href="../2edit.html" class="btn btn-neutral float-left" title="编辑" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="2redo.html" class="btn btn-neutral float-right" title="编辑→重做" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="2redo.html" class="btn btn-neutral float-right" title="⇨重做" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

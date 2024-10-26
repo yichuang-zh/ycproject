@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux硬件购买建议</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>Linux硬件购买建议</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -89,16 +97,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="linux">
-<span id="f03-hardware-advise"></span><h1>Linux硬件购买建议<a class="headerlink" href="#linux" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="linux">
+<span id="f03-hardware-advise"></span><h1>Linux硬件购买建议<a class="headerlink" href="#linux" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p><strong>一句话简述：相对最稳妥并保守的方案，是CPU选择Intel带核显的CPU，不要独显。</strong></p>
 <p>如果想配置一台专门使用Linux的电脑，那么首先要考虑的问题是显卡，原因有多个，最主要的原因是显卡制造厂商提供的Linux驱动不全，导致经常出现一些问题。</p>
-<p>为了避坑，建议电脑只有一个显卡，比如cpu带核显，那么就算是有了一个显卡，不要再插另外的独显。如果是因为玩游戏而需要比较好的独立显卡，那么建议购买不带核显的cpu。</p>
-<p>即，电脑的机箱里只有一个硬件负责显示。要么一个集成在cpu里的集显，要么单独插的独显；不推荐并存。不建议并存，不是说并存一定有问题，而是说，并存会导致比较多的问题，解决了，就一马平川；解决不了，就一直麻烦。而如果只有一个显卡(仅有集显或仅有独显)的情况下，基本上不会有大的问题。但如果用户是比较专业的玩家，擅长处理各种Linux显卡等硬件问题，那另当别论。</p>
+<p>为了避坑，建议电脑只有一个显卡，比如cpu带核显，这个核显就是一个显卡，不要再插另外的独显。如果是因为玩游戏或其它计算需求而需要再加独立显卡，那么建议购买不带核显的cpu。</p>
+<p>即，电脑的机箱里只有一个硬件负责显示：要么是集成在cpu里的集显，要么是单独插的独显；不推荐并存。不建议并存，不是说并存一定有问题，而是说，并存会导致比较多的问题，解决了，就一马平川；解决不了，就一直麻烦。而如果只有一个显卡(仅有集显或仅有独显)的情况下，基本上不会有大的问题。当然，如果用户是比较专业的Linux用户，擅长处理各种Linux显卡等硬件问题，那另当别论。</p>
 <p>另外，在购买显卡前，先到debianWIKI上查一下，看看想购买的型号是否已经能够支持。有些时候，特别新的显卡，可能无法很好的支持。</p>
-<p>除了显卡，还有网卡，包括有线网卡和无线网卡，同样建议先到debianWIKI上查一下，看看想购买的型号是否已经能够支持。通常情况下，intel品牌的网卡支持的比较好；小众品牌有可能不提供完善的驱动，自己编译对于新手来说成功的可能性非常低。其它需要驱动的硬件，比如鼠标耳麦什么的，也最好能看一下硬件厂商的资料，或者购买之前与客服充分沟通，看是否已经支持Linux，以及支持Linux的版本。鼠标耳麦之类的设备，完全不支持Linux的比较少，但如果真买到了，退货换货什么的就比较麻烦。</p>
+<p>除了显卡，还有网卡，包括有线网卡和无线网卡，同样建议先到debianWIKI上查一下，看看想购买的型号是否已经能够支持。通常情况下，intel品牌的网卡支持的比较好；小众品牌有可能不提供完善的驱动，自己编译对于新手来说成功的可能性非常低。其它需要驱动的硬件，比如鼠标耳麦什么的，也最好能看一下硬件厂商的资料，或者购买之前与客服充分沟通，看是否已经支持Linux，以及支持Linux的版本。鼠标耳麦之类的设备，完全不支持Linux的比较少，但如果真买到了，退换货什么的就比较麻烦。</p>
 <dl>
 <dt>上面的内容是宽泛讨论，下面的建议请参考：</dt><dd><ol class="arabic simple">
 <li><p>如果仅仅是入门学习Linux的新手，那么推荐Intel带核显的cpu，不加独立显卡；消费类主板上的板载网卡建议选择Intel品牌，包括有线网卡和无线网卡；</p></li>
@@ -128,8 +136,8 @@
 </div></blockquote>
 <p>如果是用FFmpeg剪辑视频，那么使用NVIDIA私有驱动会大幅提升效率，即视频的渲染速度明显变快，举个两倍左右例子：</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span> -c:v h264_nvenc outputGPU.mp4
-ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span> -c:v libx264 outputCPU.mp4
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>h264_nvenc<span class="w"> </span>outputGPU.mp4
+ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp4<span class="w"> </span>-vf<span class="w"> </span><span class="nv">crop</span><span class="o">=</span><span class="s1">&#39;582:1134:68:50&#39;</span><span class="w"> </span>-c:v<span class="w"> </span>libx264<span class="w"> </span>outputCPU.mp4
 </pre></div>
 </div>
 <p>上面这两条命令是把input.mp4这个视频文件的一部分画面裁掉(类似于切除黑边)。第一条命令使用了NVIDIA显卡硬编码进行处理，第二条命令使用CPU软编码进行处理。在速度上，使用NVIDIA显卡硬编码处理时，速度大概是40x，而使用CPU软编码进行处理时，速度大概是15x，显卡速度是CPU的两倍多接近三倍。(显卡硬编码可能会导致文件体积偏大，但并不绝对)</p>
@@ -162,9 +170,9 @@ ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><spa
 <p>上面是泛泛而论，同时要考虑的，还有用户端是否能支持AV1解码。你买了支持AV1的RTX 4060，用AV1编码创作了视频，但用户端的设备或软件不支持AV1解码，那么用户是无法播放AV1视频的，相当于RTX 4060的AV1编码特性完全没用上。一个典型的例子就是Debian12.1仓库的firefox版本最高是116，而116版本可以播放H.264，但无法播放H.265(只有声音，没有画面)。因此，保守与激进到底如何选择，有时候可以找到一些硬指标来衡量。</p>
 </dd>
 </dl>
-<p><em>最近一次更新：2024年03月31日</em></p>
+<p><em>最近一次更新：2024年09月30日</em></p>
 <p><em>未完稿……</em></p>
-</div>
+</section>
 
 
            </div>
@@ -177,7 +185,7 @@ ffmpeg -i input.mp4 -vf <span class="nv">crop</span><span class="o">=</span><spa
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

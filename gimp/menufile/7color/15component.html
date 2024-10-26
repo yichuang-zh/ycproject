@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→分量 Components</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>⇨分量 Components</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="颜色→去色 Desaturate" href="16desaturate.html" />
-    <link rel="prev" title="颜色→自动 Auto" href="14auto.html" /> 
+    <link rel="next" title="⇨去色 Desaturate" href="16desaturate.html" />
+    <link rel="prev" title="⇨自动 Auto" href="14auto.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,154 +85,199 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../gimp_menu.html">GIMP菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../gimp_menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../7color.html">颜色</a></li>
-      <li class="breadcrumb-item active">颜色→分量 <em>Components</em></li>
+      <li class="breadcrumb-item active">⇨分量  <span class="i070">Components</span></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="14auto.html" class="btn btn-neutral float-left" title="颜色→自动 Auto" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="16desaturate.html" class="btn btn-neutral float-right" title="颜色→去色 Desaturate" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="14auto.html" class="btn btn-neutral float-left" title="⇨自动 Auto" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="16desaturate.html" class="btn btn-neutral float-right" title="⇨去色 Desaturate" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="components">
-<span id="gimp-menu-7color-15channel-mixer"></span><h1>颜色→分量 <em>Components</em><a class="headerlink" href="#components" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="components">
+<span id="gimp-menu-7color-15channel-mixer"></span><h1>⇨分量  <span class="i070">Components</span><a class="headerlink" href="#components" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="channel-mixer">
-<h2>通道混合器 <em>Channel Mixer</em><a class="headerlink" href="#channel-mixer" title="永久链接至标题"></a></h2>
-<div class="figure align-center" id="id4">
+<section id="channel-mixer">
+<h2>通道混合器  <span class="i070">Channel Mixer</span><a class="headerlink" href="#channel-mixer" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id4">
 <img alt="../../../_images/15channel-mix.png" src="../../../_images/15channel-mix.png" />
-<p class="caption"><span class="caption-text">颜色→分量→通道混合器</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨分量⇨通道混合器</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>此命令会混合RGB通道的值。</p>
-<ul class="simple">
-<li><p>预设：此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p></li>
+<blockquote>
+<div><ol class="arabic">
+<li><p>预设：此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层⇨透明➡对话框通用参数</span></a>。</p></li>
 <li><p>红色通道：对红色通道进行混合。</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>红色通道中的红色：可以调整红色通道中红色的量，范围-2到2。</p></li>
 <li><p>红色通道中的绿色：可以调整红色通道中绿色的量，范围-2到2。</p></li>
 <li><p>红色通道中的蓝色：可以调整红色通道中蓝色的量，范围-2到2。</p></li>
 </ul>
+</div></blockquote>
 </li>
 <li><p>绿色通道/蓝色通道：同理。</p></li>
-<li><p>保持明度{Luminosity}：通道混合器的计算可能会导致数值过高，图像过于清晰。此选项在保持它们之间良好的视觉比例的同时，降低了颜色通道的亮度{luminosities}。因此，您可以在不改变整体亮度{luminosity}的情况下调整颜色的相对权重。</p></li>
-<li><p>混合选项/预览/分割视图：这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p></li>
-</ul>
-</div>
-<div class="section" id="extract-component">
-<h2>提取分量 <em>Extract Component</em><a class="headerlink" href="#extract-component" title="永久链接至标题"></a></h2>
-<div class="figure align-center" id="id5">
+<li><p>保持明度<span class="i070">Luminosity</span>：通道混合器的计算可能会导致数值过高，图像过于清晰。此选项在保持它们之间良好的视觉比例的同时，降低了颜色通道的亮度<span class="i070">luminosities</span>。因此，您可以在不改变整体亮度<span class="i070">luminosity</span>的情况下调整颜色的相对权重。</p></li>
+<li><p>混合选项/预览/分割视图：这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层⇨透明➡对话框通用参数</span></a>。</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="extract-component">
+<h2>提取分量  <span class="i070">Extract Component</span><a class="headerlink" href="#extract-component" title="Link to this heading"></a></h2>
+<blockquote>
+<div><figure class="align-center" id="id5">
 <img alt="../../../_images/15extract-comp.png" src="../../../_images/15extract-comp.png" />
-<p class="caption"><span class="caption-text">颜色→分量→提取分量</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨分量⇨提取分量</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>此命令可以提取指定的分量，比如提取RGB模式中的红色通道分量。</p>
-<ul>
-<li><p>预设：此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p></li>
+<ol class="arabic">
+<li><p>预设：此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层⇨透明➡对话框通用参数</span></a>。</p></li>
 <li><p>分量：选择要提取的分量，默认为RGB红色：所有颜色中含有红色分量的像素都将被提取，以创建灰色像素；得到的灰色像素的值是红色通道的值。</p>
-<p>例如，一个90,22,17的RGB像素，提取RGB红色分量后，会将得到一个90,90,90的灰色像素。</p>
+<blockquote>
+<div><p>例如，一个90,22,17的RGB像素，提取RGB红色分量后，会将得到一个90,90,90的灰色像素。</p>
+</div></blockquote>
 </li>
 <li><p>反转分量：反转提取的分量</p></li>
 <li><p>线性输出：使用线性输出代替gamma校正。</p></li>
-</ul>
-</div>
-<div class="section" id="mono-mixer">
-<span id="mono-mix"></span><h2>单色混合器 <em>Mono Mixer</em><a class="headerlink" href="#mono-mixer" title="永久链接至标题"></a></h2>
-<div class="figure align-center" id="id6">
+</ol>
+</div></blockquote>
+</section>
+<section id="mono-mixer">
+<span id="mono-mix"></span><h2>单色混合器  <span class="i070">Mono Mixer</span><a class="headerlink" href="#mono-mixer" title="Link to this heading"></a></h2>
+<blockquote>
+<div><figure class="align-center" id="id6">
 <img alt="../../../_images/15mono-mix.png" src="../../../_images/15mono-mix.png" />
-<p class="caption"><span class="caption-text">颜色→分量→单色混合器</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
-<ul class="simple">
-<li><p>预设：此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p></li>
-<li><p>保持明度{Luminosity}：单色混合器 计算可能会导致数值过高，图像过于清晰。这个选项在保持它们之间良好的视觉比例的同时，降低了颜色通道的亮度{luminosities}。因此，您可以在不改变整体亮度{luminosity}的情况下改变颜色的相对权重。</p></li>
+<figcaption>
+<p><span class="caption-text">颜色⇨分量⇨单色混合器</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>预设：此选项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层⇨透明➡对话框通用参数</span></a>。</p></li>
+<li><p>保持明度<span class="i070">Luminosity</span>：单色混合器 计算可能会导致数值过高，图像过于清晰。这个选项在保持它们之间良好的视觉比例的同时，降低了颜色通道的亮度<span class="i070">luminosities</span>。因此，您可以在不改变整体亮度<span class="i070">luminosity</span>的情况下改变颜色的相对权重。</p></li>
 <li><p>红色通道乘数/绿色通道乘数/蓝色通道乘数：适用于各个通道的系数，范围-5到5。</p></li>
-<li><p>混合选项/预览/分割视图：这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层→透明⇒对话框通用参数</span></a>。</p></li>
-</ul>
-</div>
-<div class="section" id="decompose">
-<span id="color-comp-decomp"></span><h2>分解 <em>Decompose</em><a class="headerlink" href="#decompose" title="永久链接至标题"></a></h2>
-<div class="figure align-center" id="id7">
+<li><p>混合选项/预览/分割视图：这三项是通用参数，详细说明请参考<a class="reference internal" href="../../gimp_menu.html#general-parameters"><span class="std std-ref">图层⇨透明➡对话框通用参数</span></a>。</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="decompose">
+<span id="color-comp-decomp"></span><h2>分解  <span class="i070">Decompose</span><a class="headerlink" href="#decompose" title="Link to this heading"></a></h2>
+<blockquote>
+<div><figure class="align-center" id="id7">
 <img alt="../../../_images/15decompose.png" src="../../../_images/15decompose.png" />
-<p class="caption"><span class="caption-text">颜色→分量→分解</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨分量⇨分解</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>此命令可以把图像的各个通道分离出来，分离后可以选择作为图层或者图像存在。</p>
-<div class="section" id="id1">
-<h3>分解到图层<a class="headerlink" href="#id1" title="永久链接至标题"></a></h3>
-<p>如果勾选此项，那么会得到的一个图像，图像的图层由原图像的通道创建，原图像通道数量=新图像图层数量；如果不勾选此选项，那么，所有通道都会创建成一个新图像。默认被勾选。</p>
-</div>
-<div class="section" id="id2">
-<h3>色彩模式<a class="headerlink" href="#id2" title="永久链接至标题"></a></h3>
-<ul>
+</div></blockquote>
+<section id="id1">
+<h3>分解到图层<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>如果勾选此项，那么会得到的一个图像，图像的图层由原图像的通道创建，原图像通道数量=新图像图层数量；如果不勾选此选项，那么，所有通道都会创建成一个新图像。默认被勾选。</p>
+</div></blockquote>
+</section>
+<section id="id2">
+<h3>色彩模式<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ol class="arabic">
 <li><p>RGB：选择RGB后，会创建一个新图像，新图像有三个图层(R/G/B)和两个通道(灰度/alpha)。</p>
-<p>因为分解后生成的图像可以再重新合成为RGB图像，所以，您可以在分解生成的图像的图层上工作(相当于在RGB图像的RGB通道上工作)，最后再重新合成RGB图像。</p>
+<blockquote>
+<div><p>因为分解后生成的图像可以再重新合成为RGB图像，所以，您可以在分解生成的图像的图层上工作(相当于在RGB图像的RGB通道上工作)，最后再重新合成RGB图像。</p>
+</div></blockquote>
 </li>
 <li><p>RGBA：与RGB类似，不过会增加一个alpha图层，填充原图像的透明值。</p></li>
-<li><p>HSV：把图像分解为三个灰度层，一个是色调(色相)层，一个是饱和度层，另一个是明度{Value}层。</p>
-<p>虽然色调{Hue}层是灰度的，但它确实代表了色相。在色环中，白色和黑色是起点和终点，并且是重叠的。它们在圆环的顶部代表红色。灰色中间级别对应于圆环上的中间色调：深灰色到橙色，中灰色到绿色，浅灰色到洋红色。</p>
+<li><p>HSV：把图像分解为三个灰度层，一个是色调(色相)层，一个是饱和度层，另一个是明度<span class="i070">Value</span>层。</p>
+<blockquote>
+<div><p>虽然色调(Hue)层是灰度的，但它确实代表了色相。在色相环中，白色和黑色是起点和终点，并且是重叠的。它们在圆环的顶部代表红色。灰色中间级别对应于圆环上的中间色调：深灰色到橙色，中灰色到绿色，浅灰色到洋红色。</p>
+</div></blockquote>
 </li>
-<li><p>HSL：与HSV类似，只不过第三个图层是亮度图层{Lightness}。</p></li>
+<li><p>HSL：与HSV类似，只不过第三个图层是亮度图层<span class="i070">Lightness</span>。</p></li>
 <li><p>CMY：把图像分解成三个灰度层，一个是黄色(Y)，一个是洋红(M)，另一个是青色(C)。此选项针对印刷使用。</p></li>
 <li><p>CMYK：比CMY多了一个黑色(K)。此选项针对印刷使用。</p></li>
 <li><p>Alpha：此选项会提取存储在Alpha通道中的透明度，并将其保存在一个单独的图像中。完全透明的像素为黑色，完全不透明的像素为白色，灰色部分是部分透明。</p></li>
-<li><p>LAB：此选项将图像分解为三个灰度层，图层“L”代表亮度{Luminance}，图层“A”代表绿色和红色之间的颜色，图层“B”代表蓝色和黄色之间的颜色。</p>
-<p>LAB分解是一个Luminance-Color家族的色彩模型。一个通道用于明度{Luminosity}，而另外两个通道用于颜色。</p>
+<li><p>LAB：此选项将图像分解为三个灰度层，图层 L 代表亮度<span class="i070">Luminance</span>，图层 A 代表绿色和红色之间的颜色，图层 B 代表蓝色和黄色之间的颜色。</p>
+<blockquote>
+<div><p>LAB分解是一个Luminance-Color家族的色彩模型。一个通道用于明度<span class="i070">Luminosity</span>，而另外两个通道用于颜色。</p>
+</div></blockquote>
 </li>
-<li><p>YCbCr：GIMP 中有四种不同的 YCbCr 分解方式。每个选项都将图像分解为三个灰度层，一个层为亮度{Luminance: luma}，另外两个层为蓝色差{blueness}和红色差{redness}。</p>
-<p>YCbCr颜色模型也叫YUV，现在用于数字视频(最初用于PAL模拟视频)。它是基于人眼对亮度最敏感，色彩次之的理念。</p>
+<li><p>YCbCr：GIMP 中有四种不同的 YCbCr 分解方式。每个选项都将图像分解为三个灰度层，一个层为亮度<span class="i070">Luminance: luma</span>，另外两个层为蓝色差<span class="i070">blueness</span>和红色差<span class="i070">redness</span>。</p>
+<blockquote>
+<div><p>YCbCr颜色模型也叫YUV，现在用于数字视频(最初用于PAL模拟视频)。它是基于人眼对亮度最敏感，色彩次之的理念。</p>
+</div></blockquote>
 </li>
-</ul>
-</div>
-<div class="section" id="id3">
-<h3>前景色作为注册颜色<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
-<p>指定前景色作为定位颜色，专门用于印刷/印后裁切。</p>
+</ol>
+</div></blockquote>
+</section>
+<section id="id3">
+<h3>前景色作为注册颜色<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>指定前景色作为定位颜色，专门用于印刷/印后裁切。</p>
 <p>您可以在图像上画一个标记，填充前景色，分解后，每个图层均可见，可以作为四色套准标记或裁切标记。</p>
-</div>
-</div>
-<div class="section" id="compose">
-<h2>合成 <em>Compose</em><a class="headerlink" href="#compose" title="永久链接至标题"></a></h2>
-<div class="figure align-center" id="id8">
+</div></blockquote>
+</section>
+</section>
+<section id="compose">
+<h2>合成 <span class="i070">Compose</span><a class="headerlink" href="#compose" title="Link to this heading"></a></h2>
+<blockquote>
+<div><figure class="align-center" id="id8">
 <img alt="../../../_images/15compose.png" src="../../../_images/15compose.png" />
-<p class="caption"><span class="caption-text">颜色→分量→合成</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨分量⇨合成</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>此命令可以从多个灰度图像或图层构建新图像，例如从提取的 RGB或CMYK分量构建新图像，也可以从独立创建的灰度图像或图层构建新图像。</p>
-<ul class="simple">
-<li><p>合成通道：选择合成要使用的色彩模式，请参考上面的<a class="reference internal" href="#color-comp-decomp"><span class="std std-ref">颜色→分量⇒分解</span></a></p></li>
+<ol class="arabic">
+<li><p>合成通道：选择合成要使用的色彩模式，请参考上面的<a class="reference internal" href="#color-comp-decomp"><span class="std std-ref">颜色⇨分量➡分解</span></a></p></li>
 <li><p>通道代表：您可以指定用当前的哪个图层来对应新图像的哪个通道。因为可以手动指定，所以，您甚至可以交换通道。</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>掩码值：构建通道可以不使用图层，而是使用0-255的值，但不能所有通道都用掩码值构建，至少要有一个通道是由图层或图像构建。</p></li>
 </ul>
-</li>
-</ul>
-</div>
-<div class="section" id="recompose">
-<h2>重新组合 <em>Recompose</em><a class="headerlink" href="#recompose" title="永久链接至标题"></a></h2>
-<p>此命令从之前分解的分量直接重建图像，不需要设置参数。</p>
-<p>执行此命令前，如果被分解图像已经关闭，则会提示无法组合。</p>
-<p>如果图像不是分解得到的图像，则此菜单项会显示为灰色不可用。</p>
-<p>此命令特别适合在不同的色彩空间/模式下修改图像：</p>
-<blockquote>
-<div><p>比如想编辑某个通道，可以把原RGB图按RGB色彩模式分解，生成的新图像，图层就是原图像的通道，之后针对各个图层分别进行编辑(相当于编辑原图像的通道)，然后再组合回原图；</p>
-<p>再比如想在LAB模式下编辑图像，可以把原RGB图按LAB色彩模式分解，生成的图像，通道变成图层，对图层进行编辑，之后再重新组合为RGB，这种编辑过程在RGB模式下是无法实现的。</p>
 </div></blockquote>
-</div>
-</div>
+</li>
+</ol>
+</div></blockquote>
+</section>
+<section id="recompose">
+<h2>重新组合 <span class="i070">Recompose</span><a class="headerlink" href="#recompose" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>此命令从之前分解的分量直接重建图像，不需要设置参数。</p></li>
+<li><p>执行此命令前，如果被分解图像已经关闭，则会提示无法组合。</p></li>
+<li><p>如果图像不是分解得到的图像，则此菜单项会显示为灰色不可用。</p></li>
+<li><p>此命令特别适合在不同的色彩空间/模式下修改图像：</p>
+<ul class="simple">
+<li><p>比如想编辑某个通道，可以把原RGB图按RGB色彩模式分解，生成的新图像，图层就是原图像的通道，之后针对各个图层分别进行编辑(相当于编辑原图像的通道)，然后再组合回原图；</p></li>
+<li><p>再比如想在LAB模式下编辑图像，可以把原RGB图按LAB色彩模式分解，生成的图像，通道变成图层，对图层进行编辑，之后再重新组合为RGB，这种编辑过程在RGB模式下是无法实现的。</p></li>
+</ul>
+</li>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="14auto.html" class="btn btn-neutral float-left" title="颜色→自动 Auto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="16desaturate.html" class="btn btn-neutral float-right" title="颜色→去色 Desaturate" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="14auto.html" class="btn btn-neutral float-left" title="⇨自动 Auto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="16desaturate.html" class="btn btn-neutral float-right" title="⇨去色 Desaturate" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

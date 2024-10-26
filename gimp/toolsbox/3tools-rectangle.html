@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>矩形选择工具 Rectangle Select Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>矩形选择工具 Rectangle Select Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">矩形选择工具 <em>Rectangle Select Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,60 +98,65 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="rectangle-select-tool">
-<span id="gimp-tool-rect-select"></span><h1>矩形选择工具 <em>Rectangle Select Tool</em><a class="headerlink" href="#rectangle-select-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="rectangle-select-tool">
+<span id="gimp-tool-rect-select"></span><h1>矩形选择工具 <em>Rectangle Select Tool</em><a class="headerlink" href="#rectangle-select-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">R</span></p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/3rect-select.png" src="../../_images/3rect-select.png" />
-<p class="caption"><span class="caption-text">矩形选择工具及其工具选项有</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>矩形选择工具( <a class="reference internal" href="../../_images/gimp-tool-rect-select.svg"><img alt="gimp-tool-rect-select" class="align-middle" height="20" src="../../_images/gimp-tool-rect-select.svg" width="20" /></a> )可以在图像中画一个矩形的选择区域，它是GIMP最基本和最常用的选择工具。</p>
+<figcaption>
+<p><span class="caption-text">矩形选择工具及其工具选项有</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>矩形选择工具( <a class="reference internal" href="../../_images/gimp-tool-rect-select.svg"><img alt="gimp-tool-rect-select" class="align-middle" src="../../_images/gimp-tool-rect-select.svg" style="width: 20px; height: 20px;" /></a> )可以在图像中画一个矩形的选择区域，它是GIMP最基本和最常用的选择工具。</p>
 <p>我们选中 矩形选择工具 后，在图像上点击并拖动鼠标就可以创建的一个矩形选区(大小合适后就松开鼠标)：</p>
 <blockquote>
-<div><div class="figure align-center" id="id4">
+<div><figure class="align-center" id="id4">
 <img alt="../../_images/3rect-select-sample.png" src="../../_images/3rect-select-sample.png" />
-<p class="caption"><span class="caption-text">创建好的矩形选区(蚂蚁线)</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">创建好的矩形选区(蚂蚁线)</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>上面的截图中：</p>
 <blockquote>
-<div><ul class="simple">
+<div><ol class="arabic simple">
 <li><p>黑白虚线(也叫蚂蚁线)框是选区边框，这就是创建的矩形选区；</p></li>
 <li><p>矩形选区的四个角和四个边的内侧，都各有一个实线矩形框，这八个实线矩形框是用来调整矩形尺寸的控制手柄，可以修改矩形选区四个边的位置；</p></li>
 <li><p>默认情况下，矩形选区只会显示四个角的控制手柄，不显示四个边的控制手柄；</p></li>
 <li><p>四个边的控制手柄，只有在鼠标位置移动到相应的的矩形实线框范围内时才会显示出来，且同一时间只能显示一个；</p></li>
 <li><p>四个角处的控制手柄，每一个都可以同时调整矩形选区的两个边；</p></li>
 <li><p>四个边的控制手柄，每一个只能调整矩形选区的一个边；</p></li>
-</ul>
+</ol>
+</div></blockquote>
 </div></blockquote>
 <p>通常情况下，创建矩形选区分两个步骤：</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>创建矩形选区；</p></li>
-<li><p>调整矩形选区；</p></li>
-</ol>
+<li><p>调整矩形选区；</p>
 <ul class="simple">
 <li><p>如果您只是随意画一个矩形选区来测试一下，那么，第二个步骤完全不需要；</p></li>
 <li><p>如果您需要精确控制矩形选区的尺寸，或者控制选区边框的位置，那么，通常两个步骤都需要；(如果您了解工具选项，那么可能只需要第一个步骤)</p></li>
 <li><p>要精确调整已经创建的矩形选区，您可以把图像放大(可以放大到像素级)，这样就可以进行细微操作，精确调整矩形选区；</p></li>
 <li><p>创建好的矩形选区，在没有进行其它操作前，随时都可以进行精确调整，不受限制；</p></li>
 </ul>
-</div></blockquote>
+</li>
+</ol>
 </div></blockquote>
 <blockquote id="hint-save-selection-box3">
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p>保存选区提示：</p>
+<div><div class="admonition- admonition">
+<p class="admonition-title">驿窗注：保存选区提示</p>
 <p>一个已经做了精确调整的选区，如果以后还想使用，可以把这个选区保存起来，以后可以直接调出来重复使用。</p>
 <div class="line-block">
-<div class="line">保存方法：菜单 选择→保存到通道。</div>
-<div class="line">调用方法：菜单 窗口→可停靠对话框→通道，选中相应的通道，点击鼠标右键→通道到选区。</div>
+<div class="line">保存方法：菜单【选择⇨保存到通道】。</div>
+<div class="line">调用方法：菜单【窗口⇨可停靠对话框⇨通道】，选中相应的通道，点击鼠标右键⇨通道到选区。</div>
 </div>
 </div>
 </div></blockquote>
-<div class="section" id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>创建矩形选区时，可以使用 Ctrl、Shift、Alt 这三个快捷键来辅助操作，来实现一些功能：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>创建矩形选区的过程中(已经画了一部分，但未画完)按下Ctrl键，可以让矩形以鼠标点击的位置为中心向外扩展；</p></li>
 <li><p>创建矩形选区的过程中(已经画了一部分，但未画完)按下Ctrl+Shift键，可以让矩形以鼠标点击的位置为中心向外扩展，且保持为正方形；(需要工具选项中设置固定宽高比 1:1)</p></li>
 <li><p>创建矩形选区的过程中(已经画了一部分，但未画完)按下Shift键，可以让矩形保持为正方形；(需要工具选项中设置固定宽高比 1:1)</p></li>
@@ -151,37 +164,44 @@
 <li><p>创建矩形选区之前如果按住Shift键，表示要从已经存在的选区中加上要创建的矩形选区；此操作不需要已经有选区存在；</p></li>
 <li><p>创建好矩形选区后，按下Alt键并点击矩形选区内部，可以移动矩形选区；</p></li>
 </ol>
-</div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+</div></blockquote>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>这里提供了更多的细节控制。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
-<ul class="simple">
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
+<blockquote>
+<div><ol class="arabic">
 <li><p>模式：模式会决定新创建的选区与已经存在的选区如何组合，有四个选项：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>替换：已经存在的选区会被删除，只保留新创建的选区。</p></li>
 <li><p>合并：新创建的选区和已经存在的选区相加，相当于<strong>并集</strong>。</p></li>
 <li><p>减去：从已经存在的选区减去新创建的选区，相当于<strong>差集</strong>。</p></li>
 <li><p>相交：保留新创建的选区和已经存在的选区的重合部分，未重合部分全部删除，相当于<strong>交集</strong>。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>抗锯齿：使选区的边缘更平滑(通常对弧线或斜线有效)。</p></li>
 <li><p>羽化边缘：可以融合边缘，使选区与背景过度更平滑。默认半径为10像素。</p></li>
 <li><p>圆角：创建圆角矩形。滑块可以调整圆角半径。</p></li>
 <li><p>从中心扩展：勾选后，鼠标点击的位置会成为选区的中心点，选区从中心向外扩散。</p></li>
-<li><p>固定：几种限制矩形形状的方法：</p>
-<ol class="arabic simple">
+<li><p>固定：几种限制矩形外形的方法：</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>宽高比：让矩形的宽高比保持固定比例，比例值在下面的数值框内，默认是1:1(正方形)。数值框右侧有两个小图标，可以反转比例。</p></li>
 <li><p>宽度：固定矩形的宽度，宽度值在下面的数值框内，默认是0。</p></li>
 <li><p>高度：固定矩形的高度，高度值在下面的数值框内，默认是0。</p></li>
 <li><p>大小：固定矩形的尺寸，数值在下面的数值框内，默认值是100x100。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>位置：矩形左上角的横坐标和纵坐标，修改这两个值可以精确地调整矩形的位置。默认单位是像素，可以改为其它单位。</p></li>
 <li><p>大小：矩形的宽度值和高度值，修改这两个值可以精确地调整矩形的尺寸。默认单位是像素，可以改为其它单位。</p></li>
 <li><p>高亮：勾选后，矩形区域外会变暗(类似蒙版)，视觉效果上更方便。不透明度滑块可以调整矩形区域外变暗的程度。</p></li>
 <li><p>参考线：在选区中显示的参考线类型，即创建选区的同时在选区内显示参考线。</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>无参考线：不使用参考线。</p></li>
 <li><p>中间线：一条垂直中心线和一条水平中心线，相互交叉。</p></li>
 <li><p>三分构图法：添加两条等距水平线和两条等距垂直线，将变换区域横向和纵向都三等分，整个图像九等分。</p></li>
@@ -189,19 +209,23 @@
 <li><p>黄金分割：数学上又称黄金比例(0.618)，面积分成九份，各份与被变换的面积成黄金比例。</p></li>
 <li><p>对角线：用45度对角线划分变换区域。</p></li>
 </ul>
+</div></blockquote>
 </li>
-<li><p>自动收缩：点击此按钮，选区会自动收缩到最接近选区内元素尺寸的矩形形状。此算法有一点点笨AI。</p></li>
+<li><p>自动收缩：点击此按钮，选区会自动收缩到最接近选区内元素尺寸的矩形外形。此算法有一点点笨AI。</p></li>
 <li><p>收缩合并：勾选此项后，上面的 自动收缩 按钮不再只计算当前活动图层，改为计算所有可见图层。(类似于位样合并)</p></li>
-</ul>
+</ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -214,7 +238,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

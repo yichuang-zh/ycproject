@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta content="ffmpeg, 视频, 开源视频处理" name="keywords" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="ffmpeg, 视频, 开源视频处理" name="keywords" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>5. CMYK 与 RGB</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>5. CMYK 与 RGB</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="LibreOffice操作指南" href="../../libreoffice/libreoffice.html" />
+    <link rel="next" title="6. 像素画 pixel art" href="pixelart.html" />
     <link rel="prev" title="4. 专色" href="4spec_color.html" /> 
 </head>
 
@@ -60,7 +69,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -83,15 +91,15 @@
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
         <a href="4spec_color.html" class="btn btn-neutral float-left" title="4. 专色" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="../../libreoffice/libreoffice.html" class="btn btn-neutral float-right" title="LibreOffice操作指南" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pixelart.html" class="btn btn-neutral float-right" title="6. 像素画 pixel art" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="cmyk-rgb"></span><div class="section" id="id1">
-<h1><span class="section-number">5. </span>CMYK 与 RGB<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="cmyk-rgb">
+<span id="id1"></span><h1><span class="section-number">5. </span>CMYK 与 RGB<a class="headerlink" href="#cmyk-rgb" title="Link to this heading"></a></h1>
 <p>RGB是指光，<span class="dash6">色光</span>；CMYK通常是指<span class="dash6">印刷油墨</span>，也可以表达色光。</p>
 <p>讨论<span class="dash6">色光</span>时，其实是光是直接照射到眼睛里之后，成为人眼看到的颜色。
 讨论<span class="dash6">印刷油墨</span>时，其实是表示白光照射在油墨上，被油墨吸收了一部分色光，其余的未被吸收的色光反射出来再进入到人眼里，即人眼看到的颜色。</p>
@@ -99,8 +107,8 @@
 CMYK油墨互相混合时，使用的原理是<span class="dash6">色料减色法</span>。(色料即油墨)
 CMYK色光不是一级色光，我们后面会有描述。(RGB是一级色光)</p>
 <p>上面是简短的概述，下面详细说。</p>
-<div class="section" id="rgb">
-<h2><span class="section-number">5.1. </span>先说RGB<a class="headerlink" href="#rgb" title="永久链接至标题"></a></h2>
+<section id="rgb">
+<h2><span class="section-number">5.1. </span>先说RGB<a class="headerlink" href="#rgb" title="Link to this heading"></a></h2>
 <p>RGB就是指红绿蓝三种色光，混合时应用色光加色法原理。</p>
 <p>我们日常接触的几乎所有发光的东西，基本上都用的是RGB原理，比如最典型的就是手机屏幕、电脑屏幕，再比如电视机，或者家里照明用的灯等等。</p>
 <p>RGB本质上是一种对光进行讨论时所使用的方法论，它不能完全代表所有的色光，但对于我们理解色光原理来说，RGB基本上就够用了。</p>
@@ -136,9 +144,9 @@ CMYK色光不是一级色光，我们后面会有描述。(RGB是一级色光)</
 <li><p>W：白色光</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="cmyk">
-<h2><span class="section-number">5.2. </span>再说CMYK<a class="headerlink" href="#cmyk" title="永久链接至标题"></a></h2>
+</section>
+<section id="cmyk">
+<h2><span class="section-number">5.2. </span>再说CMYK<a class="headerlink" href="#cmyk" title="Link to this heading"></a></h2>
 <p>CMYK四个字母放在一起表达时，通常是说色料而非色光，色料指印刷用的油墨。</p>
 <p>CMYK就是指四种颜色的印刷油墨，CMYK分别对应青色、品红色、黄色、黑色这四种油墨。用CMYK这四种油墨可以印刷出成千上万种颜色的彩色印刷品，就像RGB三种色光可以混合出成千上万种颜色一样。</p>
 <p><span class="dash6">油墨的本质是用来吸收特定色光</span>，剩下的未被吸收的色光则被反射出来进入人眼，成为人眼看到的颜色。所以，人眼看到的，其实是从纸张表面反射出来的未被油墨吸收的色光。对于日常照明环境来说，默认照射到纸张上的光是白光。所以，如果在白纸上印刷了某一种颜色的油墨，那么人眼看到的，其实是油墨吸收了特定的色光后，反射的剩余色光的颜色(白色-特定色光=人眼看到的色光)，这里出现了减法。被反射的色光是人眼看到的；被吸收的色光，人眼看不到，消失了，因为色光被油墨吸收后就不存在了。</p>
@@ -202,21 +210,21 @@ CMYK色光不是一级色光，我们后面会有描述。(RGB是一级色光)</
 </dd>
 </dl>
 <p><em>最近一次更新：2024年7月10日</em></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
         <a href="4spec_color.html" class="btn btn-neutral float-left" title="4. 专色" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="../../libreoffice/libreoffice.html" class="btn btn-neutral float-right" title="LibreOffice操作指南" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pixelart.html" class="btn btn-neutral float-right" title="6. 像素画 pixel art" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

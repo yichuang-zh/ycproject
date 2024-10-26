@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>路径→临摹位图轮廓</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>⇨白描位图 Trace Bitmap</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="路径→并集" href="4union.html" />
-    <link rel="prev" title="路径→描边转路径" href="2stroke-path.html" /> 
+    <link rel="next" title="⇨并集 Union" href="4union.html" />
+    <link rel="prev" title="⇨描边转路径 Stroke to Path" href="2stroke-path.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,37 +85,278 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../inkscape-menu.html">Inkscape菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../inkscape-menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../6path.html">路径</a></li>
-      <li class="breadcrumb-item active">路径→临摹位图轮廓</li>
+      <li class="breadcrumb-item active">⇨白描位图 <span class="i070">Trace Bitmap</span></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="2stroke-path.html" class="btn btn-neutral float-left" title="路径→描边转路径" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="4union.html" class="btn btn-neutral float-right" title="路径→并集" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="2stroke-path.html" class="btn btn-neutral float-left" title="⇨描边转路径 Stroke to Path" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="4union.html" class="btn btn-neutral float-right" title="⇨并集 Union" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="inkscape-menu-path-3trace">
-<span id="id1"></span><h1>路径→临摹位图轮廓<a class="headerlink" href="#inkscape-menu-path-3trace" title="永久链接至标题"></a></h1>
-<p>快捷键：<strong>Alt+Shift+B</strong></p>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="trace-bitmap">
+<span id="inkscape-menu-path-3trace"></span><h1>⇨白描位图 <span class="i070">Trace Bitmap</span><a class="headerlink" href="#trace-bitmap" title="Link to this heading"></a></h1>
+<p>快捷键： <span class="guilabel">Alt</span>+<span class="guilabel">Shift</span>+<span class="guilabel">B</span></p>
+<figure class="align-center" id="id2">
+<img alt="../../../_images/3trace-s1.png" src="../../../_images/3trace-s1.png" />
+<figcaption>
+<p><span class="caption-text">白描位图</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：白描</p>
+<p><span class="d60c0n">白描</span>是传统中国画技法，类似素描但不同，请用搜索引擎搜索<span class="dash6">白描</span>、<span class="dash6">线描</span>、<span class="dash6">十八描</span>了解详情。</p>
 </div>
+<div class="admonition- admonition">
+<p class="admonition-title">汉化更新</p>
+<p>本节内容涉及到一些菜单词条的汉化更新，下面列出新旧版本的菜单变化关系：</p>
+<blockquote>
+<div><table class="docutils align-default" id="id3">
+<caption><span class="caption-text">菜单汉化更新</span><a class="headerlink" href="#id3" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>新版本(1.4及之后)</p></th>
+<th class="head"></th>
+<th class="head"><p><span class="i070">旧版本(1.4 beta或更早)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>白描位图</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">临摹位图轮廓</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>斑点消除</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">斑点</span></p></td>
+</tr>
+<tr class="row-even"><td><p>划定白描范围</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">用户辅助追踪</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>自动白描</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">自动临摹</span></p></td>
+</tr>
+<tr class="row-even"><td><p>中心线白描(自动白描)</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">中心线追踪(自动追踪)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>亮度分级</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">亮度步进</span></p></td>
+</tr>
+<tr class="row-even"><td><p>自动白描(较慢)</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">自动追踪(较慢)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>平滑</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">光滑</span></p></td>
+</tr>
+<tr class="row-even"><td><p>泰森多边形</p></td>
+<td><p>⬅</p></td>
+<td><p><span class="i060">沃罗努瓦图(Voronoi)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<p>白描位图功能可以把像素位图<span class="dash6">有限地</span>转为矢量图。</p>
+<section id="id1">
+<h2>概述：单扫、多扫、像素画三者的区别<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<dl>
+<dt>单扫与多扫：<span class="i070">Single scan &amp; Multicolor</span></dt><dd><p>单次扫描只能生成一条路径曲线；多次扫描可以生成指定数量的多条路径曲线。由于这个差异，多次扫描生成的结果可以是多色的，或者多级灰度的，但单次扫描生成的结果只能是单色的。</p>
+</dd>
+<dt>像素画：<span class="i070">Pixel art</span></dt><dd><div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p><span class="d7f00n">专门针对 pixel art 图像；一般位图不建议使sss用</span></p>
+<p>此功能专门针对pixel art(像素画)而开发。</p>
+<p>此功能与单扫/多扫的典型区别是，此功能使用专门开发的libdepixelize引擎，会把被扫描图像的<span class="d70d0">每一个</span>像素都生成一条路径曲线：如果图像是1920x1080像素，那么会生成1920*1080=2073600条路径，这种情况需要cpu进行大量计算，大概率会造成电脑卡顿没有反应。被扫描位图如果不是pixel art类型，不建议使用。</p>
+</div>
+<div class="admonition-pixel-art admonition">
+<p class="admonition-title">什么是像素画 <em>pixel art</em></p>
+<p>指代非常小的位图，比如32x32像素。</p>
+<p>在上个世纪计算机不发达的年代，有些设备需要处理大量位图，比如街机，街机的位图处理能力相比很弱，所以就限制位图的像素数量，甚至每一个像素都精心处理。发展到现在，有一些复古的风格也使用了很小的位图。这些很小的位图，被称为pixel art。pixel art的外观有一个典型特征，就是看起来是由很多小方块堆成的。</p>
+</div>
+</dd>
+</dl>
+<p>下面是三种方式的详细说明。</p>
+</section>
+<section id="single-scan">
+<h2>一、单次扫描 <span class="i060">Single scan</span><a class="headerlink" href="#single-scan" title="Link to this heading"></a></h2>
+<p>此方式针对普通位图，仅创建一条路径，生成单色图形。</p>
+<ol class="arabic">
+<li><p>检测模式：选择扫描图像时所使用的算法。如果没有使用经验，建议几种检测模式都试一下，看哪个效果好就用哪个。</p>
+<blockquote>
+<div><ul>
+<li><p>亮度截断：以像素亮度为计算对象。亮度定义为像素的红色、绿色和蓝色值之和(或黑白图的灰度值)。应用后会创建一条路径，路径内部容纳所有比<span class="dash6">阈值</span>更暗的区域，被扫描位图对象是单色线条图时表现良好。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>阈值：调整计算的亮度范围，亮度低于此处设定值的区域会被填充。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>边缘检测：以相邻像素之间的亮度差异为计算对象，在亮度差异超过<span class="dash6">边缘阈值</span>的区域之间创建一条路径。此模式比较适合生成线条轮廓。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>边缘阈值：设定亮度差异的阈值，供扫描时进行边缘的判断计算。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>颜色量化：以相邻像素之间的颜色变化为计算对象。<span class="dash6">颜色</span>滑块定义了在查找边缘时使用的不同颜色的数量。创建一条路径，路径的填充取决于<a class="reference internal" href="../../tools/8pen.html#path-fill-even-odd-nonezero"><span class="std std-ref">路径填充的奇偶规则</span></a> 。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>颜色：设定扫描时在计算边缘时可以使用的颜色数量。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>自动白描：自动白描没有使用Potrace引擎，而是使用了libautotrace引擎，所以参数的表现和其它检测模式有所不同。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>滤镜迭代：默认值为4，平滑曲线的次数。</p></li>
+<li><p>错误阈值：默认值为2.0。对偏差超过此像素值的拟合曲线进行细分。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>中心线白描(自动白描)：中心线白描是基于自动白描，所以也使用libautotrace引擎，但算法与自动白描使用的libautotrace引擎有区别，最主要的区别是，中心线白描得到的结果是生成中心线曲线，而不是外轮廓线曲线，自动白描及其它方式通常是生成外轮廓线曲线。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>滤镜迭代：默认值为4，平滑曲线的次数。</p></li>
+<li><p>错误阈值：默认值为2.0。对偏差超过此像素值的拟合曲线进行细分。</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>反转图像：反转图形的黑色和白色。如果被扫描的位图是黑色背景或深色背景，可以勾选此选项来得到想要的白描效果。</p></li>
+<li><p>细节：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>斑点消除：降噪，删除小于指定值的所有路径。生成的图形会更干净一些，但可能丢失一些细节。</p></li>
+<li><p>平滑拐角：在拐角节点处生成圆角的程度。值越小拐角越尖锐。值为0表示不做平滑处理。值越大，节点数越少，平滑节点占比越多。此选项通常不做修改。</p></li>
+<li><p>优化：合并扫描生成的曲线，减少节点数量。数值越大，曲线被合并的可能性就越大。此选项必须配合上面的<span class="dash6">平滑拐角</span>一起使用。</p></li>
+<li><p>划定白描区域：让用户可以指定被扫描位图中需要扫描的区域。如果只想扫描位图中的特定区域而不是整个位图，可以勾选此选项，然后围绕目标区域创建一个闭合路径(图形)，并填充纯色，之后同时选中被扫描位图和创建的路径(图形)，就会发现白描预览中的效果只包含路径(图形)内部的内容，不包含外部内容。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>预览：这里是效果预览窗口。有一点需要注意，预览效果是被扫描位图与生成的结果的混合效果，不是单独的生成结果，所以预览效果并不精确。</p></li>
+<li><p>实时更新：勾选后，当调整参数时，预览效果会实时变化。</p></li>
+<li><p>更新预览：手动更新预览效果。</p></li>
+<li><p><a class="reference internal" href="../../../_images/6-1guide.svg"><img alt="6-1guide" class="align-middle" src="../../../_images/6-1guide.svg" style="width: 20px; height: 20px;" /></a>：点击此图标可以显示简要说明。</p></li>
+<li><p><a class="reference internal" href="../../../_images/6-2abort.svg"><img alt="6-2abort" class="align-middle" src="../../../_images/6-2abort.svg" style="width: 20px; height: 20px;" /></a>：如果不小心放了一张像素比较多的大位图进行白描，会导致计算时间特别长，这个时候可以点击此图标来中止白描操作。此图标有可能不显示。</p></li>
+<li><p>应用：点击后生成白描结果。</p></li>
+</ol>
+</section>
+<section id="multicolor">
+<h2>二、多次扫描 <span class="i060">Multicolor</span><a class="headerlink" href="#multicolor" title="Link to this heading"></a></h2>
+<p>此方式针对普通位图，可以创建指定数量的路径，可生成多色图形或多级灰度图形。</p>
+<p>被扫描位图会被多次扫描，每次扫描都会创建一条路径。路径数量可以指定。因为可以创建多条路径，所以可以生成单色结果，也可以生成多色结果，结果的颜色数量小于或等于指定路径的数量。</p>
+<ol class="arabic">
+<li><p>检测模式：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>亮度分级：此检测模式会以亮度为标准进行分级扫描，扫描结果是灰度图形。最暗区域扫描会在亮度0.2完成，最亮区域为0.9，其他区域位于两者之间均匀分布。勾选删除背景会删除90%的区域。<span class="dash6">扫描</span>滑块值用于指定亮度分级数量。</p></li>
+<li><p>颜色：此检测模式会以颜色为标准进行扫描，扫描结果可以是彩色图形。<span class="dash6">扫描</span>滑块值用于指定颜色数量。</p></li>
+<li><p>灰度：原理与上面的<span class="dash6">颜色</span>相同，但结果是灰度图形。<span class="dash6">扫描</span>滑块值用于指定灰度等级数量。</p></li>
+<li><p>自动白描(较慢)：自动白描没有使用Potrace引擎，而是使用了libautotrace引擎，所以参数的表现和其它检测模式有所不同。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>扫描：滑块数值用来指定所属检测模式的路径数量，它也对应亮度等级数量、颜色数量、灰度级数量。</p>
+<p>如果检测模式使用的是<span class="dash6">自动白描</span>，那么此处滑块的数值则表示所扫描结果的颜色要减少到指定的数量，比如<span class="dash6">扫描</span>滑块值设定为2，那么无论被扫描的位图有多少种颜色，生成的图形就只有两种颜色；但最终生成的图形的路径曲线数量却不是2条，这一点与其它检测模式不同。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>平滑：勾选后，会在扫描前对被扫描图像先做高斯模糊处理，然后再扫描。高斯模糊会让相邻像素之间的差异变得更平滑，从而使后续扫描结果也更平滑。效果很明显，但有可能会导致细节丢失，这是高斯模糊的特性。(此选项可以用来去除印刷加网）</p></li>
+<li><p>堆叠：路径在Z方向上的处理方式。未勾选的话，生成的路径不会重叠，子路径更简练；勾选后，每个路径都包含其上方的路径区域，路径的覆盖范围之间没有空白区域。</p></li>
+<li><p>删除背景：Z方向上的最下面的路径被定义为背景。多数情况下此路径的填充颜色是最浅的路径。勾选后，会删除此背景路径。通常被扫描的位图有白色背景色的时候，可以勾选此选项来去除白色背景。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>细节：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>斑点消除：降噪，删除小于指定值的所有路径。生成的图形会更干净一些，但可能丢失一些细节。</p></li>
+<li><p>平滑拐角：在拐角节点处生成圆角的程度。值越小拐角越尖锐。值为0表示不做平滑处理。值越大，节点数越少，平滑节点占比越多。此选项通常不做修改。</p></li>
+<li><p>优化：合并扫描生成的曲线，减少节点数量。数值越大，曲线被合并的可能性就越大。此选项必须配合上面的<span class="dash6">平滑拐角</span>一起使用。</p></li>
+<li><p>划定白描区域：让用户可以指定被扫描位图中需要扫描的区域。如果只想扫描位图中的特定区域而不是整个位图，可以勾选此选项，然后围绕目标区域创建一个闭合路径(图形)，并填充纯色，之后同时选中被扫描位图和创建的路径(图形)，就会发现白描预览中的效果只包含路径(图形)内部的内容，不包含外部内容。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>预览：这里是效果预览窗口。有一点需要注意，预览效果是被扫描位图与生成的结果的混合效果，不是单独的生成结果，所以预览效果并不精确。</p></li>
+<li><p>实时更新：勾选后，当调整参数时，预览效果会实时变化。</p></li>
+<li><p>更新预览：手动更新预览效果</p></li>
+<li><p><a class="reference internal" href="../../../_images/6-1guide.svg"><img alt="6-1guide" class="align-middle" src="../../../_images/6-1guide.svg" style="width: 20px; height: 20px;" /></a>：点击此图标可以显示简要说明。</p></li>
+<li><p><a class="reference internal" href="../../../_images/6-2abort.svg"><img alt="6-2abort" class="align-middle" src="../../../_images/6-2abort.svg" style="width: 20px; height: 20px;" /></a>：如果不小心放了一张像素比较多的大位图进行白描，会导致计算时间特别长，这个时候可以点击此图标来中止白描操作。此图标有可能不显示。</p></li>
+<li><p>应用：点击后生成白描结果。</p></li>
+</ol>
+</section>
+<section id="pixel-art">
+<h2>三、像素画  <span class="i060">Pixel art</span><a class="headerlink" href="#pixel-art" title="Link to this heading"></a></h2>
+<p>比较典型的一个使用场景是用它来白描头像类、logo类小图标。</p>
+<blockquote>
+<div><div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p><span class="d7f00n">专门针对 pixel art 图像；一般位图不建议使用</span></p>
+<p>此功能专门针对pixel art(像素画)而开发。</p>
+<p>此功能与单扫/多扫的典型区别是，此功能使用专门开发的libdepixelize引擎，会把被扫描图像的<span class="d70d0">每一个</span>像素都生成一条路径曲线：如果图像是1920x1080像素，那么会生成1920*1080=2073600条路径，这种情况需要cpu进行大量计算，大概率会造成电脑卡顿没有反应。被扫描位图如果不是pixel art类型，不建议使用。</p>
+</div>
+</div></blockquote>
+<ol class="arabic">
+<li><p>启发式：</p>
+<blockquote>
+<div><ul>
+<li><p>曲线：值增大通常会使路径或线条更平滑，减少路径中节点的数量，从而获得更简单、更清晰的图形。值减小会引入更多节点，使路径更加复杂，添加更多细节。</p></li>
+<li><p>孤立像素：值增大通常会合并附近几乎接触或重叠的图形或路径，自动组合相似元素来简化复杂的内容，相当于对路径进行简化处理；值减小可能会分隔非常接近的图形或路径。如果想让对象与对象之间分隔明确，这个参数的效果会比较明显。</p></li>
+<li><p>稀疏像素：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>窗口半径：</p></li>
+<li><p>乘数：</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>优化：</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>输出：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>泰森多边形：一个像素生成一条路径，每一条路径都进行填充处理；有多少像素就生成多少路径。图像较大时请慎用，会导致死机。</p></li>
+<li><p>B样线条：相邻像素如果相同，会被合并在一起成为一条较大路径，最终生成的路径数量小于像素数量，填充路径的数量也变少。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>预览：这里是效果预览窗口。有一点需要注意，预览效果是被扫描位图与生成的结果的混合效果，不是单独的生成结果，所以预览效果并不精确。</p></li>
+<li><p>实时更新：勾选后，当调整参数时，预览效果会实时变化。</p></li>
+<li><p>更新预览：手动更新预览效果</p></li>
+<li><p><a class="reference internal" href="../../../_images/6-1guide.svg"><img alt="6-1guide" class="align-middle" src="../../../_images/6-1guide.svg" style="width: 20px; height: 20px;" /></a>：点击此图标可以显示简要说明。</p></li>
+<li><p><a class="reference internal" href="../../../_images/6-2abort.svg"><img alt="6-2abort" class="align-middle" src="../../../_images/6-2abort.svg" style="width: 20px; height: 20px;" /></a>：如果不小心放了一张像素比较多的大位图进行白描，会导致计算时间特别长，这个时候可以点击此图标来中止白描操作。此图标有可能不显示。</p></li>
+<li><p>应用：点击后生成白描结果。</p></li>
+</ol>
+<p><em>未完稿</em></p>
+<p><em>最近一次更新：2024-10-18</em></p>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="2stroke-path.html" class="btn btn-neutral float-left" title="路径→描边转路径" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="4union.html" class="btn btn-neutral float-right" title="路径→并集" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="2stroke-path.html" class="btn btn-neutral float-left" title="⇨描边转路径 Stroke to Path" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="4union.html" class="btn btn-neutral float-right" title="⇨并集 Union" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

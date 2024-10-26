@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→去色 Desaturate</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>⇨去色 Desaturate</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="颜色→映射 Map" href="17map.html" />
-    <link rel="prev" title="颜色→分量 Components" href="15component.html" /> 
+    <link rel="next" title="⇨映射 Map" href="17map.html" />
+    <link rel="prev" title="⇨分量 Components" href="15component.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,30 +85,33 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../gimp_menu.html">GIMP菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../gimp_menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../7color.html">颜色</a></li>
-      <li class="breadcrumb-item active">颜色→去色 <em>Desaturate</em></li>
+      <li class="breadcrumb-item active">⇨去色  <span class="i070">Desaturate</span></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="15component.html" class="btn btn-neutral float-left" title="颜色→分量 Components" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="17map.html" class="btn btn-neutral float-right" title="颜色→映射 Map" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="15component.html" class="btn btn-neutral float-left" title="⇨分量 Components" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="17map.html" class="btn btn-neutral float-right" title="⇨映射 Map" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="desaturate">
-<span id="gimp-menu-7color-16desaturate"></span><h1>颜色→去色 <em>Desaturate</em><a class="headerlink" href="#desaturate" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="desaturate">
+<span id="gimp-menu-7color-16desaturate"></span><h1>⇨去色  <span class="i070">Desaturate</span><a class="headerlink" href="#desaturate" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="color-to-gray">
-<h2>彩色到灰度 <em>Color to Gray</em><a class="headerlink" href="#color-to-gray" title="永久链接至标题"></a></h2>
-<div class="figure align-center" id="id4">
+<section id="color-to-gray">
+<h2>彩色到灰度  <span class="i070">Color to Gray</span><a class="headerlink" href="#color-to-gray" title="Link to this heading"></a></h2>
+<blockquote>
+<div><figure class="align-center" id="id4">
 <img alt="../../../_images/16to-gray.png" src="../../../_images/16to-gray.png" />
-<p class="caption"><span class="caption-text">颜色→去色→彩色到灰度</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨去色⇨彩色到灰度</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>此命令可以把图像从彩色变为高饱和灰效果，但不是变为灰度模式(仍然为RGB模式)，只不过所有的像素点的色值变为R=G=B。这会导致图像看起来是黑白的，但像素实际的色值却是RGB三色的。这种方式生成的图像，饱和度相对更高一些，而直接转换为灰度图像的话，饱和度会比较低。</p>
 <blockquote>
 <div><div class="admonition-todo admonition" id="id1">
@@ -108,57 +119,70 @@
 <p>此命令的说明等待后续补充。</p>
 </div>
 </div></blockquote>
-</div>
-<div class="section" id="id2">
-<h2>去色 <em>Desaturate</em><a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<div class="figure align-center" id="id5">
+</div></blockquote>
+</section>
+<section id="id2">
+<h2>去色  <span class="i070">Desaturate</span><a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><figure class="align-center" id="id5">
 <img alt="../../../_images/16desaturate.png" src="../../../_images/16desaturate.png" />
-<p class="caption"><span class="caption-text">颜色→去色→去色</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨去色⇨去色</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>此命令可以把活动层上的所有颜色转换为相应的灰度效果。此命令只对活动图层进行操作，图层上的颜色仍然是RGB值，有三个分量，R=G=B，这就成了灰色。</p>
-<div class="section" id="id3">
-<h3>模式<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
-<p>不同的模式其实就是不同的算法：</p>
-<ul class="simple">
-<li><p>亮度{Luminance}：新图像的灰色色调使用linearized sRGB来计算。</p></li>
+</div></blockquote>
+<section id="id3">
+<h3>模式<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>不同的模式其实就是不同的算法：</p>
+<ol class="arabic simple">
+<li><p>亮度<span class="i070">Luminance</span>：新图像的灰色色调使用linearized sRGB来计算。</p></li>
 <li><p>亮度(Luma)：新图像的灰色色调使用non-linearized sRGB来计算。</p></li>
 <li><p>亮度(HSL)：新图像的灰色色调被计算为Lightness (HSL)。</p></li>
 <li><p>平均(HSI 强度)：新图像的灰色色调被计算为平均(HSI 强度)。</p></li>
 <li><p>明度(HSV)：新图像的灰色色调被计算为明度(HSV)。</p></li>
-</ul>
+</ol>
 <p>下面<span class="dash6">混合选项</span>中的<span class="dash6">模式</span>，请参考<a class="reference internal" href="../../dockable/3layer-mode.html#menu-window-dockable-layer-mode"><span class="std std-ref">图层模式</span></a>。</p>
-</div>
-</div>
-<div class="section" id="mono-mixer">
-<h2>单色混合器 <em>Mono Mixer</em><a class="headerlink" href="#mono-mixer" title="永久链接至标题"></a></h2>
-<p>请参考<a class="reference internal" href="15component.html#mono-mix"><span class="std std-ref">颜色→分量⇒单色混合器</span></a></p>
-</div>
-<div class="section" id="sepia">
-<h2>乌贼墨 <em>Sepia</em><a class="headerlink" href="#sepia" title="永久链接至标题"></a></h2>
-<p>此命令会模仿乌贼墨色调，让黑白图像带有暧色调。</p>
-<div class="figure align-center" id="id6">
+</div></blockquote>
+</section>
+</section>
+<section id="mono-mixer">
+<h2>单色混合器  <span class="i070">Mono Mixer</span><a class="headerlink" href="#mono-mixer" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>请参考<a class="reference internal" href="15component.html#mono-mix"><span class="std std-ref">颜色⇨分量➡单色混合器</span></a></p>
+</div></blockquote>
+</section>
+<section id="sepia">
+<h2>乌贼墨  <span class="i070">Sepia</span><a class="headerlink" href="#sepia" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>此命令会模仿乌贼墨色调，让黑白图像带有暧色调。</p>
+<figure class="align-center" id="id6">
 <img alt="../../../_images/16sepia.png" src="../../../_images/16sepia.png" />
-<p class="caption"><span class="caption-text">颜色→去色→乌贼墨</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
-<ul class="simple">
+<figcaption>
+<p><span class="caption-text">颜色⇨去色⇨乌贼墨</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
 <li><p>效果强度：与原始图像的融合程度。0.000表示完全没有效果，1.000表示完全用深褐色调进行替换。</p></li>
 <li><p>sRGB：勾选此选项表示使用sRGB gamma校正替代线性色彩空间校正。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="15component.html" class="btn btn-neutral float-left" title="颜色→分量 Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="17map.html" class="btn btn-neutral float-right" title="颜色→映射 Map" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="15component.html" class="btn btn-neutral float-left" title="⇨分量 Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="17map.html" class="btn btn-neutral float-right" title="⇨映射 Map" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

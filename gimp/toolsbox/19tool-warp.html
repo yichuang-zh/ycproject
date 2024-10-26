@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>扭曲变换工具 Warp Transform</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>扭曲变换工具 Warp Transform</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">扭曲变换工具 <em>Warp Transform</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,33 +98,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="warp-transform">
-<span id="gimp-tool-warp"></span><h1>扭曲变换工具 <em>Warp Transform</em><a class="headerlink" href="#warp-transform" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="warp-transform">
+<span id="gimp-tool-warp"></span><h1>扭曲变换工具 <em>Warp Transform</em><a class="headerlink" href="#warp-transform" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">W</span></p>
-<div class="figure align-center" id="id2">
+<figure class="align-center" id="id2">
 <img alt="../../_images/19tool-warp.png" src="../../_images/19tool-warp.png" />
-<p class="caption"><span class="caption-text">扭曲变换工具及其工具选项</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
-</div>
-<p>扭曲变换工具( <a class="reference internal" href="../../_images/gimp-tool-warp.svg"><img alt="gimp-tool-warp" class="align-middle" height="20" src="../../_images/gimp-tool-warp.svg" width="20" /></a> )是一个类似画笔的工具，可以对图像的某些部分做变形处理，并且提供动画选项，可以在原始图像和变形后的图像之间创建动画。</p>
+<figcaption>
+<p><span class="caption-text">扭曲变换工具及其工具选项</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>扭曲变换工具( <a class="reference internal" href="../../_images/gimp-tool-warp.svg"><img alt="gimp-tool-warp" class="align-middle" src="../../_images/gimp-tool-warp.svg" style="width: 20px; height: 20px;" /></a> )是一个类似画笔的工具，可以对图像的某些部分做变形处理，并且提供动画选项，可以在原始图像和变形后的图像之间创建动画。</p>
 <p>选中 扭曲变换工具后，在图像上点击并拖动鼠标，就会使鼠标经过的地方发生变形。</p>
 <blockquote>
-<div><div class="figure align-center" id="id3">
+<div><figure class="align-center" id="id3">
 <img alt="../../_images/19tool-warp-sample.png" src="../../_images/19tool-warp-sample.png" />
-<p class="caption"><span class="caption-text">矩形虚线框是变换区域，应用逆时针漩涡多次</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">矩形虚线框是变换区域，应用逆时针漩涡多次</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-<p>扭曲变换工具的操作方法：</p>
+<dl class="simple">
+<dt>扭曲变换工具的操作方法：</dt><dd><ol class="arabic simple">
+<li><p>扭曲变换工具类似画笔，所以操作方法很简单，就是在图像上点击或涂抹，还可以通过工具选项中的参数来进行进一步控制。</p></li>
+<li><p>由于类似画笔，所以您可以像对待画笔一样，调整 扭曲变换工具 的“笔刷”大小、硬度、强度、间距等参数。</p></li>
+</ol>
+</dd>
+</dl>
+<section id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <blockquote>
-<div><p>扭曲变换工具类似画笔，所以操作方法很简单，就是在图像上点击或涂抹，还可以通过工具选项中的参数来进行进一步控制。</p>
-<p>由于类似画笔，所以您可以像对待画笔一样，调整 扭曲变换工具 的“笔刷”大小、硬度、强度、间距等参数。</p>
-</div></blockquote>
-<div class="section" id="id1">
-<h2>工具选项<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<p>这里提供了更多的细节控制。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
-<ul>
+<div><p>这里提供了更多的细节控制。</p>
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
+<ol class="arabic">
 <li><p>扭曲行为：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>移动像素：把鼠标轨迹上的像素沿鼠标运动方向移动一段距离。</p></li>
 <li><p>增大区域：以鼠标所在位置为中心，周围像素向远离中心方向移动一段距离。</p></li>
 <li><p>收缩区域：与 增大区域 相反，以鼠标所在位置为中心，周围像素向靠近中心方向移动一段距离。</p></li>
@@ -124,40 +140,48 @@
 <li><p>逆时针漩涡：与 顺时针漩涡相反，把鼠标轨迹上的像素沿逆时针方向漩涡式移动一段距离。</p></li>
 <li><p>擦除扭曲：鼠标点击的位置的像素，其扭曲行为会被一点一点删除，直到最后恢复为无扭曲效果。</p></li>
 <li><p>平滑扭曲：<em>等待后续更新</em></p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>大小：控制的笔刷的尺寸，尺寸越大，影响的像素就越多。</p></li>
 <li><p>硬度：笔刷边缘的模糊程度。</p></li>
 <li><p>强度：像素 位移的距离，最大值产生的位移不超过笔刷的直径。</p></li>
 <li><p>间距：各个笔刷点之间的距离。</p></li>
-<li><p>插值：因为图像做了重采样，所以您需要指定算法，不同的算法可能导致结果的质量不同。各个选项的说明，请参考<a class="reference internal" href="../menufile/5image/10scale.html#image-scale-quality"><span class="std std-ref">图像→缩放图像⇒质量</span></a>。</p></li>
+<li><p>插值：因为图像做了重采样，所以您需要指定算法，不同的算法可能导致结果的质量不同。各个选项的说明，请参考<a class="reference internal" href="../menufile/5image/10scale.html#image-scale-quality"><span class="std std-ref">图像⇨缩放图像➡质量</span></a>。</p></li>
 <li><p>扭曲方案：</p>
-<p>扭曲工具移动像素的同时，可能会导致产生空白区域，这些区域没任何颜色信息，需要给这些空白像素分配颜色：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><p>扭曲工具移动像素的同时，可能会导致产生空白区域，这些区域没任何颜色信息，需要给这些空白像素分配颜色：</p>
+<ul class="simple">
 <li><p>无：填充透明，需要有alpha图层。</p></li>
 <li><p>固定：使用附近的像素的颜色进行填充。</p></li>
 <li><p>循环：重复填充，例如像素从右边移出时导致左边产生空白像素，那么左边空白像素就用右边像素的颜色填充。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>高质量预览：预览效果并不是完全的真实图像，其效果质量并不高；勾选此项后，预览质量更高，但速度会变慢。</p></li>
 <li><p>实时预览：<em>等待后续更新</em></p></li>
 <li><p>笔廓：<em>等待后续更新</em></p></li>
 <li><p>动画：</p>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>帧：设置动画的帧数。</p></li>
 <li><p>创建动画：点击后会创建一个新的图像，其中图层数量是上面设置的帧数，您可以把这个新图像导出成GIF动画。(导出时记得勾选“As animation”)</p></li>
 </ul>
+</div></blockquote>
 </li>
-</ul>
+</ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -170,7 +194,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

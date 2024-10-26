@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3D变换工具 3D Transform Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>3D变换工具 3D Transform Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">3D变换工具 <em>3D Transform Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,92 +98,109 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="d-3d-transform-tool">
-<span id="gimp-tool-transform-3d"></span><h1>3D变换工具 <em>3D Transform Tool</em><a class="headerlink" href="#d-3d-transform-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="d-3d-transform-tool">
+<span id="gimp-tool-transform-3d"></span><h1>3D变换工具 <em>3D Transform Tool</em><a class="headerlink" href="#d-3d-transform-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">Shift</span>+<span class="guilabel">W</span></p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/17transform-3d.png" src="../../_images/17transform-3d.png" />
-<p class="caption"><span class="caption-text">3D变换工具及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>3D变换工具( <a class="reference internal" href="../../_images/gimp-tool-transform-3d.svg"><img alt="gimp-tool-transform-3d" class="align-middle" height="20" src="../../_images/gimp-tool-transform-3d.svg" width="20" /></a> )可以改变图层、选区、路径、图像的视角，并在三维空间中进行移动。您可以设置消失点的位置，然后在X、Y、Z三个方向上进行变换操作。</p>
+<figcaption>
+<p><span class="caption-text">3D变换工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>3D变换工具( <a class="reference internal" href="../../_images/gimp-tool-transform-3d.svg"><img alt="gimp-tool-transform-3d" class="align-middle" src="../../_images/gimp-tool-transform-3d.svg" style="width: 20px; height: 20px;" /></a> )可以改变图层、选区、路径、图像的视角，并在三维空间中进行移动。您可以设置消失点的位置，然后在X、Y、Z三个方向上进行变换操作。</p>
 <p>选中3D变换工具后，点击图像并拖动鼠标就可以进行变换操作。屏幕上会显示3D变换对话框。</p>
 <blockquote>
-<div><div class="figure align-center" id="id4">
+<div><figure class="align-center" id="id4">
 <img alt="../../_images/17tool-transform-3d-sample.png" src="../../_images/17tool-transform-3d-sample.png" />
-<p class="caption"><span class="caption-text">左边虚线矩形是变换对象，实线框是变换效果；右边是3D变换对话框</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">左边虚线矩形是变换对象，实线框是变换效果；右边是3D变换对话框</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-<p>3D变换工具的操作方法：</p>
+<dl>
+<dt>3D变换工具的操作方法：</dt><dd><p>#.选中3D变换工具，在图像上点击并拖动，效果满意后，点击3D变换对话框中的“变换”按钮，可以应用3D变换(等同于按Enter键)。
+#.透视操作过程中不要切换其它工具，切换其它工具等同于按Enter键应用3D变换。
+#.在3D变换对话框中，有三个选项卡：</p>
 <blockquote>
-<div><p>选中3D变换工具，在图像上点击并拖动，效果满意后，点击3D变换对话框中的“变换”按钮，可以应用3D变换(等同于按Enter键)。</p>
-<p>透视操作过程中不要切换其它工具，切换其它工具等同于按Enter键应用3D变换。</p>
-<p>在 3D变换对话框 中，有三个选项卡：</p>
-<ol class="arabic simple">
-<li><p>消失点：您可以精确设置消失点的坐标，单位默认是像素，可以改为其它单位。</p></li>
-</ol>
+<div><ol class="arabic">
+<li><p>消失点：您可以精确设置消失点的坐标，单位默认是像素，可以改为其它单位。</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>视野: <em>等待后续更新</em></p></li>
-<li><p>角度: <em>等待后续更新</em></p></li>
+<li><p>视野: <em>待更新</em></p></li>
+<li><p>角度: <em>待更新</em></p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="2">
+</li>
 <li><p>位移：您可以分别调整三个轴向的位移，单位默认是像素，可以改为其它单位。</p></li>
 <li><p>角度：您可以分别调整三个轴向的旋转；并且，可以在右侧的九点坐标图上选择固定的旋转中心。</p></li>
 </ol>
 </div></blockquote>
-<div class="section" id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<div class="line-block">
+</dd>
+</dl>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<blockquote>
+<div><div class="line-block">
 <div class="line">执行3D变换操作时，按Ctrl键会切换工具选项中的“Z轴”选项的状态。</div>
 <div class="line">执行3D变换操作时，按Shift键会切换工具选项中的“限制坐标轴”选项的状态。</div>
 <div class="line">执行3D变换操作时，按Alt键会切换工具选项中的“本地帧”选项的状态。</div>
 </div>
-<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱→矩形选择工具→保存选区提示</span></a>)</p>
-</div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<p>这里提供了更多的细节控制。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
-<ul class="simple">
+</div></blockquote>
+<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱⇨矩形选择工具⇨保存选区提示</span></a>)</p>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>这里提供了更多的细节控制。</p>
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
+<ol class="arabic">
 <li><p>变换：<img alt="11trans-target" class="align-middle" src="../../_images/11trans-target.png" /></p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>如果这里激活的是第<strong>一</strong>个按钮，表示变换操作的目标对象是<strong>图层</strong>。这种情况下，您只能对<strong>图层</strong>进行变换操作，选区是无法变换的。</p></li>
 <li><p>如果这里激活的是第<strong>二</strong>个按钮，表示变换操作的目标对象是<strong>选区</strong>。这种情况下，您只能对<strong>选区</strong>进行变换操作，图层是无法变换的。</p></li>
 <li><p>如果这里激活的是第<strong>三</strong>个按钮，表示变换操作的目标对象是<strong>路径</strong>。这种情况下，您只能对<strong>路径</strong>进行变换操作，选区或图层都是无法变换的。</p></li>
 <li><p>如果这里激活的是第<strong>四</strong>个按钮，表示变换操作的目标对象是<strong>整个图像</strong>。这种情况下，您会对<strong>整个图像</strong>进行变换操作，所有可见图层和不可见图层都会被变换。</p></li>
 </ul>
+</div></blockquote>
 </li>
-</ul>
-<ul class="simple">
 <li><p>方向：设置3D变换方向：</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>正常(向前)：按照鼠标操作的方向正常进行3D变换。</p></li>
 <li><p>校正(向后)：反转方向，即3D变换结果与您操作的方向正相反。使用此方式时，建议勾选下面的 显示图像预览。</p></li>
 </ul>
+</div></blockquote>
 </li>
-<li><p>插值：因为图像做了重采样，所以您需要指定算法，不同的算法可能导致结果的质量不同。各个选项的说明，请参考<a class="reference internal" href="../menufile/5image/10scale.html#image-scale-quality"><span class="std std-ref">图像→缩放图像⇒质量</span></a>。</p></li>
+<li><p>插值：因为图像做了重采样，所以您需要指定算法，不同的算法可能导致结果的质量不同。各个选项的说明，请参考<a class="reference internal" href="../menufile/5image/10scale.html#image-scale-quality"><span class="std std-ref">图像⇨缩放图像➡质量</span></a>。</p></li>
 <li><p>剪裁：变换操作可能会导致图像尺寸变大，这里可以决定如何处理变大的尺寸：</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>调整：图层尺寸被放大，以容纳增加的的区域。图层尺寸大于画布尺寸的部分没有删除，只是没显示，您可以移动图层位置来查看。</p></li>
 <li><p>剪裁：图层尺寸不变，超出图层尺寸的内容被删除。</p></li>
 <li><p>剪裁到结果：GIMP会计算变换矩形框内的图像，在变换矩形框范围内，尽可能大的保留一个矩形的图像，其它图像删除；图层边界可能会超出画布边界。</p></li>
 <li><p>按比例剪裁：与 剪裁到结果 类似，但会保持长宽比不变。</p></li>
 </ul>
+</div></blockquote>
 </li>
 <li><p>显示图像预览：勾选此选项后，图像的变换效果可见；不勾选则需要按下Enter键后才可见。</p>
-<ul>
+<blockquote>
+<div><ul>
 <li><p>图像不透明度：设置预览的不透明度。</p></li>
 <li><p>合成预览：图像变换效果的最终效果，等同于按下Enter键后的效果。</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>预览链接的项目：显示所有链接图层的变换处理，而不只是当前选中图层。</p></li>
 <li><p>同步预览：该选项还在测试中。其目的是在改变变换后立即渲染预览。它不会等待鼠标停止移动，而是立即渲染结果。如果GIMP能以足够快的速度渲染一切，这意味着反馈会更流畅。但该选项也会在预览渲染完成前阻止一切操作。这意味着，在图层非常大的情况下，GIMP的响应速度会大大降低。这也是默认禁用该选项的原因。</p></li>
 </ul>
+</div></blockquote>
 </li>
 </ul>
+</div></blockquote>
 </li>
 <li><p>参考线：在选区中显示的参考线类型：</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>无参考线：不使用参考线。</p></li>
 <li><p>中间线：一条垂直中心线和一条水平中心线，相互交叉。</p></li>
 <li><p>三分构图法：添加两条等距水平线和两条等距垂直线，将变换区域横向和纵向都三等分，整个图像九等分。</p></li>
@@ -185,21 +210,25 @@
 <li><p>线的数量：类似 三分构图法 和 五分构图法。“线的数量”为2时，等同于三分构图法；“线的数量”为4时，等同于五分构图法；以此类推。</p></li>
 <li><p>线的间距：按指定间距放置参考线，间距值单位为像素；间距值无法取整时，会取近似值，以确保等间距。</p></li>
 </ul>
+</div></blockquote>
 </li>
 <li><p>统一交互：勾选后，可以操作消失点、位移、角度，不需要在3D变换对话框中三个选项卡间来回切换。</p></li>
 <li><p>限制坐标轴(Shift)：勾选后，当前坐标轴在预览中会被固定。</p></li>
 <li><p>Z轴(Ctrl)：勾选后，会围绕Z轴进行变换。</p></li>
 <li><p>本地帧(Alt)： 此选项的说明等待更新。</p></li>
-</ul>
+</ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -212,7 +241,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

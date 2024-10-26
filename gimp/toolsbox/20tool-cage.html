@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>框架变换工具 Cage Transform</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>框架变换工具 Cage Transform</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">框架变换工具 <em>Cage Transform</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,43 +98,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="cage-transform">
-<span id="gimp-tool-cage"></span><h1>框架变换工具 <em>Cage Transform</em><a class="headerlink" href="#cage-transform" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="cage-transform">
+<span id="gimp-tool-cage"></span><h1>框架变换工具 <em>Cage Transform</em><a class="headerlink" href="#cage-transform" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">Shift</span>+<span class="guilabel">G</span></p>
-<div class="figure align-center" id="id2">
+<figure class="align-center" id="id2">
 <img alt="../../_images/20tool-cage.png" src="../../_images/20tool-cage.png" />
-<p class="caption"><span class="caption-text">框架变换工具及其工具选项</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
-</div>
-<p>框架变换工具( <a class="reference internal" href="../../_images/gimp-tool-cage.svg"><img alt="gimp-tool-cage" class="align-middle" height="20" src="../../_images/gimp-tool-cage.svg" width="20" /></a> )可以用锚点手动指定一个任意区域，然后对此区域进行变形处理。</p>
-<p>选中 框架变换工具后，在图像上的目标周围点击创建锚点，直到最后的锚点与第一个锚点链接后，就可以开始拖动某个锚点来开始变换。因为没有变换对话框，所以操作过程中需要结合工具选项中的三个参数来进行操作。</p>
-<p>框架变换工具的操作方法：</p>
-<blockquote>
-<div><ol class="arabic simple">
+<figcaption>
+<p><span class="caption-text">框架变换工具及其工具选项</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>框架变换工具( <a class="reference internal" href="../../_images/gimp-tool-cage.svg"><img alt="gimp-tool-cage" class="align-middle" src="../../_images/gimp-tool-cage.svg" style="width: 20px; height: 20px;" /></a> )可以用锚点手动指定一个任意区域，然后对此区域进行变形处理。</p>
+<p>选中框架变换工具后，在图像上的目标周围点击创建锚点，直到最后的锚点与第一个锚点链接后，就可以开始拖动某个锚点来开始变换。因为没有变换对话框，所以操作过程中需要结合工具选项中的三个参数来进行操作。</p>
+<dl class="simple">
+<dt>框架变换工具的操作方法：</dt><dd><ol class="arabic simple">
 <li><p>创建变换框架：选中工具箱中的 框架变换工具 后(此时工具选项中被选择的条目会变成<strong>创建或调整框架</strong>)，在图像上的目标周围点击创建锚点，多个锚点把目标完全包围后，闭合框架(点击第一个锚点，使最后的锚点与最初的锚点连接)；</p></li>
 <li><p>调整变换框架：创建好的变换框架，如果不满意，可以调整。调整前，请确保工具选项中被选择的条目是<strong>创建或调整框架</strong>；默认情况下，一旦变换框架闭合(最后的锚点与第一个锚点产生连接)，工具选项就会自动切换到<strong>变换框架以变换图像</strong>；</p></li>
 <li><p>变换图像：变换框架创建好以后，就可以开始进行变换操作，方法是拖动某个锚点，每一次拖动都是一次变换操作。变换前，请确保工具选项中被选择的条目是<strong>变换框架以变换图像</strong>；</p></li>
 <li><p>决定是否填充变换产生的空白：在变换过程中，可能会出现空白区域，勾选<strong>用一种颜色填充框架的原始位置</strong>选项，会使用框起始点像素相近的颜色填充空白。如果不勾选，则空白区域会显示原有的像素。</p></li>
 <li><p>结束变换：按Enter键应用变换。(变换操作过程中不要切换其它工具，切换其它工具等同于按Enter键应用变换)</p></li>
 </ol>
-</div></blockquote>
-<div class="section" id="id1">
-<h2>工具选项<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<p>这里的选项用来限制您操作的目的，是为了配合您使用工具，所以操作过程中请随时关注这里三个选项的激活状态。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
+</dd>
+</dl>
+<section id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>这里的选项用来限制您操作的目的，是为了配合您使用工具，所以操作过程中请随时关注这里三个选项的激活状态。</p>
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
 <ol class="arabic simple">
 <li><p>创建或调整框架：激活此项时，您只能对框架本身(即变换范围)进行处理，不能变换图像；</p></li>
 <li><p>变换框架以变换图像：激活此项时，您无法再修改框架本身(即变换范围)，所有操作都会使图像发生变形；</p></li>
 <li><p>用一种颜色填充框架的原始位置：勾选后，会使用框架起始点近似的颜色填充变换过程中产生的空白区域；不勾选的话，会显示原有的像素。</p></li>
 </ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -139,7 +153,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

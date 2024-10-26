@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>开源有什么问题</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>开源有什么问题</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -90,64 +98,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="oss-problem">
-<span id="id1"></span><h1>开源有什么问题<a class="headerlink" href="#oss-problem" title="永久链接至标题"></a></h1>
-<div class="section" id="id2">
-<h2>1. 开源软件开发和应用，需要注意安全问题。<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<p>现在的软件开发，多数是在“搭积木”：找到能实现目标功能的相关开源模块，然后把这些模块组织在一起，就是一个应用程序了。至于开源相关模块的安全性，基本上没什么人会去认真审查，或者没有能力审查。</p>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="oss-problem">
+<span id="id1"></span><h1>开源有什么问题<a class="headerlink" href="#oss-problem" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>1. 开源软件开发和应用，需要注意安全问题。<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>现在的软件开发，多数是在搭积木：找到能实现目标功能的相关开源模块，然后把这些模块组织在一起，就是一个应用程序了。至于开源相关模块的安全性，基本上没什么人会去认真审查，或者没有能力审查。</p>
 <p>这种情况下，一些敏感的数据或者应用，在选择软件开发团队的时候，就要对安全性做必要的评估和慎重选择。</p>
 <p>例如，Ant Design圣诞节彩蛋事件，此事件已经过去，但需要思考，就是开源产品对上游依赖的审查问题，目前是不完全到位的，更多的，是仅依靠信任，这个问题比较麻烦，暂时还没有特别有效的方案，需要继续研究。事实是，企业更注重盈利，而在代码审查上没有投入，或者无法承担相应的投入。</p>
 <dl class="simple">
 <dt>只有原始开发者才最清楚代码有什么缺陷：</dt><dd><p>因为中国主要是搭积木的方式来开发软件，比如自动驾驶。这种情况下，我们使用了开源的基础模块搭建出自动驾驶程序，之后开始应用，并寄希望于机器学习。但开发那些基础模块的开发者会比较清楚其模块的应用范围/限制是什么，缺点是什么，甚至有问题的极端情况是什么。而此类问题对于搭积木的开发人员来说，很可能是盲区。上面都是假设推理，但如果不幸成真，那么会有什么后果大家都很清楚。所以，如果涉及安全，尤其是普通民众生命安全的项目，对于开源的使用，需要慎重再慎重。</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="id3">
-<h2>2. 开源应用与开源消费的推广<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</section>
+<section id="id3">
+<h2>2. 开源应用与开源消费的推广<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>未推广的一个原因是缺乏教材，比如Linux操作系统教材。国内现有的Linux操作系统教材都是面向专业运维的，没有面向普通办公/家用的。专业运维与普通办公家用是完全不同的两个体系，尤其是Linux系统，本身具备运维特征，很容易被混淆，普通用户拿专业运维的书当教程，结果就是Linux即不好学也不好用，完全没法和Windows相比。(驿窗的《Linux入门指南》已经上线，专门解决这个问题)</p>
 <p>关于消费推广的一个方案，是强制供应商采用开源工具来开发指定的软件/应用。比如做一个线上的购物网站，可能要用到图片处理软件，默认都用photoshop。那么，是否可以强制使用gimp，或者使用gimp者优先？从功能上来说是没有问题的，因为网络图像的处理，gimp完全可以胜任，无非是会不会而已。如果替代，那么一是省钱，二是扩大应用范围，怎么看都是得利的结果。</p>
-</div>
-<div class="section" id="id4">
-<h2>3. 因为资金问题，所以，开源有不可持续的风险<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+</section>
+<section id="id4">
+<h2>3. 因为资金问题，所以，开源有不可持续的风险<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>开源项目盈利非常难。</p>
-<p>能盈利是最好的，但如果不能盈利，是否就不去促进？这要看怎么去定义开源。对于国家和社会来说，道路和桥梁基本上是不盈利的(收费道路除外)，但因为道路和桥梁是基础设施，所以，政府会出钱解决。那么，开源项目是否是今后的基础，或者，有没有哪些开源项目是今后的基础？这需要讨论和研究，如果是，那么就需要政府投入。对于某一些具体的项目，可以半投入，比如投入少量的资金，使其可以“存活”，只要存在，就有可能。</p>
+<p>能盈利是最好的，但如果不能盈利，是否就不去促进？这要看怎么去定义开源。对于国家和社会来说，道路和桥梁基本上是不盈利的(收费道路除外)，但因为道路和桥梁是基础设施，所以，政府会出钱解决。那么，开源项目是否是今后的基础，或者，有没有哪些开源项目是今后的基础？这需要讨论和研究，如果是，那么就需要政府投入。对于某一些具体的项目，可以半投入，比如投入少量的资金，使其可以存活，只要存在，就有无限可能。</p>
 <p>所以，我们需要选择，对于不盈利的开源项目，一方面确定是否有必要投入及投入额度，另一方面主动帮助开源项目寻找盈利点，以支撑其可持续发展。比如允许自主出版/印刷/销售项目相关的书籍，而不是去买书号，书号太贵了。对于盈利的开源项目，尤其是基础类项目，帮助宣传和推广，使其发展更好。</p>
 <p>政府可以出面制定基础开源清单，罗列那些当下应该发展的基础开源项目：基础类教程，如gimp、git、inkscape、linux系统等。(基础开源项目，未必是代码开发类的，也有知识共享类的)</p>
-</div>
-<div class="section" id="id5">
-<h2>4. 因为版权保护法律与机制的健全问题，开源产品有被盗窃的风险。<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
-</div>
-<div class="section" id="id6">
-<h2>5. 企业主导的开源软件需要另外考量。<a class="headerlink" href="#id6" title="永久链接至标题"></a></h2>
-<p>因为垄断需求，所以企业主导的开源产品“越来越不可信”，典型的就是chromium，里面太多的倾向于google公司的代码很难清除干净。</p>
+</section>
+<section id="id5">
+<h2>4. 因为版权保护法律与机制的健全问题，开源产品有被盗窃的风险。<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+</section>
+<section id="id6">
+<h2>5. 企业主导的开源软件需要另外考量。<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p>因为垄断需求，所以很多企业主导的开源产品越来越不可信，典型的就是chromium，里面太多的倾向于google公司的代码很难清除干净。</p>
 <p>如果你使用纯商业公司的开源软件，后续就有可能被商业公司的商业意图所局限，导致失去一些方便的功能，甚至重要的功能，然后，你不得不寻找其它替代，甚至放弃当前使用的开源软件。这里有几个成本，一个是学习成本，您需要长时间的学习新产品，原来的学习成果被严重浪费； 二个是习惯成本，您已经习惯的东西不存在了，需要重新养成新习惯； 三个是迁移成本，您需要把当前产品下的很多内容在新产品上实现，简单迁移还好，如果新产品没有完全一模一样的功能，那么您就需要增加更多的迁移成本。另外，还有一些重要的应用层面的问题，比如您的某个生产工作依赖此开源产品的某个功能，那么，功能没有了之后，相应的生产也会受影响。</p>
 <p>多说一句。国内有一些网站之前是只支持IE浏览器，现在IE没了，所以开始支持chromium浏览器，但不支持firefox浏览器。想一想，这样下去，如果哪一天firefox消失了，google会不会把chromium变成更具垄断性的产品，甚至修改开源协议，直接变成闭源产品？未来会如何无法确定，但中国在考虑现在支持啊一种浏览器时，不能不长远打算。</p>
 <p>开源软件缺乏售后服务/商业服务：</p>
 <p>售后服务/商业服务这一条，当下是一个很关键问题。很多公司在做软件供应商选择的决策时，总是对商业售后服务情有独钟。这在某些方向是有其道理的，尤其是商业公司在选择开源软件与商业软件时，必需要考虑责任的问题，即软件出了问题到哪里去找责任人。而责任制是现代企业架构的基础，没有责任制企业将无法生存，所以，企业确实需要思考和权衡。</p>
-<p>有一个参考是，我们在界定责任时，是否有可以参考的内部流程，来避免责任不清楚导致的开源选择困难问题。软件的商业服务对于企业责任制的优势，实际上在真实应用中体现的并不如想象那么重要，比如，windows出了个问题，公司得到了什么商业服务？Linux出了问题，公司少得到了什么服务？二者完全一致，都是等补丁。所以，我们需要重新思考软件的商业服务的真实意义所在。目前看来，象征性的责任意义，远大于现实的成本意义。这主要是由软件的“非实体”特性所决定。如果把软件换成一台生产线上的机器，那就完全不是一回事，因为机器设备所需要的商业服务，目前一定是传统的商业售后服务，而软件不同。我们的脑海中仍然把商业服务固化在实体商品上，还没有完全适应“非实体”的纯软件产品，这个区别，研究仍在进行中，期待的结果是，能够为所有企业提供一个可以施行的“纯软件非实体责任制度”参考，以方便企业选择供应商时，可以很容易地把开源软件纳入采购范围。</p>
+<p>有一个参考是，我们在界定责任时，是否有可以参考的内部流程，来避免责任不清楚导致的开源选择困难问题。软件的商业服务对于企业责任制的优势，实际上在真实应用中体现的并不如想象那么重要，比如，windows出了个问题，公司得到了什么商业服务？Linux出了问题，公司少得到了什么服务？二者完全一致，都是等补丁。所以，我们需要重新思考软件的商业服务的真实意义所在。目前看来，象征性的责任意义，远大于现实的成本意义。这主要是由软件的非实体特性所决定。如果把软件换成一台生产线上的机器，那就完全不是一回事，因为机器设备所需要的商业服务，目前一定是传统的商业售后服务，而软件不同。我们的脑海中仍然把商业服务固化在实体商品上，还没有完全适应非实体的纯软件产品，这个区别，研究仍在进行中，期待的结果是，能够为所有企业提供一个可以施行的<span class="dash6">纯软件非实体责任制度</span>参考，以方便企业选择供应商时，可以很容易地把开源软件纳入采购范围。</p>
 <p>另一个参考是，国外有很多企业，专门对开源软件提供商业性服务。比如Debian，Debian自己不提供商业服务，但有很多第三方公司却提供Debian商业服务合同。又比如LibreOffice，也有很多第三方公司提供商业服务。目前国内这样的第三方商业服务市场还处于未开发状态，也没有应用，原因主要与环境有关，需要研究和探索可靠的模式。但在未来，这是一个非常大的市场，也是一个非常有吸引力的市场，因为开源软件的继续发展与壮大的趋势是必然的，企业应用开源产品达到一定规模后，那么势必会有商业服务的需求，然后也就必然会有相应的第三方商业服务公司出现。</p>
 <div class="line-block">
 <div class="line">开发进度相对不可控</div>
 <div class="line">项目生存周期：主要是钱的问题。这个需要探索，驿窗已经公布的驿窗301条款就是探索的一个应用尝试。</div>
 </div>
-</div>
-<div class="section" id="id7">
-<h2>6. 开源软件的企业品质更重要<a class="headerlink" href="#id7" title="永久链接至标题"></a></h2>
+</section>
+<section id="id7">
+<h2>6. 开源软件的企业品质更重要<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>比如libreoffice热衷于兼容ms office，但实际上ms自己都可能不兼容，所以兼容工作的结果就是，libreoffice没办法在生产环境中使用。</p>
 <p>与其开发更多的功能，不如让现有的功能更稳定和更可靠，这样才能让使用者放心。</p>
-</div>
-<div class="section" id="id8">
-<h2>纯商业公司开源产品的问题<a class="headerlink" href="#id8" title="永久链接至标题"></a></h2>
+</section>
+<section id="id8">
+<h2>纯商业公司开源产品的问题<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <p>比如这个：从三月初起 Chromium 将失去同步支持(<a class="reference external" href="https://www.archlinuxcn.org/chromium-losing-sync-support-in-early-march/">https://www.archlinuxcn.org/chromium-losing-sync-support-in-early-march/</a>)</p>
 <p>Google 已经发出通知说他们将从3月15日起禁止除了 Chrome 以外的所有浏览器访问 Google 的一些功能（比如 Google sync）。这一来自 Google 的变化将较早影响 Arch 的 chromium 包，从3月2日起，预计会在 Chromium 89 发布之后。</p>
 <p>我们已经确定 数据同步（data sync） 会停止工作（密码、书签、等）。其它特性比如定位（geolocation）或者增强的拼写检查（enhanced spell check）可能可以继续工作一段时间。访问 Google Drive 的浏览器扩展也可能受影响，以及 LibreOffice 可能将失去存储文档到那儿(Google Drive)的能力。</p>
 <p>其他发行版比如 openSUSE 和 Fedora 已经在他们的 Chromium 88 软件包中移除了将要被限制功能的 API key 。Fedora 的升级建议中详细描述了关于这个变化的观点，我还发现 Hackaday 的 这篇文章也可供参考。</p>
-</div>
-<div class="section" id="id9">
-<h2>未来，基础开源模块的代码审核必然是一个需要解决的重要问题<a class="headerlink" href="#id9" title="永久链接至标题"></a></h2>
+</section>
+<section id="id9">
+<h2>未来，基础开源模块的代码审核必然是一个需要解决的重要问题<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <p><em>未完稿</em></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -160,7 +168,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

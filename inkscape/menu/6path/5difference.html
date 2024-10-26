@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>路径→差集</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>⇨差集 Difference</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="路径→交集" href="6intersection.html" />
-    <link rel="prev" title="路径→并集" href="4union.html" /> 
+    <link rel="next" title="⇨交集 Intersection" href="6intersection.html" />
+    <link rel="prev" title="⇨并集 Union" href="4union.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,37 +85,46 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../inkscape-menu.html">Inkscape菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../inkscape-menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../6path.html">路径</a></li>
-      <li class="breadcrumb-item active">路径→差集</li>
+      <li class="breadcrumb-item active">⇨差集 <span class="i070">Difference</span></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="4union.html" class="btn btn-neutral float-left" title="路径→并集" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="6intersection.html" class="btn btn-neutral float-right" title="路径→交集" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="4union.html" class="btn btn-neutral float-left" title="⇨并集 Union" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="6intersection.html" class="btn btn-neutral float-right" title="⇨交集 Intersection" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="inkscape-menu-path-5difference">
-<span id="id1"></span><h1>路径→差集<a class="headerlink" href="#inkscape-menu-path-5difference" title="永久链接至标题"></a></h1>
-<p>快捷键：<strong>Ctrl</strong>+<strong>-</strong></p>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="difference">
+<span id="inkscape-menu-path-5difference"></span><h1>⇨差集 <span class="i070">Difference</span><a class="headerlink" href="#difference" title="Link to this heading"></a></h1>
+<p>快捷键： <span class="guilabel">Ctrl</span>+<span class="guilabel">-</span></p>
+<p>此命令等同于数学概念上的差集概念。同时选中两个路径对象然后使用此命令，可以得到这两个对象的差集结果。</p>
+<p>计算逻辑是，在 <span class="d60c0n">z</span> 方向上，以最底层的对象为基准，减去上面的其它对象，填充和描边则由最底层的对象决定。</p>
+<p>如果一次计算超过两个对象，比如四个或五个对象，那么计算结果不可预测，所以，请<span class="dash6">在使用差集命令时，请仅计算两个对象，不要计算其它数量的对象</span>。</p>
+<blockquote>
+<div><div class="admonition-d60d0n-z admonition">
+<p class="admonition-title">驿窗注： <span class="d60d0n">z</span> 方向</p>
+<p>我们通常使用的数学坐标系，是 <span class="d60c0n">x</span> 方向和 <span class="d60c0n">y</span> 方向；垂直于整个坐标平面的方向则为 <span class="d60c0n">z</span> 方向。或者，我们可以用层的方式来理解 <span class="d60c0n">z</span> 方向，不同的层其实就是对象在 <span class="d60c0n">z</span> 方向上的不同位置。</p>
 </div>
+</div></blockquote>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="4union.html" class="btn btn-neutral float-left" title="路径→并集" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="6intersection.html" class="btn btn-neutral float-right" title="路径→交集" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="4union.html" class="btn btn-neutral float-left" title="⇨并集 Union" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="6intersection.html" class="btn btn-neutral float-right" title="⇨交集 Intersection" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

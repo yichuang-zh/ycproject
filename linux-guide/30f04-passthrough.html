@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux大型游戏方案&amp;&amp;显卡直通</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>Linux大型游戏方案&amp;&amp;显卡直通</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -89,8 +97,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="linux">
-<span id="f04-passthrough"></span><h1>Linux大型游戏方案&amp;&amp;显卡直通<a class="headerlink" href="#linux" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="linux">
+<span id="f04-passthrough"></span><h1>Linux大型游戏方案&amp;&amp;显卡直通<a class="headerlink" href="#linux" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>在网络上能够搜索到的资料，对于Linux大型3D游戏的建议，多数都是显卡直通方案，即在Linux中安装Windows虚拟机，通过一系列操作设置把显卡单独给虚拟机使用。</p>
@@ -109,8 +117,8 @@
 <dt>先说结论：</dt><dd><p>如果是玩游戏，比如Steam游戏，建议安装Linux+Windows双系统，简单省事没隐患。在Linux系统中直接安装Steam玩游戏的问题和隐患，请参考后面说明。</p>
 </dd>
 </dl>
-<div class="section" id="id1">
-<h2>一、显卡直通<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>一、显卡直通<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>我们先说说显卡直通。</p>
 <p>显卡直通在技术实现上有两种方式，一是单显卡直通，二是双显卡直通。</p>
 <p>技术实现上相对容易一点的，是双显卡直通，即电脑上有两个显卡，其中一个直通给Windows虚拟机使用，另一个主机使用。这种情况下，Windows虚拟机启动后，Linux主机仍然可以操作和使用。这种方式需要电脑上有两个显卡，进一步可能还需要两套键盘鼠标，相对费钱，但相对单显卡直通在技术实现上会比较省事一些。</p>
@@ -118,12 +126,12 @@
 <p>无论双显卡直通还是单显卡直通，对于一般水平的Linux用户，第一次配置时，一次就成功的概率不高，甚至可能需要花上几天的业余时间才行。而熟练了以后，可能30分钟时间就完成了。主要问题在于，显卡直通涉及到一些平时办公家用很少用到的Linux操作，而用户在没有完全理解这些操作原理的情况下，只能照抄教程；而教程适用的环境与用户自己的系统环境有可能会存在差异，这些差异导致用户初次配置显卡直通时需要反复多次尝试。</p>
 <p>研究下那些显卡直通的教程就会发现，显卡直通所涉及的操作其实不是特别复杂，技术相对比较简单，但真正理解的话，就需要一些知识背景，否则就只能照抄，很难达到<span class="dash6">自行维护Linux</span>的水平。</p>
 <p>理论上，对于开发者来说，完全可以把显卡直通这个功能做成一个在linux系统中随时可以一键安装或删除的功能，结果就像apt install命令一样，安装一个显卡直通包就行了。之所以还没有实现，驿窗推测大概率是因为，显卡直通应用还是属于小众，有点发烧的性质，缺少特别具体或者不可或缺的应用场景，所以没人开发。好消息是，已经有人注意到这个问题，并开始计划处理，但什么时候能够实现则很难确定。</p>
-</div>
-<div class="section" id="id2">
-<h2>二、非显卡直通<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+</section>
+<section id="id2">
+<h2>二、非显卡直通<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>接下来我们看一下显卡直通以外的方案，主要有两个，一个是双系统，包括Win To Go；另一个是直接在Linux系统中安装steam。</p>
-<div class="section" id="win-to-go">
-<h3>2.1 双系统及Win To Go<a class="headerlink" href="#win-to-go" title="永久链接至标题"></a></h3>
+<section id="win-to-go">
+<h3>2.1 双系统及Win To Go<a class="headerlink" href="#win-to-go" title="Link to this heading"></a></h3>
 <p>双系统方案相对很容易理解，就是在电脑上同时安装Linux和Windows两个系统，在电脑启动时选择进入哪一个系统。</p>
 <p>Win To Go方案在本质上与双系统类同：插入U盘后重启电脑，从Linux系统切换到U盘Windows系统。</p>
 <p>双系统与Win To Go的区别在于，双系统方案是引导电脑里安装的Windows系统，Win To Go方案是引导U盘里安装的Windows系统。</p>
@@ -146,7 +154,7 @@
 <ol class="arabic">
 <li><p>debian主机中用virt-manager安装win10虚拟机。</p></li>
 <li><p>准备好rufus和win10.iso，放到win10虚拟机里。</p></li>
-<li><p>debian主机插上U盘(不挂载)，在win10虚拟机界面点击菜单<span class="dash6">虚拟&gt;重定向USB设备</span>，勾选插入的U盘，再点击<span class="dash6">关闭</span>。</p></li>
+<li><p>debian主机插上U盘(不挂载)，在win10虚拟机界面点击菜单<span class="dash6">虚拟⇨重定向USB设备</span>，勾选插入的U盘，再点击<span class="dash6">关闭</span>。</p></li>
 <li><p>在win10虚拟机里，按常规方法用rufus制作启动U盘:</p>
 <div class="line-block">
 <div class="line">4.1. win10虚拟机里启动rufus。</div>
@@ -195,9 +203,9 @@
 </div></blockquote>
 </dd>
 </dl>
-</div>
-<div class="section" id="linuxsteam">
-<h3>2.2 Linux系统中安装Steam<a class="headerlink" href="#linuxsteam" title="永久链接至标题"></a></h3>
+</section>
+<section id="linuxsteam">
+<h3>2.2 Linux系统中安装Steam<a class="headerlink" href="#linuxsteam" title="Link to this heading"></a></h3>
 <p>在Linux系统中可以直接安装Steam，然后通过Steam运行游戏，比如csgo2，驿窗的测试结果是，Debian12.4可以成功运行csgo2。</p>
 <p>不过请注意，这种方法并不是绝对可行，原因如下：</p>
 <ol class="arabic">
@@ -216,9 +224,9 @@
 <li><p>结论：当前Linux中安装Steam的方式，可以体验。如果您只是偶尔娱乐打发时间，那么基本没问题。如果你经常玩3D游戏，特别是专业玩家，那么驿窗暂时不推荐，建议Linux+Windows双系统，用Windows系统来体验游戏：无后顾之忧啊。</p></li>
 </ol>
 <p><em>最近一次更新：2024-06-15</em></p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -231,7 +239,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

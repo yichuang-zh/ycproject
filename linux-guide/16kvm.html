@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>虚拟机virt-manager</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>虚拟机virt-manager</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -89,8 +97,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="virt-manager">
-<span id="kvm"></span><h1>虚拟机virt-manager<a class="headerlink" href="#virt-manager" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="virt-manager">
+<span id="kvm"></span><h1>虚拟机virt-manager<a class="headerlink" href="#virt-manager" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <ol class="arabic simple">
@@ -116,8 +124,8 @@
 <p>延伸一下，您可以定制一个自己的专用系统，比如专门的股票交易虚拟机，里面没有浏览器，没有中文输入法，就只有一个股票交易软件，其它软件连装都没装，安全程度就更高。另外也可以定制一个系统装QQ、微信等社交工具，这样即使社交软件有漏洞，也不会影响主机系统。</p>
 <p>如果内存足够大，可以把虚拟机放在内存里运行，这样还可以减少对硬盘的读写，延长硬盘的使用寿命，尤其现在固态硬盘的广泛使用，而在内存中运行虚拟机则可以很有效地减少硬盘读写。并且，主机关机后虚拟机自然消失，再开机又是全新的状态。这种情况要注意一点，就是虚拟机中的数据要及时保存到主机中，因为主机一关机，虚拟机中的数据就全部丢失。</p>
 <p>另外，如果您对虚拟机了解深入的话，可以安装macOS系统，也可以使用显卡直通技术在虚拟机的windows里安装大型windows游戏，甚至用虚拟机给自己增加一个防火墙系统。</p>
-<div class="section" id="id1">
-<h2>极限安全(虚拟机与防火墙的配合)<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<section id="id1">
+<h2>极限安全(虚拟机与防火墙的配合)<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>防火墙仅开放53出，关闭53入，其它所有端口全部关闭出/入。</p>
 <p>现在对于一台电脑来说，最大的安全问题是浏览器安全，因为浏览器要连接各种网站，并保存各种与安全有关的cookie数据，比如网站登录密码。黑客程序只需要攻破浏览器，那么本机就无任何安全可言。所以，把浏览器与本机安全隔离是一个非常有效的方法。</p>
 <dl class="simple">
@@ -129,9 +137,9 @@
 </ol>
 </dd>
 </dl>
-</div>
-<div class="section" id="kvm-safe-super-problem">
-<span id="id2"></span><h2>极限安全策略的问题<a class="headerlink" href="#kvm-safe-super-problem" title="永久链接至标题"></a></h2>
+</section>
+<section id="kvm-safe-super-problem">
+<span id="id2"></span><h2>极限安全策略的问题<a class="headerlink" href="#kvm-safe-super-problem" title="Link to this heading"></a></h2>
 <p>如果应用了极限的安全策略，那么会有以下情况需要适应：</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -146,8 +154,8 @@
 </dd>
 </dl>
 <p><em>未完稿</em></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -160,7 +168,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

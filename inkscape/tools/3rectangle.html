@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>矩形工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>矩形工具</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="next" title="圆形工具" href="4circle.html" />
-    <link rel="prev" title="形状生成工具" href="3shape_builder.html" /> 
+    <link rel="prev" title="图形生成工具" href="3shape_builder.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,12 +85,12 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../inkscape-tools.html">Inkscape工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../inkscape-tools.html">工具箱</a></li>
       <li class="breadcrumb-item active">矩形工具</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="3shape_builder.html" class="btn btn-neutral float-left" title="形状生成工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="3shape_builder.html" class="btn btn-neutral float-left" title="图形生成工具" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="4circle.html" class="btn btn-neutral float-right" title="圆形工具" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
@@ -90,36 +98,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="tool-rectangle">
-<span id="id1"></span><h1>矩形工具<a class="headerlink" href="#tool-rectangle" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="tool-rectangle">
+<span id="id1"></span><h1>矩形工具<a class="headerlink" href="#tool-rectangle" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：<span class="guilabel">R</span> 或者 <span class="guilabel">F4</span></p>
-<p>矩形工具( <a class="reference internal" href="../../_images/tool-rectangle1.svg"><img alt="tool-rectangle" class="align-middle" height="20" src="../../_images/tool-rectangle1.svg" width="20" /></a> )可以用来画一个矩形或者正方形。矩形或者正方形的四个角可以是直角，也可以是圆角。</p>
-<div class="section" id="id2">
-<h2>操作方法<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>矩形工具( <a class="reference internal" href="../../_images/tool-rectangle.svg"><img alt="tool-rectangle" class="align-middle" src="../../_images/tool-rectangle.svg" style="width: 20px; height: 20px;" /></a> )可以用来画一个矩形或者正方形。矩形或者正方形的四个角可以是直角，也可以是圆角。</p>
+<section id="id2">
+<h2>操作方法<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>画一个矩形</p></li>
 </ol>
 <blockquote>
-<div><p>用鼠标左键点击矩形工具( <a class="reference internal" href="../../_images/tool-rectangle1.svg"><img alt="tool-rectangle" class="align-middle" height="20" src="../../_images/tool-rectangle1.svg" width="20" /></a> )，此时矩形工具被激活，然后鼠标左键在画布上点击并斜向拖动一段距离，然后松开鼠标即可。</p>
+<div><p>用鼠标左键点击矩形工具( <a class="reference internal" href="../../_images/tool-rectangle.svg"><img alt="tool-rectangle" class="align-middle" src="../../_images/tool-rectangle.svg" style="width: 20px; height: 20px;" /></a> )，此时矩形工具被激活，然后鼠标左键在画布上点击并斜向拖动一段距离，然后松开鼠标即可。</p>
 <ol class="loweralpha simple">
 <li><p>如果矩形的四个角不是直角，那么切换到矩形工具并选中矩形，然后把窗口上方矩形工具选项中的Rx和Ry的值改为0即可。</p></li>
 <li><p>如果想给矩形填充颜色，可以选中矩形，然后鼠标左键点击窗口下方的调色板中的一种颜色即可。</p></li>
 <li><p>如果想给矩形描一个带颜色的边，可以选中矩形，然后按住Shift键不松手，然后点击窗口下方的调色板中的一种颜色即可。</p></li>
 <li><p>如果想调整矩形描边的粗细，那么切换到矩形工具并选中矩形，然后鼠标右键点击窗口左下角“描边”字样右侧的数字，选择一个数值即可；</p></li>
 </ol>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id5">
 <img alt="../../_images/03-4.png" src="../../_images/03-4.png" />
-<p class="caption"><span class="caption-text">描边右侧的数字，用来调整描边的宽度</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">描边右侧的数字，用来调整描边的宽度</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="loweralpha simple" start="5">
 <li><p>如果想自定义描边的粗细，可以选中矩形后，鼠标左键双击“描边”字样右侧的数字，然后在窗口右侧的“填充和描边”选项卡中，在“描边样式”的“宽度”数值框中直接输入需要的数值并回车即可。</p></li>
 </ol>
-<div class="figure align-center" id="id6">
+<figure class="align-center" id="id6">
 <img alt="../../_images/03-5.png" src="../../_images/03-5.png" />
-<p class="caption"><span class="caption-text">精确自定义描边的宽度</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">精确自定义描边的宽度</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="loweralpha simple" start="6">
 <li><p>“填充和描边”选项卡中的“填充”和“描边绘制”中的RGB颜色分为RGBA四项，其中A可以用来调整透明度；填充颜色的透明度和描边颜色的透明度可以各自分别调整。</p></li>
 <li><p>如果想精确控制矩形的尺寸，可以切换到矩形工具并选中矩形，然后修改窗口上方的矩形工具选项中的宽和高这两个数值即可。</p></li>
@@ -140,74 +152,82 @@
 <p>填充颜色与描边调整与矩形相同。</p>
 </div></blockquote>
 <ol class="arabic simple" start="4">
-<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer1.svg"><img alt="tool-select" class="align-middle" height="20" src="../../_images/tool-pointer1.svg" width="20" /></a> )，再按空格键则切换回矩形工具。</p></li>
+<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer.svg"><img alt="tool-select" class="align-middle" src="../../_images/tool-pointer.svg" style="width: 20px; height: 20px;" /></a> )，再按空格键则切换回矩形工具。</p></li>
 </ol>
-</div>
-<div class="section" id="id3">
-<h2>工具选项<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
-<ol class="arabic simple">
+</section>
+<section id="id3">
+<h2>工具选项<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic">
 <li><p>( 宽 )：水平方向的宽度，默认单位为毫米。</p></li>
-<li><p>( 高 )：垂直方向的高度，默认单位为毫米。</p></li>
-</ol>
+<li><p>( 高 )：垂直方向的高度，默认单位为毫米。</p>
 <blockquote>
 <div><p>宽和高这两个值可以用来精确调整矩形的尺寸。</p>
 </div></blockquote>
-<ol class="arabic simple" start="3">
-<li><p>( Rx )：水平方向圆角半径。</p></li>
-<li><p>( Ry )：垂直方向圆角半径。</p></li>
+</li>
 </ol>
-<blockquote>
-<div><a class="reference internal image-reference" href="../../_images/03-1.png"><img alt="../../_images/03-1.png" src="../../_images/03-1.png" style="width: 30%;" /></a>
+<ol class="arabic" start="3">
+<li><p>( Rx )：水平方向圆角半径。</p></li>
+<li><p>( Ry )：垂直方向圆角半径。</p>
+<a class="reference internal image-reference" href="../../_images/03-1.png"><img alt="../../_images/03-1.png" src="../../_images/03-1.png" style="width: 30%;" /></a>
 <a class="reference internal image-reference" href="../../_images/03-2.png"><img alt="../../_images/03-2.png" src="../../_images/03-2.png" style="width: 30%;" /></a>
 <a class="reference internal image-reference" href="../../_images/03-3.png"><img alt="../../_images/03-3.png" src="../../_images/03-3.png" style="width: 30%;" /></a>
 <p>(点击可以看大图)</p>
-<ol class="loweralpha simple">
+<ul class="simple">
 <li><p>圆角矩形的圆角其实就是可以与圆或椭圆完美相切(重合)的角。</p></li>
 <li><p>如果Rx=Ry，那么矩形的圆角就是一个正圆形的四分之一边。</p></li>
 <li><p>如果Rx≠Ry，那么矩形的圆角就是一个椭圆形的四分之一边。</p></li>
+</ul>
+</li>
 </ol>
-</div></blockquote>
 <ol class="arabic simple" start="5">
 <li><p>( mm )：数值的度量单位，毫米；可以修改为其它单位，比如cm或者px。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/3to-sharp.svg"><img alt="3to-sharp" class="align-middle" height="20" src="../../_images/3to-sharp.svg" width="20" /></a> )：矩形的圆角改为直角。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/3to-sharp.svg"><img alt="3to-sharp" class="align-middle" src="../../_images/3to-sharp.svg" style="width: 20px; height: 20px;" /></a> )：矩形的圆角改为直角。</p></li>
 </ol>
 <blockquote>
 <div><p>这个工具可以把圆角矩形改为直角矩形：选中矩形后，切换到矩形工具，然后点击上方工具选项里的这个按钮就可以把矩形的圆角转换为直角。</p>
 </div></blockquote>
-</div>
-<div class="section" id="id4">
-<h2>手柄<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
-<div class="line-block">
+</div></blockquote>
+</section>
+<section id="id4">
+<h2>手柄<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<blockquote>
+<div><div class="line-block">
 <div class="line">短形有4个手柄：其中两个手柄可以对矩形进行缩放操作，另外两个手柄可以调整矩形的圆角半径(分别控制Rx和Ry)。</div>
 <div class="line">矩形的手柄如下图所示：</div>
 </div>
 <blockquote>
-<div><div class="figure align-center" id="id7">
+<div><figure class="align-center" id="id7">
 <img alt="../../_images/03-6.png" src="../../_images/03-6.png" />
-<p class="caption"><span class="caption-text">矩形的 4个手柄</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">矩形的 4个手柄</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>说明如下：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>手柄有两种形状，一种是小正方形，另一种是小圆形。</p></li>
 <li><p>方形手柄用来调整矩形的尺寸；圆形手柄用来调整矩形的圆角半径。</p></li>
-<li><p>上面左图只显示了一个圆形手柄，原因是Rx=0且Ry=0导致两个圆形手柄重合；可以用矩形工具( <a class="reference internal" href="../../_images/tool-rectangle1.svg"><img alt="tool-rectangle" class="align-middle" height="20" src="../../_images/tool-rectangle1.svg" width="20" /></a> )点击并拖动这个圆形手柄，就可以看到两个手柄分开。</p></li>
+<li><p>上面左图只显示了一个圆形手柄，原因是Rx=0且Ry=0导致两个圆形手柄重合；可以用矩形工具( <a class="reference internal" href="../../_images/tool-rectangle.svg"><img alt="tool-rectangle" class="align-middle" src="../../_images/tool-rectangle.svg" style="width: 20px; height: 20px;" /></a> )点击并拖动这个圆形手柄，就可以看到两个手柄分开。</p></li>
 </ol>
-</div>
-</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="3shape_builder.html" class="btn btn-neutral float-left" title="形状生成工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="3shape_builder.html" class="btn btn-neutral float-left" title="图形生成工具" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="4circle.html" class="btn btn-neutral float-right" title="圆形工具" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

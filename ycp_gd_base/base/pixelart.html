@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. 像素画 pixel art</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="7. HSV HSL RGB" href="7hsv.html" />
+    <link rel="prev" title="5. CMYK 与 RGB" href="5cmyk_rgb.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inkscape/inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../ycp_base.html">驿窗平面基础</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">6. </span>像素画 <em>pixel art</em></li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="5cmyk_rgb.html" class="btn btn-neutral float-left" title="5. CMYK 与 RGB" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="7hsv.html" class="btn btn-neutral float-right" title="7. HSV HSL RGB" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="pixel-art">
+<span id="id1"></span><h1><span class="section-number">6. </span>像素画 <em>pixel art</em><a class="headerlink" href="#pixel-art" title="Link to this heading"></a></h1>
+<p>像素画有时也叫作像素艺术、像素图，英文原文是pixel art。它有点类似于马赛克或者十字绣，即一幅由多个小方块组成的图像。</p>
+<p>在计算机发展的早期，比如1990年代以前，那个时候显示器的分辨率及显示运算能力都比较低，能使用的工具软件也受限制，导致当时无法处理较多的颜色，所以只能用色块来组合成需要的图片，图片看起来是很明显的色块组合。典型的产品是街机游戏和卡带游戏，其图像显示有明显的方块组合特征：有限的颜色数量、4位的色深等等。</p>
+<p>那个年代的图像作品，现在称之为pixel art，但当时并不叫pixel art，只是因为软硬件技术的局限，不得不把图像处理成方块组合。用方块组合来呈现图像效果，有助于提高处理速度和提高用户体验，比如街机。</p>
+<p>现在我们可以认为pixel art已经过时了，但目前仍然有一部分作品或游戏还在采用pixel art类似的形式，我们可以称之为<span class="dash6">复古</span>或者<span class="dash6">怀旧</span>。或者，从商业角度看，目前还要使用pixel art类似的形式，可以理解为差异化，比如在游戏市场中找到一个有差异化特点的卖点来吸引玩家。</p>
+<p>国外有一些团体对于pixel art的定义比较严格，他们给出一个说法是，如果图像中的某一个方块被改变，那么就会导致图像整体发生显著变化。注意是一个方块，它有可能是一个像素，也有可能不是一个像素。这种情况下，我们可以认为，组成pixel art图像的方块是严格安排好的，不能随意处理，比如不能用gimp的模糊滤镜等等工具来处理图像，因为滤镜的计算方式并不是精确控制每一个方块。</p>
+<p>对于传统的位图图像，其组成的最小单位是像素。虽然像素也是小方块，但目前我们所理解的位图图像，颜色数量和颜色位深都远远超过1990年代。并且，现在对于位图图像的处理工具和方法也很多，比如可以使用各种特效滤镜，然后对整个图像进行处理，或者处理图像的局部。而pixel art则通常需要对每一个组成图像的方块进行处理，无法使用特效滤镜。</p>
+<p>pixel art图像看起来像是由像素构成，原因是很明显的方块效果，与放大的位图图像效果很相似，但pixel art中的每一个方块，可以是一个像素，也可以是多个像素；而位图放大后显示出来的方块，一个方块就是一个像素。</p>
+<p>除了街机使用了pixel art呈现效果以外，早期的在线聊天工具的头像，也使用了pixel art呈现方式：图像尺寸很小、颜色数量很少、分辨率很低、放大后很粗糙等等，不像今天这样可以非常细腻，甚至可以使用动画。</p>
+<p>NFT也使用了pixel art类似的呈现效果，但其价值还需要时间的沉淀和检验。</p>
+<div class="admonition-pixel-art admonition">
+<p class="admonition-title">pixel art 的未来</p>
+<p>如果没有差异化需求，或者没有复古的需求，请慎重考虑使用此类呈现方式。</p>
+</div>
+<p><em>最近一次更新：2024-09-21</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="5cmyk_rgb.html" class="btn btn-neutral float-left" title="5. CMYK 与 RGB" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="7hsv.html" class="btn btn-neutral float-right" title="7. HSV HSL RGB" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗。</p>
+  </div>
+
+  
+<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

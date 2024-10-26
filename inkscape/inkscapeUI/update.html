@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkscape用户界面汉化记录</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+
+  
+    <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="在  中搜索"
+          href="../../_static/opensearch.xml"/>
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="驿窗平面基础" href="../../ycp_gd_base/ycp_base.html" />
+    <link rel="prev" title="保存选中范围/载入选中范围" href="../unmenu/02select-backup.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            驿窗项目
+              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                开源/Linux大众化，从驿窗开始
+              </div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ffmpeg/ffmpeg.html">FFmpeg应用参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gimp/gimp.html">GIMP操作指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../inkscape.html">Inkscape操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">驿窗项目</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
+      <li class="breadcrumb-item active">Inkscape用户界面汉化记录</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
+        <a href="../unmenu/02select-backup.html" class="btn btn-neutral float-left" title="保存选中范围/载入选中范围" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../ycp_gd_base/ycp_base.html" class="btn btn-neutral float-right" title="驿窗平面基础" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="inkscape">
+<span id="inkscapeui-localization"></span><h1>Inkscape用户界面汉化记录<a class="headerlink" href="#inkscape" title="Link to this heading"></a></h1>
+<p><span class="i070">开源软件汉化质量如何向商业级品质迈进</span> <a class="reference internal" href="../../ycpview/osstrans/oss-trans.html#oss-trans"><span class="std std-ref">🖙</span></a></p>
+<ol class="arabic">
+<li><dl>
+<dt>新版中文</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">旧版中文</span></div>
+<div class="line">英文原文</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>241020</p></li>
+<li><dl>
+<dt>对象转化为箭头</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">对象转化为标记</span></div>
+<div class="line">Objects to Marker</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>这样可以调整箭头本身的颜色</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">这样可以调整标记本身的颜色</span></div>
+<div class="line">This adjusts the markers own colors</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>位图和SVG默认导入分辨率(DPI)</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">位图和SVG导入的默认分辨率(单位：每英寸点数)</span></div>
+<div class="line">Default import resolution (DPI) for bitmap and SVG import</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>无法变换嵌入的SVG</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">无法变形嵌入的SVG</span></div>
+<div class="line">Cannot transform an embedded SVG</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>透视法创建立体盒型</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">创建三维立方体</span></div>
+<div class="line">Create 3D Boxes</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>视图缩放工具单击</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">缩放工具单击</span></div>
+<div class="line">Zoom tool click</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>画布视图缩放</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">画布缩放</span></div>
+<div class="line">Canvas zoom</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>画布视图旋转</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">画布旋转</span></div>
+<div class="line">Canvas rotate</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>快速缩放视图</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">快速缩放</span></div>
+<div class="line">Quick Zoom</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>透视工具</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">立方体工具</span></div>
+<div class="line">3D Box Tool</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>视图缩放</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">缩放工具</span></div>
+<div class="line">Zoom Tool</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>放大或缩小视图</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">放大或缩小</span></div>
+<div class="line">Zoom in or out</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>241018</p></li>
+<li><dl>
+<dt>图形中填充的文字避开指定图形</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">围绕框架(路径或图形)的浮动文本</span></div>
+<div class="line">Flow text around a frame (path or shape)</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>文字回避图形</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">设置减去框架</span></div>
+<div class="line">Set Subtraction Frames</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>文字填充图形</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">浮动转化成框架</span></div>
+<div class="line">Flow into Frame</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>从图形填充脱离</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">解除浮动</span></div>
+<div class="line">Unflow</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>241012</p></li>
+<li><dl>
+<dt>仅导出选中对象</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">仅导出选中部分</span></div>
+<div class="line">Export Selected Only</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>DPI</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">单位：每英寸点数</span></div>
+<div class="line">in dots per inch</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>选中对象导出为位图，再导回文档中</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">把选中对象导出到位图，然后再加入文档</span></div>
+<div class="line">Export selection to a bitmap and insert it into document</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>导入位图时打开导入对话框</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">当导入位图图像时弹出链接和缩放对话框</span></div>
+<div class="line">Pop-up linking and scaling dialog when importing bitmap image</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>导入SVG时打开导入对话框</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">在导入SVG图像时弹出链接和缩放对话框</span></div>
+<div class="line">Pop-up linking and scaling dialog when importing SVG image</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>导入SVG时询问链接和缩放</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">在导入SVG图像时询问链接和缩放处理方式</span></div>
+<div class="line">Ask about linking and scaling when importing SVG images</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>位图导入模式</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">位图导入/打开模式</span></div>
+<div class="line">Bitmap import/open mode</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>241011</p></li>
+<li><dl>
+<dt>选中对象范围</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">选中对象</span></div>
+<div class="line">Selection</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>轮廓模式正常显示位图</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">轮廓模式显示图片</span></div>
+<div class="line">Images in Outline Mode</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>图像渲染模式</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">图形渲染模式</span></div>
+<div class="line">Image Rendering Mode</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>创建位图副本</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">制作一个位图副本</span></div>
+<div class="line">Make a Bitmap Copy</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>白描位图中的 亮度截断 考虑是否需要改为 亮度划分</p></li>
+<li><p>多次扫描中的 颜色 需要改为 彩色，此修改需要官方调整po文件结构。</p></li>
+<li><dl>
+<dt>导入导出</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">导入的图像</span></div>
+<div class="line">Imported Images</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>241010</p></li>
+<li><dl>
+<dt>嵌入</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">内嵌</span></div>
+<div class="line">Embed</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>默认导入分辨率</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">缺省导入分辨率</span></div>
+<div class="line">Default import resolution</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>亮度分级</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">亮度步进</span></div>
+<div class="line">Brightness steps</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>240930</p></li>
+<li><dl>
+<dt>有限地把位图转为矢量图 　 白描是传统中国画技法，参考: 线描, 十八描</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">使用临摹像素艺术对话框</span></div>
+<div class="line">Using Trace Pixel Art dialog</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>有限地把位图转为矢量图 　 白描是传统中国画技法，参考: 线描, 十八描</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">位图临摹</span></div>
+<div class="line">Using bitmap tracing</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>有限地把位图转为矢量图 　 白描是传统中国画技法，参考: 线描, 十八描</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">通过临摹位图轮廓创建一个或多个路径</span></div>
+<div class="line">Create one or more paths from a bitmap by tracing it</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>箭头</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">标记</span></div>
+<div class="line">Marker</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>240927</p></li>
+<li><dl>
+<dt>划定白描范围</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">用户辅助临摹</span></div>
+<div class="line">⬆ <span class="t070">用户辅助追踪</span></div>
+<div class="line">User-assisted trace</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>平滑</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">光滑</span></div>
+<div class="line">Smooth</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>斑点消除</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">斑点</span></div>
+<div class="line">Speckles</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>像素画</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">像素艺术</span></div>
+<div class="line">Pixel Art</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>240922</p></li>
+<li><dl>
+<dt>白描位图</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">临摹位图轮廓</span></div>
+<div class="line">Trace Bitmap</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>自动白描</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">自动临摹</span></div>
+<div class="line">Autotrace</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>中心线白描(自动白描)</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">中心线临摹(自动临摹)</span></div>
+<div class="line">⬆ <span class="t070">中心线追踪(自动追踪)</span></div>
+<div class="line">Centerline tracing (autotrace)</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>自动白描(较慢)</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">自动临摹(较慢)</span></div>
+<div class="line">⬆ <span class="t070">自动追踪(较慢)</span></div>
+<div class="line">Autotrace (slower)</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>泰森多边形</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">沃罗努瓦图</span></div>
+<div class="line">Voronoi</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>白描</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">临摹</span></div>
+<div class="line">⬆ <span class="t070">追踪</span></div>
+<div class="line">Trace</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>文字填充图形</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">将浮动转化成框架</span></div>
+<div class="line">Flow into Frame</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>中间色标</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">中间分段点</span></div>
+<div class="line">mid stop</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>色标</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">颜色停止点</span></div>
+<div class="line">⬆ <span class="t070">颜色过渡点</span></div>
+<div class="line">color stop</div>
+<div class="line">stop</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>调整路径顶点处的外形</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">调整路径顶点的形状</span></div>
+<div class="line">Adjust the shape of a path’s corners</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>模仿对象的外形</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">模仿对象的形状</span></div>
+<div class="line">imitating the object’s shape</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>调整图形的&lt;b&gt;文本边距&lt;/b&gt;</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">调整形状的&lt;b&gt;文本边距&lt;/b&gt;</span></div>
+<div class="line">Adjust the shape’s &lt;b&gt;text margin&lt;/b&gt;</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>viewbox</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">视图框</span></div>
+<div class="line">viewbox</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>ICC特性文件</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">色彩配置文件</span></div>
+<div class="line">color profile</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>上移一层</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">上移</span></div>
+<div class="line">Move Up</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>下移一层</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">下移</span></div>
+<div class="line">Move Down</div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>图形生成工具</dt><dd><div class="line-block">
+<div class="line">⬆ <span class="t070">形状生成工具</span></div>
+<div class="line">Shape Builder Tool</div>
+</div>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="admonition- admonition">
+<p class="admonition-title">本页面汉化记录并不完整</p>
+<p>本页面仅收录2024-09-16之后的修改记录，之前几年的汉化修改未收录。官方更新会滞后。</p>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../unmenu/02select-backup.html" class="btn btn-neutral float-left" title="保存选中范围/载入选中范围" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../../ycp_gd_base/ycp_base.html" class="btn btn-neutral float-right" title="驿窗平面基础" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 : 驿窗。</p>
+  </div>
+
+  
+<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

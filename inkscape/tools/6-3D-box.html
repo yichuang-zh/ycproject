@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3D透视工具</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>透视工具</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,8 +85,8 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../inkscape-tools.html">Inkscape工具箱</a></li>
-      <li class="breadcrumb-item active">3D透视工具</li>
+          <li class="breadcrumb-item"><a href="../inkscape-tools.html">工具箱</a></li>
+      <li class="breadcrumb-item active">透视工具</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
@@ -90,47 +98,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="d">
-<span id="tool-3d-box"></span><h1>3D透视工具<a class="headerlink" href="#d" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="tool-3d-box">
+<span id="id1"></span><h1>透视工具<a class="headerlink" href="#tool-3d-box" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>快捷键：<span class="guilabel">X</span> 或者 <span class="guilabel">Shift</span>+<span class="guilabel">F4</span></p>
-<p>3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )通过自动的3D计算，可以用来模拟三维透视效果，比如建筑效果图或室内效果图。</p>
-<p>原理上，3D透视工具画出的三维透视图是由6个简单的四边形组成的一个群组。验证很简单，用选择工具右键点击一个三维透视图，选择解除群组，之后分别移动就可以分解为6个四边形：(左侧为分解前，右侧为分解后)</p>
+<p>透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )，也叫三维透视工具，通过自动透视计算，可以用路径生成六面体透视效果图，那些建筑效果图或室内效果图可以应用此工具。此工具只能画出六面立方体，不能画球体或圆柱体等其它形状。</p>
 <blockquote>
-<div><blockquote>
+<div><div class="admonition-t070 admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>应用方向</p>
+<p>此工具主要功能是自动透视计算，所以一个应用方向是建筑效果图或室内效果图。用户通过此工具设置好合适的透视点/消失点以后，再画出更多所需的透视立方体，然后把它们解除群组，保留需要的路径，再做为一个整体保存为纯svg路径，之后把这个整体路径导入到GIMP中，在GIMP中实现建筑效果或者室内效果。</p>
+</div>
+<div class="admonition-t070 admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>第三方扩展</p>
+<p>有一个专门用于Inkscape的第三方扩展，可以在Inkscape文档内配合透视工具自动调整位图来实现透视效果。</p>
+<p>扩展名叫<a class="reference external" href="https://github.com/s1291/InkRasterPerspective">位图透视</a> <em>Raster Perspective</em>。需要注意的是，这个扩展要求路径按顺时针方向依次排列四个节点，且第一个节点位于左上，之后是右上、右下、左下，否则会导致位图旋转。</p>
+</div>
+</div></blockquote>
+<p>原理上，透视工具画出的三维透视图是由6个简单的四边形组成的一个群组。验证很简单，用选择工具右键点击一个三维透视图，选择解除群组，之后分别移动就可以分解为6个四边形：(左侧为分解前，右侧为分解后)</p>
+<blockquote>
 <div><a class="reference internal image-reference" href="../../_images/06-1.png"><img alt="../../_images/06-1.png" src="../../_images/06-1.png" style="width: 48%;" /></a>
 <a class="reference internal image-reference" href="../../_images/06-2.png"><img alt="../../_images/06-2.png" src="../../_images/06-2.png" style="width: 48%;" /></a>
 </div></blockquote>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：三维透视图解除群组后，不再具有自动3D计算属性。</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
+<p>三维透视图解除群组后，不再具有自动透视计算属性。</p>
 </div>
-</div></blockquote>
-<div class="section" id="id1">
-<h2>操作方法<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<ol class="arabic simple">
-<li><p>用鼠标左键点击3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )，此时3D透视工具被激活，然后在画布上点击并拖动鼠标一段距离即可。最好让生成的三维透视图位于页面的中心位置，否则三维透视图看起来会严重变形。</p></li>
+<section id="id3">
+<h2>操作方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>用鼠标左键点击透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )，此时透视工具被激活，然后在画布上点击并拖动鼠标一段距离即可。最好让生成的三维透视图位于页面的中心位置，否则三维透视图看起来会严重变形。</p></li>
 <li><p>绘制三维透视图时，其实是绘制它的X-Y面，其它几个面是由inkscape计算生成的。而计算的依据，则是x、y、z三个方向的消失点的位置。</p></li>
 </ol>
 <blockquote>
-<div><div class="figure align-center" id="id4">
+<div><figure class="align-center" id="id6">
 <img alt="../../_images/06-3.png" src="../../_images/06-3.png" />
-<p class="caption"><span class="caption-text">x方向、y方向、z方向</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">x方向、y方向、z方向</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li><p>默认情况下，左右两侧的x方向消失点和y方向消失点位于页面的垂直页边框的中心位置；z方向的消失点在无穷远，用平行线表示。</p></li>
 </ol>
 <blockquote>
-<div><div class="figure align-center" id="id5">
+<div><figure class="align-center" id="id7">
 <img alt="../../_images/06-4.png" src="../../_images/06-4.png" />
-<p class="caption"><span class="caption-text">x方向消失点和 z方向消失点</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">x方向消失点和 z方向消失点</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li><p>已经创建的三维透视图，消失点位置可以调整，比如把消失点从页面边框位置拖到更远的位置：x消失点水平向左移，z消失点水平向右移。上图中两个消失点的位置不在边框中心位置，因为已经被垂直向上移动。</p></li>
-<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer1.svg"><img alt="tool-select" class="align-middle" height="20" src="../../_images/tool-pointer1.svg" width="20" /></a> )，再按空格键则切换回3D透视工具。</p></li>
+<li><p>按空格键可以临时切换到选择工具( <a class="reference internal" href="../../_images/tool-pointer.svg"><img alt="tool-select" class="align-middle" src="../../_images/tool-pointer.svg" style="width: 20px; height: 20px;" /></a> )，再按空格键则切换回透视工具。</p></li>
 <li><p>创建三维透视图时如果按住Shift键，会调整z方向深度。</p></li>
 <li><p>默认情况下，同一页面的所有三维透视图都使用相同的消失点。</p></li>
 <li><p>因为所有三维透视图都使用相同的消失点，所以，在移动某一个消失点时，所有三维透视图都会发生变化。</p></li>
@@ -139,9 +161,8 @@
 <li><p>默认的三维透视图的颜色，一是可以通过首选项修改；二是可以直接在现有的透视图上，选择透视图群组内对象后，对组内对象进行修改。inkscape会记住此修改，后续再创建新的三维透视图时，会直接使用此修改结果来进行着色。</p></li>
 </ol>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：如何进入三维透视图群组内部，对内部的某一个面进行修改？</p>
+<div><div class="admonition-t070 admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>如何修改透视图群组内部的某个面？</p>
 <p>因为每一个透视图都是一个群组，所以，单独修改透视图的某一个面就需要在群组内部操作。有两个方法：</p>
 <div class="line-block">
 <div class="line">方法一，进入群组内部：选中一个三维透视图，按Ctrl+Enter，此时已经进入群组内部，然后点击该透视图的某一个面即可。</div>
@@ -150,63 +171,88 @@
 <p>方法二，在点击透视图的某一个面时按Ctrl键，这样可以直接选中透视图群组内的对象，不需要进入群组内部。</p>
 </div>
 </div></blockquote>
+</div></blockquote>
 <p>三维透视图示例，楼梯：</p>
 <blockquote>
-<div><div class="figure align-center" id="id6">
+<div><figure class="align-center" id="id8">
 <img alt="../../_images/06-6.png" src="../../_images/06-6.png" />
-<p class="caption"><span class="caption-text">图 -4：左侧为三维透视效果，右侧无三维透视效果</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图 -4：左侧为三维透视效果，右侧无三维透视效果</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>上面楼梯的创建方法：</p>
 <blockquote>
-<div><p>左侧：使用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )创建最下面一个台阶，稍微调整位置和尺寸后，最下级台阶创建完成；然后用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )点击此台阶，按Ctrl+D，再用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )点击台阶中心的叉来移动成为第二级台阶；依此类推。</p>
-<p>右侧：使用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )创建最下面一个台阶，然后在3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )的工具选项里调整三个消失点，均设置为无穷远(平行)，然后三个角度依次设置为150、90、30，稍微调整下位置和尺寸后，最下级台阶创建完成；之后用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )选中此台阶按Ctrl+D，再用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )点击台阶中心的叉来移动成为第二级台阶；依此类推。</p>
+<div><ol class="arabic simple">
+<li><p>左侧：使用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )创建最下面一个台阶，稍微调整位置和尺寸后，最下级台阶创建完成；然后用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )点击此台阶，按Ctrl+D，再用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )点击台阶中心的叉来移动成为第二级台阶；依此类推。</p></li>
+<li><p>右侧：使用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )创建最下面一个台阶，然后在透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )的工具选项里调整三个消失点，均设置为无穷远(平行)，然后三个角度依次设置为150、90、30，稍微调整下位置和尺寸后，最下级台阶创建完成；之后用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )选中此台阶按Ctrl+D，再用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )点击台阶中心的叉来移动成为第二级台阶；依此类推。</p></li>
+</ol>
 </div></blockquote>
-</div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<ol class="arabic simple">
+</section>
+<section id="id4">
+<h2>工具选项<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>( 角度X )：三维透视对象的X轴的方向。当x消失点在无穷远(平行)时，通过这个值来设置X轴方向。</p></li>
 <li><p>( 角度Y )：三维透视对象的Y轴的方向。当y消失点在无穷远(平行)时，通过这个值来设置Y轴方向。</p></li>
 <li><p>( 角度Z )：三维透视对象的Z轴的方向。当z消失点在无穷远(平行)时，通过这个值来设置Z轴方向。</p></li>
-<li><p>( <a class="reference internal" href="../../_images/4perspective-parallel.svg"><img alt="4perspective-parallel" class="align-middle" height="20" src="../../_images/4perspective-parallel.svg" width="20" /></a> )：此图标有三个，分别对应X轴、Y轴、Z轴；用来设置消失点是否在无穷远(平行)。</p></li>
+<li><p>( <a class="reference internal" href="../../_images/4perspective-parallel.svg"><img alt="4perspective-parallel" class="align-middle" src="../../_images/4perspective-parallel.svg" style="width: 20px; height: 20px;" /></a> )：此图标有三个，分别对应X轴、Y轴、Z轴；用来设置消失点是否在无穷远(平行)。</p></li>
 </ol>
-</div>
-<div class="section" id="id3">
-<h2>手柄<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+</div></blockquote>
+</section>
+<section id="id5">
+<h2>手柄<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>三维透视对象默认一共有11个可以操作的手柄，如下图：</p>
 <blockquote>
-<div><div class="figure align-center" id="id7">
+<div><figure class="align-center" id="id9">
 <img alt="../../_images/06-7.png" src="../../_images/06-7.png" />
-<p class="caption"><span class="caption-text">三维透视对象的 11个手柄</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">三维透视对象的 11个手柄</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>其中：</p>
-<ol class="arabic simple">
-<li><p>透视图中心的叉，这个可以用来移动透视图。用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )来点击并拖动这个叉可以移动透视对象，这样，可以让其保持自动3D计算属性。</p></li>
-<li><p>透视图的8个角上有8个菱形，它们可以用来调整透视对象的长宽高，用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )来点击并拖动即可。</p></li>
-<li><p>两侧页面边框上的两个小正方形，分别用来调整x消失点和z消失点的位置，用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )来点击并拖动。</p></li>
-<li><p>因为y轴方向被设置为无穷远(平行)，所以没有显示手柄。如果不是无穷远(平行)，那么也会和另外两个方向一样，显示一个y消失点，这会是第12个手柄，同样可以用3D透视工具( <a class="reference internal" href="../../_images/tool-3D-box1.svg"><img alt="tool-3D-box" class="align-middle" height="20" src="../../_images/tool-3D-box1.svg" width="20" /></a> )来点击并拖动进行位置调整。</p></li>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>透视图中心的叉，这个可以用来移动透视图。用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )来点击并拖动这个叉可以移动透视对象，这样，可以让其保持自动透视计算属性。</p></li>
+<li><p>透视图的8个角上有8个菱形，它们可以用来调整透视对象的长宽高，用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )来点击并拖动即可。</p></li>
+<li><p>两侧页面边框上的两个小正方形，分别用来调整x消失点和z消失点的位置，用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )来点击并拖动。</p></li>
+<li><p>因为y轴方向被设置为无穷远(平行)，所以没有显示手柄。如果不是无穷远(平行)，那么也会和另外两个方向一样，显示一个y消失点，这会是第12个手柄，同样可以用透视工具( <a class="reference internal" href="../../_images/tool-3D-box.svg"><img alt="tool-3D-box" class="align-middle" src="../../_images/tool-3D-box.svg" style="width: 20px; height: 20px;" /></a> )来点击并拖动进行位置调整。</p></li>
 </ol>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../../_images/avatarp14.svg"><img alt="Y" class="align-middle" height="22" src="../../_images/avatarp14.svg" width="22" /></a> 驿窗注：<strong>一点透视 | 二点透视 | 三点透视 | 等距透视</strong></p>
+</div></blockquote>
+<div class="admonition-t070 admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>一点透视 | 二点透视 | 三点透视 | 等距透视</p>
 <div class="line-block">
 <div class="line"><strong>一点透视</strong>：透视图的XYZ三个轴中，消失点只有一个 不是 无穷远，另外两个都 是 无穷远。</div>
 <div class="line">如下图，最大的透视对象中，x消失点和y消失点设置为无穷远，角度分别为x=180，y=270；z消失点位置在透视图的正中心(与叉重合)。在最大透视对象中添加三个小的透视对象，四个透视对象共用相同的xyz消失点。</div>
 </div>
 <p><strong>二点透视</strong>：透视图的XYZ三个轴中，消失点有二个 不是 无穷远，另外一个 是 无穷远。这也是inkscape默认的透视图参数。</p>
 <p><strong>三点透视</strong>：透视图的XYZ三个轴消失点全都 不是 无穷远。</p>
-<p><strong>等距透视</strong>：相当于无透视效果，透视图的XYZ三个轴消失点全都 是 无穷远。上面 图-4 中右侧的楼梯就是等距透视效果。</p>
+<p><strong>等距透视</strong>：相当于无透视效果，透视图的XYZ三个轴消失点全都是无穷远。上面 图-4 中右侧的楼梯就是等距透视效果。</p>
 <blockquote>
-<div><div class="figure align-center" id="id8">
+<div><figure class="align-center" id="id10">
 <img alt="../../_images/06-8.png" src="../../_images/06-8.png" />
-<p class="caption"><span class="caption-text">一点透视效果</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图6：上图为一点透视效果</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id11">
+<img alt="../../_images/06-perspective.png" src="../../_images/06-perspective.png" />
+<figcaption>
+<p><span class="caption-text">图7：上图为在GIMP中按路径贴图后的效果</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id12">
+<img alt="../../_images/06-002.svg" src="../../_images/06-002.svg" />
+<figcaption>
+<p><span class="caption-text">图8：上图为删除不可见路径后的svg</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><a class="reference download internal" download="" href="../../_downloads/80bfe3f9e88671f3812fc26f628e4ec6/06-001.svg"><code class="xref download docutils literal notranslate"><span class="pre">下载原始svg文件</span></code></a></p>
 </div></blockquote>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -219,7 +265,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

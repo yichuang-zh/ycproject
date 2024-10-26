@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>对齐工具 Alignment Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>对齐工具 Alignment Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">对齐工具 <em>Alignment Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,195 +98,194 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="alignment-tool">
-<span id="gimp-tool-align"></span><h1>对齐工具 <em>Alignment Tool</em><a class="headerlink" href="#alignment-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="alignment-tool">
+<span id="gimp-tool-align"></span><h1>对齐工具 <em>Alignment Tool</em><a class="headerlink" href="#alignment-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">Q</span></p>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id5">
 <img alt="../../_images/2align.png" src="../../_images/2align.png" />
-<p class="caption"><span class="caption-text">对齐工具及其工具选项</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
+<figcaption>
+<p><span class="caption-text">对齐工具及其工具选项</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>对齐工具( <a class="reference internal" href="../../_images/gimp-tool-align.svg"><img alt="gimp-tool-align" class="align-middle" src="../../_images/gimp-tool-align.svg" style="width: 20px; height: 20px;" /></a> )可以调整图层的位置，让图层与其它对象对齐。(图层有可能比画布小很多)</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
+<p>如果您的工具箱下方没有显示<strong>工具选项</strong>，可以点击菜单【窗口⇨可停靠对话框⇨工具选项】，即可显示工具选项，详细请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具选项提示</span></a>。</p>
 </div>
-<p>对齐工具( <a class="reference internal" href="../../_images/gimp-tool-align.svg"><img alt="gimp-tool-align" class="align-middle" height="20" src="../../_images/gimp-tool-align.svg" width="20" /></a> )可以调整图层的位置，让图层与其它对象对齐。(图层有可能比画布小很多)</p>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p>如果您的工具箱下方没有显示<strong>工具选项</strong>，可以点击菜单 窗口→可停靠对话框→工具选项，即可显示工具选项，详细请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具选项提示</span></a>。</p>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
 <p>多选：尽管选择对象是图层，也可以使用鼠标框选的方式来一次选择多个对象。</p>
 </div>
-<div class="section" id="id1">
-<h2>工具选项<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<div class="section" id="id2">
-<h3>对齐<a class="headerlink" href="#id2" title="永久链接至标题"></a></h3>
-<ul class="simple">
+<section id="id1">
+<h2>工具选项<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<section id="id2">
+<h3>对齐<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>相对于第一项：选择图层时，先选择一个图层，再按Shift键选择更多图层。这里的 相对于第一项 是指所有被选择的图层中最先被选择的那个图层。这种情况下，所有图层会向最先被选择的图层对齐。</p></li>
 <li><p>图像：对齐目标为图像，即整个画布。</p></li>
 <li><p>选区：对齐目标为选区。</p></li>
 <li><p>激活图层：对齐目标为图层堆栈中的活动图层。</p></li>
 <li><p>活动通道：对齐目标为通道堆栈中的活动通道。</p></li>
 <li><p>活动路径：对齐目标为路径堆栈中的活动路径。</p></li>
-</ul>
+</ol>
+</div></blockquote>
 <p>对齐操作按钮：</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../_images/gimp-align-left.svg"><img alt="gimp-align-left" class="align-middle" height="20" src="../../_images/gimp-align-left.svg" width="20" /></a>  对齐目标左边缘：所有图层的左边缘与目标的左边缘对齐。</p></li>
-<li><p><a class="reference internal" href="../../_images/gimp-align-center.svg"><img alt="gimp-align-center" class="align-middle" height="20" src="../../_images/gimp-align-center.svg" width="20" /></a>  对齐左右中心线：所有图层的左右中心线与目标的左右中心线对齐。</p></li>
-<li><p><a class="reference internal" href="../../_images/gimp-align-right.svg"><img alt="gimp-align-right" class="align-middle" height="20" src="../../_images/gimp-align-right.svg" width="20" /></a> 对齐目标右边缘：所有图层的右边缘与目标的右边缘对齐。</p></li>
-<li><p><a class="reference internal" href="../../_images/gimp-align-top.svg"><img alt="gimp-align-top" class="align-middle" height="20" src="../../_images/gimp-align-top.svg" width="20" /></a>  对齐目标上边缘：所有图层的上边缘与目标的上边缘对齐。</p></li>
-<li><p><a class="reference internal" href="../../_images/gimp-align-middle.svg"><img alt="gimp-align-middle" class="align-middle" height="20" src="../../_images/gimp-align-middle.svg" width="20" /></a>  对齐上下中心线：所有图层的上下中心线与目标的上下中心线对齐。</p></li>
-<li><p><a class="reference internal" href="../../_images/gimp-align-bottom.svg"><img alt="gimp-align-bottom" class="align-middle" height="20" src="../../_images/gimp-align-bottom.svg" width="20" /></a>  对齐目标下边缘：所有图层的下边缘与目标的下边缘对齐。</p></li>
-</ul>
-</div>
-<div class="section" id="id3">
-<h3>分布<a class="headerlink" href="#id3" title="永久链接至标题"></a></h3>
-<p>分布命令的相对目标设置使用的是上面<strong>对齐</strong>的“相对于”。</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><a class="reference internal" href="../../_images/gimp-align-left.svg"><img alt="gimp-align-left" class="align-middle" src="../../_images/gimp-align-left.svg" style="width: 20px; height: 20px;" /></a>  对齐目标左边缘：所有图层的左边缘与目标的左边缘对齐。</p></li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-center.svg"><img alt="gimp-align-center" class="align-middle" src="../../_images/gimp-align-center.svg" style="width: 20px; height: 20px;" /></a>  对齐左右中心线：所有图层的左右中心线与目标的左右中心线对齐。</p></li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-right.svg"><img alt="gimp-align-right" class="align-middle" src="../../_images/gimp-align-right.svg" style="width: 20px; height: 20px;" /></a> 对齐目标右边缘：所有图层的右边缘与目标的右边缘对齐。</p></li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-top.svg"><img alt="gimp-align-top" class="align-middle" src="../../_images/gimp-align-top.svg" style="width: 20px; height: 20px;" /></a>  对齐目标上边缘：所有图层的上边缘与目标的上边缘对齐。</p></li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-middle.svg"><img alt="gimp-align-middle" class="align-middle" src="../../_images/gimp-align-middle.svg" style="width: 20px; height: 20px;" /></a>  对齐上下中心线：所有图层的上下中心线与目标的上下中心线对齐。</p></li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-bottom.svg"><img alt="gimp-align-bottom" class="align-middle" src="../../_images/gimp-align-bottom.svg" style="width: 20px; height: 20px;" /></a>  对齐目标下边缘：所有图层的下边缘与目标的下边缘对齐。</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="id3">
+<h3>分布<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>分布命令的相对目标设置使用的是上面<strong>对齐</strong>的“相对于”。</p>
 <p>分布命令与对齐命令基本相同，不同的地方是分布命令可以设置位移值，而对齐命令不受位移值影响：</p>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
 <p>下面六个分布图标的说明，“相对于”设置为“相对于第一项”，即第一个被选中的图层。</p>
 </div>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../_images/gimp-align-left.svg"><img alt="gimp-align-left" class="align-middle" height="20" src="../../_images/gimp-align-left.svg" width="20" /></a>  按目标左边缘分布：所有图层的左边缘按目标图层的左边缘分布，并为所有图层(不含目标图层)添加位移量。</p></li>
+<ol class="arabic">
+<li><p><a class="reference internal" href="../../_images/gimp-align-left.svg"><img alt="gimp-align-left" class="align-middle" src="../../_images/gimp-align-left.svg" style="width: 20px; height: 20px;" /></a>  按目标左边缘分布：所有图层的左边缘按目标图层的左边缘分布，并为所有图层(不含目标图层)添加位移量。</p>
+<blockquote>
+<div><ul>
+<li><p>如果<strong>位移X:</strong>的值为0(X=0)，则分布结果与 对齐目标左边缘 按钮相同。</p></li>
+<li><p>如果<strong>位移X:</strong>的值不为0(X≠0，假设X=20)，则：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>第一个被对齐的图层在位移X=0的基础上向右位移1x20=20像素；</p></li>
+<li><p>第二个被对齐的图层在位移X=0的基础上向右位移2x20=40像素；</p></li>
+<li><p>第三个被对齐的图层在位移X=0的基础上向右位移3x20=60像素；</p></li>
+<li><p>以此类推。</p></li>
 </ul>
-<blockquote>
-<div><div class="line-block">
-<div class="line">如果<strong>位移X:</strong>的值为0(X=0)，则分布结果与 对齐目标左边缘 按钮相同。</div>
-<div class="line">如果<strong>位移X:</strong>的值不为0(X≠0，假设X=20)，则：</div>
-</div>
-<blockquote>
-<div><div class="line-block">
-<div class="line">第一个被对齐的图层在位移X=0的基础上向右位移1x20=20像素；</div>
-<div class="line">第二个被对齐的图层在位移X=0的基础上向右位移2x20=40像素；</div>
-<div class="line">第三个被对齐的图层在位移X=0的基础上向右位移3x20=60像素；</div>
-<div class="line">以此类推。</div>
-</div>
-</div></blockquote>
-<div class="line-block">
-<div class="line">如果X&gt;0，那么目标图层的左边缘在所有被对齐图层左边缘的最左侧。</div>
-<div class="line">如果X&lt;0，那么目标图层的左边缘在所有被对齐图层左边缘的最右侧。</div>
-</div>
-<p>(所有被对齐图层中，图层左边缘的横坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
-</div></blockquote>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../_images/gimp-align-center.svg"><img alt="gimp-align-center" class="align-middle" height="20" src="../../_images/gimp-align-center.svg" width="20" /></a>  按左右中心线分布：所有图层的左右中心线按目标图层的左右中心线分布，并为所有图层(不含目标图层)添加位移量。</p></li>
-</ul>
-<blockquote>
-<div><div class="line-block">
-<div class="line">如果<strong>位移X:</strong>的值为0(X=0)，则分布结果与 对齐左右中心线 按钮相同。</div>
-<div class="line">如果<strong>位移X:</strong>的值不为0(X≠0，假设X=20)，则：</div>
-</div>
-<blockquote>
-<div><div class="line-block">
-<div class="line">第一个被对齐的图层在位移X=0的基础上向右位移1x20=20像素；</div>
-<div class="line">第二个被对齐的图层在位移X=0的基础上向右位移2x20=40像素；</div>
-<div class="line">第三个被对齐的图层在位移X=0的基础上向右位移3x20=60像素；</div>
-<div class="line">以此类推。</div>
-</div>
-</div></blockquote>
-<div class="line-block">
-<div class="line">如果X&gt;0，那么目标图层的左右中心线在所有被对齐图层左右中心线的最左侧。</div>
-<div class="line">如果X&lt;0，那么目标图层的左右中心线在所有被对齐图层左右中心线的最右侧。</div>
-</div>
-<p>(所有被对齐图层中，图层左右中心线的横坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
-</div></blockquote>
-<ul>
-<li><p><a class="reference internal" href="../../_images/gimp-align-right.svg"><img alt="gimp-align-right" class="align-middle" height="20" src="../../_images/gimp-align-right.svg" width="20" /></a> 按目标右边缘分布：所有图层的右边缘按目标图层的右边缘分布，并为所有图层(不含目标图层)添加位移量。</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">如果<strong>位移X:</strong>的值为0(X=0)，则分布结果与 对齐目标右边缘 按钮相同。</div>
-<div class="line">如果<strong>位移X:</strong>的值不为0(X≠0，假设X=20)，则：</div>
-</div>
-<div class="line-block">
-<div class="line">第一个被对齐的图层在位移X=0的基础上向右位移1x20=20像素；</div>
-<div class="line">第二个被对齐的图层在位移X=0的基础上向右位移2x20=40像素；</div>
-<div class="line">第三个被对齐的图层在位移X=0的基础上向右位移3x20=60像素；</div>
-<div class="line">以此类推。</div>
-</div>
 </div></blockquote>
 </li>
+<li><p>如果X&gt;0，那么目标图层的左边缘在所有被对齐图层左边缘的最左侧。</p></li>
+<li><p>如果X&lt;0，那么目标图层的左边缘在所有被对齐图层左边缘的最右侧。</p></li>
 </ul>
+</div></blockquote>
+</li>
+</ol>
 <blockquote>
-<div><div class="line-block">
-<div class="line">如果X&gt;0，那么目标图层的右边缘在所有被对齐图层右边缘的最左侧。</div>
-<div class="line">如果X&lt;0，那么目标图层的右边缘在所有被对齐图层右边缘的最右侧。</div>
-</div>
+<div><p>(所有被对齐图层中，图层左边缘的横坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
+</div></blockquote>
+<ol class="arabic">
+<li><p><a class="reference internal" href="../../_images/gimp-align-center.svg"><img alt="gimp-align-center" class="align-middle" src="../../_images/gimp-align-center.svg" style="width: 20px; height: 20px;" /></a>  按左右中心线分布：所有图层的左右中心线按目标图层的左右中心线分布，并为所有图层(不含目标图层)添加位移量。</p>
+<blockquote>
+<div><ul>
+<li><p>如果<strong>位移X:</strong>的值为0(X=0)，则分布结果与 对齐左右中心线 按钮相同。</p></li>
+<li><p>如果<strong>位移X:</strong>的值不为0(X≠0，假设X=20)，则：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>第一个被对齐的图层在位移X=0的基础上向右位移1x20=20像素；</p></li>
+<li><p>第二个被对齐的图层在位移X=0的基础上向右位移2x20=40像素；</p></li>
+<li><p>第三个被对齐的图层在位移X=0的基础上向右位移3x20=60像素；</p></li>
+<li><p>以此类推。</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>如果X&gt;0，那么目标图层的左右中心线在所有被对齐图层左右中心线的最左侧。</p></li>
+<li><p>如果X&lt;0，那么目标图层的左右中心线在所有被对齐图层左右中心线的最右侧。</p>
+<p>(所有被对齐图层中，图层左右中心线的横坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-right.svg"><img alt="gimp-align-right" class="align-middle" src="../../_images/gimp-align-right.svg" style="width: 20px; height: 20px;" /></a> 按目标右边缘分布：所有图层的右边缘按目标图层的右边缘分布，并为所有图层(不含目标图层)添加位移量。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>如果<strong>位移X:</strong>的值为0(X=0)，则分布结果与 对齐目标右边缘 按钮相同。</p></li>
+<li><p>如果<strong>位移X:</strong>的值不为0(X≠0，假设X=20)，则：</p></li>
+<li><p>第一个被对齐的图层在位移X=0的基础上向右位移1x20=20像素；</p></li>
+<li><p>第二个被对齐的图层在位移X=0的基础上向右位移2x20=40像素；</p></li>
+<li><p>第三个被对齐的图层在位移X=0的基础上向右位移3x20=60像素；</p></li>
+<li><p>以此类推。</p></li>
+<li><p>如果X&gt;0，那么目标图层的右边缘在所有被对齐图层右边缘的最左侧。</p></li>
+<li><p>如果X&lt;0，那么目标图层的右边缘在所有被对齐图层右边缘的最右侧。</p></li>
+</ul>
 <p>(所有被对齐图层中，图层右边缘的横坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
 </div></blockquote>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../_images/gimp-align-top.svg"><img alt="gimp-align-top" class="align-middle" height="20" src="../../_images/gimp-align-top.svg" width="20" /></a>  按目标上边缘分布：所有图层的上边缘按目标图层的上边缘分布，并为所有图层(不含目标图层)添加位移量。</p></li>
+</li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-top.svg"><img alt="gimp-align-top" class="align-middle" src="../../_images/gimp-align-top.svg" style="width: 20px; height: 20px;" /></a>  按目标上边缘分布：所有图层的上边缘按目标图层的上边缘分布，并为所有图层(不含目标图层)添加位移量。</p>
+<blockquote>
+<div><ul>
+<li><p>如果<strong>位移Y:</strong>的值为0(Y=0)，则分布结果与 对齐目标上边缘 按钮相同。</p></li>
+<li><p>如果<strong>位移Y:</strong>的值不为0(Y≠0，假设Y=20)，则：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>第一个被对齐的图层在位移Y=0的基础上向下位移1x20=20像素；</p></li>
+<li><p>第二个被对齐的图层在位移Y=0的基础上向下位移2x20=40像素；</p></li>
+<li><p>第三个被对齐的图层在位移Y=0的基础上向下位移3x20=60像素；</p></li>
+<li><p>以此类推。</p></li>
 </ul>
-<blockquote>
-<div><div class="line-block">
-<div class="line">如果<strong>位移Y:</strong>的值为0(Y=0)，则分布结果与 对齐目标上边缘 按钮相同。</div>
-<div class="line">如果<strong>位移Y:</strong>的值不为0(Y≠0，假设Y=20)，则：</div>
-</div>
-<blockquote>
-<div><div class="line-block">
-<div class="line">第一个被对齐的图层在位移Y=0的基础上向下位移1x20=20像素；</div>
-<div class="line">第二个被对齐的图层在位移Y=0的基础上向下位移2x20=40像素；</div>
-<div class="line">第三个被对齐的图层在位移Y=0的基础上向下位移3x20=60像素；</div>
-<div class="line">以此类推。</div>
-</div>
 </div></blockquote>
-<div class="line-block">
-<div class="line">如果Y&gt;0，那么目标图层的上边缘在所有被对齐图层上边缘的最上方。</div>
-<div class="line">如果Y&lt;0，那么目标图层的上边缘在所有被对齐图层左边缘的最下方。</div>
-</div>
+</li>
+<li><p>如果Y&gt;0，那么目标图层的上边缘在所有被对齐图层上边缘的最上方。</p></li>
+<li><p>如果Y&lt;0，那么目标图层的上边缘在所有被对齐图层左边缘的最下方。</p></li>
+</ul>
 <p>(所有被对齐图层中，图层上边缘的纵坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
 </div></blockquote>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../_images/gimp-align-middle.svg"><img alt="gimp-align-middle" class="align-middle" height="20" src="../../_images/gimp-align-middle.svg" width="20" /></a>  按上下中心线分布：所有图层的上下中心线按目标图层的上下中心线分布，并为所有图层(不含目标图层)添加位移量。</p></li>
+</li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-middle.svg"><img alt="gimp-align-middle" class="align-middle" src="../../_images/gimp-align-middle.svg" style="width: 20px; height: 20px;" /></a>  按上下中心线分布：所有图层的上下中心线按目标图层的上下中心线分布，并为所有图层(不含目标图层)添加位移量。</p>
+<blockquote>
+<div><ul>
+<li><p>如果<strong>位移Y:</strong>的值为0(Y=0)，则分布结果与 对齐上下中心线 按钮相同。</p></li>
+<li><p>如果<strong>位移Y:</strong>的值不为0(Y≠0，假设Y=20)，则：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>第一个被对齐的图层在位移Y=0的基础上向下位移1x20=20像素；</p></li>
+<li><p>第二个被对齐的图层在位移Y=0的基础上向下位移2x20=40像素；</p></li>
+<li><p>第三个被对齐的图层在位移Y=0的基础上向下位移3x20=60像素；</p></li>
+<li><p>以此类推。</p></li>
 </ul>
-<blockquote>
-<div><div class="line-block">
-<div class="line">如果<strong>位移Y:</strong>的值为0(Y=0)，则分布结果与 对齐上下中心线 按钮相同。</div>
-<div class="line">如果<strong>位移Y:</strong>的值不为0(Y≠0，假设Y=20)，则：</div>
-</div>
-<blockquote>
-<div><div class="line-block">
-<div class="line">第一个被对齐的图层在位移Y=0的基础上向下位移1x20=20像素；</div>
-<div class="line">第二个被对齐的图层在位移Y=0的基础上向下位移2x20=40像素；</div>
-<div class="line">第三个被对齐的图层在位移Y=0的基础上向下位移3x20=60像素；</div>
-<div class="line">以此类推。</div>
-</div>
 </div></blockquote>
-<div class="line-block">
-<div class="line">如果Y&gt;0，那么目标图层的上下中心线在所有被对齐图层上下中心线的最上方。</div>
-<div class="line">如果Y&lt;0，那么目标图层的上下中心线在所有被对齐图层上下中心线的最下方。</div>
-</div>
+</li>
+<li><p>如果Y&gt;0，那么目标图层的上下中心线在所有被对齐图层上下中心线的最上方。</p></li>
+<li><p>如果Y&lt;0，那么目标图层的上下中心线在所有被对齐图层上下中心线的最下方。</p></li>
+</ul>
 <p>(所有被对齐图层中，图层上下中心线的纵坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
 </div></blockquote>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../_images/gimp-align-bottom.svg"><img alt="gimp-align-bottom" class="align-middle" height="20" src="../../_images/gimp-align-bottom.svg" width="20" /></a>  按目标下边缘分布：所有图层的下边缘按目标图层的下边缘分布，并为所有图层(不含目标图层)添加位移量。</p></li>
+</li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-bottom.svg"><img alt="gimp-align-bottom" class="align-middle" src="../../_images/gimp-align-bottom.svg" style="width: 20px; height: 20px;" /></a>  按目标下边缘分布：所有图层的下边缘按目标图层的下边缘分布，并为所有图层(不含目标图层)添加位移量。</p>
+<blockquote>
+<div><ul>
+<li><p>如果<strong>位移Y:</strong>的值为0(Y=0)，则分布结果与 对齐目标下边缘 按钮相同。</p></li>
+<li><p>如果<strong>位移Y:</strong>的值不为0(Y≠0，假设Y=20)，则：</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>第一个被对齐的图层在位移Y=0的基础上向下位移1x20=20像素；</p></li>
+<li><p>第二个被对齐的图层在位移Y=0的基础上向下位移2x20=40像素；</p></li>
+<li><p>第三个被对齐的图层在位移Y=0的基础上向下位移3x20=60像素；</p></li>
+<li><p>以此类推。</p></li>
 </ul>
-<blockquote>
-<div><div class="line-block">
-<div class="line">如果<strong>位移Y:</strong>的值为0(Y=0)，则分布结果与 对齐目标下边缘 按钮相同。</div>
-<div class="line">如果<strong>位移Y:</strong>的值不为0(Y≠0，假设Y=20)，则：</div>
-</div>
-<blockquote>
-<div><div class="line-block">
-<div class="line">第一个被对齐的图层在位移Y=0的基础上向下位移1x20=20像素；</div>
-<div class="line">第二个被对齐的图层在位移Y=0的基础上向下位移2x20=40像素；</div>
-<div class="line">第三个被对齐的图层在位移Y=0的基础上向下位移3x20=60像素；</div>
-<div class="line">以此类推。</div>
-</div>
 </div></blockquote>
-<div class="line-block">
-<div class="line">如果Y&gt;0，那么目标图层的下边缘在所有被对齐图层下边缘的最上方。</div>
-<div class="line">如果Y&lt;0，那么目标图层的下边缘在所有被对齐图层下边缘的最下方。</div>
-</div>
+</li>
+<li><p>如果Y&gt;0，那么目标图层的下边缘在所有被对齐图层下边缘的最上方。</p></li>
+<li><p>如果Y&lt;0，那么目标图层的下边缘在所有被对齐图层下边缘的最下方。</p></li>
+</ul>
 <p>(所有被对齐图层中，图层下边缘的纵坐标值最小的图层就是第一个被对齐的图层，第二小的图层就是第二个被对齐的图层，第三小的图层就是第三个被对齐的图层，以此类推)</p>
 </div></blockquote>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p>下面两个分布图标的说明，“相对于”设置为“相对于图像”，因为这两项主要适用于在整个画布上进行分布操作。</p>
+</li>
+</ol>
+</div></blockquote>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
+<blockquote>
+<div><p>下面两个分布图标的说明，“相对于”设置为“相对于图像”，因为这两项主要适用于在整个画布上进行分布操作。</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="../../_images/gimp-align-h.svg"><img alt="gimp-align-h" class="align-middle" src="../../_images/gimp-align-h.svg" style="width: 20px; height: 20px;" /></a> 水平平均分布目标：所有选中图层的左右中心线在画布上等距分布。</p></li>
+<li><p><a class="reference internal" href="../../_images/gimp-align-v.svg"><img alt="gimp-align-v" class="align-middle" src="../../_images/gimp-align-v.svg" style="width: 20px; height: 20px;" /></a> 垂直平均分布目标：所有选中图层的上下中心线在画布上等距分布。</p></li>
+</ol>
 </div>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../_images/gimp-align-h.svg"><img alt="gimp-align-h" class="align-middle" height="20" src="../../_images/gimp-align-h.svg" width="20" /></a> 水平平均分布目标：所有选中图层的左右中心线在画布上等距分布。</p></li>
-<li><p><a class="reference internal" href="../../_images/gimp-align-v.svg"><img alt="gimp-align-v" class="align-middle" height="20" src="../../_images/gimp-align-v.svg" width="20" /></a> 垂直平均分布目标：所有选中图层的上下中心线在画布上等距分布。</p></li>
-</ul>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
 <p>分布共有八个按钮，四个水平分布按钮会忽略<strong>位移Y</strong>，四个垂直分布按钮会忽略<strong>位移X</strong>。</p>
 </div>
 <p>下面是使用对齐工具对<span class="dash6">图层</span>进行<span class="dash6">对齐&amp;分布</span>的演示：</p>
@@ -290,28 +297,36 @@
 </dd>
 </dl>
 <hr class="docutils" />
-<div class="section" id="layer-property-position">
-<span id="id4"></span><h4>应用：如何精确定位某个图层的位置<a class="headerlink" href="#layer-property-position" title="永久链接至标题"></a></h4>
-<p>精确定位某个图层的位置，比如距离图像左边缘30像素，距离图像上边缘50像素，应该怎么操作？</p>
+<section id="layer-property-position">
+<span id="id4"></span><h4>应用：如何精确定位某个图层的位置<a class="headerlink" href="#layer-property-position" title="Link to this heading"></a></h4>
+<blockquote>
+<div><p>精确定位某个图层的位置，比如距离图像左边缘30像素，距离图像上边缘50像素，应该怎么操作？</p>
 <p>可以结合对齐工具和图层属性对话框，二者一起来完成。我们以距离图像左边缘30像素为例：</p>
 <ol class="arabic">
 <li><p>第一步先让图层对齐到图像的左边缘：</p>
-<p>切换到对齐工具，在工具箱下方的工具选项中，<span class="dash6">对齐</span>下拉框的<span class="dash6">相对于</span>选择<span class="dash6">相对于图像</span>，然后点击下面的对齐左边缘图标 <a class="reference internal" href="../../_images/gimp-align-left.svg"><img alt="gimp-align-left" class="align-middle" height="20" src="../../_images/gimp-align-left.svg" width="20" /></a> ，使图层与图像左边缘对齐。</p>
+<blockquote>
+<div><p>切换到对齐工具，在工具箱下方的工具选项中，<span class="dash6">对齐</span>下拉框的<span class="dash6">相对于</span>选择<span class="dash6">相对于图像</span>，然后点击下面的对齐左边缘图标 <a class="reference internal" href="../../_images/gimp-align-left.svg"><img alt="gimp-align-left" class="align-middle" src="../../_images/gimp-align-left.svg" style="width: 20px; height: 20px;" /></a> ，使图层与图像左边缘对齐。</p>
+</div></blockquote>
 </li>
 <li><p>第二步让需要精确定位的图层向右位移30像素：</p>
-<p>在右侧的图层面板中，鼠标右键点击需要精确定位的图层，在弹出菜单中选择<span class="dash6">编辑图层属性</span>，如下图所示，图中下面有<span class="dash6">位移X</span>和<span class="dash6">位移Y</span>两个数值框，在位移X框中输入<code class="docutils literal notranslate"><span class="pre">30</span></code>，位移Y框右侧的单位选择<span class="dash6">px</span>，然后点击<span class="dash6">确定</span>按钮即可。</p>
+<blockquote>
+<div><p>在右侧的图层面板中，鼠标右键点击需要精确定位的图层，在弹出菜单中选择<span class="dash6">编辑图层属性</span>，如下图所示，图中下面有<span class="dash6">位移X</span>和<span class="dash6">位移Y</span>两个数值框，在位移X框中输入<code class="docutils literal notranslate"><span class="pre">30</span></code>，位移Y框右侧的单位选择<span class="dash6">px</span>，然后点击<span class="dash6">确定</span>按钮即可。</p>
+</div></blockquote>
 </li>
 <li><p>对于Y方向精确定位，按相同方法操作即可，只不过需要改<span class="dash6">位移Y</span>的数值框。</p></li>
 </ol>
-<div class="figure align-center" id="id6">
+</div></blockquote>
+<figure class="align-center" id="id6">
 <img alt="../../_images/2align_position.png" src="../../_images/2align_position.png" />
-<p class="caption"><span class="caption-text">图层属性对话框</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图层属性对话框</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p><em>最近一次更新：2023-11-25</em></p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -324,7 +339,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

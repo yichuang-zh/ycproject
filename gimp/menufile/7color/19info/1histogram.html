@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>颜色→信息→直方图 Histogram</title><link rel="stylesheet" href="../../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/underline.css" type="text/css" />
+  <title>⇨直方图 Histogram</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/underline.css?v=596b4960" />
+
+  
     <link rel="shortcut icon" href="../../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="../../../../_static/translations.js"></script>
+  
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../../search.html" />
-    <link rel="next" title="颜色→信息→边界均值 Border Average" href="2border-average.html" />
-    <link rel="prev" title="颜色→信息" href="../19info.html" /> 
+    <link rel="next" title="⇨边界均值 Border Average" href="2border-average.html" />
+    <link rel="prev" title="⇨信息" href="../19info.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,64 +85,85 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../../gimp_menu.html">GIMP菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../../gimp_menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../../7color.html">颜色</a></li>
-          <li class="breadcrumb-item"><a href="../19info.html">颜色→信息</a></li>
-      <li class="breadcrumb-item active">颜色→信息→直方图 <em>Histogram</em></li>
+          <li class="breadcrumb-item"><a href="../19info.html">⇨信息</a></li>
+      <li class="breadcrumb-item active">⇨直方图 <span class="i070">Histogram</span></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="../19info.html" class="btn btn-neutral float-left" title="颜色→信息" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="2border-average.html" class="btn btn-neutral float-right" title="颜色→信息→边界均值 Border Average" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../19info.html" class="btn btn-neutral float-left" title="⇨信息" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="2border-average.html" class="btn btn-neutral float-right" title="⇨边界均值 Border Average" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="histogram">
-<h1>颜色→信息→直方图 <em>Histogram</em><a class="headerlink" href="#histogram" title="永久链接至标题"></a></h1>
-<div class="figure align-center" id="id2">
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="histogram">
+<h1>⇨直方图 <span class="i070">Histogram</span><a class="headerlink" href="#histogram" title="Link to this heading"></a></h1>
+<figure class="align-center" id="id2">
 <img alt="../../../../_images/1histogram.png" src="../../../../_images/1histogram.png" />
-<p class="caption"><span class="caption-text">颜色→信息→直方图</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨信息⇨直方图</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>直方图中会显示活动图层或选区中色值的统计分布信息。</p>
 <p>如果您想对图像的色彩平衡进行调整，那么有必要查看直方图，这里显示的信息通常很有用。</p>
-<p>直方图只是单纯的显示信息，不能对图像进行调整。如果您要基于直方图来进行色彩调整，请使用菜单<span class="xref std std-ref">颜色→色阶</span>工具，色阶工具中会显示相同的直方图。</p>
-<div class="section" id="menu-color-info-histogram-channel">
-<span id="id1"></span><h2>通道<a class="headerlink" href="#menu-color-info-histogram-channel" title="永久链接至标题"></a></h2>
+<p>直方图只是单纯的显示信息，不能对图像进行调整。如果您要基于直方图来进行色彩调整，请使用菜单<a class="reference internal" href="../9level.html#menu-7color-9levels"><span class="std std-ref">颜色⇨色阶</span></a>工具，色阶工具中会显示相同的直方图。</p>
+<section id="menu-color-info-histogram-channel">
+<span id="id1"></span><h2>通道<a class="headerlink" href="#menu-color-info-histogram-channel" title="Link to this heading"></a></h2>
 <p>您可以选择查看哪个通道的直方图信息：</p>
-<ul>
-<li><p>明度{Value}：即图像的亮度。对于RGB模式的图像，明度=max(R,G,B)；对于灰度图像，明度可以直接从图像上获取；对于索引图像，明度是颜色的索引频率分布(对于索引图像，直方图显示的并不是色彩直方图)。</p></li>
-<li><p>红色/绿色/蓝色：RGB模式图像会显示这些颜色通道，这些颜色通道表示相应通道的强度{intensity}水平的分布。</p></li>
-<li><p>透明{alpha}：显示不透明度等级的分布。</p>
-<p>如果图层完全透明(alpha=0)或完全不透明(alpha=255)，直方图会显示左边或右边的单条纵向直线。</p>
-<p>如果图层没有透明通道，此选项会显示为灰色不可用。</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>明度<span class="i070">Value</span>：即图像的亮度。对于RGB模式的图像，明度=max(R,G,B)；对于灰度图像，明度可以直接从图像上获取；对于索引图像，明度是颜色的索引频率分布(对于索引图像，直方图显示的并不是色彩直方图)。</p></li>
+<li><p>红色/绿色/蓝色：RGB模式图像会显示这些颜色通道，这些颜色通道表示相应通道的强度<span class="i070">intensity</span>水平的分布。</p></li>
+<li><p>透明<span class="i070">alpha</span>：显示不透明度等级的分布。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>如果图层完全透明(alpha=0)或完全不透明(alpha=255)，直方图会显示左边或右边的单条纵向直线。</p></li>
+<li><p>如果图层没有透明通道，此选项会显示为灰色不可用。</p></li>
+</ul>
+</div></blockquote>
 </li>
 <li><p>RGB：</p>
-<p>同时显示R、G、B三个直方图，使用彩色显示，效果比较直观。</p>
-<div class="figure align-center" id="id3">
+<blockquote>
+<div><ul>
+<li><p>同时显示R、G、B三个直方图，使用彩色显示，效果比较直观。</p>
+<figure class="align-center" id="id3">
 <img alt="../../../../_images/1histogram-rgb.png" src="../../../../_images/1histogram-rgb.png" />
-<p class="caption"><span class="caption-text">颜色→信息→直方图⇒RGB</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">颜色⇨信息⇨直方图➡RGB</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>如果图像不是RGB模式，此选项会显示为灰色不可用。</p>
 </li>
-<li><p>亮度：</p>
-<p>即luminance，参考HCL色彩空间。</p>
-</li>
 </ul>
+</div></blockquote>
+</li>
+<li><p>亮度：</p>
+<blockquote>
+<div><p>即luminance，参考HCL色彩空间。</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
 <p>在通道右侧有四个开关，它们的功能主要是为了让直方图更直观：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>线性光：使用线性光模式。</p></li>
 <li><p>感官：使用感官模式。</p></li>
 <li><p>线性直方图：使用线性直方图。</p></li>
 <li><p>对数直方图：使用对数直方图。</p></li>
-</ul>
+</ol>
+</div></blockquote>
 <p>照片中色块通常比较少，通常使用线性直方图；而那些有多个色块的图片，使用对数直方图更直观。</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic">
 <li><p>范围：直方图下方有一个从黑到白的渐变色条，带两个三角控制滑块，您可以用滑块来限制下方统计信息的计算范围，下面的两个数值框同理。</p></li>
 <li><p>统计信息：</p>
-<ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>平均值 : 所选通道区间的平均值。</p></li>
 <li><p>标准偏差 : 可以考察分布的均匀性。</p></li>
 <li><p>中位数 : 例如，总计9个峰值间隔中第5个峰值的值。</p></li>
@@ -142,23 +171,25 @@
 <li><p>计数 : 区间或点击直方图时峰值中的像素数量。</p></li>
 <li><p>百分比 : 区间中的像素数量与活动图层或选区中的总像素数量的比率。</p></li>
 </ul>
+</div></blockquote>
 </li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="../19info.html" class="btn btn-neutral float-left" title="颜色→信息" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="2border-average.html" class="btn btn-neutral float-right" title="颜色→信息→边界均值 Border Average" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../19info.html" class="btn btn-neutral float-left" title="⇨信息" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="2border-average.html" class="btn btn-neutral float-right" title="⇨边界均值 Border Average" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

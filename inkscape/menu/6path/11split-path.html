@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>路径→有限分解</title><link rel="stylesheet" href="../../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/underline.css" type="text/css" />
+  <title>⇨有限分解 Split Path</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/translations.js"></script>
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
           href="../../../_static/opensearch.xml"/>
     <link rel="search" title="搜索" href="../../../search.html" />
-    <link rel="next" title="路径→庖丁拆解" href="11fracture.html" />
-    <link rel="prev" title="路径→分离" href="11break-apart.html" /> 
+    <link rel="next" title="⇨庖丁拆解 Fracture" href="11fracture.html" />
+    <link rel="prev" title="⇨分离 Break Apart" href="11break-apart.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,61 +85,63 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../inkscape.html">Inkscape操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../../inkscape-menu.html">Inkscape菜单</a></li>
+          <li class="breadcrumb-item"><a href="../../inkscape-menu.html">菜单:</a></li>
           <li class="breadcrumb-item"><a href="../6path.html">路径</a></li>
-      <li class="breadcrumb-item active">路径→有限分解</li>
+      <li class="breadcrumb-item active">⇨有限分解 <span class="i070">Split Path</span></li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="顺序式页面导航">
-        <a href="11break-apart.html" class="btn btn-neutral float-left" title="路径→分离" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="11fracture.html" class="btn btn-neutral float-right" title="路径→庖丁拆解" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="11break-apart.html" class="btn btn-neutral float-left" title="⇨分离 Break Apart" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="11fracture.html" class="btn btn-neutral float-right" title="⇨庖丁拆解 Fracture" accesskey="n">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="inkscape-menu-path-11split-path">
-<span id="id1"></span><h1>路径→有限分解<a class="headerlink" href="#inkscape-menu-path-11split-path" title="永久链接至标题"></a></h1>
-<p>快捷键：<strong>Shift</strong>+<strong>Ctrl</strong>+<strong>Alt</strong>+<strong>K</strong></p>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="split-path">
+<span id="inkscape-menu-path-11split-path"></span><h1>⇨有限分解 <span class="i070">Split Path</span><a class="headerlink" href="#split-path" title="Link to this heading"></a></h1>
+<p>快捷键： <span class="guilabel">Shift</span>+<span class="guilabel">Ctrl</span>+<span class="guilabel">Alt</span>+<span class="guilabel">K</span></p>
 <p>此命令主要针对路径对象封闭的中空区域作了一些处理。从文字处理的角度来解释，我们也许更容易理解这个命令的特点。</p>
-<p>与菜单命令 路径&gt;分离 相比，此命令相对能够保持文字的完整性，因为使用<span class="dash6">分离</span>命令，可能会导致文字混乱。如果想得到单个文字，可以使用菜单 扩展&gt;文字&gt;分离文字(split text) 命令。</p>
+<p>与菜单命令【路径⇨分离】相比，此命令相对能够保持文字的完整性，因为使用<span class="dash6">分离</span>命令，可能会导致文字混乱。如果想得到单个文字，可以使用菜单【扩展⇨文字⇨分离文字(split text)】命令。</p>
 <p>下面两个示例的对比可以直观感受 有限分解 命令的特点：</p>
 <dl class="simple">
 <dt>示例1：</dt><dd><ol class="arabic simple">
 <li><p>使用文字工具输入<span class="dash6">早上好 Good morning</span>；</p></li>
-<li><p>选中文字，点击菜单 路径&gt;对象转路径；</p></li>
-<li><p>选中转换后的对象，点击菜单 路径&gt;有限分解；</p></li>
+<li><p>选中文字，点击菜单【路径⇨对象转路径】；</p></li>
+<li><p>选中转换后的对象，点击菜单【路径⇨有限分解】；</p></li>
 <li><p>此时得到的结果，看起来与最初输入的文字没有区别，但实际上内容已经被转换为单独的路径。</p></li>
 </ol>
 </dd>
 <dt>示例2：</dt><dd><ol class="arabic simple">
 <li><p>使用文字工具输入<span class="dash6">早上好 Good morning</span>；</p></li>
-<li><p>选中文字，点击菜单 路径&gt;对象转路径；</p></li>
-<li><p>选中转换后的对象，点击菜单 路径&gt;分离；</p></li>
+<li><p>选中文字，点击菜单【路径⇨对象转路径】；</p></li>
+<li><p>选中转换后的对象，点击菜单【路径⇨分离】；</p></li>
 <li><p>此时得到的结果，依然是较小的独立路径，但部分文字的几何结构可能已经遭到破坏。</p></li>
 </ol>
 </dd>
 </dl>
-<div class="figure align-center" id="id2">
+<figure class="align-center" id="id1">
 <img alt="../../../_images/11split-path1.png" src="../../../_images/11split-path1.png" />
-<p class="caption"><span class="caption-text">有限分解 vs 分离</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
-</div>
-<p>如果您想对一段文字中的多个单文字或单字母进行处理的话，那么使用菜单 路径&gt;有限分解 命令是比较合适的。</p>
-</div>
+<figcaption>
+<p><span class="caption-text">有限分解 vs 分离</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>如果您想对一段文字中的多个单文字或单字母进行处理的话，那么使用菜单【路径⇨有限分解】命令是比较合适的。</p>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="11break-apart.html" class="btn btn-neutral float-left" title="路径→分离" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="11fracture.html" class="btn btn-neutral float-right" title="路径→庖丁拆解" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="11break-apart.html" class="btn btn-neutral float-left" title="⇨分离 Break Apart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="11fracture.html" class="btn btn-neutral float-right" title="⇨庖丁拆解 Fracture" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安装/卸载软件</title><link rel="stylesheet" href="../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/underline.css" type="text/css" />
+  <title>安装/卸载软件</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
+        <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -89,9 +97,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="app">
-<span id="id1"></span><h1>安装/卸载软件<a class="headerlink" href="#app" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="app">
+<span id="id1"></span><h1>安装/卸载软件<a class="headerlink" href="#app" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
+</div>
+<div class="admonition-w-red admonition">
+<p class="admonition-title"><a class="reference internal" href="../_images/warning.svg"><img alt="W" class="align-middle" src="../_images/warning.svg" style="width: 20px; height: 20px;" /></a> <span class="red">警告：新手第一原则：不要安装非官方仓库渠道的任何程序</span></p>
+<p>即，所有应用程序及工具软件的安装，都应该通过官方应用商店安装；或者通过下面两个命令安装，比如安装inkscape：</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>inkscape
+</pre></div>
+</div>
+</div></blockquote>
+<p>想要安装&amp;测试的非官方仓库应用，强烈建议先在虚拟机中测试后再在主机系统中安装，以保持主机系统正常。</p>
 </div>
 <p>Debian系统安装软件有多种方法，每种方法应用不同的情况，下面我们逐一说明。</p>
 <p><strong>第一种</strong>是GUI方式，这种方式需要使用软件商店，优势是全鼠标操作不用输入命令，劣势是操作稍显繁琐；且单一商店中软件包可能不全，需要用到新立德。(推荐，效率稍低)</p>
@@ -100,34 +119,34 @@
 <p><strong>第三种</strong>方式是使用flatpak，这种方式前期配置时一定需要用到命令，优势是软件版本通常都比较新，劣势是需要了解flatpak的操作方法。(推荐，版本相对更新)</p>
 <p><strong>第四种</strong>方式是下载应用软件的appimage版本。appimage等同于windows中的“绿色版”，下载到本地以后，不需要安装，只需要赋予执行权限就可以直接运行。优势是非常简单，劣势是体积稍大且需要注意安全性，尤其是appimage文件的来源很重要，一定要从官方渠道下载。(推荐，绿色，安全性需要考虑)</p>
 <p><strong>第五种</strong>方式是直接下载deb包到本地，然后安装这个deb包。这种方式主要应用那些只提供deb包的应用软件开发方，非常不推荐这种方式，只有在您特别需要该软件，且没有其它任何途径能够安装该软件的时候，才使用此方式。同时，要了解一点，这种方式很可能会影响系统安全。(不推荐，安全风险大)</p>
-<div class="section" id="id2">
-<h2>安全问题<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<section id="id2">
+<h2>安全问题<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>上面列出的五种方式中，第一种和第二种基本上没有额外的安全问题，因为所安装的软件都来自于官方仓库。</p>
 <p>第三种方式是flatpak，此方式自带沙箱，所以，安全上基本不需要太担心。</p>
 <p>第四种方式是appimage，这种方式确实存在安全风险。如果顾虑安全问题，可以进行沙箱处理，即让appimage在沙箱中运行，以保证Linunx系统的安全性。简单示例如下：</p>
 <blockquote>
 <div><ol class="arabic">
 <li><dl>
-<dt>安装沙箱工具firejail:</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install firejail
+<dt>安装沙箱工具firejail:</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>firejail
 </pre></div>
 </div>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>把appimage赋予运行权限：</dt><dd><p>鼠标右键点击appimage文件，选择 属性&gt;权限，勾选“允许执行文件”</p>
+<dt>把appimage赋予运行权限：</dt><dd><p>鼠标右键点击appimage文件，选择 属性⇨权限，勾选“允许执行文件”</p>
 </dd>
 </dl>
 </li>
 <li><dl>
-<dt>把赋予运行权限后的appimage文件拷贝到/opt/目录，例如：</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo cp libreoffice.AppImage /opt/
+<dt>把赋予运行权限后的appimage文件拷贝到/opt/目录，例如：</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>cp<span class="w"> </span>libreoffice.AppImage<span class="w"> </span>/opt/
 </pre></div>
 </div>
 </dd>
 </dl>
 </li>
 <li><dl>
-<dt>打开一个终端，然后运行命令：</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>firejail --noprofile --appimage /opt/libreoffice.AppImage
+<dt>打开一个终端，然后运行命令：</dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>firejail<span class="w"> </span>--noprofile<span class="w"> </span>--appimage<span class="w"> </span>/opt/libreoffice.AppImage
 </pre></div>
 </div>
 </dd>
@@ -138,9 +157,8 @@
 <p>上面是以libreoffice为例，可以在终端中打开一个libreoffice使用。您可以对firejail做更进一步的设置，以确保安全有效，具体方法请参考 <a class="reference external" href="https://wiki.archlinuxcn.org/wiki/Firejail">archwiki</a> 。</p>
 <p>因为是运行在firejail沙箱中，所以Linux系统的安全性得到有效增强。</p>
 <blockquote>
-<div><div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p><a class="reference internal" href="../_images/avatarp15.svg"><img alt="Y" class="align-middle" height="22" src="../_images/avatarp15.svg" width="22" /></a> 驿窗注：<strong>appimage安全事项</strong></p>
+<div><div class="admonition-appimage admonition">
+<p class="admonition-title">驿窗注：appimage安全事项</p>
 <ol class="arabic simple">
 <li><p>只使用软件官方网站提供的appimage；</p></li>
 <li><p>firejail沙箱安全性远不如虚拟机；</p></li>
@@ -149,11 +167,10 @@
 </div>
 </div></blockquote>
 <p>上面第五种方式是直接下载deb包，这种情况下建议只使用官方提供的deb包。并且，有一些软件开发方如果不可靠，那么即使是其官方提供的deb包，也可能不安全，请务必谨慎使用，建议不使用，或仅在虚拟机中使用。</p>
-<p><em>未完结</em></p>
-<hr class="docutils" />
-<p><em>最近一次更新：</em> 2024-07-22 00:14</p>
-</div>
-</div>
+<p><em>未完稿</em></p>
+<p><em>最近一次更新：2024-09-30</em></p>
+</section>
+</section>
 
 
            </div>
@@ -166,7 +183,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

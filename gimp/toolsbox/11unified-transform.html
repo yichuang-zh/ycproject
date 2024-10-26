@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>统一变换工具 Unified Transform Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>统一变换工具 Unified Transform Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">统一变换工具 <em>Unified Transform Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,26 +98,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="unified-transform-tool">
-<span id="gimp-tool-unified-transform"></span><h1>统一变换工具 <em>Unified Transform Tool</em><a class="headerlink" href="#unified-transform-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="unified-transform-tool">
+<span id="gimp-tool-unified-transform"></span><h1>统一变换工具 <em>Unified Transform Tool</em><a class="headerlink" href="#unified-transform-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">Shift</span>+<span class="guilabel">T</span></p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/11unified-transform.png" src="../../_images/11unified-transform.png" />
-<p class="caption"><span class="caption-text">统一变换工具及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>统一变换工具( <a class="reference internal" href="../../_images/gimp-tool-unified-transform.svg"><img alt="gimp-tool-unified-transform" class="align-middle" height="20" src="../../_images/gimp-tool-unified-transform.svg" width="20" /></a> )同时具备旋转、缩放、切变和透视四个功能，相当于这四个工具的结合体。</p>
+<figcaption>
+<p><span class="caption-text">统一变换工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>统一变换工具( <a class="reference internal" href="../../_images/gimp-tool-unified-transform.svg"><img alt="gimp-tool-unified-transform" class="align-middle" src="../../_images/gimp-tool-unified-transform.svg" style="width: 20px; height: 20px;" /></a> )同时具备旋转、缩放、切变和透视四个功能，相当于这四个工具的结合体。</p>
 <div class="line-block">
 <div class="line">如果当前活动图层上有选区，那么用 统一变换工具 在这个图层上的任意位置点击一下，就可以对此选区中的图像进行变换操作；</div>
 <div class="line">如果当前活动图层没有选区，那么用 统一变换工具 在这个图层上的任意位置点击一下，就可以对整个图层中的图像进行变换操作。</div>
 </div>
 <blockquote>
-<div><div class="figure align-center" id="id4">
+<div><figure class="align-center" id="id4">
 <img alt="../../_images/11unified-transform-sample.png" src="../../_images/11unified-transform-sample.png" />
-<p class="caption"><span class="caption-text">左下是带有多个手柄的统一变换矩形，右上是变换矩阵</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">左下是带有多个手柄的统一变换矩形，右上是变换矩阵</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <p>统一变换工具的操作方法：</p>
 <blockquote>
+<div><blockquote>
 <div><p>如上面的截图所示，此工具在矩形四周有多种控制手柄，各自实现不同的变换功能：</p>
 </div></blockquote>
 <ol class="arabic simple">
@@ -128,50 +141,58 @@
 <li><p>变换效果满意后，点击变换矩阵窗口中的“变换”按钮，可以应用变换(等同于按Enter键)；</p></li>
 <li><p>变换过程中不要切换其它工具，切换其它工具等同于按Enter键应用变换。</p></li>
 </ol>
-<div class="section" id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<ol class="arabic simple">
+</div></blockquote>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>按住Shift键会勾选工具选项中“限制(Shift)”项目下所有未勾选的选项，并取消勾选该项目下已经被勾选的选项；</p></li>
 <li><p>按住Shift键点击矩形的旋转中心时，旋转中心会被限制只能在矩形中心位置或四个角位置；</p></li>
 <li><p>按住Ctrl键会勾选工具选项中“从轴心(Ctrl)”项目下所有未勾选的选项，并取消勾选该项目下已经被勾选的选项；</p></li>
 </ol>
-<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱→矩形选择工具→保存选区提示</span></a>)</p>
-</div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<p>这里提供了更多的细节控制。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
-<ul class="simple">
-<li><p>变换：<img alt="11trans-target" class="align-middle" src="../../_images/11trans-target.png" /></p>
-<ol class="arabic simple">
+<p>(如果想把选区保存起来供以后使用，请参考<a class="reference internal" href="3tools-rectangle.html#hint-save-selection-box3"><span class="std std-ref">工具箱⇨矩形选择工具⇨保存选区提示</span></a>)</p>
+</div></blockquote>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>这里提供了更多的细节控制。</p>
+<p>(工具选项的位置请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
+<ol class="arabic">
+<li><p>变换：( <img alt="11trans-target" class="align-middle" src="../../_images/11trans-target.png" /> )</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>如果这里激活的是第<strong>一</strong>个按钮，表示变换操作的目标对象是<strong>图层</strong>。这种情况下，您只能对<strong>图层</strong>进行变换操作，选区是无法变换的。</p></li>
 <li><p>如果这里激活的是第<strong>二</strong>个按钮，表示变换操作的目标对象是<strong>选区</strong>。这种情况下，您只能对<strong>选区</strong>进行变换操作，图层是无法变换的。</p></li>
 <li><p>如果这里激活的是第<strong>三</strong>个按钮，表示变换操作的目标对象是<strong>路径</strong>。这种情况下，您只能对<strong>路径</strong>进行变换操作，选区或图层都是无法变换的。</p></li>
 <li><p>如果这里激活的是第<strong>四</strong>个按钮，表示变换操作的目标对象是<strong>整个图像</strong>。这种情况下，您会对<strong>整个图像</strong>进行变换操作，所有可见图层和不可见图层都会被变换。</p></li>
-</ol>
-</li>
 </ul>
-<ul>
+</div></blockquote>
+</li>
 <li><p>方向：设置图层变换的方式或方向：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>正常(向前)：按照鼠标操作的方向正常变换图像或图层。此选项的存在，主要是因为“校正(向后)”，因为“校正(向后)”的用途可能目的性更强一些。</p></li>
 <li><p>校正(向后)：反转方向，即变换结果与您操作的方向正相反，可用于修复有一些几何错误的数字照片，比如地平线不水平。(例：旋转统一变换矩形框，使其下边框与图像中不水平的地平线平行，点击Enter键。由于本选项的反向特性，导致实际变换结果正好让不水平的地平线变水平，而不是更不水平)</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
-<li><p>插值：因为图像做了重采样，所以您需要指定算法，不同的算法可能导致结果的质量不同。各个选项的说明，请参考<a class="reference internal" href="../menufile/5image/10scale.html#image-scale-quality"><span class="std std-ref">图像→缩放图像⇒质量</span></a>。</p></li>
+<li><p>插值：因为图像做了重采样，所以您需要指定算法，不同的算法可能导致结果的质量不同。各个选项的说明，请参考<a class="reference internal" href="../menufile/5image/10scale.html#image-scale-quality"><span class="std std-ref">图像⇨缩放图像➡质量</span></a>。</p></li>
 <li><p>剪裁：变换操作可能会导致图像尺寸变大，这里可以决定如何处理变大的尺寸：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>调整：图层尺寸被放大，以容纳增加的的区域。图层尺寸大于画布尺寸的部分没有删除，只是没显示，您可以移动图层位置来查看。</p></li>
 <li><p>剪裁：图层尺寸不变，超出图层尺寸的内容被删除。</p></li>
 <li><p>剪裁到结果：GIMP会计算统一变换矩形框内的图像，在统一变换矩形框范围内，尽可能大的保留一个矩形的图像，其它图像删除；图层边界可能会超出画布边界。</p></li>
 <li><p>按比例剪裁：与 剪裁到结果 类似，但会保持长宽比不变。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>显示图像预览：勾选此选项后，图像的变换效果可见；不勾选则需要按下Enter键后才可见。</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul>
 <li><p>图像不透明度：设置预览的不透明度。</p></li>
-<li><p>合成预览：图像变换效果的最终效果，等同于按下Enter键后的效果。</p></li>
-</ol>
+<li><p>合成预览：图像变换效果的最终效果，等同于按下Enter键后的效果。</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>预览链接的项目：显示所有链接图层的变换处理，而不只是当前选中图层。</p></li>
@@ -179,8 +200,12 @@
 </ul>
 </div></blockquote>
 </li>
+</ul>
+</div></blockquote>
+</li>
 <li><p>参考线：在选区中显示的参考线类型，即创建选区的同时在选区内显示参考线：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>无参考线：不使用参考线。</p></li>
 <li><p>中间线：一条垂直中心线和一条水平中心线，相互交叉。</p></li>
 <li><p>三分构图法：添加两条等距水平线和两条等距垂直线，将变换区域横向和纵向都三等分，整个图像九等分。</p></li>
@@ -189,40 +214,50 @@
 <li><p>对角线：用45度对角线划分变换区域。</p></li>
 <li><p>线的数量：类似 三分构图法 和 五分构图法。“线的数量”为2时，等同于三分构图法；“线的数量”为4时，等同于五分构图法；以此类推。</p></li>
 <li><p>线的间距：按指定间距放置参考线，间距值单位为像素；间距值无法取整时，会取近似值，以确保等间距。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>限制(Shift)：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>移动：勾选后，移动位置只能沿45°的整数倍方向操作。</p></li>
 <li><p>缩放：勾选后，缩放会保持长宽比。</p></li>
 <li><p>旋转：勾选后，旋转只能以15°的整数倍操作。</p></li>
 <li><p>切变：勾选后，切变手柄只能在所在的矩形边框线方向上操作。</p></li>
 <li><p>透视：勾选后，透视手柄只能在所在的矩形边框线方向上或对角线方向上操作。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>从轴心(Ctrl)：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>缩放：勾选后，缩放只能以轴心对称的方式操作。</p></li>
 <li><p>切变：勾选后，切变只能以轴心对称的方式操作。</p></li>
 <li><p>透视：勾选后，切变只能以轴心固定的方式操作。</p></li>
-</ol>
+</ul>
+</div></blockquote>
 </li>
 <li><p>轴心：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>吸附(Shift)：勾选后，变换过程中轴心接近变换矩形中心或角时，会被矩形中心或角吸附。</p></li>
 <li><p>锁定：勾选后，轴心被锁定。</p></li>
-</ol>
-</li>
 </ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置到GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -235,7 +270,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

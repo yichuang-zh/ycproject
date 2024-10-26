@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>油漆桶填充工具 Bucket Fill Tool</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>油漆桶填充工具 Bucket Fill Tool</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">GIMP工具箱</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_toolbox.html">工具箱</a></li>
       <li class="breadcrumb-item active">油漆桶填充工具 <em>Bucket Fill Tool</em></li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,61 +98,65 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="bucket-fill-tool">
-<span id="gimp-tool-bucket-fill"></span><h1>油漆桶填充工具 <em>Bucket Fill Tool</em><a class="headerlink" href="#bucket-fill-tool" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="bucket-fill-tool">
+<span id="gimp-tool-bucket-fill"></span><h1>油漆桶填充工具 <em>Bucket Fill Tool</em><a class="headerlink" href="#bucket-fill-tool" title="Link to this heading"></a></h1>
 <p>快捷键：<span class="guilabel">Shift</span>+<span class="guilabel">B</span></p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/21tool-bucket-fill.png" src="../../_images/21tool-bucket-fill.png" />
-<p class="caption"><span class="caption-text">油漆桶填充工具及其工具选项</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
-<p>油漆桶填充工具( <a class="reference internal" href="../../_images/gimp-tool-bucket-fill.svg"><img alt="gimp-tool-bucket-fill" class="align-middle" height="20" src="../../_images/gimp-tool-bucket-fill.svg" width="20" /></a> )可以用前景色填充选区；如果填充时按Alt键，则会使用背景色来填充。它可以填充整个选区，也可以按颜色相似程度进行填充，但每次只能填充连续的区域，非连续区域的填充需要多次填充操作来完成。</p>
+<figcaption>
+<p><span class="caption-text">油漆桶填充工具及其工具选项</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>油漆桶填充工具( <a class="reference internal" href="../../_images/gimp-tool-bucket-fill.svg"><img alt="gimp-tool-bucket-fill" class="align-middle" src="../../_images/gimp-tool-bucket-fill.svg" style="width: 20px; height: 20px;" /></a> )可以用前景色填充选区；如果填充时按Alt键，则会使用背景色来填充。它可以填充整个选区，也可以按颜色相似程度进行填充，但每次只能填充连续的区域，非连续区域的填充需要多次填充操作来完成。</p>
 <p>此工具的特点是可交互性、可关闭AI，某些情况下可以替代模糊选择工具(魔术棒)。</p>
-<p>选中 油漆桶填充工具 后，在选区内点击即可填充；如果没有选区存在，会填充整个图层。</p>
+<p>选中<span class="dash6">油漆桶填充工具</span>后，在选区内点击即可填充；如果没有选区存在，会填充整个图层。</p>
 <p>另外，在没有切换到油漆桶工具的情况下，用鼠标直接单击并拖动工具箱上的前景色、背景色或图案到选区(图层)也可进行填充。</p>
-<p>油漆桶填充工具的操作注意事项：</p>
-<ol class="arabic simple">
-<li><p>选中 油漆桶填充工具 后，在选区内点击即可填充前景色(按Alt填充背景色)；如果没有选区存在，会填充整个图层。</p></li>
-<li><p>如果您激活了工具选项中的“填充相似的颜色”，那么GIMP会按颜色相似度进行填充，即从点击位置向外扩散，填充那些与点击位置像素颜色相近的像素；颜色相近程度的判断，由工具选项中的“阈值”决定。</p></li>
-<li><p>如果有透明像素需要填充，请确保没有激活图层堆栈中的“锁定透明通道”选项。</p></li>
+<dl class="simple">
+<dt>油漆桶填充工具的操作注意事项：</dt><dd><ol class="arabic simple">
+<li><p>选中<span class="dash6">油漆桶填充工具</span>后，在选区内点击即可填充前景色(按Alt填充背景色)；如果没有选区存在，会填充整个图层。</p></li>
+<li><p>如果您激活了工具选项中的<span class="dash6">填充相似的颜色</span>，那么GIMP会按颜色相似度进行填充，即从点击位置向外扩散，填充那些与点击位置像素颜色相近的像素；颜色相近程度的判断，由工具选项中的<span class="dash6">阈值</span>决定。</p></li>
+<li><p>如果有透明像素需要填充，请确保没有激活图层堆栈中的<span class="dash6">锁定透明通道</span>选项。</p></li>
 </ol>
-<div class="section" id="id1">
-<h2>辅助快捷键<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
-<ol class="arabic simple">
-<li><p>按Ctrl键可以直接在图像上拾取颜色，不需要切换其它工具；</p></li>
-<li><p>按Shift键可以在工具选项中“填充整个选区”和“填充相似的颜色”二者之间切换；</p></li>
-<li><p>按Alt键可以在工具选项中“前景色填充”和“背景色填充”二者之间切换；</p></li>
-</ol>
-</div>
-<div class="section" id="id2">
-<h2>工具选项<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
-<p>这里提供一些细节控制。</p>
-<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱→矩形选择工具→如何显示工具选项</span></a>)</p>
-<ol class="arabic simple">
-<li><p>模式：请参考<a class="reference internal" href="../dockable/3layer-mode.html#menu-window-dockable-layer-mode"><span class="std std-ref">窗口→可停靠对话框→图层⇒模式</span></a>。</p></li>
-<li><p>不透明度：填充的不透明度级别。</p></li>
-<li><p>填充类型：</p></li>
-</ol>
+</dd>
+</dl>
+<section id="id1">
+<h2>辅助快捷键<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <blockquote>
-<div><ul>
-<li><p>前景色填充：使用前景色填充。</p></li>
-<li><p>背景色填充：使用背景色填充。</p></li>
-<li><div class="line-block">
-<div class="line">图案填充：使用图案填充。激活此项后，可以选择图案。</div>
-<div class="line">(关于图案，请参考<a class="reference internal" href="../dockable/18pattern.html#menu-window-dockable-18pattern"><span class="std std-ref">图案对话框</span></a>)</div>
-</div>
-</li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="4">
-<li><p>影响区域：</p></li>
+<div><ol class="arabic simple">
+<li><p>按Ctrl键可以直接在图像上拾取颜色，不需要切换其它工具；</p></li>
+<li><p>按Shift键可以在工具选项中<span class="dash6">填充整个选区</span>和<span class="dash6">填充相似的颜色</span>二者之间切换；</p></li>
+<li><p>按Alt键可以在工具选项中<span class="dash6">前景色填充</span>和<span class="dash6">背景色填充</span>二者之间切换；</p></li>
 </ol>
+</div></blockquote>
+</section>
+<section id="id2">
+<h2>工具选项<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>这里提供一些细节控制。</p>
+<p>(没找到工具选项？请参考<a class="reference internal" href="1tools-move.html#if-no-tools-option"><span class="std std-ref">工具箱⇨矩形选择工具⇨如何显示工具选项</span></a>)</p>
+<ol class="arabic">
+<li><p>模式：请参考<a class="reference internal" href="../dockable/3layer-mode.html#menu-window-dockable-layer-mode"><span class="std std-ref">窗口⇨可停靠对话框⇨图层➡模式</span></a>。</p></li>
+<li><p>不透明度：填充的不透明度级别。</p></li>
+<li><p>填充类型：</p>
 <blockquote>
 <div><ul class="simple">
+<li><p>前景色填充：使用前景色填充。</p></li>
+<li><p>背景色填充：使用背景色填充。</p></li>
+<li><p>图案填充：使用图案填充。激活此项后，可以选择图案。</p></li>
+<li><p>(关于图案，请参考<a class="reference internal" href="../dockable/18pattern.html#menu-window-dockable-18pattern"><span class="std std-ref">图案对话框</span></a>)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>影响区域：</p>
+<blockquote>
+<div><ul>
 <li><p>填充整个选区：如果激活此项，则直接填充整个选区；如果没有选区存在，则填充整个图层。</p></li>
-<li><p>填充相似的颜色：填充所点击像素附近与被点击像素颜色相近的区域。颜色相似程度由下面的“阈值”决定。</p>
-<ul>
+<li><p>填充相似的颜色：填充所点击像素附近与被点击像素颜色相近的区域。颜色相似程度由下面的<span class="dash6">阈值</span>决定。</p>
+<blockquote>
+<div><ul>
 <li><p>寻找相似的颜色：此选项仅在激活 填充相似的颜色 后才会显示：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>填充透明区域：填充低不透明度区域(高透明)。</p></li>
 <li><p>位样合并：计算颜色时从所有图层采样。</p></li>
 <li><p>对角邻居：勾选后，会计算所有八个相邻像素；不勾选则只计算正交的四个相邻像素。</p></li>
@@ -152,13 +164,17 @@
 <li><p>阈值：测量填充边界的颜色权重的级别。值越大，填充的区域越大，反之，值越小，填充的区域越小。</p></li>
 <li><p>填充使用：GIMP有多个算法来计算颜色相似程度，不同的算法会导致填充的边界有差异。这里可以在多个算法间进行选择。</p></li>
 </ol>
+</div></blockquote>
 </li>
 </ul>
+</div></blockquote>
 </li>
-<li><p>通过线条艺术检测填充：也叫智能着色。这个方法可以针对单色线条区域(比如黑白线条)进行着色，有一点AI(AI可关闭，方法是把“最大间隙长度”值设置为0)。GIMP会对线条图进行扫描和计算，尤其是未封闭的区域，会进行“封闭处理”，然后进行填充(也可以不做封闭处理)。</p>
-<ul>
+<li><p>通过线条艺术检测填充：也叫智能着色。这个方法可以针对单色线条区域(比如黑白线条)进行着色，有一点AI(AI可关闭，方法是把<span class="dash6">最大间隙长度</span>值设置为0)。GIMP会对线条图进行扫描和计算，尤其是未封闭的区域，会进行<span class="dash6">封闭处理</span>，然后进行填充(也可以不做封闭处理)。</p>
+<blockquote>
+<div><ul>
 <li><p>线条艺术检测：此选项仅在激活 通过线条艺术检测填充 后才会显示：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>源：计算线条艺术信息时，计算哪个图层。四个选项字面意思很明显。</p></li>
 <li><p>填充透明区域：填充完全透明的区域。</p></li>
 <li><p>羽化边缘：对填充边缘进行羽化处理，使边缘过度更平滑。</p></li>
@@ -166,23 +182,25 @@
 <li><p>线条艺术检测阈值：轮廓检测的阈值，值越高，检测的像素越多。</p></li>
 <li><p>最大间隙长度：线条艺术中可以关闭的最大间隙(像素)。</p></li>
 </ol>
-</li>
-</ul>
+</div></blockquote>
 </li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="5">
-<li><p>寻找相近的颜色(此选项只有在上面的 影响区域 中选择了 填充相似的颜色 后才会显示，否则不会显示)：</p></li>
-</ol>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>寻找相近的颜色(此选项只有在上面的<span class="dash6">影响区域</span>中选择了<span class="dash6">填充相似的颜色</span>后才会显示，否则不会显示)：</p>
 <blockquote>
-<div><ul class="simple">
+<div><ul>
 <li><p>填充透明区域：可以对透明进行填充。</p></li>
 <li><p>位样合并：勾选此项后，表示不是仅从当前图层采样，而是从所有可见图层采样。</p></li>
 <li><p>对角邻居：勾选此项后，GIMP会把对角线相邻的像素视为相连的像素；即，不是计算每个像素的四个正交相邻像素，而是要计算所有相邻的八个像素。</p></li>
 <li><p>抗锯齿：使填充边缘的过渡更平滑。</p></li>
 <li><p>阈值：计算边界时所用颜色权重的级别。值越大，填充的区域越大；反之，值越小，填充的区域越小。</p></li>
 <li><p>填充使用：告诉GIMP使用哪个通道来计算颜色的相近程度(确定填充的边界)：</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>合成：不考虑单一通道。</p></li>
 <li><p>红色：使用红色通道(R)。</p></li>
 <li><p>绿色：使用绿色通道(G)。</p></li>
@@ -195,62 +213,78 @@
 <li><p>LCh浓度：使用LCh中的Chroma通道。</p></li>
 <li><p>LCh色相：使用LCh中的Hue通道。</p></li>
 </ol>
+</div></blockquote>
 </li>
 </ul>
 </div></blockquote>
-<p>对于 阈值 和 填充使用 这两个选项，我们用几个示例来进行说明：</p>
-<dl>
+</li>
+</ol>
+</div></blockquote>
+<p>对于<span class="dash6">阈值</span>和<span class="dash6">填充使用</span>这两个选项，我们用几个示例来进行说明：</p>
+<blockquote>
+<div><dl>
 <dt>阈值：</dt><dd><p>如果被填充对象不是纯色，而是有渐变色，那么阈值的大小会影响填充的范围大小，如下图所示：</p>
-<div class="figure align-center" id="id4">
+<figure class="align-center" id="id4">
 <img alt="../../_images/21-3.png" src="../../_images/21-3.png" />
-<p class="caption"><span class="caption-text">图1：阈值不同的对比</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图1：阈值不同的对比</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
 </dl>
 <p>上图为原图，中图阈值=15,下图阈值=40。</p>
 <dl>
 <dt>填充使用：</dt><dd><p>我们以下图为例进来演示<strong>填充使用</strong>的原理。下图右侧是把前景色设为橙黄色，后面我们会用此前景色进行填充：</p>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id5">
 <img alt="../../_images/21-20.png" src="../../_images/21-20.png" />
-<p class="caption"><span class="caption-text">图2：原图</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图2：原图</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
-<dt>例1：</dt><dd><p>把油漆桶工具的 填充使用 设置为 合成，且前景色为上图的橙黄色，用油漆桶工具点击原图上面的蓝色区域，会得到下图左侧的效果；如果点击原图上面蓝色右边相邻的黑色区域，会得到下图右侧的效果：</p>
-<div class="figure align-center" id="id6">
+<dt>例1：</dt><dd><p>把油漆桶工具的<span class="dash6">填充使用</span>设置为<span class="dash6">合成</span>，且前景色为上图的橙黄色，用油漆桶工具点击原图上面的蓝色区域，会得到下图左侧的效果；如果点击原图上面蓝色右边相邻的黑色区域，会得到下图右侧的效果：</p>
+<figure class="align-center" id="id6">
 <img alt="../../_images/21-4.png" src="../../_images/21-4.png" />
-<p class="caption"><span class="caption-text">图3：填充使用选择合成，点击蓝色/黑色的效果</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图3：填充使用选择合成，点击蓝色/黑色的效果</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
-<dt>说明：</dt><dd><p>当 填充使用 设置为 合成 时，油漆桶工具会提取被点击像素的色值，然后填充色值相同的连续区域。图3左侧是点击了原图的蓝色区域的效果，所以，只有蓝色区域被填充为橙黄色，其它颜色不受影响；图3右侧是点击原图蓝色右边黑色区域的效果，所以，只有黑色区域被填充为橙黄色，其它颜色不受影响。</p>
+<dt>说明：</dt><dd><p>当<span class="dash6">填充使用</span>设置为<span class="dash6">合成</span>时，油漆桶工具会提取被点击像素的色值，然后填充色值相同的连续区域。图3左侧是点击了原图的蓝色区域的效果，所以，只有蓝色区域被填充为橙黄色，其它颜色不受影响；图3右侧是点击原图蓝色右边黑色区域的效果，所以，只有黑色区域被填充为橙黄色，其它颜色不受影响。</p>
 <p>并且，图3右侧最外围的黑色区域没有被填充为橙黄色，这是因为油漆桶工具仅填充连续区域，最外围的黑色区域被白色方框完全隔离，所以不受影响。</p>
 </dd>
-<dt>例2：</dt><dd><p>把油漆桶工具的 填充使用 设置为 红色，且前景色为上图的橙黄色，用油漆桶工具点击原图中的粉色区域，如下面左图所示，会得到左图所示的结果；如果点击原图上面蓝色右边相邻的黑色区域，会得到下图右侧的效果：</p>
-<div class="figure align-center" id="id7">
+<dt>例2：</dt><dd><p>把油漆桶工具的<span class="dash6">填充使用</span>设置为<span class="dash6">红色</span>，且前景色为上图的橙黄色，用油漆桶工具点击原图中的粉色区域，如下面左图所示，会得到左图所示的结果；如果点击原图上面蓝色右边相邻的黑色区域，会得到下图右侧的效果：</p>
+<figure class="align-center" id="id7">
 <img alt="../../_images/21-5.png" src="../../_images/21-5.png" />
-<p class="caption"><span class="caption-text">图4：填充使用选择红色，点击粉色/黑色的效果</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">图4：填充使用选择红色，点击粉色/黑色的效果</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </dd>
 <dt>说明：</dt><dd><ol class="arabic simple">
-<li><p><strong>填充使用</strong>选择了红色以后，表示用被点击像素的红色通道值进行相似计算，连续区域中的任何像素，只要红色通道值与被点击像素的红色通道值相同，就会被填充。</p></li>
+<li><p><span class="dash6">填充使用</span>选择了红色以后，表示用被点击像素的红色通道值进行相似计算，连续区域中的任何像素，只要红色通道值与被点击像素的红色通道值相同，就会被填充。</p></li>
 <li><p>上面图4中左侧点击粉色区域时，油漆桶工具开始计算粉色区域中被点击像素的红色通道值。因为被点击像素的红色通道值为255，所以，粉色区域及相邻区域的所有像素，只要红色通道值为255，就会被填充。所以，虽然仅点击了粉色区域，但黄色、白色、红色这三个区域的红色通道值也是255，所以，会同时被填充。结果是，点击粉色区域，但填充了四个不同的颜色区域。(这四个区域合在一起恰恰是RGB原理图的红圆)</p></li>
 <li><p>油漆桶工具默认使用前景色填充，当前的前景色已经设置为橙黄色，所以，被填充的四个区域变成橙黄色。</p></li>
 <li><p>接下来我们看上面图4中右侧的效果。</p></li>
-<li><p>右侧效果是用油漆桶工具点击蓝色旁边的黑色区域。因为<strong>填充使用</strong>选择了红色，所以油漆桶工具要提取黑色区域中被点击像素的红色通道值；而黑色像素的红色通道值为0，所以黑色区域及相邻区域中所有红色通道值为0的像素都会被填充。在图2的原图中，除了粉、白、黄、红四个区域，其它区域像素的红色通道值都为0，也就都被填充。</p></li>
+<li><p>右侧效果是用油漆桶工具点击蓝色旁边的黑色区域。因为<span class="dash6">填充使用</span>选择了红色，所以油漆桶工具要提取黑色区域中被点击像素的红色通道值；而黑色像素的红色通道值为0，所以黑色区域及相邻区域中所有红色通道值为0的像素都会被填充。在图2的原图中，除了粉、白、黄、红四个区域，其它区域像素的红色通道值都为0，也就都被填充。</p></li>
 <li><p>因为默认填充前景色，而前景色为橙黄色，所以，除了粉、白、黄、红四个区域，其它区域全部被填充为橙黄色。</p></li>
 <li><p>白框没有被填充为橙黄色，是因为白框中像素的红色通道值为255，而要填充的对象是像素的红色通道值为0的像素，所以，白框未受影响。</p></li>
 <li><p>白框外边的黑色区域，红色通道值也是0，但因为与白框内部区域不连续(被白框完全隔离)，所以也不受影响。</p></li>
 </ol>
 </dd>
 </dl>
+</div></blockquote>
 <p>工具选项窗口底部有四个按钮，一些常用的参数可以保存起来供以后使用：</p>
-<ul class="simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>保存工具预设：把当前的参数保存起来，以后可以直接调用；可以保存多个；保存时可以命名。</p></li>
 <li><p>恢复工具预设：调用以前保存的参数。</p></li>
 <li><p>删除工具预设：删除以前保存的参数。</p></li>
 <li><p>重置到默认值：把当前参数重置为GIMP默认值。</p></li>
-</ul>
-</div>
-</div>
+</ol>
+</div></blockquote>
+</section>
+</section>
 
 
            </div>
@@ -263,7 +297,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   

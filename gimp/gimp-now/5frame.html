@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>6. 给图片添加边框</title><link rel="stylesheet" href="../../_static/css/theme-ycp.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/s4defs-roles.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/underline.css" type="text/css" />
+  <title>6. 给图片添加边框</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+
+  
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1663b99f"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
+        <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="在  中搜索"
@@ -59,7 +68,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license.html">版权声明(驿窗311条款)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../donate/donate.html">捐助</a></li>
 </ul>
 
         </div>
@@ -77,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../gimp.html">GIMP操作指南</a></li>
-          <li class="breadcrumb-item"><a href="../gimp_now.html">GIMP不学即用</a></li>
+          <li class="breadcrumb-item"><a href="../gimp_now.html">即学即用</a></li>
       <li class="breadcrumb-item active"><span class="section-number">6. </span>给图片添加边框</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -90,19 +98,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1><span class="section-number">6. </span>给图片添加边框<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+  <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="id1">
+<h1><span class="section-number">6. </span>给图片添加边框<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>如果您给图片的四周添加一个边框，可以参考下面的步骤操作。</p>
 <p>原图没有边框，效果是这样：</p>
-<div class="figure align-center" id="id2">
+<figure class="align-center" id="id2">
 <img alt="../../_images/5frame.jpg" src="../../_images/5frame.jpg" />
-<p class="caption"><span class="caption-text">雪山 四周无边框</span><a class="headerlink" href="#id2" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">雪山：四周无边框</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>加边框后的效果：</p>
-<div class="figure align-center" id="id3">
+<figure class="align-center" id="id3">
 <img alt="../../_images/5frame-ok.jpg" src="../../_images/5frame-ok.jpg" />
-<p class="caption"><span class="caption-text">雪山 加边框之后</span><a class="headerlink" href="#id3" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">雪山：加边框之后</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>操作方法如下：</p>
 <ol class="arabic simple">
 <li><p>打开GIMP。</p></li>
@@ -111,10 +123,12 @@
 <ul class="simple">
 <li><p>如果你的工具箱和下面截图不一样，可能需要调整一下<a class="reference internal" href="../gimp_toolbox.html#gimp-toolsbox-group-ungroup"><span class="std std-ref">工具箱分组</span></a>功能；</p></li>
 </ul>
-<div class="figure align-center" id="id4">
+<figure class="align-center" id="id4">
 <img alt="../../_images/1-3drag-toolbox.jpg" src="../../_images/1-3drag-toolbox.jpg" />
-<p class="caption"><span class="caption-text">把图像拖到GIMP工具箱上</span><a class="headerlink" href="#id4" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">把图像拖到GIMP工具箱上</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="3">
 <li><p>工具箱上下都显示了黑色边框的时候，松开鼠标，即可在GIMP中打开该图片。</p></li>
 </ol>
@@ -122,93 +136,111 @@
 <li><p><em>GIMP工具箱会自动检测：工具箱上下显示黑色边框表示已经检测到拖过来的图片；</em></p></li>
 </ul>
 <ol class="arabic simple" start="4">
-<li><p>点击菜单 选择→全部，选中整个图像。</p></li>
+<li><p>点击菜单【选择⇨全部】，选中整个图像。</p></li>
 </ol>
 <ul class="simple">
 <li><p><em>全部选中后，图像四周会显示动态的黑白虚线；</em></p></li>
 </ul>
-<div class="figure align-center" id="id5">
+<figure class="align-center" id="id5">
 <img alt="../../_images/5frame-select-all.jpg" src="../../_images/5frame-select-all.jpg" />
-<p class="caption"><span class="caption-text">选择→全部</span><a class="headerlink" href="#id5" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">选择⇨全部</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="5">
-<li><p>点击菜单 编辑→勾画选区，</p></li>
+<li><p>点击菜单【编辑⇨勾画选区】，</p></li>
 </ol>
-<div class="figure align-center" id="id6">
+<figure class="align-center" id="id6">
 <img alt="../../_images/5frame-stroke-selection.jpg" src="../../_images/5frame-stroke-selection.jpg" />
-<p class="caption"><span class="caption-text">编辑→勾画选区</span><a class="headerlink" href="#id6" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">编辑⇨勾画选区</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="6">
-<li><p>在对话框中选中“笔廓线”，再选择“纯色”，线宽数值要根据您的图片尺寸来定，如果不确认多少合适，可以先试一下20，不行再改。其它选项不用管，点击右下角的“笔廓”按钮。</p></li>
+<li><p>在对话框中选中<span class="dash6">笔廓线</span>，再选择<span class="dash6">纯色</span>，线宽数值要根据您的图片尺寸来定，如果不确认多少合适，可以先试一下20，不行再改。其它选项不用管，点击右下角的<span class="dash6">笔廓</span>按钮。</p></li>
 </ol>
-<div class="figure align-center" id="id7">
+<figure class="align-center" id="id7">
 <img alt="../../_images/5frame-stroke-bk-20.jpg" src="../../_images/5frame-stroke-bk-20.jpg" />
-<p class="caption"><span class="caption-text">添加默认边框后的效果</span><a class="headerlink" href="#id7" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">添加默认边框后的效果</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="7">
 <li><p>(边框的颜色和粗细可能不合适，我们先调整一下粗细)</p></li>
-<li><p>按Ctrl+Z两次，撤销之前添加的边框，然后按上面第4步的方法：点击菜单 选择→全部，选中整个图像；再按第5步方法：点击菜单 编辑→勾画选区，把“线宽”从20改为4，然后点击右下角的“笔廓”按钮。</p></li>
+<li><p>按Ctrl+Z两次，撤销之前添加的边框，然后按上面第4步的方法：点击菜单【选择⇨全部】，选中整个图像；再按第5步方法：点击菜单【编辑⇨勾画选区】，把<span class="dash6">线宽</span>从20改为4，然后点击右下角的<span class="dash6">笔廓</span>按钮。</p></li>
 </ol>
-<div class="figure align-center" id="id8">
+<figure class="align-center" id="id8">
 <img alt="../../_images/5frame-stroke-bk-4.jpg" src="../../_images/5frame-stroke-bk-4.jpg" />
-<p class="caption"><span class="caption-text">边框线宽改为4之后的效果</span><a class="headerlink" href="#id8" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">边框线宽改为4之后的效果</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" id="avatar-5frame-modify-fg" start="9">
 <li><p>(边框宽度已经没问题了，接下来我们改一下边框的颜色)</p></li>
 <li><p>(边框的颜色使用的是工具箱的前景色，如下图所示)</p></li>
 </ol>
-<div class="figure align-center" id="id9">
+<figure class="align-center" id="id9">
 <img alt="../../_images/5frame-fg-bg.jpg" src="../../_images/5frame-fg-bg.jpg" />
-<p class="caption"><span class="caption-text">工具箱中的前景色和背景色</span><a class="headerlink" href="#id9" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">工具箱中的前景色和背景色</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" id="avatar-5frame-modify-fg-color" start="11">
 <li><p>(上面截图底部左上大的黑色方块就是前景色，当前为黑色；我们用鼠标点击这个方块，会显示下面的窗口)</p></li>
 </ol>
-<div class="figure align-center" id="id10">
+<figure class="align-center" id="id10">
 <img alt="../../_images/5frame-modify-fg.png" src="../../_images/5frame-modify-fg.png" />
-<p class="caption"><span class="caption-text">修改前景色</span><a class="headerlink" href="#id10" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">修改前景色</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="12">
-<li><p>(上面截图中可以修改前景色：先点击最左侧大色块的右侧的纵向色条，选择一种颜色，选择后最左侧的大色块会相应变化；之后在最左侧的大色块中点击，选择颜色，这个颜色就变成前景色。然后点击右下角的“确定”按钮)</p></li>
+<li><p>(上面截图中可以修改前景色：先点击最左侧大色块的右侧的纵向色条，选择一种颜色，选择后最左侧的大色块会相应变化；之后在最左侧的大色块中点击，选择颜色，这个颜色就变成前景色。然后点击右下角的<span class="dash6">确定</span>按按钮)</p></li>
 <li><p>假设上一步选择了红色，工具箱中应该是这样的：</p></li>
 </ol>
-<div class="figure align-center" id="id11">
+<figure class="align-center" id="id11">
 <img alt="../../_images/5frame-modify-fg-red.jpg" src="../../_images/5frame-modify-fg-red.jpg" />
-<p class="caption"><span class="caption-text">前景色已经改为红色</span><a class="headerlink" href="#id11" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">前景色已经改为红色</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ul class="simple">
 <li><p>对比第10步的截图，前景色已经从黑色变为红色；</p></li>
 </ul>
 <ol class="arabic simple" start="14">
-<li><p>重新画边框：按第4步方法点击菜单 选择→全部，选中整个图像；再按第5步方法：点击菜单 编辑→勾画选区，“线宽”设置为4，然后点击右下角的“笔廓”按钮。结果如下图：</p></li>
+<li><p>重新画边框：按第4步方法点击菜单【选择⇨全部】，选中整个图像；再按第5步方法：点击菜单【编辑⇨勾画选区】，<span class="dash6">线宽</span>按设置为4，然后点击右下角的<span class="dash6">笔廓</span>按按钮。结果如下图：</p></li>
 </ol>
-<div class="figure align-center" id="id12">
+<figure class="align-center" id="id12">
 <img alt="../../_images/5frame-ok.jpg" src="../../_images/5frame-ok.jpg" />
-<p class="caption"><span class="caption-text">修改前景色为红色再加边框的效果</span><a class="headerlink" href="#id12" title="永久链接至图片"></a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">修改前景色为红色再加边框的效果</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <hr class="docutils" />
-<p><strong>进阶 ⇒ 边框从纯色改为图案</strong></p>
+<p><strong>进阶 ➡ 边框从纯色改为图案</strong></p>
 <p>您还可以添加类似下面这样的边框：(点击可查看原图)</p>
 <a class="reference internal image-reference" href="../../_images/5frame-patten1.jpg"><img alt="../../_images/5frame-patten1.jpg" src="../../_images/5frame-patten1.jpg" style="width: 32%;" /></a>
 <a class="reference internal image-reference" href="../../_images/5frame-patten2.jpg"><img alt="../../_images/5frame-patten2.jpg" src="../../_images/5frame-patten2.jpg" style="width: 32%;" /></a>
 <a class="reference internal image-reference" href="../../_images/5frame-patten3.jpg"><img alt="../../_images/5frame-patten3.jpg" src="../../_images/5frame-patten3.jpg" style="width: 32%;" /></a>
-<p>上面三个边框，是在上面第6步操作时，把“纯色”换成了“图案”，然后从图案对话框中选择一个图案即可，其它操作完全相同。下面介绍一下选择图案的方法：</p>
+<p>上面三个边框，是在上面第6步操作时，把<span class="dash6">纯色</span>按换成了<span class="dash6">图案</span>按，然后从图案对话框中选择一个图案即可，其它操作完全相同。下面介绍一下选择图案的方法：</p>
 <ol class="arabic simple" start="15">
-<li><p>点击菜单 窗口→可停靠对话框→图案。(打开图案对话框)</p></li>
+<li><p>点击菜单【窗口⇨可停靠对话框⇨图案】。(打开图案对话框)</p></li>
 </ol>
-<div class="figure align-center" id="id13">
-<img alt="../../_images/18pattern1.png" src="../../_images/18pattern1.png" />
-<p class="caption"><span class="caption-text">窗口→可停靠对话框→图案</span><a class="headerlink" href="#id13" title="永久链接至图片"></a></p>
-</div>
+<figure class="align-center" id="id13">
+<img alt="../../_images/18pattern.png" src="../../_images/18pattern.png" />
+<figcaption>
+<p><span class="caption-text">窗口⇨可停靠对话框⇨图案</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple" start="16">
 <li><p>对话框中显示很多图案，点击一个合适的图案即可。</p></li>
-<li><p>从上面第一步开始操作，仅第6步把“纯色”换成“图案”，其它所有操作完全相同，就能实现图案边框。</p></li>
+<li><p>从上面第一步开始操作，仅第6步把<span class="dash6">纯色</span>换成<span class="dash6">图案</span>，其它所有操作完全相同，就能实现图案边框。</p></li>
 </ol>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
-<p>边框从纯色改为图案后，最好在第6步中把“线宽”改为8，这样效果相对比较好。</p>
+<div class="admonition- admonition">
+<p class="admonition-title">驿窗注：</p>
+<p>边框从纯色改为图案后，最好在第6步中把<span class="dash6">线宽</span>改为8，这样效果相对比较好。</p>
 </div>
-</div>
+</section>
 
 
            </div>
@@ -221,7 +253,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; 版权所有 : 驿窗.</p>
+    <p>&#169; 版权所有 : 驿窗。</p>
   </div>
 
   
