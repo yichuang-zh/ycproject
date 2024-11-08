@@ -7,10 +7,10 @@
   <title>⇨文档属性</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
       <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
 
   
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
@@ -118,12 +118,23 @@
 <li><p>方向：比如A4纸横向或者纵向。</p></li>
 <li><p>缩放：这里的缩放，主要是指对viewbox进行调整。缩放的数值框右侧有一个小点，激活后，会锁定viewbox与绘图内容，使二者缩放比例一致。</p></li>
 <li><p>Viewbox：这里可以对viewbox的位置和缩放进行调整。</p>
-<div class="admonition- admonition">
+<blockquote>
+<div><div class="admonition- admonition">
 <p class="admonition-title">驿窗注：</p>
 <p>上面两项(缩放; viewbox)都是针对viewbox的设置。viewbox是svg的一个属性参数，编程时必须赋值。如果您只是绘图，那么不要修改viewbox相关的设置，保持为默认值就好。但如果您要进行开发，比如专门为web交互而设计svg，那么请参考svg标准中viewbox相关的内容。</p>
 </div>
+</div></blockquote>
 </li>
-<li><p>显示单位：即文档的度量单位。在这里调整度量单位，会同步修改工具选项栏的度量单位和页面标尺的度量单位。工具选项栏的度量单位不会影响页面标尺。</p></li>
+<li><p>显示单位：即文档的度量单位。在这里调整度量单位，会同步修改工具选项栏的度量单位和页面标尺的度量单位。工具选项栏的度量单位不会影响页面标尺。</p>
+<blockquote>
+<div><div class="admonition-t070 admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>永久修改单位</p>
+<p>默认情况下，Inkscape使用的单位是mm，如果您在文档属性中修改为px，那么，px会只在当前文档中生效；如果您新创建一个空白文档，其默认单位又会变回mm。不过，这个默认单位mm是可以通过<span class="dash6">模板</span>功能改为px的。</p>
+<p>修改方法是创建一个新空白文档，在空白文档中打开文档属性对话框，把单位从默认的mm改为px，然后点击菜单【文件⇨保存为模板】，为模板起个名字，并勾选<span class="dash7">设为默认模板</span>，点击<span class="dash6">保存</span>按钮即可。</p>
+<p>以后您创建新文档时，显示的单位就都是px了。</p>
+</div>
+</div></blockquote>
+</li>
 <li><p>页面/边框/桌面：页面表示在<span class="dash6">格式</span>所设定的区域内部的颜色；边框表示这个区域的边框的颜色；桌面表示整个画布的背景颜色。</p></li>
 <li><p>跳棋盘：勾选后，画布会由纯色背景变为方格背景。</p></li>
 <li><p>边框：勾选后，会在页面尺寸边缘显示框线。</p></li>
@@ -214,7 +225,7 @@
 <p><span class="caption-text">文档属性对话框⇨许可</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p><em>最近一次更新：2024-06-23</em></p>
+<p><em>最近一次更新：2024-11-06</em></p>
 <blockquote>
 <div></div></blockquote>
 </section>

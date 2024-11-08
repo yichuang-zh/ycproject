@@ -109,6 +109,7 @@
 <li><p><a class="reference internal" href="#viewbox"><span class="std std-ref">知识面宽度：viewbox</span></a></p></li>
 <li><p><a class="reference internal" href="#color-management"><span class="std std-ref">专业知识：color management</span></a></p></li>
 <li><p><a class="reference internal" href="#color-stop"><span class="std std-ref">上难度的综合能力(雅)：color stop</span></a></p></li>
+<li><p><a class="reference internal" href="#byperson-themselves"><span class="std std-ref">责任心：译员的心态决定一切</span></a></p></li>
 <li><p><a class="reference internal" href="#challange"><span class="std std-ref">挑战</span></a></p></li>
 </ol>
 </div></blockquote>
@@ -117,7 +118,7 @@
 <li><p>在翻译之前，熟练掌握软件的使用及应用，是精确汉化的重要条件；</p></li>
 <li><p>字面翻译可能导致汉化翻译不精确，甚至是错误翻译；</p></li>
 <li><p>最重要的原则：知道原文在说什么和想做什么，避免唯一化字面理解；</p></li>
-<li><p>音译应该禁止使用；</p></li>
+<li><p>音译应该谨慎使用；</p></li>
 <li><p>不熟悉软件，或者不熟悉软件的局部，应谨慎考虑翻译结果；</p></li>
 <li><p>与行业内的老外充分沟通，因为老外，尤其是英语母语的老外，对于英文原文思想的理解更全面也更深刻；</p></li>
 <li><p>UI翻译结果应该在软件中进行检查测试；</p></li>
@@ -125,7 +126,7 @@
 </ol>
 </dd>
 </dl>
-<p>开源软件的官方，以及开源软件的用户，多数关心的其实是翻译的完成度，或者翻译完成百分比；而对于软件翻译的质量，并没有特别的期待，或者没有期待。原因主要是开源软件团队通常是松散组织，很难形成一般企业那样的<span class="dash6">有效的</span>专门负责翻译质量的部门或职位，比如：</p>
+<p>开源软件的官方，以及开源软件的用户，很多人关心的其实是翻译的完成度，或者翻译完成百分比；而对于软件翻译的质量，并没有特别的期待，或者没有期待。原因主要是开源软件团队通常是松散组织，很难形成一般企业那样的<span class="dash6">有效的</span>专门负责翻译质量的部门或职位，比如：</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>没有专门负责汉化的翻译人员；</p></li>
@@ -233,32 +234,32 @@
 <p>按字面翻译UI界面是开源软件汉化最常见的情况，但也是出问题最多的地方，看下面的内容。</p>
 <p>Inkscape软件中，打开菜单【编辑⇨首选项】后有一项叫<span class="dash6">导入的图像</span>,英文是imported images。如下图所示：</p>
 <blockquote>
-<div><figure class="align-center" id="id7">
+<div><figure class="align-center" id="id8">
 <img alt="../../_images/imported_image_cn.png" src="../../_images/imported_image_cn.png" />
 <figcaption>
-<p><span class="caption-text">图1：导入的图像中文界面截图</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+<p><span class="caption-text">图1：导入的图像中文界面截图</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
 <p>下面是它的原始英文版本：</p>
 <blockquote>
-<div><figure class="align-center" id="id8">
+<div><figure class="align-center" id="id9">
 <img alt="../../_images/imported_image_en.png" src="../../_images/imported_image_en.png" />
 <figcaption>
-<p><span class="caption-text">图2：导入的图像英文界面截图</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+<p><span class="caption-text">图2：导入的图像英文界面截图</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
 <p>仅从字面看，imported images翻译成<span class="dash6">导入的图像</span>没有任何问题，逻辑上或者形式上都说得通，但对于那些经常使用inkscape的用户来说，如果真碰到问题，这个翻译就会带来麻烦：</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>从上面图1的中文界面截图中可以看到，<span class="dash6">导入的图像</span>所包含的内容除了与导入有关，还有导出内容：<span class="dash6">默认导出分辨率</span>，这个选项可以决定导出图像的默认分辨率。</p></li>
-<li><p>在首选项菜单中，只有这一个页面与图像导出相关，其它任何地方都没有图像导出相关选项。</p></li>
+<li><p>从上面图1的中文界面截图中可以看到，<span class="dash6">导入的图像</span>所包含的内容除了与导入有关，还有导出内容：<span class="dash6">默认导出分辨率</span>，这个选项可以决定<span class="dash6">导出</span>图像的默认分辨率。</p></li>
+<li><p>在首选项菜单中，只有这一个页面与图像<span class="dash6">导出</span>相关，其它任何地方都没有与图像<span class="dash6">导出</span>相关的选项。</p></li>
 <li><p>出问题的情况是，一个尺寸为600x300像素的矩形在导出时，如果导出分辨率使用的是300，那么导出的图像尺寸会莫名其妙地变为1975x937像素，即<span class="dash6">默认导出分辨率</span>的数值导致导出图像的尺寸出现异常，或者错误。由于是默认设置，所以每一次导出位图时都需要在导出对话框中手动修改分辨率数值，以确保导出图像的尺寸正常。</p>
 <p>这个时候，如果想避免每一次导出位图都要修改分辨率数值，就需要到首选项菜单中重新设置默认数值。而首选项菜单中，没有任何一个<span class="dash6">一级选项</span>有涉及<span class="dash7">导出</span>的字样，包括<span class="dash6">导入的图像</span>也没有。这里的<span class="dash6">一级选项</span>指的是打开首选项就直接可以看到的条目，这些条目都没有<span class="dash6">导出</span>字样。这种情况下，我们一目十行的浏览首选项内容，想找到与<span class="dash7">导出</span>相关的条目，通常要花很长时间才能找到，甚至最后还找不到。</p>
 <p>而汉化时，如果我们不用<span class="dash6">导入的图像</span>这个翻译结果，而是使用<span class="dash7">导入/导出</span>来翻译imported images，用户就能够很快看到<span class="dash6">导出</span>字样的条目，进而快速找到需要调整的分辨率选项所在的位置，高效解决问题，避免在首选项对话框中查来找去浪费时间。</p>
 </li>
-<li><p>我们没必要去研究开发者为什么把导入设置也放到<span class="dash6">导入的图像</span>这个界面里，因为这并不重要；重要的是，译员的工作并不是要对开发团队负责，而是要对终端用户负责，这里就是对中文用户负责。而对于中文用户来说，大多数情况下他们并不关心英文原文是什么；而中文界面使用起来是否方便、是否易于理解和操作，这才是中文用户最关心也最需要译员解决的问题。基于这个理解，很多时候我们不按字面翻译UI，效果明显要更好一些。</p></li>
+<li><p>我们没必要去研究开发者为什么把<span class="dash6">导出</span>设置也放到<span class="dash6">导入的图像</span>这个界面里，因为这并不重要；重要的是，译员的工作并不是要对开发团队负责，而是要对终端用户负责，这里就是对中文用户负责。而对于中文用户来说，大多数情况下他们并不关心英文原文是什么；而中文界面使用起来是否方便、是否易于理解和操作，这才是中文用户最关心也最需要译员解决的问题。基于这个理解，很多时候我们不按字面翻译UI，效果明显要更好一些。</p></li>
 </ol>
 </div></blockquote>
 <p>所以，对于操作Inkscape软件的用户来说，imported images的翻译不按字面来才是更好的选择：</p>
@@ -273,8 +274,8 @@
 </div></blockquote>
 <p>这里仅仅讨论了最简单最直观的一个局限情况。在实际汉化工作中，字面翻译导致的问题远不止于此。</p>
 <blockquote>
-<div><div class="admonition-dash6 admonition">
-<p class="admonition-title">驿窗注：什么情况会修改<span class="dash6">默认导出分辨率</span></p>
+<div><div class="admonition-t070-dash6 admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>什么情况会修改<span class="dash6">默认导出分辨率</span></p>
 <p><span class="dash6">默认导出分辨率</span>的默认值是96。通常情况下不需要修改这个数值，但需要长期以特定分辨率导出位图的时候，比如用于印刷的位图，一般会使用300这个分辨率，这时候就需要修改这个<span class="dash6">默认导出分辨率</span>数值为300，然后就不用每一次导出位图的时候都去设置一次分辨率，那会降低工作效率。</p>
 <p><em>截图中的dpi应为ppi</em></p>
 </div>
@@ -288,13 +289,13 @@
 <p class="admonition-title">驿窗注：Viewbox出处</p>
 <div class="line-block">
 <div class="line">Inkscape1.4 beta3 之后的版本：菜单【文件⇨文档属性➡显示➡Viewbox】 <span class="lime">✓</span></div>
-<div class="line">Inkscape1.4 beta3 及之前的版本：菜单【文件⇨文档属性➡显示➡视图框】 <span class="red">ㄨ</span></div>
+<div class="line"><span class="t070">Inkscape1.4 beta3 之前的版本：菜单【文件⇨文档属性➡显示➡视图框】</span> <span class="red">ㄨ</span></div>
 </div>
 </div>
 </div></blockquote>
 <p>从字面上看，<span class="dash6">视图框</span>这个翻译基本没问题，view解释为视图，box解释为框架，合在一起解释为视图框，很简练 <span class="red">ㄨ</span> 。另外，从功能上看，Viewbox也确实是一个可视的范围，所以叫做视图框没什么问题 <span class="red">ㄨ</span> 。出问题的地方在于，译员的知识面有限，只知道Inkscape，不了解svg编程语言及Inkscape与svg编程语言的关系。</p>
 <p>Inkscape文件的原生格式是svg，svg是一种W3C编程语言标准，在svg语言编程中有一个通用属性是viewbox，专门用于定义SVG元素的可见区域和缩放比例。svg编程过程中，viewbox是要进行赋值的，如果viewbox被翻译成<span class="dash6">视图框</span>，svg编程就会出问题，因为编程中并不能对<span class="dash6">视图框</span>赋值，只能对viewbox赋值；即，我们需要把<span class="dash6">Viewbox</span>当做函数来使用和理解。所以，viewbox不应该被翻译，而应该保持英文原文。</p>
-<p>viewbox反映了软件汉化可能所存在的很小的问题可能性。下面继续。</p>
+<p>类似viewbox这样的软件汉化情况不多见，但确实存在。下面继续。</p>
 </section>
 <section id="color-management">
 <span id="id4"></span><h2>五、专业知识：color management<a class="headerlink" href="#color-management" title="Link to this heading"></a></h2>
@@ -304,19 +305,19 @@
 </div></blockquote>
 <p>这一段注释之前被翻译为：</p>
 <blockquote>
-<div><p><span class="dash4">软件校对</span> <span class="red">ㄨ</span> 时<span class="dash7">标记出无法在目标色彩空间内展现的色彩</span> <span class="red">ㄨ</span>。</p>
+<div><p><span class="dash4">软件校对</span>时<span class="dash7">标记出无法在目标色彩空间内展现的色彩</span>。</p>
 </div></blockquote>
 <dl class="simple">
 <dt>这个翻译有两处错误：</dt><dd><ol class="arabic simple">
-<li><p>软件校对 <span class="red">ㄨ</span></p></li>
-<li><p>标记出无法在目标色彩空间内展现的色彩 <span class="red">ㄨ</span></p></li>
+<li><p><span class="dash4">软件校对</span> <span class="red">ㄨ</span></p></li>
+<li><p><span class="dash7">标记出无法在目标色彩空间内展现的色彩</span> <span class="red">ㄨ</span></p></li>
 </ol>
 </dd>
 </dl>
 <p>这两处错误主要原因是译员不了解色彩管理这个比较偏门的专业领域：</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>在色彩管理流程中，<span class="dash6">soft-proof</span>或者<span class="dash6">soft-proofing</span>有专门的中文翻译，叫<span class="dash6">软打样</span>，也有叫做<span class="dash6">屏幕打样</span>，意思是指在电脑屏幕上模拟显示印刷输出的效果，与校对没有关系。</p></li>
+<li><p>在色彩管理流程中，<span class="dash6">soft-proof</span>或者<span class="dash6">soft-proofing</span>有专门的中文翻译，叫<span class="dash6">软打样</span>，也有叫做<span class="dash6">屏幕打样</span>，意思是指在电脑屏幕上模拟印刷的效果，与校对没有关系。</p></li>
 <li><p>后面的英文被翻译成<span class="dash7">标记出无法在目标色彩空间内展现的色彩</span><span class="red">ㄨ</span>也是同理，在色彩管理领域，它有对应的专门的中文翻译叫<span class="dash6">超色域警告</span><span class="lime">✓</span>。</p></li>
 <li><p>错误翻译的另一个原因是遵守了字面翻译原则。</p>
 <p>我们看下面这段描述：</p>
@@ -331,7 +332,7 @@
 <div><p>同理，上面的中文翻译<span class="dash7">标记出无法在目标色彩空间内展现的色彩</span><span class="red">ㄨ</span>确实详细说明了那个命令在做什么，但就是不说它是<span class="dash6">超色域警告</span>。在色彩管理流程中，它就是超色域警告。</p>
 </div></blockquote>
 <ol class="arabic simple" start="3">
-<li><p>所以，上面那段英文When soft-proofing, mark colors which cannot be represented in the target color space，正确的中文翻译应该是<span class="dash7">软打样时显示超色域警告</span>。<span class="lime">✓</span></p></li>
+<li><p>所以，上面那段英文When soft-proofing, mark colors which cannot be represented in the target color space，正确的中文翻译应该是<span class="d70f0">软打样时显示超色域警告</span>。<span class="lime">✓</span></p></li>
 </ol>
 </div></blockquote>
 <dl class="simple">
@@ -352,7 +353,8 @@
 </div></blockquote>
 </div></blockquote>
 <p>专业领域翻译示例还有很多，基本都是作为术语处理，这里不一一讨论。</p>
-<p>专业翻译的术语概念，是出于对专业领域的尊重和遵守，有其必要性，比如我们在一些战争电视剧中会听到通信兵对着话筒讲数字的时候，数字<span class="dash6">0</span>发音为<span class="dash6">洞</span>，数字<span class="dash6">7</span>发音为<span class="dash6">拐</span>，这其实就是术语的必要性和应用意义。而当译员专业领域的知识能力不足的时候，就可能会导致翻译质量不好或者翻译错误，因为专业术语被当成日常用语进行翻译，导致专业含义缺陷。</p>
+<p>专业翻译的术语概念，是出于对专业领域的尊重和遵守，有其必要性，比如我们在一些战争电视剧中会听到通信兵对着话筒讲数字的时候，数字<span class="dash6">0</span>发音为<span class="dash6">洞</span>，数字<span class="dash6">7</span>发音为<span class="dash6">拐</span>，这其实就是术语的必要性和应用意义。当译员专业领域的知识能力不足的时候，就可能会导致翻译质量不好或者翻译错误，因为专业术语被当成日常用语进行翻译，导致专业含义缺陷。</p>
+<p>其实，专业术语在日常也有很常见的应用，比如火警电话119，我们交流的时候不会发音成<span class="dash6">壹壹</span>九，而会发音成<span class="dash6">腰腰</span>九，这就是专业术语的日常应用。</p>
 </section>
 <section id="color-stop">
 <span id="id5"></span><h2>六、上难度的综合能力：color stop <em>信达雅</em><a class="headerlink" href="#color-stop" title="Link to this heading"></a></h2>
@@ -372,7 +374,7 @@
 <p>虽然在GIMP、Inkscape、illustrator、photoshop、QuarkXPress等平面相关软件中的渐变工具中都会用到color stop，但它的英文说法并不统一，下面是不同软件中color stop的不同说法：</p>
 <div class="line-block">
 <div class="line">GIMP：color stop, stop, startpoint, midpoint, endpoint</div>
-<div class="line">Inkscape：gradient stop, stop</div>
+<div class="line">Inkscape：gradient handles, gradient stop, stop</div>
 <div class="line">krita：gradient stop, stop</div>
 <div class="line">scribus：color stop, color point</div>
 <div class="line">illustrator：color stop</div>
@@ -386,7 +388,7 @@
 <dl class="simple">
 <dt>下面是几个软件中color stop当前中文翻译情况：</dt><dd><ol class="arabic simple">
 <li><p>GIMP：过渡点</p></li>
-<li><p>Inkscape：停止点/分段点，驿窗已经更新为色标</p></li>
+<li><p>Inkscape：<span class="t070">停止点/分段点</span>，驿窗已经更新为<strong>色标</strong></p></li>
 <li><p>krita：色标</p></li>
 <li><p>photoshop：色标</p></li>
 <li><p>illustrator：色标</p></li>
@@ -398,14 +400,14 @@
 <p>参考photoshop和krita的翻译，color stop翻译为色标，确实比较合适。驿窗并没有做到从正面去推导出这个翻译结果，下面是反推的解释，看有没有道理：</p>
 <blockquote>
 <div><blockquote>
-<div><p>汉语有一个词，叫界标，用来标记和划分不同的地域或区域范围。有另一个说法，叫做<span class="dash6">界碑</span>，也是相同的用途，用来划分地块/区域。还有一个词可以参考：浮标，用来指示某个范围。无论界标还是浮标，它们的共通点是，本身即是指代区域或范围属性，不是直线属性，也不是点属性。</p>
-<p>界标与色标相比，共同点上面已经提到，都是对区域或范围进行划分。虽然二者在具体表现形态上都只是一个点，但其本身及结果是必然的范围划分或者区域分界，所以其具体指向和影响的结果不会只是一个点或一条直线，而是区域或者范围。这一特性，在<span class="dash6">停止点</span>这个翻译上无法体现，在<span class="dash6">过渡点</span>这个翻译上也很难体现，包括<span class="dash6">分段点</span>和<span class="dash6">端点</span>也不贴切。因此，参考界标/浮标，用<span class="dash6">色标</span>应该是最符合color stop的翻译结果。不知道是哪位前辈最先把color stop翻译成色标的，如果那位前辈是使用正推法得出<span class="dash6">色标</span>这个词，那就太令人叹服了。以驿窗的经验，用正推把color stop翻译成<span class="dash6">色标</span>非常难，因为它离字面意思已经很远。</p>
+<div><p>汉语有一个词，叫界标，用来标记和划分不同的地域或区域范围。还有一个词可以参考：浮标，用来指示某个范围。无论界标还是浮标，它们的共通点是，本身即是指代区域或范围属性，不是直线属性，也不是点属性。</p>
+<p>界标与色标相比，共同点上面已经提到，都是对区域或范围进行划分。虽然二者在具体表现形态上都只是一个点，但其本身及结果是必然的范围划分或者区域分界，所以其具体指向和影响的结果不会只是一个点或一条直线，而是区域或者范围。这一特性，在<span class="dash6">停止点</span>这个翻译上无法体现，在<span class="dash6">过渡点</span>这个翻译上也很难体现，包括<span class="dash6">分段点</span>和<span class="dash6">端点</span>也不贴切；这几个翻译要么是从字面翻译，要么是从形式上翻译，都没有接触到其功能的本质。因此，参考界标/浮标，用<span class="dash6">色标</span>应该是最符合color stop的翻译结果。不知道是哪位前辈最先把color stop翻译成色标的，如果那位前辈是使用正推法得出<span class="dash6">色标</span>这个词，那就太令人叹服了。以驿窗的经验，用正推把color stop翻译成<span class="dash6">色标</span>非常难，因为它离字面意思已经很远。</p>
 <p>还有一点，<span class="dash6">色标</span>是两个汉字，<span class="dash6">停止点</span>或者<span class="dash6">过渡点</span>都是三个汉字。把color stop翻译成两个汉字，比翻译成三个汉字要难很多，但和三个字相比，两个字的色标用起来确实会让人感觉到非常通顺、非常舒服：即能表达color stop的含义，又非常简练易理解易记，还朗朗上口。</p>
-<p>综合上面的讨论，译员有必要思考一个问题，即：<span class="dash6">英文原文到底想说什么和想做什么</span>，是译员首先要弄清楚的关键问题，这远比搞清楚<span class="dash6">原文怎么说</span>要重要得多。而这里把color stop翻译成色标，可能已经触碰到翻译水平的一个重要层次：雅。<em>信达雅</em></p>
+<p>综合上面的讨论，译员有必要思考一个问题，即：<span class="dash6">英文原文到底想说什么和想做什么</span>，是译员首先要弄清楚的关键问题，这远比搞清楚<span class="dash6">原文怎么说</span>要重要得多。然后在这个基础之上，译员可以进行更高层级的探索。而这里把color stop翻译成色标，可能已经触碰到翻译水平的一个重要层次：雅。<em>翻译的信达雅</em></p>
 </div></blockquote>
-<div class="admonition-color-stop admonition">
-<p class="admonition-title">驿窗注：color stop的本质</p>
-<p>color stop通常是一个点，与界标/浮标一样。color stop这个点所设置的颜色，目的不是想影响或改变当前这个点的颜色，而是要对点的两侧的区域的颜色产生范围性影响，以达到<span class="d60c0n">颜色在某个范围内渐渐变化</span>的目的。这个目的与界标/浮标的功能完全一样。</p>
+<div class="admonition-t070-color-stop admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>color stop的本质</p>
+<p>color stop在形式上通常是一个点，与界标/浮标一样。color stop这个点所设置的颜色，目的不是想影响或改变当前这个点的颜色，而是要影响这个点两侧的区域的颜色，是范围概念，以达到<span class="d60c0n">颜色在某个范围内渐渐变化</span>的目的。这个目的与界标/浮标的功能完全一样。</p>
 </div>
 </div></blockquote>
 <p>综上所述，上面提到的color stop及相关的几个词汇的翻译可以按以下方式处理：</p>
@@ -419,14 +421,18 @@
 </ol>
 </div></blockquote>
 <dl>
-<dt>另一个思考：</dt><dd><p>GIMP及其它开源软件在国内的应用比国外晚很长时间，国内开始关注GIMP时，photoshop已经在国内流行很久。换句话说，国内接触GIMP的用户，很多都有过photoshop的使用经验，这就表示，对于color stop这个词汇，很多用户其实已经建立了一个中文概念，就是<span class="dash6">色标</span>。而对于色标这个翻译，在大方向上，如果没有根本性错误，也没有较大语义偏差的情况下，GIMPUI及InkscapeUI中的翻译与photoshopUI保持一致(向ps看齐)，对于用户来说无疑更友好；无论用户是先有photoshop使用经验，还是先有GIMP使用经验，在二者之间切换时，在color stop上不会有任何障碍。相反，如果翻译不一致，那么就会存在障碍，有可能需要花时间精力去做进一点确认和熟悉，也影响用户之间的交流，这样就对用户不太友好。生存本就不易，学习软件又花费了很多时间和精力，如果我们做为译员能在汉化翻译上帮助用户减少一点点麻烦，何乐而不为。</p>
-<p>这是从更广泛的角度来讨论翻译问题，考验译员的眼光和格局。</p>
+<dt>另一个思考：</dt><dd><p>GIMP及其它开源软件在国内的应用比国外晚很长时间，国内开始关注GIMP时，photoshop已经在国内流行很久。换句话说，国内接触GIMP的用户，很多都有过photoshop的使用经验，这就表示，对于color stop这个词汇，很多用户其实已经建立了一个中文概念，就是<span class="dash6">色标</span>。而对于色标这个翻译，在大方向上，如果没有根本性错误，也没有较大语义偏差的情况下，GIMP UI及InkscapeUI中的翻译与photoshopUI保持一致(向ps看齐)，对于用户来说无疑更友好；无论用户是先有photoshop使用经验，还是先有GIMP使用经验，在二者之间切换时，在color stop这这里不会有任何障碍。相反，如果翻译不一致，那么就会存在障碍，有可能需要花时间精力去做进一步的确认和熟悉，也影响用户之间的交流，这样就对用户不太友好。生存本就不易，学习软件又花费了很多时间和精力，做为译员能在汉化翻译上帮助用户减少一点点麻烦，何乐而不为。</p>
+<p>这是从更广泛的角度来讨论翻译问题，可能考验译员的眼光和格局。</p>
 </dd>
 </dl>
 <p>上面已经从几个不同的角度论述了几个开源软件汉化质量相关的问题，接下来我们列出一些没有完全解决的问题。</p>
 </section>
+<section id="byperson-themselves">
+<span id="id6"></span><h2>七、责任心：译员的心态决定一切<a class="headerlink" href="#byperson-themselves" title="Link to this heading"></a></h2>
+<p>无论上面提到的哪一个因素，最后的汉化质量都会被译员的心态所左右。译员的目的是唯一能体现整体汉化质量的恒定要素，也是影响汉化质量的最重要因素，下面详细列出几个方向：</p>
+</section>
 <section id="challange">
-<span id="id6"></span><h2>七、挑战<a class="headerlink" href="#challange" title="Link to this heading"></a></h2>
+<span id="id7"></span><h2>八、挑战<a class="headerlink" href="#challange" title="Link to this heading"></a></h2>
 <p>这里列出部分驿窗认为还需要改进的汉化：</p>
 <blockquote>
 <div><ol class="arabic">
@@ -455,7 +461,7 @@
 </ol>
 </div></blockquote>
 <p><em>未完稿……</em></p>
-<p><em>最近一次更新：2024-10-17</em></p>
+<p><em>最近一次更新：2024-10-29</em></p>
 <hr class="docutils" />
 <p>开源软件发展已经很多年了，没法从零开始，进一步提升汉化质量的一个简单有效的办法是统一把控，即由一个相对资深或公认的译员对汉化内容进行二次整体把控。那些第一关的把控人员先真正熟悉软件本身，基本上就能排除大部分错误，再统一由进一步的把控人员进行英文水平、中文水平、全面性知识、专业性知识、逻辑推理、眼光格局等进行整体把控，做到真正为用户着想，才能更有力量地去推动开源软件的发展。这样也能够做到把翻译的质量提高一到两个层级，向信达雅的雅更进一步。</p>
 <p>另外的问题：</p>
