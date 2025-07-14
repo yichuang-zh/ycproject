@@ -2,13 +2,17 @@
   "rewrites": [
     {
       "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "ycproject.cn"
-        }
-      ],
-      "destination": "/old.html"
+      "destination": "/index.html",
+      "headers": {
+        "host": "yc-project.com"
+      }
+    },
+    {
+      "source": "/",
+      "destination": "/old.html",
+      "headers": {
+        "host": "ycproject.cn"
+      }
     }
   ]
 }
