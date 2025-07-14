@@ -1,14 +1,14 @@
-   {
-     "rewrites": [
-       {
-         "source": "/",
-         "has": [
-           {
-             "type": "host",
-             "value": "ycproject.cn"
-           }
-         ],
-         "destination": "/old.html"
-       }
-     ]
-   }
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/old.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "ycproject.cn"
+        }
+      ]
+    }
+  ]
+}
