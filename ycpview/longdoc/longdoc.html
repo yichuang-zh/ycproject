@@ -7,10 +7,10 @@
   <title>标点符号的问题及解决方案：下划线与空格</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
@@ -44,10 +44,10 @@
           
           <a href="../../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -57,13 +57,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
@@ -84,7 +82,7 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../ycpview.html">驿窗研究报告</a></li>
+          <li class="breadcrumb-item"><a href="../ycpview.html">驿窗研究报告〓</a></li>
       <li class="breadcrumb-item active">标点符号的问题及解决方案：下划线与空格</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -111,7 +109,7 @@
 </dd>
 </dl>
 <section id="longdoc-01italic">
-<span id="id2"></span><h2>一：为什么中文不应该使用斜体字？<a class="headerlink" href="#longdoc-01italic" title="Link to this heading"></a></h2>
+<span id="id2"></span><h2>一：为什么中文不应该使用斜体字混排？<a class="headerlink" href="#longdoc-01italic" title="Link to this heading"></a></h2>
 <p>先看截图对比：</p>
 <figure class="align-center" id="id9">
 <img alt="../../_images/1italic1.png" src="../../_images/1italic1.png" />
@@ -119,15 +117,15 @@
 <p><span class="caption-text">斜体字对比效果图</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>上面截图中第一行演示的是中文斜体存在的问题。其中<span class="dash6">为什么中文字体</span>这七个字是斜体，两侧其它的文字不是斜体。</p>
+<p>上面截图中第一行演示的是中文斜体存在的问题。其中<span class="dash6">为什么中文字体</span>这七个字使用斜体，两侧其它的文字未使用斜体。这种斜体与正体在同一句中同时出现的情况我们定义为斜体混排。</p>
 <p>第一行中使用斜体的最后一个字是<span class="dash6">体</span>字，它与右侧的<span class="dash6">不</span>字的间距明显有挤压的感觉，让人感觉很不协调。同样不协调的，是为什么的<span class="dash6">为</span>字与其左侧展示的<span class="dash6">示</span>字，两者间距稍大了一些。</p>
-<p>第二行是英文用类似的局部斜体字排版的效果，阅读的时候完全没有第一行那种空间不协调的感觉。而之所以英文看起来很协调，是因为英文单词与单词之间有空格存在，空格的存在导致单词与单词之间的空间变大，也就弱化了斜体字所导致的空间不协调的问题。并且，这种弱化非常有效，以至于阅读时根本察觉不到斜体字与非斜体字紧临时所产生的空间不协调问题。</p>
+<p>第二行是英文，与第一行同样是斜体混排的效果，阅读的时候完全没有第一行那种空间不协调的感觉。而之所以英文看起来很协调，是因为英文单词与单词之间有空格存在，空格的存在导致单词与单词之间的空间变大，也就弱化了斜体字所导致的空间不协调的问题。并且，这种弱化非常有效，以至于阅读时根本察觉不到斜体字与非斜体字紧临时所产生的空间不协调问题。</p>
 <p>空格所带来的这个弱化作用，在中文上同样有效，比如第三行，就是在第一行的基础上增加了空格。第三行和第一行相比，斜体字所带来的空间不协调的问题基本上被空格给解决掉了。(实际上，空格的作用比较特别，后面有更详细的说明)</p>
-<p>问题在于，中文的行文是不使用空格的，即汉字与汉字之间没有空格，所以，不能用这种增加空格的方法来解决斜体字所带来的空间不调协问题。这也是为什么英文使用斜体没问题，而中文使用斜体时却经常有空间不协调感觉的主要原因。所以，中文在行文时如果句中有某个词使用斜体，必然会产生空间不协调问题。</p>
+<p>问题在于，中文的行文是不使用空格的，即汉字与汉字之间没有空格，所以，不能用这种增加空格的方法来解决斜体字所带来的空间不调协问题。这也是为什么英文使用斜体没问题，而中文使用斜体时却经常有空间不协调感觉的主要原因。所以，中文在行文时如果句中有某个词使用斜体，必然会产生空间不协调问题。如果英文行文时仅一个单词中的某一个字母使用斜体，其它字母不使用斜体，则会与中文出现同样的不协调问题。</p>
 <p>驿窗认为这个问题的解决方案很简单，就是不使用斜体，改用下划线。斜体字的目的无非是提醒阅读人员注意斜体文字有特别含义或指向，比如强调、引用等。而这些特别含义，完全可以由文字下方的下划线来同等实现。斜体改下划线的效果可以参考上面5、6、7这三行。需要提示的地方是，下划线越实越显眼，就越影响泛读；越虚越不显眼，泛读效果越好；没有下划线时，泛读效果最好。</p>
 <p>由于空格的存在会弱化空间不协调的问题，所以，如果是整句或整段的文字全部使用斜体字，那么其实是不存在空间不协调问题的，比如上面截图中的第四行的效果：中文的段落或句子两端天然有空格存在。</p>
 <p>在第四行中，冒号和逗号把整句话分成三部分，两边的句子不是斜体，中间一句是斜体。能够感觉到，斜体字所造成的空间不协调问题非常不明显，基本可以忽略不计。原理是，全角的中文标点，要占用一个汉字的空间，等同于在一个汉字同等大小的空格上添加一个简单符号，即空格与标点同时存在。而由于标点本身结构简单，占用的实际空间面积很小，所以，全角标点符号，即有标点本身所提供的的特别的断句意义，也有空格所提供的弱化空间不协调的功能。即，冒号和逗号同时兼有空格效果。</p>
-<p>中文全角标点的这个<span class="dash6">空格</span>功能，使我们在整段中文或整句中文使用斜体时，不用再顾忌空间不协调的问题，仅在句中个别字词使用斜体时，才需要注意。所以，请尽量避免在中文行文时对句中个别的字词使用斜体字体。</p>
+<p>中文全角标点的这个<span class="dash6">空格</span>功能，使我们在整段中文或整句中文使用斜体时，不用再顾忌空间不协调的问题，仅在句中个别字词使用斜体时，才需要注意。所以，请尽量避免中文行文时在句中斜体与正体混排，即仅整句或整段才使用斜体。</p>
 <p>根据驿窗的研究，目前已有的排版软件，比如办公用的word或者wps，以及出版印刷用的QuarkXPress或者InDesign，都有斜体功能。并且，这些软件对斜体所带来的间隔突兀问题都有所优化，但也仅仅是优化，并没有从根本上解决问题。原因在于，这个斜体字的功能，主要是由于排版软件是源于国外的英文排版，所以有英文斜体功能存在，然后引进到中国以后，延伸到中文也有斜体功能。如果仅仅是汉语排版，那么其实是可以不使用斜体这个功能的，而是用下划线。</p>
 <p>除了用下划线代替斜体，也可以考虑用差异字体或粗体代替斜体，但差异字体或者粗体都有另外的问题，具体请参考下面的论述。</p>
 </section>
@@ -146,7 +144,7 @@
 <p><span class="caption-text">中英文字面结构差异</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>截图有上下两行，上面一行是字号为11点的中文和字号为12点的英文，放大处理。第二行是在第一行的基础上对中文和英文做相同的加粗处理。</p>
+<p>截图有上下两行，上面一行是字号为11点的中文和字号为12点的英文，放大处理。第二行是在第一行的基础上对字体做加粗处理。</p>
 <p>观察第一行中文与英文黑色的文字与绿色空白背景，明显中文所留下的绿色空白少一些，英文留下的空白多一些，这是中英文字面结构差异导致的结果，因为中文笔划比较多。</p>
 <p>第二行是在第一行的基础上作加粗处理。中文字面的空余空间明显变得更少了。如果在中文行文时把某个或某几个字词加粗，就会出现过于显眼的问题。同理，如果修改加粗的等级，那么可能会导致加粗不明显，即不够显眼的情况出现。</p>
 <p>由于英文字母的字面结构比中文的汉字简单很多，所以英文使用粗体时，字体太粗而过于显眼的情况基本没有。中文汉字因为结构复杂，一旦加粗，如果使用与英文相同的字重，就会导致中文文字整体颜色偏重过多，从而导致在段中有点过于显眼。并且，调整字重并不能完全解决这个问题。下面是过于显眼的效果截图：</p>
@@ -156,7 +154,7 @@
 <p><span class="caption-text">文字加粗影响泛读</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>上面截图中，第一段多处使用了加粗字体，提示的目的已经达到了，但过于显眼，影响泛读效果。</p>
+<p>上面截图中，第一段多处使用了加粗字体，醒目提示的目的确实已经达到了，但有点过于显眼，影响泛读效果。</p>
 <p>第二段和第三段把加粗改成了下划线，在不失提示的同时，又提高了泛读的效率。至于选择哪种下划线，可以灵活考量。同一文档中，不建议同时使用多种下划线，一种最好。如果同一文档中一定要两种下划线混用，那么每一种下划线的提示意义应该是固定不变的，以避免导致阅读者思维混乱。</p>
 <p>另外，加粗字体除了上面提到的问题以外，还有其它一些因素会影响加粗效果：</p>
 <ol class="arabic simple">
@@ -172,11 +170,11 @@
 <p>上面讨论斜体字的时候，我们发现，空格可以弱化斜体中文所带来的空间问题。这里，我们就更全面的讨论一下空格对于汉语行文的影响。</p>
 <p>现代的小学语文教学中，对于空格的使用，基本都停留在一个地方，就是行文开始时，前面留几个空格。</p>
 <p>比如，在一个段落的开头，通常要留两个空格；如果是作文，那么可能会要求作文的标题左侧空四个空格，或者整体左右居中。而段落内文中，通常是不允许空格存在的。</p>
-<p>而实际上，现行的汉语标点符号，除了标点符号本身，还同时具备空格的属性。例如冒号，就是在句中插入一个全角空格，并且在空格里点上两个小点，而句号就是空格中的小圆圈，其它标点符号同理。这些标点符号和汉字一样，要占用一个空格的空间，但因为标点符号的大小比汉字要小很多，所以，空格的<span class="dash6">空白</span>区域在句中就比较明显，即，标点符号的位置，通常都同时又有一个空格，或者叫行文空白。</p>
-<p>如果把所有标点符号都去掉，但保留空格，那么仍然可以断句，但标点符号的一些特殊指向意义可能会丢失，比如代表一句话结束的句号的意义，或者书名号代表一本书的书名的意义，或者双引号代表的引用了一句话的意义等等。但是，如果不需要这些特别的指向意义，那么只使用空格来断句所得到的效果，与使用全角标点符号(空格+标点符号)的效果，基本没有什么区别。事实是，这种仅使用空格来行文的方式已经被很多人使用，比如微信/QQ聊天，有的人是基本不输入标点符号的，只使用空格来断句；只有极少数特别需要的时候，才会偶尔使用一两个标点符号，比如为了加重反问的语气并同时表达自己的情绪，可能会在最后多敲一个问号来结尾。(对于需要大量且快速输入小段文字的人来说，在微信/QQ聊天中使用空格来代替标点，有时能够大幅提升信息传递的效率)</p>
-<p>所以，主要起断句作用的，其实是空格，而不是标点符号本身，即，行文中出现的空格，能够给阅读者带来思维中断的效果；而对断句位置的含义进行额外说明的，则是标点符号本身，比如逗号或句号，它们可以在行文断开时，表明一句话是否完全结束。</p>
+<p>而实际上，现行的汉语标点符号，除了标点符号本身，还同时具备空格的属性。例如冒号，就是在句中插入一个全角空格，并且在空格里点上两个小点，而句号就是空格中的小圆圈，其它标点符号同理。这些标点符号和汉字一样，要占用一整个汉字尺寸的空格空间，但因为标点符号的大小比汉字要小很多，所以，空格的<span class="dash6">空白</span>区域在句中就比较明显，即，标点符号的位置，通常都同时又有一个空格，或者叫行文空白。</p>
+<p>如果把所有标点符号都去掉，但保留空格，那么仍然可以断句，但标点符号的一些特殊指向意义可能会丢失，比如代表一句话结束的句号的意义，或者书名号代表一本书的书名的意义，或者双引号代表的引用意义等等。但是，如果不需要这些特别的指向意义，那么只使用空格来断句所得到的效果，与使用全角标点符号(空格+标点符号)的效果，基本没有什么区别。事实是，这种仅使用空格来行文的方式已经被很多人使用，比如微信/QQ聊天，有的人是基本不输入标点符号的，只使用空格来断句；只有极少数特别需要的时候，才会偶尔使用一两个标点符号，比如为了加重反问的语气并同时表达自己的情绪，可能会在最后多敲一个问号来结尾。(对于需要大量且快速输入小段文字的人来说，在微信/QQ聊天中使用空格来代替标点，有时能够大幅提升信息传递的效率)</p>
+<p>所以，主要起断句作用的，其实是空格，而不是标点符号本身，即，行文中出现的空格，能够给阅读者带来思维中断的效果；而对断句位置的含义进行额外说明的，则是标点符号本身，比如逗号或句号，它们可以在行文断开时，表明一句话是已经完全结束，还是没结束仍有后文。</p>
 <p>上面提到，空格代替标点能够大幅提升信息传达的效率，这一点已经有具体应用体现，典型的应用就是视频的字幕。</p>
-<p>在视频中使用的字幕，基本上不会使用标点符号。除了一句话一屏字幕外，如果一屏出现两句话，那么绝大多数情况下，都不会使用标点符号，而是使用空格。字幕使用空格的效果，要远好于使用具体的标点符号。原因是，一方面，观众的注意力主要集中在视频的画面和声音上，已经分神处理字幕了，如果再分神处理标点符号信息，会浪费更多精力，导致观众感觉比较累；另一方面，视频具有文字所没有的信息，比如语气、表情、动作、声调等等，这些内容在一定程度上比标点符号能更有效地传达信息，所以，字幕断句时通常只使用空格就可以了，而不需要再使用具体的标点符号来传达额外信息。</p>
+<p>在视频中使用的字幕，基本上不会使用标点符号。除了一句话一屏字幕外，如果一屏出现两句话，那么绝大多数情况下，都不会使用标点符号，而是使用空格。字幕使用空格的效果，要远好于使用具体的标点符号。原因是，一方面，观众的注意力主要集中在视频的画面和声音上，已经分神处理字幕了，如果再分神处理标点符号信息，会浪费更多精力，导致观众感觉比较累；另一方面，视频具有文字所没有的信息，比如语气、表情、动作、声调等等，这些内容在一定程度上比标点符号能更有效地传达信息，所以，中文字幕断句时通常只使用空格就可以了，而不需要再使用具体的标点符号来传达额外信息。</p>
 <p>视频在播放过程中，视频的内容是一直前进的，处于不停地变化之中，这一点与书籍等纸质阅读截然不同，这就要求字幕在被阅读时，文字的内容应该能够尽量简单快速地被观众的大脑接受并处理，以节约观众的时间精力，这样有助于观众把注意力放到视频本身，否则会导致字幕理解与视频内容脱节，这个时候在字幕中使用标点符号的结果就是字幕没有起到传达视频内容的作用，反而影响了观众对于视频内容的理解，而用空格则效果会非常好。</p>
 <p>说到这里，有一个问题需要明确一下，就是空格有非常有效的断句的作用。这个作用在汉语行文时是不使用的，或者说，在汉语语法上，是严格规定不使用空格来进行断句，而一定要使用标点符号。这种情况，导致的结果是，当下的汉语行文是基本没有用空格来断句的。</p>
 <p>在汉语行文中，空格除了断句的功能以外，还可以断词，类似于引号，即在特定词语的前后各使用一个空格，来表示这个词有特别含义。其实无论断句还是断词，都是空格在行文中的基本作用，就是断开的提示，让读者注意到，这里与普通的连续行文不同，提示读者不要忽略。</p>
@@ -262,7 +260,7 @@
 </div></blockquote>
 </li>
 </ol>
-<p><em>最近一次更新：2024-09-30</em></p>
+<p><em>本页面最近一次更新日期：2025-01-18</em></p>
 <hr class="docutils" />
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
@@ -292,8 +290,15 @@
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 

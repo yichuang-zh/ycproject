@@ -7,10 +7,10 @@
   <title>喷枪工具 Airbrush Tool</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
@@ -44,10 +44,10 @@
           
           <a href="../../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -57,13 +57,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
@@ -139,14 +137,14 @@
 <blockquote>
 <div><div class="admonition- admonition">
 <p class="admonition-title">驿窗注：</p>
-<p>这里调整笔刷的尺寸时需要激活笔刷大小数值框，如果您在使用画笔工具时想在画布上直接修改笔刷的尺寸，可以在画布上显示笔刷的虚线框时，按住键盘上的“<strong>{</strong>”键，或者按住“<strong>}</strong>”键(不需要按Shift)。</p>
+<p>这里调整笔刷的尺寸时需要激活笔刷大小数值框，如果您在使用画笔工具时想在画布上直接修改笔刷的尺寸，可以在画布上显示笔刷的虚线框时，按住键盘上的 <strong>{</strong> 键，或者按住 <strong>}</strong> 键(不需要按Shift)。</p>
 <p>快速缩放笔刷尺寸请参考<a class="reference internal" href="23tool-paintbrush.html#how-to-scale-brush-size-efficiently"><span class="std std-ref">快捷缩放笔刷尺寸</span></a>。</p>
 </div>
 </div></blockquote>
 <ol class="arabic" start="5">
 <li><p>宽高比：设置笔刷的高度和宽度之间的比例。假设您选择的笔刷形状是正圆，那么宽高比值为0时，笔刷形状是正圆；宽高比值不为0时，笔刷形状为椭圆。您可以直接用鼠标调整；或者用鼠标点击后，使用键盘上的上下方向键调整，步进为0.1；或者使用键盘的PageUP/PageDown键调整，步进为1；也可以用鼠标滚轮调整，步进为0.1。</p></li>
 <li><p>角度：笔刷形状可以围绕鼠标移动的中心转动。调整及步进同 宽高比。</p></li>
-<li><p>间距：笔刷画出来的“线条”可以认为是多个连续的点构成的。间距可以设置相邻笔刷点之间的距离。间距越大，越不连续。调整及步进同 宽高比。</p></li>
+<li><p>间距：笔刷画出来的<span class="dash6">线条</span>可以认为是多个连续的点构成的。间距可以设置相邻笔刷点之间的距离。间距越大，越不连续。调整及步进同 宽高比。</p></li>
 <li><p>硬度：笔刷边缘的模糊程度。调整及步进同 宽高比。</p></li>
 <li><p>力度：颜色的浓淡程度，力度越大，颜色越浓。较低的值会导致一定的透明属性。</p></li>
 <li><p>动态：这是一个按钮( <a class="reference internal" href="../../_images/gimp-dynamics.svg"><img alt="gimp-dynamics-icon" class="align-middle" src="../../_images/gimp-dynamics.svg" style="width: 20px; height: 20px;" /></a> )。打开后，可以选择预设的动态，默认是不启用动态。您可以自行创建新的动态，具体请参考菜单【窗口⇨可停靠对话框⇨绘画动态】。(关于动态的概念，请参考<a class="reference internal" href="23tool-paintbrush.html#what-is-dynamics"><span class="std std-ref">动态概念</span></a>)</p></li>
@@ -176,7 +174,7 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p>应用抖动：笔刷偏离鼠标移动轨迹的距离。绘画过程中，笔刷连接在一起成为一条“线条”，笔刷间距会导致线条变成“虚线”，而抖动会导致笔刷在鼠标移动轨迹上垂直于轨迹来回跳动。计数就是跳动的幅度。</p></li>
+<li><p>应用抖动：笔刷偏离鼠标移动轨迹的距离。绘画过程中，笔刷连接在一起成为一条<span class="dash6">线条</span>，笔刷间距会导致线条变成<span class="dash6">虚线</span>，而抖动会导致笔刷在鼠标移动轨迹上垂直于轨迹来回跳动。计数就是跳动的幅度。</p></li>
 <li><p>平滑笔廓：消除绘画时产生的晃动感，显得更平滑。质量和权重参数需要您亲自测试一下效果。</p></li>
 <li><p>笔刷锁定到视图：勾选此项后，笔刷的尺寸相对于屏幕尺寸被固定。此选项非常适合用来快速缩放笔刷尺寸，具体请参考<a class="reference internal" href="23tool-paintbrush.html#how-to-scale-brush-size-efficiently"><span class="std std-ref">快捷缩放笔刷尺寸</span></a>。</p></li>
 <li><p>速率：调整喷枪喷出涂料的速度，较高的值会在较短的时间内产生较深的笔迹。(在图像上点击且不松手，可以对比测试效果)</p></li>
@@ -210,8 +208,15 @@
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 

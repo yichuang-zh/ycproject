@@ -7,10 +7,10 @@
   <title>1. 分辨率 PPI vs. DPI</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
@@ -44,10 +44,10 @@
           
           <a href="../../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -57,13 +57,11 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
@@ -99,10 +97,12 @@
              
   <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="ppi-vs-dpi">
 <span id="gimp-base-resolution"></span><h1><span class="section-number">1. </span>分辨率 PPI vs. DPI<a class="headerlink" href="#ppi-vs-dpi" title="Link to this heading"></a></h1>
-<div class="admonition- admonition">
+<blockquote>
+<div><div class="admonition- admonition">
 <p class="admonition-title">驿窗注：</p>
 <p>分辨率是一个特别容易被误导的概念，不仅在中国，在世界范围内也是易被误解的一个关键术语。本文的目的就是帮助大家正确理解分辨率的真正含义，请耐心阅读。</p>
 </div>
+</div></blockquote>
 <p>图像如果不打印的话，可能就不需要分辨率(ppi)这个概念。</p>
 <p>在不同的领域，分辨率有不同的意义，比如ppi、dpi、lpi等；它们表达的概念十分相近，如果不了解具体的区别，那么很容易产生混淆，进而导致在应用过程中出现一些无法明确解释的奇怪问题。</p>
 <p>平面领域中，图像分为位图和矢量图两种，下面我们以位图为例对分辨率(ppi、dpi、lpi)的概念进行说明。</p>
@@ -121,7 +121,7 @@
 <p>常见的像素形状是正方形，长方形比较少见。</p>
 <p>像素是有尺寸的，但尺寸大小需要另一个参数才能确定：分辨率(ppi)。</p>
 <p>在计算机中，描述一张位图图像时，通常会有两个参数，一个是图像的尺寸(单位：像素)，另一个是图像的分辨率(单位：ppi)。</p>
-<p>图像尺寸是指图像的大小(像素的数量)，单位是像素{px}；比如电脑的桌面背景图的大小可能是1920x1080像素。这里的1920x1080像素是指：</p>
+<p>图像尺寸是指图像的大小(像素的数量)，单位是像素<span class="i070">px</span>；比如电脑的桌面背景图的大小可能是1920x1080像素。这里的1920x1080像素是指：</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>图像是矩形；</p></li>
@@ -280,6 +280,13 @@
 <p>所以，假设两个电脑显示器的尺寸都是27英寸，如果最大分辨率不一样，通常是因为点距不一样导致的。27英寸屏幕，点距越小，屏幕上的发光点就越多，屏幕分辨率就越高。</p>
 <p>点距越小，制造精度的要求越高，显示画面时给人的感觉就越<span class="dash6">精细</span>。</p>
 <p>其它显示器，比如平板电脑屏幕，或者电子书屏幕，分辨率原理与电脑显示器和手机屏幕基本相同。</p>
+<blockquote>
+<div><div class="admonition-t070-dpi admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>显示器的屏幕dpi</p>
+<p>电脑显示器其实还有一个分辨率是dpi。不光电脑显示器，生活中使用的绝大多数屏幕都一样，比如手机、平板电脑、智能手表、电纸书、电视机等等。</p>
+<p>不过，这个与屏幕有关的dpi是主要用于css技术的一个参数，具体说明请参考后面的css部分。</p>
+</div>
+</div></blockquote>
 </section>
 <section id="id7">
 <h2><span class="section-number">1.5. </span>手机摄像头分辨率<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
@@ -437,10 +444,9 @@
 </dd>
 </dl>
 <p>提示：上面两个问题本质上是相同的。完全不了解印刷的话，很难得出完美答案。</p>
-<p><em>以下内容为2024-06-21补充：</em></p>
 </section>
-<section id="dpippi">
-<h2><span class="section-number">1.10. </span>补充知识：DPI与PPI的例子<a class="headerlink" href="#dpippi" title="Link to this heading"></a></h2>
+<section id="dpippi-2024-06-21">
+<h2><span class="section-number">1.10. </span>DPI与PPI的例子 <span class="i060">2024-06-21</span><a class="headerlink" href="#dpippi-2024-06-21" title="Link to this heading"></a></h2>
 <p>点是点，像素是像素，二者没有任何联系，二者是互相独立存在的，不存在谁影响了谁的说法。(即dot和pixel没有任何关系)</p>
 <section id="id11">
 <h3><span class="section-number">1.10.1. </span>一个像素<span class="dash6">看似等同于</span>一个点<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
@@ -470,8 +476,26 @@
 <p>理解了点与像素的对应关系影响因素后，作为平面或印前设计人员，就会根据印刷的情况来实际控制图像文件的分辨率PPI，而不是一味提供300PPI这一种分辨率的图像文件，原因是，图像的PPI与后续打印或印刷的DPI要配合起来，才能达到最好的纸张印刷效果。</p>
 <p>当然，如果图像文件不是用于打印或印刷，只用于屏幕显示，那么就完全不用管DPI，甚至也基本不需要管PPI，因为PPI的目的就是转换打印尺寸，而不是显示尺寸。</p>
 <p>有人提到手机屏幕分辨率比电脑屏幕分辨率要高，会导致图像显示尺寸发生变化。这个问题与图像无关，原因是，不同屏幕间图像显示尺寸的变化，应该不仅仅是图像变化，而是任何内容显示尺寸都会发生变化，所以。对于不同屏幕之间的差异问题，比如智能手表屏幕与电脑屏幕及手机屏幕，问题不应该从图像层面寻找解决方案，而应该从更底层的显示驱动及控制层面处理。底层解决了，上层的图像自然也随之解决。</p>
-<p><em>最后一次编辑：2024-09-24</em></p>
 </section>
+</section>
+<section id="css-dpi-2024-11-09">
+<h2><span class="section-number">1.11. </span>显示屏用到的css参数：dpi <span class="i060">2024-11-09</span><a class="headerlink" href="#css-dpi-2024-11-09" title="Link to this heading"></a></h2>
+<p>对于电脑显示器或手机屏幕之类的常见显示设备来说，有一个css参数叫dpi，英文是dots per inch。这个dpi与打印设备的打印分辨率dpi在写法上完全一样，含义也非常接近，只是应用对象不一样。<span class="dash6">显示器使用的dpi与打印没有任何关系，与打印机也没有任何关系</span>。</p>
+<p>打印机设备的打印分辨率使用的dpi，描述的d是指印在纸上的点，用这个点的数量除以长度，就得到dpi这个分辨率，这个dpi参数解决的是如何得到打印到纸张上的图像的物理尺寸，它与打印机制造原理有关。而电脑显示器或手机屏幕的dpi，描述的是显示屏上的发光点，用这个点的数量除以长度，就得到显示屏的分辨率。这个屏幕的dpi参数解决的是如何得到显示精度。它与显示器的制造原理有关。</p>
+<p>通常情况下，电脑或手机显示屏幕在制造时会按一定标准在屏幕上排列发光点。上面有提到，电脑显示器水平方向上有1920个发光点，垂直方向上有1080个发光点，那么这个显示器的分辨率参数就是1920x1080。其实这个参数只是一个因素，还有一个非常重要参数会影响显示器的分辨率，就是dpi，即单位长度上发光点的数量：这个dpi值越大，表示显示器的物理性能越好。</p>
+<p>上面提到水平方向上有1920个发光点，但没有提到显示器在水平方向上的实际物理尺寸，或者对角线物理尺寸。如果对角线物理尺寸是27寸，那么这个显示器在销售时就会被标定为<span class="dash6">27寸显示器，分辨率1920x1080</span>。同样27的寸显示器，分辨率也有可能是3840x2160，即高分辨率屏幕，也叫4k屏。</p>
+<p>显示器的尺寸和显示器的分辨率，是大多数消费者购买电脑时关心的参数。这仅限于普通屏幕，如果显示器是高分屏，那么消费者通常都会关心第三个参数：点距。点距就是相邻两个发光点之间的距离，横向点距与纵向点距通常相同。css使用的dpi就是通过点距换算得来的。</p>
+<p>总结一下，电脑显示器或手机屏幕也有dpi这个参数，但它衡量的是屏幕显示的精度。与打印机的打印分辨率相类似，打印机分辨率的dpi衡量的是打印机的打印精度。</p>
+<p>显示屏幕的dpi参数，最常用在网页编程的css技术中，目前默认的css标准是1inch=96dpi，意思是css认为显示屏幕在一英寸的长度上会排列96个发光点。这个标准其实已经是多年以前的技术了，现在高分辨率屏幕，有可能1inch=300dpi，是旧技术的三倍。由于网页设计需要适应各种屏幕，包括96dpi的老屏幕，也包括300dpi的新屏幕，所以，就定义了一个1inch=96dpi的基础标准，然后在这个基础标准上进行换算，以适应300dpi的新技术屏幕。</p>
+<blockquote>
+<div><div class="admonition-t070-lcdpi admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>LCdpi ？</p>
+<p>打印机的打印精度的单位是dpi，显示器的显示精度单位也是dpi，这两个dpi写法完全一样，有些情况下会造成混淆。</p>
+<p>驿窗认为，作为后来者，css中使用的显示器的显示精度单位也许应该使用<strong>LCdpi</strong>：LCd代表液晶显示屏幕，dpi代表分辨率。这样就能避免与打印精度dpi混淆。</p>
+</div>
+</div></blockquote>
+<p><em>上一次编辑：2024-09-24</em></p>
+<p><em>最后一次编辑：2024-11-09</em></p>
 </section>
 </section>
 
@@ -490,8 +514,15 @@
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 

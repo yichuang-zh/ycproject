@@ -7,10 +7,10 @@
   <title>系统安全/防火墙/杀毒</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
@@ -44,10 +44,10 @@
           
           <a href="../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -57,13 +57,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
@@ -324,7 +322,7 @@
 <p>另外，目前杀病毒软件用处并不是特别大，因为当前安全威胁主要是来自于系统漏洞和网页浏览器，所以，把精力放到漏洞和浏览器上，设计相关的方案，比杀毒软件更让人放心。</p>
 <p>驿窗提供的方案是封住本机所有端口，仅开放53的出权限，然后本机使用virt-manager虚拟机上网，比如上网看网页、看网络视频、发邮件等等。这个方案的特点就是把平时上网的操作全部放在虚拟机中，主机从来不上网，仅更新系统和安装软件。这个方案安全性极高，且漏洞也基本上不需要担心。虚拟机里中毒或者被攻入没关系，因为想从虚拟机进入主机，不是一般的难，普通用户可以理解为做不到，因为很多病毒测试都是在虚拟机里进行的，可见虚拟机是可以在极大程度上隔离主机与网络之间的安全问题的。结合virt-manager虚拟机的快照功能，随时可以一秒钟内就把系统重置到指定的状态。</p>
 <p><em>未完稿……</em></p>
-<p><em>最近一次更新：2024-1-19</em></p>
+<p><em>本页面最近一次更新日期：2024-1-19</em></p>
 </section>
 </section>
 
@@ -343,8 +341,15 @@
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 

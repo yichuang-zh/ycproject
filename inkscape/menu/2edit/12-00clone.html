@@ -7,10 +7,10 @@
   <title>⇨克隆</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=f924c8f7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
@@ -44,10 +44,10 @@
           
           <a href="../../../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../../../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../../../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -57,13 +57,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ycpview/ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
@@ -101,25 +99,35 @@
              
   <style> .font11 {font-family: 'Noto Serif CJK SC'} </style><section id="inkscape-menu-edit-12-00clone">
 <span id="id1"></span><h1>⇨克隆<a class="headerlink" href="#inkscape-menu-edit-12-00clone" title="Link to this heading"></a></h1>
-<p>(如果想彻底理解 平铺克隆 的功能和使用方法，您可能需要有一定的数学基础才行。)</p>
-<p>平铺克隆中，缩放中有一个参数为 基数(Base)。此参数的计算方法为：</p>
-<p>0: 10^((1+0*0.02)^1-1)=1
-19:10^((1+19*0.02)^1-1)=2.4
-(1+num_column * 0.02)</p>
+<p>(如果想彻底理解<span class="dash6">平铺克隆</span>的功能和使用方法，您可能需要有一定的数学基础才行。)</p>
+<p>平铺克隆中，缩放中有一个参数为<span class="dash6">基数</span><span class="i060">Base</span>。此参数的计算方法为：</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">0: 10^((1+0*0.02)^1-1)=1</div>
+<div class="line">19:10^((1+19*0.02)^1-1)=2.4</div>
+<div class="line">(1+num_column * 0.02)</div>
+</div>
+</div></blockquote>
 <p>基数^((1+列序号*缩放值)^指数-1)=新对象相对于原始对象的尺寸比率</p>
 <div class="toctree-wrapper compound">
 </div>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="12-01create-clone.html#inkscape-menu-edit-12-01create-clone"><span class="std std-ref">创建克隆</span></a> <em>Create Clone</em></p></li>
-<li><p><a class="reference internal" href="12-02create-tiled-clones.html#inkscape-menu-edit-12-02create-tiled-clones"><span class="std std-ref">创建平铺克隆</span></a> <em>Create Tiled Clones</em></p></li>
-<li><p><a class="reference internal" href="12-03unlink-clone.html#inkscape-menu-edit-12-03unlink-clone"><span class="std std-ref">断开克隆</span></a> <em>Unlink Clone</em></p></li>
-<li><p><a class="reference internal" href="12-04unlink-clones-recursively.html#inkscape-menu-edit-12-04unlink-clones-recursively"><span class="std std-ref">递归断开克隆</span></a> <em>Unlink Clones Recursively</em></p></li>
-<li><p><a class="reference internal" href="12-05relink-to-copied.html#inkscape-menu-edit-12-05relink-to-copied"><span class="std std-ref">重新连接副本</span></a> <em>Relink to Copied</em></p></li>
-<li><p><a class="reference internal" href="12-06select-original.html#inkscape-menu-edit-12-06select-original"><span class="std std-ref">选择原始对象</span></a> <em>Select Original</em></p></li>
-<li><p><a class="reference internal" href="12-07clone-original-path.html#inkscape-menu-edit-12-07clone-original-path"><span class="std std-ref">克隆原始路径(LPE)</span></a> <em>Clone Original Path (LPE)</em></p></li>
+<li><p><a class="reference internal" href="12-01create-clone.html#inkscape-menu-edit-12-01create-clone"><span class="std std-ref">创建克隆</span></a> <span class="i060">Create Clone</span></p></li>
+<li><p><a class="reference internal" href="12-02create-tiled-clones.html#inkscape-menu-edit-12-02create-tiled-clones"><span class="std std-ref">创建平铺克隆</span></a> <span class="i060">Create Tiled Clones</span></p></li>
+<li><p><a class="reference internal" href="12-03unlink-clone.html#inkscape-menu-edit-12-03unlink-clone"><span class="std std-ref">断开克隆</span></a> <span class="i060">Unlink Clone</span></p></li>
+<li><p><a class="reference internal" href="12-04unlink-clones-recursively.html#inkscape-menu-edit-12-04unlink-clones-recursively"><span class="std std-ref">递归断开克隆</span></a> <span class="i060">Unlink Clones Recursively</span></p></li>
+<li><p><a class="reference internal" href="12-05relink-to-copied.html#inkscape-menu-edit-12-05relink-to-copied"><span class="std std-ref">重新连接副本</span></a> <span class="i060">Relink to Copied</span></p></li>
+<li><p><a class="reference internal" href="12-06select-original.html#inkscape-menu-edit-12-06select-original"><span class="std std-ref">选择原始对象</span></a> <span class="i060">Select Original</span></p></li>
+<li><p><a class="reference internal" href="12-07clone-original-path.html#inkscape-menu-edit-12-07clone-original-path"><span class="std std-ref">克隆原始路径(LPE)</span></a> <span class="i060">Clone Original Path (LPE)</span></p></li>
 </ol>
+<blockquote>
+<div><div class="admonition-t070 admonition">
+<p class="admonition-title"><span class="t070">驿窗注：</span>开源软件汉化精确性</p>
+<p>开源软件汉化质量经常取决于译员个人。上面后附斜体英文原文，供参考。</p>
+</div>
+</div></blockquote>
 <p><em>更新中……</em></p>
-<p><em>最近一次更新：2024-07-20</em></p>
+<p><em>本页面最近一次更新日期：2025-05-10</em></p>
 </section>
 
 
@@ -137,8 +145,15 @@
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 

@@ -8,10 +8,10 @@
   <title>FFmpeg应用参考</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../_static/avatarp.ico"/>
@@ -45,10 +45,10 @@
           
           <a href="../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -58,13 +58,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../linux-guide/0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ycpview/ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../update/log.html">更新日志</a></li>
@@ -246,6 +244,7 @@ ffmpeg<span class="w"> </span>-i<span class="w"> </span>old3.mp4<span class="w">
 <p>第三条命令是将视频old3.mp4从00:00:03处开始提取出02:48的长度，提取出的视频名字是new3.mp4。没有瞬间完成(-c:v h264_nvenc表示转码)。</p>
 <p>在执行速度上，第一条命令和第二条命令都比第三条命令要快上几十倍，基本是瞬间完成：因为只是copy，不转码(<span class="d60c0n">-c copy</span>)。第三条命令因为有转码过程(<span class="d60c0n">-c:v h264_nvenc</span>)，所以相对慢很多。</p>
 <p><span class="dash6">不过，有些情况下，可能必须转码，不能copy</span>。因为在copy的时候，严重依赖原视频，有可能会出现copy出来的片段播放异常的情况，这时候，用<span class="d60c0n">-c:v h264_nvenc</span>转码可以解决异常。</p>
+<p>上面前两条命令不仅对视频有效，对音频同样有效。</p>
 </div></blockquote>
 </section>
 <section id="mp4mp4">
@@ -481,8 +480,8 @@ ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> 
 <li><p class="sd-card-text">选区尺寸和位置调整好以后，保持不动，查看<span class="dash6">选择工具</span>的工具选项中的<span class="dash6">位置</span>和<span class="dash6">大小</span>这两个参数：</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="sd-card-text">位置：左边数1值即为<span class="d7ff0n">x</span>，右边数值即为<span class="d7ff0n">y</span>；</p></li>
-<li><p class="sd-card-text">大小：矩形方框的尺寸，即logo的尺寸，左边数值即为<span class="d6f00n">overlay_w</span>，右边数值即为<span class="d6f00n">overlay_h</span>；</p></li>
+<li><p class="sd-card-text">位置：左边数值即为上面图1中的<span class="d7ff0n">x</span>，右边数值即为<span class="d7ff0n">y</span>；</p></li>
+<li><p class="sd-card-text">大小：矩形方框的尺寸，即logo的尺寸，左边数值即为上面图1中的<span class="d6f00n">overlay_w</span>，右边数值即为<span class="d6f00n">overlay_h</span>；</p></li>
 <li><p class="sd-card-text">视频宽度和高度：GIMP菜单上方的标题栏中会显示截图的尺寸数值，这个数值就是视频的宽度<span class="d60c0n">main-w</span>和视频高度<span class="d60c0n">main-h</span>。</p></li>
 </ul>
 </div></blockquote>
@@ -509,6 +508,7 @@ ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> 
 <li><p class="sd-card-text">(标题栏)<span class="d60c0n">main-h</span>，视频的高度(黄黑虚线框高度)；</p></li>
 </ol>
 </div></blockquote>
+<p class="sd-card-text">总结：在GIMP中，<span class="dash6">位置、大小、标题栏</span>这三个位置，直接可以查看需要在ffmpeg命令中使用的数值，避免人工换算。</p>
 </div>
 </details></section>
 <section id="ffplay">
@@ -664,7 +664,7 @@ ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> 
 </div></blockquote>
 <div class="line-block">
 <div class="line"><em>未完稿</em></div>
-<div class="line"><em>最近一次更新：2024-09-30</em></div>
+<div class="line"><em>本页面最近一次更新日期：2024-12-12</em></div>
 </div>
 </section>
 </section>
@@ -684,8 +684,15 @@ ffmpeg<span class="w"> </span>-i<span class="w"> </span>old.mp4<span class="w"> 
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 

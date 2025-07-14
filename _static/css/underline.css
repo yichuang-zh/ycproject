@@ -1,3 +1,10 @@
+/* 鼠标悬停时链接显示下划线 */
+a:hover {
+    text-decoration: underline !important;
+/*     color: inherit !important; 可选：保持链接颜色不变 */
+}
+/* 鼠标悬停时链接显示下划线：结束。 */
+
 /* Inline text style with bottom dot-line */
 
 .i050 {

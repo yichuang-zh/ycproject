@@ -7,10 +7,10 @@
   <title>(可停靠对话框⇨图层➡模式)</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../../_static/avatarp.ico"/>
@@ -44,10 +44,10 @@
           
           <a href="../../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -57,13 +57,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ycpview/ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../update/log.html">更新日志</a></li>
@@ -111,64 +109,64 @@
 </div>
 </figcaption>
 </figure>
-<p>图层的模式也叫图层的混合模式<span class="i070">blending mode</span>。GIMP通过模式来确定当前活动图层中的像素与其下方的图层中的像素如何混合。所以，图层的模式的变化，可能会导致图像的整体效果发生变化。</p>
+<p>图层的模式也叫图层的混合模式<span class="i060">blending mode</span>。GIMP通过模式来确定当前活动图层中的像素与其下方的图层中的像素如何混合。所以，图层的模式的变化，可能会导致图像的整体效果发生变化。</p>
 <p>图层的模式的存在，使您可以实现极为复杂的颜色变化操作。</p>
 <p>因为是当前图层与下方图层的混合，所以，图层的模式对于只有一个图层的图像没有意义。</p>
 <div class="admonition-vs admonition">
 <p class="admonition-title">驿窗注：默认 vs. 过时</p>
 <p>图层模式选择框的右侧有一个切换按钮 <a class="reference internal" href="../../_images/3layer-mode-legacy0.png"><img alt="X" class="align-middle" src="../../_images/3layer-mode-legacy0.png" style="width: 49px; height: 22px;" /></a>，它可以切换图层模式为<span class="dash6">默认</span>或者<span class="dash6">过时</span>。</p>
 <p><span class="dash6">过时</span>模式是GIMP2.8及以前版本使用的图层模式计算方法，在2.10及后续版本中已经改为<span class="dash6">默认</span>模式。新版本中<span class="dash6">过时</span>模式仍然存在的原因是为了兼容以前版本的GIMP所创建的.xcf文件。这些旧的.xcf文件中如果有保存图层模式相关内容，那么在2.10版本中打开这些.xcf文件时，图层模式会使用<span class="dash6">过时</span>模式。</p>
-<p>新创建的图像文件，请使用<span class="dash7">默认</span>模式，不要使用<span class="dash6">过时</span>模式，。</p>
+<p>新创建的图像文件，请使用<span class="dash7">默认</span>模式，不要使用<span class="dash6">过时</span>模式。</p>
 </div>
 <p>GIMP目前有38种图层模式，下面我们对这些模式进行说明。</p>
 <p id="dockable-layer-mode-link-list">下面是模式列表：</p>
 <blockquote>
 <div><div class="admonition- admonition">
-<p class="admonition-title">驿窗注：开源软件汉化翻译的精确性</p>
-<p>开源软件汉化是否正确/精确，通常取决于译员个人。这里在菜单后面以斜体标注英文原文，以方便用户精确理解。</p>
+<p class="admonition-title">驿窗注：</p>
+<p>开源软件汉化准确性通常取决于译员个人，下面后附斜体英文原文供参考。</p>
 </div>
 </div></blockquote>
 <div class="toctree-wrapper compound">
 </div>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="layermode/1normal.html#dockable-layer-mode-1normal"><span class="std std-ref">正常</span></a>　　　 <span class="i070">Normal</span></p></li>
-<li><p><a class="reference internal" href="layermode/2dissolve.html#dockable-layer-mode-2dissolve"><span class="std std-ref">融化</span></a>　　　 <span class="i070">Dissolve</span></p></li>
-<li><p><a class="reference internal" href="layermode/3color-erase.html#dockable-layer-mode-3color-erase"><span class="std std-ref">颜色擦除</span></a>　 <span class="i070">Color erase</span></p></li>
-<li><p><a class="reference internal" href="layermode/4erase.html#dockable-layer-mode-4erase"><span class="std std-ref">擦除</span></a>　　　 <span class="i070">Erase</span></p></li>
-<li><p><a class="reference internal" href="layermode/5merge.html#dockable-layer-mode-5merge"><span class="std std-ref">合并</span></a>　　　 <span class="i070">Merge</span></p></li>
-<li><p><a class="reference internal" href="layermode/6split.html#dockable-layer-mode-6split"><span class="std std-ref">分割</span></a>　　　 <span class="i070">Split</span></p></li>
-<li><p><a class="reference internal" href="layermode/7lighten-only.html#dockable-layer-mode-7lighten-only"><span class="std std-ref">仅变亮</span></a>　　 <span class="i070">Lighten only</span></p></li>
-<li><p><a class="reference internal" href="layermode/8luma-luminance-lighten-only.html#dockable-layer-mode-8luma-luminance-lighten-only"><span class="std std-ref">仅亮度变亮</span></a> <span class="i070">Luma/luminance lighten only</span></p></li>
-<li><p><a class="reference internal" href="layermode/9screen.html#dockable-layer-mode-9screen"><span class="std std-ref">滤色</span></a>　　　 <span class="i070">Screen</span></p></li>
-<li><p><a class="reference internal" href="layermode/10dodge.html#dockable-layer-mode-10dodge"><span class="std std-ref">减淡</span></a>　　　 <span class="i070">Dodge</span></p></li>
-<li><p><a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>　　　 <span class="i070">Addition</span></p></li>
-<li><p><a class="reference internal" href="layermode/12darken-only.html#dockable-layer-mode-12darken-only"><span class="std std-ref">仅变暗</span></a>　　 <span class="i070">Darken only</span></p></li>
-<li><p><a class="reference internal" href="layermode/13luma-luminance-darken-only.html#dockable-layer-mode-13luma-luminance-darken-only"><span class="std std-ref">仅亮度变暗</span></a> <span class="i070">Luma/luminance darken only</span></p></li>
-<li><p><a class="reference internal" href="layermode/14multiply.html#dockable-layer-mode-14multiply"><span class="std std-ref">相乘</span></a>　　　 <span class="i070">Multiply</span></p></li>
-<li><p><a class="reference internal" href="layermode/15burn.html#dockable-layer-mode-15burn"><span class="std std-ref">加深</span></a>　　　 <span class="i070">Burn</span></p></li>
-<li><p><a class="reference internal" href="layermode/16linear-burn.html#dockable-layer-mode-16linear-burn"><span class="std std-ref">线性加深</span></a>　 <span class="i070">Linear burn</span></p></li>
-<li><p><a class="reference internal" href="layermode/17overlay.html#dockable-layer-mode-17overlay"><span class="std std-ref">叠加</span></a>　　　 <span class="i070">Overlay</span></p></li>
-<li><p><a class="reference internal" href="layermode/18soft-light.html#dockable-layer-mode-18soft-light"><span class="std std-ref">柔光</span></a>　　　 <span class="i070">Soft light</span></p></li>
-<li><p><a class="reference internal" href="layermode/19hard-light.html#dockable-layer-mode-19hard-light"><span class="std std-ref">强光</span></a>　　　 <span class="i070">Hard light</span></p></li>
-<li><p><a class="reference internal" href="layermode/20vivid-light.html#dockable-layer-mode-20vivid-light"><span class="std std-ref">亮光</span></a>　　　 <span class="i070">Vivid light</span></p></li>
-<li><p><a class="reference internal" href="layermode/21pin-light.html#dockable-layer-mode-21pin-light"><span class="std std-ref">点光</span></a>　　　 <span class="i070">Pin light</span></p></li>
-<li><p><a class="reference internal" href="layermode/22linear-light.html#dockable-layer-mode-22linear-light"><span class="std std-ref">线性光</span></a>　　 <span class="i070">Linear light</span></p></li>
-<li><p><a class="reference internal" href="layermode/23hard-mix.html#dockable-layer-mode-23hard-mix"><span class="std std-ref">实色混合</span></a>　 <span class="i070">Hard mix</span></p></li>
-<li><p><a class="reference internal" href="layermode/24difference.html#dockable-layer-mode-24difference"><span class="std std-ref">差值</span></a>　　　 <span class="i070">Difference</span></p></li>
-<li><p><a class="reference internal" href="layermode/25exclusion.html#dockable-layer-mode-25exclusion"><span class="std std-ref">排除</span></a>　　　 <span class="i070">Exclusion</span></p></li>
-<li><p><a class="reference internal" href="layermode/26subtract.html#dockable-layer-mode-26subtract"><span class="std std-ref">减去</span></a>　　　 <span class="i070">Subtract</span></p></li>
-<li><p><a class="reference internal" href="layermode/27grain-extract.html#dockable-layer-mode-27grain-extract"><span class="std std-ref">增益提取</span></a>　 <span class="i070">Grain extract</span></p></li>
-<li><p><a class="reference internal" href="layermode/28grain-merge.html#dockable-layer-mode-28grain-merge"><span class="std std-ref">增益合并</span></a>　 <span class="i070">Grain merge</span></p></li>
-<li><p><a class="reference internal" href="layermode/29divide.html#dockable-layer-mode-29divide"><span class="std std-ref">相除</span></a>　　　 <span class="i070">Divide</span></p></li>
-<li><p><a class="reference internal" href="layermode/30hsv-hue.html#dockable-layer-mode-30hsv-hue"><span class="std std-ref">HSV色相</span></a>　 <span class="i070">HSV Hue</span></p></li>
-<li><p><a class="reference internal" href="layermode/31hsv-saturation.html#dockable-layer-mode-31hsv-saturation"><span class="std std-ref">HSV饱和度</span></a> <span class="i070">HSV Saturation</span></p></li>
-<li><p><a class="reference internal" href="layermode/32hsl-color.html#dockable-layer-mode-32hsl-color"><span class="std std-ref">HSL颜色</span></a>　 <span class="i070">HSL Color</span></p></li>
-<li><p><a class="reference internal" href="layermode/33hsv-value.html#dockable-layer-mode-33hsv-value"><span class="std std-ref">HSL明度</span></a>　 <span class="i070">HSV Value</span></p></li>
-<li><p><a class="reference internal" href="layermode/34lch-hue.html#dockable-layer-mode-34lch-hue"><span class="std std-ref">LCh色相</span></a> 　 <span class="i070">LCh Hue</span></p></li>
-<li><p><a class="reference internal" href="layermode/35lch-chroma.html#dockable-layer-mode-35lch-chroma"><span class="std std-ref">LCh浓度</span></a> 　 <span class="i070">LCh Chroma</span></p></li>
-<li><p><a class="reference internal" href="layermode/36lch-color.html#dockable-layer-mode-36lch-color"><span class="std std-ref">LCh颜色</span></a> 　 <span class="i070">LCh Color</span></p></li>
-<li><p><a class="reference internal" href="layermode/37lch-lighteness.html#dockable-layer-mode-37lch-lightness"><span class="std std-ref">LCh亮度</span></a> 　 <span class="i070">LCh Lightness</span></p></li>
-<li><p><a class="reference internal" href="layermode/38luminance.html#dockable-layer-mode-38luminance"><span class="std std-ref">亮度</span></a>　　　 <span class="i070">Luminance</span></p></li>
+<li><p><a class="reference internal" href="layermode/1normal.html#dockable-layer-mode-1normal"><span class="std std-ref">正常</span></a>　　　 <span class="i060">Normal</span></p></li>
+<li><p><a class="reference internal" href="layermode/2dissolve.html#dockable-layer-mode-2dissolve"><span class="std std-ref">融化</span></a>　　　 <span class="i060">Dissolve</span></p></li>
+<li><p><a class="reference internal" href="layermode/3color-erase.html#dockable-layer-mode-3color-erase"><span class="std std-ref">颜色擦除</span></a>　 <span class="i060">Color erase</span></p></li>
+<li><p><a class="reference internal" href="layermode/4erase.html#dockable-layer-mode-4erase"><span class="std std-ref">擦除</span></a>　　　 <span class="i060">Erase</span></p></li>
+<li><p><a class="reference internal" href="layermode/5merge.html#dockable-layer-mode-5merge"><span class="std std-ref">合并</span></a>　　　 <span class="i060">Merge</span></p></li>
+<li><p><a class="reference internal" href="layermode/6split.html#dockable-layer-mode-6split"><span class="std std-ref">分割</span></a>　　　 <span class="i060">Split</span></p></li>
+<li><p><a class="reference internal" href="layermode/7lighten-only.html#dockable-layer-mode-7lighten-only"><span class="std std-ref">仅变亮</span></a>　　 <span class="i060">Lighten only</span></p></li>
+<li><p><a class="reference internal" href="layermode/8luma-luminance-lighten-only.html#dockable-layer-mode-8luma-luminance-lighten-only"><span class="std std-ref">仅亮度变亮</span></a> <span class="i060">Luma/luminance lighten only</span></p></li>
+<li><p><a class="reference internal" href="layermode/9screen.html#dockable-layer-mode-9screen"><span class="std std-ref">滤色</span></a>　　　 <span class="i060">Screen</span></p></li>
+<li><p><a class="reference internal" href="layermode/10dodge.html#dockable-layer-mode-10dodge"><span class="std std-ref">减淡</span></a>　　　 <span class="i060">Dodge</span></p></li>
+<li><p><a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>　　　 <span class="i060">Addition</span></p></li>
+<li><p><a class="reference internal" href="layermode/12darken-only.html#dockable-layer-mode-12darken-only"><span class="std std-ref">仅变暗</span></a>　　 <span class="i060">Darken only</span></p></li>
+<li><p><a class="reference internal" href="layermode/13luma-luminance-darken-only.html#dockable-layer-mode-13luma-luminance-darken-only"><span class="std std-ref">仅亮度变暗</span></a> <span class="i060">Luma/luminance darken only</span></p></li>
+<li><p><a class="reference internal" href="layermode/14multiply.html#dockable-layer-mode-14multiply"><span class="std std-ref">相乘</span></a>　　　 <span class="i060">Multiply</span></p></li>
+<li><p><a class="reference internal" href="layermode/15burn.html#dockable-layer-mode-15burn"><span class="std std-ref">加深</span></a>　　　 <span class="i060">Burn</span></p></li>
+<li><p><a class="reference internal" href="layermode/16linear-burn.html#dockable-layer-mode-16linear-burn"><span class="std std-ref">线性加深</span></a>　 <span class="i060">Linear burn</span></p></li>
+<li><p><a class="reference internal" href="layermode/17overlay.html#dockable-layer-mode-17overlay"><span class="std std-ref">叠加</span></a>　　　 <span class="i060">Overlay</span></p></li>
+<li><p><a class="reference internal" href="layermode/18soft-light.html#dockable-layer-mode-18soft-light"><span class="std std-ref">柔光</span></a>　　　 <span class="i060">Soft light</span></p></li>
+<li><p><a class="reference internal" href="layermode/19hard-light.html#dockable-layer-mode-19hard-light"><span class="std std-ref">强光</span></a>　　　 <span class="i060">Hard light</span></p></li>
+<li><p><a class="reference internal" href="layermode/20vivid-light.html#dockable-layer-mode-20vivid-light"><span class="std std-ref">亮光</span></a>　　　 <span class="i060">Vivid light</span></p></li>
+<li><p><a class="reference internal" href="layermode/21pin-light.html#dockable-layer-mode-21pin-light"><span class="std std-ref">点光</span></a>　　　 <span class="i060">Pin light</span></p></li>
+<li><p><a class="reference internal" href="layermode/22linear-light.html#dockable-layer-mode-22linear-light"><span class="std std-ref">线性光</span></a>　　 <span class="i060">Linear light</span></p></li>
+<li><p><a class="reference internal" href="layermode/23hard-mix.html#dockable-layer-mode-23hard-mix"><span class="std std-ref">实色混合</span></a>　 <span class="i060">Hard mix</span></p></li>
+<li><p><a class="reference internal" href="layermode/24difference.html#dockable-layer-mode-24difference"><span class="std std-ref">差值</span></a>　　　 <span class="i060">Difference</span></p></li>
+<li><p><a class="reference internal" href="layermode/25exclusion.html#dockable-layer-mode-25exclusion"><span class="std std-ref">排除</span></a>　　　 <span class="i060">Exclusion</span></p></li>
+<li><p><a class="reference internal" href="layermode/26subtract.html#dockable-layer-mode-26subtract"><span class="std std-ref">减去</span></a>　　　 <span class="i060">Subtract</span></p></li>
+<li><p><a class="reference internal" href="layermode/27grain-extract.html#dockable-layer-mode-27grain-extract"><span class="std std-ref">增益提取</span></a>　 <span class="i060">Grain extract</span></p></li>
+<li><p><a class="reference internal" href="layermode/28grain-merge.html#dockable-layer-mode-28grain-merge"><span class="std std-ref">增益合并</span></a>　 <span class="i060">Grain merge</span></p></li>
+<li><p><a class="reference internal" href="layermode/29divide.html#dockable-layer-mode-29divide"><span class="std std-ref">相除</span></a>　　　 <span class="i060">Divide</span></p></li>
+<li><p><a class="reference internal" href="layermode/30hsv-hue.html#dockable-layer-mode-30hsv-hue"><span class="std std-ref">HSV色相</span></a>　 <span class="i060">HSV Hue</span></p></li>
+<li><p><a class="reference internal" href="layermode/31hsv-saturation.html#dockable-layer-mode-31hsv-saturation"><span class="std std-ref">HSV饱和度</span></a> <span class="i060">HSV Saturation</span></p></li>
+<li><p><a class="reference internal" href="layermode/32hsl-color.html#dockable-layer-mode-32hsl-color"><span class="std std-ref">HSL颜色</span></a>　 <span class="i060">HSL Color</span></p></li>
+<li><p><a class="reference internal" href="layermode/33hsv-value.html#dockable-layer-mode-33hsv-value"><span class="std std-ref">HSL明度</span></a>　 <span class="i060">HSV Value</span></p></li>
+<li><p><a class="reference internal" href="layermode/34lch-hue.html#dockable-layer-mode-34lch-hue"><span class="std std-ref">LCh色相</span></a> 　 <span class="i060">LCh Hue</span></p></li>
+<li><p><a class="reference internal" href="layermode/35lch-chroma.html#dockable-layer-mode-35lch-chroma"><span class="std std-ref">LCh浓度</span></a> 　 <span class="i060">LCh Chroma</span></p></li>
+<li><p><a class="reference internal" href="layermode/36lch-color.html#dockable-layer-mode-36lch-color"><span class="std std-ref">LCh颜色</span></a> 　 <span class="i060">LCh Color</span></p></li>
+<li><p><a class="reference internal" href="layermode/37lch-lighteness.html#dockable-layer-mode-37lch-lightness"><span class="std std-ref">LCh亮度</span></a> 　 <span class="i060">LCh Lightness</span></p></li>
+<li><p><a class="reference internal" href="layermode/38luminance.html#dockable-layer-mode-38luminance"><span class="std std-ref">亮度</span></a>　　　 <span class="i060">Luminance</span></p></li>
 </ol>
 <blockquote id="dockable-layer-mode-formula">
 <div><div class="admonition- admonition">
@@ -185,10 +183,9 @@
 <p>那么，为什么要理解算法的数学公式？我们来看下面的的算法公式应用示例。</p>
 </div>
 </div></blockquote>
-<hr class="docutils" />
 <section id="why-study-fomula">
 <span id="id2"></span><h2>算法公式应用示例<a class="headerlink" href="#why-study-fomula" title="Link to this heading"></a></h2>
-<p>图层模式种类很多，算法的复杂程度也各不相同，我们以相对简单的<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式为例来说明理解公式的意义。</p>
+<p>图层模式种类很多，算法的复杂程度也各不相同，我们以相对简单的<a class="reference internal" href="layermode/11addition.html#dockable-layer-mode-11addition"><span class="std std-ref">相加</span></a>模式为例来说明为什么要理解公式。</p>
 <p>假设我们要向其他人解释三原色RGB的工作原理，那么我们可能需要这样一张图片：</p>
 <figure class="align-center" id="id4">
 <img alt="../../_images/3layer-mode-rgb.png" src="../../_images/3layer-mode-rgb.png" />
@@ -213,7 +210,7 @@
 <div><p>公式的意思是，当前图层选择<span class="dash6">相加</span>模式后，生成的效果是把当前图层与下方图层的像素值相加；如果相加后大于255，那么只取255。</p>
 <p>我们看一下三个图层的模式设置为<span class="dash6">相加</span>模式后如何计算。由于黑色部分色值是(0,0,0)，所以任何颜色与黑色<span class="dash6">相加</span>，结果都保持原色，不受黑色区域影响，仅RGB两两重叠区域的颜色才会发生变化。变化如下：</p>
 <ol class="arabic">
-<li><p>图层R中圆的色值为(255,0,0)，图层G中圆的色值为(0,255,0)，二者重叠的部分相加，即(255,0,0)+(0,255,0)，结果色值为(255,255,0)，而这个色值正好是黄色Y：</p>
+<li><p>图层R中圆的色值为(255,0,0)，图层G中圆的色值为(0,255,0)，二者重叠的部分相加，即(255,0,0)+(0,255,0)，结果色值为(255,255,0)，而这个色值正好是黄色Y，即红色与绿色叠加得到黄色Y：</p>
 <blockquote>
 <div><figure class="align-center" id="id6">
 <img alt="../../_images/3layer-mode-rg.png" src="../../_images/3layer-mode-rg.png" />
@@ -223,7 +220,7 @@
 </figure>
 </div></blockquote>
 </li>
-<li><p>图层R中圆的色值为(255,0,0)，图层B中圆的色值为(0,0,255)，二者重叠的部分相加，即(255,0,0)+(0,0,255)，结果色值为(255,0,255)，而这个色值正好是品红色M：</p>
+<li><p>图层R中圆的色值为(255,0,0)，图层B中圆的色值为(0,0,255)，二者重叠的部分相加，即(255,0,0)+(0,0,255)，结果色值为(255,0,255)，而这个色值正好是品红色M，即红色与蓝色叠加得到品红色M：</p>
 <blockquote>
 <div><figure class="align-center" id="id7">
 <img alt="../../_images/3layer-mode-rb.png" src="../../_images/3layer-mode-rb.png" />
@@ -233,7 +230,7 @@
 </figure>
 </div></blockquote>
 </li>
-<li><p>图层G中圆的色值为(0,255,0)，图层B中圆的色值为(0,0,255)，二者重叠的部分相加，即(0,255,0)+(0,0,255)，结果色值为(0,255,255)，而这个色值正好是青色C：</p>
+<li><p>图层G中圆的色值为(0,255,0)，图层B中圆的色值为(0,0,255)，二者重叠的部分相加，即(0,255,0)+(0,0,255)，结果色值为(0,255,255)，而这个色值正好是青色C，即绿色与蓝色叠加得到青色C：</p>
 <blockquote>
 <div><figure class="align-center" id="id8">
 <img alt="../../_images/3layer-mode-gb.png" src="../../_images/3layer-mode-gb.png" />
@@ -243,7 +240,7 @@
 </figure>
 </div></blockquote>
 </li>
-<li><p>中间三色叠加部分，按公式应该为(255,0,0)+(0,255,0)+(0,0,255)，结果是(255,255,255)，正好是白色W：</p>
+<li><p>中间三色叠加部分，按公式应该为(255,0,0)+(0,255,0)+(0,0,255)，结果是(255,255,255)，正好是白色W，即红色绿色与蓝色三者共同叠加得到白色W：</p>
 <blockquote>
 <div><figure class="align-center" id="id9">
 <img alt="../../_images/3layer-mode-rgb3.png" src="../../_images/3layer-mode-rgb3.png" />
@@ -256,15 +253,15 @@
 <li><p>上面所有的计算结果均没有超过255。</p></li>
 </ol>
 </div></blockquote>
-<p>这就是公式的应用：通过算法公式，我们知道如何最快捷地画一个RGB原理图。</p>
-<p>默认情况下，我们的图层模式会使用<span class="dash6">正常</span>模式，而使用<span class="dash6">正常</span>模式来画这张RGB原理图，就会比较麻烦。</p>
-<p>所以，如果您了解模式算法并能熟练应用图层模式，随时预测当前图层与下方图层重叠的部分可能产生什么效果，那么在绘画时，就会更灵活地应用各种效果到图像当中。</p>
-<div class="admonition- admonition">
-<p class="admonition-title">驿窗注：透明区域的计算</p>
+<p>这就是公式的应用：通过算法公式，我们知道如何最快捷地画一个RGB色光原理图。</p>
+<p>默认情况下，我们的图层模式会使用<span class="dash6">正常</span>模式，而使用<span class="dash6">正常</span>模式来画这张RGB原理图，就会比较麻烦，远远不如<span class="dash7">相加</span>模式方便。</p>
+<p>所以，如果您了解模式算法并能熟练应用图层模式，随时预测当前图层与上下方图层重叠的部分可能产生什么效果，那么在绘画时，就会更灵活地应用各种效果到图像当中。</p>
+<div class="admonition-t070 admonition">
+<p class="admonition-title"><span class="t070">驿窗注</span>：透明区域的计算</p>
 <p>目前，图层模式的算法公式中并没有关于透明度的解释，即，如果参与模式计算的最底图层有透明区域，那么最终得到的混合效果可能更复杂。</p>
 <p>例如，上面的示例中，如果最下面的B图层存在透明区域，那么最后生成的混合效果与我们的预期会不一样，从而导致我们无法顺利完成那张RGB原理图。</p>
 </div>
-<p><em>最近一次更新：2024-07-19</em></p>
+<p><em>本页面最近一次更新日期：2025-03-30</em></p>
 </section>
 </section>
 
@@ -283,8 +280,15 @@
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 

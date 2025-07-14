@@ -7,10 +7,10 @@
   <title>⇨曲线 Curves</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme-ycp.css?v=dcc40e4e" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=b8600082" />
       <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=939f3a61" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=596b4960" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/s4defs-roles.css?v=71936fdf" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/underline.css?v=b8600082" />
 
   
     <link rel="shortcut icon" href="../../../_static/avatarp.ico"/>
@@ -44,10 +44,10 @@
           
           <a href="../../../index.html" class="icon icon-home">
             驿窗项目
-              <img src="../../../_static/avatarp.svg" class="logo" alt="Logo"/>
+              <img src="../../../_static/avatarp-ori.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                开源/Linux大众化，从驿窗开始
+                开源大众化，从驿窗开始
               </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
@@ -57,13 +57,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../ycp_gd_base/ycp_base.html">驿窗平面基础</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../libreoffice/libreoffice.html">LibreOffice操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../linux-guide/0linux-guide.html">Linux入门指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../rime/rime.html">Rime开源输入法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../onehand/onehand.html">单手笔顺输入法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../input/input.html">开源输入法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../scribus/scribus.html">Scribus操作指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../shotcut/shotcut.html">Shotcut操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../copyright-reg/copyright.html">版权登记操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../trademark-reg/trademark.html">商标注册操作指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../ycpview/ycpview.html">驿窗研究报告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tm/cr-tm.html">版权与商标</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ycpview/ycpview.html">驿窗研究报告〓</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../license/license-ycp.html">开源公约数字条款</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../aboutycp/aboutycp.html">关于驿窗项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../update/log.html">更新日志</a></li>
@@ -149,15 +147,14 @@
 <li><p>垂直渐变色条(下黑上白)：代表输出色调，范围是从0到255(从黑到白)，即从暗调到高光。</p></li>
 <li><p>曲线：曲线贯穿整个坐标系，有网格线作为参考。曲线从左下到右上默认呈直线，左下角代表黑色(0)，右上角代表白色(255)。</p>
 <blockquote>
-<div><ul class="simple">
+<div><ul>
 <li><p>鼠标放到坐标系中时，坐标系的左上角会显示鼠标的位置信息。</p></li>
 <li><p>点击并拖动曲线，即可修改曲线。如果点击的位置在曲线以外，则曲线会自动修改外形，以包含该点。</p></li>
-</ul>
-<p>-如果点击曲线外的位置时按住Ctrl键，则会根据点击位置的Y坐标在曲线上增加一个相同Y坐标的点。
-- 任意两个点之间的曲线，代表图像的某个色调范围；修改此曲线段，即调整该范围的色调。
-- 要删除所有添加的点，可以点击上方的<span class="dash6">重置通道</span>按钮；要删除某个特定的点，点击并在水平方向上移动到两个相邻点之外的范围即可。
-- 曲线上当前选中的点，会显示为实心点；未选中的点，会显示为空心点。
-- 曲线修改可以用键盘操作：</p>
+<li><p>如果点击曲线外的位置时按住Ctrl键，则会根据点击位置的Y坐标在曲线上增加一个相同Y坐标的点。</p></li>
+<li><p>任意两个点之间的曲线，代表图像的某个色调范围；修改此曲线段，即调整该范围的色调。</p></li>
+<li><p>要删除所有添加的点，可以点击上方的<span class="dash6">重置通道</span>按钮；要删除某个特定的点，点击并在水平方向上移动到两个相邻点之外的范围即可。</p></li>
+<li><p>曲线上当前选中的点，会显示为实心点；未选中的点，会显示为空心点。</p></li>
+<li><p>曲线修改可以用键盘操作：</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>选中某个点后，用左右方向键可以切换到下一个点；</p></li>
@@ -166,7 +163,7 @@
 <li><p>按Ctrl键不松手时再用鼠标拖动选中的点，可以使该点限制在曲线上移动；</p></li>
 </ol>
 </div></blockquote>
-<ul>
+</li>
 <li><p>另外，打开【颜色⇨曲线】后：</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -228,8 +225,15 @@
   </div>
 
   
-<p style="color: gray;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
-<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系：classenu@163.com</p>
+<p style="color: #009900; margin: 0;">
+  本站域名更新为：
+  <a href="https://www.yc-project.com" style="color: lime; font-weight: bold; text-decoration: none;">
+    www.yc-project.com
+  </a>
+</p>
+<p style="color: gray; margin: 0;">除额外注明的地方外，本文档由<strong>驿窗</strong>原创，并根据开源协议-<a href="https://ycproject.cn/license/license.html" style="text-decoration: underline;">驿窗311条款</a>发布。
+<br>所有内容仅供参考，不提供任何担保。需求或疑问请联系<a href="mailto:classenu@163.com" style="color: #009900;">管理员</a>。
+</p>
  
 
 
