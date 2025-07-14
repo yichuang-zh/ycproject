@@ -1,15 +1,14 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/old.html",
+      "src": "/",
       "has": [
         {
           "type": "host",
           "value": "ycproject.cn"
         }
       ],
-      "statusCode": 301
+      "dest": "/old.html"
     }
   ]
 }
