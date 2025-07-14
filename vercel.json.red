@@ -1,5 +1,5 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/",
       "destination": "/old.html",
@@ -8,8 +8,7 @@
           "type": "host",
           "value": "ycproject.cn"
         }
-      ],
-      "statusCode": 301
+      ]
     }
   ]
 }
